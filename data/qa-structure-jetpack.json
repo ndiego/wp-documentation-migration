@@ -1,0 +1,66 @@
+{
+ "keyboard-shortcuts-block-editor": {
+  "table_rows": [
+   65,
+   75
+  ]
+ },
+ "tag-cloud-block": {
+  "list_items": [
+   29,
+   28
+  ]
+ },
+ "block-directory": {
+  "list_items": [
+   28,
+   27
+  ]
+ },
+ "wordpress-site-maintenance": {
+  "table_rows": [
+   12,
+   13
+  ]
+ },
+ "use-character-entities": {
+  "links": [
+   24,
+   22
+  ],
+  "table_rows": [
+   11,
+   12
+  ]
+ },
+ "wordpress-glossary": {
+  "table_rows": [
+   4,
+   5
+  ]
+ },
+ "sticky-posts-classic-editor": {
+  "list_items": [
+   8,
+   7
+  ]
+ },
+ "create-a-favicon": {
+  "table_rows": [
+   1,
+   2
+  ]
+ },
+ "video-shortcode": {
+  "code_blocks": [
+   5,
+   3
+  ]
+ },
+ "embeds": {
+  "table_rows": [
+   36,
+   37
+  ]
+ }
+}

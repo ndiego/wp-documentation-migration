@@ -1,0 +1,46 @@
+---
+// Override of Starlight's PageTitle: same <h1>, plus a meta line built from the
+// importer/migration frontmatter (`modified`, `original_url`), which Starlight ignores.
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const { data } = Astro.locals.starlightRoute.entry;
+// WordPress REST `modified` has no offset; wordpress.org runs on UTC.
+const modified = data.modified ? new Date(/(?:[zZ]|[+-]\d\d:?\d\d)$/.test(data.modified) ? data.modified : data.modified + 'Z') : undefined;
+const lastUpdated =
+	modified && !Number.isNaN(modified.valueOf())
+		? modified.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
+		: undefined;
+const originalUrl = data.original_url;
+---
+
+<Default />
+{
+	(lastUpdated || originalUrl) && (
+		<p class="wp-page-meta">
+			{lastUpdated && (
+				<span>
+					Last updated <time datetime={modified!.toISOString()}>{lastUpdated}</time>
+				</span>
+			)}
+			{originalUrl && (
+				<a href={originalUrl} rel="noopener">
+					View on wordpress.org
+				</a>
+			)}
+		</p>
+	)
+}
+
+<style>
+	.wp-page-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem 1rem;
+		margin-top: 0.5rem;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+	.wp-page-meta a {
+		color: var(--sl-color-text-accent);
+	}
+</style>

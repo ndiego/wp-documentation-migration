@@ -1,0 +1,738 @@
+[
+ {
+  "id": 16288711,
+  "date": "2022-12-16T22:16:27",
+  "date_gmt": "2022-12-16T22:16:27",
+  "guid": {
+   "rendered": "https://wordpress.org/documentation/?page_id=16288711"
+  },
+  "modified": "2024-08-09T19:20:43",
+  "modified_gmt": "2024-08-09T19:20:43",
+  "slug": "customization",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/customization/",
+  "title": {
+   "rendered": "Customization"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "",
+   "protected": false
+  },
+  "author": 1819835,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-16288711",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288711",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/users/1819835"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16288711"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 18,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288711/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 16360763,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288711/revisions/16360763"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16288711"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 16288709,
+  "date": "2022-12-16T22:15:25",
+  "date_gmt": "2022-12-16T22:15:25",
+  "guid": {
+   "rendered": "https://wordpress.org/documentation/?page_id=16288709"
+  },
+  "modified": "2024-08-09T19:20:47",
+  "modified_gmt": "2024-08-09T19:20:47",
+  "slug": "support-guides",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/support-guides/",
+  "title": {
+   "rendered": "Support guides"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "",
+   "protected": false
+  },
+  "author": 1819835,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-16288709",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288709",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/users/1819835"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16288709"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 11,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288709/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 16360764,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288709/revisions/16360764"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16288709"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 16288707,
+  "date": "2022-12-16T22:15:07",
+  "date_gmt": "2022-12-16T22:15:07",
+  "guid": {
+   "rendered": "https://wordpress.org/documentation/?page_id=16288707"
+  },
+  "modified": "2024-08-09T19:21:00",
+  "modified_gmt": "2024-08-09T19:21:00",
+  "slug": "overview",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/overview/",
+  "title": {
+   "rendered": "WordPress overview"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "",
+   "protected": false
+  },
+  "author": 1819835,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-16288707",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288707",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/users/1819835"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16288707"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 7,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288707/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 16360766,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288707/revisions/16360766"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16288707"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 16288705,
+  "date": "2022-12-16T22:04:29",
+  "date_gmt": "2022-12-16T22:04:29",
+  "guid": {
+   "rendered": "https://wordpress.org/documentation/?page_id=16288705"
+  },
+  "modified": "2024-08-09T19:20:56",
+  "modified_gmt": "2024-08-09T19:20:56",
+  "slug": "technical-guides",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/technical-guides/",
+  "title": {
+   "rendered": "Technical guides"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "",
+   "protected": false
+  },
+  "author": 1819835,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-16288705",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288705",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/users/1819835"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=16288705"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 7,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288705/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 16360765,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/16288705/revisions/16360765"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=16288705"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 11655921,
+  "date": "2019-06-20T13:34:34",
+  "date_gmt": "2019-06-20T13:34:34",
+  "guid": {
+   "rendered": "https://wordpress.org/support/?page_id=11655921"
+  },
+  "modified": "2019-06-20T13:34:34",
+  "modified_gmt": "2019-06-20T13:34:34",
+  "slug": "site-health",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/site-health/",
+  "title": {
+   "rendered": "Site Health: keep your website healthy"
+  },
+  "content": {
+   "rendered": "\n<div class=\"wp-block-image\"><figure class=\"alignleft\"><img loading=\"lazy\" decoding=\"async\" width=\"205\" height=\"143\" src=\"https://wordpress.org/documentation/files/2019/06/about_site-health.png\" alt=\"\" class=\"wp-image-11655960\" /></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\">WordPress&#8217; Site Health feature checks the overall health of your website, and provides information so you can ensure your website gets and then stays healthy.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This page has extra information to ensure you&#8217;re able to use the Site Health feature as effectively as possible, and ensure you are a good citizen of the internet!</p>\n\n\n\n<h2 class=\"wp-block-heading\">What makes for a healthy website?</h2>\n\n\n\n<p class=\"wp-block-paragraph\">A healthy website is:</p>\n\n\n\n<ul class=\"wp-block-list\"><li>fully up-to-date (including WordPress itself, your plugins, and your themes)</li><li>runs on the minimum recommended version of PHP and related software</li><li>well maintained</li><li>secure</li></ul>\n\n\n\n<p class=\"wp-block-paragraph\">It&#8217;s important to have a healthy website! An unhealthy website is at a higher risk of being targeted by malicious actors. It may also be slower than it could be, and uses more energy to run.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The Site Health feature helps ensure your website is healthy by checking all of these items, and giving you a report. If your website fails any of the checks, you&#8217;ll receive instructions on how to address these.</p>\n\n\n\n<h2 class=\"wp-block-heading\">How do I use the Site Health features?</h2>\n\n\n\n<div class=\"wp-block-image\"><figure class=\"alignright\"><img loading=\"lazy\" decoding=\"async\" width=\"162\" height=\"423\" src=\"https://wordpress.org/documentation/files/2019/06/image.png\" alt=\"\" class=\"wp-image-11657085\" srcset=\"https://wordpress.org/documentation/files/2019/06/image.png 162w, https://wordpress.org/documentation/files/2019/06/image-115x300.png 115w\" sizes=\"auto, (max-width: 162px) 100vw, 162px\" /></figure></div>\n\n\n\n<p class=\"wp-block-paragraph\">If you are maintaining a WordPress website, you will find the page on your WordPress Dashboard under <code>Tools &gt; Site Health</code>, where the very first screen will perform a check on your site.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The Site Health Check may also include information about configuration errors relating to your plugins and themes, as they are able to use this new module to provide more useful feedback to you, the user.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Once the checks are completed, you will be presented with either a message letting you know everything is looking good, or a list of critical or recommended improvements and changes.</p>\n\n\n\n<p class=\"wp-block-paragraph\">If you cannot find the Site Health page, you either need to update your WordPress version (Site Health was added in 5.2) or contact a Site Administrator.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Now run the Site Health check!</h2>\n\n\n\n<p class=\"wp-block-paragraph\">You&#8217;re now ready to check your website&#8217;s health! Head to your WordPress Dashboard to start. You should check your website&#8217;s health on a regular basis.</p>\n\n\n\n<p class=\"wp-block-paragraph\">If you have any problems, use the <a href=\"https://wordpress.com/support/forums/\">WordPress support forum</a>, or contact the relevant provider.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>WordPress&#8217; Site Health feature checks the overall health of your website, and provides information so you can ensure your website gets and then stays healthy. This page has extra information to ensure you&#8217;re able to use the Site Health feature as effectively as possible, and ensure you are a good citizen of the internet! What [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 7337072,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "page-full-width.php",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-11655921",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/11655921",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=11655921"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 0,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/11655921/revisions"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wporg/v1/users/clorith"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=11655921"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 9948338,
+  "date": "2018-02-08T09:13:28",
+  "date_gmt": "2018-02-08T09:13:28",
+  "guid": {
+   "rendered": "https://wordpress.org/support/?page_id=9948338"
+  },
+  "modified": "2018-02-08T09:13:28",
+  "modified_gmt": "2018-02-08T09:13:28",
+  "slug": "update-php",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/update-php/",
+  "title": {
+   "rendered": "Get a faster, more secure website: update your PHP today"
+  },
+  "content": {
+   "rendered": "\n<p class=\"wp-block-paragraph\"><strong>Your WordPress site can be faster, and more secure, and you can make this happen!</strong></p>\n\n\n\n<p class=\"wp-block-paragraph\">This page will explain why this matters to you, and then how you can fix it.<br /></p>\n\n\n\n<h2 class=\"wp-block-heading\">Why PHP Matters To You</h2>\n\n\n\n<p class=\"wp-block-paragraph\">PHP is the coding language WordPress is built on, and its version is set at the server-level by your hosting company. Whilst you may be familiar with the importance of <a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\">keeping WordPress, and your themes and plugins up-to-date</a>, keeping PHP up-to-date is just as important.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">There are two main benefits to keeping PHP up-to-date:<br /></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>Your website will be faster</strong> as the latest version of PHP is more efficient. Updating to the latest supported version (7.4 or more) can deliver a huge performance increase; up to 3 or 4x faster for older versions.</li><li><strong>Your website will be more secure</strong>. PHP, like WordPress, is maintained by its community. Because PHP is so popular, it is a target for hackers – but the latest version will have the latest security features. Older versions of PHP <em>do not have this</em>, so updating is essential to keep your WordPress site secure.</li></ul>\n\n\n\n<p class=\"wp-block-paragraph\">And then there are a number of secondary benefits:<br /></p>\n\n\n\n<ul class=\"wp-block-list\"><li><strong>A faster WordPress website will be rewarded by search engines</strong>, so you’ll rank higher in search!</li><li><strong>A faster website will retain visitors better</strong> (they’ll leave if it takes too long to load), making your website more effective.</li><li><strong>A more secure website is better protected against hackers</strong>, and the cost and reputational damage associated with a hacked website.</li></ul>\n\n\n\n<p class=\"wp-block-paragraph\">These benefits are good for you, and good for your website’s visitors. These are the reasons you should update PHP today. The next section will show you how to do this.<br /></p>\n\n\n\n<h2 class=\"wp-block-heading\">Before you update your PHP version</h2>\n\n\n\n<p class=\"wp-block-paragraph\">This section starts off with some warnings, but don’t be afraid! As with most things technical, we just need to cover some background before we can get to the part where you update your PHP version.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">Updating your PHP version should not be a problem, but we can’t <em>guarantee</em> that it’s not. WordPress itself will work with PHP versions as far back as 5.6 (we’re recommending version 7.4 or more at the time of writing, so this is <em>great</em> backward compatibility!), but we don’t know if your themes or plugins will work. They should, and popular or reputable ones almost certainly will be, but we can’t guarantee it.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">There are a couple of steps you should take to mitigate any risk before proceeding:<br /></p>\n\n\n\n<ol class=\"wp-block-list\"><li><strong>Make a backup of your website: </strong>a backup will let you revert your site to how it is right now in the event anything goes wrong. There are <a href=\"https://wordpress.org/plugins/search/backup/\">plenty of free backup plugins available</a>, so if you don’t have a backup solution already – use one of these. In order to revert this backup, you’ll also need your web host to move your PHP version back to your current version (we’ll cover how to do this later).</li><li><strong>Update WordPress, themes, and plugins: </strong>from your WordPress Dashboard, head to Updates, and then update all. You should do this regularly anyway 🙂 When done, check your site is working as expected.</li><li><strong>Check PHP compatibility: </strong>install the <a href=\"https://wordpress.org/plugins/php-compatibility-checker/\">PHP Compatibility Checker plugin</a> to check your themes and plugins for possible issues. This plugin isn’t perfect and may miss items or flag false positives, but it does work in most cases.</li><li><strong>Fix any PHP compatibility issues: </strong>if the PHP Compatibility Checker plugin picks up any issues, get in touch with the theme or plugin developer and ask them to investigate. If they can’t or won’t get back to you, have a look for themes or plugins on <a href=\"https://wordpress.org/\">WordPress.org</a> with similar functionality and use one of these instead.</li></ol>\n\n\n\n<p class=\"wp-block-paragraph\">Run through these steps, and you’ll be ready to update the PHP version on your WordPress site – and enjoy all of the benefits that come with this! <br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">If you run into any issues whilst doing this or need help, you should contact a professional web developer, your hosting company, or your theme and plugins authors. All of these will be happy to help here.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">We can now get on to the final part: actually updating your website’s PHP version.<br /></p>\n\n\n\n<h2 class=\"wp-block-heading\">How to update your website’s PHP version for a faster, more secure website</h2>\n\n\n\n<p class=\"wp-block-paragraph\">You’re now ready to update your website’s PHP version! You’ve done due diligence, got backups, and are in the best possible shape to do the update.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">As the PHP version is set at the server level by your hosting company, updating involves either interacting with your host’s settings or asking them to do it.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">Thus, exactly <em>how</em> to do the update depends on your hosting company. We’ve asked hosting companies to submit instructions on how to update your PHP version on their hosting, and <a href=\"https://github.com/WordPress/servehappy-resources/blob/master/tutorials/hosting-specific/tutorials-en.md\">you’ll find a list of hosts who have instructions available here</a>.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">If you can’t find your host on this list, and don’t recognize the names of these <a href=\"https://github.com/WordPress/servehappy-resources\">system-specific and tool-specific update tutorials</a>, then email your hosting company and ask them to help! Here’s some template text you can use:<br /></p>\n\n\n\n<pre class=\"wp-block-preformatted\">Dear Hosting Provider,<br /><br />I want my website to be as performant and secure as<br />possible with the latest version of PHP. For the server<br />my WordPress site is hosted on, I want to ensure that<br />is the case. If I am not already on the latest version<br />of PHP, please let me know what steps I need to take<br />to update.<br /><br />Thanks!</pre>\n\n\n\n<p class=\"wp-block-paragraph\">If you run into any issues at this stage, either change the PHP version back yourself, contact your hosting company or a professional web developer. In the unlikely event something goes wrong and you need to restore your backup, contact your host and ask them to restore the previous version of PHP you had running. You can then restore your backup.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">You should now have all the information you need to update! Nice work! With an up-to-date version of PHP you’ll enjoy a faster, more secure website and happier visitors.<br /></p>\n\n\n\n<h2 class=\"wp-block-heading\">Faster, more secure WordPress websites for all</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Making sure you have the latest version of PHP ensures your website is as fast, and secure as possible.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">You now have all the information you need to update to the latest version of PHP, and you know how to update in the future as well. Look out for more PHP update messages on your WordPress Dashboard going forwards, or keep an eye on your hosting company’s news for more information.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\">As a final reminder: contact your hosting company, a professional web developer, or your theme and/or plugin authors for any additional questions. They’ll all be able to help out with their areas of expertise.<br /></p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Thanks for making the internet a better place!</strong></p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Your WordPress site can be faster, and more secure, and you can make this happen! This page will explain why this matters to you, and then how you can fix it. Why PHP Matters To You PHP is the coding language WordPress is built on, and its version is set at the server-level by your [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 14387856,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "page-update-php.php",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-9948338",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/9948338",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=9948338"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 1,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/9948338/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 16355746,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/9948338/revisions/16355746"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wporg/v1/users/schlessera"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=9948338"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 8,
+  "date": "2016-08-12T17:31:57",
+  "date_gmt": "2016-08-12T17:31:57",
+  "guid": {
+   "rendered": "https://wordpress.org/support-wp/?page_id=8"
+  },
+  "modified": "2024-06-10T08:43:14",
+  "modified_gmt": "2024-06-10T08:43:14",
+  "slug": "support-forums",
+  "status": "publish",
+  "type": "page",
+  "link": "https://wordpress.org/documentation/",
+  "title": {
+   "rendered": "Front Page"
+  },
+  "content": {
+   "rendered": "\n<div class=\"wp-block-group alignfull has-white-color has-charcoal-2-background-color has-text-color has-background has-link-color wp-elements-1 is-layout-constrained wp-container-core-group-is-layout-79076d95 wp-block-group-is-layout-constrained\" style=\"padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)\">\n<div class=\"wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow\" style=\"padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)\">\n<h1 class=\"wp-block-heading alignwide has-eb-garamond-font-family\" style=\"margin-bottom:0;font-size:50px;font-style:normal;font-weight:400\">Documentation</h1>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-wporg-language-suggest alignfull\"></div>\n\n\n\n<div class=\"wp-block-group alignfull is-layout-constrained wp-container-core-group-is-layout-79076d95 wp-block-group-is-layout-constrained\" style=\"border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-width:1px;padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)\">\n<div class=\"wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow\" style=\"padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)\"><form role=\"search\" method=\"get\" action=\"https://wordpress.org/documentation/\" class=\"wp-block-search__button-inside wp-block-search__icon-button is-style-default wp-block-search\" ><label class=\"wp-block-search__label screen-reader-text\" for=\"wp-block-search__input-1\" >Search</label><div class=\"wp-block-search__inside-wrapper\"  style=\"width: 240px\"><input class=\"wp-block-search__input\" id=\"wp-block-search__input-1\" placeholder=\"Search documentation\" value=\"\" type=\"search\" name=\"s\" required /><button aria-label=\"Search\" class=\"wp-block-search__button has-icon wp-element-button\" type=\"submit\" ><svg class=\"search-icon\" viewBox=\"0 0 24 24\" width=\"24\" height=\"24\">\n\t\t\t\t\t<path d=\"M13 5c-3.3 0-6 2.7-6 6 0 1.4.5 2.7 1.3 3.7l-3.8 3.8 1.1 1.1 3.8-3.8c1 .8 2.3 1.3 3.7 1.3 3.3 0 6-2.7 6-6S16.3 5 13 5zm0 10.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z\"></path>\n\t\t\t\t</svg></button></div></form></div>\n</div>\n\n\n\n<div class=\"wp-block-group alignfull is-layout-constrained wp-container-core-group-is-layout-79076d95 wp-block-group-is-layout-constrained\" style=\"border-bottom-color:var(--wp--preset--color--light-grey-1);border-bottom-style:solid;border-bottom-width:1px;padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)\">\n<div class=\"wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-430f0f8b wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-right-color:var(--wp--preset--color--light-grey-1);border-right-style:solid;border-right-width:1px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)\">\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-53e69238 wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading is-style-default has-link-color wp-elements-2\"><a href=\"https://wordpress.org/documentation/overview/\">WordPress overview</a></h2>\n\n\n\n<p class=\"has-charcoal-4-color has-text-color wp-block-paragraph\">Learn about WordPress and its community.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/where-to-start/\" data-type=\"helphub_article\" data-id=\"10801881\">Where to start</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">New to WordPress? Learn how to get started.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/faqs/\" data-type=\"helphub_article\" data-id=\"10845615\">FAQs</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">A list of common WordPress questions from the community.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/about-wp/\">About WordPress</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Learn more about the WordPress project and its history.</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)\">\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-53e69238 wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-link-color wp-elements-3\"><a href=\"https://wordpress.org/documentation/technical-guides/\">Technical guides</a></h2>\n\n\n\n<p class=\"has-charcoal-4-color has-text-color wp-block-paragraph\">Learn how to install WordPress and keep it secure and healthy.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/installation/\" data-type=\"helphub_article\" data-id=\"10853837\">Installation</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Need a hand installing WordPress? This section will help you.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/maintenance/\" data-type=\"helphub_article\">Maintenance</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Keep your site updated and ready with the articles in this section.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/security/\">Security</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Everything you need to know to protect your site.</p>\n</div>\n</div>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-group alignfull is-layout-constrained wp-container-core-group-is-layout-79076d95 wp-block-group-is-layout-constrained\" style=\"padding-right:var(--wp--preset--spacing--edge-space);padding-left:var(--wp--preset--spacing--edge-space)\">\n<div class=\"wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-430f0f8b wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"border-right-color:var(--wp--preset--color--light-grey-1);border-right-style:solid;border-right-width:1px;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)\">\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-53e69238 wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-link-color wp-elements-4\"><a href=\"https://wordpress.org/documentation/support-guides/\">Support guides</a></h2>\n\n\n\n<p class=\"has-charcoal-4-color has-text-color wp-block-paragraph\">Get to know how to publish with WordPress.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/dashboard/\" data-type=\"helphub_article\" data-id=\"10798336\">Dashboard</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Get to know the control center of your site.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/publishing/\" data-type=\"helphub_article\">Publishing</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Learn how to create and publish your content.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/media/\">Media</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Learn how to manage your media files.</p>\n</div>\n</div>\n\n\n\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\" style=\"padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)\">\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-53e69238 wp-block-group-is-layout-flow\">\n<h2 class=\"wp-block-heading has-link-color wp-elements-5\"><a href=\"https://wordpress.org/documentation/customization/\">Customization</a></h2>\n\n\n\n<p class=\"has-charcoal-4-color has-text-color wp-block-paragraph\">Get the look and feel you want on your site.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/appearance/\" data-type=\"helphub_article\" data-id=\"10853837\">Appearance</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Learn how to give the look and feel you want to your site.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/default-themes/\" data-type=\"helphub_article\">Default themes</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Get information on the default themes that ship with WordPress.</p>\n</div>\n\n\n\n<div class=\"wp-block-group is-layout-flow wp-container-core-group-is-layout-ccb796d7 wp-block-group-is-layout-flow\">\n<p class=\"wp-block-paragraph\"><a href=\"https://wordpress.org/documentation/category/media-blocks/\">Media blocks</a>, <a href=\"https://wordpress.org/documentation/category/text-blocks/\">Text blocks</a>, <a href=\"https://wordpress.org/documentation/category/design-blocks/\">Design blocks</a>, <a href=\"https://wordpress.org/documentation/category/embed-blocks/\">Embed blocks</a>, <a href=\"https://wordpress.org/documentation/category/widget-blocks/\">Widget blocks</a>, <a href=\"https://wordpress.org/documentation/category/theme-blocks/\">Theme blocks</a></p>\n\n\n\n<p class=\"wp-block-paragraph\">Learn how you can use the Editor and all the different types of blocks to customize your site.</p>\n</div>\n</div>\n</div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Documentation WordPress overview Learn about WordPress and its community. Where to start New to WordPress? Learn how to get started. FAQs A list of common WordPress questions from the community. About WordPress Learn more about the WordPress project and its history. Technical guides Learn how to install WordPress and keep it secure and healthy. Installation [&hellip;]</p>\n",
+   "protected": false
+  },
+  "author": 2343,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+   "advanced_seo_description": "",
+   "jetpack_seo_html_title": "",
+   "jetpack_seo_noindex": false,
+   "jetpack_seo_schema_type": "",
+   "footnotes": ""
+  },
+  "class_list": [
+   "post-8",
+   "page",
+   "type-page",
+   "status-publish",
+   "hentry"
+  ],
+  "revision_note": "",
+  "jetpack_sharing_enabled": true,
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/8",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/types/page"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/comments?post=8"
+    }
+   ],
+   "version-history": [
+    {
+     "count": 15,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/8/revisions"
+    }
+   ],
+   "predecessor-version": [
+    {
+     "id": 16360461,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/pages/8/revisions/16360461"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wporg/v1/users/jmdodd"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/media?parent=8"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

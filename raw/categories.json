@@ -1,0 +1,1418 @@
+[
+ {
+  "id": 75,
+  "count": 6,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/about-wp/",
+  "name": "About WordPress",
+  "slug": "about-wp",
+  "taxonomy": "category",
+  "parent": 74,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/75",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/74"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=75"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=75"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 81,
+  "count": 14,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/appearance/",
+  "name": "Appearance",
+  "slug": "appearance",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/81",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=81"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=81"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 83,
+  "count": 27,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/block-editor/",
+  "name": "Block Editor",
+  "slug": "block-editor",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/83",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=83"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=83"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 80,
+  "count": 206,
+  "description": "Get the look and feel you want on your site.",
+  "link": "https://wordpress.org/documentation/category/customization/",
+  "name": "Customization",
+  "slug": "customization",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=80"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=80"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 79,
+  "count": 46,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/dashboard/",
+  "name": "Dashboard",
+  "slug": "dashboard",
+  "taxonomy": "category",
+  "parent": 78,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/79",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/78"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=79"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=79"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 82,
+  "count": 28,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/default-themes/",
+  "name": "Default themes",
+  "slug": "default-themes",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/82",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=82"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=82"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 88,
+  "count": 13,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/design-blocks/",
+  "name": "Design blocks",
+  "slug": "design-blocks",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/88",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=88"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=88"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 92,
+  "count": 0,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/devhub/",
+  "name": "DevHub",
+  "slug": "devhub",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/92",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=92"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=92"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 89,
+  "count": 36,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/embed-blocks/",
+  "name": "Embed blocks",
+  "slug": "embed-blocks",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/89",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=89"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=89"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 77,
+  "count": 5,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/faqs/",
+  "name": "FAQs",
+  "slug": "faqs",
+  "taxonomy": "category",
+  "parent": 74,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/77",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/74"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=77"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=77"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 21,
+  "count": 4,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/installation/",
+  "name": "Installation",
+  "slug": "installation",
+  "taxonomy": "category",
+  "parent": 73,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/21",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/73"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=21"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=21"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 33,
+  "count": 6,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/maintenance/",
+  "name": "Maintenance",
+  "slug": "maintenance",
+  "taxonomy": "category",
+  "parent": 73,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/33",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/73"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=33"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=33"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 87,
+  "count": 9,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/media/",
+  "name": "Media",
+  "slug": "media",
+  "taxonomy": "category",
+  "parent": 78,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/87",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/78"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=87"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=87"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 84,
+  "count": 9,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/media-blocks/",
+  "name": "Media blocks",
+  "slug": "media-blocks",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/84",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=84"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=84"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 99,
+  "count": 0,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/mobile-app/",
+  "name": "Mobile App",
+  "slug": "mobile-app",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/99",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=99"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=99"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 100,
+  "count": 0,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/post-and-pages/",
+  "name": "Post and Pages",
+  "slug": "post-and-pages",
+  "taxonomy": "category",
+  "parent": 99,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/100",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/99"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=100"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=100"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 86,
+  "count": 25,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/publishing/",
+  "name": "Publishing",
+  "slug": "publishing",
+  "taxonomy": "category",
+  "parent": 78,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/86",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/78"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=86"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=86"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 34,
+  "count": 3,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/security/",
+  "name": "Security",
+  "slug": "security",
+  "taxonomy": "category",
+  "parent": 73,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/34",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/73"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=34"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=34"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 94,
+  "count": 5,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/site-editor/",
+  "name": "Site Editor",
+  "slug": "site-editor",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/94",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=94"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=94"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 78,
+  "count": 80,
+  "description": "Get to know how to publish with WordPress.",
+  "link": "https://wordpress.org/documentation/category/support-guides/",
+  "name": "Support guides",
+  "slug": "support-guides",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/78",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=78"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=78"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 73,
+  "count": 13,
+  "description": "Learn how to install WordPress and keep it secure and healthy.",
+  "link": "https://wordpress.org/documentation/category/technical-guides/",
+  "name": "Technical guides",
+  "slug": "technical-guides",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/73",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=73"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=73"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 85,
+  "count": 13,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/text-blocks/",
+  "name": "Text blocks",
+  "slug": "text-blocks",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/85",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=85"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=85"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 91,
+  "count": 51,
+  "description": "Theme Blocks are a collection of blocks specifically designed to help you customize and build your WordPress theme directly in the Site Editor. These blocks allow you to create dynamic and visually appealing layouts while maintaining full control over your site's design.\r\n\r\nTo use Theme Blocks, open the Site Editor (Appearance &gt; Editor) and navigate to the template or template part you want to edit. For more detailed instructions, explore individual block guides linked below.",
+  "link": "https://wordpress.org/documentation/category/theme-blocks/",
+  "name": "Theme blocks",
+  "slug": "theme-blocks",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/91",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=91"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=91"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 1,
+  "count": 2,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/uncategorized/",
+  "name": "Uncategorized",
+  "slug": "uncategorized",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/1",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=1"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=1"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 76,
+  "count": 7,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/where-to-start/",
+  "name": "Where to start",
+  "slug": "where-to-start",
+  "taxonomy": "category",
+  "parent": 74,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/76",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/74"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=76"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=76"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 90,
+  "count": 12,
+  "description": "",
+  "link": "https://wordpress.org/documentation/category/widget-blocks/",
+  "name": "Widget blocks",
+  "slug": "widget-blocks",
+  "taxonomy": "category",
+  "parent": 80,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/90",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "up": [
+    {
+     "embeddable": true,
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/80"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=90"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=90"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 74,
+  "count": 18,
+  "description": "Learn about WordPress and its community.",
+  "link": "https://wordpress.org/documentation/category/wordpress-overview/",
+  "name": "WordPress overview",
+  "slug": "wordpress-overview",
+  "taxonomy": "category",
+  "parent": 0,
+  "meta": [],
+  "_links": {
+   "self": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category/74",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/category"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/taxonomies/category"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/posts?category=74"
+    },
+    {
+     "href": "https://wordpress.org/documentation/wp-json/wp/v2/articles?category=74"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

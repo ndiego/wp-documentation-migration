@@ -1,0 +1,14 @@
+/* Light touch only: wp.org-like blue accent (#3858e9). */
+:root {
+	--sl-color-accent-low: #131c4d;
+	--sl-color-accent: #3858e9;
+	--sl-color-accent-high: #c7d1fb;
+}
+:root[data-theme='light'] {
+	--sl-color-accent-low: #dfe5fd;
+	--sl-color-accent: #3858e9;
+	--sl-color-accent-high: #1d2a6e;
+}
+.sl-markdown-content video { max-width: 100%; height: auto; }
+.videopress-embed iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+.videopress-embed figcaption { font-size: var(--sl-text-xs); }

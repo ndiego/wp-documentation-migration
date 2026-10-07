@@ -1,0 +1,4711 @@
+{
+ "callout_style": "gfm-alert",
+ "articles": {
+  "zoom-out-view": {
+   "path": "docs/customization/site-editor/zoom-out-view.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 2,
+    "images": 1,
+    "internal_links_rewritten": 2,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "background-settings-overview": {
+   "path": "docs/customization/block-editor/background-settings-overview.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 4,
+    "internal_links_rewritten": 1
+   }
+  },
+  "playlist-block": {
+   "path": "docs/customization/media-blocks/playlist-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 4,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 8,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "tabs-block": {
+   "path": "docs/customization/design-blocks/tabs-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 8,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "site-editor-identity": {
+   "path": "docs/uncategorized/site-editor-identity.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1,
+    "images": 2,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 3,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "responsive-styles": {
+   "path": "docs/uncategorized/responsive-styles.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1,
+    "images": 4,
+    "internal_links_rewritten": 2,
+    "tables_gfm": 1
+   }
+  },
+  "image-block": {
+   "path": "docs/customization/media-blocks/image-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'inserting-images-into-posts-and-pages' rewritten to 'inserting-images-into-posts-and-pages-classic' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 9,
+    "images": 21,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 14,
+    "preserved_heading_anchors": 7,
+    "callouts": 11,
+    "callouts_info": 11,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "date-block": {
+   "path": "docs/customization/theme-blocks/date-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 12,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 15,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "settings-connectors-screen": {
+   "path": "docs/support-guides/dashboard/settings-connectors-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 6,
+    "images_missing_alt": 2,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "wordpress-versions-0-7-to-4-9": {
+   "path": "docs/wordpress-overview/about-wp/wordpress-versions-0-7-to-4-9.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 4,
+    "version_links_kept_absolute": 499,
+    "custom_element_anchors": 1,
+    "background_colour_dropped": 1,
+    "tables_gfm": 33,
+    "tables_header_inferred_from_bold_row": 11
+   }
+  },
+  "icon-block": {
+   "path": "docs/customization/media-blocks/icon-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 8,
+    "internal_links_rewritten": 7,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "breadcrumbs-block": {
+   "path": "docs/customization/theme-blocks/breadcrumbs-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 8,
+    "internal_links_rewritten": 10,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "advanced-settings-overview": {
+   "path": "docs/customization/block-editor/advanced-settings-overview.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "images": 7,
+    "internal_links_rewritten": 4,
+    "callouts": 2,
+    "callouts_info": 2
+   }
+  },
+  "bluesky-embed": {
+   "path": "docs/customization/embed-blocks/bluesky-embed.md",
+   "warnings": [
+    "contained bluesky embed (now a bare oEmbed URL; check provider support)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 10,
+    "internal_links_rewritten": 8,
+    "callouts": 5,
+    "callouts_info": 5,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-link-block": {
+   "path": "docs/customization/theme-blocks/comment-link-block.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 4,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 5,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "comments-count-block": {
+   "path": "docs/customization/theme-blocks/comments-count-block.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "images": 4,
+    "images_missing_alt": 4,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 5,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "terms-query-block": {
+   "path": "docs/customization/theme-blocks/terms-query-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "self_hosted_videos": 1,
+    "images": 8,
+    "images_missing_alt": 8,
+    "legacy_support_links_fixed": 3,
+    "internal_links_rewritten": 3,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "math-block": {
+   "path": "docs/customization/text-blocks/math-block.md",
+   "warnings": [
+    "contained MathML (converted to $TeX$, check renderer support)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 8,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 9,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "time-to-read-block": {
+   "path": "docs/customization/theme-blocks/time-to-read-block.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 1,
+    "internal_links_rewritten": 1,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "accordion-block": {
+   "path": "docs/customization/design-blocks/accordion-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 10,
+    "images_missing_alt": 1,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 10,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "notes": {
+   "path": "docs/customization/block-editor/notes.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 3,
+    "images": 2,
+    "images_missing_alt": 1
+   }
+  },
+  "recovery-mode": {
+   "path": "docs/technical-guides/maintenance/recovery-mode.md",
+   "warnings": [],
+   "notes": [
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2025/08/image-1024x262.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2025/08/Email-for-recovery-mode-1024x459.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2025/08/image-2-926x1024.png"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 3
+   }
+  },
+  "title-block": {
+   "path": "docs/customization/theme-blocks/title-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "code_links_swapped": 1,
+    "images": 2,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "query-title-block": {
+   "path": "docs/customization/theme-blocks/query-title-block.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 12,
+    "internal_links_rewritten": 6,
+    "callouts": 6,
+    "callouts_info": 6
+   }
+  },
+  "query-total-block": {
+   "path": "docs/customization/theme-blocks/query-total-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "self_hosted_videos": 1,
+    "images": 14,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 10,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "twenty-twenty-five": {
+   "path": "docs/customization/default-themes/twenty-twenty-five.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 5,
+    "images": 15,
+    "small_images_kept_as_html": 1,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 5
+   }
+  },
+  "twenty-twenty-five-changelog": {
+   "path": "docs/customization/default-themes/twenty-twenty-five-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 3,
+    "preserved_heading_anchors": 6
+   }
+  },
+  "the-font-library": {
+   "path": "docs/customization/appearance/the-font-library.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 3,
+    "images": 6,
+    "internal_links_rewritten": 1
+   }
+  },
+  "grid-block": {
+   "path": "docs/customization/design-blocks/grid-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 1,
+    "images": 10,
+    "internal_links_rewritten": 11,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "twenty-eleven": {
+   "path": "docs/customization/default-themes/twenty-eleven.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 4,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 2
+   }
+  },
+  "twenty-ten": {
+   "path": "docs/customization/default-themes/twenty-ten.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 4,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 3
+   }
+  },
+  "twenty-twelve": {
+   "path": "docs/customization/default-themes/twenty-twelve.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 7,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 3,
+    "background_colour_dropped": 5
+   }
+  },
+  "twenty-fifteen-changelog": {
+   "path": "docs/customization/default-themes/twenty-fifteen-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 34
+   }
+  },
+  "twenty-nineteen-changelog": {
+   "path": "docs/customization/default-themes/twenty-nineteen-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 25
+   }
+  },
+  "twenty-seventeen-changelog": {
+   "path": "docs/customization/default-themes/twenty-seventeen-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 33
+   }
+  },
+  "twenty-sixteen-changelog": {
+   "path": "docs/customization/default-themes/twenty-sixteen-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 30
+   }
+  },
+  "twenty-fourteen-changelog": {
+   "path": "docs/customization/default-themes/twenty-fourteen-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 37
+   }
+  },
+  "twenty-thirteen-changelog": {
+   "path": "docs/customization/default-themes/twenty-thirteen-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 38
+   }
+  },
+  "twenty-twelve-changelog": {
+   "path": "docs/customization/default-themes/twenty-twelve-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 8,
+    "preserved_heading_anchors": 39
+   }
+  },
+  "twenty-eleven-changelog": {
+   "path": "docs/customization/default-themes/twenty-eleven-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 42
+   }
+  },
+  "twenty-ten-changelog": {
+   "path": "docs/customization/default-themes/twenty-ten-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 38
+   }
+  },
+  "login-out-block": {
+   "path": "docs/customization/theme-blocks/login-out-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "images": 4,
+    "internal_links_rewritten": 4,
+    "callouts": 1,
+    "callouts_info": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "twenty-twenty-four": {
+   "path": "docs/customization/default-themes/twenty-twenty-four.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 9,
+    "images": 4,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 9
+   }
+  },
+  "twenty-twenty-four-changelog": {
+   "path": "docs/customization/default-themes/twenty-twenty-four-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 7,
+    "preserved_heading_anchors": 7
+   }
+  },
+  "link-editing": {
+   "path": "docs/customization/block-editor/link-editing.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 4,
+    "internal_links_rewritten": 5,
+    "callouts": 1,
+    "callouts_info": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "filters-settings-overview": {
+   "path": "docs/customization/block-editor/filters-settings-overview.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 3,
+    "internal_links_rewritten": 7,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "site-editor-navigation": {
+   "path": "docs/customization/site-editor/site-editor-navigation.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 5,
+    "images": 2,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 2,
+    "callouts": 2,
+    "callouts_info": 2
+   }
+  },
+  "site-editor-patterns": {
+   "path": "docs/customization/site-editor/site-editor-patterns.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 7,
+    "internal_links_rewritten": 6,
+    "legacy_support_links_fixed": 1,
+    "callouts": 4,
+    "callouts_info": 4
+   }
+  },
+  "details-block": {
+   "path": "docs/customization/text-blocks/details-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 10,
+    "internal_links_rewritten": 11,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-modified-date-block": {
+   "path": "docs/customization/theme-blocks/post-modified-date-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 10,
+    "internal_links_rewritten": 17,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "site-editor-command-palette": {
+   "path": "docs/customization/site-editor/site-editor-command-palette.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 3,
+    "images": 2
+   }
+  },
+  "footnotes-block": {
+   "path": "docs/customization/text-blocks/footnotes-block.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 7,
+    "internal_links_rewritten": 5
+   }
+  },
+  "site-editor-pages": {
+   "path": "docs/customization/site-editor/site-editor-pages.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "edge_br_removed": 2,
+    "images": 15,
+    "internal_links_rewritten": 8,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "block-error-unexpected-or-invalid-content": {
+   "path": "docs/customization/block-editor/block-error-unexpected-or-invalid-content.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 4,
+    "images": 9,
+    "images_missing_alt": 6,
+    "internal_links_rewritten": 4
+   }
+  },
+  "avatar-block": {
+   "path": "docs/customization/theme-blocks/avatar-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 13,
+    "internal_links_rewritten": 7,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "previous-post-block": {
+   "path": "docs/customization/theme-blocks/previous-post-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "internal_links_rewritten": 7,
+    "legacy_support_links_fixed": 2,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "more-text-editing-overview": {
+   "path": "docs/customization/block-editor/more-text-editing-overview.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 11,
+    "images_missing_alt": 2,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 2,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "home-link-block": {
+   "path": "docs/customization/theme-blocks/home-link-block.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 3 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 7,
+    "image_self_links_removed": 3,
+    "internal_links_rewritten": 9,
+    "callouts": 5,
+    "callouts_info": 5,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "next-post-block": {
+   "path": "docs/customization/theme-blocks/next-post-block.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 5 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "self_hosted_videos": 2,
+    "images": 9,
+    "image_self_links_removed": 5,
+    "internal_links_rewritten": 9,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "distraction-free-mode": {
+   "path": "docs/support-guides/dashboard/distraction-free-mode.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1,
+    "images": 1,
+    "internal_links_rewritten": 1,
+    "custom_element_anchors": 1
+   }
+  },
+  "twenty-twenty-three-changelog": {
+   "path": "docs/customization/default-themes/twenty-twenty-three-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 6,
+    "preserved_heading_anchors": 8
+   }
+  },
+  "styles-overview": {
+   "path": "docs/customization/appearance/styles-overview.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "nested_emphasis_unwrapped": 6,
+    "self_hosted_videos": 21,
+    "images": 42,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 9,
+    "preserved_heading_anchors": 4,
+    "callouts": 2,
+    "callouts_info": 2
+   }
+  },
+  "post-author-name-block": {
+   "path": "docs/customization/theme-blocks/post-author-name-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 5,
+    "internal_links_rewritten": 13,
+    "preserved_heading_anchors": 1,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "position-settings-overview": {
+   "path": "docs/customization/appearance/position-settings-overview.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 1,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 4
+   }
+  },
+  "comments-block": {
+   "path": "docs/customization/theme-blocks/comments-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 7,
+    "legacy_support_links_fixed": 8,
+    "internal_links_rewritten": 13,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "submenu-block": {
+   "path": "docs/customization/theme-blocks/submenu-block.md",
+   "warnings": [],
+   "notes": [
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/Screen-Recording-2023-02-10-at-6.05.04-PM.mp4",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/image4-1024x353.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-4.19.27-PM.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-5.54.54-PM.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-6.11.39-PM.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/Screenshot-2023-02-10-at-6.18.52-PM.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/image2-1024x658.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/Screenshot-2023-02-11-at-6.41.37-PM.png",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2023/02/image3-482x1024.png",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 8,
+    "legacy_support_links_fixed": 2,
+    "internal_links_rewritten": 5,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-navigation-link-block": {
+   "path": "docs/customization/theme-blocks/post-navigation-link-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "internal_links_rewritten": 7,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "pagination-block": {
+   "path": "docs/customization/theme-blocks/pagination-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 17,
+    "internal_links_rewritten": 11,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "page-list-block": {
+   "path": "docs/customization/widget-blocks/page-list-block.md",
+   "warnings": [
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh6.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "internal_links_rewritten": 8,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "custom-link-block": {
+   "path": "docs/customization/theme-blocks/custom-link-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 9,
+    "internal_links_rewritten": 10,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "posts-list-block": {
+   "path": "docs/customization/theme-blocks/posts-list-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 7,
+    "callouts": 1,
+    "callouts_warning": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "stack-block": {
+   "path": "docs/customization/design-blocks/stack-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 10,
+    "internal_links_rewritten": 11,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "pocket-casts-embed": {
+   "path": "docs/customization/embed-blocks/pocket-casts-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 9,
+    "small_images_kept_as_html": 2,
+    "internal_links_rewritten": 4,
+    "callouts": 1,
+    "callouts_info": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "row-block": {
+   "path": "docs/customization/design-blocks/row-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 12,
+    "internal_links_rewritten": 13,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-template-block": {
+   "path": "docs/customization/theme-blocks/post-template-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 5,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 10,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comments-title-block": {
+   "path": "docs/customization/theme-blocks/comments-title-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "self_hosted_videos": 1,
+    "images": 8,
+    "internal_links_rewritten": 9,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-comments-form-block": {
+   "path": "docs/customization/theme-blocks/post-comments-form-block.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 3 (see assets/images-manifest.json)",
+    "external images hotlinked from lh4.googleusercontent.com: 2 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 2 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 5,
+    "images": 9,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 9,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-author-block": {
+   "path": "docs/customization/theme-blocks/post-author-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "search-results-title-block": {
+   "path": "docs/customization/theme-blocks/search-results-title-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 2,
+    "images": 11,
+    "internal_links_rewritten": 7,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "amazon-kindle-embed": {
+   "path": "docs/customization/embed-blocks/amazon-kindle-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 3,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "layout-settings-overview": {
+   "path": "docs/customization/appearance/layout-settings-overview.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "videopress": 3,
+    "images": 9,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 10,
+    "callouts": 2,
+    "callouts_info": 2
+   }
+  },
+  "colors-settings-overview": {
+   "path": "docs/customization/block-editor/colors-settings-overview.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 3,
+    "images": 11,
+    "internal_links_rewritten": 5
+   }
+  },
+  "typography-settings-overview": {
+   "path": "docs/customization/block-editor/typography-settings-overview.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "videopress": 3,
+    "images": 14,
+    "internal_links_rewritten": 6,
+    "preserved_heading_anchors": 1,
+    "callouts": 6,
+    "callouts_info": 6
+   }
+  },
+  "twenty-twenty-three": {
+   "path": "docs/customization/default-themes/twenty-twenty-three.md",
+   "warnings": [
+    "external videos hotlinked from wordpress.org: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 17,
+    "version_links_kept_absolute": 2,
+    "internal_links_rewritten": 7
+   }
+  },
+  "border-settings-overview": {
+   "path": "docs/customization/block-editor/border-settings-overview.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 10,
+    "internal_links_rewritten": 8,
+    "callouts": 4,
+    "callouts_info": 4
+   }
+  },
+  "post-author-biography-block": {
+   "path": "docs/customization/theme-blocks/post-author-biography-block.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 9 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "images": 14,
+    "internal_links_rewritten": 6,
+    "callouts": 5,
+    "callouts_info": 5,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-template-block": {
+   "path": "docs/customization/theme-blocks/comment-template-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 8,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 8,
+    "legacy_support_links_fixed": 1,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-edit-link-block": {
+   "path": "docs/customization/theme-blocks/comment-edit-link-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 13,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-reply-link-block": {
+   "path": "docs/customization/theme-blocks/comment-reply-link-block.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 3 (see assets/images-manifest.json)",
+    "external images hotlinked from lh4.googleusercontent.com: 3 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 2 (see assets/images-manifest.json)",
+    "external images hotlinked from lh6.googleusercontent.com: 2 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 10,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 12,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "embed-block": {
+   "path": "docs/customization/embed-blocks/embed-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 5,
+    "internal_links_rewritten": 6,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-content-block": {
+   "path": "docs/customization/theme-blocks/comment-content-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 13,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-pagination-block": {
+   "path": "docs/customization/theme-blocks/comment-pagination-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "images": 17,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 12,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-author-name-block": {
+   "path": "docs/customization/theme-blocks/comment-author-name-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 10,
+    "internal_links_rewritten": 8,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "comment-date-block": {
+   "path": "docs/customization/theme-blocks/comment-date-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'formatting-date-and-time' rewritten to 'customize-date-and-time-format' (via 301)"
+   ],
+   "counts": {
+    "images": 10,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 9,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "read-more-block": {
+   "path": "docs/customization/theme-blocks/read-more-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 17,
+    "images_missing_alt": 1,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 10,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "site-logo-block": {
+   "path": "docs/customization/theme-blocks/site-logo-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 15,
+    "internal_links_rewritten": 7,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "site-title-block": {
+   "path": "docs/customization/theme-blocks/site-title-block.md",
+   "warnings": [
+    "external images hotlinked from lh5.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 12,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 14,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "additional-guide-to-using-the-site-editor": {
+   "path": "docs/customization/appearance/additional-guide-to-using-the-site-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'creating-a-static-front-page' rewritten to 'create-a-static-front-page' (via 301)",
+    "link to old slug 'creating-a-favicon' rewritten to 'create-a-favicon' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "internal_links_rewritten": 5
+   }
+  },
+  "work-with-blocks": {
+   "path": "docs/customization/block-editor/work-with-blocks.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 3,
+    "self_hosted_videos": 1,
+    "images": 20,
+    "images_missing_alt": 3,
+    "internal_links_rewritten": 26,
+    "preserved_heading_anchors": 7,
+    "custom_element_anchors": 1,
+    "callouts": 9,
+    "callouts_info": 9
+   }
+  },
+  "wolfram-embed": {
+   "path": "docs/customization/embed-blocks/wolfram-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "images": 16,
+    "images_missing_alt": 3,
+    "image_self_links_removed": 2,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "site-tagline-block": {
+   "path": "docs/customization/theme-blocks/site-tagline-block.md",
+   "warnings": [
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 2 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 11,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 11,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-content-block": {
+   "path": "docs/customization/theme-blocks/post-content-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 12,
+    "small_images_kept_as_html": 2,
+    "internal_links_rewritten": 13,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "pinterest-embed": {
+   "path": "docs/customization/embed-blocks/pinterest-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "images": 14,
+    "images_missing_alt": 14,
+    "image_self_links_removed": 4,
+    "internal_links_rewritten": 4,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "submit-your-block-pattern-to-the-directory": {
+   "path": "docs/customization/block-editor/submit-your-block-pattern-to-the-directory.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh6.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 13,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 13,
+    "preserved_heading_anchors": 1,
+    "custom_element_anchors": 2
+   }
+  },
+  "post-date-block": {
+   "path": "docs/customization/theme-blocks/post-date-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 2,
+    "images": 11,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 18,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-tags-block": {
+   "path": "docs/customization/theme-blocks/post-tags-block.md",
+   "warnings": [
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 8,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 17,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "categories-block": {
+   "path": "docs/customization/theme-blocks/categories-block.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 2 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 10,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 18,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-excerpt-block": {
+   "path": "docs/customization/theme-blocks/post-excerpt-block.md",
+   "warnings": [
+    "external images hotlinked from lh5.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'excerpt' rewritten to 'what-is-an-excerpt-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 16,
+    "images_missing_alt": 1,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 12,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-title-block": {
+   "path": "docs/customization/theme-blocks/post-title-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "post-featured-image-block": {
+   "path": "docs/customization/theme-blocks/post-featured-image-block.md",
+   "warnings": [
+    "external images hotlinked from lh5.googleusercontent.com: 2 (see assets/images-manifest.json)",
+    "external images hotlinked from lh6.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from private-user-images.githubusercontent.com: 1 (see assets/images-manifest.json)",
+    "external videos hotlinked from private-user-images.githubusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 15,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 12,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "archive-title-block": {
+   "path": "docs/customization/theme-blocks/archive-title-block.md",
+   "warnings": [
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 15,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 14,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "term-description-block": {
+   "path": "docs/customization/theme-blocks/term-description-block.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 2 (see assets/images-manifest.json)",
+    "external images hotlinked from lh4.googleusercontent.com: 2 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 3 (see assets/images-manifest.json)",
+    "external images hotlinked from lh6.googleusercontent.com: 4 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 11,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 9,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "twenty-twenty-two-changelog": {
+   "path": "docs/customization/default-themes/twenty-twenty-two-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 9,
+    "preserved_heading_anchors": 13
+   }
+  },
+  "comparing-patterns-template-parts-and-reusable-blocks": {
+   "path": "docs/customization/appearance/comparing-patterns-template-parts-and-reusable-blocks.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 3,
+    "callouts": 1,
+    "callouts_info": 1,
+    "tables_gfm": 1,
+    "tables_header_inferred_from_bold_row": 1
+   }
+  },
+  "twenty-twenty-two": {
+   "path": "docs/customization/default-themes/twenty-twenty-two.md",
+   "warnings": [
+    "external images hotlinked from lh6.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 5,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 11,
+    "background_colour_dropped": 5
+   }
+  },
+  "dimension-controls-overview": {
+   "path": "docs/customization/block-editor/dimension-controls-overview.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 3,
+    "images": 13,
+    "images_missing_alt": 5,
+    "internal_links_rewritten": 15,
+    "preserved_heading_anchors": 3
+   }
+  },
+  "navigation-block": {
+   "path": "docs/customization/theme-blocks/navigation-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 2,
+    "images": 14,
+    "images_missing_alt": 3,
+    "internal_links_rewritten": 9,
+    "preserved_heading_anchors": 3,
+    "callouts": 8,
+    "callouts_info": 8
+   }
+  },
+  "template-part-block": {
+   "path": "docs/customization/theme-blocks/template-part-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 2,
+    "images": 6,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 7,
+    "preserved_heading_anchors": 2,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "block-themes": {
+   "path": "docs/customization/appearance/block-themes.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)",
+    "link to old slug 'appearance-customize-screen' rewritten to 'customizer' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to 'test-driving-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/debug/test-driving/"
+   ],
+   "counts": {
+    "images": 1,
+    "internal_links_rewritten": 14,
+    "links_to_moved_external": 1,
+    "preserved_heading_anchors": 1
+   }
+  },
+  "site-editor": {
+   "path": "docs/customization/appearance/site-editor.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'block-editor-keyboard-shortcuts' rewritten to 'keyboard-shortcuts-block-editor' (via 301)"
+   ],
+   "counts": {
+    "adjacent_emphasis_merged": 1,
+    "edge_br_removed": 1,
+    "videopress": 3,
+    "self_hosted_videos": 11,
+    "images": 19,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 49,
+    "legacy_support_links_fixed": 3,
+    "preserved_heading_anchors": 5,
+    "callouts": 10,
+    "callouts_info": 10
+   }
+  },
+  "supported-versions": {
+   "path": "docs/wordpress-overview/about-wp/supported-versions.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 1
+   }
+  },
+  "buttons-block": {
+   "path": "docs/customization/design-blocks/buttons-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 17,
+    "internal_links_rewritten": 22,
+    "preserved_heading_anchors": 2,
+    "callouts": 18,
+    "callouts_info": 18,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "block-pattern-directory": {
+   "path": "docs/customization/block-editor/block-pattern-directory.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 4,
+    "internal_links_rewritten": 4,
+    "custom_element_anchors": 1
+   }
+  },
+  "preferences-overview": {
+   "path": "docs/customization/block-editor/preferences-overview.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'settings-sidebar' rewritten to 'page-post-settings-sidebar' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 15,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 8
+   }
+  },
+  "reusable-blocks": {
+   "path": "docs/customization/block-editor/reusable-blocks.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 4,
+    "internal_links_rewritten": 2,
+    "preserved_heading_anchors": 5,
+    "callouts": 1,
+    "callouts_info": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "list-view": {
+   "path": "docs/customization/block-editor/list-view.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1,
+    "images": 9,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 5,
+    "preserved_heading_anchors": 2,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "template-editor": {
+   "path": "docs/customization/block-editor/template-editor.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'settings-sidebar' rewritten to 'page-post-settings-sidebar' (via 301)"
+   ],
+   "counts": {
+    "videopress": 3,
+    "images": 17,
+    "images_missing_alt": 3,
+    "internal_links_rewritten": 25,
+    "preserved_heading_anchors": 7,
+    "custom_element_anchors": 1,
+    "callouts": 7,
+    "callouts_info": 7
+   }
+  },
+  "block-based-widgets-editor": {
+   "path": "docs/support-guides/dashboard/block-based-widgets-editor.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import); guid 63dxpgzD not found in media library"
+   ],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'wordpress-widgets' rewritten to 'manage-wordpress-widgets' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'appearance-widgets-screen' rewritten to 'appearance-widgets-screen-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 2,
+    "images": 2,
+    "internal_links_rewritten": 8
+   }
+  },
+  "query-loop-block": {
+   "path": "docs/customization/theme-blocks/query-loop-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 3,
+    "images": 18,
+    "internal_links_rewritten": 27,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "media-add-new-screen": {
+   "path": "docs/support-guides/dashboard/media-add-new-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 3,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 9
+   }
+  },
+  "edit-media": {
+   "path": "docs/support-guides/media/edit-media.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 6,
+    "internal_links_rewritten": 20
+   }
+  },
+  "media-library-screen": {
+   "path": "docs/support-guides/dashboard/media-library-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 5,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 49
+   }
+  },
+  "customizer": {
+   "path": "docs/support-guides/dashboard/customizer.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 13,
+    "images_missing_alt": 1,
+    "version_links_kept_absolute": 1,
+    "relative_url_made_absolute": 3,
+    "legacy_support_links_fixed": 3,
+    "internal_links_rewritten": 13
+   }
+  },
+  "appearance-menus-screen": {
+   "path": "docs/support-guides/dashboard/appearance-menus-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'appearance-widgets-screen' rewritten to 'appearance-widgets-screen-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 6,
+    "image_self_links_removed": 5,
+    "internal_links_rewritten": 4,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 2,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "work-with-themes": {
+   "path": "docs/customization/appearance/work-with-themes.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to 'test-driving-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/debug/test-driving/",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'ftp-clients' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/ftp/"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 8,
+    "images_missing_alt": 5,
+    "image_self_links_removed": 1,
+    "relative_url_made_absolute": 15,
+    "legacy_support_links_fixed": 11,
+    "internal_links_rewritten": 21,
+    "links_to_moved_external": 3
+   }
+  },
+  "twenty-fifteen": {
+   "path": "docs/customization/default-themes/twenty-fifteen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 9,
+    "images_missing_alt": 8,
+    "image_self_links_removed": 7,
+    "internal_links_rewritten": 2
+   }
+  },
+  "settings-reading-screen": {
+   "path": "docs/support-guides/dashboard/settings-reading-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'creating-a-static-front-page' rewritten to 'create-a-static-front-page' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "images": 1,
+    "relative_url_made_absolute": 15,
+    "legacy_support_links_fixed": 15,
+    "internal_links_rewritten": 15
+   }
+  },
+  "create-a-static-front-page": {
+   "path": "docs/support-guides/publishing/create-a-static-front-page.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 2,
+    "images": 2,
+    "internal_links_rewritten": 1
+   }
+  },
+  "site-health-screen": {
+   "path": "docs/support-guides/dashboard/site-health-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to 'configuring-automatic-background-updates' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/upgrading/",
+    "link to 'debugging-in-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "edge_br_removed": 1,
+    "images": 16,
+    "internal_links_rewritten": 14,
+    "links_to_moved_external": 2
+   }
+  },
+  "trackbacks-and-pingbacks": {
+   "path": "docs/support-guides/publishing/trackbacks-and-pingbacks.md",
+   "warnings": [
+    "external images hotlinked from support.files.wordpress.com: 3 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 4,
+    "internal_links_rewritten": 1
+   }
+  },
+  "vimeo-embed": {
+   "path": "docs/customization/embed-blocks/vimeo-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 15,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "wordpress-versions": {
+   "path": "docs/wordpress-overview/about-wp/wordpress-versions.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 3,
+    "version_links_kept_absolute": 696,
+    "custom_element_anchors": 1,
+    "background_colour_dropped": 1,
+    "tables_gfm": 23
+   }
+  },
+  "keyboard-shortcuts-block-editor": {
+   "path": "docs/support-guides/dashboard/keyboard-shortcuts-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "bare relative link 'create-group-block-from-selected-multiple-blocks' treated as same-page anchor #create-group-block-from-selected-multiple-blocks"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 8,
+    "self_hosted_videos": 3,
+    "images": 28,
+    "internal_links_rewritten": 4,
+    "bare_fragment_links_fixed": 1,
+    "custom_element_anchors": 28,
+    "tables_gfm": 11,
+    "tables_without_header_row": 10,
+    "tables_header_inferred_from_bold_row": 1
+   }
+  },
+  "twenty-twenty-one-changelog": {
+   "path": "docs/customization/default-themes/twenty-twenty-one-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 9,
+    "preserved_heading_anchors": 20
+   }
+  },
+  "where-to-find-wordpress-help": {
+   "path": "docs/wordpress-overview/where-to-start/where-to-find-wordpress-help.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "callouts": 2,
+    "callouts_alert": 2
+   }
+  },
+  "twenty-twenty-one": {
+   "path": "docs/customization/default-themes/twenty-twenty-one.md",
+   "warnings": [],
+   "notes": [
+    "contained <details> (emitted as raw HTML details/summary)"
+   ],
+   "counts": {
+    "edge_br_removed": 4,
+    "images": 20,
+    "image_self_links_removed": 5,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 4,
+    "background_colour_dropped": 10
+   }
+  },
+  "more-options": {
+   "path": "docs/customization/block-editor/more-options.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 6,
+    "images": 9,
+    "internal_links_rewritten": 3,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "search-block": {
+   "path": "docs/customization/widget-blocks/search-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 20,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 12,
+    "legacy_support_links_fixed": 5,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "page-post-settings-sidebar": {
+   "path": "docs/customization/block-editor/page-post-settings-sidebar.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'sticky-posts' rewritten to 'sticky-posts-classic-editor' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "images": 25,
+    "internal_links_rewritten": 16,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "social-icons": {
+   "path": "docs/customization/widget-blocks/social-icons.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 18,
+    "internal_links_rewritten": 16,
+    "preserved_heading_anchors": 2,
+    "callouts": 11,
+    "callouts_info": 11,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "tumblr-embed": {
+   "path": "docs/customization/embed-blocks/tumblr-embed.md",
+   "warnings": [
+    "external images hotlinked from lh5.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to 'importing-content' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/import/"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 14,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 4,
+    "links_to_moved_external": 1,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "group-block": {
+   "path": "docs/customization/design-blocks/group-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 14,
+    "internal_links_rewritten": 10,
+    "preserved_heading_anchors": 1,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "imgur-embed": {
+   "path": "docs/customization/embed-blocks/imgur-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 16,
+    "images_missing_alt": 2,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 5,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "block-pattern": {
+   "path": "docs/customization/block-editor/block-pattern.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "self_hosted_videos": 3,
+    "images": 7,
+    "internal_links_rewritten": 6,
+    "preserved_heading_anchors": 4,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "reddit-embed": {
+   "path": "docs/customization/embed-blocks/reddit-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "images": 18,
+    "internal_links_rewritten": 6,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "cloudup-embed": {
+   "path": "docs/customization/embed-blocks/cloudup-embed.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "edge_br_removed": 4,
+    "images": 15,
+    "internal_links_rewritten": 3,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "how-to-use-the-preview-function": {
+   "path": "docs/customization/block-editor/how-to-use-the-preview-function.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "videopress": 2,
+    "images": 7,
+    "small_images_kept_as_html": 2,
+    "internal_links_rewritten": 4
+   }
+  },
+  "moving-blocks": {
+   "path": "docs/customization/block-editor/moving-blocks.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 3,
+    "internal_links_rewritten": 2,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "tag-cloud-block": {
+   "path": "docs/customization/widget-blocks/tag-cloud-block.md",
+   "warnings": [
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "internal_links_rewritten": 10,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "block-directory": {
+   "path": "docs/customization/block-editor/block-directory.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import); guid RpDhdRqj not found in media library"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 5,
+    "internal_links_rewritten": 1,
+    "preserved_heading_anchors": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "videopress-embed": {
+   "path": "docs/customization/embed-blocks/videopress-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 14,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "speaker-deck-embed": {
+   "path": "docs/customization/embed-blocks/speaker-deck-embed.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 9 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 13,
+    "internal_links_rewritten": 3,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "scribd-embed": {
+   "path": "docs/customization/embed-blocks/scribd-embed.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "images": 16,
+    "internal_links_rewritten": 3,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "dailymotion-embed": {
+   "path": "docs/customization/embed-blocks/dailymotion-embed.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 13,
+    "internal_links_rewritten": 3,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "screencast-block": {
+   "path": "docs/customization/embed-blocks/screencast-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "small_images_kept_as_html": 2,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "wordpress-tv-embed-block": {
+   "path": "docs/customization/embed-blocks/wordpress-tv-embed-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import); guid qhbfoKqs not found in media library"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 16,
+    "internal_links_rewritten": 5,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "plugins-themes-auto-updates": {
+   "path": "docs/technical-guides/maintenance/plugins-themes-auto-updates.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 6,
+    "images_missing_alt": 6,
+    "image_self_links_removed": 5,
+    "version_links_kept_absolute": 1,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "issuu-embed": {
+   "path": "docs/customization/embed-blocks/issuu-embed.md",
+   "warnings": [],
+   "notes": [
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2022/10/issuu-embedded-edited.jpg",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2022/10/issuu-embedded-edited-1024x683.jpg",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 15,
+    "images": 15,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "tiktok-embed": {
+   "path": "docs/customization/embed-blocks/tiktok-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 14,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "mixcloud-embed": {
+   "path": "docs/customization/embed-blocks/mixcloud-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "self_hosted_videos": 1,
+    "images": 22,
+    "internal_links_rewritten": 5,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "reverbnation-embed": {
+   "path": "docs/customization/embed-blocks/reverbnation-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 1,
+    "edge_br_removed": 4,
+    "images": 16,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "crowdsignal-embed": {
+   "path": "docs/customization/embed-blocks/crowdsignal-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 17,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "animoto-embed": {
+   "path": "docs/customization/embed-blocks/animoto-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 14,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "smugmug-embed": {
+   "path": "docs/customization/embed-blocks/smugmug-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 15,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "flickr-embed": {
+   "path": "docs/customization/embed-blocks/flickr-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 11,
+    "self_hosted_videos": 1,
+    "images": 16,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "kickstarter-embed": {
+   "path": "docs/customization/embed-blocks/kickstarter-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 2,
+    "self_hosted_videos": 1,
+    "images": 14,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "slideshare-embed": {
+   "path": "docs/customization/embed-blocks/slideshare-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 12,
+    "internal_links_rewritten": 4,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "soundcloud-embed": {
+   "path": "docs/customization/embed-blocks/soundcloud-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 3,
+    "images": 19,
+    "internal_links_rewritten": 5,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "spotify-embed": {
+   "path": "docs/customization/embed-blocks/spotify-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 20,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "instagram-embed": {
+   "path": "docs/customization/embed-blocks/instagram-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 15,
+    "images_missing_alt": 2,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 2,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "ted-embed": {
+   "path": "docs/customization/embed-blocks/ted-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 13,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "wordpress-embed": {
+   "path": "docs/customization/embed-blocks/wordpress-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 15,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "calendar-block": {
+   "path": "docs/customization/widget-blocks/calendar-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 7,
+    "images_missing_alt": 4,
+    "internal_links_rewritten": 6,
+    "callouts": 6,
+    "callouts_info": 6,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "twitter-embed": {
+   "path": "docs/customization/embed-blocks/twitter-embed.md",
+   "warnings": [
+    "contained x embed (now a bare oEmbed URL; check provider support)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 6,
+    "images": 16,
+    "images_missing_alt": 2,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "youtube-embed": {
+   "path": "docs/customization/embed-blocks/youtube-embed.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "nested_emphasis_unwrapped": 18,
+    "images": 15,
+    "small_images_kept_as_html": 1,
+    "images_missing_alt": 4,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "facebook-embed": {
+   "path": "docs/customization/embed-blocks/facebook-embed.md",
+   "warnings": [
+    "external images hotlinked from lh6.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 15,
+    "internal_links_rewritten": 3,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "rss-block": {
+   "path": "docs/customization/widget-blocks/rss-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to 'wordpress-feeds' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/feeds/"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 13,
+    "images_missing_alt": 1,
+    "small_images_kept_as_html": 2,
+    "internal_links_rewritten": 6,
+    "links_to_moved_external": 1,
+    "preserved_heading_anchors": 2,
+    "callouts": 5,
+    "callouts_info": 5,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "twenty-twenty-changelog": {
+   "path": "docs/customization/default-themes/twenty-twenty-changelog.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "version_links_kept_absolute": 9,
+    "preserved_heading_anchors": 23
+   }
+  },
+  "twenty-twenty": {
+   "path": "docs/customization/default-themes/twenty-twenty.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 6,
+    "images_missing_alt": 5,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 2
+   }
+  },
+  "inserting-images-into-posts-and-pages-block-editor": {
+   "path": "docs/support-guides/media/inserting-images-into-posts-and-pages-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "internal_links_rewritten": 13,
+    "callouts": 1,
+    "callouts_info": 1,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "adding-a-new-block": {
+   "path": "docs/customization/block-editor/adding-a-new-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 9,
+    "images": 8,
+    "internal_links_rewritten": 14,
+    "preserved_heading_anchors": 6,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "page-jumps": {
+   "path": "docs/customization/block-editor/page-jumps.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 2,
+    "preserved_heading_anchors": 1
+   }
+  },
+  "the-wordpress-gallery-block-editor": {
+   "path": "docs/support-guides/media/the-wordpress-gallery-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'the-wordpress-gallery' rewritten to 'the-wordpress-gallery-classic-editor' (via 301)",
+    "link to old slug 'inserting-images-into-posts-and-pages' rewritten to 'inserting-images-into-posts-and-pages-classic' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 9,
+    "image_self_links_removed": 1,
+    "images_missing_alt": 8,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 2,
+    "internal_links_rewritten": 2
+   }
+  },
+  "what-is-an-excerpt-block-editor": {
+   "path": "docs/support-guides/publishing/what-is-an-excerpt-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'excerpt' rewritten to 'what-is-an-excerpt-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "content-visibility-block-editor": {
+   "path": "docs/support-guides/publishing/content-visibility-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'content-visibility' rewritten to 'content-visibility-classic-editor' (via 301)",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)"
+   ],
+   "counts": {
+    "images": 4,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 2,
+    "internal_links_rewritten": 2
+   }
+  },
+  "first-steps-with-wordpress-block-editor": {
+   "path": "docs/wordpress-overview/where-to-start/first-steps-with-wordpress-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to 'how-to-install-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/before-install/howto-install/",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)",
+    "link to old slug 'wordpress-widgets' rewritten to 'manage-wordpress-widgets' (via 301)",
+    "link to old slug 'administering-your-blog' rewritten to 'administer-your-blog' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'comment-spam' rewritten to 'understand-comment-spam' (via 301)",
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to old slug 'managing-plugins' rewritten to 'manage-plugins' (via 301)",
+    "link to 'wordpress-features' points to moved page https://wordpress.org/about/features/",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'finding-wordpress-help' rewritten to 'where-to-find-wordpress-help' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 9,
+    "relative_url_made_absolute": 51,
+    "legacy_support_links_fixed": 48,
+    "internal_links_rewritten": 50,
+    "links_to_moved_external": 2,
+    "callouts": 2,
+    "callouts_info": 2
+   }
+  },
+  "why-should-i-use-https": {
+   "path": "docs/technical-guides/security/why-should-i-use-https.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1
+   }
+  },
+  "wordpress-site-maintenance": {
+   "path": "docs/technical-guides/maintenance/wordpress-site-maintenance.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to 'phpmyadmin' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+    "link to 'wordpress-backups' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/",
+    "link to 'backing-up-your-database' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/database/",
+    "link to 'restoring-your-database-from-backup' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 10,
+    "legacy_support_links_fixed": 5,
+    "internal_links_rewritten": 5,
+    "links_to_moved_external": 4,
+    "callouts": 2,
+    "callouts_alert": 2,
+    "tables_gfm": 1,
+    "tables_without_header_row": 1
+   }
+  },
+  "wordpress-housekeeping": {
+   "path": "docs/technical-guides/maintenance/wordpress-housekeeping.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2,
+    "image_self_links_removed": 2,
+    "internal_links_rewritten": 13
+   }
+  },
+  "table-block": {
+   "path": "docs/customization/text-blocks/table-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 15,
+    "images_missing_alt": 1,
+    "legacy_support_links_fixed": 2,
+    "internal_links_rewritten": 13,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "faq-i-make-changes-and-nothing-happens": {
+   "path": "docs/wordpress-overview/faqs/faq-i-make-changes-and-nothing-happens.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "callouts": 1,
+    "callouts_alert": 1
+   }
+  },
+  "appearance-themes-screen": {
+   "path": "docs/support-guides/dashboard/appearance-themes-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 5,
+    "images_missing_alt": 5,
+    "relative_url_made_absolute": 2
+   }
+  },
+  "settings-privacy-screen": {
+   "path": "docs/support-guides/dashboard/settings-privacy-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 3,
+    "images_missing_alt": 3
+   }
+  },
+  "verse-block": {
+   "path": "docs/customization/text-blocks/verse-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 6,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 12,
+    "callouts": 12,
+    "callouts_info": 12,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "latest-posts-block": {
+   "path": "docs/customization/widget-blocks/latest-posts-block.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 8 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 16,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 10,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "latest-comments-block": {
+   "path": "docs/customization/widget-blocks/latest-comments-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 9,
+    "image_self_links_removed": 1,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 8,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "archives-block": {
+   "path": "docs/customization/widget-blocks/archives-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 13,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 9,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "categories-list-block": {
+   "path": "docs/customization/widget-blocks/categories-list-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 10,
+    "small_images_kept_as_html": 1,
+    "image_self_links_removed": 4,
+    "internal_links_rewritten": 9,
+    "background_colour_dropped": 1,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "media-text-block": {
+   "path": "docs/customization/media-blocks/media-text-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 14,
+    "image_self_links_removed": 2,
+    "internal_links_rewritten": 11,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "spacer-block": {
+   "path": "docs/customization/design-blocks/spacer-block.md",
+   "warnings": [
+    "external images hotlinked from user-images.githubusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 9,
+    "small_images_kept_as_html": 3,
+    "internal_links_rewritten": 7,
+    "legacy_support_links_fixed": 1,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "shortcode-block": {
+   "path": "docs/customization/widget-blocks/shortcode-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 3,
+    "self_hosted_videos": 1,
+    "images": 6,
+    "image_self_links_removed": 3,
+    "internal_links_rewritten": 5,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "separator-block": {
+   "path": "docs/customization/design-blocks/separator-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 9,
+    "image_self_links_removed": 2,
+    "internal_links_rewritten": 7,
+    "callouts": 7,
+    "callouts_info": 7,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "page-break-block": {
+   "path": "docs/customization/design-blocks/page-break-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 6,
+    "image_self_links_removed": 4,
+    "internal_links_rewritten": 5,
+    "preserved_heading_anchors": 2,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "more-block": {
+   "path": "docs/customization/design-blocks/more-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'excerpt' rewritten to 'what-is-an-excerpt-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 11,
+    "image_self_links_removed": 4,
+    "internal_links_rewritten": 6,
+    "callouts": 3,
+    "callouts_info": 3,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "columns-block": {
+   "path": "docs/customization/design-blocks/columns-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 16,
+    "images_missing_alt": 1,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 19,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "button-block": {
+   "path": "docs/customization/design-blocks/button-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "pullquote-block": {
+   "path": "docs/customization/text-blocks/pullquote-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 2,
+    "self_hosted_videos": 1,
+    "images": 7,
+    "internal_links_rewritten": 12,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "preformatted-block": {
+   "path": "docs/customization/text-blocks/preformatted-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 10,
+    "images_missing_alt": 7,
+    "internal_links_rewritten": 12,
+    "callouts": 9,
+    "callouts_info": 9,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "custom-html": {
+   "path": "docs/customization/widget-blocks/custom-html.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 5,
+    "internal_links_rewritten": 6,
+    "preserved_heading_anchors": 1,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "code-block": {
+   "path": "docs/customization/text-blocks/code-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 10,
+    "internal_links_rewritten": 12,
+    "legacy_support_links_fixed": 3,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "classic-block": {
+   "path": "docs/customization/text-blocks/classic-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)"
+   ],
+   "counts": {
+    "images": 3,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 4,
+    "callouts": 2,
+    "callouts_info": 2,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "file-block": {
+   "path": "docs/customization/media-blocks/file-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 2,
+    "images": 19,
+    "image_self_links_removed": 2,
+    "internal_links_rewritten": 11,
+    "callouts": 8,
+    "callouts_info": 8,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "video-block": {
+   "path": "docs/customization/media-blocks/video-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 15,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 6,
+    "callouts": 5,
+    "callouts_info": 5,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "cover-block": {
+   "path": "docs/customization/media-blocks/cover-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "videopress": 1,
+    "self_hosted_videos": 9,
+    "images": 18,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 10,
+    "preserved_heading_anchors": 1,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "audio-block": {
+   "path": "docs/customization/media-blocks/audio-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 11,
+    "internal_links_rewritten": 6,
+    "preserved_heading_anchors": 2,
+    "callouts": 4,
+    "callouts_info": 4,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "quote-block": {
+   "path": "docs/customization/text-blocks/quote-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "images": 11,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 12,
+    "callouts": 10,
+    "callouts_info": 10,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "list-block": {
+   "path": "docs/customization/text-blocks/list-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 2,
+    "images": 19,
+    "small_images_kept_as_html": 1,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 14,
+    "callouts": 11,
+    "callouts_info": 11,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "gallery-block": {
+   "path": "docs/customization/media-blocks/gallery-block.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'inserting-images-into-posts-and-pages' rewritten to 'inserting-images-into-posts-and-pages-classic' (via 301)"
+   ],
+   "counts": {
+    "videopress": 2,
+    "self_hosted_videos": 3,
+    "images": 16,
+    "images_missing_alt": 2,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 16,
+    "callouts": 11,
+    "callouts_info": 11,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "heading-block": {
+   "path": "docs/customization/text-blocks/heading-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "self_hosted_videos": 1,
+    "images": 10,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 13,
+    "callouts": 11,
+    "callouts_info": 11,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "wordpress-block-editor": {
+   "path": "docs/support-guides/dashboard/wordpress-block-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'settings-sidebar' rewritten to 'page-post-settings-sidebar' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)",
+    "link to old slug 'block-editor-keyboard-shortcuts' rewritten to 'keyboard-shortcuts-block-editor' (via 301)",
+    "link to old slug 'adding-content-with-blocks' rewritten to 'work-with-blocks' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 2,
+    "self_hosted_videos": 5,
+    "images": 10,
+    "internal_links_rewritten": 30,
+    "preserved_heading_anchors": 1,
+    "callouts": 3,
+    "callouts_info": 3
+   }
+  },
+  "paragraph-block": {
+   "path": "docs/customization/text-blocks/paragraph-block.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
+   ],
+   "counts": {
+    "self_hosted_videos": 1,
+    "images": 7,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 14,
+    "preserved_heading_anchors": 1,
+    "callouts": 12,
+    "callouts_info": 12,
+    "first_paragraph_is_nav_link": 1
+   }
+  },
+  "blocks-list": {
+   "path": "docs/customization/block-editor/blocks-list.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'working-with-blocks' rewritten to 'work-with-blocks' (via 301)",
+    "link to old slug 'pocket-casts-embed-block' rewritten to 'pocket-casts-embed' (via 301)",
+    "link to old slug 'amazon-kindle-embed-block' rewritten to 'amazon-kindle-embed' (via 301)"
+   ],
+   "counts": {
+    "images": 7,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 142,
+    "category_links_rewritten": 2,
+    "preserved_heading_anchors": 6,
+    "callouts": 2,
+    "callouts_info": 2,
+    "tables_gfm": 1
+   }
+  },
+  "understand-comment-spam": {
+   "path": "docs/support-guides/publishing/understand-comment-spam.md",
+   "warnings": [],
+   "notes": [
+    "contained <details> (emitted as raw HTML details/summary)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 2
+   }
+  },
+  "comment-moderation": {
+   "path": "docs/support-guides/publishing/comment-moderation.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'comment-spam' rewritten to 'understand-comment-spam' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "images": 4,
+    "relative_url_made_absolute": 5,
+    "legacy_support_links_fixed": 5,
+    "internal_links_rewritten": 12
+   }
+  },
+  "use-image-and-file-attachments": {
+   "path": "docs/support-guides/media/use-image-and-file-attachments.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 14
+   }
+  },
+  "protect-posts-with-password": {
+   "path": "docs/support-guides/publishing/protect-posts-with-password.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'custom-fields' rewritten to 'assign-custom-fields' (via 301)"
+   ],
+   "counts": {
+    "code_links_swapped": 1,
+    "images": 3,
+    "image_self_links_removed": 2,
+    "relative_url_made_absolute": 4,
+    "legacy_support_links_fixed": 4,
+    "internal_links_rewritten": 4
+   }
+  },
+  "use-character-entities": {
+   "path": "docs/support-guides/publishing/use-character-entities.md",
+   "warnings": [
+    "preformatted block contained links (URLs lost inside code fence)"
+   ],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 5,
+    "legacy_support_links_fixed": 5,
+    "internal_links_rewritten": 5,
+    "callouts": 3,
+    "callouts_info": 3,
+    "tables_gfm": 1,
+    "tables_without_header_row": 1
+   }
+  },
+  "what-are-emoji": {
+   "path": "docs/support-guides/publishing/what-are-emoji.md",
+   "warnings": [],
+   "notes": [
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2019/02/714px-AndroidKeyboard.jpg",
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2019/02/721px-AndroidKeyboard2.jpg",
+    "link to old slug 'using-smilies' rewritten to 'what-are-smilies' (via 301)"
+   ],
+   "counts": {
+    "images": 2,
+    "image_self_links_removed": 2,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "how-wordpress-processes-post-content": {
+   "path": "docs/support-guides/publishing/how-wordpress-processes-post-content.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'using-smilies' rewritten to 'what-are-smilies' (via 301)"
+   ],
+   "counts": {
+    "code_links_swapped": 1,
+    "internal_links_rewritten": 2,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1
+   }
+  },
+  "revisions": {
+   "path": "docs/support-guides/publishing/revisions.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import)"
+   ],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "videopress": 1,
+    "images": 4,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "tools-export-screen": {
+   "path": "docs/support-guides/dashboard/tools-export-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 1
+   }
+  },
+  "become-a-wordpress-contributor": {
+   "path": "docs/wordpress-overview/about-wp/become-a-wordpress-contributor.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {}
+  },
+  "tools-network-screen": {
+   "path": "docs/support-guides/dashboard/tools-network-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to 'network-admin' points to moved page https://developer.wordpress.org/advanced-administration/multisite/admin/"
+   ],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1,
+    "links_to_moved_external": 1
+   }
+  },
+  "tools-erase-personal-data-screen": {
+   "path": "docs/support-guides/dashboard/tools-erase-personal-data-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 6,
+    "images_missing_alt": 6,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "tools-export-personal-data-screen": {
+   "path": "docs/support-guides/dashboard/tools-export-personal-data-screen.md",
+   "warnings": [
+    "external images hotlinked from codex.wordpress.org: 2 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 8,
+    "images_missing_alt": 6,
+    "image_self_links_removed": 2
+   }
+  },
+  "tools-import-screen": {
+   "path": "docs/support-guides/dashboard/tools-import-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to 'importing-content' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/import/"
+   ],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 1,
+    "links_to_moved_external": 1
+   }
+  },
+  "tools-screen": {
+   "path": "docs/support-guides/dashboard/tools-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "users-screen": {
+   "path": "docs/support-guides/dashboard/users-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 1,
+    "relative_url_made_absolute": 1
+   }
+  },
+  "users-add-new-screen": {
+   "path": "docs/support-guides/dashboard/users-add-new-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "plugins-add-new-screen": {
+   "path": "docs/support-guides/dashboard/plugins-add-new-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "plugins-screen": {
+   "path": "docs/support-guides/dashboard/plugins-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2,
+    "relative_url_made_absolute": 2
+   }
+  },
+  "appearance-theme-file-editor-screen": {
+   "path": "docs/support-guides/dashboard/appearance-theme-file-editor-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "image_self_links_removed": 1
+   }
+  },
+  "appearance-widgets-screen-classic-editor": {
+   "path": "docs/support-guides/dashboard/appearance-widgets-screen-classic-editor.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "comments-screen": {
+   "path": "docs/support-guides/dashboard/comments-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2
+   }
+  },
+  "posts-tags-screen": {
+   "path": "docs/support-guides/dashboard/posts-tags-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "internal_links_rewritten": 1,
+    "relative_url_made_absolute": 1,
+    "callouts": 1,
+    "callouts_tip": 1
+   }
+  },
+  "dashboard-updates-screen": {
+   "path": "docs/support-guides/dashboard/dashboard-updates-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to 'upgrading-wordpress-extended-instructions' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/upgrading/"
+   ],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 3,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1,
+    "links_to_moved_external": 1,
+    "callouts": 16,
+    "callouts_info": 15,
+    "callouts_alert": 1
+   }
+  },
+  "posts-categories-screen": {
+   "path": "docs/support-guides/dashboard/posts-categories-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "relative_url_made_absolute": 2
+   }
+  },
+  "toolbar": {
+   "path": "docs/support-guides/dashboard/toolbar.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "relative_url_made_absolute": 4,
+    "legacy_support_links_fixed": 4,
+    "internal_links_rewritten": 4
+   }
+  },
+  "wordpress-semantics": {
+   "path": "docs/wordpress-overview/where-to-start/wordpress-semantics.md",
+   "warnings": [
+    "unresolved article link: https://wordpress.org/support/article/wordpress-lessons/"
+   ],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'custom-fields' rewritten to 'assign-custom-fields' (via 301)",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to 'post-formats' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/post-formats/",
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to old slug 'administering-your-blog' rewritten to 'administer-your-blog' (via 301)",
+    "link to 'wordpress-features' points to moved page https://wordpress.org/about/features/"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 36,
+    "legacy_support_links_fixed": 33,
+    "internal_links_rewritten": 34,
+    "links_to_moved_external": 2
+   }
+  },
+  "twenty-nineteen": {
+   "path": "docs/customization/default-themes/twenty-nineteen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 6,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 2
+   }
+  },
+  "difference-between-wordpress-org-and-wordpress-com": {
+   "path": "docs/wordpress-overview/about-wp/difference-between-wordpress-org-and-wordpress-com.md",
+   "warnings": [
+    "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import); guid FmtB9Wcw not found in media library"
+   ],
+   "notes": [],
+   "counts": {
+    "videopress": 1
+   }
+  },
+  "roles-and-capabilities": {
+   "path": "docs/support-guides/dashboard/roles-and-capabilities.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'managing-plugins' rewritten to 'manage-plugins' (via 301)",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)",
+    "link to 'create-a-network' points to moved page https://developer.wordpress.org/advanced-administration/multisite/create-network/",
+    "link to old slug 'appearance-customize-screen' rewritten to 'customizer' (via 301)",
+    "link to 'multisite-network-administration' points to moved page https://developer.wordpress.org/advanced-administration/multisite/administration/"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 45,
+    "legacy_support_links_fixed": 43,
+    "internal_links_rewritten": 43,
+    "links_to_moved_external": 2,
+    "callouts": 1,
+    "callouts_info": 1,
+    "tables_gfm": 2
+   }
+  },
+  "wordpress-privacy": {
+   "path": "docs/technical-guides/security/wordpress-privacy.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {}
+  },
+  "create-a-search-page": {
+   "path": "docs/support-guides/publishing/create-a-search-page.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "self_hosted_videos": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "wordpress-glossary": {
+   "path": "docs/wordpress-overview/where-to-start/wordpress-glossary.md",
+   "warnings": [
+    "external images hotlinked from codex.wordpress.org: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "preformatted block contained bold/italic (formatting dropped in fence)",
+    "link to old slug 'how-to-use-gravatars' rewritten to 'use-gravatars' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'editing-files' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/edit-files/",
+    "link to 'create-a-network' points to moved page https://developer.wordpress.org/advanced-administration/multisite/create-network/"
+   ],
+   "counts": {
+    "images": 1,
+    "image_self_links_removed": 1,
+    "relative_url_made_absolute": 5,
+    "legacy_support_links_fixed": 6,
+    "internal_links_rewritten": 19,
+    "links_to_moved_external": 3,
+    "preserved_heading_anchors": 2,
+    "callouts": 1,
+    "callouts_info": 1,
+    "tables_gfm": 2
+   }
+  },
+  "introduction-to-plugins": {
+   "path": "docs/customization/appearance/introduction-to-plugins.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {}
+  },
+  "learn-about-wordpress-and-version-history": {
+   "path": "docs/wordpress-overview/about-wp/learn-about-wordpress-and-version-history.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "nested_emphasis_unwrapped": 15,
+    "version_links_kept_absolute": 51,
+    "relative_url_made_absolute": 2
+   }
+  },
+  "customize-permalinks": {
+   "path": "docs/support-guides/publishing/customize-permalinks.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 1 (see assets/images-manifest.json)",
+    "external images hotlinked from lh4.googleusercontent.com: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 2,
+    "preserved_heading_anchors": 4
+   }
+  },
+  "faq-work-with-wordpress": {
+   "path": "docs/wordpress-overview/faqs/faq-work-with-wordpress.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'formatting-date-and-time' rewritten to 'customize-date-and-time-format' (via 301)",
+    "link to old slug 'managing-plugins' rewritten to 'manage-plugins' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to 'phpmyadmin' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+    "link to old slug 'inserting-images-into-posts-and-pages' rewritten to 'inserting-images-into-posts-and-pages-classic' (via 301)",
+    "link to old slug 'using-smilies' rewritten to 'what-are-smilies' (via 301)",
+    "link to 'editing-wp-config-php' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/wp-config/",
+    "link to 'importing-content' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/import/"
+   ],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 36,
+    "legacy_support_links_fixed": 30,
+    "internal_links_rewritten": 31,
+    "links_to_moved_external": 6
+   }
+  },
+  "use-images": {
+   "path": "docs/support-guides/media/use-images.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 10
+   }
+  },
+  "content-visibility-classic-editor": {
+   "path": "docs/support-guides/publishing/content-visibility-classic-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)"
+   ],
+   "counts": {
+    "images": 4,
+    "image_self_links_removed": 4,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "posts-screen": {
+   "path": "docs/support-guides/dashboard/posts-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "image_self_links_removed": 1,
+    "internal_links_rewritten": 13,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 2
+   }
+  },
+  "use-automated-installation": {
+   "path": "docs/technical-guides/installation/use-automated-installation.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 3,
+    "image_self_links_removed": 2
+   }
+  },
+  "introduction-to-blogging": {
+   "path": "docs/wordpress-overview/where-to-start/introduction-to-blogging.md",
+   "warnings": [
+    "unresolved article link: https://wordpress.org/support/article/weblog-client/"
+   ],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'wordpress-features' points to moved page https://wordpress.org/about/features/"
+   ],
+   "counts": {
+    "legacy_support_links_fixed": 5,
+    "internal_links_rewritten": 9,
+    "links_to_moved_external": 1
+   }
+  },
+  "what-is-an-excerpt-classic-editor": {
+   "path": "docs/support-guides/publishing/what-is-an-excerpt-classic-editor.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 1
+   }
+  },
+  "sticky-posts-classic-editor": {
+   "path": "docs/support-guides/publishing/sticky-posts-classic-editor.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 1,
+    "image_self_links_removed": 1
+   }
+  },
+  "write-code-in-your-posts-classic-editor": {
+   "path": "docs/support-guides/publishing/write-code-in-your-posts-classic-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'installing-wordpress-in-your-language' points to moved page https://developer.wordpress.org/advanced-administration/before-install/in-your-language/"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 5,
+    "legacy_support_links_fixed": 4,
+    "internal_links_rewritten": 4,
+    "links_to_moved_external": 1
+   }
+  },
+  "customize-date-and-time-format": {
+   "path": "docs/support-guides/publishing/customize-date-and-time-format.md",
+   "warnings": [
+    "complex table kept as raw HTML (rowspan/colspan or block content in cells)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "relative_url_made_absolute": 4,
+    "legacy_support_links_fixed": 4,
+    "internal_links_rewritten": 4,
+    "tables_raw_html": 1
+   }
+  },
+  "the-wordpress-gallery-classic-editor": {
+   "path": "docs/support-guides/media/the-wordpress-gallery-classic-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'inserting-images-into-posts-and-pages' rewritten to 'inserting-images-into-posts-and-pages-classic' (via 301)"
+   ],
+   "counts": {
+    "images": 8,
+    "image_self_links_removed": 8,
+    "internal_links_rewritten": 2,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1
+   }
+  },
+  "settings-permalinks-screen": {
+   "path": "docs/support-guides/dashboard/settings-permalinks-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'ftp-clients' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/ftp/"
+   ],
+   "counts": {
+    "edge_br_removed": 5,
+    "images": 1,
+    "image_self_links_removed": 1,
+    "relative_url_made_absolute": 12,
+    "legacy_support_links_fixed": 11,
+    "internal_links_rewritten": 12,
+    "links_to_moved_external": 1
+   }
+  },
+  "inserting-images-into-posts-and-pages-classic": {
+   "path": "docs/support-guides/media/inserting-images-into-posts-and-pages-classic.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 8,
+    "image_self_links_removed": 8,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 10
+   }
+  },
+  "settings-media-screen": {
+   "path": "docs/support-guides/dashboard/settings-media-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 1,
+    "images_missing_alt": 1,
+    "internal_links_rewritten": 8
+   }
+  },
+  "reset-your-password": {
+   "path": "docs/support-guides/dashboard/reset-your-password.md",
+   "warnings": [],
+   "notes": [
+    "link to 'phpmyadmin' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/"
+   ],
+   "counts": {
+    "images": 4,
+    "image_self_links_removed": 4,
+    "relative_url_made_absolute": 1,
+    "links_to_moved_external": 1
+   }
+  },
+  "settings-discussion-screen": {
+   "path": "docs/support-guides/dashboard/settings-discussion-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 5,
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 10,
+    "legacy_support_links_fixed": 10,
+    "internal_links_rewritten": 10
+   }
+  },
+  "pages-add-new-screen": {
+   "path": "docs/support-guides/publishing/pages-add-new-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "relative_url_made_absolute": 4,
+    "legacy_support_links_fixed": 4,
+    "internal_links_rewritten": 4
+   }
+  },
+  "settings-general-screen": {
+   "path": "docs/support-guides/dashboard/settings-general-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to 'giving-wordpress-its-own-directory' points to moved page https://developer.wordpress.org/advanced-administration/server/wordpress-in-directory/",
+    "link to old slug 'formatting-date-and-time' rewritten to 'customize-date-and-time-format' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "relative_url_made_absolute": 14,
+    "legacy_support_links_fixed": 13,
+    "internal_links_rewritten": 13,
+    "links_to_moved_external": 1
+   }
+  },
+  "settings-writing-screen": {
+   "path": "docs/support-guides/dashboard/settings-writing-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'post-types' rewritten to 'what-is-post-type' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'update-services' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/update-services/"
+   ],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 6,
+    "legacy_support_links_fixed": 5,
+    "internal_links_rewritten": 5,
+    "links_to_moved_external": 1
+   }
+  },
+  "use-gravatars": {
+   "path": "docs/customization/appearance/use-gravatars.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "edge_br_removed": 2,
+    "self_hosted_videos": 1,
+    "images": 3,
+    "image_self_links_removed": 3,
+    "relative_url_made_absolute": 2,
+    "legacy_support_links_fixed": 2,
+    "internal_links_rewritten": 2
+   }
+  },
+  "create-a-favicon": {
+   "path": "docs/customization/appearance/create-a-favicon.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "edge_br_removed": 3,
+    "images": 2,
+    "image_self_links_removed": 1,
+    "version_links_kept_absolute": 2,
+    "internal_links_rewritten": 2,
+    "relative_url_made_absolute": 1,
+    "legacy_support_links_fixed": 1,
+    "tables_gfm": 1,
+    "tables_without_header_row": 1
+   }
+  },
+  "pages-screen": {
+   "path": "docs/support-guides/dashboard/pages-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "images_missing_alt": 1,
+    "relative_url_made_absolute": 5,
+    "legacy_support_links_fixed": 5,
+    "internal_links_rewritten": 5
+   }
+  },
+  "faq-troubleshooting": {
+   "path": "docs/wordpress-overview/faqs/faq-troubleshooting.md",
+   "warnings": [],
+   "notes": [
+    "link to 'common-wordpress-errors' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/common-errors/",
+    "link to 'wordpress-backups' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/",
+    "link to 'phpmyadmin' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+    "link to 'ftp-clients' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/ftp/",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 13,
+    "links_to_moved_external": 6,
+    "legacy_support_links_fixed": 7,
+    "internal_links_rewritten": 8,
+    "callouts": 2,
+    "callouts_alert": 2
+   }
+  },
+  "troubleshoot-login-issues": {
+   "path": "docs/technical-guides/installation/troubleshoot-login-issues.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'resetting-your-password' rewritten to 'reset-your-password' (via 301)",
+    "link to 'finding-server-info' points to moved page https://developer.wordpress.org/advanced-administration/server/server-info/"
+   ],
+   "counts": {
+    "internal_links_rewritten": 2,
+    "links_to_moved_external": 1,
+    "preserved_heading_anchors": 4
+   }
+  },
+  "taxonomies": {
+   "path": "docs/support-guides/publishing/taxonomies.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {}
+  },
+  "twenty-sixteen": {
+   "path": "docs/customization/default-themes/twenty-sixteen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 7,
+    "small_images_kept_as_html": 1,
+    "internal_links_rewritten": 8
+   }
+  },
+  "post-status": {
+   "path": "docs/support-guides/publishing/post-status.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)"
+   ],
+   "counts": {
+    "code_links_swapped": 6,
+    "relative_url_made_absolute": 23,
+    "legacy_support_links_fixed": 23,
+    "internal_links_rewritten": 23
+   }
+  },
+  "hosting-wordpress": {
+   "path": "docs/technical-guides/installation/hosting-wordpress.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 1
+   }
+  },
+  "image-size-and-quality": {
+   "path": "docs/support-guides/media/image-size-and-quality.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "internal_links_rewritten": 10
+   }
+  },
+  "video-shortcode": {
+   "path": "docs/support-guides/dashboard/video-shortcode.md",
+   "warnings": [],
+   "notes": [
+    "empty <pre> (shortcode rendered to nothing on the live site) filled with '[video]'; reconstructed, check against the original Codex page",
+    "live article shows a rendered media player inside a code example (content bug); converted back to the shortcode text. WordPress runs shortcodes inside <pre> too, so after import this needs [[video ...]] escaping or an importer filter, or the players come back"
+   ],
+   "counts": {
+    "empty_pre_filled": 2,
+    "rendered_shortcodes_restored_in_pre": 2,
+    "version_links_kept_absolute": 1,
+    "internal_links_rewritten": 1
+   }
+  },
+  "audio-shortcode": {
+   "path": "docs/support-guides/media/audio-shortcode.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 5
+   }
+  },
+  "embeds": {
+   "path": "docs/customization/embed-blocks/embeds.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'amazon-kindle-embed-block' rewritten to 'amazon-kindle-embed' (via 301)",
+    "link to old slug 'pocket-casts-embed-block' rewritten to 'pocket-casts-embed' (via 301)"
+   ],
+   "counts": {
+    "images": 1,
+    "internal_links_rewritten": 36,
+    "version_links_kept_absolute": 2,
+    "callouts": 1,
+    "callouts_info": 1,
+    "tables_gfm": 1
+   }
+  },
+  "keyboard-shortcuts-classic-editor": {
+   "path": "docs/support-guides/dashboard/keyboard-shortcuts-classic-editor.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'block-editor-keyboard-shortcuts' rewritten to 'keyboard-shortcuts-block-editor' (via 301)"
+   ],
+   "counts": {
+    "internal_links_rewritten": 5,
+    "relative_url_made_absolute": 4,
+    "legacy_support_links_fixed": 4
+   }
+  },
+  "what-are-smilies": {
+   "path": "docs/support-guides/publishing/what-are-smilies.md",
+   "warnings": [
+    "external images hotlinked from wordpress.org: 1 (see assets/images-manifest.json)"
+   ],
+   "notes": [],
+   "counts": {
+    "images": 1,
+    "tables_gfm": 1
+   }
+  },
+  "administer-your-blog": {
+   "path": "docs/technical-guides/maintenance/administer-your-blog.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'using-images' rewritten to 'use-images' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'backing-up-your-database' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/database/",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)",
+    "link to 'optimization' points to moved page https://developer.wordpress.org/advanced-administration/performance/optimization/",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'managing-plugins' rewritten to 'manage-plugins' (via 301)"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 39,
+    "legacy_support_links_fixed": 36,
+    "internal_links_rewritten": 36,
+    "links_to_moved_external": 2
+   }
+  },
+  "search-engine-optimization": {
+   "path": "docs/technical-guides/installation/search-engine-optimization.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 11,
+    "legacy_support_links_fixed": 10,
+    "internal_links_rewritten": 16
+   }
+  },
+  "updating-wordpress": {
+   "path": "docs/technical-guides/maintenance/updating-wordpress.md",
+   "warnings": [],
+   "notes": [
+    "link to 'ftp-clients' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/ftp/"
+   ],
+   "counts": {
+    "version_links_kept_absolute": 1,
+    "links_to_moved_external": 2
+   }
+  },
+  "what-is-post-type": {
+   "path": "docs/support-guides/dashboard/what-is-post-type.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "edge_br_removed": 1
+   }
+  },
+  "assign-custom-fields": {
+   "path": "docs/customization/appearance/assign-custom-fields.md",
+   "warnings": [],
+   "notes": [
+    "preformatted block contained bold/italic (formatting dropped in fence)"
+   ],
+   "counts": {
+    "images": 3,
+    "images_missing_alt": 1,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "password-best-practices": {
+   "path": "docs/technical-guides/security/password-best-practices.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {}
+  },
+  "faq-my-site-was-hacked": {
+   "path": "docs/wordpress-overview/faqs/faq-my-site-was-hacked.md",
+   "warnings": [],
+   "notes": [
+    "link to 'editing-wp-config-php' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/wp-config/",
+    "link to 'wordpress-backups' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/",
+    "link to 'backing-up-your-database' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/database/",
+    "link to 'backing-up-your-wordpress-files' points to moved page https://developer.wordpress.org/advanced-administration/security/backup/files/",
+    "link to old slug 'resetting-your-password' rewritten to 'reset-your-password' (via 301)",
+    "link to 'hardening-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/security/hardening/",
+    "link to 'phpmyadmin' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/"
+   ],
+   "counts": {
+    "links_to_moved_external": 6,
+    "internal_links_rewritten": 4
+   }
+  },
+  "manage-wordpress-widgets": {
+   "path": "docs/support-guides/dashboard/manage-wordpress-widgets.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'appearance-widgets-screen' rewritten to 'appearance-widgets-screen-classic-editor' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
+   ],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2,
+    "internal_links_rewritten": 6,
+    "relative_url_made_absolute": 3,
+    "legacy_support_links_fixed": 3,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "manage-plugins": {
+   "path": "docs/customization/appearance/manage-plugins.md",
+   "warnings": [
+    "external images hotlinked from lh3.googleusercontent.com: 6 (see assets/images-manifest.json)",
+    "external images hotlinked from lh4.googleusercontent.com: 10 (see assets/images-manifest.json)",
+    "external images hotlinked from lh5.googleusercontent.com: 8 (see assets/images-manifest.json)",
+    "external images hotlinked from lh6.googleusercontent.com: 7 (see assets/images-manifest.json)"
+   ],
+   "notes": [
+    "link to old slug 'finding-wordpress-help' rewritten to 'where-to-find-wordpress-help' (via 301)",
+    "link to 'must-use-plugins' points to moved page https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/"
+   ],
+   "counts": {
+    "images": 31,
+    "images_missing_alt": 31,
+    "internal_links_rewritten": 1,
+    "links_to_moved_external": 1,
+    "preserved_heading_anchors": 22
+   }
+  },
+  "get-started-with-wordpress": {
+   "path": "docs/wordpress-overview/where-to-start/get-started-with-wordpress.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'comment-spam' rewritten to 'understand-comment-spam' (via 301)"
+   ],
+   "counts": {
+    "code_links_swapped": 1,
+    "internal_links_rewritten": 23
+   }
+  },
+  "dashboard-screen": {
+   "path": "docs/support-guides/dashboard/dashboard-screen.md",
+   "warnings": [],
+   "notes": [],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2
+   }
+  },
+  "administration-screens": {
+   "path": "docs/support-guides/dashboard/administration-screens.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'appearance-widgets-screen' rewritten to 'appearance-widgets-screen-classic-editor' (via 301)",
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to old slug 'managing-plugins' rewritten to 'manage-plugins' (via 301)",
+    "link to 'plugins-editor-screen' points to moved page https://developer.wordpress.org/advanced-administration/plugins/editor-screen/",
+    "link to 'importing-content' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/import/",
+    "link to 'post-formats' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/post-formats/"
+   ],
+   "counts": {
+    "images": 4,
+    "images_missing_alt": 3,
+    "relative_url_made_absolute": 28,
+    "legacy_support_links_fixed": 23,
+    "internal_links_rewritten": 30,
+    "links_to_moved_external": 3
+   }
+  },
+  "users-your-profile-screen": {
+   "path": "docs/support-guides/dashboard/users-your-profile-screen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'keyboard-shortcuts' rewritten to 'keyboard-shortcuts-classic-editor' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'how-to-use-gravatars' rewritten to 'use-gravatars' (via 301)"
+   ],
+   "counts": {
+    "images": 2,
+    "images_missing_alt": 2,
+    "image_self_links_removed": 2,
+    "relative_url_made_absolute": 8,
+    "legacy_support_links_fixed": 8,
+    "internal_links_rewritten": 8
+   }
+  },
+  "comments-in-wordpress": {
+   "path": "docs/support-guides/publishing/comments-in-wordpress.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'faq-working-with-wordpress' rewritten to 'faq-work-with-wordpress' (via 301)",
+    "link to old slug 'how-to-use-gravatars' rewritten to 'use-gravatars' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 4,
+    "images": 7,
+    "relative_url_made_absolute": 6,
+    "legacy_support_links_fixed": 6,
+    "internal_links_rewritten": 10
+   }
+  },
+  "create-pages": {
+   "path": "docs/support-guides/publishing/create-pages.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'creating-a-static-front-page' rewritten to 'create-a-static-front-page' (via 301)",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)",
+    "link to old slug 'settings-sidebar' rewritten to 'page-post-settings-sidebar' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)"
+   ],
+   "counts": {
+    "images": 10,
+    "relative_url_made_absolute": 7,
+    "legacy_support_links_fixed": 7,
+    "internal_links_rewritten": 16
+   }
+  },
+  "write-posts-classic-editor": {
+   "path": "docs/support-guides/publishing/write-posts-classic-editor.md",
+   "warnings": [],
+   "notes": [
+    "legacy /support/files/ URL: https://wordpress.org/support/files/2018/10/add-new-post.png",
+    "link to old slug 'wordpress-editor' rewritten to 'wordpress-block-editor' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'first-steps-with-wordpress' rewritten to 'first-steps-with-wordpress-classic' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 1,
+    "images": 2,
+    "image_self_links_removed": 2,
+    "internal_links_rewritten": 9,
+    "relative_url_made_absolute": 4,
+    "legacy_support_links_fixed": 4,
+    "callouts": 1,
+    "callouts_info": 1
+   }
+  },
+  "first-steps-with-wordpress-classic": {
+   "path": "docs/wordpress-overview/where-to-start/first-steps-with-wordpress-classic.md",
+   "warnings": [],
+   "notes": [
+    "link to 'how-to-install-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/before-install/howto-install/",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to old slug 'using-themes' rewritten to 'work-with-themes' (via 301)",
+    "link to old slug 'wordpress-widgets' rewritten to 'manage-wordpress-widgets' (via 301)",
+    "link to old slug 'writing-posts' rewritten to 'write-posts-classic-editor' (via 301)",
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to old slug 'managing-plugins' rewritten to 'manage-plugins' (via 301)",
+    "link to 'wordpress-features' points to moved page https://wordpress.org/about/features/",
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'using-permalinks' rewritten to 'customize-permalinks' (via 301)"
+   ],
+   "counts": {
+    "edge_br_removed": 2,
+    "images": 8,
+    "internal_links_rewritten": 49,
+    "relative_url_made_absolute": 50,
+    "links_to_moved_external": 2,
+    "legacy_support_links_fixed": 48
+   }
+  },
+  "faq-installation": {
+   "path": "docs/wordpress-overview/faqs/faq-installation.md",
+   "warnings": [],
+   "notes": [
+    "link to 'how-to-install-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/before-install/howto-install/",
+    "link to 'using-cpanel' points to moved page https://developer.wordpress.org/advanced-administration/server/control-panel/",
+    "link to 'editing-wp-config-php' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/wp-config/",
+    "link to 'moving-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/migrating/",
+    "link to 'giving-wordpress-its-own-directory' points to moved page https://developer.wordpress.org/advanced-administration/server/wordpress-in-directory/",
+    "link to old slug 'login-trouble' rewritten to 'troubleshoot-login-issues' (via 301)",
+    "link to 'using-filezilla' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/ftp/filezilla/",
+    "link to 'ftp-clients' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/ftp/",
+    "link to 'changing-file-permissions' points to moved page https://developer.wordpress.org/advanced-administration/server/file-permissions/",
+    "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)",
+    "link to 'phpmyadmin' points to moved page https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+    "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
+    "link to 'finding-server-info' points to moved page https://developer.wordpress.org/advanced-administration/server/server-info/",
+    "link to 'importing-content' points to moved page https://developer.wordpress.org/advanced-administration/wordpress/import/"
+   ],
+   "counts": {
+    "relative_url_made_absolute": 46,
+    "links_to_moved_external": 18,
+    "legacy_support_links_fixed": 29,
+    "internal_links_rewritten": 29
+   }
+  },
+  "twenty-seventeen": {
+   "path": "docs/customization/default-themes/twenty-seventeen.md",
+   "warnings": [],
+   "notes": [
+    "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
+    "link to old slug 'wordpress-widgets' rewritten to 'manage-wordpress-widgets' (via 301)"
+   ],
+   "counts": {
+    "images": 10,
+    "relative_url_made_absolute": 3,
+    "legacy_support_links_fixed": 3,
+    "internal_links_rewritten": 5
+   }
+  }
+ },
+ "pages": {
+  "site-health": {
+   "path": "docs/site-health.md",
+   "warnings": [],
+   "notes": [
+    "live page uses theme template page-full-width.php (chrome-less page)"
+   ]
+  },
+  "update-php": {
+   "path": "docs/update-php.md",
+   "warnings": [],
+   "notes": [
+    "live page uses theme template page-update-php.php (chrome-less page)"
+   ]
+  }
+ },
+ "category_readmes": 24
+}

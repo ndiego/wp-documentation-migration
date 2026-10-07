@@ -1,0 +1,377 @@
+{
+ "adding-content-with-blocks": {
+  "final_url": "https://wordpress.org/documentation/article/work-with-blocks/",
+  "slug": "work-with-blocks",
+  "status": 301
+ },
+ "administering-your-blog": {
+  "final_url": "https://wordpress.org/documentation/article/administer-your-blog/",
+  "slug": "administer-your-blog",
+  "status": 301
+ },
+ "amazon-kindle-embed-block": {
+  "final_url": "https://wordpress.org/documentation/article/amazon-kindle-embed/",
+  "slug": "amazon-kindle-embed",
+  "status": 301
+ },
+ "appearance-customize-screen": {
+  "final_url": "https://wordpress.org/documentation/article/customizer/",
+  "slug": "customizer",
+  "status": 301
+ },
+ "appearance-widgets-screen": {
+  "final_url": "https://wordpress.org/documentation/article/appearance-widgets-screen-classic-editor/",
+  "slug": "appearance-widgets-screen-classic-editor",
+  "status": 301
+ },
+ "backing-up-your-database": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/security/backup/database/",
+  "slug": null,
+  "status": 200
+ },
+ "backing-up-your-wordpress-files": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/security/backup/files/",
+  "slug": null,
+  "status": 200
+ },
+ "block-editor-keyboard-shortcuts": {
+  "final_url": "https://wordpress.org/documentation/article/keyboard-shortcuts-block-editor/",
+  "slug": "keyboard-shortcuts-block-editor",
+  "status": 301
+ },
+ "blocks": {
+  "final_url": "https://wordpress.org/documentation/article/blocks-list/",
+  "slug": "blocks-list",
+  "status": 301
+ },
+ "changing-file-permissions": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/server/file-permissions/",
+  "slug": null,
+  "status": 200
+ },
+ "comment-spam": {
+  "final_url": "https://wordpress.org/documentation/article/understand-comment-spam/",
+  "slug": "understand-comment-spam",
+  "status": 301
+ },
+ "common-wordpress-errors": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/common-errors/",
+  "slug": null,
+  "status": 200
+ },
+ "configuring-automatic-background-updates": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/upgrade/upgrading/",
+  "slug": null,
+  "status": 200
+ },
+ "content-visibility": {
+  "final_url": "https://wordpress.org/documentation/article/content-visibility-classic-editor/",
+  "slug": "content-visibility-classic-editor",
+  "status": 301
+ },
+ "create-a-network": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/multisite/create-network/",
+  "slug": null,
+  "status": 200
+ },
+ "creating-a-favicon": {
+  "final_url": "https://wordpress.org/documentation/article/create-a-favicon/",
+  "slug": "create-a-favicon",
+  "status": 301
+ },
+ "creating-a-static-front-page": {
+  "final_url": "https://wordpress.org/documentation/article/create-a-static-front-page/",
+  "slug": "create-a-static-front-page",
+  "status": 301
+ },
+ "custom-fields": {
+  "final_url": "https://wordpress.org/documentation/article/assign-custom-fields/",
+  "slug": "assign-custom-fields",
+  "status": 301
+ },
+ "debugging-in-wordpress": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/",
+  "slug": null,
+  "status": 200
+ },
+ "editing-files": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/edit-files/",
+  "slug": null,
+  "status": 200
+ },
+ "editing-wp-config-php": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/wp-config/",
+  "slug": null,
+  "status": 200
+ },
+ "excerpt": {
+  "final_url": "https://wordpress.org/documentation/article/what-is-an-excerpt-classic-editor/",
+  "slug": "what-is-an-excerpt-classic-editor",
+  "status": 301
+ },
+ "faq-working-with-wordpress": {
+  "final_url": "https://wordpress.org/documentation/article/faq-work-with-wordpress/",
+  "slug": "faq-work-with-wordpress",
+  "status": 301
+ },
+ "finding-server-info": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/server/server-info/",
+  "slug": null,
+  "status": 200
+ },
+ "finding-wordpress-help": {
+  "final_url": "https://wordpress.org/documentation/article/where-to-find-wordpress-help/",
+  "slug": "where-to-find-wordpress-help",
+  "status": 301
+ },
+ "first-steps-with-wordpress": {
+  "final_url": "https://wordpress.org/documentation/article/first-steps-with-wordpress-classic/",
+  "slug": "first-steps-with-wordpress-classic",
+  "status": 301
+ },
+ "formatting-date-and-time": {
+  "final_url": "https://wordpress.org/documentation/article/customize-date-and-time-format/",
+  "slug": "customize-date-and-time-format",
+  "status": 301
+ },
+ "ftp-clients": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/upgrade/ftp/",
+  "slug": null,
+  "status": 200
+ },
+ "fun-character-entities": {
+  "final_url": "https://wordpress.org/documentation/article/use-character-entities/",
+  "slug": "use-character-entities",
+  "status": 301
+ },
+ "giving-wordpress-its-own-directory": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/server/wordpress-in-directory/",
+  "slug": null,
+  "status": 200
+ },
+ "glossary": {
+  "final_url": "https://wordpress.org/documentation/article/wordpress-glossary/",
+  "slug": "wordpress-glossary",
+  "status": 301
+ },
+ "hardening-wordpress": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/security/hardening/",
+  "slug": null,
+  "status": 200
+ },
+ "how-to-install-wordpress": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/before-install/howto-install/",
+  "slug": null,
+  "status": 200
+ },
+ "how-to-use-gravatars": {
+  "final_url": "https://wordpress.org/documentation/article/use-gravatars/",
+  "slug": "use-gravatars",
+  "status": 301
+ },
+ "importing-content": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/import/",
+  "slug": null,
+  "status": 200
+ },
+ "inserting-images-into-posts-and-pages": {
+  "final_url": "https://wordpress.org/documentation/article/inserting-images-into-posts-and-pages-classic/",
+  "slug": "inserting-images-into-posts-and-pages-classic",
+  "status": 301
+ },
+ "installing-wordpress-in-your-language": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/before-install/in-your-language/",
+  "slug": null,
+  "status": 200
+ },
+ "keyboard-shortcuts": {
+  "final_url": "https://wordpress.org/documentation/article/keyboard-shortcuts-classic-editor/",
+  "slug": "keyboard-shortcuts-classic-editor",
+  "status": 301
+ },
+ "login-trouble": {
+  "final_url": "https://wordpress.org/documentation/article/troubleshoot-login-issues/",
+  "slug": "troubleshoot-login-issues",
+  "status": 301
+ },
+ "managing-plugins": {
+  "final_url": "https://wordpress.org/documentation/article/manage-plugins/",
+  "slug": "manage-plugins",
+  "status": 301
+ },
+ "moving-wordpress": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/upgrade/migrating/",
+  "slug": null,
+  "status": 200
+ },
+ "multisite-network-administration": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/multisite/administration/",
+  "slug": null,
+  "status": 200
+ },
+ "must-use-plugins": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/",
+  "slug": null,
+  "status": 200
+ },
+ "network-admin": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/multisite/admin/",
+  "slug": null,
+  "status": 200
+ },
+ "optimization": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/performance/optimization/",
+  "slug": null,
+  "status": 200
+ },
+ "pages": {
+  "final_url": "https://wordpress.org/documentation/article/create-pages/",
+  "slug": "create-pages",
+  "status": 301
+ },
+ "phpmyadmin": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/upgrade/phpmyadmin/",
+  "slug": null,
+  "status": 200
+ },
+ "plugins": {
+  "final_url": "https://wordpress.org/documentation/article/introduction-to-plugins/",
+  "slug": "introduction-to-plugins",
+  "status": 301
+ },
+ "plugins-editor-screen": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/plugins/editor-screen/",
+  "slug": null,
+  "status": 200
+ },
+ "pocket-casts-embed-block": {
+  "final_url": "https://wordpress.org/documentation/article/pocket-casts-embed/",
+  "slug": "pocket-casts-embed",
+  "status": 301
+ },
+ "post-formats": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/post-formats/",
+  "slug": null,
+  "status": 200
+ },
+ "post-types": {
+  "final_url": "https://wordpress.org/documentation/article/what-is-post-type/",
+  "slug": "what-is-post-type",
+  "status": 301
+ },
+ "resetting-your-password": {
+  "final_url": "https://wordpress.org/documentation/article/reset-your-password/",
+  "slug": "reset-your-password",
+  "status": 301
+ },
+ "restoring-your-database-from-backup": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/security/backup/",
+  "slug": null,
+  "status": 200
+ },
+ "settings-sidebar": {
+  "final_url": "https://wordpress.org/documentation/article/page-post-settings-sidebar/",
+  "slug": "page-post-settings-sidebar",
+  "status": 301
+ },
+ "sticky-posts": {
+  "final_url": "https://wordpress.org/documentation/article/sticky-posts-classic-editor/",
+  "slug": "sticky-posts-classic-editor",
+  "status": 301
+ },
+ "test-driving-wordpress": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/debug/test-driving/",
+  "slug": null,
+  "status": 200
+ },
+ "the-wordpress-gallery": {
+  "final_url": "https://wordpress.org/documentation/article/the-wordpress-gallery-classic-editor/",
+  "slug": "the-wordpress-gallery-classic-editor",
+  "status": 301
+ },
+ "update-services": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/update-services/",
+  "slug": null,
+  "status": 200
+ },
+ "upgrading-wordpress-extended-instructions": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/upgrade/upgrading/",
+  "slug": null,
+  "status": 200
+ },
+ "using-cpanel": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/server/control-panel/",
+  "slug": null,
+  "status": 200
+ },
+ "using-filezilla": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/upgrade/ftp/filezilla/",
+  "slug": null,
+  "status": 200
+ },
+ "using-images": {
+  "final_url": "https://wordpress.org/documentation/article/use-images/",
+  "slug": "use-images",
+  "status": 301
+ },
+ "using-permalinks": {
+  "final_url": "https://wordpress.org/documentation/article/customize-permalinks/",
+  "slug": "customize-permalinks",
+  "status": 301
+ },
+ "using-smilies": {
+  "final_url": "https://wordpress.org/documentation/article/what-are-smilies/",
+  "slug": "what-are-smilies",
+  "status": 301
+ },
+ "using-themes": {
+  "final_url": "https://wordpress.org/documentation/article/work-with-themes/",
+  "slug": "work-with-themes",
+  "status": 301
+ },
+ "weblog-client": {
+  "final_url": "https://wordpress.org/documentation/article/weblog-client/",
+  "slug": null,
+  "status": 404
+ },
+ "wordpress-backups": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/security/backup/",
+  "slug": null,
+  "status": 200
+ },
+ "wordpress-editor": {
+  "final_url": "https://wordpress.org/documentation/article/wordpress-block-editor/",
+  "slug": "wordpress-block-editor",
+  "status": 301
+ },
+ "wordpress-features": {
+  "final_url": "https://wordpress.org/about/features/",
+  "slug": null,
+  "status": 200
+ },
+ "wordpress-feeds": {
+  "final_url": "https://developer.wordpress.org/advanced-administration/wordpress/feeds/",
+  "slug": null,
+  "status": 200
+ },
+ "wordpress-lessons": {
+  "final_url": "https://wordpress.org/documentation/article/wordpress-lessons/",
+  "slug": null,
+  "status": 404
+ },
+ "wordpress-widgets": {
+  "final_url": "https://wordpress.org/documentation/article/manage-wordpress-widgets/",
+  "slug": "manage-wordpress-widgets",
+  "status": 301
+ },
+ "working-with-blocks": {
+  "final_url": "https://wordpress.org/documentation/article/work-with-blocks/",
+  "slug": "work-with-blocks",
+  "status": 301
+ },
+ "writing-posts": {
+  "final_url": "https://wordpress.org/documentation/article/write-posts-classic-editor/",
+  "slug": "write-posts-classic-editor",
+  "status": 301
+ }
+}
