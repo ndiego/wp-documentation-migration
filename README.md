@@ -61,6 +61,13 @@ data/       machine-readable reports: redirects, convert report, link check, dow
 .venv/      Python venv (bs4, markdownify) used by scripts/convert.py: `.venv/bin/python -I scripts/convert.py`
 ```
 
+## Preview deployment
+
+- GitHub: https://github.com/ndiego/wp-documentation-migration (private)
+- Spacefast space: https://wp-documentation-preview.space.fast/ (private; share via `sf share link`)
+- Publish a new version: `cd site && npm run build:publish && cd .. && sf publish site/dist --wait -m "<what changed>"`
+  (the folder is linked to the space via .spacefast/space.json)
+
 ## Regenerating
 
 Order matters: `python3 -I scripts/download_assets.py`, then `.venv/bin/python -I scripts/convert.py`, then
