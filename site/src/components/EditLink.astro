@@ -1,0 +1,32 @@
+---
+// Override of Starlight's EditLink: the label depends on the tree. Proposed pages get
+// "Edit on GitHub" (restructure branch); current pages get a read-only source link at the
+// before-restructure tag. URLs are set in src/routeData.ts.
+import { Icon } from '@astrojs/starlight/components';
+// @ts-ignore plain JS helper
+import { treeForId } from '../../lib/paths.mjs';
+const { editUrl } = Astro.locals.starlightRoute;
+const tree = treeForId(Astro.url.pathname);
+const label = tree?.sourceLabel ?? Astro.locals.t('page.editLink');
+---
+
+{
+	editUrl && (
+		<a href={editUrl} class="sl-flex print:hidden">
+			<Icon name={tree?.key === 'current' ? 'github' : 'pencil'} size="1.2em" />
+			{label}
+		</a>
+	)
+}
+
+<style>
+	a {
+		gap: 0.5rem;
+		align-items: center;
+		text-decoration: none;
+		color: var(--sl-color-gray-3);
+	}
+	a:hover {
+		color: var(--sl-color-white);
+	}
+</style>

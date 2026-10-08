@@ -1,0 +1,41 @@
+---
+// Override of Starlight's SiteTitle: adds a small "Current" / "Proposed" pill next to the
+// site title so the header always says which tree you are in.
+import Default from '@astrojs/starlight/components/SiteTitle.astro';
+// @ts-ignore plain JS helper
+import { treeForId } from '../../lib/paths.mjs';
+const tree = treeForId(Astro.url.pathname);
+---
+
+<div class="site-title-wrap">
+	<Default />
+	{tree && <a href={`/${tree.prefix}/`} class:list={['tree-pill', `tree-pill--${tree.key}`]} title={tree.label}>{tree.short}</a>}
+</div>
+
+<style>
+	.site-title-wrap {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		min-width: 0;
+	}
+	.tree-pill {
+		flex-shrink: 0;
+		font-size: var(--sl-text-xs);
+		font-weight: 600;
+		text-decoration: none;
+		padding: 0.1rem 0.5rem;
+		border-radius: 999px;
+		border: 1px solid;
+	}
+	.tree-pill--current {
+		color: var(--sl-color-orange-high);
+		background: var(--sl-color-orange-low);
+		border-color: var(--sl-color-orange);
+	}
+	.tree-pill--proposed {
+		color: var(--sl-color-accent-high);
+		background: var(--sl-color-accent-low);
+		border-color: var(--sl-color-accent);
+	}
+</style>

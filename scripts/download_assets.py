@@ -94,6 +94,9 @@ if __name__ == "__main__":
     ap.add_argument("--kinds", default="image,poster,video")
     a = ap.parse_args()
     kinds = set(a.kinds.split(","))
+    if not MANIFEST.exists():
+        sys.exit(f"{MANIFEST.relative_to(ROOT)} not found: it is written by a docs/ build "
+                 "(.venv/bin/python -I scripts/convert.py [--structure data/structure.yaml]); run that first")
     items = [i for i in json.loads(MANIFEST.read_text()) if i.get("kind") in kinds]
     print(f"{len(items)} assets to fetch", file=sys.stderr)
     types = json.loads(TYPES.read_text()) if TYPES.exists() else {}

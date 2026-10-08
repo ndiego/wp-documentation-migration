@@ -13,3 +13,6 @@ site/.astro/
 /.spacefast-*
 .spacefast/.spacefast-*
 .spacefast/.space-link-*.tmp
+
+# Side-by-side builds (scripts/build_all.sh)
+build/

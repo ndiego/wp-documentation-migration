@@ -1,2431 +1,2515 @@
 {
-	"wordpress-overview": {
+	"overview": {
 		"title": "WordPress overview",
-		"slug": "wordpress-overview",
-		"markdown_source": "wordpress-overview/README.md",
+		"slug": "overview",
+		"markdown_source": "overview/README.md",
 		"parent": null,
 		"order": 1
 	},
-	"wordpress-overview/faqs": {
-		"title": "FAQs",
-		"slug": "faqs",
-		"markdown_source": "wordpress-overview/faqs/README.md",
-		"parent": "wordpress-overview",
-		"order": 1
-	},
-	"wordpress-overview/faqs/faq-i-make-changes-and-nothing-happens": {
-		"title": "FAQ I make changes and nothing happens",
-		"slug": "faq-i-make-changes-and-nothing-happens",
-		"markdown_source": "wordpress-overview/faqs/faq-i-make-changes-and-nothing-happens.md",
-		"parent": "wordpress-overview/faqs",
-		"order": 1
-	},
-	"wordpress-overview/faqs/faq-installation": {
-		"title": "FAQ Installation",
-		"slug": "faq-installation",
-		"markdown_source": "wordpress-overview/faqs/faq-installation.md",
-		"parent": "wordpress-overview/faqs",
-		"order": 2
-	},
-	"wordpress-overview/faqs/faq-my-site-was-hacked": {
-		"title": "FAQ My site was hacked",
-		"slug": "faq-my-site-was-hacked",
-		"markdown_source": "wordpress-overview/faqs/faq-my-site-was-hacked.md",
-		"parent": "wordpress-overview/faqs",
-		"order": 3
-	},
-	"wordpress-overview/faqs/faq-troubleshooting": {
-		"title": "FAQ Troubleshooting",
-		"slug": "faq-troubleshooting",
-		"markdown_source": "wordpress-overview/faqs/faq-troubleshooting.md",
-		"parent": "wordpress-overview/faqs",
-		"order": 4
-	},
-	"wordpress-overview/faqs/faq-work-with-wordpress": {
-		"title": "FAQ Work with WordPress",
-		"slug": "faq-work-with-wordpress",
-		"markdown_source": "wordpress-overview/faqs/faq-work-with-wordpress.md",
-		"parent": "wordpress-overview/faqs",
-		"order": 5
-	},
-	"wordpress-overview/where-to-start": {
+	"overview/where-to-start": {
 		"title": "Where to start",
 		"slug": "where-to-start",
-		"markdown_source": "wordpress-overview/where-to-start/README.md",
-		"parent": "wordpress-overview",
-		"order": 2
-	},
-	"wordpress-overview/where-to-start/first-steps-with-wordpress-block-editor": {
-		"title": "First steps with WordPress (Block Editor)",
-		"slug": "first-steps-with-wordpress-block-editor",
-		"markdown_source": "wordpress-overview/where-to-start/first-steps-with-wordpress-block-editor.md",
-		"parent": "wordpress-overview/where-to-start",
+		"markdown_source": "overview/where-to-start/README.md",
+		"parent": "overview",
 		"order": 1
 	},
-	"wordpress-overview/where-to-start/first-steps-with-wordpress-classic": {
-		"title": "First steps with WordPress (Classic Editor)",
-		"slug": "first-steps-with-wordpress-classic",
-		"markdown_source": "wordpress-overview/where-to-start/first-steps-with-wordpress-classic.md",
-		"parent": "wordpress-overview/where-to-start",
-		"order": 2
-	},
-	"wordpress-overview/where-to-start/get-started-with-wordpress": {
+	"overview/where-to-start/get-started-with-wordpress": {
 		"title": "Get started with WordPress",
 		"slug": "get-started-with-wordpress",
-		"markdown_source": "wordpress-overview/where-to-start/get-started-with-wordpress.md",
-		"parent": "wordpress-overview/where-to-start",
+		"markdown_source": "overview/where-to-start/get-started-with-wordpress.md",
+		"parent": "overview/where-to-start",
+		"order": 1
+	},
+	"overview/where-to-start/first-steps-with-wordpress-block-editor": {
+		"title": "First steps with WordPress (Block Editor)",
+		"slug": "first-steps-with-wordpress-block-editor",
+		"markdown_source": "overview/where-to-start/first-steps-with-wordpress-block-editor.md",
+		"parent": "overview/where-to-start",
+		"order": 2
+	},
+	"overview/where-to-start/first-steps-with-wordpress-classic": {
+		"title": "First steps with WordPress (Classic Editor)",
+		"slug": "first-steps-with-wordpress-classic",
+		"markdown_source": "overview/where-to-start/first-steps-with-wordpress-classic.md",
+		"parent": "overview/where-to-start",
 		"order": 3
 	},
-	"wordpress-overview/where-to-start/introduction-to-blogging": {
-		"title": "Introduction to Blogging",
-		"slug": "introduction-to-blogging",
-		"markdown_source": "wordpress-overview/where-to-start/introduction-to-blogging.md",
-		"parent": "wordpress-overview/where-to-start",
-		"order": 4
-	},
-	"wordpress-overview/where-to-start/where-to-find-wordpress-help": {
+	"overview/where-to-start/where-to-find-wordpress-help": {
 		"title": "Where to find WordPress help",
 		"slug": "where-to-find-wordpress-help",
-		"markdown_source": "wordpress-overview/where-to-start/where-to-find-wordpress-help.md",
-		"parent": "wordpress-overview/where-to-start",
-		"order": 5
+		"markdown_source": "overview/where-to-start/where-to-find-wordpress-help.md",
+		"parent": "overview/where-to-start",
+		"order": 4
 	},
-	"wordpress-overview/where-to-start/wordpress-glossary": {
+	"overview/where-to-start/wordpress-glossary": {
 		"title": "WordPress Glossary",
 		"slug": "wordpress-glossary",
-		"markdown_source": "wordpress-overview/where-to-start/wordpress-glossary.md",
-		"parent": "wordpress-overview/where-to-start",
-		"order": 6
+		"markdown_source": "overview/where-to-start/wordpress-glossary.md",
+		"parent": "overview/where-to-start",
+		"order": 5
 	},
-	"wordpress-overview/where-to-start/wordpress-semantics": {
+	"overview/where-to-start/wordpress-semantics": {
 		"title": "WordPress Semantics",
 		"slug": "wordpress-semantics",
-		"markdown_source": "wordpress-overview/where-to-start/wordpress-semantics.md",
-		"parent": "wordpress-overview/where-to-start",
+		"markdown_source": "overview/where-to-start/wordpress-semantics.md",
+		"parent": "overview/where-to-start",
+		"order": 6
+	},
+	"overview/where-to-start/introduction-to-blogging": {
+		"title": "Introduction to Blogging",
+		"slug": "introduction-to-blogging",
+		"markdown_source": "overview/where-to-start/introduction-to-blogging.md",
+		"parent": "overview/where-to-start",
 		"order": 7
 	},
-	"wordpress-overview/about-wp": {
+	"overview/about-wordpress": {
 		"title": "About WordPress",
-		"slug": "about-wp",
-		"markdown_source": "wordpress-overview/about-wp/README.md",
-		"parent": "wordpress-overview",
-		"order": 3
+		"slug": "about-wordpress",
+		"markdown_source": "overview/about-wordpress/README.md",
+		"parent": "overview",
+		"order": 2
 	},
-	"wordpress-overview/about-wp/become-a-wordpress-contributor": {
-		"title": "Become a WordPress contributor",
-		"slug": "become-a-wordpress-contributor",
-		"markdown_source": "wordpress-overview/about-wp/become-a-wordpress-contributor.md",
-		"parent": "wordpress-overview/about-wp",
-		"order": 1
-	},
-	"wordpress-overview/about-wp/learn-about-wordpress-and-version-history": {
+	"overview/about-wordpress/learn-about-wordpress-and-version-history": {
 		"title": "Learn about WordPress origins and version history",
 		"slug": "learn-about-wordpress-and-version-history",
-		"markdown_source": "wordpress-overview/about-wp/learn-about-wordpress-and-version-history.md",
-		"parent": "wordpress-overview/about-wp",
-		"order": 2
+		"markdown_source": "overview/about-wordpress/learn-about-wordpress-and-version-history.md",
+		"parent": "overview/about-wordpress",
+		"order": 1
 	},
-	"wordpress-overview/about-wp/supported-versions": {
-		"title": "Supported Versions",
-		"slug": "supported-versions",
-		"markdown_source": "wordpress-overview/about-wp/supported-versions.md",
-		"parent": "wordpress-overview/about-wp",
-		"order": 3
-	},
-	"wordpress-overview/about-wp/difference-between-wordpress-org-and-wordpress-com": {
+	"overview/about-wordpress/difference-between-wordpress-org-and-wordpress-com": {
 		"title": "What\u2019s the difference between WordPress.org and WordPress.com?",
 		"slug": "difference-between-wordpress-org-and-wordpress-com",
-		"markdown_source": "wordpress-overview/about-wp/difference-between-wordpress-org-and-wordpress-com.md",
-		"parent": "wordpress-overview/about-wp",
-		"order": 4
+		"markdown_source": "overview/about-wordpress/difference-between-wordpress-org-and-wordpress-com.md",
+		"parent": "overview/about-wordpress",
+		"order": 2
 	},
-	"wordpress-overview/about-wp/wordpress-versions": {
+	"overview/about-wordpress/wordpress-versions": {
 		"title": "WordPress Versions",
 		"slug": "wordpress-versions",
-		"markdown_source": "wordpress-overview/about-wp/wordpress-versions.md",
-		"parent": "wordpress-overview/about-wp",
-		"order": 5
+		"markdown_source": "overview/about-wordpress/wordpress-versions.md",
+		"parent": "overview/about-wordpress",
+		"order": 3
 	},
-	"wordpress-overview/about-wp/wordpress-versions-0-7-to-4-9": {
+	"overview/about-wordpress/wordpress-versions-0-7-to-4-9": {
 		"title": "WordPress Versions 0.7 to 4.9",
 		"slug": "wordpress-versions-0-7-to-4-9",
-		"markdown_source": "wordpress-overview/about-wp/wordpress-versions-0-7-to-4-9.md",
-		"parent": "wordpress-overview/about-wp",
-		"order": 6
-	},
-	"technical-guides": {
-		"title": "Technical guides",
-		"slug": "technical-guides",
-		"markdown_source": "technical-guides/README.md",
-		"parent": null,
-		"order": 2
-	},
-	"technical-guides/installation": {
-		"title": "Installation",
-		"slug": "installation",
-		"markdown_source": "technical-guides/installation/README.md",
-		"parent": "technical-guides",
-		"order": 1
-	},
-	"technical-guides/installation/hosting-wordpress": {
-		"title": "Hosting WordPress",
-		"slug": "hosting-wordpress",
-		"markdown_source": "technical-guides/installation/hosting-wordpress.md",
-		"parent": "technical-guides/installation",
-		"order": 1
-	},
-	"technical-guides/installation/search-engine-optimization": {
-		"title": "Search Engine Optimization",
-		"slug": "search-engine-optimization",
-		"markdown_source": "technical-guides/installation/search-engine-optimization.md",
-		"parent": "technical-guides/installation",
-		"order": 2
-	},
-	"technical-guides/installation/troubleshoot-login-issues": {
-		"title": "Troubleshoot login issues",
-		"slug": "troubleshoot-login-issues",
-		"markdown_source": "technical-guides/installation/troubleshoot-login-issues.md",
-		"parent": "technical-guides/installation",
-		"order": 3
-	},
-	"technical-guides/installation/use-automated-installation": {
-		"title": "Use automated installation",
-		"slug": "use-automated-installation",
-		"markdown_source": "technical-guides/installation/use-automated-installation.md",
-		"parent": "technical-guides/installation",
+		"markdown_source": "overview/about-wordpress/wordpress-versions-0-7-to-4-9.md",
+		"parent": "overview/about-wordpress",
 		"order": 4
 	},
-	"technical-guides/maintenance": {
-		"title": "Maintenance",
-		"slug": "maintenance",
-		"markdown_source": "technical-guides/maintenance/README.md",
-		"parent": "technical-guides",
-		"order": 2
-	},
-	"technical-guides/maintenance/administer-your-blog": {
-		"title": "Administer your Blog",
-		"slug": "administer-your-blog",
-		"markdown_source": "technical-guides/maintenance/administer-your-blog.md",
-		"parent": "technical-guides/maintenance",
-		"order": 1
-	},
-	"technical-guides/maintenance/plugins-themes-auto-updates": {
-		"title": "Plugin and themes auto-updates",
-		"slug": "plugins-themes-auto-updates",
-		"markdown_source": "technical-guides/maintenance/plugins-themes-auto-updates.md",
-		"parent": "technical-guides/maintenance",
-		"order": 2
-	},
-	"technical-guides/maintenance/recovery-mode": {
-		"title": "Recovery Mode",
-		"slug": "recovery-mode",
-		"markdown_source": "technical-guides/maintenance/recovery-mode.md",
-		"parent": "technical-guides/maintenance",
-		"order": 3
-	},
-	"technical-guides/maintenance/updating-wordpress": {
-		"title": "Updating WordPress",
-		"slug": "updating-wordpress",
-		"markdown_source": "technical-guides/maintenance/updating-wordpress.md",
-		"parent": "technical-guides/maintenance",
-		"order": 4
-	},
-	"technical-guides/maintenance/wordpress-housekeeping": {
-		"title": "WordPress Housekeeping",
-		"slug": "wordpress-housekeeping",
-		"markdown_source": "technical-guides/maintenance/wordpress-housekeeping.md",
-		"parent": "technical-guides/maintenance",
+	"overview/about-wordpress/supported-versions": {
+		"title": "Supported Versions",
+		"slug": "supported-versions",
+		"markdown_source": "overview/about-wordpress/supported-versions.md",
+		"parent": "overview/about-wordpress",
 		"order": 5
 	},
-	"technical-guides/maintenance/wordpress-site-maintenance": {
-		"title": "WordPress site maintenance",
-		"slug": "wordpress-site-maintenance",
-		"markdown_source": "technical-guides/maintenance/wordpress-site-maintenance.md",
-		"parent": "technical-guides/maintenance",
+	"overview/about-wordpress/become-a-wordpress-contributor": {
+		"title": "Become a WordPress contributor",
+		"slug": "become-a-wordpress-contributor",
+		"markdown_source": "overview/about-wordpress/become-a-wordpress-contributor.md",
+		"parent": "overview/about-wordpress",
 		"order": 6
 	},
-	"technical-guides/security": {
-		"title": "Security",
-		"slug": "security",
-		"markdown_source": "technical-guides/security/README.md",
-		"parent": "technical-guides",
+	"overview/faq": {
+		"title": "Frequently asked questions",
+		"slug": "faq",
+		"markdown_source": "overview/faq/README.md",
+		"parent": "overview",
 		"order": 3
 	},
-	"technical-guides/security/password-best-practices": {
-		"title": "Password Best Practices",
-		"slug": "password-best-practices",
-		"markdown_source": "technical-guides/security/password-best-practices.md",
-		"parent": "technical-guides/security",
+	"overview/faq/faq-work-with-wordpress": {
+		"title": "FAQ Work with WordPress",
+		"slug": "faq-work-with-wordpress",
+		"markdown_source": "overview/faq/faq-work-with-wordpress.md",
+		"parent": "overview/faq",
 		"order": 1
 	},
-	"technical-guides/security/why-should-i-use-https": {
-		"title": "Why should I use HTTPS",
-		"slug": "why-should-i-use-https",
-		"markdown_source": "technical-guides/security/why-should-i-use-https.md",
-		"parent": "technical-guides/security",
+	"overview/faq/faq-installation": {
+		"title": "FAQ Installation",
+		"slug": "faq-installation",
+		"markdown_source": "overview/faq/faq-installation.md",
+		"parent": "overview/faq",
 		"order": 2
 	},
-	"technical-guides/security/wordpress-privacy": {
-		"title": "WordPress Privacy",
-		"slug": "wordpress-privacy",
-		"markdown_source": "technical-guides/security/wordpress-privacy.md",
-		"parent": "technical-guides/security",
+	"overview/faq/faq-troubleshooting": {
+		"title": "FAQ Troubleshooting",
+		"slug": "faq-troubleshooting",
+		"markdown_source": "overview/faq/faq-troubleshooting.md",
+		"parent": "overview/faq",
 		"order": 3
 	},
-	"support-guides": {
-		"title": "Support guides",
-		"slug": "support-guides",
-		"markdown_source": "support-guides/README.md",
+	"overview/faq/faq-i-make-changes-and-nothing-happens": {
+		"title": "FAQ I make changes and nothing happens",
+		"slug": "faq-i-make-changes-and-nothing-happens",
+		"markdown_source": "overview/faq/faq-i-make-changes-and-nothing-happens.md",
+		"parent": "overview/faq",
+		"order": 4
+	},
+	"overview/faq/faq-my-site-was-hacked": {
+		"title": "FAQ My site was hacked",
+		"slug": "faq-my-site-was-hacked",
+		"markdown_source": "overview/faq/faq-my-site-was-hacked.md",
+		"parent": "overview/faq",
+		"order": 5
+	},
+	"using-wordpress": {
+		"title": "Using WordPress",
+		"slug": "using-wordpress",
+		"markdown_source": "using-wordpress/README.md",
 		"parent": null,
-		"order": 3
+		"order": 2
 	},
-	"support-guides/dashboard": {
-		"title": "Dashboard",
-		"slug": "dashboard",
-		"markdown_source": "support-guides/dashboard/README.md",
-		"parent": "support-guides",
-		"order": 1
-	},
-	"support-guides/dashboard/administration-screens": {
+	"using-wordpress/administration-screens": {
 		"title": "Administration Screens",
 		"slug": "administration-screens",
-		"markdown_source": "support-guides/dashboard/administration-screens.md",
-		"parent": "support-guides/dashboard",
+		"markdown_source": "using-wordpress/administration-screens/README.md",
+		"parent": "using-wordpress",
 		"order": 1
 	},
-	"support-guides/dashboard/appearance-menus-screen": {
-		"title": "Appearance Menus Screen",
-		"slug": "appearance-menus-screen",
-		"markdown_source": "support-guides/dashboard/appearance-menus-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 2
+	"using-wordpress/administration-screens/dashboard": {
+		"title": "Dashboard",
+		"slug": "dashboard",
+		"markdown_source": "using-wordpress/administration-screens/dashboard/README.md",
+		"parent": "using-wordpress/administration-screens",
+		"order": 1
 	},
-	"support-guides/dashboard/appearance-theme-file-editor-screen": {
-		"title": "Appearance Theme File Editor Screen",
-		"slug": "appearance-theme-file-editor-screen",
-		"markdown_source": "support-guides/dashboard/appearance-theme-file-editor-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 3
-	},
-	"support-guides/dashboard/appearance-themes-screen": {
-		"title": "Appearance Themes Screen",
-		"slug": "appearance-themes-screen",
-		"markdown_source": "support-guides/dashboard/appearance-themes-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 4
-	},
-	"support-guides/dashboard/appearance-widgets-screen-classic-editor": {
-		"title": "Appearance Widgets Screen (Classic Editor)",
-		"slug": "appearance-widgets-screen-classic-editor",
-		"markdown_source": "support-guides/dashboard/appearance-widgets-screen-classic-editor.md",
-		"parent": "support-guides/dashboard",
-		"order": 5
-	},
-	"support-guides/dashboard/block-based-widgets-editor": {
-		"title": "Block-based Widgets Editor",
-		"slug": "block-based-widgets-editor",
-		"markdown_source": "support-guides/dashboard/block-based-widgets-editor.md",
-		"parent": "support-guides/dashboard",
-		"order": 6
-	},
-	"support-guides/dashboard/comments-screen": {
-		"title": "Comments screen",
-		"slug": "comments-screen",
-		"markdown_source": "support-guides/dashboard/comments-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 7
-	},
-	"support-guides/dashboard/customizer": {
-		"title": "Customizer",
-		"slug": "customizer",
-		"markdown_source": "support-guides/dashboard/customizer.md",
-		"parent": "support-guides/dashboard",
-		"order": 8
-	},
-	"support-guides/dashboard/dashboard-screen": {
+	"using-wordpress/administration-screens/dashboard/dashboard-screen": {
 		"title": "Dashboard screen",
 		"slug": "dashboard-screen",
-		"markdown_source": "support-guides/dashboard/dashboard-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 9
+		"markdown_source": "using-wordpress/administration-screens/dashboard/dashboard-screen.md",
+		"parent": "using-wordpress/administration-screens/dashboard",
+		"order": 1
 	},
-	"support-guides/dashboard/dashboard-updates-screen": {
+	"using-wordpress/administration-screens/dashboard/dashboard-updates-screen": {
 		"title": "Dashboard Updates screen",
 		"slug": "dashboard-updates-screen",
-		"markdown_source": "support-guides/dashboard/dashboard-updates-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 10
+		"markdown_source": "using-wordpress/administration-screens/dashboard/dashboard-updates-screen.md",
+		"parent": "using-wordpress/administration-screens/dashboard",
+		"order": 2
 	},
-	"support-guides/dashboard/distraction-free-mode": {
-		"title": "Distraction Free mode",
-		"slug": "distraction-free-mode",
-		"markdown_source": "support-guides/dashboard/distraction-free-mode.md",
-		"parent": "support-guides/dashboard",
-		"order": 11
+	"using-wordpress/administration-screens/posts": {
+		"title": "Posts",
+		"slug": "posts",
+		"markdown_source": "using-wordpress/administration-screens/posts/README.md",
+		"parent": "using-wordpress/administration-screens",
+		"order": 2
 	},
-	"support-guides/dashboard/manage-wordpress-widgets": {
-		"title": "Manage WordPress widgets",
-		"slug": "manage-wordpress-widgets",
-		"markdown_source": "support-guides/dashboard/manage-wordpress-widgets.md",
-		"parent": "support-guides/dashboard",
-		"order": 12
-	},
-	"support-guides/dashboard/media-add-new-screen": {
-		"title": "Media Add New screen",
-		"slug": "media-add-new-screen",
-		"markdown_source": "support-guides/dashboard/media-add-new-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 13
-	},
-	"support-guides/dashboard/media-library-screen": {
-		"title": "Media Library screen",
-		"slug": "media-library-screen",
-		"markdown_source": "support-guides/dashboard/media-library-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 14
-	},
-	"support-guides/dashboard/pages-screen": {
-		"title": "Pages screen",
-		"slug": "pages-screen",
-		"markdown_source": "support-guides/dashboard/pages-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 15
-	},
-	"support-guides/dashboard/plugins-add-new-screen": {
-		"title": "Plugins Add New screen",
-		"slug": "plugins-add-new-screen",
-		"markdown_source": "support-guides/dashboard/plugins-add-new-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 16
-	},
-	"support-guides/dashboard/plugins-screen": {
-		"title": "Plugins screen",
-		"slug": "plugins-screen",
-		"markdown_source": "support-guides/dashboard/plugins-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 17
-	},
-	"support-guides/dashboard/posts-categories-screen": {
-		"title": "Posts Categories screen",
-		"slug": "posts-categories-screen",
-		"markdown_source": "support-guides/dashboard/posts-categories-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 18
-	},
-	"support-guides/dashboard/posts-screen": {
+	"using-wordpress/administration-screens/posts/posts-screen": {
 		"title": "Posts screen",
 		"slug": "posts-screen",
-		"markdown_source": "support-guides/dashboard/posts-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 19
+		"markdown_source": "using-wordpress/administration-screens/posts/posts-screen.md",
+		"parent": "using-wordpress/administration-screens/posts",
+		"order": 1
 	},
-	"support-guides/dashboard/posts-tags-screen": {
+	"using-wordpress/administration-screens/posts/posts-categories-screen": {
+		"title": "Posts Categories screen",
+		"slug": "posts-categories-screen",
+		"markdown_source": "using-wordpress/administration-screens/posts/posts-categories-screen.md",
+		"parent": "using-wordpress/administration-screens/posts",
+		"order": 2
+	},
+	"using-wordpress/administration-screens/posts/posts-tags-screen": {
 		"title": "Posts Tags screen",
 		"slug": "posts-tags-screen",
-		"markdown_source": "support-guides/dashboard/posts-tags-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 20
+		"markdown_source": "using-wordpress/administration-screens/posts/posts-tags-screen.md",
+		"parent": "using-wordpress/administration-screens/posts",
+		"order": 3
 	},
-	"support-guides/dashboard/reset-your-password": {
-		"title": "Reset your password",
-		"slug": "reset-your-password",
-		"markdown_source": "support-guides/dashboard/reset-your-password.md",
-		"parent": "support-guides/dashboard",
-		"order": 21
-	},
-	"support-guides/dashboard/roles-and-capabilities": {
-		"title": "Roles and Capabilities",
-		"slug": "roles-and-capabilities",
-		"markdown_source": "support-guides/dashboard/roles-and-capabilities.md",
-		"parent": "support-guides/dashboard",
-		"order": 22
-	},
-	"support-guides/dashboard/settings-connectors-screen": {
-		"title": "Settings Connectors screen",
-		"slug": "settings-connectors-screen",
-		"markdown_source": "support-guides/dashboard/settings-connectors-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 23
-	},
-	"support-guides/dashboard/settings-discussion-screen": {
-		"title": "Settings Discussion screen",
-		"slug": "settings-discussion-screen",
-		"markdown_source": "support-guides/dashboard/settings-discussion-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 24
-	},
-	"support-guides/dashboard/settings-general-screen": {
-		"title": "Settings General screen",
-		"slug": "settings-general-screen",
-		"markdown_source": "support-guides/dashboard/settings-general-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 25
-	},
-	"support-guides/dashboard/settings-media-screen": {
-		"title": "Settings Media screen",
-		"slug": "settings-media-screen",
-		"markdown_source": "support-guides/dashboard/settings-media-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 26
-	},
-	"support-guides/dashboard/settings-permalinks-screen": {
-		"title": "Settings Permalinks screen",
-		"slug": "settings-permalinks-screen",
-		"markdown_source": "support-guides/dashboard/settings-permalinks-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 27
-	},
-	"support-guides/dashboard/settings-privacy-screen": {
-		"title": "Settings Privacy screen",
-		"slug": "settings-privacy-screen",
-		"markdown_source": "support-guides/dashboard/settings-privacy-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 28
-	},
-	"support-guides/dashboard/settings-reading-screen": {
-		"title": "Settings Reading screen",
-		"slug": "settings-reading-screen",
-		"markdown_source": "support-guides/dashboard/settings-reading-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 29
-	},
-	"support-guides/dashboard/settings-writing-screen": {
-		"title": "Settings Writing screen",
-		"slug": "settings-writing-screen",
-		"markdown_source": "support-guides/dashboard/settings-writing-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 30
-	},
-	"support-guides/dashboard/site-health-screen": {
-		"title": "Site Health screen",
-		"slug": "site-health-screen",
-		"markdown_source": "support-guides/dashboard/site-health-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 31
-	},
-	"support-guides/dashboard/toolbar": {
-		"title": "Toolbar",
-		"slug": "toolbar",
-		"markdown_source": "support-guides/dashboard/toolbar.md",
-		"parent": "support-guides/dashboard",
-		"order": 32
-	},
-	"support-guides/dashboard/tools-erase-personal-data-screen": {
-		"title": "Tools Erase Personal Data screen",
-		"slug": "tools-erase-personal-data-screen",
-		"markdown_source": "support-guides/dashboard/tools-erase-personal-data-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 33
-	},
-	"support-guides/dashboard/tools-export-personal-data-screen": {
-		"title": "Tools Export Personal Data screen",
-		"slug": "tools-export-personal-data-screen",
-		"markdown_source": "support-guides/dashboard/tools-export-personal-data-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 34
-	},
-	"support-guides/dashboard/tools-export-screen": {
-		"title": "Tools Export screen",
-		"slug": "tools-export-screen",
-		"markdown_source": "support-guides/dashboard/tools-export-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 35
-	},
-	"support-guides/dashboard/tools-import-screen": {
-		"title": "Tools Import screen",
-		"slug": "tools-import-screen",
-		"markdown_source": "support-guides/dashboard/tools-import-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 36
-	},
-	"support-guides/dashboard/tools-network-screen": {
-		"title": "Tools Network screen",
-		"slug": "tools-network-screen",
-		"markdown_source": "support-guides/dashboard/tools-network-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 37
-	},
-	"support-guides/dashboard/tools-screen": {
-		"title": "Tools screen",
-		"slug": "tools-screen",
-		"markdown_source": "support-guides/dashboard/tools-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 38
-	},
-	"support-guides/dashboard/keyboard-shortcuts-block-editor": {
-		"title": "Use keyboard shortcuts (Block Editor)",
-		"slug": "keyboard-shortcuts-block-editor",
-		"markdown_source": "support-guides/dashboard/keyboard-shortcuts-block-editor.md",
-		"parent": "support-guides/dashboard",
-		"order": 39
-	},
-	"support-guides/dashboard/keyboard-shortcuts-classic-editor": {
-		"title": "Use keyboard shortcuts (Classic Editor)",
-		"slug": "keyboard-shortcuts-classic-editor",
-		"markdown_source": "support-guides/dashboard/keyboard-shortcuts-classic-editor.md",
-		"parent": "support-guides/dashboard",
-		"order": 40
-	},
-	"support-guides/dashboard/users-add-new-screen": {
-		"title": "Users Add New screen",
-		"slug": "users-add-new-screen",
-		"markdown_source": "support-guides/dashboard/users-add-new-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 41
-	},
-	"support-guides/dashboard/users-screen": {
-		"title": "Users screen",
-		"slug": "users-screen",
-		"markdown_source": "support-guides/dashboard/users-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 42
-	},
-	"support-guides/dashboard/users-your-profile-screen": {
-		"title": "Users Your Profile screen",
-		"slug": "users-your-profile-screen",
-		"markdown_source": "support-guides/dashboard/users-your-profile-screen.md",
-		"parent": "support-guides/dashboard",
-		"order": 43
-	},
-	"support-guides/dashboard/video-shortcode": {
-		"title": "Video shortcode",
-		"slug": "video-shortcode",
-		"markdown_source": "support-guides/dashboard/video-shortcode.md",
-		"parent": "support-guides/dashboard",
-		"order": 44
-	},
-	"support-guides/dashboard/what-is-post-type": {
-		"title": "What is Post Type?",
-		"slug": "what-is-post-type",
-		"markdown_source": "support-guides/dashboard/what-is-post-type.md",
-		"parent": "support-guides/dashboard",
-		"order": 45
-	},
-	"support-guides/dashboard/wordpress-block-editor": {
-		"title": "WordPress Block Editor",
-		"slug": "wordpress-block-editor",
-		"markdown_source": "support-guides/dashboard/wordpress-block-editor.md",
-		"parent": "support-guides/dashboard",
-		"order": 46
-	},
-	"support-guides/media": {
+	"using-wordpress/administration-screens/media-screens": {
 		"title": "Media",
-		"slug": "media",
-		"markdown_source": "support-guides/media/README.md",
-		"parent": "support-guides",
-		"order": 2
+		"slug": "media-screens",
+		"markdown_source": "using-wordpress/administration-screens/media-screens/README.md",
+		"parent": "using-wordpress/administration-screens",
+		"order": 3
 	},
-	"support-guides/media/audio-shortcode": {
-		"title": "Audio Shortcode",
-		"slug": "audio-shortcode",
-		"markdown_source": "support-guides/media/audio-shortcode.md",
-		"parent": "support-guides/media",
+	"using-wordpress/administration-screens/media-screens/media-library-screen": {
+		"title": "Media Library screen",
+		"slug": "media-library-screen",
+		"markdown_source": "using-wordpress/administration-screens/media-screens/media-library-screen.md",
+		"parent": "using-wordpress/administration-screens/media-screens",
 		"order": 1
 	},
-	"support-guides/media/edit-media": {
-		"title": "Edit Media",
-		"slug": "edit-media",
-		"markdown_source": "support-guides/media/edit-media.md",
-		"parent": "support-guides/media",
+	"using-wordpress/administration-screens/media-screens/media-add-new-screen": {
+		"title": "Media Add New screen",
+		"slug": "media-add-new-screen",
+		"markdown_source": "using-wordpress/administration-screens/media-screens/media-add-new-screen.md",
+		"parent": "using-wordpress/administration-screens/media-screens",
 		"order": 2
 	},
-	"support-guides/media/image-size-and-quality": {
-		"title": "Image size and quality",
-		"slug": "image-size-and-quality",
-		"markdown_source": "support-guides/media/image-size-and-quality.md",
-		"parent": "support-guides/media",
-		"order": 3
-	},
-	"support-guides/media/inserting-images-into-posts-and-pages-block-editor": {
-		"title": "Inserting images into posts and pages (Block Editor)",
-		"slug": "inserting-images-into-posts-and-pages-block-editor",
-		"markdown_source": "support-guides/media/inserting-images-into-posts-and-pages-block-editor.md",
-		"parent": "support-guides/media",
+	"using-wordpress/administration-screens/pages": {
+		"title": "Pages",
+		"slug": "pages",
+		"markdown_source": "using-wordpress/administration-screens/pages/README.md",
+		"parent": "using-wordpress/administration-screens",
 		"order": 4
 	},
-	"support-guides/media/inserting-images-into-posts-and-pages-classic": {
-		"title": "Inserting images into posts and pages (Classic Editor)",
-		"slug": "inserting-images-into-posts-and-pages-classic",
-		"markdown_source": "support-guides/media/inserting-images-into-posts-and-pages-classic.md",
-		"parent": "support-guides/media",
-		"order": 5
-	},
-	"support-guides/media/the-wordpress-gallery-block-editor": {
-		"title": "The WordPress Gallery (Block Editor)",
-		"slug": "the-wordpress-gallery-block-editor",
-		"markdown_source": "support-guides/media/the-wordpress-gallery-block-editor.md",
-		"parent": "support-guides/media",
-		"order": 6
-	},
-	"support-guides/media/the-wordpress-gallery-classic-editor": {
-		"title": "The WordPress Gallery (Classic Editor)",
-		"slug": "the-wordpress-gallery-classic-editor",
-		"markdown_source": "support-guides/media/the-wordpress-gallery-classic-editor.md",
-		"parent": "support-guides/media",
-		"order": 7
-	},
-	"support-guides/media/use-image-and-file-attachments": {
-		"title": "Use image and file attachments",
-		"slug": "use-image-and-file-attachments",
-		"markdown_source": "support-guides/media/use-image-and-file-attachments.md",
-		"parent": "support-guides/media",
-		"order": 8
-	},
-	"support-guides/media/use-images": {
-		"title": "Use Images",
-		"slug": "use-images",
-		"markdown_source": "support-guides/media/use-images.md",
-		"parent": "support-guides/media",
-		"order": 9
-	},
-	"support-guides/publishing": {
-		"title": "Publishing",
-		"slug": "publishing",
-		"markdown_source": "support-guides/publishing/README.md",
-		"parent": "support-guides",
-		"order": 3
-	},
-	"support-guides/publishing/comment-moderation": {
-		"title": "Comment moderation",
-		"slug": "comment-moderation",
-		"markdown_source": "support-guides/publishing/comment-moderation.md",
-		"parent": "support-guides/publishing",
+	"using-wordpress/administration-screens/pages/pages-screen": {
+		"title": "Pages screen",
+		"slug": "pages-screen",
+		"markdown_source": "using-wordpress/administration-screens/pages/pages-screen.md",
+		"parent": "using-wordpress/administration-screens/pages",
 		"order": 1
 	},
-	"support-guides/publishing/comments-in-wordpress": {
-		"title": "Comments in WordPress",
-		"slug": "comments-in-wordpress",
-		"markdown_source": "support-guides/publishing/comments-in-wordpress.md",
-		"parent": "support-guides/publishing",
-		"order": 2
-	},
-	"support-guides/publishing/create-a-search-page": {
-		"title": "Create a search page",
-		"slug": "create-a-search-page",
-		"markdown_source": "support-guides/publishing/create-a-search-page.md",
-		"parent": "support-guides/publishing",
-		"order": 3
-	},
-	"support-guides/publishing/create-a-static-front-page": {
-		"title": "Create a static front page",
-		"slug": "create-a-static-front-page",
-		"markdown_source": "support-guides/publishing/create-a-static-front-page.md",
-		"parent": "support-guides/publishing",
-		"order": 4
-	},
-	"support-guides/publishing/create-pages": {
-		"title": "Create pages",
-		"slug": "create-pages",
-		"markdown_source": "support-guides/publishing/create-pages.md",
-		"parent": "support-guides/publishing",
-		"order": 5
-	},
-	"support-guides/publishing/customize-date-and-time-format": {
-		"title": "Customize date and time format",
-		"slug": "customize-date-and-time-format",
-		"markdown_source": "support-guides/publishing/customize-date-and-time-format.md",
-		"parent": "support-guides/publishing",
-		"order": 6
-	},
-	"support-guides/publishing/customize-permalinks": {
-		"title": "Customize permalinks",
-		"slug": "customize-permalinks",
-		"markdown_source": "support-guides/publishing/customize-permalinks.md",
-		"parent": "support-guides/publishing",
-		"order": 7
-	},
-	"support-guides/publishing/how-wordpress-processes-post-content": {
-		"title": "How WordPress processes Post Content",
-		"slug": "how-wordpress-processes-post-content",
-		"markdown_source": "support-guides/publishing/how-wordpress-processes-post-content.md",
-		"parent": "support-guides/publishing",
-		"order": 8
-	},
-	"support-guides/publishing/pages-add-new-screen": {
+	"using-wordpress/administration-screens/pages/pages-add-new-screen": {
 		"title": "Pages Add New screen",
 		"slug": "pages-add-new-screen",
-		"markdown_source": "support-guides/publishing/pages-add-new-screen.md",
-		"parent": "support-guides/publishing",
-		"order": 9
+		"markdown_source": "using-wordpress/administration-screens/pages/pages-add-new-screen.md",
+		"parent": "using-wordpress/administration-screens/pages",
+		"order": 2
 	},
-	"support-guides/publishing/post-status": {
-		"title": "Post Status",
-		"slug": "post-status",
-		"markdown_source": "support-guides/publishing/post-status.md",
-		"parent": "support-guides/publishing",
-		"order": 10
-	},
-	"support-guides/publishing/protect-posts-with-password": {
-		"title": "Protect posts with password",
-		"slug": "protect-posts-with-password",
-		"markdown_source": "support-guides/publishing/protect-posts-with-password.md",
-		"parent": "support-guides/publishing",
-		"order": 11
-	},
-	"support-guides/publishing/revisions": {
-		"title": "Revisions",
-		"slug": "revisions",
-		"markdown_source": "support-guides/publishing/revisions.md",
-		"parent": "support-guides/publishing",
-		"order": 12
-	},
-	"support-guides/publishing/content-visibility-block-editor": {
-		"title": "Set blog content visibility (Block Editor)",
-		"slug": "content-visibility-block-editor",
-		"markdown_source": "support-guides/publishing/content-visibility-block-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 13
-	},
-	"support-guides/publishing/content-visibility-classic-editor": {
-		"title": "Set blog content visibility (Classic Editor)",
-		"slug": "content-visibility-classic-editor",
-		"markdown_source": "support-guides/publishing/content-visibility-classic-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 14
-	},
-	"support-guides/publishing/sticky-posts-classic-editor": {
-		"title": "Sticky Posts (Classic Editor)",
-		"slug": "sticky-posts-classic-editor",
-		"markdown_source": "support-guides/publishing/sticky-posts-classic-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 15
-	},
-	"support-guides/publishing/taxonomies": {
-		"title": "Taxonomies",
-		"slug": "taxonomies",
-		"markdown_source": "support-guides/publishing/taxonomies.md",
-		"parent": "support-guides/publishing",
-		"order": 16
-	},
-	"support-guides/publishing/trackbacks-and-pingbacks": {
-		"title": "Trackbacks and Pingbacks",
-		"slug": "trackbacks-and-pingbacks",
-		"markdown_source": "support-guides/publishing/trackbacks-and-pingbacks.md",
-		"parent": "support-guides/publishing",
-		"order": 17
-	},
-	"support-guides/publishing/understand-comment-spam": {
-		"title": "Understanding comment spam",
-		"slug": "understand-comment-spam",
-		"markdown_source": "support-guides/publishing/understand-comment-spam.md",
-		"parent": "support-guides/publishing",
-		"order": 18
-	},
-	"support-guides/publishing/use-character-entities": {
-		"title": "Use character entities",
-		"slug": "use-character-entities",
-		"markdown_source": "support-guides/publishing/use-character-entities.md",
-		"parent": "support-guides/publishing",
-		"order": 19
-	},
-	"support-guides/publishing/what-are-emoji": {
-		"title": "What are Emoji?",
-		"slug": "what-are-emoji",
-		"markdown_source": "support-guides/publishing/what-are-emoji.md",
-		"parent": "support-guides/publishing",
-		"order": 20
-	},
-	"support-guides/publishing/what-are-smilies": {
-		"title": "What are smilies?",
-		"slug": "what-are-smilies",
-		"markdown_source": "support-guides/publishing/what-are-smilies.md",
-		"parent": "support-guides/publishing",
-		"order": 21
-	},
-	"support-guides/publishing/what-is-an-excerpt-block-editor": {
-		"title": "What is an excerpt? (Block Editor)",
-		"slug": "what-is-an-excerpt-block-editor",
-		"markdown_source": "support-guides/publishing/what-is-an-excerpt-block-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 22
-	},
-	"support-guides/publishing/what-is-an-excerpt-classic-editor": {
-		"title": "What is an excerpt? (Classic Editor)",
-		"slug": "what-is-an-excerpt-classic-editor",
-		"markdown_source": "support-guides/publishing/what-is-an-excerpt-classic-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 23
-	},
-	"support-guides/publishing/write-code-in-your-posts-classic-editor": {
-		"title": "Write code in your posts (Classic Editor)",
-		"slug": "write-code-in-your-posts-classic-editor",
-		"markdown_source": "support-guides/publishing/write-code-in-your-posts-classic-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 24
-	},
-	"support-guides/publishing/write-posts-classic-editor": {
-		"title": "Write posts (Classic Editor)",
-		"slug": "write-posts-classic-editor",
-		"markdown_source": "support-guides/publishing/write-posts-classic-editor.md",
-		"parent": "support-guides/publishing",
-		"order": 25
-	},
-	"customization": {
-		"title": "Customization",
-		"slug": "customization",
-		"markdown_source": "customization/README.md",
-		"parent": null,
-		"order": 4
-	},
-	"customization/appearance": {
+	"using-wordpress/administration-screens/appearance": {
 		"title": "Appearance",
 		"slug": "appearance",
-		"markdown_source": "customization/appearance/README.md",
-		"parent": "customization",
-		"order": 1
-	},
-	"customization/appearance/additional-guide-to-using-the-site-editor": {
-		"title": "Additional guide to using the Site Editor",
-		"slug": "additional-guide-to-using-the-site-editor",
-		"markdown_source": "customization/appearance/additional-guide-to-using-the-site-editor.md",
-		"parent": "customization/appearance",
-		"order": 1
-	},
-	"customization/appearance/assign-custom-fields": {
-		"title": "Assign custom fields",
-		"slug": "assign-custom-fields",
-		"markdown_source": "customization/appearance/assign-custom-fields.md",
-		"parent": "customization/appearance",
-		"order": 2
-	},
-	"customization/appearance/block-themes": {
-		"title": "Block themes",
-		"slug": "block-themes",
-		"markdown_source": "customization/appearance/block-themes.md",
-		"parent": "customization/appearance",
-		"order": 3
-	},
-	"customization/appearance/comparing-patterns-template-parts-and-reusable-blocks": {
-		"title": "Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks)",
-		"slug": "comparing-patterns-template-parts-and-reusable-blocks",
-		"markdown_source": "customization/appearance/comparing-patterns-template-parts-and-reusable-blocks.md",
-		"parent": "customization/appearance",
-		"order": 4
-	},
-	"customization/appearance/create-a-favicon": {
-		"title": "Create a Favicon",
-		"slug": "create-a-favicon",
-		"markdown_source": "customization/appearance/create-a-favicon.md",
-		"parent": "customization/appearance",
+		"markdown_source": "using-wordpress/administration-screens/appearance/README.md",
+		"parent": "using-wordpress/administration-screens",
 		"order": 5
 	},
-	"customization/appearance/introduction-to-plugins": {
+	"using-wordpress/administration-screens/appearance/appearance-themes-screen": {
+		"title": "Appearance Themes Screen",
+		"slug": "appearance-themes-screen",
+		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-themes-screen.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 1
+	},
+	"using-wordpress/administration-screens/appearance/customizer": {
+		"title": "Customizer",
+		"slug": "customizer",
+		"markdown_source": "using-wordpress/administration-screens/appearance/customizer.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 2
+	},
+	"using-wordpress/administration-screens/appearance/manage-wordpress-widgets": {
+		"title": "Manage WordPress widgets",
+		"slug": "manage-wordpress-widgets",
+		"markdown_source": "using-wordpress/administration-screens/appearance/manage-wordpress-widgets.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 3
+	},
+	"using-wordpress/administration-screens/appearance/block-based-widgets-editor": {
+		"title": "Block-based Widgets Editor",
+		"slug": "block-based-widgets-editor",
+		"markdown_source": "using-wordpress/administration-screens/appearance/block-based-widgets-editor.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 4
+	},
+	"using-wordpress/administration-screens/appearance/appearance-widgets-screen-classic-editor": {
+		"title": "Appearance Widgets Screen (Classic Editor)",
+		"slug": "appearance-widgets-screen-classic-editor",
+		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-widgets-screen-classic-editor.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 5
+	},
+	"using-wordpress/administration-screens/appearance/appearance-menus-screen": {
+		"title": "Appearance Menus Screen",
+		"slug": "appearance-menus-screen",
+		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-menus-screen.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 6
+	},
+	"using-wordpress/administration-screens/appearance/appearance-theme-file-editor-screen": {
+		"title": "Appearance Theme File Editor Screen",
+		"slug": "appearance-theme-file-editor-screen",
+		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-theme-file-editor-screen.md",
+		"parent": "using-wordpress/administration-screens/appearance",
+		"order": 7
+	},
+	"using-wordpress/administration-screens/plugins": {
+		"title": "Plugins",
+		"slug": "plugins",
+		"markdown_source": "using-wordpress/administration-screens/plugins/README.md",
+		"parent": "using-wordpress/administration-screens",
+		"order": 6
+	},
+	"using-wordpress/administration-screens/plugins/introduction-to-plugins": {
 		"title": "Introduction to Plugins",
 		"slug": "introduction-to-plugins",
-		"markdown_source": "customization/appearance/introduction-to-plugins.md",
-		"parent": "customization/appearance",
-		"order": 6
+		"markdown_source": "using-wordpress/administration-screens/plugins/introduction-to-plugins.md",
+		"parent": "using-wordpress/administration-screens/plugins",
+		"order": 1
 	},
-	"customization/appearance/layout-settings-overview": {
-		"title": "Layout Settings overview",
-		"slug": "layout-settings-overview",
-		"markdown_source": "customization/appearance/layout-settings-overview.md",
-		"parent": "customization/appearance",
-		"order": 7
-	},
-	"customization/appearance/manage-plugins": {
+	"using-wordpress/administration-screens/plugins/manage-plugins": {
 		"title": "Manage Plugins",
 		"slug": "manage-plugins",
-		"markdown_source": "customization/appearance/manage-plugins.md",
-		"parent": "customization/appearance",
+		"markdown_source": "using-wordpress/administration-screens/plugins/manage-plugins.md",
+		"parent": "using-wordpress/administration-screens/plugins",
+		"order": 2
+	},
+	"using-wordpress/administration-screens/plugins/plugins-screen": {
+		"title": "Plugins screen",
+		"slug": "plugins-screen",
+		"markdown_source": "using-wordpress/administration-screens/plugins/plugins-screen.md",
+		"parent": "using-wordpress/administration-screens/plugins",
+		"order": 3
+	},
+	"using-wordpress/administration-screens/plugins/plugins-add-new-screen": {
+		"title": "Plugins Add New screen",
+		"slug": "plugins-add-new-screen",
+		"markdown_source": "using-wordpress/administration-screens/plugins/plugins-add-new-screen.md",
+		"parent": "using-wordpress/administration-screens/plugins",
+		"order": 4
+	},
+	"using-wordpress/administration-screens/users": {
+		"title": "Users",
+		"slug": "users",
+		"markdown_source": "using-wordpress/administration-screens/users/README.md",
+		"parent": "using-wordpress/administration-screens",
+		"order": 7
+	},
+	"using-wordpress/administration-screens/users/users-screen": {
+		"title": "Users screen",
+		"slug": "users-screen",
+		"markdown_source": "using-wordpress/administration-screens/users/users-screen.md",
+		"parent": "using-wordpress/administration-screens/users",
+		"order": 1
+	},
+	"using-wordpress/administration-screens/users/users-add-new-screen": {
+		"title": "Users Add New screen",
+		"slug": "users-add-new-screen",
+		"markdown_source": "using-wordpress/administration-screens/users/users-add-new-screen.md",
+		"parent": "using-wordpress/administration-screens/users",
+		"order": 2
+	},
+	"using-wordpress/administration-screens/users/users-your-profile-screen": {
+		"title": "Users Your Profile screen",
+		"slug": "users-your-profile-screen",
+		"markdown_source": "using-wordpress/administration-screens/users/users-your-profile-screen.md",
+		"parent": "using-wordpress/administration-screens/users",
+		"order": 3
+	},
+	"using-wordpress/administration-screens/tools": {
+		"title": "Tools",
+		"slug": "tools",
+		"markdown_source": "using-wordpress/administration-screens/tools/README.md",
+		"parent": "using-wordpress/administration-screens",
 		"order": 8
 	},
-	"customization/appearance/position-settings-overview": {
-		"title": "Position Settings overview",
-		"slug": "position-settings-overview",
-		"markdown_source": "customization/appearance/position-settings-overview.md",
-		"parent": "customization/appearance",
+	"using-wordpress/administration-screens/tools/tools-screen": {
+		"title": "Tools screen",
+		"slug": "tools-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/tools-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 1
+	},
+	"using-wordpress/administration-screens/tools/tools-import-screen": {
+		"title": "Tools Import screen",
+		"slug": "tools-import-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/tools-import-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 2
+	},
+	"using-wordpress/administration-screens/tools/tools-export-screen": {
+		"title": "Tools Export screen",
+		"slug": "tools-export-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/tools-export-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 3
+	},
+	"using-wordpress/administration-screens/tools/site-health-screen": {
+		"title": "Site Health screen",
+		"slug": "site-health-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/site-health-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 4
+	},
+	"using-wordpress/administration-screens/tools/tools-export-personal-data-screen": {
+		"title": "Tools Export Personal Data screen",
+		"slug": "tools-export-personal-data-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/tools-export-personal-data-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 5
+	},
+	"using-wordpress/administration-screens/tools/tools-erase-personal-data-screen": {
+		"title": "Tools Erase Personal Data screen",
+		"slug": "tools-erase-personal-data-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/tools-erase-personal-data-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 6
+	},
+	"using-wordpress/administration-screens/tools/tools-network-screen": {
+		"title": "Tools Network screen",
+		"slug": "tools-network-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/tools-network-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 7
+	},
+	"using-wordpress/administration-screens/settings": {
+		"title": "Settings",
+		"slug": "settings",
+		"markdown_source": "using-wordpress/administration-screens/settings/README.md",
+		"parent": "using-wordpress/administration-screens",
 		"order": 9
 	},
-	"customization/appearance/site-editor": {
-		"title": "Site Editor",
-		"slug": "site-editor",
-		"markdown_source": "customization/appearance/site-editor.md",
-		"parent": "customization/appearance",
+	"using-wordpress/administration-screens/settings/settings-general-screen": {
+		"title": "Settings General screen",
+		"slug": "settings-general-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-general-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 1
+	},
+	"using-wordpress/administration-screens/settings/settings-writing-screen": {
+		"title": "Settings Writing screen",
+		"slug": "settings-writing-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-writing-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 2
+	},
+	"using-wordpress/administration-screens/settings/settings-reading-screen": {
+		"title": "Settings Reading screen",
+		"slug": "settings-reading-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-reading-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 3
+	},
+	"using-wordpress/administration-screens/settings/settings-discussion-screen": {
+		"title": "Settings Discussion screen",
+		"slug": "settings-discussion-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-discussion-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 4
+	},
+	"using-wordpress/administration-screens/settings/settings-media-screen": {
+		"title": "Settings Media screen",
+		"slug": "settings-media-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-media-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 5
+	},
+	"using-wordpress/administration-screens/settings/settings-permalinks-screen": {
+		"title": "Settings Permalinks screen",
+		"slug": "settings-permalinks-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-permalinks-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 6
+	},
+	"using-wordpress/administration-screens/settings/settings-privacy-screen": {
+		"title": "Settings Privacy screen",
+		"slug": "settings-privacy-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-privacy-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 7
+	},
+	"using-wordpress/administration-screens/settings/settings-connectors-screen": {
+		"title": "Settings Connectors screen",
+		"slug": "settings-connectors-screen",
+		"markdown_source": "using-wordpress/administration-screens/settings/settings-connectors-screen.md",
+		"parent": "using-wordpress/administration-screens/settings",
+		"order": 8
+	},
+	"using-wordpress/administration-screens/toolbar": {
+		"title": "Toolbar",
+		"slug": "toolbar",
+		"markdown_source": "using-wordpress/administration-screens/toolbar.md",
+		"parent": "using-wordpress/administration-screens",
 		"order": 10
 	},
-	"customization/appearance/styles-overview": {
-		"title": "Styles overview",
-		"slug": "styles-overview",
-		"markdown_source": "customization/appearance/styles-overview.md",
-		"parent": "customization/appearance",
+	"using-wordpress/writing-and-publishing": {
+		"title": "Writing & publishing",
+		"slug": "writing-and-publishing",
+		"markdown_source": "using-wordpress/writing-and-publishing/README.md",
+		"parent": "using-wordpress",
+		"order": 2
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site": {
+		"title": "Organizing your site",
+		"slug": "organizing-your-site",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/README.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 1
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/what-is-post-type": {
+		"title": "What is Post Type?",
+		"slug": "what-is-post-type",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/what-is-post-type.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 1
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/taxonomies": {
+		"title": "Taxonomies",
+		"slug": "taxonomies",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/taxonomies.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 2
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/assign-custom-fields": {
+		"title": "Assign custom fields",
+		"slug": "assign-custom-fields",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/assign-custom-fields.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 3
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/customize-permalinks": {
+		"title": "Customize permalinks",
+		"slug": "customize-permalinks",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/customize-permalinks.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 4
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/create-a-static-front-page": {
+		"title": "Create a static front page",
+		"slug": "create-a-static-front-page",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/create-a-static-front-page.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 5
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/create-a-search-page": {
+		"title": "Create a search page",
+		"slug": "create-a-search-page",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/create-a-search-page.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 6
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/customize-date-and-time-format": {
+		"title": "Customize date and time format",
+		"slug": "customize-date-and-time-format",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/customize-date-and-time-format.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 7
+	},
+	"using-wordpress/writing-and-publishing/organizing-your-site/search-engine-optimization": {
+		"title": "Search Engine Optimization",
+		"slug": "search-engine-optimization",
+		"markdown_source": "using-wordpress/writing-and-publishing/organizing-your-site/search-engine-optimization.md",
+		"parent": "using-wordpress/writing-and-publishing/organizing-your-site",
+		"order": 8
+	},
+	"using-wordpress/writing-and-publishing/formatting": {
+		"title": "Formatting & special characters",
+		"slug": "formatting",
+		"markdown_source": "using-wordpress/writing-and-publishing/formatting/README.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 2
+	},
+	"using-wordpress/writing-and-publishing/formatting/use-character-entities": {
+		"title": "Use character entities",
+		"slug": "use-character-entities",
+		"markdown_source": "using-wordpress/writing-and-publishing/formatting/use-character-entities.md",
+		"parent": "using-wordpress/writing-and-publishing/formatting",
+		"order": 1
+	},
+	"using-wordpress/writing-and-publishing/formatting/what-are-emoji": {
+		"title": "What are Emoji?",
+		"slug": "what-are-emoji",
+		"markdown_source": "using-wordpress/writing-and-publishing/formatting/what-are-emoji.md",
+		"parent": "using-wordpress/writing-and-publishing/formatting",
+		"order": 2
+	},
+	"using-wordpress/writing-and-publishing/formatting/what-are-smilies": {
+		"title": "What are smilies?",
+		"slug": "what-are-smilies",
+		"markdown_source": "using-wordpress/writing-and-publishing/formatting/what-are-smilies.md",
+		"parent": "using-wordpress/writing-and-publishing/formatting",
+		"order": 3
+	},
+	"using-wordpress/writing-and-publishing/formatting/write-code-in-your-posts-classic-editor": {
+		"title": "Write code in your posts (Classic Editor)",
+		"slug": "write-code-in-your-posts-classic-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/formatting/write-code-in-your-posts-classic-editor.md",
+		"parent": "using-wordpress/writing-and-publishing/formatting",
+		"order": 4
+	},
+	"using-wordpress/writing-and-publishing/formatting/how-wordpress-processes-post-content": {
+		"title": "How WordPress processes Post Content",
+		"slug": "how-wordpress-processes-post-content",
+		"markdown_source": "using-wordpress/writing-and-publishing/formatting/how-wordpress-processes-post-content.md",
+		"parent": "using-wordpress/writing-and-publishing/formatting",
+		"order": 5
+	},
+	"using-wordpress/writing-and-publishing/write-posts-classic-editor": {
+		"title": "Write posts (Classic Editor)",
+		"slug": "write-posts-classic-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/write-posts-classic-editor.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 3
+	},
+	"using-wordpress/writing-and-publishing/create-pages": {
+		"title": "Create pages",
+		"slug": "create-pages",
+		"markdown_source": "using-wordpress/writing-and-publishing/create-pages.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 4
+	},
+	"using-wordpress/writing-and-publishing/post-status": {
+		"title": "Post Status",
+		"slug": "post-status",
+		"markdown_source": "using-wordpress/writing-and-publishing/post-status.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 5
+	},
+	"using-wordpress/writing-and-publishing/content-visibility-block-editor": {
+		"title": "Set blog content visibility (Block Editor)",
+		"slug": "content-visibility-block-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/content-visibility-block-editor.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 6
+	},
+	"using-wordpress/writing-and-publishing/content-visibility-classic-editor": {
+		"title": "Set blog content visibility (Classic Editor)",
+		"slug": "content-visibility-classic-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/content-visibility-classic-editor.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 7
+	},
+	"using-wordpress/writing-and-publishing/protect-posts-with-password": {
+		"title": "Protect posts with password",
+		"slug": "protect-posts-with-password",
+		"markdown_source": "using-wordpress/writing-and-publishing/protect-posts-with-password.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 8
+	},
+	"using-wordpress/writing-and-publishing/sticky-posts-classic-editor": {
+		"title": "Sticky Posts (Classic Editor)",
+		"slug": "sticky-posts-classic-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/sticky-posts-classic-editor.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 9
+	},
+	"using-wordpress/writing-and-publishing/what-is-an-excerpt-block-editor": {
+		"title": "What is an excerpt? (Block Editor)",
+		"slug": "what-is-an-excerpt-block-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/what-is-an-excerpt-block-editor.md",
+		"parent": "using-wordpress/writing-and-publishing",
+		"order": 10
+	},
+	"using-wordpress/writing-and-publishing/what-is-an-excerpt-classic-editor": {
+		"title": "What is an excerpt? (Classic Editor)",
+		"slug": "what-is-an-excerpt-classic-editor",
+		"markdown_source": "using-wordpress/writing-and-publishing/what-is-an-excerpt-classic-editor.md",
+		"parent": "using-wordpress/writing-and-publishing",
 		"order": 11
 	},
-	"customization/appearance/the-font-library": {
-		"title": "The Font Library",
-		"slug": "the-font-library",
-		"markdown_source": "customization/appearance/the-font-library.md",
-		"parent": "customization/appearance",
+	"using-wordpress/writing-and-publishing/revisions": {
+		"title": "Revisions",
+		"slug": "revisions",
+		"markdown_source": "using-wordpress/writing-and-publishing/revisions.md",
+		"parent": "using-wordpress/writing-and-publishing",
 		"order": 12
 	},
-	"customization/appearance/use-gravatars": {
+	"using-wordpress/media": {
+		"title": "Media",
+		"slug": "media",
+		"markdown_source": "using-wordpress/media/README.md",
+		"parent": "using-wordpress",
+		"order": 3
+	},
+	"using-wordpress/media/use-images": {
+		"title": "Use Images",
+		"slug": "use-images",
+		"markdown_source": "using-wordpress/media/use-images.md",
+		"parent": "using-wordpress/media",
+		"order": 1
+	},
+	"using-wordpress/media/inserting-images-into-posts-and-pages-block-editor": {
+		"title": "Inserting images into posts and pages (Block Editor)",
+		"slug": "inserting-images-into-posts-and-pages-block-editor",
+		"markdown_source": "using-wordpress/media/inserting-images-into-posts-and-pages-block-editor.md",
+		"parent": "using-wordpress/media",
+		"order": 2
+	},
+	"using-wordpress/media/inserting-images-into-posts-and-pages-classic": {
+		"title": "Inserting images into posts and pages (Classic Editor)",
+		"slug": "inserting-images-into-posts-and-pages-classic",
+		"markdown_source": "using-wordpress/media/inserting-images-into-posts-and-pages-classic.md",
+		"parent": "using-wordpress/media",
+		"order": 3
+	},
+	"using-wordpress/media/the-wordpress-gallery-block-editor": {
+		"title": "The WordPress Gallery (Block Editor)",
+		"slug": "the-wordpress-gallery-block-editor",
+		"markdown_source": "using-wordpress/media/the-wordpress-gallery-block-editor.md",
+		"parent": "using-wordpress/media",
+		"order": 4
+	},
+	"using-wordpress/media/the-wordpress-gallery-classic-editor": {
+		"title": "The WordPress Gallery (Classic Editor)",
+		"slug": "the-wordpress-gallery-classic-editor",
+		"markdown_source": "using-wordpress/media/the-wordpress-gallery-classic-editor.md",
+		"parent": "using-wordpress/media",
+		"order": 5
+	},
+	"using-wordpress/media/edit-media": {
+		"title": "Edit Media",
+		"slug": "edit-media",
+		"markdown_source": "using-wordpress/media/edit-media.md",
+		"parent": "using-wordpress/media",
+		"order": 6
+	},
+	"using-wordpress/media/image-size-and-quality": {
+		"title": "Image size and quality",
+		"slug": "image-size-and-quality",
+		"markdown_source": "using-wordpress/media/image-size-and-quality.md",
+		"parent": "using-wordpress/media",
+		"order": 7
+	},
+	"using-wordpress/media/use-image-and-file-attachments": {
+		"title": "Use image and file attachments",
+		"slug": "use-image-and-file-attachments",
+		"markdown_source": "using-wordpress/media/use-image-and-file-attachments.md",
+		"parent": "using-wordpress/media",
+		"order": 8
+	},
+	"using-wordpress/media/audio-shortcode": {
+		"title": "Audio Shortcode",
+		"slug": "audio-shortcode",
+		"markdown_source": "using-wordpress/media/audio-shortcode.md",
+		"parent": "using-wordpress/media",
+		"order": 9
+	},
+	"using-wordpress/media/video-shortcode": {
+		"title": "Video shortcode",
+		"slug": "video-shortcode",
+		"markdown_source": "using-wordpress/media/video-shortcode.md",
+		"parent": "using-wordpress/media",
+		"order": 10
+	},
+	"using-wordpress/comments": {
+		"title": "Comments",
+		"slug": "comments",
+		"markdown_source": "using-wordpress/comments/README.md",
+		"parent": "using-wordpress",
+		"order": 4
+	},
+	"using-wordpress/comments/comments-in-wordpress": {
+		"title": "Comments in WordPress",
+		"slug": "comments-in-wordpress",
+		"markdown_source": "using-wordpress/comments/comments-in-wordpress.md",
+		"parent": "using-wordpress/comments",
+		"order": 1
+	},
+	"using-wordpress/comments/comment-moderation": {
+		"title": "Comment moderation",
+		"slug": "comment-moderation",
+		"markdown_source": "using-wordpress/comments/comment-moderation.md",
+		"parent": "using-wordpress/comments",
+		"order": 2
+	},
+	"using-wordpress/comments/understand-comment-spam": {
+		"title": "Understanding comment spam",
+		"slug": "understand-comment-spam",
+		"markdown_source": "using-wordpress/comments/understand-comment-spam.md",
+		"parent": "using-wordpress/comments",
+		"order": 3
+	},
+	"using-wordpress/comments/trackbacks-and-pingbacks": {
+		"title": "Trackbacks and Pingbacks",
+		"slug": "trackbacks-and-pingbacks",
+		"markdown_source": "using-wordpress/comments/trackbacks-and-pingbacks.md",
+		"parent": "using-wordpress/comments",
+		"order": 4
+	},
+	"using-wordpress/comments/comments-screen": {
+		"title": "Comments screen",
+		"slug": "comments-screen",
+		"markdown_source": "using-wordpress/comments/comments-screen.md",
+		"parent": "using-wordpress/comments",
+		"order": 5
+	},
+	"using-wordpress/users-roles-and-profiles": {
+		"title": "Users, roles & profiles",
+		"slug": "users-roles-and-profiles",
+		"markdown_source": "using-wordpress/users-roles-and-profiles/README.md",
+		"parent": "using-wordpress",
+		"order": 5
+	},
+	"using-wordpress/users-roles-and-profiles/roles-and-capabilities": {
+		"title": "Roles and Capabilities",
+		"slug": "roles-and-capabilities",
+		"markdown_source": "using-wordpress/users-roles-and-profiles/roles-and-capabilities.md",
+		"parent": "using-wordpress/users-roles-and-profiles",
+		"order": 1
+	},
+	"using-wordpress/users-roles-and-profiles/use-gravatars": {
 		"title": "Use Gravatars",
 		"slug": "use-gravatars",
-		"markdown_source": "customization/appearance/use-gravatars.md",
-		"parent": "customization/appearance",
-		"order": 13
-	},
-	"customization/appearance/work-with-themes": {
-		"title": "Work with themes",
-		"slug": "work-with-themes",
-		"markdown_source": "customization/appearance/work-with-themes.md",
-		"parent": "customization/appearance",
-		"order": 14
-	},
-	"customization/block-editor": {
-		"title": "Block Editor",
-		"slug": "block-editor",
-		"markdown_source": "customization/block-editor/README.md",
-		"parent": "customization",
+		"markdown_source": "using-wordpress/users-roles-and-profiles/use-gravatars.md",
+		"parent": "using-wordpress/users-roles-and-profiles",
 		"order": 2
 	},
-	"customization/block-editor/adding-a-new-block": {
-		"title": "Adding a new block",
-		"slug": "adding-a-new-block",
-		"markdown_source": "customization/block-editor/adding-a-new-block.md",
-		"parent": "customization/block-editor",
-		"order": 1
-	},
-	"customization/block-editor/advanced-settings-overview": {
-		"title": "Advanced Settings overview",
-		"slug": "advanced-settings-overview",
-		"markdown_source": "customization/block-editor/advanced-settings-overview.md",
-		"parent": "customization/block-editor",
-		"order": 2
-	},
-	"customization/block-editor/background-settings-overview": {
-		"title": "Background Settings Overview",
-		"slug": "background-settings-overview",
-		"markdown_source": "customization/block-editor/background-settings-overview.md",
-		"parent": "customization/block-editor",
+	"using-wordpress/users-roles-and-profiles/reset-your-password": {
+		"title": "Reset your password",
+		"slug": "reset-your-password",
+		"markdown_source": "using-wordpress/users-roles-and-profiles/reset-your-password.md",
+		"parent": "using-wordpress/users-roles-and-profiles",
 		"order": 3
 	},
-	"customization/block-editor/block-directory": {
-		"title": "Block Directory",
-		"slug": "block-directory",
-		"markdown_source": "customization/block-editor/block-directory.md",
-		"parent": "customization/block-editor",
+	"using-wordpress/users-roles-and-profiles/troubleshoot-login-issues": {
+		"title": "Troubleshoot login issues",
+		"slug": "troubleshoot-login-issues",
+		"markdown_source": "using-wordpress/users-roles-and-profiles/troubleshoot-login-issues.md",
+		"parent": "using-wordpress/users-roles-and-profiles",
 		"order": 4
 	},
-	"customization/block-editor/block-error-unexpected-or-invalid-content": {
-		"title": "Block Error: Unexpected or Invalid Content",
-		"slug": "block-error-unexpected-or-invalid-content",
-		"markdown_source": "customization/block-editor/block-error-unexpected-or-invalid-content.md",
-		"parent": "customization/block-editor",
-		"order": 5
-	},
-	"customization/block-editor/block-pattern-directory": {
-		"title": "Block Pattern Directory",
-		"slug": "block-pattern-directory",
-		"markdown_source": "customization/block-editor/block-pattern-directory.md",
-		"parent": "customization/block-editor",
+	"using-wordpress/installation-and-hosting": {
+		"title": "Installation & hosting",
+		"slug": "installation-and-hosting",
+		"markdown_source": "using-wordpress/installation-and-hosting/README.md",
+		"parent": "using-wordpress",
 		"order": 6
 	},
-	"customization/block-editor/block-pattern": {
-		"title": "Block Patterns",
-		"slug": "block-pattern",
-		"markdown_source": "customization/block-editor/block-pattern.md",
-		"parent": "customization/block-editor",
+	"using-wordpress/installation-and-hosting/hosting-wordpress": {
+		"title": "Hosting WordPress",
+		"slug": "hosting-wordpress",
+		"markdown_source": "using-wordpress/installation-and-hosting/hosting-wordpress.md",
+		"parent": "using-wordpress/installation-and-hosting",
+		"order": 1
+	},
+	"using-wordpress/installation-and-hosting/use-automated-installation": {
+		"title": "Use automated installation",
+		"slug": "use-automated-installation",
+		"markdown_source": "using-wordpress/installation-and-hosting/use-automated-installation.md",
+		"parent": "using-wordpress/installation-and-hosting",
+		"order": 2
+	},
+	"using-wordpress/maintenance-and-security": {
+		"title": "Maintenance & security",
+		"slug": "maintenance-and-security",
+		"markdown_source": "using-wordpress/maintenance-and-security/README.md",
+		"parent": "using-wordpress",
 		"order": 7
 	},
-	"customization/block-editor/blocks-list": {
-		"title": "Blocks list",
-		"slug": "blocks-list",
-		"markdown_source": "customization/block-editor/blocks-list.md",
-		"parent": "customization/block-editor",
+	"using-wordpress/maintenance-and-security/administer-your-blog": {
+		"title": "Administer your Blog",
+		"slug": "administer-your-blog",
+		"markdown_source": "using-wordpress/maintenance-and-security/administer-your-blog.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 1
+	},
+	"using-wordpress/maintenance-and-security/wordpress-housekeeping": {
+		"title": "WordPress Housekeeping",
+		"slug": "wordpress-housekeeping",
+		"markdown_source": "using-wordpress/maintenance-and-security/wordpress-housekeeping.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 2
+	},
+	"using-wordpress/maintenance-and-security/wordpress-site-maintenance": {
+		"title": "WordPress site maintenance",
+		"slug": "wordpress-site-maintenance",
+		"markdown_source": "using-wordpress/maintenance-and-security/wordpress-site-maintenance.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 3
+	},
+	"using-wordpress/maintenance-and-security/updating-wordpress": {
+		"title": "Updating WordPress",
+		"slug": "updating-wordpress",
+		"markdown_source": "using-wordpress/maintenance-and-security/updating-wordpress.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 4
+	},
+	"using-wordpress/maintenance-and-security/plugins-themes-auto-updates": {
+		"title": "Plugin and themes auto-updates",
+		"slug": "plugins-themes-auto-updates",
+		"markdown_source": "using-wordpress/maintenance-and-security/plugins-themes-auto-updates.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 5
+	},
+	"using-wordpress/maintenance-and-security/recovery-mode": {
+		"title": "Recovery Mode",
+		"slug": "recovery-mode",
+		"markdown_source": "using-wordpress/maintenance-and-security/recovery-mode.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 6
+	},
+	"using-wordpress/maintenance-and-security/password-best-practices": {
+		"title": "Password Best Practices",
+		"slug": "password-best-practices",
+		"markdown_source": "using-wordpress/maintenance-and-security/password-best-practices.md",
+		"parent": "using-wordpress/maintenance-and-security",
+		"order": 7
+	},
+	"using-wordpress/maintenance-and-security/why-should-i-use-https": {
+		"title": "Why should I use HTTPS",
+		"slug": "why-should-i-use-https",
+		"markdown_source": "using-wordpress/maintenance-and-security/why-should-i-use-https.md",
+		"parent": "using-wordpress/maintenance-and-security",
 		"order": 8
 	},
-	"customization/block-editor/border-settings-overview": {
-		"title": "Border & Shadow Settings overview",
-		"slug": "border-settings-overview",
-		"markdown_source": "customization/block-editor/border-settings-overview.md",
-		"parent": "customization/block-editor",
+	"using-wordpress/maintenance-and-security/wordpress-privacy": {
+		"title": "WordPress Privacy",
+		"slug": "wordpress-privacy",
+		"markdown_source": "using-wordpress/maintenance-and-security/wordpress-privacy.md",
+		"parent": "using-wordpress/maintenance-and-security",
 		"order": 9
 	},
-	"customization/block-editor/colors-settings-overview": {
+	"editing-and-design": {
+		"title": "Editing & design",
+		"slug": "editing-and-design",
+		"markdown_source": "editing-and-design/README.md",
+		"parent": null,
+		"order": 3
+	},
+	"editing-and-design/block-editor": {
+		"title": "Block editor",
+		"slug": "block-editor",
+		"markdown_source": "editing-and-design/block-editor/README.md",
+		"parent": "editing-and-design",
+		"order": 1
+	},
+	"editing-and-design/block-editor/working-with-blocks": {
+		"title": "Working with blocks",
+		"slug": "working-with-blocks",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/README.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 1
+	},
+	"editing-and-design/block-editor/working-with-blocks/block-settings": {
+		"title": "Block settings",
+		"slug": "block-settings",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/README.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 1
+	},
+	"editing-and-design/block-editor/working-with-blocks/block-settings/layout-settings-overview": {
+		"title": "Layout Settings overview",
+		"slug": "layout-settings-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/layout-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
+		"order": 1
+	},
+	"editing-and-design/block-editor/working-with-blocks/block-settings/position-settings-overview": {
+		"title": "Position Settings overview",
+		"slug": "position-settings-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/position-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
+		"order": 2
+	},
+	"editing-and-design/block-editor/working-with-blocks/block-settings/colors-settings-overview": {
 		"title": "Colors Settings overview",
 		"slug": "colors-settings-overview",
-		"markdown_source": "customization/block-editor/colors-settings-overview.md",
-		"parent": "customization/block-editor",
-		"order": 10
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/colors-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
+		"order": 3
 	},
-	"customization/block-editor/dimension-controls-overview": {
-		"title": "Dimension Settings overview",
-		"slug": "dimension-controls-overview",
-		"markdown_source": "customization/block-editor/dimension-controls-overview.md",
-		"parent": "customization/block-editor",
-		"order": 11
+	"editing-and-design/block-editor/working-with-blocks/block-settings/background-settings-overview": {
+		"title": "Background Settings Overview",
+		"slug": "background-settings-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/background-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
+		"order": 4
 	},
-	"customization/block-editor/filters-settings-overview": {
-		"title": "Filters Settings overview",
-		"slug": "filters-settings-overview",
-		"markdown_source": "customization/block-editor/filters-settings-overview.md",
-		"parent": "customization/block-editor",
-		"order": 12
-	},
-	"customization/block-editor/how-to-use-the-preview-function": {
-		"title": "How to use the View feature",
-		"slug": "how-to-use-the-preview-function",
-		"markdown_source": "customization/block-editor/how-to-use-the-preview-function.md",
-		"parent": "customization/block-editor",
-		"order": 13
-	},
-	"customization/block-editor/link-editing": {
-		"title": "Link control",
-		"slug": "link-editing",
-		"markdown_source": "customization/block-editor/link-editing.md",
-		"parent": "customization/block-editor",
-		"order": 14
-	},
-	"customization/block-editor/list-view": {
-		"title": "List view",
-		"slug": "list-view",
-		"markdown_source": "customization/block-editor/list-view.md",
-		"parent": "customization/block-editor",
-		"order": 15
-	},
-	"customization/block-editor/more-options": {
-		"title": "More options",
-		"slug": "more-options",
-		"markdown_source": "customization/block-editor/more-options.md",
-		"parent": "customization/block-editor",
-		"order": 16
-	},
-	"customization/block-editor/more-text-editing-overview": {
-		"title": "More rich text editing options",
-		"slug": "more-text-editing-overview",
-		"markdown_source": "customization/block-editor/more-text-editing-overview.md",
-		"parent": "customization/block-editor",
-		"order": 17
-	},
-	"customization/block-editor/moving-blocks": {
-		"title": "Moving blocks",
-		"slug": "moving-blocks",
-		"markdown_source": "customization/block-editor/moving-blocks.md",
-		"parent": "customization/block-editor",
-		"order": 18
-	},
-	"customization/block-editor/notes": {
-		"title": "Notes",
-		"slug": "notes",
-		"markdown_source": "customization/block-editor/notes.md",
-		"parent": "customization/block-editor",
-		"order": 19
-	},
-	"customization/block-editor/page-jumps": {
-		"title": "Page Jumps",
-		"slug": "page-jumps",
-		"markdown_source": "customization/block-editor/page-jumps.md",
-		"parent": "customization/block-editor",
-		"order": 20
-	},
-	"customization/block-editor/page-post-settings-sidebar": {
-		"title": "Page/Post Settings sidebar",
-		"slug": "page-post-settings-sidebar",
-		"markdown_source": "customization/block-editor/page-post-settings-sidebar.md",
-		"parent": "customization/block-editor",
-		"order": 21
-	},
-	"customization/block-editor/preferences-overview": {
-		"title": "Preferences overview",
-		"slug": "preferences-overview",
-		"markdown_source": "customization/block-editor/preferences-overview.md",
-		"parent": "customization/block-editor",
-		"order": 22
-	},
-	"customization/block-editor/submit-your-block-pattern-to-the-directory": {
-		"title": "Submit your Block Pattern to the Directory",
-		"slug": "submit-your-block-pattern-to-the-directory",
-		"markdown_source": "customization/block-editor/submit-your-block-pattern-to-the-directory.md",
-		"parent": "customization/block-editor",
-		"order": 23
-	},
-	"customization/block-editor/reusable-blocks": {
-		"title": "Synced Patterns (Reusable blocks)",
-		"slug": "reusable-blocks",
-		"markdown_source": "customization/block-editor/reusable-blocks.md",
-		"parent": "customization/block-editor",
-		"order": 24
-	},
-	"customization/block-editor/template-editor": {
-		"title": "Template Editor",
-		"slug": "template-editor",
-		"markdown_source": "customization/block-editor/template-editor.md",
-		"parent": "customization/block-editor",
-		"order": 25
-	},
-	"customization/block-editor/typography-settings-overview": {
+	"editing-and-design/block-editor/working-with-blocks/block-settings/typography-settings-overview": {
 		"title": "Typography Settings overview",
 		"slug": "typography-settings-overview",
-		"markdown_source": "customization/block-editor/typography-settings-overview.md",
-		"parent": "customization/block-editor",
-		"order": 26
-	},
-	"customization/block-editor/work-with-blocks": {
-		"title": "Work with blocks",
-		"slug": "work-with-blocks",
-		"markdown_source": "customization/block-editor/work-with-blocks.md",
-		"parent": "customization/block-editor",
-		"order": 27
-	},
-	"customization/default-themes": {
-		"title": "Default themes",
-		"slug": "default-themes",
-		"markdown_source": "customization/default-themes/README.md",
-		"parent": "customization",
-		"order": 3
-	},
-	"customization/default-themes/twenty-twenty-five": {
-		"title": "Twenty Twenty-Five",
-		"slug": "twenty-twenty-five",
-		"markdown_source": "customization/default-themes/twenty-twenty-five.md",
-		"parent": "customization/default-themes",
-		"order": 1
-	},
-	"customization/default-themes/twenty-twenty-four": {
-		"title": "Twenty Twenty-Four",
-		"slug": "twenty-twenty-four",
-		"markdown_source": "customization/default-themes/twenty-twenty-four.md",
-		"parent": "customization/default-themes",
-		"order": 2
-	},
-	"customization/default-themes/twenty-twenty-three": {
-		"title": "Twenty Twenty-Three",
-		"slug": "twenty-twenty-three",
-		"markdown_source": "customization/default-themes/twenty-twenty-three.md",
-		"parent": "customization/default-themes",
-		"order": 3
-	},
-	"customization/default-themes/twenty-twenty-two": {
-		"title": "Twenty Twenty-Two",
-		"slug": "twenty-twenty-two",
-		"markdown_source": "customization/default-themes/twenty-twenty-two.md",
-		"parent": "customization/default-themes",
-		"order": 4
-	},
-	"customization/default-themes/twenty-twenty-one": {
-		"title": "Twenty Twenty-One",
-		"slug": "twenty-twenty-one",
-		"markdown_source": "customization/default-themes/twenty-twenty-one.md",
-		"parent": "customization/default-themes",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/typography-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
 		"order": 5
 	},
-	"customization/default-themes/twenty-twenty": {
-		"title": "Twenty Twenty",
-		"slug": "twenty-twenty",
-		"markdown_source": "customization/default-themes/twenty-twenty.md",
-		"parent": "customization/default-themes",
+	"editing-and-design/block-editor/working-with-blocks/block-settings/dimension-controls-overview": {
+		"title": "Dimension Settings overview",
+		"slug": "dimension-controls-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/dimension-controls-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
 		"order": 6
 	},
-	"customization/default-themes/twenty-nineteen": {
-		"title": "Twenty Nineteen",
-		"slug": "twenty-nineteen",
-		"markdown_source": "customization/default-themes/twenty-nineteen.md",
-		"parent": "customization/default-themes",
+	"editing-and-design/block-editor/working-with-blocks/block-settings/border-settings-overview": {
+		"title": "Border & Shadow Settings overview",
+		"slug": "border-settings-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/border-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
 		"order": 7
 	},
-	"customization/default-themes/twenty-seventeen": {
-		"title": "Twenty Seventeen",
-		"slug": "twenty-seventeen",
-		"markdown_source": "customization/default-themes/twenty-seventeen.md",
-		"parent": "customization/default-themes",
+	"editing-and-design/block-editor/working-with-blocks/block-settings/filters-settings-overview": {
+		"title": "Filters Settings overview",
+		"slug": "filters-settings-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/filters-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
 		"order": 8
 	},
-	"customization/default-themes/twenty-sixteen": {
-		"title": "Twenty Sixteen",
-		"slug": "twenty-sixteen",
-		"markdown_source": "customization/default-themes/twenty-sixteen.md",
-		"parent": "customization/default-themes",
+	"editing-and-design/block-editor/working-with-blocks/block-settings/advanced-settings-overview": {
+		"title": "Advanced Settings overview",
+		"slug": "advanced-settings-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/advanced-settings-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
 		"order": 9
 	},
-	"customization/default-themes/twenty-fifteen": {
-		"title": "Twenty Fifteen",
-		"slug": "twenty-fifteen",
-		"markdown_source": "customization/default-themes/twenty-fifteen.md",
-		"parent": "customization/default-themes",
-		"order": 10
-	},
-	"customization/default-themes/twenty-twelve": {
-		"title": "Twenty Twelve",
-		"slug": "twenty-twelve",
-		"markdown_source": "customization/default-themes/twenty-twelve.md",
-		"parent": "customization/default-themes",
-		"order": 11
-	},
-	"customization/default-themes/twenty-eleven": {
-		"title": "Twenty Eleven",
-		"slug": "twenty-eleven",
-		"markdown_source": "customization/default-themes/twenty-eleven.md",
-		"parent": "customization/default-themes",
-		"order": 12
-	},
-	"customization/default-themes/twenty-ten": {
-		"title": "Twenty Ten",
-		"slug": "twenty-ten",
-		"markdown_source": "customization/default-themes/twenty-ten.md",
-		"parent": "customization/default-themes",
-		"order": 13
-	},
-	"customization/default-themes/twenty-eleven-changelog": {
-		"title": "Twenty Eleven changelog",
-		"slug": "twenty-eleven-changelog",
-		"markdown_source": "customization/default-themes/twenty-eleven-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 14
-	},
-	"customization/default-themes/twenty-fifteen-changelog": {
-		"title": "Twenty Fifteen changelog",
-		"slug": "twenty-fifteen-changelog",
-		"markdown_source": "customization/default-themes/twenty-fifteen-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 15
-	},
-	"customization/default-themes/twenty-fourteen-changelog": {
-		"title": "Twenty Fourteen changelog",
-		"slug": "twenty-fourteen-changelog",
-		"markdown_source": "customization/default-themes/twenty-fourteen-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 16
-	},
-	"customization/default-themes/twenty-nineteen-changelog": {
-		"title": "Twenty Nineteen changelog",
-		"slug": "twenty-nineteen-changelog",
-		"markdown_source": "customization/default-themes/twenty-nineteen-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 17
-	},
-	"customization/default-themes/twenty-seventeen-changelog": {
-		"title": "Twenty Seventeen changelog",
-		"slug": "twenty-seventeen-changelog",
-		"markdown_source": "customization/default-themes/twenty-seventeen-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 18
-	},
-	"customization/default-themes/twenty-sixteen-changelog": {
-		"title": "Twenty Sixteen changelog",
-		"slug": "twenty-sixteen-changelog",
-		"markdown_source": "customization/default-themes/twenty-sixteen-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 19
-	},
-	"customization/default-themes/twenty-ten-changelog": {
-		"title": "Twenty Ten changelog",
-		"slug": "twenty-ten-changelog",
-		"markdown_source": "customization/default-themes/twenty-ten-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 20
-	},
-	"customization/default-themes/twenty-thirteen-changelog": {
-		"title": "Twenty Thirteen changelog",
-		"slug": "twenty-thirteen-changelog",
-		"markdown_source": "customization/default-themes/twenty-thirteen-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 21
-	},
-	"customization/default-themes/twenty-twelve-changelog": {
-		"title": "Twenty Twelve changelog",
-		"slug": "twenty-twelve-changelog",
-		"markdown_source": "customization/default-themes/twenty-twelve-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 22
-	},
-	"customization/default-themes/twenty-twenty-changelog": {
-		"title": "Twenty Twenty changelog",
-		"slug": "twenty-twenty-changelog",
-		"markdown_source": "customization/default-themes/twenty-twenty-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 23
-	},
-	"customization/default-themes/twenty-twenty-five-changelog": {
-		"title": "Twenty Twenty-Five changelog",
-		"slug": "twenty-twenty-five-changelog",
-		"markdown_source": "customization/default-themes/twenty-twenty-five-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 24
-	},
-	"customization/default-themes/twenty-twenty-four-changelog": {
-		"title": "Twenty Twenty-Four changelog",
-		"slug": "twenty-twenty-four-changelog",
-		"markdown_source": "customization/default-themes/twenty-twenty-four-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 25
-	},
-	"customization/default-themes/twenty-twenty-one-changelog": {
-		"title": "Twenty Twenty-One changelog",
-		"slug": "twenty-twenty-one-changelog",
-		"markdown_source": "customization/default-themes/twenty-twenty-one-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 26
-	},
-	"customization/default-themes/twenty-twenty-three-changelog": {
-		"title": "Twenty Twenty-Three Changelog",
-		"slug": "twenty-twenty-three-changelog",
-		"markdown_source": "customization/default-themes/twenty-twenty-three-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 27
-	},
-	"customization/default-themes/twenty-twenty-two-changelog": {
-		"title": "Twenty Twenty-Two changelog",
-		"slug": "twenty-twenty-two-changelog",
-		"markdown_source": "customization/default-themes/twenty-twenty-two-changelog.md",
-		"parent": "customization/default-themes",
-		"order": 28
-	},
-	"customization/design-blocks": {
-		"title": "Design blocks",
-		"slug": "design-blocks",
-		"markdown_source": "customization/design-blocks/README.md",
-		"parent": "customization",
-		"order": 4
-	},
-	"customization/design-blocks/button-block": {
-		"title": "(Deprecated)Button block",
-		"slug": "button-block",
-		"markdown_source": "customization/design-blocks/button-block.md",
-		"parent": "customization/design-blocks",
-		"order": 1
-	},
-	"customization/design-blocks/accordion-block": {
-		"title": "Accordion block",
-		"slug": "accordion-block",
-		"markdown_source": "customization/design-blocks/accordion-block.md",
-		"parent": "customization/design-blocks",
-		"order": 2
-	},
-	"customization/design-blocks/buttons-block": {
-		"title": "Buttons block",
-		"slug": "buttons-block",
-		"markdown_source": "customization/design-blocks/buttons-block.md",
-		"parent": "customization/design-blocks",
-		"order": 3
-	},
-	"customization/design-blocks/columns-block": {
-		"title": "Columns block",
-		"slug": "columns-block",
-		"markdown_source": "customization/design-blocks/columns-block.md",
-		"parent": "customization/design-blocks",
-		"order": 4
-	},
-	"customization/design-blocks/grid-block": {
-		"title": "Grid block",
-		"slug": "grid-block",
-		"markdown_source": "customization/design-blocks/grid-block.md",
-		"parent": "customization/design-blocks",
-		"order": 5
-	},
-	"customization/design-blocks/group-block": {
-		"title": "Group block",
-		"slug": "group-block",
-		"markdown_source": "customization/design-blocks/group-block.md",
-		"parent": "customization/design-blocks",
-		"order": 6
-	},
-	"customization/design-blocks/more-block": {
-		"title": "More block",
-		"slug": "more-block",
-		"markdown_source": "customization/design-blocks/more-block.md",
-		"parent": "customization/design-blocks",
-		"order": 7
-	},
-	"customization/design-blocks/page-break-block": {
-		"title": "Page Break block",
-		"slug": "page-break-block",
-		"markdown_source": "customization/design-blocks/page-break-block.md",
-		"parent": "customization/design-blocks",
-		"order": 8
-	},
-	"customization/design-blocks/row-block": {
-		"title": "Row block",
-		"slug": "row-block",
-		"markdown_source": "customization/design-blocks/row-block.md",
-		"parent": "customization/design-blocks",
-		"order": 9
-	},
-	"customization/design-blocks/separator-block": {
-		"title": "Separator block",
-		"slug": "separator-block",
-		"markdown_source": "customization/design-blocks/separator-block.md",
-		"parent": "customization/design-blocks",
-		"order": 10
-	},
-	"customization/design-blocks/spacer-block": {
-		"title": "Spacer block",
-		"slug": "spacer-block",
-		"markdown_source": "customization/design-blocks/spacer-block.md",
-		"parent": "customization/design-blocks",
-		"order": 11
-	},
-	"customization/design-blocks/stack-block": {
-		"title": "Stack block",
-		"slug": "stack-block",
-		"markdown_source": "customization/design-blocks/stack-block.md",
-		"parent": "customization/design-blocks",
-		"order": 12
-	},
-	"customization/design-blocks/tabs-block": {
-		"title": "Tabs block",
-		"slug": "tabs-block",
-		"markdown_source": "customization/design-blocks/tabs-block.md",
-		"parent": "customization/design-blocks",
-		"order": 13
-	},
-	"customization/embed-blocks": {
-		"title": "Embed blocks",
-		"slug": "embed-blocks",
-		"markdown_source": "customization/embed-blocks/README.md",
-		"parent": "customization",
-		"order": 5
-	},
-	"customization/embed-blocks/amazon-kindle-embed": {
-		"title": "Amazon Kindle Embed",
-		"slug": "amazon-kindle-embed",
-		"markdown_source": "customization/embed-blocks/amazon-kindle-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 1
-	},
-	"customization/embed-blocks/animoto-embed": {
-		"title": "Animoto Embed",
-		"slug": "animoto-embed",
-		"markdown_source": "customization/embed-blocks/animoto-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 2
-	},
-	"customization/embed-blocks/bluesky-embed": {
-		"title": "Bluesky embed",
-		"slug": "bluesky-embed",
-		"markdown_source": "customization/embed-blocks/bluesky-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 3
-	},
-	"customization/embed-blocks/cloudup-embed": {
-		"title": "Cloudup Embed",
-		"slug": "cloudup-embed",
-		"markdown_source": "customization/embed-blocks/cloudup-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 4
-	},
-	"customization/embed-blocks/crowdsignal-embed": {
-		"title": "Crowdsignal embed",
-		"slug": "crowdsignal-embed",
-		"markdown_source": "customization/embed-blocks/crowdsignal-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 5
-	},
-	"customization/embed-blocks/dailymotion-embed": {
-		"title": "Dailymotion embed",
-		"slug": "dailymotion-embed",
-		"markdown_source": "customization/embed-blocks/dailymotion-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 6
-	},
-	"customization/embed-blocks/embed-block": {
-		"title": "Embed block",
-		"slug": "embed-block",
-		"markdown_source": "customization/embed-blocks/embed-block.md",
-		"parent": "customization/embed-blocks",
-		"order": 7
-	},
-	"customization/embed-blocks/embeds": {
-		"title": "Embeds",
-		"slug": "embeds",
-		"markdown_source": "customization/embed-blocks/embeds.md",
-		"parent": "customization/embed-blocks",
-		"order": 8
-	},
-	"customization/embed-blocks/facebook-embed": {
-		"title": "Facebook embed",
-		"slug": "facebook-embed",
-		"markdown_source": "customization/embed-blocks/facebook-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 9
-	},
-	"customization/embed-blocks/flickr-embed": {
-		"title": "Flickr embed",
-		"slug": "flickr-embed",
-		"markdown_source": "customization/embed-blocks/flickr-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 10
-	},
-	"customization/embed-blocks/imgur-embed": {
-		"title": "Imgur embed",
-		"slug": "imgur-embed",
-		"markdown_source": "customization/embed-blocks/imgur-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 11
-	},
-	"customization/embed-blocks/instagram-embed": {
-		"title": "Instagram embed",
-		"slug": "instagram-embed",
-		"markdown_source": "customization/embed-blocks/instagram-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 12
-	},
-	"customization/embed-blocks/issuu-embed": {
-		"title": "Issuu embed",
-		"slug": "issuu-embed",
-		"markdown_source": "customization/embed-blocks/issuu-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 13
-	},
-	"customization/embed-blocks/kickstarter-embed": {
-		"title": "Kickstarter embed",
-		"slug": "kickstarter-embed",
-		"markdown_source": "customization/embed-blocks/kickstarter-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 14
-	},
-	"customization/embed-blocks/mixcloud-embed": {
-		"title": "MixCloud embed",
-		"slug": "mixcloud-embed",
-		"markdown_source": "customization/embed-blocks/mixcloud-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 15
-	},
-	"customization/embed-blocks/pinterest-embed": {
-		"title": "Pinterest embed",
-		"slug": "pinterest-embed",
-		"markdown_source": "customization/embed-blocks/pinterest-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 16
-	},
-	"customization/embed-blocks/pocket-casts-embed": {
-		"title": "Pocket Casts embed",
-		"slug": "pocket-casts-embed",
-		"markdown_source": "customization/embed-blocks/pocket-casts-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 17
-	},
-	"customization/embed-blocks/reddit-embed": {
-		"title": "Reddit embed",
-		"slug": "reddit-embed",
-		"markdown_source": "customization/embed-blocks/reddit-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 18
-	},
-	"customization/embed-blocks/reverbnation-embed": {
-		"title": "ReverbNation embed",
-		"slug": "reverbnation-embed",
-		"markdown_source": "customization/embed-blocks/reverbnation-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 19
-	},
-	"customization/embed-blocks/screencast-block": {
-		"title": "Screencast embed",
-		"slug": "screencast-block",
-		"markdown_source": "customization/embed-blocks/screencast-block.md",
-		"parent": "customization/embed-blocks",
-		"order": 20
-	},
-	"customization/embed-blocks/scribd-embed": {
-		"title": "Scribd embed",
-		"slug": "scribd-embed",
-		"markdown_source": "customization/embed-blocks/scribd-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 21
-	},
-	"customization/embed-blocks/slideshare-embed": {
-		"title": "Slideshare embed (Removed)",
-		"slug": "slideshare-embed",
-		"markdown_source": "customization/embed-blocks/slideshare-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 22
-	},
-	"customization/embed-blocks/smugmug-embed": {
-		"title": "SmugMug embed",
-		"slug": "smugmug-embed",
-		"markdown_source": "customization/embed-blocks/smugmug-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 23
-	},
-	"customization/embed-blocks/soundcloud-embed": {
-		"title": "SoundCloud embed",
-		"slug": "soundcloud-embed",
-		"markdown_source": "customization/embed-blocks/soundcloud-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 24
-	},
-	"customization/embed-blocks/speaker-deck-embed": {
-		"title": "Speaker Deck embed",
-		"slug": "speaker-deck-embed",
-		"markdown_source": "customization/embed-blocks/speaker-deck-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 25
-	},
-	"customization/embed-blocks/spotify-embed": {
-		"title": "Spotify embed",
-		"slug": "spotify-embed",
-		"markdown_source": "customization/embed-blocks/spotify-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 26
-	},
-	"customization/embed-blocks/ted-embed": {
-		"title": "TED embed",
-		"slug": "ted-embed",
-		"markdown_source": "customization/embed-blocks/ted-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 27
-	},
-	"customization/embed-blocks/tiktok-embed": {
-		"title": "TikTok embed",
-		"slug": "tiktok-embed",
-		"markdown_source": "customization/embed-blocks/tiktok-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 28
-	},
-	"customization/embed-blocks/tumblr-embed": {
-		"title": "Tumblr embed",
-		"slug": "tumblr-embed",
-		"markdown_source": "customization/embed-blocks/tumblr-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 29
-	},
-	"customization/embed-blocks/twitter-embed": {
-		"title": "Twitter embed",
-		"slug": "twitter-embed",
-		"markdown_source": "customization/embed-blocks/twitter-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 30
-	},
-	"customization/embed-blocks/videopress-embed": {
-		"title": "VideoPress embed",
-		"slug": "videopress-embed",
-		"markdown_source": "customization/embed-blocks/videopress-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 31
-	},
-	"customization/embed-blocks/vimeo-embed": {
-		"title": "Vimeo embed",
-		"slug": "vimeo-embed",
-		"markdown_source": "customization/embed-blocks/vimeo-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 32
-	},
-	"customization/embed-blocks/wolfram-embed": {
-		"title": "Wolfram embed",
-		"slug": "wolfram-embed",
-		"markdown_source": "customization/embed-blocks/wolfram-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 33
-	},
-	"customization/embed-blocks/wordpress-embed": {
-		"title": "WordPress embed",
-		"slug": "wordpress-embed",
-		"markdown_source": "customization/embed-blocks/wordpress-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 34
-	},
-	"customization/embed-blocks/wordpress-tv-embed-block": {
-		"title": "WordPress.tv embed",
-		"slug": "wordpress-tv-embed-block",
-		"markdown_source": "customization/embed-blocks/wordpress-tv-embed-block.md",
-		"parent": "customization/embed-blocks",
-		"order": 35
-	},
-	"customization/embed-blocks/youtube-embed": {
-		"title": "YouTube embed",
-		"slug": "youtube-embed",
-		"markdown_source": "customization/embed-blocks/youtube-embed.md",
-		"parent": "customization/embed-blocks",
-		"order": 36
-	},
-	"customization/media-blocks": {
-		"title": "Media blocks",
-		"slug": "media-blocks",
-		"markdown_source": "customization/media-blocks/README.md",
-		"parent": "customization",
-		"order": 6
-	},
-	"customization/media-blocks/audio-block": {
-		"title": "Audio block",
-		"slug": "audio-block",
-		"markdown_source": "customization/media-blocks/audio-block.md",
-		"parent": "customization/media-blocks",
-		"order": 1
-	},
-	"customization/media-blocks/cover-block": {
-		"title": "Cover block",
-		"slug": "cover-block",
-		"markdown_source": "customization/media-blocks/cover-block.md",
-		"parent": "customization/media-blocks",
-		"order": 2
-	},
-	"customization/media-blocks/file-block": {
-		"title": "File block",
-		"slug": "file-block",
-		"markdown_source": "customization/media-blocks/file-block.md",
-		"parent": "customization/media-blocks",
-		"order": 3
-	},
-	"customization/media-blocks/gallery-block": {
-		"title": "Gallery block",
-		"slug": "gallery-block",
-		"markdown_source": "customization/media-blocks/gallery-block.md",
-		"parent": "customization/media-blocks",
-		"order": 4
-	},
-	"customization/media-blocks/icon-block": {
-		"title": "Icon block",
-		"slug": "icon-block",
-		"markdown_source": "customization/media-blocks/icon-block.md",
-		"parent": "customization/media-blocks",
-		"order": 5
-	},
-	"customization/media-blocks/image-block": {
-		"title": "Image block",
-		"slug": "image-block",
-		"markdown_source": "customization/media-blocks/image-block.md",
-		"parent": "customization/media-blocks",
-		"order": 6
-	},
-	"customization/media-blocks/media-text-block": {
-		"title": "Media & Text block",
-		"slug": "media-text-block",
-		"markdown_source": "customization/media-blocks/media-text-block.md",
-		"parent": "customization/media-blocks",
-		"order": 7
-	},
-	"customization/media-blocks/playlist-block": {
-		"title": "Playlist block",
-		"slug": "playlist-block",
-		"markdown_source": "customization/media-blocks/playlist-block.md",
-		"parent": "customization/media-blocks",
-		"order": 8
-	},
-	"customization/media-blocks/video-block": {
-		"title": "Video block",
-		"slug": "video-block",
-		"markdown_source": "customization/media-blocks/video-block.md",
-		"parent": "customization/media-blocks",
-		"order": 9
-	},
-	"customization/site-editor": {
-		"title": "Site Editor",
-		"slug": "site-editor",
-		"markdown_source": "customization/site-editor/README.md",
-		"parent": "customization",
-		"order": 7
-	},
-	"customization/site-editor/site-editor-command-palette": {
-		"title": "Command Palette",
-		"slug": "site-editor-command-palette",
-		"markdown_source": "customization/site-editor/site-editor-command-palette.md",
-		"parent": "customization/site-editor",
-		"order": 1
-	},
-	"customization/site-editor/site-editor-navigation": {
-		"title": "Site Editor navigation",
-		"slug": "site-editor-navigation",
-		"markdown_source": "customization/site-editor/site-editor-navigation.md",
-		"parent": "customization/site-editor",
-		"order": 2
-	},
-	"customization/site-editor/site-editor-pages": {
-		"title": "Site Editor Pages",
-		"slug": "site-editor-pages",
-		"markdown_source": "customization/site-editor/site-editor-pages.md",
-		"parent": "customization/site-editor",
-		"order": 3
-	},
-	"customization/site-editor/site-editor-patterns": {
-		"title": "Site Editor Patterns",
-		"slug": "site-editor-patterns",
-		"markdown_source": "customization/site-editor/site-editor-patterns.md",
-		"parent": "customization/site-editor",
-		"order": 4
-	},
-	"customization/site-editor/zoom-out-view": {
-		"title": "Zoom out view",
-		"slug": "zoom-out-view",
-		"markdown_source": "customization/site-editor/zoom-out-view.md",
-		"parent": "customization/site-editor",
-		"order": 5
-	},
-	"customization/text-blocks": {
-		"title": "Text blocks",
-		"slug": "text-blocks",
-		"markdown_source": "customization/text-blocks/README.md",
-		"parent": "customization",
-		"order": 8
-	},
-	"customization/text-blocks/classic-block": {
-		"title": "Classic block",
-		"slug": "classic-block",
-		"markdown_source": "customization/text-blocks/classic-block.md",
-		"parent": "customization/text-blocks",
-		"order": 1
-	},
-	"customization/text-blocks/code-block": {
-		"title": "Code block",
-		"slug": "code-block",
-		"markdown_source": "customization/text-blocks/code-block.md",
-		"parent": "customization/text-blocks",
-		"order": 2
-	},
-	"customization/text-blocks/details-block": {
-		"title": "Details block",
-		"slug": "details-block",
-		"markdown_source": "customization/text-blocks/details-block.md",
-		"parent": "customization/text-blocks",
-		"order": 3
-	},
-	"customization/text-blocks/footnotes-block": {
-		"title": "Footnotes block",
-		"slug": "footnotes-block",
-		"markdown_source": "customization/text-blocks/footnotes-block.md",
-		"parent": "customization/text-blocks",
-		"order": 4
-	},
-	"customization/text-blocks/heading-block": {
-		"title": "Heading block",
-		"slug": "heading-block",
-		"markdown_source": "customization/text-blocks/heading-block.md",
-		"parent": "customization/text-blocks",
-		"order": 5
-	},
-	"customization/text-blocks/list-block": {
-		"title": "List block",
-		"slug": "list-block",
-		"markdown_source": "customization/text-blocks/list-block.md",
-		"parent": "customization/text-blocks",
-		"order": 6
-	},
-	"customization/text-blocks/math-block": {
-		"title": "Math block",
-		"slug": "math-block",
-		"markdown_source": "customization/text-blocks/math-block.md",
-		"parent": "customization/text-blocks",
-		"order": 7
-	},
-	"customization/text-blocks/paragraph-block": {
-		"title": "Paragraph block",
-		"slug": "paragraph-block",
-		"markdown_source": "customization/text-blocks/paragraph-block.md",
-		"parent": "customization/text-blocks",
-		"order": 8
-	},
-	"customization/text-blocks/verse-block": {
-		"title": "Poetry block",
-		"slug": "verse-block",
-		"markdown_source": "customization/text-blocks/verse-block.md",
-		"parent": "customization/text-blocks",
-		"order": 9
-	},
-	"customization/text-blocks/preformatted-block": {
-		"title": "Preformatted block",
-		"slug": "preformatted-block",
-		"markdown_source": "customization/text-blocks/preformatted-block.md",
-		"parent": "customization/text-blocks",
-		"order": 10
-	},
-	"customization/text-blocks/pullquote-block": {
-		"title": "Pullquote block",
-		"slug": "pullquote-block",
-		"markdown_source": "customization/text-blocks/pullquote-block.md",
-		"parent": "customization/text-blocks",
-		"order": 11
-	},
-	"customization/text-blocks/quote-block": {
-		"title": "Quote block",
-		"slug": "quote-block",
-		"markdown_source": "customization/text-blocks/quote-block.md",
-		"parent": "customization/text-blocks",
-		"order": 12
-	},
-	"customization/text-blocks/table-block": {
-		"title": "Table block",
-		"slug": "table-block",
-		"markdown_source": "customization/text-blocks/table-block.md",
-		"parent": "customization/text-blocks",
-		"order": 13
-	},
-	"customization/theme-blocks": {
-		"title": "Theme blocks",
-		"slug": "theme-blocks",
-		"markdown_source": "customization/theme-blocks/README.md",
-		"parent": "customization",
-		"order": 9
-	},
-	"customization/theme-blocks/post-author-block": {
-		"title": "(Deprecated) Post Author block",
-		"slug": "post-author-block",
-		"markdown_source": "customization/theme-blocks/post-author-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 1
-	},
-	"customization/theme-blocks/archive-title-block": {
-		"title": "Archive Title block",
-		"slug": "archive-title-block",
-		"markdown_source": "customization/theme-blocks/archive-title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 2
-	},
-	"customization/theme-blocks/post-author-name-block": {
-		"title": "Author Name block",
-		"slug": "post-author-name-block",
-		"markdown_source": "customization/theme-blocks/post-author-name-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 3
-	},
-	"customization/theme-blocks/avatar-block": {
-		"title": "Avatar block",
-		"slug": "avatar-block",
-		"markdown_source": "customization/theme-blocks/avatar-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 4
-	},
-	"customization/theme-blocks/breadcrumbs-block": {
-		"title": "Breadcrumbs block",
-		"slug": "breadcrumbs-block",
-		"markdown_source": "customization/theme-blocks/breadcrumbs-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 5
-	},
-	"customization/theme-blocks/categories-block": {
-		"title": "Categories block",
-		"slug": "categories-block",
-		"markdown_source": "customization/theme-blocks/categories-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 6
-	},
-	"customization/theme-blocks/comment-author-name-block": {
-		"title": "Comment Author Name block",
-		"slug": "comment-author-name-block",
-		"markdown_source": "customization/theme-blocks/comment-author-name-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 7
-	},
-	"customization/theme-blocks/comment-content-block": {
-		"title": "Comment Content block",
-		"slug": "comment-content-block",
-		"markdown_source": "customization/theme-blocks/comment-content-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 8
-	},
-	"customization/theme-blocks/comment-date-block": {
-		"title": "Comment Date block",
-		"slug": "comment-date-block",
-		"markdown_source": "customization/theme-blocks/comment-date-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 9
-	},
-	"customization/theme-blocks/comment-edit-link-block": {
-		"title": "Comment Edit Link block",
-		"slug": "comment-edit-link-block",
-		"markdown_source": "customization/theme-blocks/comment-edit-link-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 10
-	},
-	"customization/theme-blocks/comment-reply-link-block": {
-		"title": "Comment Reply Link block",
-		"slug": "comment-reply-link-block",
-		"markdown_source": "customization/theme-blocks/comment-reply-link-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 11
-	},
-	"customization/theme-blocks/comment-template-block": {
-		"title": "Comment Template block",
-		"slug": "comment-template-block",
-		"markdown_source": "customization/theme-blocks/comment-template-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 12
-	},
-	"customization/theme-blocks/comments-block": {
-		"title": "Comments block",
-		"slug": "comments-block",
-		"markdown_source": "customization/theme-blocks/comments-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 13
-	},
-	"customization/theme-blocks/comments-count-block": {
-		"title": "Comments Count block",
-		"slug": "comments-count-block",
-		"markdown_source": "customization/theme-blocks/comments-count-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 14
-	},
-	"customization/theme-blocks/comment-link-block": {
-		"title": "Comments Link block",
-		"slug": "comment-link-block",
-		"markdown_source": "customization/theme-blocks/comment-link-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 15
-	},
-	"customization/theme-blocks/comment-pagination-block": {
-		"title": "Comments Pagination block",
-		"slug": "comment-pagination-block",
-		"markdown_source": "customization/theme-blocks/comment-pagination-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 16
-	},
-	"customization/theme-blocks/comments-title-block": {
-		"title": "Comments Title block",
-		"slug": "comments-title-block",
-		"markdown_source": "customization/theme-blocks/comments-title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 17
-	},
-	"customization/theme-blocks/post-content-block": {
-		"title": "Content block",
-		"slug": "post-content-block",
-		"markdown_source": "customization/theme-blocks/post-content-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 18
-	},
-	"customization/theme-blocks/custom-link-block": {
-		"title": "Custom Link block",
-		"slug": "custom-link-block",
-		"markdown_source": "customization/theme-blocks/custom-link-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 19
-	},
-	"customization/theme-blocks/date-block": {
-		"title": "Date Block",
-		"slug": "date-block",
-		"markdown_source": "customization/theme-blocks/date-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 20
-	},
-	"customization/theme-blocks/post-excerpt-block": {
-		"title": "Excerpt block",
-		"slug": "post-excerpt-block",
-		"markdown_source": "customization/theme-blocks/post-excerpt-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 21
-	},
-	"customization/theme-blocks/home-link-block": {
-		"title": "Home Link block",
-		"slug": "home-link-block",
-		"markdown_source": "customization/theme-blocks/home-link-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 22
-	},
-	"customization/theme-blocks/login-out-block": {
-		"title": "Login-out block",
-		"slug": "login-out-block",
-		"markdown_source": "customization/theme-blocks/login-out-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 23
-	},
-	"customization/theme-blocks/post-modified-date-block": {
-		"title": "Modified Date block",
-		"slug": "post-modified-date-block",
-		"markdown_source": "customization/theme-blocks/post-modified-date-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 24
-	},
-	"customization/theme-blocks/navigation-block": {
-		"title": "Navigation block",
-		"slug": "navigation-block",
-		"markdown_source": "customization/theme-blocks/navigation-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 25
-	},
-	"customization/theme-blocks/next-post-block": {
-		"title": "Next Post block",
-		"slug": "next-post-block",
-		"markdown_source": "customization/theme-blocks/next-post-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 26
-	},
-	"customization/theme-blocks/pagination-block": {
-		"title": "Pagination block",
-		"slug": "pagination-block",
-		"markdown_source": "customization/theme-blocks/pagination-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 27
-	},
-	"customization/theme-blocks/post-author-biography-block": {
-		"title": "Post Author Biography block",
-		"slug": "post-author-biography-block",
-		"markdown_source": "customization/theme-blocks/post-author-biography-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 28
-	},
-	"customization/theme-blocks/post-comments-form-block": {
-		"title": "Post Comments Form block",
-		"slug": "post-comments-form-block",
-		"markdown_source": "customization/theme-blocks/post-comments-form-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 29
-	},
-	"customization/theme-blocks/post-date-block": {
-		"title": "Post Date block",
-		"slug": "post-date-block",
-		"markdown_source": "customization/theme-blocks/post-date-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 30
-	},
-	"customization/theme-blocks/post-featured-image-block": {
-		"title": "Post Featured Image block",
-		"slug": "post-featured-image-block",
-		"markdown_source": "customization/theme-blocks/post-featured-image-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 31
-	},
-	"customization/theme-blocks/post-navigation-link-block": {
-		"title": "Post Navigation Link block",
-		"slug": "post-navigation-link-block",
-		"markdown_source": "customization/theme-blocks/post-navigation-link-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 32
-	},
-	"customization/theme-blocks/post-tags-block": {
-		"title": "Post Tags block",
-		"slug": "post-tags-block",
-		"markdown_source": "customization/theme-blocks/post-tags-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 33
-	},
-	"customization/theme-blocks/post-template-block": {
-		"title": "Post Template block",
-		"slug": "post-template-block",
-		"markdown_source": "customization/theme-blocks/post-template-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 34
-	},
-	"customization/theme-blocks/post-title-block": {
-		"title": "Post Title block",
-		"slug": "post-title-block",
-		"markdown_source": "customization/theme-blocks/post-title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 35
-	},
-	"customization/theme-blocks/posts-list-block": {
-		"title": "Posts List block",
-		"slug": "posts-list-block",
-		"markdown_source": "customization/theme-blocks/posts-list-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 36
-	},
-	"customization/theme-blocks/previous-post-block": {
-		"title": "Previous Post block",
-		"slug": "previous-post-block",
-		"markdown_source": "customization/theme-blocks/previous-post-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 37
-	},
-	"customization/theme-blocks/query-loop-block": {
-		"title": "Query Loop block",
-		"slug": "query-loop-block",
-		"markdown_source": "customization/theme-blocks/query-loop-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 38
-	},
-	"customization/theme-blocks/query-title-block": {
-		"title": "Query Title block",
-		"slug": "query-title-block",
-		"markdown_source": "customization/theme-blocks/query-title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 39
-	},
-	"customization/theme-blocks/query-total-block": {
-		"title": "Query Total block",
-		"slug": "query-total-block",
-		"markdown_source": "customization/theme-blocks/query-total-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 40
-	},
-	"customization/theme-blocks/read-more-block": {
-		"title": "Read More block",
-		"slug": "read-more-block",
-		"markdown_source": "customization/theme-blocks/read-more-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 41
-	},
-	"customization/theme-blocks/search-results-title-block": {
-		"title": "Search Results Title block",
-		"slug": "search-results-title-block",
-		"markdown_source": "customization/theme-blocks/search-results-title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 42
-	},
-	"customization/theme-blocks/site-logo-block": {
-		"title": "Site Logo block",
-		"slug": "site-logo-block",
-		"markdown_source": "customization/theme-blocks/site-logo-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 43
-	},
-	"customization/theme-blocks/site-tagline-block": {
-		"title": "Site Tagline block",
-		"slug": "site-tagline-block",
-		"markdown_source": "customization/theme-blocks/site-tagline-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 44
-	},
-	"customization/theme-blocks/site-title-block": {
-		"title": "Site Title block",
-		"slug": "site-title-block",
-		"markdown_source": "customization/theme-blocks/site-title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 45
-	},
-	"customization/theme-blocks/submenu-block": {
-		"title": "Submenu block",
-		"slug": "submenu-block",
-		"markdown_source": "customization/theme-blocks/submenu-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 46
-	},
-	"customization/theme-blocks/template-part-block": {
-		"title": "Template Part block",
-		"slug": "template-part-block",
-		"markdown_source": "customization/theme-blocks/template-part-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 47
-	},
-	"customization/theme-blocks/term-description-block": {
-		"title": "Term Description block",
-		"slug": "term-description-block",
-		"markdown_source": "customization/theme-blocks/term-description-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 48
-	},
-	"customization/theme-blocks/terms-query-block": {
-		"title": "Terms Query block",
-		"slug": "terms-query-block",
-		"markdown_source": "customization/theme-blocks/terms-query-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 49
-	},
-	"customization/theme-blocks/time-to-read-block": {
-		"title": "Time to Read block",
-		"slug": "time-to-read-block",
-		"markdown_source": "customization/theme-blocks/time-to-read-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 50
-	},
-	"customization/theme-blocks/title-block": {
-		"title": "Title block",
-		"slug": "title-block",
-		"markdown_source": "customization/theme-blocks/title-block.md",
-		"parent": "customization/theme-blocks",
-		"order": 51
-	},
-	"customization/widget-blocks": {
-		"title": "Widget blocks",
-		"slug": "widget-blocks",
-		"markdown_source": "customization/widget-blocks/README.md",
-		"parent": "customization",
-		"order": 10
-	},
-	"customization/widget-blocks/archives-block": {
-		"title": "Archives block",
-		"slug": "archives-block",
-		"markdown_source": "customization/widget-blocks/archives-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 1
-	},
-	"customization/widget-blocks/calendar-block": {
-		"title": "Calendar block",
-		"slug": "calendar-block",
-		"markdown_source": "customization/widget-blocks/calendar-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 2
-	},
-	"customization/widget-blocks/categories-list-block": {
-		"title": "Categories List block",
-		"slug": "categories-list-block",
-		"markdown_source": "customization/widget-blocks/categories-list-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 3
-	},
-	"customization/widget-blocks/custom-html": {
-		"title": "Custom HTML",
-		"slug": "custom-html",
-		"markdown_source": "customization/widget-blocks/custom-html.md",
-		"parent": "customization/widget-blocks",
-		"order": 4
-	},
-	"customization/widget-blocks/latest-comments-block": {
-		"title": "Latest Comments block",
-		"slug": "latest-comments-block",
-		"markdown_source": "customization/widget-blocks/latest-comments-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 5
-	},
-	"customization/widget-blocks/latest-posts-block": {
-		"title": "Latest Posts block",
-		"slug": "latest-posts-block",
-		"markdown_source": "customization/widget-blocks/latest-posts-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 6
-	},
-	"customization/widget-blocks/page-list-block": {
-		"title": "Page List block",
-		"slug": "page-list-block",
-		"markdown_source": "customization/widget-blocks/page-list-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 7
-	},
-	"customization/widget-blocks/rss-block": {
-		"title": "RSS block",
-		"slug": "rss-block",
-		"markdown_source": "customization/widget-blocks/rss-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 8
-	},
-	"customization/widget-blocks/search-block": {
-		"title": "Search block",
-		"slug": "search-block",
-		"markdown_source": "customization/widget-blocks/search-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 9
-	},
-	"customization/widget-blocks/shortcode-block": {
-		"title": "Shortcode block",
-		"slug": "shortcode-block",
-		"markdown_source": "customization/widget-blocks/shortcode-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 10
-	},
-	"customization/widget-blocks/social-icons": {
-		"title": "Social Icons block",
-		"slug": "social-icons",
-		"markdown_source": "customization/widget-blocks/social-icons.md",
-		"parent": "customization/widget-blocks",
-		"order": 11
-	},
-	"customization/widget-blocks/tag-cloud-block": {
-		"title": "Tag Cloud block",
-		"slug": "tag-cloud-block",
-		"markdown_source": "customization/widget-blocks/tag-cloud-block.md",
-		"parent": "customization/widget-blocks",
-		"order": 12
-	},
-	"uncategorized": {
-		"title": "Uncategorized",
-		"slug": "uncategorized",
-		"markdown_source": "uncategorized/README.md",
-		"parent": null,
-		"order": 5
-	},
-	"uncategorized/responsive-styles": {
+	"editing-and-design/block-editor/working-with-blocks/block-settings/responsive-styles": {
 		"title": "Responsive styles",
 		"slug": "responsive-styles",
-		"markdown_source": "uncategorized/responsive-styles.md",
-		"parent": "uncategorized",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-settings/responsive-styles.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks/block-settings",
+		"order": 10
+	},
+	"editing-and-design/block-editor/working-with-blocks/work-with-blocks": {
+		"title": "Work with blocks",
+		"slug": "work-with-blocks",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/work-with-blocks.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 2
+	},
+	"editing-and-design/block-editor/working-with-blocks/adding-a-new-block": {
+		"title": "Adding a new block",
+		"slug": "adding-a-new-block",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/adding-a-new-block.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 3
+	},
+	"editing-and-design/block-editor/working-with-blocks/moving-blocks": {
+		"title": "Moving blocks",
+		"slug": "moving-blocks",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/moving-blocks.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 4
+	},
+	"editing-and-design/block-editor/working-with-blocks/list-view": {
+		"title": "List view",
+		"slug": "list-view",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/list-view.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 5
+	},
+	"editing-and-design/block-editor/working-with-blocks/more-options": {
+		"title": "More options",
+		"slug": "more-options",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/more-options.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 6
+	},
+	"editing-and-design/block-editor/working-with-blocks/link-editing": {
+		"title": "Link control",
+		"slug": "link-editing",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/link-editing.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 7
+	},
+	"editing-and-design/block-editor/working-with-blocks/more-text-editing-overview": {
+		"title": "More rich text editing options",
+		"slug": "more-text-editing-overview",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/more-text-editing-overview.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 8
+	},
+	"editing-and-design/block-editor/working-with-blocks/page-jumps": {
+		"title": "Page Jumps",
+		"slug": "page-jumps",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/page-jumps.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 9
+	},
+	"editing-and-design/block-editor/working-with-blocks/block-directory": {
+		"title": "Block Directory",
+		"slug": "block-directory",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-directory.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 10
+	},
+	"editing-and-design/block-editor/working-with-blocks/block-error-unexpected-or-invalid-content": {
+		"title": "Block Error: Unexpected or Invalid Content",
+		"slug": "block-error-unexpected-or-invalid-content",
+		"markdown_source": "editing-and-design/block-editor/working-with-blocks/block-error-unexpected-or-invalid-content.md",
+		"parent": "editing-and-design/block-editor/working-with-blocks",
+		"order": 11
+	},
+	"editing-and-design/block-editor/patterns": {
+		"title": "Patterns",
+		"slug": "patterns",
+		"markdown_source": "editing-and-design/block-editor/patterns/README.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 2
+	},
+	"editing-and-design/block-editor/patterns/block-pattern": {
+		"title": "Block Patterns",
+		"slug": "block-pattern",
+		"markdown_source": "editing-and-design/block-editor/patterns/block-pattern.md",
+		"parent": "editing-and-design/block-editor/patterns",
 		"order": 1
 	},
-	"uncategorized/site-editor-identity": {
+	"editing-and-design/block-editor/patterns/reusable-blocks": {
+		"title": "Synced Patterns (Reusable blocks)",
+		"slug": "reusable-blocks",
+		"markdown_source": "editing-and-design/block-editor/patterns/reusable-blocks.md",
+		"parent": "editing-and-design/block-editor/patterns",
+		"order": 2
+	},
+	"editing-and-design/block-editor/patterns/comparing-patterns-template-parts-and-reusable-blocks": {
+		"title": "Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks)",
+		"slug": "comparing-patterns-template-parts-and-reusable-blocks",
+		"markdown_source": "editing-and-design/block-editor/patterns/comparing-patterns-template-parts-and-reusable-blocks.md",
+		"parent": "editing-and-design/block-editor/patterns",
+		"order": 3
+	},
+	"editing-and-design/block-editor/patterns/block-pattern-directory": {
+		"title": "Block Pattern Directory",
+		"slug": "block-pattern-directory",
+		"markdown_source": "editing-and-design/block-editor/patterns/block-pattern-directory.md",
+		"parent": "editing-and-design/block-editor/patterns",
+		"order": 4
+	},
+	"editing-and-design/block-editor/patterns/submit-your-block-pattern-to-the-directory": {
+		"title": "Submit your Block Pattern to the Directory",
+		"slug": "submit-your-block-pattern-to-the-directory",
+		"markdown_source": "editing-and-design/block-editor/patterns/submit-your-block-pattern-to-the-directory.md",
+		"parent": "editing-and-design/block-editor/patterns",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks": {
+		"title": "Blocks list",
+		"slug": "blocks",
+		"markdown_source": "editing-and-design/block-editor/blocks/README.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/text": {
+		"title": "Text blocks",
+		"slug": "text",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/README.md",
+		"parent": "editing-and-design/block-editor/blocks",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/text/classic-block": {
+		"title": "Classic block",
+		"slug": "classic-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/classic-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/text/code-block": {
+		"title": "Code block",
+		"slug": "code-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/code-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/text/details-block": {
+		"title": "Details block",
+		"slug": "details-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/details-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/text/footnotes-block": {
+		"title": "Footnotes block",
+		"slug": "footnotes-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/footnotes-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/text/heading-block": {
+		"title": "Heading block",
+		"slug": "heading-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/heading-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/text/list-block": {
+		"title": "List block",
+		"slug": "list-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/list-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/text/math-block": {
+		"title": "Math block",
+		"slug": "math-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/math-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 7
+	},
+	"editing-and-design/block-editor/blocks/text/paragraph-block": {
+		"title": "Paragraph block",
+		"slug": "paragraph-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/paragraph-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 8
+	},
+	"editing-and-design/block-editor/blocks/text/verse-block": {
+		"title": "Poetry block",
+		"slug": "verse-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/verse-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 9
+	},
+	"editing-and-design/block-editor/blocks/text/preformatted-block": {
+		"title": "Preformatted block",
+		"slug": "preformatted-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/preformatted-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 10
+	},
+	"editing-and-design/block-editor/blocks/text/pullquote-block": {
+		"title": "Pullquote block",
+		"slug": "pullquote-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/pullquote-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 11
+	},
+	"editing-and-design/block-editor/blocks/text/quote-block": {
+		"title": "Quote block",
+		"slug": "quote-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/quote-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 12
+	},
+	"editing-and-design/block-editor/blocks/text/table-block": {
+		"title": "Table block",
+		"slug": "table-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/text/table-block.md",
+		"parent": "editing-and-design/block-editor/blocks/text",
+		"order": 13
+	},
+	"editing-and-design/block-editor/blocks/media-blocks": {
+		"title": "Media blocks",
+		"slug": "media-blocks",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/README.md",
+		"parent": "editing-and-design/block-editor/blocks",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/audio-block": {
+		"title": "Audio block",
+		"slug": "audio-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/audio-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/cover-block": {
+		"title": "Cover block",
+		"slug": "cover-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/cover-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/file-block": {
+		"title": "File block",
+		"slug": "file-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/file-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/gallery-block": {
+		"title": "Gallery block",
+		"slug": "gallery-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/gallery-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/icon-block": {
+		"title": "Icon block",
+		"slug": "icon-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/icon-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/image-block": {
+		"title": "Image block",
+		"slug": "image-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/image-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/media-text-block": {
+		"title": "Media & Text block",
+		"slug": "media-text-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/media-text-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 7
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/playlist-block": {
+		"title": "Playlist block",
+		"slug": "playlist-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/playlist-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 8
+	},
+	"editing-and-design/block-editor/blocks/media-blocks/video-block": {
+		"title": "Video block",
+		"slug": "video-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/media-blocks/video-block.md",
+		"parent": "editing-and-design/block-editor/blocks/media-blocks",
+		"order": 9
+	},
+	"editing-and-design/block-editor/blocks/design": {
+		"title": "Design blocks",
+		"slug": "design",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/README.md",
+		"parent": "editing-and-design/block-editor/blocks",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/design/accordion-block": {
+		"title": "Accordion block",
+		"slug": "accordion-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/accordion-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/design/buttons-block": {
+		"title": "Buttons block",
+		"slug": "buttons-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/buttons-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/design/columns-block": {
+		"title": "Columns block",
+		"slug": "columns-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/columns-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/design/grid-block": {
+		"title": "Grid block",
+		"slug": "grid-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/grid-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/design/group-block": {
+		"title": "Group block",
+		"slug": "group-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/group-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/design/more-block": {
+		"title": "More block",
+		"slug": "more-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/more-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/design/page-break-block": {
+		"title": "Page Break block",
+		"slug": "page-break-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/page-break-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 7
+	},
+	"editing-and-design/block-editor/blocks/design/row-block": {
+		"title": "Row block",
+		"slug": "row-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/row-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 8
+	},
+	"editing-and-design/block-editor/blocks/design/separator-block": {
+		"title": "Separator block",
+		"slug": "separator-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/separator-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 9
+	},
+	"editing-and-design/block-editor/blocks/design/spacer-block": {
+		"title": "Spacer block",
+		"slug": "spacer-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/spacer-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 10
+	},
+	"editing-and-design/block-editor/blocks/design/stack-block": {
+		"title": "Stack block",
+		"slug": "stack-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/stack-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 11
+	},
+	"editing-and-design/block-editor/blocks/design/tabs-block": {
+		"title": "Tabs block",
+		"slug": "tabs-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/tabs-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 12
+	},
+	"editing-and-design/block-editor/blocks/design/button-block": {
+		"title": "(Deprecated)Button block",
+		"slug": "button-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/design/button-block.md",
+		"parent": "editing-and-design/block-editor/blocks/design",
+		"order": 13
+	},
+	"editing-and-design/block-editor/blocks/widgets": {
+		"title": "Widget blocks",
+		"slug": "widgets",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/README.md",
+		"parent": "editing-and-design/block-editor/blocks",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/widgets/archives-block": {
+		"title": "Archives block",
+		"slug": "archives-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/archives-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/widgets/calendar-block": {
+		"title": "Calendar block",
+		"slug": "calendar-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/calendar-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/widgets/categories-list-block": {
+		"title": "Categories List block",
+		"slug": "categories-list-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/categories-list-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/widgets/custom-html": {
+		"title": "Custom HTML",
+		"slug": "custom-html",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/custom-html.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/widgets/latest-comments-block": {
+		"title": "Latest Comments block",
+		"slug": "latest-comments-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/latest-comments-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/widgets/latest-posts-block": {
+		"title": "Latest Posts block",
+		"slug": "latest-posts-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/latest-posts-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/widgets/page-list-block": {
+		"title": "Page List block",
+		"slug": "page-list-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/page-list-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 7
+	},
+	"editing-and-design/block-editor/blocks/widgets/rss-block": {
+		"title": "RSS block",
+		"slug": "rss-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/rss-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 8
+	},
+	"editing-and-design/block-editor/blocks/widgets/search-block": {
+		"title": "Search block",
+		"slug": "search-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/search-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 9
+	},
+	"editing-and-design/block-editor/blocks/widgets/shortcode-block": {
+		"title": "Shortcode block",
+		"slug": "shortcode-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/shortcode-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 10
+	},
+	"editing-and-design/block-editor/blocks/widgets/social-icons": {
+		"title": "Social Icons block",
+		"slug": "social-icons",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/social-icons.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 11
+	},
+	"editing-and-design/block-editor/blocks/widgets/tag-cloud-block": {
+		"title": "Tag Cloud block",
+		"slug": "tag-cloud-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/widgets/tag-cloud-block.md",
+		"parent": "editing-and-design/block-editor/blocks/widgets",
+		"order": 12
+	},
+	"editing-and-design/block-editor/blocks/theme": {
+		"title": "Theme blocks",
+		"slug": "theme",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/README.md",
+		"parent": "editing-and-design/block-editor/blocks",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/theme/archive-title-block": {
+		"title": "Archive Title block",
+		"slug": "archive-title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/archive-title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/theme/post-author-name-block": {
+		"title": "Author Name block",
+		"slug": "post-author-name-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-author-name-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/theme/avatar-block": {
+		"title": "Avatar block",
+		"slug": "avatar-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/avatar-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/theme/breadcrumbs-block": {
+		"title": "Breadcrumbs block",
+		"slug": "breadcrumbs-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/breadcrumbs-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/theme/categories-block": {
+		"title": "Categories block",
+		"slug": "categories-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/categories-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-author-name-block": {
+		"title": "Comment Author Name block",
+		"slug": "comment-author-name-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-author-name-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-content-block": {
+		"title": "Comment Content block",
+		"slug": "comment-content-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-content-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 7
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-date-block": {
+		"title": "Comment Date block",
+		"slug": "comment-date-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-date-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 8
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-edit-link-block": {
+		"title": "Comment Edit Link block",
+		"slug": "comment-edit-link-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-edit-link-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 9
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-reply-link-block": {
+		"title": "Comment Reply Link block",
+		"slug": "comment-reply-link-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-reply-link-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 10
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-template-block": {
+		"title": "Comment Template block",
+		"slug": "comment-template-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-template-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 11
+	},
+	"editing-and-design/block-editor/blocks/theme/comments-block": {
+		"title": "Comments block",
+		"slug": "comments-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comments-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 12
+	},
+	"editing-and-design/block-editor/blocks/theme/comments-count-block": {
+		"title": "Comments Count block",
+		"slug": "comments-count-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comments-count-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 13
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-link-block": {
+		"title": "Comments Link block",
+		"slug": "comment-link-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-link-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 14
+	},
+	"editing-and-design/block-editor/blocks/theme/comment-pagination-block": {
+		"title": "Comments Pagination block",
+		"slug": "comment-pagination-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comment-pagination-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 15
+	},
+	"editing-and-design/block-editor/blocks/theme/comments-title-block": {
+		"title": "Comments Title block",
+		"slug": "comments-title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/comments-title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 16
+	},
+	"editing-and-design/block-editor/blocks/theme/post-content-block": {
+		"title": "Content block",
+		"slug": "post-content-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-content-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 17
+	},
+	"editing-and-design/block-editor/blocks/theme/custom-link-block": {
+		"title": "Custom Link block",
+		"slug": "custom-link-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/custom-link-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 18
+	},
+	"editing-and-design/block-editor/blocks/theme/date-block": {
+		"title": "Date Block",
+		"slug": "date-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/date-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 19
+	},
+	"editing-and-design/block-editor/blocks/theme/post-excerpt-block": {
+		"title": "Excerpt block",
+		"slug": "post-excerpt-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-excerpt-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 20
+	},
+	"editing-and-design/block-editor/blocks/theme/home-link-block": {
+		"title": "Home Link block",
+		"slug": "home-link-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/home-link-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 21
+	},
+	"editing-and-design/block-editor/blocks/theme/login-out-block": {
+		"title": "Login-out block",
+		"slug": "login-out-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/login-out-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 22
+	},
+	"editing-and-design/block-editor/blocks/theme/post-modified-date-block": {
+		"title": "Modified Date block",
+		"slug": "post-modified-date-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-modified-date-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 23
+	},
+	"editing-and-design/block-editor/blocks/theme/navigation-block": {
+		"title": "Navigation block",
+		"slug": "navigation-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/navigation-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 24
+	},
+	"editing-and-design/block-editor/blocks/theme/next-post-block": {
+		"title": "Next Post block",
+		"slug": "next-post-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/next-post-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 25
+	},
+	"editing-and-design/block-editor/blocks/theme/pagination-block": {
+		"title": "Pagination block",
+		"slug": "pagination-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/pagination-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 26
+	},
+	"editing-and-design/block-editor/blocks/theme/post-author-biography-block": {
+		"title": "Post Author Biography block",
+		"slug": "post-author-biography-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-author-biography-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 27
+	},
+	"editing-and-design/block-editor/blocks/theme/post-comments-form-block": {
+		"title": "Post Comments Form block",
+		"slug": "post-comments-form-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-comments-form-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 28
+	},
+	"editing-and-design/block-editor/blocks/theme/post-date-block": {
+		"title": "Post Date block",
+		"slug": "post-date-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-date-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 29
+	},
+	"editing-and-design/block-editor/blocks/theme/post-featured-image-block": {
+		"title": "Post Featured Image block",
+		"slug": "post-featured-image-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-featured-image-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 30
+	},
+	"editing-and-design/block-editor/blocks/theme/post-navigation-link-block": {
+		"title": "Post Navigation Link block",
+		"slug": "post-navigation-link-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-navigation-link-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 31
+	},
+	"editing-and-design/block-editor/blocks/theme/post-tags-block": {
+		"title": "Post Tags block",
+		"slug": "post-tags-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-tags-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 32
+	},
+	"editing-and-design/block-editor/blocks/theme/post-template-block": {
+		"title": "Post Template block",
+		"slug": "post-template-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-template-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 33
+	},
+	"editing-and-design/block-editor/blocks/theme/post-title-block": {
+		"title": "Post Title block",
+		"slug": "post-title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 34
+	},
+	"editing-and-design/block-editor/blocks/theme/posts-list-block": {
+		"title": "Posts List block",
+		"slug": "posts-list-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/posts-list-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 35
+	},
+	"editing-and-design/block-editor/blocks/theme/previous-post-block": {
+		"title": "Previous Post block",
+		"slug": "previous-post-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/previous-post-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 36
+	},
+	"editing-and-design/block-editor/blocks/theme/query-loop-block": {
+		"title": "Query Loop block",
+		"slug": "query-loop-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/query-loop-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 37
+	},
+	"editing-and-design/block-editor/blocks/theme/query-title-block": {
+		"title": "Query Title block",
+		"slug": "query-title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/query-title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 38
+	},
+	"editing-and-design/block-editor/blocks/theme/query-total-block": {
+		"title": "Query Total block",
+		"slug": "query-total-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/query-total-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 39
+	},
+	"editing-and-design/block-editor/blocks/theme/read-more-block": {
+		"title": "Read More block",
+		"slug": "read-more-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/read-more-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 40
+	},
+	"editing-and-design/block-editor/blocks/theme/search-results-title-block": {
+		"title": "Search Results Title block",
+		"slug": "search-results-title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/search-results-title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 41
+	},
+	"editing-and-design/block-editor/blocks/theme/site-logo-block": {
+		"title": "Site Logo block",
+		"slug": "site-logo-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/site-logo-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 42
+	},
+	"editing-and-design/block-editor/blocks/theme/site-tagline-block": {
+		"title": "Site Tagline block",
+		"slug": "site-tagline-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/site-tagline-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 43
+	},
+	"editing-and-design/block-editor/blocks/theme/site-title-block": {
+		"title": "Site Title block",
+		"slug": "site-title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/site-title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 44
+	},
+	"editing-and-design/block-editor/blocks/theme/submenu-block": {
+		"title": "Submenu block",
+		"slug": "submenu-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/submenu-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 45
+	},
+	"editing-and-design/block-editor/blocks/theme/template-part-block": {
+		"title": "Template Part block",
+		"slug": "template-part-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/template-part-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 46
+	},
+	"editing-and-design/block-editor/blocks/theme/term-description-block": {
+		"title": "Term Description block",
+		"slug": "term-description-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/term-description-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 47
+	},
+	"editing-and-design/block-editor/blocks/theme/terms-query-block": {
+		"title": "Terms Query block",
+		"slug": "terms-query-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/terms-query-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 48
+	},
+	"editing-and-design/block-editor/blocks/theme/time-to-read-block": {
+		"title": "Time to Read block",
+		"slug": "time-to-read-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/time-to-read-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 49
+	},
+	"editing-and-design/block-editor/blocks/theme/title-block": {
+		"title": "Title block",
+		"slug": "title-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/title-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 50
+	},
+	"editing-and-design/block-editor/blocks/theme/post-author-block": {
+		"title": "(Deprecated) Post Author block",
+		"slug": "post-author-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/theme/post-author-block.md",
+		"parent": "editing-and-design/block-editor/blocks/theme",
+		"order": 51
+	},
+	"editing-and-design/block-editor/blocks/embeds": {
+		"title": "Embeds",
+		"slug": "embeds",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/README.md",
+		"parent": "editing-and-design/block-editor/blocks",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/embeds/embed-block": {
+		"title": "Embed block",
+		"slug": "embed-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/embed-block.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 1
+	},
+	"editing-and-design/block-editor/blocks/embeds/amazon-kindle-embed": {
+		"title": "Amazon Kindle Embed",
+		"slug": "amazon-kindle-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/amazon-kindle-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 2
+	},
+	"editing-and-design/block-editor/blocks/embeds/animoto-embed": {
+		"title": "Animoto Embed",
+		"slug": "animoto-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/animoto-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 3
+	},
+	"editing-and-design/block-editor/blocks/embeds/bluesky-embed": {
+		"title": "Bluesky embed",
+		"slug": "bluesky-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/bluesky-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 4
+	},
+	"editing-and-design/block-editor/blocks/embeds/cloudup-embed": {
+		"title": "Cloudup Embed",
+		"slug": "cloudup-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/cloudup-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 5
+	},
+	"editing-and-design/block-editor/blocks/embeds/crowdsignal-embed": {
+		"title": "Crowdsignal embed",
+		"slug": "crowdsignal-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/crowdsignal-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 6
+	},
+	"editing-and-design/block-editor/blocks/embeds/dailymotion-embed": {
+		"title": "Dailymotion embed",
+		"slug": "dailymotion-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/dailymotion-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 7
+	},
+	"editing-and-design/block-editor/blocks/embeds/facebook-embed": {
+		"title": "Facebook embed",
+		"slug": "facebook-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/facebook-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 8
+	},
+	"editing-and-design/block-editor/blocks/embeds/flickr-embed": {
+		"title": "Flickr embed",
+		"slug": "flickr-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/flickr-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 9
+	},
+	"editing-and-design/block-editor/blocks/embeds/imgur-embed": {
+		"title": "Imgur embed",
+		"slug": "imgur-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/imgur-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 10
+	},
+	"editing-and-design/block-editor/blocks/embeds/instagram-embed": {
+		"title": "Instagram embed",
+		"slug": "instagram-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/instagram-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 11
+	},
+	"editing-and-design/block-editor/blocks/embeds/issuu-embed": {
+		"title": "Issuu embed",
+		"slug": "issuu-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/issuu-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 12
+	},
+	"editing-and-design/block-editor/blocks/embeds/kickstarter-embed": {
+		"title": "Kickstarter embed",
+		"slug": "kickstarter-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/kickstarter-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 13
+	},
+	"editing-and-design/block-editor/blocks/embeds/mixcloud-embed": {
+		"title": "MixCloud embed",
+		"slug": "mixcloud-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/mixcloud-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 14
+	},
+	"editing-and-design/block-editor/blocks/embeds/pinterest-embed": {
+		"title": "Pinterest embed",
+		"slug": "pinterest-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/pinterest-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 15
+	},
+	"editing-and-design/block-editor/blocks/embeds/pocket-casts-embed": {
+		"title": "Pocket Casts embed",
+		"slug": "pocket-casts-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/pocket-casts-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 16
+	},
+	"editing-and-design/block-editor/blocks/embeds/reddit-embed": {
+		"title": "Reddit embed",
+		"slug": "reddit-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/reddit-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 17
+	},
+	"editing-and-design/block-editor/blocks/embeds/reverbnation-embed": {
+		"title": "ReverbNation embed",
+		"slug": "reverbnation-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/reverbnation-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 18
+	},
+	"editing-and-design/block-editor/blocks/embeds/screencast-block": {
+		"title": "Screencast embed",
+		"slug": "screencast-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/screencast-block.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 19
+	},
+	"editing-and-design/block-editor/blocks/embeds/scribd-embed": {
+		"title": "Scribd embed",
+		"slug": "scribd-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/scribd-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 20
+	},
+	"editing-and-design/block-editor/blocks/embeds/smugmug-embed": {
+		"title": "SmugMug embed",
+		"slug": "smugmug-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/smugmug-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 21
+	},
+	"editing-and-design/block-editor/blocks/embeds/soundcloud-embed": {
+		"title": "SoundCloud embed",
+		"slug": "soundcloud-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/soundcloud-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 22
+	},
+	"editing-and-design/block-editor/blocks/embeds/speaker-deck-embed": {
+		"title": "Speaker Deck embed",
+		"slug": "speaker-deck-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/speaker-deck-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 23
+	},
+	"editing-and-design/block-editor/blocks/embeds/spotify-embed": {
+		"title": "Spotify embed",
+		"slug": "spotify-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/spotify-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 24
+	},
+	"editing-and-design/block-editor/blocks/embeds/ted-embed": {
+		"title": "TED embed",
+		"slug": "ted-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/ted-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 25
+	},
+	"editing-and-design/block-editor/blocks/embeds/tiktok-embed": {
+		"title": "TikTok embed",
+		"slug": "tiktok-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/tiktok-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 26
+	},
+	"editing-and-design/block-editor/blocks/embeds/tumblr-embed": {
+		"title": "Tumblr embed",
+		"slug": "tumblr-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/tumblr-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 27
+	},
+	"editing-and-design/block-editor/blocks/embeds/twitter-embed": {
+		"title": "Twitter embed",
+		"slug": "twitter-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/twitter-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 28
+	},
+	"editing-and-design/block-editor/blocks/embeds/videopress-embed": {
+		"title": "VideoPress embed",
+		"slug": "videopress-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/videopress-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 29
+	},
+	"editing-and-design/block-editor/blocks/embeds/vimeo-embed": {
+		"title": "Vimeo embed",
+		"slug": "vimeo-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/vimeo-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 30
+	},
+	"editing-and-design/block-editor/blocks/embeds/wolfram-embed": {
+		"title": "Wolfram embed",
+		"slug": "wolfram-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/wolfram-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 31
+	},
+	"editing-and-design/block-editor/blocks/embeds/wordpress-embed": {
+		"title": "WordPress embed",
+		"slug": "wordpress-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/wordpress-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 32
+	},
+	"editing-and-design/block-editor/blocks/embeds/wordpress-tv-embed-block": {
+		"title": "WordPress.tv embed",
+		"slug": "wordpress-tv-embed-block",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/wordpress-tv-embed-block.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 33
+	},
+	"editing-and-design/block-editor/blocks/embeds/youtube-embed": {
+		"title": "YouTube embed",
+		"slug": "youtube-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/youtube-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 34
+	},
+	"editing-and-design/block-editor/blocks/embeds/slideshare-embed": {
+		"title": "Slideshare embed (Removed)",
+		"slug": "slideshare-embed",
+		"markdown_source": "editing-and-design/block-editor/blocks/embeds/slideshare-embed.md",
+		"parent": "editing-and-design/block-editor/blocks/embeds",
+		"order": 35
+	},
+	"editing-and-design/block-editor/wordpress-block-editor": {
+		"title": "WordPress Block Editor",
+		"slug": "wordpress-block-editor",
+		"markdown_source": "editing-and-design/block-editor/wordpress-block-editor.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 4
+	},
+	"editing-and-design/block-editor/page-post-settings-sidebar": {
+		"title": "Page/Post Settings sidebar",
+		"slug": "page-post-settings-sidebar",
+		"markdown_source": "editing-and-design/block-editor/page-post-settings-sidebar.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 5
+	},
+	"editing-and-design/block-editor/preferences-overview": {
+		"title": "Preferences overview",
+		"slug": "preferences-overview",
+		"markdown_source": "editing-and-design/block-editor/preferences-overview.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 6
+	},
+	"editing-and-design/block-editor/how-to-use-the-preview-function": {
+		"title": "How to use the View feature",
+		"slug": "how-to-use-the-preview-function",
+		"markdown_source": "editing-and-design/block-editor/how-to-use-the-preview-function.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 7
+	},
+	"editing-and-design/block-editor/distraction-free-mode": {
+		"title": "Distraction Free mode",
+		"slug": "distraction-free-mode",
+		"markdown_source": "editing-and-design/block-editor/distraction-free-mode.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 8
+	},
+	"editing-and-design/block-editor/keyboard-shortcuts-block-editor": {
+		"title": "Use keyboard shortcuts (Block Editor)",
+		"slug": "keyboard-shortcuts-block-editor",
+		"markdown_source": "editing-and-design/block-editor/keyboard-shortcuts-block-editor.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 9
+	},
+	"editing-and-design/block-editor/keyboard-shortcuts-classic-editor": {
+		"title": "Use keyboard shortcuts (Classic Editor)",
+		"slug": "keyboard-shortcuts-classic-editor",
+		"markdown_source": "editing-and-design/block-editor/keyboard-shortcuts-classic-editor.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 10
+	},
+	"editing-and-design/block-editor/notes": {
+		"title": "Notes",
+		"slug": "notes",
+		"markdown_source": "editing-and-design/block-editor/notes.md",
+		"parent": "editing-and-design/block-editor",
+		"order": 11
+	},
+	"editing-and-design/site-editor": {
+		"title": "Site Editor",
+		"slug": "site-editor",
+		"markdown_source": "editing-and-design/site-editor/README.md",
+		"parent": "editing-and-design",
+		"order": 2
+	},
+	"editing-and-design/site-editor/site-editor-navigation": {
+		"title": "Site Editor navigation",
+		"slug": "site-editor-navigation",
+		"markdown_source": "editing-and-design/site-editor/site-editor-navigation.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 1
+	},
+	"editing-and-design/site-editor/site-editor-identity": {
 		"title": "Site Editor Identity",
 		"slug": "site-editor-identity",
-		"markdown_source": "uncategorized/site-editor-identity.md",
-		"parent": "uncategorized",
+		"markdown_source": "editing-and-design/site-editor/site-editor-identity.md",
+		"parent": "editing-and-design/site-editor",
 		"order": 2
+	},
+	"editing-and-design/site-editor/site-editor-pages": {
+		"title": "Site Editor Pages",
+		"slug": "site-editor-pages",
+		"markdown_source": "editing-and-design/site-editor/site-editor-pages.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 3
+	},
+	"editing-and-design/site-editor/template-editor": {
+		"title": "Template Editor",
+		"slug": "template-editor",
+		"markdown_source": "editing-and-design/site-editor/template-editor.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 4
+	},
+	"editing-and-design/site-editor/site-editor-patterns": {
+		"title": "Site Editor Patterns",
+		"slug": "site-editor-patterns",
+		"markdown_source": "editing-and-design/site-editor/site-editor-patterns.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 5
+	},
+	"editing-and-design/site-editor/styles-overview": {
+		"title": "Styles overview",
+		"slug": "styles-overview",
+		"markdown_source": "editing-and-design/site-editor/styles-overview.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 6
+	},
+	"editing-and-design/site-editor/the-font-library": {
+		"title": "The Font Library",
+		"slug": "the-font-library",
+		"markdown_source": "editing-and-design/site-editor/the-font-library.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 7
+	},
+	"editing-and-design/site-editor/zoom-out-view": {
+		"title": "Zoom out view",
+		"slug": "zoom-out-view",
+		"markdown_source": "editing-and-design/site-editor/zoom-out-view.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 8
+	},
+	"editing-and-design/site-editor/site-editor-command-palette": {
+		"title": "Command Palette",
+		"slug": "site-editor-command-palette",
+		"markdown_source": "editing-and-design/site-editor/site-editor-command-palette.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 9
+	},
+	"editing-and-design/site-editor/additional-guide-to-using-the-site-editor": {
+		"title": "Additional guide to using the Site Editor",
+		"slug": "additional-guide-to-using-the-site-editor",
+		"markdown_source": "editing-and-design/site-editor/additional-guide-to-using-the-site-editor.md",
+		"parent": "editing-and-design/site-editor",
+		"order": 10
+	},
+	"editing-and-design/themes": {
+		"title": "Themes",
+		"slug": "themes",
+		"markdown_source": "editing-and-design/themes/README.md",
+		"parent": "editing-and-design",
+		"order": 3
+	},
+	"editing-and-design/themes/default-themes": {
+		"title": "Default themes",
+		"slug": "default-themes",
+		"markdown_source": "editing-and-design/themes/default-themes/README.md",
+		"parent": "editing-and-design/themes",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-five": {
+		"title": "Twenty Twenty-Five",
+		"slug": "twenty-twenty-five",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-five/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-five/twenty-twenty-five-changelog": {
+		"title": "Twenty Twenty-Five changelog",
+		"slug": "twenty-twenty-five-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-five/twenty-twenty-five-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twenty-five",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-four": {
+		"title": "Twenty Twenty-Four",
+		"slug": "twenty-twenty-four",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-four/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 2
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-four/twenty-twenty-four-changelog": {
+		"title": "Twenty Twenty-Four changelog",
+		"slug": "twenty-twenty-four-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-four/twenty-twenty-four-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twenty-four",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-three": {
+		"title": "Twenty Twenty-Three",
+		"slug": "twenty-twenty-three",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-three/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 3
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-three/twenty-twenty-three-changelog": {
+		"title": "Twenty Twenty-Three Changelog",
+		"slug": "twenty-twenty-three-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-three/twenty-twenty-three-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twenty-three",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-two": {
+		"title": "Twenty Twenty-Two",
+		"slug": "twenty-twenty-two",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-two/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 4
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-two/twenty-twenty-two-changelog": {
+		"title": "Twenty Twenty-Two changelog",
+		"slug": "twenty-twenty-two-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-two/twenty-twenty-two-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twenty-two",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-one": {
+		"title": "Twenty Twenty-One",
+		"slug": "twenty-twenty-one",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-one/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 5
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty-one/twenty-twenty-one-changelog": {
+		"title": "Twenty Twenty-One changelog",
+		"slug": "twenty-twenty-one-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-one/twenty-twenty-one-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twenty-one",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty": {
+		"title": "Twenty Twenty",
+		"slug": "twenty-twenty",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 6
+	},
+	"editing-and-design/themes/default-themes/twenty-twenty/twenty-twenty-changelog": {
+		"title": "Twenty Twenty changelog",
+		"slug": "twenty-twenty-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty/twenty-twenty-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twenty",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-nineteen": {
+		"title": "Twenty Nineteen",
+		"slug": "twenty-nineteen",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-nineteen/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 7
+	},
+	"editing-and-design/themes/default-themes/twenty-nineteen/twenty-nineteen-changelog": {
+		"title": "Twenty Nineteen changelog",
+		"slug": "twenty-nineteen-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-nineteen/twenty-nineteen-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-nineteen",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-seventeen": {
+		"title": "Twenty Seventeen",
+		"slug": "twenty-seventeen",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-seventeen/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 8
+	},
+	"editing-and-design/themes/default-themes/twenty-seventeen/twenty-seventeen-changelog": {
+		"title": "Twenty Seventeen changelog",
+		"slug": "twenty-seventeen-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-seventeen/twenty-seventeen-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-seventeen",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-sixteen": {
+		"title": "Twenty Sixteen",
+		"slug": "twenty-sixteen",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-sixteen/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 9
+	},
+	"editing-and-design/themes/default-themes/twenty-sixteen/twenty-sixteen-changelog": {
+		"title": "Twenty Sixteen changelog",
+		"slug": "twenty-sixteen-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-sixteen/twenty-sixteen-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-sixteen",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-fifteen": {
+		"title": "Twenty Fifteen",
+		"slug": "twenty-fifteen",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-fifteen/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 10
+	},
+	"editing-and-design/themes/default-themes/twenty-fifteen/twenty-fifteen-changelog": {
+		"title": "Twenty Fifteen changelog",
+		"slug": "twenty-fifteen-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-fifteen/twenty-fifteen-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-fifteen",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-fourteen": {
+		"title": "Twenty Fourteen",
+		"slug": "twenty-fourteen",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-fourteen/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 11
+	},
+	"editing-and-design/themes/default-themes/twenty-fourteen/twenty-fourteen-changelog": {
+		"title": "Twenty Fourteen changelog",
+		"slug": "twenty-fourteen-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-fourteen/twenty-fourteen-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-fourteen",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-thirteen": {
+		"title": "Twenty Thirteen",
+		"slug": "twenty-thirteen",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-thirteen/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 12
+	},
+	"editing-and-design/themes/default-themes/twenty-thirteen/twenty-thirteen-changelog": {
+		"title": "Twenty Thirteen changelog",
+		"slug": "twenty-thirteen-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-thirteen/twenty-thirteen-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-thirteen",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-twelve": {
+		"title": "Twenty Twelve",
+		"slug": "twenty-twelve",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twelve/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 13
+	},
+	"editing-and-design/themes/default-themes/twenty-twelve/twenty-twelve-changelog": {
+		"title": "Twenty Twelve changelog",
+		"slug": "twenty-twelve-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-twelve/twenty-twelve-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-twelve",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-eleven": {
+		"title": "Twenty Eleven",
+		"slug": "twenty-eleven",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-eleven/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 14
+	},
+	"editing-and-design/themes/default-themes/twenty-eleven/twenty-eleven-changelog": {
+		"title": "Twenty Eleven changelog",
+		"slug": "twenty-eleven-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-eleven/twenty-eleven-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-eleven",
+		"order": 1
+	},
+	"editing-and-design/themes/default-themes/twenty-ten": {
+		"title": "Twenty Ten",
+		"slug": "twenty-ten",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-ten/README.md",
+		"parent": "editing-and-design/themes/default-themes",
+		"order": 15
+	},
+	"editing-and-design/themes/default-themes/twenty-ten/twenty-ten-changelog": {
+		"title": "Twenty Ten changelog",
+		"slug": "twenty-ten-changelog",
+		"markdown_source": "editing-and-design/themes/default-themes/twenty-ten/twenty-ten-changelog.md",
+		"parent": "editing-and-design/themes/default-themes/twenty-ten",
+		"order": 1
+	},
+	"editing-and-design/themes/work-with-themes": {
+		"title": "Work with themes",
+		"slug": "work-with-themes",
+		"markdown_source": "editing-and-design/themes/work-with-themes.md",
+		"parent": "editing-and-design/themes",
+		"order": 2
+	},
+	"editing-and-design/themes/block-themes": {
+		"title": "Block themes",
+		"slug": "block-themes",
+		"markdown_source": "editing-and-design/themes/block-themes.md",
+		"parent": "editing-and-design/themes",
+		"order": 3
+	},
+	"editing-and-design/themes/create-a-favicon": {
+		"title": "Create a Favicon",
+		"slug": "create-a-favicon",
+		"markdown_source": "editing-and-design/themes/create-a-favicon.md",
+		"parent": "editing-and-design/themes",
+		"order": 4
 	},
 	"site-health": {
 		"title": "Site Health: keep your website healthy",
 		"slug": "site-health",
 		"markdown_source": "site-health.md",
 		"parent": null,
-		"order": 6
+		"order": 4
 	},
 	"update-php": {
 		"title": "Get a faster, more secure website: update your PHP today",
 		"slug": "update-php",
 		"markdown_source": "update-php.md",
 		"parent": null,
-		"order": 7
+		"order": 5
 	}
 }

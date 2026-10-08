@@ -1,0 +1,56 @@
+---
+// data/structure-review.md rendered at build time with the same remark/rehype plugins as the
+// docs (H1 strip, GitHub alerts, WordPress heading ids). Inline code that names an article
+// slug or a proposed folder (`overview/faq/`) becomes a link into the proposed tree.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import { visit } from 'unist-util-visit';
+// @ts-ignore plain JS helper
+import remarkStripFirstH1 from '../../../plugins/remark-strip-first-h1.mjs';
+// @ts-ignore plain JS helper
+import remarkGithubAlerts from '../../../plugins/remark-github-alerts.mjs';
+// @ts-ignore plain JS helper
+import rehypeWpHeadingIds from '../../../plugins/rehype-wp-heading-ids.mjs';
+// @ts-ignore plain JS helper
+import { structureData } from '../../../lib/structure-data.mjs';
+// @ts-ignore plain JS helper
+import { loadTree } from '../../../lib/sidebar.mjs';
+// @ts-ignore plain JS helper
+import { TREE, routeFromId } from '../../../lib/paths.mjs';
+
+const { review, map } = structureData();
+const title = /^#\s+(.+)$/m.exec(review)?.[1]?.trim() ?? 'Structure decisions';
+const bySlug = new Map(map.map((a: any) => [a.slug, routeFromId(a.proposed_id)]));
+const folders = new Set(loadTree(TREE.proposed).entries.filter((e: any) => e.isIndex).map((e: any) => e.key));
+
+const remarkLinkCode = () => (tree: any) => {
+	visit(tree, 'inlineCode', (node: any, index: number | undefined, parent: any) => {
+		if (index === undefined || !parent || parent.type === 'link') return;
+		const v = node.value.trim();
+		const folder = v.replace(/\/$/, '');
+		const href = bySlug.get(v) ?? (v.endsWith('/') && folders.has(folder) ? routeFromId(`${TREE.proposed.prefix}/${folder}`) : undefined);
+		if (href) parent.children[index] = { type: 'link', url: href, children: [node] };
+	});
+};
+
+const processor = await createMarkdownProcessor({
+	remarkPlugins: [remarkStripFirstH1, remarkGithubAlerts, remarkLinkCode],
+	rehypePlugins: [rehypeWpHeadingIds],
+});
+const { code, metadata } = await processor.render(review);
+---
+
+<StarlightPage
+	frontmatter={{
+		title,
+		description: 'Why each section of the proposed documentation tree is shaped the way it is.',
+	}}
+	headings={metadata.headings}
+	hasSidebar={false}
+>
+	<p>
+		Rendered from <code>data/structure-review.md</code>. Article slugs and folder paths link into the <a href="/proposed/">proposed tree</a>.
+		Back to the <a href="/compare/">compare page</a>.
+	</p>
+	<Fragment set:html={code} />
+</StarlightPage>

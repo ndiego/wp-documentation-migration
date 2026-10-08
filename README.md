@@ -65,14 +65,54 @@ data/       machine-readable reports: redirects, convert report, link check, dow
 
 - GitHub: https://github.com/ndiego/wp-documentation-migration (private)
 - Spacefast space: https://wp-documentation-preview.space.fast/ (private; share via `sf share link`)
-- Publish a new version: `cd site && npm run build:publish && cd .. && sf publish site/dist --wait -m "<what changed>"`
+  - Live (v2, branch `restructure`): landing page, `/current/` and `/proposed/` trees, `/compare/` page
+  - v1, frozen single-tree site of the original structure: https://wp-documentation-preview--v1.space.fast/
+- Restructure PR: https://github.com/ndiego/wp-documentation-migration/pull/1 (draft, `restructure` → `trunk`)
+- Publish a new version: `scripts/build_all.sh && cd site && npm run build:publish && cd .. && sf publish site/dist --wait -m "<what changed>"`
   (the folder is linked to the space via .spacefast/space.json)
 
 ## Regenerating
 
-Order matters: `python3 -I scripts/download_assets.py`, then `.venv/bin/python -I scripts/convert.py`, then
-download again (the downloader records external asset types that the converter uses for file extensions).
+Order matters: `.venv/bin/python -I scripts/convert.py` (a docs/ build writes docs/assets/images-manifest.json),
+then `python3 -I scripts/download_assets.py`, then convert again if data/external-asset-types.json changed and
+download once more (the downloader records external asset types that the converter uses for file extensions).
+`scripts/build_all.sh` does exactly this.
 `convert.py` rebuilds everything under docs/ except docs/assets/.
+
+## Structure mode and before/after
+
+The converter can lay the same raw data out two ways:
+
+- **Category layout** (default, unchanged): `docs/<top-category>/<sub-category>/<slug>.md`.
+- **Structure mode** (`--structure data/structure.yaml`): a hand-designed tree. Each section is a folder with a
+  `README.md` (generated from `title` + `intro`, or the converted `index:` article), nested `children` to any
+  depth, and an ordered `articles` list (order = menu order). Article frontmatter gains `position`
+  (1-based among the folder's articles) and `legacy_categories` (replaces `categories`); generated READMEs have
+  only `title` and `section: true`, index articles keep their normal frontmatter plus `section: true`.
+  With `remove_nav_links: true` the first-paragraph "Go back to the list of Blocks" links are dropped
+  (`migration.nav_link_removed: true`). Every raw article must be placed exactly once; unknown, duplicate and
+  missing slugs abort before anything is written.
+
+```sh
+scripts/build_all.sh                       # everything: assets (if missing), build/before, docs/, link checks
+.venv/bin/python -I scripts/convert.py --structure data/structure.yaml --check-structure   # validate only
+.venv/bin/python -I scripts/convert.py --out build/before                                 # category tree
+.venv/bin/python -I scripts/convert.py --structure data/structure.yaml                    # docs/ (new tree)
+.venv/bin/python -I scripts/check_links.py --docs build/before                            # check either tree
+```
+
+Outputs of structure mode, besides docs/: `data/restructure-map.json` (per article: before/after path,
+section chain, depth, position, nav_link_removed) and `data/structure-metrics.json` (before/after: folders,
+depth, ordering, orphans, breadcrumb paragraphs, moves, boilerplate share; definitions inside the file;
+computed by `scripts/structure_metrics.py`). The manifest lists, within each folder, the sub-sections first and
+then the articles, with `order` counting both. Links are resolved by slug, so they follow moved files; links to
+a category page point at the deepest section that holds all of that category's articles.
+
+`--out DIR` (anywhere outside docs/) writes a complete second tree and never touches docs/: DIR gets a relative
+symlink `assets -> docs/assets`, so the Markdown keeps the same `../../assets/...` paths as docs/, and
+`docs/assets/images-manifest.json` is only written by docs/ builds. With `--structure --out DIR` the move map
+and metrics go to `DIR/_restructure-map.json` and `DIR/_structure-metrics.json`; only docs/ builds write the
+committed `data/` files. `build/` is gitignored.
 
 ## Status
 
@@ -85,5 +125,6 @@ download again (the downloader records external asset types that the converter u
 - [x] docs/manifest.json (importer format) and docs/assets/images-manifest.json (2,556 assets)
 - [x] Asset download (scripts/download_assets.py) — 2,533 fetched, ~1.8 GB; 23 unreachable, see notes/missing-assets.md
 - [ ] Decide open questions in notes/markdown-conventions.md
+- [x] Structure mode (`--structure`), before/after builds and metrics (scripts/build_all.sh)
 - [ ] Starlight preview site in site/ — in progress
 - [ ] HelpHub importer subclass (merge-back)

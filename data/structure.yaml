@@ -1,0 +1,702 @@
+# data/structure.yaml — declarative tree for docs/. Every article slug appears exactly once.
+#
+# Source of the design: notes/helphub-structure-analysis.md §5 (target tree) and §6.
+# Validated by /private/tmp/structure-work/check.py (0 missing, 0 duplicates, 0 unknown slugs).
+#
+# Technical guides: the old top-level "Technical guides" section (13 articles) is dissolved. Its articles
+# are folded into Using WordPress as "Installation & hosting" and "Maintenance & security", except
+# troubleshoot-login-issues (-> Users, roles & profiles) and search-engine-optimization
+# (-> Writing & publishing > Organizing your site).
+#
+# Decisions
+# ---------
+# Structure
+#  - "Support guides" -> using-wordpress, "Customization" -> editing-and-design (titles per §5 sketch).
+#  - "FAQs" is renamed "Frequently asked questions" (slug faq).
+#  - Administration screens mirror the wp-admin menu. Comments would hold a single page (comments-screen),
+#    so it lives in the Using WordPress > Comments topic section instead of its own screens group.
+#  - Writing & publishing (25 articles in HelpHub) is split: core writing tasks stay at its top level;
+#    "Organizing your site" (post types, taxonomies, custom fields, permalinks, front page, search page,
+#    date format, SEO) and "Formatting & special characters" become children.
+#  - "Comments" is a new Using WordPress section built from Publishing articles plus comments-screen.
+#  - "Users, roles & profiles" is a new section (roles-and-capabilities, use-gravatars, reset-your-password,
+#    troubleshoot-login-issues). The three Users *screens* stay in Administration screens > Users.
+#  - Block editor settings overviews get their own "Block settings" child under "Working with blocks"
+#    (depth 4) rather than one flat 20-item list.
+#  - The Embeds blocks section uses the `embeds` article as its index; `embed-block` (the generic block)
+#    is listed first, then the provider embeds alphabetically.
+#  - Block reference lists are alphabetical by title (not slug), with "(Deprecated)"/"(Removed)" pages last.
+#    Note verse-block sorts as "Poetry block".
+#  - Site editor uses the `site-editor` article as its index, which removes the section/article slug clash.
+#  - Default themes: 13 themes have both an article and a changelog. Twenty Fourteen and Twenty Thirteen have
+#    only a changelog (no theme article exists), so they get generated sections with a short intro holding
+#    just the changelog, keeping the newest-first sequence unbroken. There is no Twenty Eighteen theme.
+# Placements worth a second look
+#  - wordpress-block-editor: Dashboard -> Block editor (first article, acts as the editor overview).
+#  - video-shortcode: Dashboard -> Using WordPress > Media, next to audio-shortcode.
+#  - what-is-post-type: Dashboard -> Writing & publishing > Organizing your site.
+#  - site-editor, additional-guide-to-using-the-site-editor: Appearance -> Site editor.
+#  - template-editor: Block editor -> Site editor (it edits templates, a site-level concept).
+#  - introduction-to-plugins, manage-plugins: Appearance -> Administration screens > Plugins, ahead of the
+#    two Plugins screens.
+#  - block-based-widgets-editor, manage-wordpress-widgets: kept with appearance-widgets-screen-classic-editor in
+#    Administration screens > Appearance (wp-admin Appearance > Widgets), not with the Widget blocks reference.
+#  - customizer: stays in Administration screens > Appearance (Appearance > Customize).
+#  - layout-settings-overview, position-settings-overview: Appearance -> Block settings.
+#  - styles-overview, the-font-library: Appearance -> Site editor.
+#  - use-gravatars: Appearance -> Users, roles & profiles.
+#  - assign-custom-fields: Appearance -> Writing & publishing > Organizing your site.
+#  - create-a-favicon: Appearance -> Themes (top level, next to work-with-themes). Debatable: it now lives in
+#    Settings > General, so settings-general-screen's neighbourhood is an alternative.
+#  - Uncategorized: responsive-styles -> Block settings; site-editor-identity -> Site editor.
+#  - keyboard-shortcuts-block-editor + keyboard-shortcuts-classic-editor: Dashboard -> Block editor top level,
+#    kept as an adjacent pair (the Classic variant therefore sits inside Block editor).
+#  - distraction-free-mode: Dashboard -> Block editor.
+#  - administration-screens, toolbar: top of Administration screens (overview pages for the whole group).
+#  - search-engine-optimization: Technical guides > Installation -> Organizing your site.
+#  - block-directory, block-error-unexpected-or-invalid-content, page-jumps: Working with blocks.
+version: 1
+remove_nav_links: true
+sections:
+  # ------------------------------------------------------------------------------------------------
+  - slug: overview
+    title: WordPress overview
+    intro: |
+      Learn what WordPress is, where it came from, and how to take your first steps with it.
+
+      Start with **Where to start** if you are new to WordPress: it is a short reading path from setting
+      up your site to understanding the vocabulary used throughout this documentation. **About WordPress**
+      covers the project's history, versions and community, and **Frequently asked questions** answers the
+      questions people ask most often.
+    articles: []
+    children:
+      - slug: where-to-start
+        title: Where to start
+        intro: |
+          New to WordPress? Read these pages in order. They take you from getting a site running, through
+          your first steps in the editor, to the terms and concepts you will meet everywhere else in the
+          documentation.
+
+          The first-steps guide comes in two versions: one for the block editor (the default since
+          WordPress 5.0) and one for the Classic Editor plugin.
+        articles:
+          - get-started-with-wordpress
+          - first-steps-with-wordpress-block-editor
+          - first-steps-with-wordpress-classic
+          - where-to-find-wordpress-help
+          - wordpress-glossary
+          - wordpress-semantics
+          - introduction-to-blogging
+      - slug: about-wordpress
+        title: About WordPress
+        intro: |
+          Background on the WordPress project: its origins, how WordPress.org differs from WordPress.com,
+          the history of every release, which versions are still supported, and how you can contribute.
+        articles:
+          - learn-about-wordpress-and-version-history
+          - difference-between-wordpress-org-and-wordpress-com
+          - wordpress-versions
+          - wordpress-versions-0-7-to-4-9
+          - supported-versions
+          - become-a-wordpress-contributor
+      - slug: faq
+        title: Frequently asked questions
+        intro: |
+          Quick answers to common questions about working with WordPress, installing it, and fixing
+          problems, including what to do when your changes don't appear or your site has been hacked.
+        articles:
+          - faq-work-with-wordpress
+          - faq-installation
+          - faq-troubleshooting
+          - faq-i-make-changes-and-nothing-happens
+          - faq-my-site-was-hacked
+
+  # ------------------------------------------------------------------------------------------------
+  - slug: using-wordpress
+    title: Using WordPress
+    intro: |
+      Everything you need to run a WordPress site day to day: the administration screens, writing and
+      publishing content, managing media and comments, working with users, and keeping your site installed,
+      updated and secure.
+
+      If you are looking for a specific screen in your dashboard, go to **Administration screens**, which
+      follows the order of the wp-admin menu. For tasks, start with **Writing & publishing**.
+    articles: []
+    children:
+      - slug: administration-screens
+        index: administration-screens
+        articles:
+          - toolbar
+        children:
+          - slug: dashboard
+            title: Dashboard
+            intro: |
+              The Dashboard menu: the screen you see when you log in, with an at-a-glance view of your site,
+              and the Updates screen where you install updates to WordPress, plugins, themes and translations.
+            articles:
+              - dashboard-screen
+              - dashboard-updates-screen
+          - slug: posts
+            title: Posts
+            intro: |
+              The Posts menu: the list of all your posts, and the screens for managing the categories and
+              tags you use to organise them.
+            articles:
+              - posts-screen
+              - posts-categories-screen
+              - posts-tags-screen
+          - slug: media-screens
+            title: Media
+            intro: |
+              The Media menu: the Media Library, where you browse and manage uploaded files, and the Add New
+              screen for uploading them.
+            articles:
+              - media-library-screen
+              - media-add-new-screen
+          - slug: pages
+            title: Pages
+            intro: |
+              The Pages menu: the list of all your pages, and the screen for creating a new one.
+            articles:
+              - pages-screen
+              - pages-add-new-screen
+          - slug: appearance
+            title: Appearance
+            intro: |
+              The Appearance menu: choosing themes, customising a classic theme with the Customizer,
+              managing widgets and menus, and editing theme files.
+
+              The Site Editor (Appearance > Editor) is documented in its own section under
+              **Editing & design**.
+            articles:
+              - appearance-themes-screen
+              - customizer
+              - manage-wordpress-widgets
+              - block-based-widgets-editor
+              - appearance-widgets-screen-classic-editor
+              - appearance-menus-screen
+              - appearance-theme-file-editor-screen
+          - slug: plugins
+            title: Plugins
+            intro: |
+              Plugins add features to your WordPress site. These pages explain what plugins are, how to
+              install, activate, update and remove them, and what you can do on the Plugins and Add New
+              Plugin screens.
+            articles:
+              - introduction-to-plugins
+              - manage-plugins
+              - plugins-screen
+              - plugins-add-new-screen
+          - slug: users
+            title: Users
+            intro: |
+              The Users menu: the list of everyone with an account on your site, the screen for adding new
+              users, and your own profile. For roles, passwords and avatars, see
+              **Users, roles & profiles**.
+            articles:
+              - users-screen
+              - users-add-new-screen
+              - users-your-profile-screen
+          - slug: tools
+            title: Tools
+            intro: |
+              The Tools menu: importing and exporting content, checking your site's health, handling
+              personal data requests, and setting up a multisite network.
+            articles:
+              - tools-screen
+              - tools-import-screen
+              - tools-export-screen
+              - site-health-screen
+              - tools-export-personal-data-screen
+              - tools-erase-personal-data-screen
+              - tools-network-screen
+          - slug: settings
+            title: Settings
+            intro: |
+              The Settings menu: site-wide options for your title and language, writing and reading
+              defaults, discussion and comments, media sizes, permalinks, privacy, and connections to
+              external services.
+            articles:
+              - settings-general-screen
+              - settings-writing-screen
+              - settings-reading-screen
+              - settings-discussion-screen
+              - settings-media-screen
+              - settings-permalinks-screen
+              - settings-privacy-screen
+              - settings-connectors-screen
+
+      - slug: writing-and-publishing
+        title: Writing & publishing
+        intro: |
+          How to create and publish content in WordPress: writing posts and pages, controlling who can see
+          them and when, using excerpts and revisions, and organising your site so visitors can find things.
+
+          Where a task works differently in the Classic Editor, the Classic Editor version follows directly
+          after the block editor one. For the editor itself, see **Block editor** under
+          **Editing & design**.
+        articles:
+          - write-posts-classic-editor
+          - create-pages
+          - post-status
+          - content-visibility-block-editor
+          - content-visibility-classic-editor
+          - protect-posts-with-password
+          - sticky-posts-classic-editor
+          - what-is-an-excerpt-block-editor
+          - what-is-an-excerpt-classic-editor
+          - revisions
+        children:
+          - slug: organizing-your-site
+            title: Organizing your site
+            intro: |
+              How WordPress structures content and URLs: post types, categories and tags, custom fields,
+              permalinks, and the special pages such as a static front page or a search page. It also
+              covers how WordPress helps search engines find your content.
+            articles:
+              - what-is-post-type
+              - taxonomies
+              - assign-custom-fields
+              - customize-permalinks
+              - create-a-static-front-page
+              - create-a-search-page
+              - customize-date-and-time-format
+              - search-engine-optimization
+          - slug: formatting
+            title: Formatting & special characters
+            intro: |
+              Details of how WordPress handles the text you type: character entities, emoji and smilies,
+              showing code in a post, and the filters WordPress applies to post content before it is
+              displayed.
+            articles:
+              - use-character-entities
+              - what-are-emoji
+              - what-are-smilies
+              - write-code-in-your-posts-classic-editor
+              - how-wordpress-processes-post-content
+
+      - slug: media
+        title: Media
+        intro: |
+          Working with images, galleries, audio, video and other files: inserting them into posts and pages,
+          editing them, choosing the right size and quality, and using the audio and video shortcodes.
+
+          Block editor and Classic Editor versions of the same task are listed side by side.
+        articles:
+          - use-images
+          - inserting-images-into-posts-and-pages-block-editor
+          - inserting-images-into-posts-and-pages-classic
+          - the-wordpress-gallery-block-editor
+          - the-wordpress-gallery-classic-editor
+          - edit-media
+          - image-size-and-quality
+          - use-image-and-file-attachments
+          - audio-shortcode
+          - video-shortcode
+
+      - slug: comments
+        title: Comments
+        intro: |
+          Comments let visitors respond to your content. These pages explain how comments work, how to
+          moderate them and deal with spam, what trackbacks and pingbacks are, and how to use the Comments
+          screen in your dashboard.
+        articles:
+          - comments-in-wordpress
+          - comment-moderation
+          - understand-comment-spam
+          - trackbacks-and-pingbacks
+          - comments-screen
+
+      - slug: users-roles-and-profiles
+        title: Users, roles & profiles
+        intro: |
+          Who can do what on your site. Learn about user roles and capabilities, set up your Gravatar
+          profile picture, reset a lost password, and fix problems logging in.
+        articles:
+          - roles-and-capabilities
+          - use-gravatars
+          - reset-your-password
+          - troubleshoot-login-issues
+
+      - slug: installation-and-hosting
+        title: Installation & hosting
+        intro: |
+          Getting WordPress onto a server: what to look for in a hosting provider and how to install
+          WordPress using the one-click installers many hosts provide.
+
+          Detailed and manual installation guides are on developer.wordpress.org.
+        articles:
+          - hosting-wordpress
+          - use-automated-installation
+
+      - slug: maintenance-and-security
+        title: Maintenance & security
+        intro: |
+          Keeping a WordPress site healthy and safe: routine administration and housekeeping, updating
+          WordPress, plugins and themes, recovering from fatal errors, and protecting your site and your
+          visitors' privacy.
+        articles:
+          - administer-your-blog
+          - wordpress-housekeeping
+          - wordpress-site-maintenance
+          - updating-wordpress
+          - plugins-themes-auto-updates
+          - recovery-mode
+          - password-best-practices
+          - why-should-i-use-https
+          - wordpress-privacy
+
+  # ------------------------------------------------------------------------------------------------
+  - slug: editing-and-design
+    title: Editing & design
+    intro: |
+      Get the look and feel you want on your site. This section covers the block editor and every core
+      block, the Site Editor for designing templates and global styles, and themes, including the default
+      themes that ship with WordPress.
+    articles: []
+    children:
+      - slug: block-editor
+        title: Block editor
+        intro: |
+          The block editor is where you write and design posts and pages. Every piece of content, from a
+          paragraph to an image gallery, is a block.
+
+          Start with the overview of the editor and its interface. **Working with blocks** explains the
+          tools shared by all blocks, such as adding and moving blocks and the settings in the sidebar.
+          **Patterns** covers ready-made groups of blocks, and **Blocks** is a reference for every core
+          block.
+        articles:
+          - wordpress-block-editor
+          - page-post-settings-sidebar
+          - preferences-overview
+          - how-to-use-the-preview-function
+          - distraction-free-mode
+          - keyboard-shortcuts-block-editor
+          - keyboard-shortcuts-classic-editor
+          - notes
+        children:
+          - slug: working-with-blocks
+            title: Working with blocks
+            intro: |
+              The tools and concepts shared by every block: adding blocks, moving them around, using List
+              View and the More options menu, editing links and rich text, and finding new blocks in the
+              Block Directory.
+
+              The individual block pages refer back to these pages rather than repeating them, so it is
+              worth reading them once before you look up a specific block.
+            articles:
+              - work-with-blocks
+              - adding-a-new-block
+              - moving-blocks
+              - list-view
+              - more-options
+              - link-editing
+              - more-text-editing-overview
+              - page-jumps
+              - block-directory
+              - block-error-unexpected-or-invalid-content
+            children:
+              - slug: block-settings
+                title: Block settings
+                intro: |
+                  Most blocks share the same groups of settings in the block sidebar: layout, position,
+                  color, background, typography, dimensions, border and shadow, filters, and advanced
+                  options. Each page here explains one group, in the order they appear in the sidebar.
+
+                  In block themes you can also set some of these differently for each screen size; see
+                  responsive styles.
+                articles:
+                  - layout-settings-overview
+                  - position-settings-overview
+                  - colors-settings-overview
+                  - background-settings-overview
+                  - typography-settings-overview
+                  - dimension-controls-overview
+                  - border-settings-overview
+                  - filters-settings-overview
+                  - advanced-settings-overview
+                  - responsive-styles
+          - slug: patterns
+            title: Patterns
+            intro: |
+              Patterns are ready-made collections of blocks you can insert and customise. Synced patterns
+              (formerly reusable blocks) update everywhere they are used when you edit them.
+
+              Learn how to use patterns, find more in the Pattern Directory, submit your own, and how
+              patterns differ from template parts.
+            articles:
+              - block-pattern
+              - reusable-blocks
+              - comparing-patterns-template-parts-and-reusable-blocks
+              - block-pattern-directory
+              - submit-your-block-pattern-to-the-directory
+          - slug: blocks
+            index: blocks-list
+            articles: []
+            children:
+              - slug: text
+                title: Text blocks
+                intro: |
+                  Blocks for written content: paragraphs, headings, lists, quotes, tables, code and more.
+                articles:
+                  - classic-block
+                  - code-block
+                  - details-block
+                  - footnotes-block
+                  - heading-block
+                  - list-block
+                  - math-block
+                  - paragraph-block
+                  - verse-block
+                  - preformatted-block
+                  - pullquote-block
+                  - quote-block
+                  - table-block
+              - slug: media-blocks
+                title: Media blocks
+                intro: |
+                  Blocks for images, galleries, audio, video, files and icons, plus layouts that combine media
+                  with text such as Cover and Media & Text.
+                articles:
+                  - audio-block
+                  - cover-block
+                  - file-block
+                  - gallery-block
+                  - icon-block
+                  - image-block
+                  - media-text-block
+                  - playlist-block
+                  - video-block
+              - slug: design
+                title: Design blocks
+                intro: |
+                  Blocks for layout and structure: groups, rows, stacks, grids and columns, buttons,
+                  separators and spacers, and interactive containers such as accordions and tabs.
+                articles:
+                  - accordion-block
+                  - buttons-block
+                  - columns-block
+                  - grid-block
+                  - group-block
+                  - more-block
+                  - page-break-block
+                  - row-block
+                  - separator-block
+                  - spacer-block
+                  - stack-block
+                  - tabs-block
+                  - button-block
+              - slug: widgets
+                title: Widget blocks
+                intro: |
+                  Blocks that show dynamic content such as archives, calendars, latest posts and comments, tag
+                  clouds, search and social icons. They can be used in posts and pages as well as in widget
+                  areas.
+                articles:
+                  - archives-block
+                  - calendar-block
+                  - categories-list-block
+                  - custom-html
+                  - latest-comments-block
+                  - latest-posts-block
+                  - page-list-block
+                  - rss-block
+                  - search-block
+                  - shortcode-block
+                  - social-icons
+                  - tag-cloud-block
+              - slug: theme
+                title: Theme blocks
+                intro: |
+                  Theme blocks help you build your site's templates in the Site Editor. They display content
+                  that changes with context, such as the site title and logo, navigation, the post title,
+                  content and date, query loops, and comments.
+
+                  Most theme blocks are only available in block themes. Open the Site Editor
+                  (Appearance > Editor) and use the block inserter to add them to a template or template part.
+                articles:
+                  - archive-title-block
+                  - post-author-name-block
+                  - avatar-block
+                  - breadcrumbs-block
+                  - categories-block
+                  - comment-author-name-block
+                  - comment-content-block
+                  - comment-date-block
+                  - comment-edit-link-block
+                  - comment-reply-link-block
+                  - comment-template-block
+                  - comments-block
+                  - comments-count-block
+                  - comment-link-block
+                  - comment-pagination-block
+                  - comments-title-block
+                  - post-content-block
+                  - custom-link-block
+                  - date-block
+                  - post-excerpt-block
+                  - home-link-block
+                  - login-out-block
+                  - post-modified-date-block
+                  - navigation-block
+                  - next-post-block
+                  - pagination-block
+                  - post-author-biography-block
+                  - post-comments-form-block
+                  - post-date-block
+                  - post-featured-image-block
+                  - post-navigation-link-block
+                  - post-tags-block
+                  - post-template-block
+                  - post-title-block
+                  - posts-list-block
+                  - previous-post-block
+                  - query-loop-block
+                  - query-title-block
+                  - query-total-block
+                  - read-more-block
+                  - search-results-title-block
+                  - site-logo-block
+                  - site-tagline-block
+                  - site-title-block
+                  - submenu-block
+                  - template-part-block
+                  - term-description-block
+                  - terms-query-block
+                  - time-to-read-block
+                  - title-block
+                  - post-author-block
+              - slug: embeds
+                index: embeds
+                articles:
+                  - embed-block
+                  - amazon-kindle-embed
+                  - animoto-embed
+                  - bluesky-embed
+                  - cloudup-embed
+                  - crowdsignal-embed
+                  - dailymotion-embed
+                  - facebook-embed
+                  - flickr-embed
+                  - imgur-embed
+                  - instagram-embed
+                  - issuu-embed
+                  - kickstarter-embed
+                  - mixcloud-embed
+                  - pinterest-embed
+                  - pocket-casts-embed
+                  - reddit-embed
+                  - reverbnation-embed
+                  - screencast-block
+                  - scribd-embed
+                  - smugmug-embed
+                  - soundcloud-embed
+                  - speaker-deck-embed
+                  - spotify-embed
+                  - ted-embed
+                  - tiktok-embed
+                  - tumblr-embed
+                  - twitter-embed
+                  - videopress-embed
+                  - vimeo-embed
+                  - wolfram-embed
+                  - wordpress-embed
+                  - wordpress-tv-embed-block
+                  - youtube-embed
+                  - slideshare-embed
+
+      - slug: site-editor
+        index: site-editor
+        articles:
+          - site-editor-navigation
+          - site-editor-identity
+          - site-editor-pages
+          - template-editor
+          - site-editor-patterns
+          - styles-overview
+          - the-font-library
+          - zoom-out-view
+          - site-editor-command-palette
+          - additional-guide-to-using-the-site-editor
+
+      - slug: themes
+        title: Themes
+        intro: |
+          Themes control how your site looks. Learn how to find, install and switch themes, what makes a
+          block theme different from a classic theme, and how to add a site icon.
+
+          **Default themes** documents each of the themes made by the WordPress project, from Twenty
+          Twenty-Five back to Twenty Ten, with a changelog for each.
+        articles:
+          - work-with-themes
+          - block-themes
+          - create-a-favicon
+        children:
+          - slug: default-themes
+            title: Default themes
+            intro: |
+              Every year or so, WordPress ships a new default theme named after the year it was designed for.
+              Each page describes the theme's features and how to customise it, and links to the theme's
+              changelog.
+
+              Themes are listed newest first. Older default themes still receive security and compatibility
+              updates, so they remain available to install from the theme directory.
+            articles: []
+            children:
+              - slug: twenty-twenty-five
+                index: twenty-twenty-five
+                articles: [twenty-twenty-five-changelog]
+              - slug: twenty-twenty-four
+                index: twenty-twenty-four
+                articles: [twenty-twenty-four-changelog]
+              - slug: twenty-twenty-three
+                index: twenty-twenty-three
+                articles: [twenty-twenty-three-changelog]
+              - slug: twenty-twenty-two
+                index: twenty-twenty-two
+                articles: [twenty-twenty-two-changelog]
+              - slug: twenty-twenty-one
+                index: twenty-twenty-one
+                articles: [twenty-twenty-one-changelog]
+              - slug: twenty-twenty
+                index: twenty-twenty
+                articles: [twenty-twenty-changelog]
+              - slug: twenty-nineteen
+                index: twenty-nineteen
+                articles: [twenty-nineteen-changelog]
+              - slug: twenty-seventeen
+                index: twenty-seventeen
+                articles: [twenty-seventeen-changelog]
+              - slug: twenty-sixteen
+                index: twenty-sixteen
+                articles: [twenty-sixteen-changelog]
+              - slug: twenty-fifteen
+                index: twenty-fifteen
+                articles: [twenty-fifteen-changelog]
+              - slug: twenty-fourteen
+                title: Twenty Fourteen
+                intro: |
+                  Twenty Fourteen was the default theme for WordPress 3.8, released in 2013. It is a magazine-style
+                  theme with a featured content area and a dark, bold layout.
+
+                  There is no separate guide for this theme yet; the changelog lists the changes in each
+                  release.
+                articles: [twenty-fourteen-changelog]
+              - slug: twenty-thirteen
+                title: Twenty Thirteen
+                intro: |
+                  Twenty Thirteen was the default theme for WordPress 3.6, released in 2013. It is a colorful,
+                  single-column blog theme with support for post formats.
+
+                  There is no separate guide for this theme yet; the changelog lists the changes in each
+                  release.
+                articles: [twenty-thirteen-changelog]
+              - slug: twenty-twelve
+                index: twenty-twelve
+                articles: [twenty-twelve-changelog]
+              - slug: twenty-eleven
+                index: twenty-eleven
+                articles: [twenty-eleven-changelog]
+              - slug: twenty-ten
+                index: twenty-ten
+                articles: [twenty-ten-changelog]

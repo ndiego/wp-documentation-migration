@@ -1,0 +1,55 @@
+---
+// Landing page: explains the preview and links into both trees and the compare page.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { Card, CardGrid } from '@astrojs/starlight/components';
+// @ts-ignore plain JS helper
+import { structureData } from '../../lib/structure-data.mjs';
+
+const { metrics } = structureData();
+const { before, after } = metrics;
+---
+
+<StarlightPage
+	frontmatter={{
+		title: 'WordPress documentation: current vs proposed structure',
+		description: 'Browse the WordPress.org documentation in its current category layout and in the proposed hierarchical structure, and compare the two.',
+		template: 'splash',
+		hero: {
+			tagline: `The same ${after.articles} articles, laid out two ways. Browse both, compare them side by side, and tell us whether the proposed structure is an improvement.`,
+			actions: [
+				{ text: 'Current structure', link: '/current/', variant: 'secondary', icon: 'open-book' },
+				{ text: 'Proposed structure', link: '/proposed/', variant: 'primary', icon: 'right-arrow' },
+				{ text: 'Compare the two', link: '/compare/', variant: 'minimal', icon: 'list-format' },
+			],
+		},
+	}}
+	hasSidebar={false}
+>
+	<CardGrid>
+		<Card title="Current structure" icon="open-book">
+			<p>
+				The category layout of wordpress.org/documentation today: {before.folders} categories, at most {before.max_depth} levels deep,
+				articles sorted alphabetically, and {before.manual_breadcrumb_paragraphs} articles that start with a hand-written "Go back to…" link.
+			</p>
+			<p><a href="/current/">Browse the current structure →</a></p>
+		</Card>
+		<Card title="Proposed structure" icon="rocket">
+			<p>
+				A hierarchical tree: {after.folders} sections, each with its own overview page, up to {after.max_depth} levels deep,
+				articles in a curated reading order, and no manual breadcrumb links.
+			</p>
+			<p><a href="/proposed/">Browse the proposed structure →</a></p>
+		</Card>
+	</CardGrid>
+
+	<h2>How to review</h2>
+	<ul>
+		<li>Every page shows a bar at the top saying which structure you are in, with a link to the same article in the other one.</li>
+		<li>
+			The <a href="/compare/">compare page</a> has the headline numbers, both trees side by side, a "find your article" search, and the
+			list of what moved.
+		</li>
+		<li>The <a href="/compare/decisions/">structure decisions</a> explain why things went where they did.</li>
+		<li>Content is identical in both trees; only the place in the tree (and the removed "Go back to…" lines) differ.</li>
+	</ul>
+</StarlightPage>

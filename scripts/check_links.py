@@ -4,15 +4,21 @@ docs/assets/images-manifest.json; every #fragment exists in the target, using th
 wporg/table-of-contents would generate after import (sanitize_title of heading text, -2/-3 de-dupe)
 plus explicit <a id> anchors. Also validates importer constraints (H1 first, frontmatter safe for
 the importer's  #^---(.+)---#Us  regex, no extra H1s) and docs/manifest.json consistency.
-Usage: .venv/bin/python -I scripts/check_links.py"""
-import collections, importlib.util, json, os, pathlib, re
+Usage: .venv/bin/python -I scripts/check_links.py [--docs build/before]
+       (another output tree; its assets/ symlink resolves to docs/assets, report goes to stdout only)"""
+import argparse, collections, importlib.util, json, os, pathlib, re
 from urllib.parse import unquote as urllib_unquote
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 spec = importlib.util.spec_from_file_location("convert", ROOT / "scripts" / "convert.py")
 conv = importlib.util.module_from_spec(spec); spec.loader.exec_module(conv)
-DOCS = ROOT / "docs"
-assets = {e["local_path"] for e in json.loads((DOCS / "assets/images-manifest.json").read_text())}
+ap = argparse.ArgumentParser()
+ap.add_argument("--docs", default=str(ROOT / "docs"), help="output tree to check (default: docs/)")
+args = ap.parse_args()
+DOCS = pathlib.Path(args.docs).resolve()
+DEFAULT = DOCS == (ROOT / "docs").resolve()
+# images-manifest local_paths are always under docs/assets (other trees link there through a symlink)
+assets = {e["local_path"] for e in json.loads((ROOT / "docs/assets/images-manifest.json").read_text())}
 LINK = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)|(?:href|src|poster)=\"([^\"]+)\"")
 
 
@@ -38,8 +44,8 @@ def anchors(path, cache={}):
 
 problems = collections.defaultdict(list)
 ok = 0
-for md in sorted(DOCS.glob("**/*.md")):
-    rel_md = md.relative_to(ROOT).as_posix()
+for md in sorted(p for p in DOCS.glob("**/*.md") if "assets" not in p.relative_to(DOCS).parts[:1]):
+    rel_md = os.path.relpath(md, ROOT)
     txt = md.read_text()
     fm = re.match(r"^---(.+?)---", txt, flags=re.S)
     if fm and not re.match(r"^---\n.*\n---\n", txt[:fm.end() + 1], flags=re.S):
@@ -82,13 +88,15 @@ slugs = collections.Counter(d["slug"] for d in manifest.values())
 for s, n in slugs.items():
     if n > 1:
         problems["duplicate slug in manifest (importer slug_only fallback can mis-match)"].append(s)
-md_files = {p.relative_to(DOCS).as_posix() for p in DOCS.glob("**/*.md")}
+md_files = {p.relative_to(DOCS).as_posix() for p in DOCS.glob("**/*.md") if p.relative_to(DOCS).parts[0] != "assets"}
 listed = {d["markdown_source"] for d in manifest.values()}
 for f in sorted(md_files - listed - {"README.md"}):
     problems["file not in manifest"].append(f)
 
 report = {k: v for k, v in problems.items()}
-(ROOT / "data/link-check.json").write_text(json.dumps(report, indent=1))
+if DEFAULT:
+    (ROOT / "data/link-check.json").write_text(json.dumps(report, indent=1))
+print(f"checked: {os.path.relpath(DOCS, ROOT)}")
 print(f"relative links/images ok: {ok}")
 for k, v in problems.items():
     print(f"{len(v):5d}  {k}")

@@ -24,6 +24,13 @@ Outputs: docs/<top-cat>/<sub-cat>/<slug>.md      one per article
          data/convert-report.json                per-file warnings summary
 
 Usage:   .venv/bin/python -I scripts/convert.py [--only SLUG ...] [--callout-style gutenberg|gfm-alert]
+             [--out DIR] [--structure data/structure.yaml [--check-structure]]
+
+Layouts: without --structure the tree follows the HelpHub categories (unchanged behaviour). With
+--structure the same articles are laid out by the YAML file (sections -> folders, ordered articles,
+optional `index` article as a folder's README.md) and data/restructure-map.json +
+data/structure-metrics.json (scripts/structure_metrics.py) are written (with --out: DIR/_restructure-map.json +
+DIR/_structure-metrics.json instead, so the committed data/ files are left alone). See README "Structure mode".
 """
 import argparse
 import collections
@@ -46,6 +53,10 @@ RAW = ROOT / "raw"
 DOCS = ROOT / "docs"
 CONTENT = DOCS  # article tree root
 ASSETS = DOCS / "assets"
+# Where the asset files really live (scripts/download_assets.py target). images-manifest.json always records
+# local_path under here, even when --out writes the Markdown elsewhere (that tree gets an assets symlink).
+CANON_DOCS = DOCS
+CANON_ASSETS = CANON_DOCS / "assets"
 
 # Callout output style, switchable for comparison:
 #   "gutenberg": <div class="callout callout-info"><p>..</p></div>  (Block Editor handbook convention, no importer change needed)
@@ -163,7 +174,11 @@ class Site:
                 self.referenced_frags.add(html.unescape(urllib.parse.unquote(m.group(1))))
             for m in re.finditer(r'<a [^>]*href="([A-Za-z][A-Za-z0-9_-]*)"', it["content"]["rendered"]):
                 self.referenced_frags.add(m.group(1))  # bare "anchor" hrefs, see rewrite_href()
-        self.path_for_slug = {a["slug"]: self.article_path(a) for a in self.articles}
+        # category layout (today's tree). In structure mode path_for_slug is replaced by the structure's
+        # paths; links are resolved by slug through path_for_slug, so moved files resolve automatically.
+        self.category_path_for_slug = {a["slug"]: self.article_path(a) for a in self.articles}
+        self.path_for_slug = dict(self.category_path_for_slug)
+        self.category_link_paths = None  # structure mode: {category id: folder README path}
 
     def cat_chain(self, cid):
         chain = []
@@ -184,6 +199,12 @@ class Site:
 
     def category_index_path(self, cat):
         return CONTENT.joinpath(*[c["slug"] for c in self.cat_chain(cat["id"])], "README.md")
+
+    def category_link_path(self, cat):
+        """Target of a /documentation/category/<slug>/ link in the current layout."""
+        if self.category_link_paths is not None:
+            return self.category_link_paths[cat["id"]]
+        return self.category_index_path(cat)
 
     # ---- assets -----------------------------------------------------------
     def normalise_url(self, url):
@@ -209,7 +230,7 @@ class Site:
         folder = {"image": "images", "video": "videos", "file": "files", "poster": "images"}[kind]
         m = re.match(r"^/(documentation|support)/files/(.+)$", u.path) if u.netloc == "wordpress.org" else None
         if m:
-            local = ASSETS / folder / urllib.parse.unquote(m.group(2))
+            sub = pathlib.Path(folder, urllib.parse.unquote(m.group(2)))
             if m.group(1) == "support":
                 notes.append(f"legacy /support/files/ URL: {src}")
         else:
@@ -221,10 +242,11 @@ class Site:
                 mime = self.media_mime.get(src) or (self.asset_types.get(src) or {}).get("mime")
                 base += MIME_EXT.get(mime, ".img")
             h = hashlib.sha1(src.encode()).hexdigest()[:10]
-            local = ASSETS / folder / "external" / u.netloc / f"{h}-{base}"
+            sub = pathlib.Path(folder, "external", u.netloc, f"{h}-{base}")
             notes.append(f"external {kind} host {u.netloc}: {src}")
+        local = ASSETS / sub  # what the Markdown links to (relative to the output tree)
         entry = self.manifest.setdefault(src, {
-            "source_url": src, "local_path": os.path.relpath(local, ROOT), "kind": kind,
+            "source_url": src, "local_path": os.path.relpath(CANON_ASSETS / sub, ROOT), "kind": kind,
             "host": u.netloc, "in_media_library": src in self.media_urls, "used_by": []})
         if extra:
             entry.update(extra)
@@ -333,7 +355,7 @@ def rewrite_href(href, ctx: Ctx):
     m = re.match(r"^/documentation/category/(?:.+/)?([^/]+)/?$", u.path)
     if m and m.group(1) in site.cat_by_slug:
         ctx.counts["category_links_rewritten"] += 1
-        return ctx.rel(site.category_index_path(site.cat_by_slug[m.group(1)])) + frag
+        return ctx.rel(site.category_link_path(site.cat_by_slug[m.group(1)])) + frag
     if u.path.startswith("/documentation/wordpress-version/"):
         ctx.counts["version_links_kept_absolute"] += 1
     return href
@@ -495,7 +517,7 @@ def handle_videos_and_embeds(soup, ctx: Ctx):
         if video.get("poster"):
             plocal, _, _ = site.asset(video["poster"], ctx.slug, kind="poster")
             attrs += f' poster="{html.escape(ctx.rel(plocal))}"'
-        ctx.videos.append({"type": "self-hosted", "url": norm, "local_path": os.path.relpath(local, ROOT)})
+        ctx.videos.append({"type": "self-hosted", "url": norm, "local_path": os.path.relpath(CANON_ASSETS / local.relative_to(ASSETS), ROOT)})
         ctx.counts["self_hosted_videos"] += 1
         md = f"<video {attrs}></video>"
         if caption:
@@ -1219,7 +1241,9 @@ def plain(s):
     return " ".join(html.unescape(BeautifulSoup(s or "", "html.parser").get_text(" ")).split())
 
 
-def convert_article(site, art):
+def convert_article(site, art, placement=None, remove_nav_links=False):
+    """Convert one article. `placement` (structure mode only) is {"position": n | None, "index_of": Folder | None};
+    without it the output is exactly the category-mode file."""
     slug = art["slug"]
     out = site.path_for_slug[slug]
     ctx = Ctx(site, slug, out)
@@ -1231,15 +1255,20 @@ def convert_article(site, art):
     if others:
         ctx.note(f"also in categories not on primary path: {others}")
     title = plain(art["title"]["rendered"])
-    fm = {
-        "title": title,
-        "slug": slug,
+    fm = {"title": title, "slug": slug}
+    if placement is not None:
+        if placement.get("index_of") is not None:
+            fm["section"] = True  # this article is the folder's README.md (structure `index:`)
+        else:
+            fm["position"] = placement["position"]
+    fm.update({
         "original_url": art["link"],
         "wp_id": art["id"],
-        "categories": chain_slugs + others,  # top-level first, then sub-category (breadcrumb order)
+        # top-level first, then sub-category (breadcrumb order)
+        ("legacy_categories" if placement is not None else "categories"): chain_slugs + others,
         "date": art["date"],
         "modified": art["modified"],
-    }
+    })
     if art.get("menu_order"):
         fm["menu_order"] = art["menu_order"]
     if art.get("featured_media"):
@@ -1248,22 +1277,55 @@ def convert_article(site, art):
             local, src, notes = site.asset(fmed["source_url"], slug, kind="image")
             fm["featured_image"] = ctx.rel(local)
     fm["migration"] = migration_block(ctx)
+    ctx.body_full = body
+    ctx.nav_link_removed = False
     if first_paragraph_is_nav_link(body):
-        # the importer/WordPress would use this as the excerpt; content decision, so only flagged
-        fm["migration"]["first_paragraph_is_nav_link"] = True
-        ctx.counts["first_paragraph_is_nav_link"] += 1
+        if remove_nav_links:
+            body = strip_first_nav_paragraph(body)
+            fm["migration"]["nav_link_removed"] = True
+            ctx.nav_link_removed = True
+            ctx.counts["nav_link_removed"] += 1
+        else:
+            # the importer/WordPress would use this as the excerpt; content decision, so only flagged
+            fm["migration"]["first_paragraph_is_nav_link"] = True
+            ctx.counts["first_paragraph_is_nav_link"] += 1
+    ctx.body_final = body
     write_md(out, fm, title, body)
     return ctx
 
 
+NAV_SKIP_RE = re.compile(r'<a id="[^"]*"></a>')
+NAV_LINK_RE = re.compile(r"\[[^\]]+\]\([^)\s]+\)")
+
+
+def _body_blocks(body):
+    """Body split into blocks, separators kept at odd indices so "".join() gives the body back byte-identical."""
+    return re.split(r"(\n\s*\n)", body.strip())
+
+
+def nav_paragraph_index(blocks):
+    """Index into _body_blocks() of the first paragraph when it is nothing but one link (e.g. "Go back to the
+    list of Blocks"), else None. Empty blocks, explicit anchors and comments before it are skipped."""
+    for i in range(0, len(blocks), 2):
+        b = blocks[i].strip()
+        if not b or NAV_SKIP_RE.fullmatch(b) or b.startswith("<!--"):
+            continue
+        return i if NAV_LINK_RE.fullmatch(b) else None
+    return None
+
+
 def first_paragraph_is_nav_link(body):
     """True when the first body paragraph is nothing but one link (e.g. "Go back to the list of Blocks")."""
-    for block in re.split(r"\n\s*\n", body.strip()):
-        b = block.strip()
-        if not b or re.fullmatch(r'<a id="[^"]*"></a>', b) or b.startswith("<!--"):
-            continue
-        return bool(re.fullmatch(r"\[[^\]]+\]\([^)\s]+\)", b))
-    return False
+    return nav_paragraph_index(_body_blocks(body)) is not None
+
+
+def strip_first_nav_paragraph(body):
+    """Drop the paragraph that first_paragraph_is_nav_link() matched (anchors/comments before it are kept)."""
+    blocks = _body_blocks(body)
+    i = nav_paragraph_index(blocks)
+    if i is not None:
+        del blocks[i:i + 2]
+    return "".join(blocks).strip() + "\n"
 
 
 def finalize_warnings(ctx):
@@ -1321,66 +1383,58 @@ def convert_page(site, page):
     return ctx
 
 
-def main():
-    global CALLOUT_STYLE, VIDEO_SRC
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--only", nargs="*", help="convert only these article slugs")
-    ap.add_argument("--callout-style", choices=["gutenberg", "gfm-alert"], default=CALLOUT_STYLE)
-    ap.add_argument("--out", help="output directory (default: docs/)")
-    ap.add_argument("--video-src", choices=["remote", "local"], default=VIDEO_SRC,
-                    help="self-hosted <video src>: original wordpress.org URL (default) or local docs/assets path")
-    args = ap.parse_args()
-    CALLOUT_STYLE = args.callout_style
-    VIDEO_SRC = args.video_src
-    if args.out:
-        set_output_root(pathlib.Path(args.out).resolve())
+# ---------------------------------------------------------------------------
+# Layouts: the folder tree an output is written in. Two sources produce the same shape:
+#   category_layout()   today's tree, derived from the HelpHub categories (default)
+#   structure_layout()  a hand-designed tree from data/structure.yaml (--structure)
+# Everything downstream (READMEs, manifest, move map, metrics) works on a Layout.
+# ---------------------------------------------------------------------------
+class Folder:
+    def __init__(self, parts, title, parent, readme, intro=None, index_slug=None, source="category", cat=None):
+        self.parts = list(parts)
+        self.key = "/".join(self.parts)
+        self.slug = self.parts[-1]
+        self.title = title
+        self.parent = parent              # Folder or None (top level)
+        self.readme = readme              # Path of the folder's README.md
+        self.intro = intro                # structure mode: Markdown body of the generated README
+        self.index_slug = index_slug      # structure mode: article converted into README.md instead
+        self.source = source              # "category" | "structure"
+        self.cat = cat                    # category mode: the category dict
+        self.children = []                # ordered sub-folders
+        self.articles = []                # ordered article slugs (excluding index_slug)
 
-    site = Site()
-    if not args.only and DOCS.exists():
-        # Wipe the generated Markdown/manifests, but keep docs/assets/: the image/video files there
-        # are fetched by scripts/download_assets.py (~1.7 GB) and are not regenerated here.
-        for child in DOCS.iterdir():
-            if child.name == "assets":
-                continue
-            shutil.rmtree(child) if child.is_dir() else child.unlink()
-    report = {"callout_style": CALLOUT_STYLE, "articles": {}, "pages": {}}
-    arts = [a for a in site.articles if not args.only or a["slug"] in args.only]
-    for a in arts:
-        ctx = convert_article(site, a)
-        report["articles"][a["slug"]] = {"path": os.path.relpath(ctx.out, ROOT), "warnings": ctx.warnings,
-                                         "notes": ctx.info, "counts": dict(ctx.counts)}
-    if not args.only:
-        for p in site.pages:
-            if p["slug"] not in STATIC_PAGES:
-                continue  # front page + 4 empty landing pages are theme-generated (notes/site-structure.md)
-            ctx = convert_page(site, p)
-            report["pages"][p["slug"]] = {"path": os.path.relpath(ctx.out, ROOT), "warnings": ctx.warnings,
-                                          "notes": ctx.info}
-        report["category_readmes"] = write_category_readmes(site)
-        manifest = build_manifest(site)
-        (DOCS / "manifest.json").write_text(json.dumps(manifest, indent="\t") + "\n")
-        ASSETS.mkdir(parents=True, exist_ok=True)
-        assets = sorted(site.manifest.values(), key=lambda e: e["local_path"])
-        (ASSETS / "images-manifest.json").write_text(json.dumps(assets, indent=1))
-        if DATA.exists() and not args.out:
-            (DATA / "convert-report.json").write_text(json.dumps(report, indent=1))
+    @property
+    def depth(self):
+        return len(self.parts)
 
-    # summary
-    warn_types = collections.Counter()
-    for r in report["articles"].values():
-        for k in {re.split(r"[:;(]", w)[0].strip() for w in r["warnings"]}:
-            warn_types[k] += 1
-    n = len(report["articles"])
-    clean = sum(1 for r in report["articles"].values() if not r["warnings"])
-    print(f"callout style: {CALLOUT_STYLE}")
-    print(f"articles: {n}  clean: {clean}  with warnings: {n - clean}")
-    print("articles affected per warning type:")
-    for k, v in warn_types.most_common():
-        print(f"  {v:4d}  {k}")
-    if not args.only:
-        kinds = collections.Counter(e["kind"] for e in site.manifest.values())
-        print(f"asset manifest entries: {len(site.manifest)} {dict(kinds)}; category READMEs: {report['category_readmes']}; "
-              f"pages: {len(report['pages'])}; importer manifest entries: {len(manifest)}")
+    def title_chain(self):
+        f, chain = self, []
+        while f:
+            chain.insert(0, f.title)
+            f = f.parent
+        return chain
+
+
+class Layout:
+    def __init__(self, kind):
+        self.kind = kind
+        self.top = []                     # ordered top-level Folders
+        self.path_for_slug = {}           # slug -> output Path (index articles -> folder README.md)
+        self.folder_of = {}               # slug -> Folder
+        self.position = {}                # slug -> 1-based position within its folder (None for index articles)
+        self.remove_nav_links = False
+
+    def folders(self):
+        out = []
+
+        def walk(f):
+            out.append(f)
+            for c in f.children:
+                walk(c)
+        for t in self.top:
+            walk(t)
+        return out
 
 
 def sort_title(t):
@@ -1388,14 +1442,206 @@ def sort_title(t):
 
 
 def build_tree(site):
-    """Return {folder_key: {"cat": cat, "children": [...], "articles": [...]}} for non-empty categories."""
+    """Return ({category id: [articles]}, has_content(cat)) for the category layout."""
     by_cat = collections.defaultdict(list)
     for a in site.articles:
         chain = site.primary_chain(a)
         by_cat[chain[-1]["id"] if chain else None].append(a)
+
     def has_content(cat):
         return bool(by_cat.get(cat["id"])) or any(has_content(c) for c in site.cats.values() if c["parent"] == cat["id"])
     return by_cat, has_content
+
+
+def category_layout(site):
+    """Today's tree: non-empty categories as folders (top/sub), articles in their deepest category.
+
+    Order follows the live site: sub-categories by CATEGORY_ORDER then name, articles by
+    menu_order DESC, then title ASC (case-insensitive)."""
+    by_cat, has_content = build_tree(site)
+    lay = Layout("category")
+
+    def cat_children(parent_id):
+        kids = [c for c in site.cats.values() if c["parent"] == (parent_id or 0) and has_content(c)]
+        pref = CATEGORY_ORDER.get(site.cats[parent_id]["slug"] if parent_id else None, [])
+        return sorted(kids, key=lambda c: (pref.index(c["slug"]) if c["slug"] in pref else len(pref), sort_title(c["name"])))
+
+    def add(cat, parent):
+        f = Folder([c["slug"] for c in site.cat_chain(cat["id"])], html.unescape(cat["name"]), parent,
+                   site.category_index_path(cat), cat=cat)
+        f.children = [add(c, f) for c in cat_children(cat["id"])]
+        arts = sorted(by_cat.get(cat["id"], []), key=lambda a: (-(a.get("menu_order") or 0), sort_title(plain(a["title"]["rendered"]))))
+        f.articles = [a["slug"] for a in arts]
+        for i, s in enumerate(f.articles, 1):
+            lay.folder_of[s], lay.position[s] = f, i
+            lay.path_for_slug[s] = site.category_path_for_slug[s]
+        return f
+    lay.top = [add(c, None) for c in cat_children(None)]
+    return lay
+
+
+SECTION_KEYS = {"slug", "title", "intro", "children", "articles", "index"}
+TOP_KEYS = {"version", "remove_nav_links", "sections"}
+
+
+def structure_layout(site, path):
+    """Load and validate a structure file (schema: README "Structure mode and before/after").
+
+    Returns (Layout, warnings). Every error is collected first; on any error the offending slugs are
+    printed and the process exits with status 2 before anything is written."""
+    errors, warnings = [], []
+    try:
+        data = yaml.safe_load(pathlib.Path(path).read_text())
+    except (OSError, yaml.YAMLError) as e:
+        sys.exit(f"structure: cannot read {path}: {e}")
+    if not isinstance(data, dict):
+        sys.exit(f"structure: {path} is not a mapping")
+    if data.get("version") != 1:
+        errors.append(f"version must be 1 (got {data.get('version')!r})")
+    unknown = set(data) - TOP_KEYS
+    if unknown:
+        errors.append(f"unknown top-level keys: {sorted(unknown)}")
+    lay = Layout("structure")
+    lay.remove_nav_links = bool(data.get("remove_nav_links", False))
+    placed = collections.defaultdict(list)  # slug -> [folder keys]
+    raw_slugs = {a["slug"] for a in site.articles}
+    reserved_top = {"assets"} | set(STATIC_PAGES) | {"manifest"}
+
+    def build(node, parent, where):
+        if not isinstance(node, dict):
+            errors.append(f"{where}: section must be a mapping, got {type(node).__name__}")
+            return None
+        slug = node.get("slug")
+        label = f"{where}/{slug}" if where else str(slug)
+        if not isinstance(slug, str) or not slug:
+            errors.append(f"{where or '<top>'}: section without a slug")
+            return None
+        if sanitize_title(slug) != slug:
+            errors.append(f"{label}: slug is not sanitize_title-clean (expected '{sanitize_title(slug)}')")
+        if parent is None and slug in reserved_top:
+            errors.append(f"{label}: top-level slug '{slug}' is reserved (assets/, static pages)")
+        bad = set(node) - SECTION_KEYS
+        if bad:
+            errors.append(f"{label}: unknown keys {sorted(bad)}")
+        index = node.get("index")
+        title, intro = node.get("title"), node.get("intro")
+        if index is not None:
+            if not isinstance(index, str):
+                errors.append(f"{label}: index must be an article slug")
+                index = None
+            else:
+                placed[index].append(label + " (index)")
+                if title is not None or intro is not None:
+                    warnings.append(f"{label}: title/intro ignored because index '{index}' is set")
+        if index is None and not (isinstance(title, str) and title.strip()):
+            errors.append(f"{label}: title is required when index is not set")
+        if index in site.art_by_slug:
+            title = plain(site.art_by_slug[index]["title"]["rendered"])
+            intro = None
+        parts = (parent.parts if parent else []) + [slug]
+        f = Folder(parts, " ".join(str(title or slug).split()), parent, CONTENT.joinpath(*parts, "README.md"),
+                   intro=intro if isinstance(intro, str) else ("" if intro is None else str(intro)),
+                   index_slug=index if index in raw_slugs else None, source="structure")
+        arts = node.get("articles") or []
+        if not isinstance(arts, list) or not all(isinstance(a, str) for a in arts):
+            errors.append(f"{label}: articles must be a list of slugs")
+            arts = [a for a in arts if isinstance(a, str)] if isinstance(arts, list) else []
+        for a in arts:
+            placed[a].append(label)
+        f.articles = [a for a in arts if a in raw_slugs]
+        kids = node.get("children") or []
+        if not isinstance(kids, list):
+            errors.append(f"{label}: children must be a list")
+            kids = []
+        f.children = [c for c in (build(k, f, label) for k in kids) if c]
+        seen = collections.Counter(c.slug for c in f.children)
+        for s, n in seen.items():
+            if n > 1:
+                errors.append(f"{label}: duplicate child section slug '{s}'")
+        clash = sorted({c.slug for c in f.children} & set(arts))
+        if clash:
+            errors.append(f"{label}: article slug(s) equal a sibling section slug (manifest key collision): {clash}")
+        if not f.children and not arts and index is None:
+            warnings.append(f"{label}: empty section (no articles, children or index)")
+        return f
+
+    secs = data.get("sections")
+    if not isinstance(secs, list) or not secs:
+        errors.append("sections must be a non-empty list")
+        secs = []
+    lay.top = [f for f in (build(s, None, "") for s in secs) if f]
+    tops = collections.Counter(f.slug for f in lay.top)
+    errors += [f"duplicate top-level section slug '{s}'" for s, n in tops.items() if n > 1]
+
+    unknown_slugs = sorted(s for s in placed if s not in raw_slugs)
+    dupes = {s: locs for s, locs in placed.items() if len(locs) > 1 and s in raw_slugs}
+    missing = sorted(raw_slugs - set(placed))
+    if unknown_slugs:
+        errors.append(f"{len(unknown_slugs)} unknown article slug(s) (not in raw/articles.json): " + ", ".join(
+            f"{s} [{'; '.join(placed[s])}]" for s in unknown_slugs))
+    if dupes:
+        errors.append(f"{len(dupes)} article slug(s) placed more than once: " + ", ".join(
+            f"{s} [{'; '.join(l)}]" for s, l in sorted(dupes.items())))
+    if missing:
+        errors.append(f"{len(missing)} article slug(s) not placed anywhere: " + ", ".join(missing))
+    if errors:
+        print(f"structure: {path}: {len(errors)} error(s); nothing written", file=sys.stderr)
+        for e in errors:
+            print(f"  ERROR {e}", file=sys.stderr)
+        for w in warnings:
+            print(f"  warning {w}", file=sys.stderr)
+        sys.exit(2)
+
+    for f in lay.folders():
+        if f.index_slug:
+            lay.folder_of[f.index_slug], lay.position[f.index_slug] = f, None
+            lay.path_for_slug[f.index_slug] = f.readme
+        for i, s in enumerate(f.articles, 1):
+            lay.folder_of[s], lay.position[s] = f, i
+            lay.path_for_slug[s] = CONTENT.joinpath(*f.parts, f"{s}.md")
+    folder_slugs = {f.slug for f in lay.folders()}
+    rep = sorted(f"{s} ({n}x)" for s, n in collections.Counter(f.slug for f in lay.folders()).items() if n > 1)
+    if rep:
+        warnings.append(f"section slug(s) used more than once in the tree (importer slug_only fallback can mis-match): {rep}")
+    same = sorted(folder_slugs & raw_slugs - {f.index_slug for f in lay.folders() if f.index_slug == f.slug})
+    if same:
+        warnings.append(f"section slug(s) equal to an article slug (importer slug_only fallback can mis-match): {same}")
+    return lay, warnings
+
+
+def category_link_targets(site, lay):
+    """Structure mode: where a /documentation/category/<slug>/ link should point.
+
+    The deepest folder that contains every article of the category (and its sub-categories); if that is
+    the root, the folder holding most of them. Returns {category id: README path}."""
+    targets = {}
+    for cid, cat in site.cats.items():
+        folders = [lay.folder_of[a["slug"]] for a in site.articles
+                   if any(c["id"] == cid for c in site.primary_chain(a))]
+        if not folders:
+            targets[cid] = DOCS / "README.md"
+            continue
+        common = folders[0].parts
+        for f in folders[1:]:
+            n = 0
+            while n < min(len(common), len(f.parts)) and common[n] == f.parts[n]:
+                n += 1
+            common = common[:n]
+        if not common:
+            common = collections.Counter(tuple(f.parts) for f in folders).most_common(1)[0][0]
+        targets[cid] = CONTENT.joinpath(*common, "README.md")
+    return targets
+
+
+# ---------------------------------------------------------------------------
+# Folder READMEs and the importer manifest
+# ---------------------------------------------------------------------------
+def write_root_readme():
+    write_md(DOCS / "README.md",
+             {"title": "WordPress Documentation", "original_url": "https://wordpress.org/documentation/",
+              "migration": {"status": "generated", "notes": ["repository index; the live front page is a theme pattern and is not imported"]}},
+             "WordPress Documentation",
+             "We've got a variety of resources to help you get the most out of WordPress.\n")
 
 
 def write_category_readmes(site):
@@ -1412,50 +1658,49 @@ def write_category_readmes(site):
         desc = plain(cat.get("description", ""))
         write_md(path, fm, name, (desc + "\n") if desc else "")
         written += 1
-    root = DOCS / "README.md"
-    write_md(root, {"title": "WordPress Documentation", "original_url": "https://wordpress.org/documentation/",
-                    "migration": {"status": "generated", "notes": ["repository index; the live front page is a theme pattern and is not imported"]}},
-             "WordPress Documentation",
-             "We've got a variety of resources to help you get the most out of WordPress.\n")
+    write_root_readme()
     return written
 
 
-def build_manifest(site):
+def write_section_readmes(lay):
+    """Structure mode: README.md per folder from title + intro (index sections are written by convert_article)."""
+    written = 0
+    for f in lay.folders():
+        if f.index_slug:
+            continue
+        intro = (f.intro or "").strip()
+        write_md(f.readme, {"title": f.title, "section": True}, f.title, (intro + "\n") if intro else "")
+        written += 1
+    write_root_readme()
+    return written
+
+
+def build_manifest(site, lay):
     """docs/manifest.json in wporg-markdown Importer format, keyed by URL path below the base.
 
-    Keys mirror the folder tree (top/sub/slug). Parents are the category README entries.
-    Order follows the live site: menu_order DESC, then title ASC (case-insensitive)."""
-    by_cat, has_content = build_tree(site)
+    Keys mirror the folder tree. Parents are the folder README entries. Within a folder the sub-folders
+    come first, then the articles; `order` counts both (so article order = sub-folder count + position)."""
     manifest = {}
 
-    def key_for_cat(cat):
-        return "/".join(c["slug"] for c in site.cat_chain(cat["id"]))
-
-    def cat_children(parent_id):
-        kids = [c for c in site.cats.values() if c["parent"] == (parent_id or 0) and has_content(c)]
-        pref = CATEGORY_ORDER.get(site.cats[parent_id]["slug"] if parent_id else None, [])
-        return sorted(kids, key=lambda c: (pref.index(c["slug"]) if c["slug"] in pref else len(pref), sort_title(c["name"])))
-
-    def add_folder(cat, parent_key, order):
-        key = key_for_cat(cat)
-        manifest[key] = {"title": html.unescape(cat["name"]), "slug": cat["slug"],
-                         "markdown_source": posix_rel(site.category_index_path(cat), DOCS / "manifest.json"),
-                         "parent": parent_key, "order": order}
+    def add_folder(f, order):
+        manifest[f.key] = {"title": f.title, "slug": f.slug,
+                           "markdown_source": posix_rel(f.readme, DOCS / "manifest.json"),
+                           "parent": f.parent.key if f.parent else None, "order": order}
         n = 0
-        for child in cat_children(cat["id"]):
+        for child in f.children:
             n += 1
-            add_folder(child, key, n)
-        arts = sorted(by_cat.get(cat["id"], []), key=lambda a: (-(a.get("menu_order") or 0), sort_title(plain(a["title"]["rendered"]))))
-        for a in arts:
+            add_folder(child, n)
+        for s in f.articles:
             n += 1
-            manifest[f"{key}/{a['slug']}"] = {"title": plain(a["title"]["rendered"]), "slug": a["slug"],
-                                              "markdown_source": posix_rel(site.path_for_slug[a["slug"]], DOCS / "manifest.json"),
-                                              "parent": key, "order": n}
+            a = site.art_by_slug[s]
+            manifest[f"{f.key}/{s}"] = {"title": plain(a["title"]["rendered"]), "slug": s,
+                                        "markdown_source": posix_rel(lay.path_for_slug[s], DOCS / "manifest.json"),
+                                        "parent": f.key, "order": n}
 
     n = 0
-    for top in cat_children(None):
+    for top in lay.top:
         n += 1
-        add_folder(top, None, n)
+        add_folder(top, n)
     for slug in STATIC_PAGES:
         n += 1
         page = next(p for p in site.pages if p["slug"] == slug)
@@ -1464,10 +1709,194 @@ def build_manifest(site):
     return manifest
 
 
+def build_move_map(site, before, after, nav_removed):
+    """data/restructure-map.json: one entry per article, category layout -> structure layout.
+    Paths are relative to the output root (docs/)."""
+    rows = []
+    for a in site.articles:
+        s = a["slug"]
+        fb, fa = before.folder_of[s], after.folder_of[s]
+        rows.append({
+            "slug": s,
+            "title": plain(a["title"]["rendered"]),
+            "before_path": posix_rel(before.path_for_slug[s], DOCS / "x"),
+            "after_path": posix_rel(after.path_for_slug[s], DOCS / "x"),
+            "before_section": fb.title_chain(),
+            "after_section": fa.title_chain(),
+            "before_depth": fb.depth,
+            "after_depth": fa.depth,
+            "position_after": after.position[s],
+            "after_is_section_index": fa.index_slug == s,
+            "nav_link_removed": bool(nav_removed.get(s)),
+        })
+    return rows
+
+
+def layout_summary(site, lay):
+    """Plain-dict view of a Layout for scripts/structure_metrics.py (paths relative to the output root)."""
+    folders = [{"key": f.key, "title": f.title, "parent": f.parent.key if f.parent else None, "depth": f.depth,
+                "top": f.parts[0], "articles": list(f.articles), "index_slug": f.index_slug,
+                "hand_written": f.source == "structure"}
+               for f in lay.folders()]
+    arts = {s: {"title": plain(site.art_by_slug[s]["title"]["rendered"]), "folder": f.key, "top": f.parts[0],
+                "depth": f.depth, "path": posix_rel(lay.path_for_slug[s], DOCS / "x")}
+            for s, f in lay.folder_of.items()}
+    return {"kind": lay.kind, "top": [{"key": f.key, "title": f.title} for f in lay.top],
+            "folders": folders, "articles": arts}
+
+
+def load_sibling(name):
+    """Import scripts/<name>.py by path (python -I does not put the script directory on sys.path)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(name, pathlib.Path(__file__).resolve().parent / f"{name}.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def set_output_root(path):
     global DOCS, CONTENT, ASSETS
     DOCS = CONTENT = path
     ASSETS = path / "assets"
+
+
+def prepare_output_root():
+    """Wipe the generated Markdown/manifests in the output root, but keep assets/: the image/video files in
+    docs/assets/ are fetched by scripts/download_assets.py (~1.7 GB) and are not regenerated here.
+    A non-default output root gets assets -> docs/assets as a relative symlink, so the Markdown's
+    ../../assets/... paths resolve exactly as they do in docs/ and docs/assets is never written to."""
+    out = DOCS.resolve()
+    canon = CANON_DOCS.resolve()
+    if out in canon.parents or out == ROOT:
+        sys.exit(f"--out {out}: refusing to wipe a directory that contains docs/ or the repository")
+    if out != canon and canon in out.parents:
+        sys.exit(f"--out {out}: must not be inside docs/")
+    if out.exists():
+        for child in out.iterdir():
+            if child.name == "assets":
+                continue
+            shutil.rmtree(child) if child.is_dir() and not child.is_symlink() else child.unlink()
+    out.mkdir(parents=True, exist_ok=True)
+    if out != canon:
+        link = out / "assets"
+        if not link.exists() and not link.is_symlink():
+            link.symlink_to(os.path.relpath(CANON_ASSETS, out), target_is_directory=True)
+        elif not link.is_symlink():
+            print(f"note: {link} is a real directory, not a symlink to docs/assets; images resolve against it")
+
+
+def main():
+    global CALLOUT_STYLE, VIDEO_SRC
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", nargs="*", help="convert only these article slugs")
+    ap.add_argument("--callout-style", choices=["gutenberg", "gfm-alert"], default=CALLOUT_STYLE)
+    ap.add_argument("--out", help="output directory (default: docs/). Outside docs/ it gets an assets -> docs/assets symlink")
+    ap.add_argument("--video-src", choices=["remote", "local"], default=VIDEO_SRC,
+                    help="self-hosted <video src>: original wordpress.org URL (default) or local docs/assets path")
+    ap.add_argument("--structure", help="structure file (e.g. data/structure.yaml): lay the tree out by it instead of by category; "
+                                        "also writes data/restructure-map.json and data/structure-metrics.json "
+                                        "(with --out: _restructure-map.json / _structure-metrics.json in DIR)")
+    ap.add_argument("--check-structure", action="store_true", help="validate --structure and exit without writing")
+    args = ap.parse_args()
+    CALLOUT_STYLE = args.callout_style
+    VIDEO_SRC = args.video_src
+    if args.out:
+        set_output_root(pathlib.Path(args.out).resolve())
+
+    site = Site()
+    before = category_layout(site)
+    lay = before
+    if args.structure:
+        lay, swarn = structure_layout(site, args.structure)
+        for w in swarn:
+            print(f"structure warning: {w}")
+        print(f"structure: {args.structure} OK: {len(lay.folders())} sections, {len(lay.folder_of)} articles placed, "
+              f"remove_nav_links={lay.remove_nav_links}")
+        if args.check_structure:
+            return
+        site.path_for_slug = dict(lay.path_for_slug)
+        site.category_link_paths = category_link_targets(site, lay)
+    elif args.check_structure:
+        sys.exit("--check-structure needs --structure")
+    if not args.only:
+        prepare_output_root()
+    report = {"callout_style": CALLOUT_STYLE}
+    if args.structure:
+        report.update({"layout": "structure", "structure_file": args.structure})
+    report.update({"articles": {}, "pages": {}})
+    arts = [a for a in site.articles if not args.only or a["slug"] in args.only]
+    ctxs = {}
+    for a in arts:
+        placement = None
+        if args.structure:
+            f = lay.folder_of[a["slug"]]
+            placement = {"position": lay.position[a["slug"]], "index_of": f if f.index_slug == a["slug"] else None}
+        ctx = convert_article(site, a, placement, remove_nav_links=lay.remove_nav_links)
+        ctxs[a["slug"]] = ctx
+        report["articles"][a["slug"]] = {"path": os.path.relpath(ctx.out, ROOT), "warnings": ctx.warnings,
+                                         "notes": ctx.info, "counts": dict(ctx.counts)}
+    if not args.only:
+        for p in site.pages:
+            if p["slug"] not in STATIC_PAGES:
+                continue  # front page + 4 empty landing pages are theme-generated (notes/site-structure.md)
+            ctx = convert_page(site, p)
+            report["pages"][p["slug"]] = {"path": os.path.relpath(ctx.out, ROOT), "warnings": ctx.warnings,
+                                          "notes": ctx.info}
+        if args.structure:
+            report["section_readmes"] = write_section_readmes(lay)
+        else:
+            report["category_readmes"] = write_category_readmes(site)
+        manifest = build_manifest(site, lay)
+        (DOCS / "manifest.json").write_text(json.dumps(manifest, indent="\t") + "\n")
+        if DOCS.resolve() == CANON_DOCS.resolve():
+            ASSETS.mkdir(parents=True, exist_ok=True)
+            assets = sorted(site.manifest.values(), key=lambda e: e["local_path"])
+            (ASSETS / "images-manifest.json").write_text(json.dumps(assets, indent=1))
+        if DATA.exists() and not args.out:
+            (DATA / "convert-report.json").write_text(json.dumps(report, indent=1))
+        if args.structure:
+            # the committed data/ files the site builds from are only written by docs/ builds (like
+            # convert-report.json); an --out experiment gets its own copies next to its tree
+            if args.out:
+                map_file, metrics_file = DOCS / "_restructure-map.json", DOCS / "_structure-metrics.json"
+            else:
+                map_file, metrics_file = DATA / "restructure-map.json", DATA / "structure-metrics.json"
+            structure_metrics = load_sibling("structure_metrics")
+            nav_removed = {s: c.nav_link_removed for s, c in ctxs.items()}
+            move_map = build_move_map(site, before, lay, nav_removed)
+            map_file.write_text(json.dumps(move_map, indent=1, ensure_ascii=False) + "\n")
+            # link graph: both body variants were written for the structure layout's paths
+            out_paths = {s: posix_rel(p, DOCS / "x") for s, p in lay.path_for_slug.items()}
+            metrics = structure_metrics.compute(
+                before=layout_summary(site, before), after=layout_summary(site, lay),
+                bodies_before={s: c.body_full for s, c in ctxs.items()},
+                bodies_after={s: c.body_final for s, c in ctxs.items()},
+                link_paths=out_paths, structure_file=args.structure,
+                is_nav_paragraph=first_paragraph_is_nav_link)
+            metrics_file.write_text(json.dumps(metrics, indent=1, ensure_ascii=False) + "\n")
+            print(f"move map: {os.path.relpath(map_file, ROOT)} ({len(move_map)} articles); "
+                  f"metrics: {os.path.relpath(metrics_file, ROOT)}")
+            structure_metrics.print_summary(metrics)
+
+    # summary
+    warn_types = collections.Counter()
+    for r in report["articles"].values():
+        for k in {re.split(r"[:;(]", w)[0].strip() for w in r["warnings"]}:
+            warn_types[k] += 1
+    n = len(report["articles"])
+    clean = sum(1 for r in report["articles"].values() if not r["warnings"])
+    print(f"callout style: {CALLOUT_STYLE}")
+    print(f"articles: {n}  clean: {clean}  with warnings: {n - clean}")
+    print("articles affected per warning type:")
+    for k, v in warn_types.most_common():
+        print(f"  {v:4d}  {k}")
+    if not args.only:
+        kinds = collections.Counter(e["kind"] for e in site.manifest.values())
+        readmes = report.get("category_readmes", report.get("section_readmes"))
+        print(f"output: {os.path.relpath(DOCS, ROOT)}  layout: {lay.kind}")
+        print(f"asset manifest entries: {len(site.manifest)} {dict(kinds)}; "
+              f"{'section' if args.structure else 'category'} READMEs: {readmes}; "
+              f"pages: {len(report['pages'])}; importer manifest entries: {len(manifest)}")
 
 
 if __name__ == "__main__":
