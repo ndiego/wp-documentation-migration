@@ -65,9 +65,9 @@ data/       machine-readable reports: redirects, convert report, link check, dow
 
 - GitHub: https://github.com/ndiego/wp-documentation-migration (private)
 - Spacefast space: https://wp-documentation-preview.space.fast/ (private; share via `sf share link`)
-  - Live (v2, branch `restructure`): landing page, `/current/` and `/proposed/` trees, `/compare/` page
+  - Live (trunk): landing page, `/current/` and `/proposed/` trees, `/compare/` page
   - v1, frozen single-tree site of the original structure: https://wp-documentation-preview--v1.space.fast/
-- Restructure PR: https://github.com/ndiego/wp-documentation-migration/pull/1 (draft, `restructure` → `trunk`)
+- Restructure PR (merged 2026-10-08): https://github.com/ndiego/wp-documentation-migration/pull/1
 - Publish a new version: `scripts/build_all.sh && cd site && npm run build:publish && cd .. && sf publish site/dist --wait -m "<what changed>"`
   (the folder is linked to the space via .spacefast/space.json)
 
