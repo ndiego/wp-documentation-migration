@@ -3,7 +3,7 @@ import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 // @ts-ignore plain JS helper
-import { idFromRepoPath } from '../lib/paths.mjs';
+import { idFromRepoPath } from '../lib/trees.mjs';
 
 // Starlight's docsLoader() is hard-wired to src/content/docs. We use Astro's glob loader
 // directly so the collection reads the trees in place (no symlink, no copy), and we generate

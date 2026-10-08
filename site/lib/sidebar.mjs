@@ -15,7 +15,11 @@ const HIDDEN_LAST = new Set(['uncategorized']);
 
 /** Manifest of one tree as a parent -> sorted children model (also used by the compare page). */
 export function loadTree(tree) {
-	const manifest = JSON.parse(fs.readFileSync(path.join(tree.dir, 'manifest.json'), 'utf8'));
+	const file = path.join(tree.dir, 'manifest.json');
+	if (!fs.existsSync(file)) {
+		throw new Error(`[sidebar] ${tree.key} tree: ${file} not found. Generate both trees first: run scripts/build_all.sh from the repository root.`);
+	}
+	const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
 	const entries = Object.entries(manifest).map(([key, e]) => ({
 		key,
 		...e,

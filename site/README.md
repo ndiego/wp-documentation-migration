@@ -40,9 +40,9 @@ config/build time).
 - **One collection, two roots.** Starlight renders exactly one `docs` collection, and two `glob()`
   loaders cannot share a collection (each deletes the entries it did not load). So
   `src/content.config.ts` uses one glob loader with `base: '..'` (repo root) and the patterns
-  `docs/**/*.md` + `build/before/**/*.md`; `generateId` (`idFromRepoPath` in `lib/paths.mjs`) prefixes
+  `docs/**/*.md` + `build/before/**/*.md`; `generateId` (`idFromRepoPath` in `lib/trees.mjs`) prefixes
   ids with the tree: `docs/overview/README.md` -> `proposed/overview`,
-  `build/before/customization/x.md` -> `current/customization/x`. `lib/paths.mjs` `TREES` is the one
+  `build/before/customization/x.md` -> `current/customization/x`. `lib/trees.mjs` `TREES` is the one
   place that defines both trees (folder, prefix, labels, GitHub source URL).
 - **Sidebars.** `lib/sidebar.mjs` builds one top-level group per tree from that tree's
   `manifest.json`. `src/routeData.ts` (Starlight `routeMiddleware`) replaces the sidebar on every
@@ -89,7 +89,7 @@ build time (`lib/compare.mjs`); they are read with `fs` rather than imported, so
   (see "Dual tree" above). No symlink, no copy. `assets/**` is excluded in both trees.
 - **README.md -> folder index**: Starlight does *not* treat `README.md` as an index (it would become
   `/customization/readme/`), and the glob loader's default id would be the frontmatter `slug`, which
-  flattens every URL. `generateId` (`lib/paths.mjs`) builds ids from the path instead:
+  flattens every URL. `generateId` (`lib/trees.mjs`) builds ids from the path instead:
   `docs/overview/README.md` -> `/proposed/overview/`, root `docs/README.md` -> `/proposed/`.
 - **Frontmatter**: the schema is extended (`z.looseObject`) with `slug`, `original_url`, `wp_id`,
   `wp_category_id`, `categories`, `date`, `modified`, `migration`, so the importer metadata validates.
@@ -97,9 +97,14 @@ build time (`lib/compare.mjs`); they are read with `fs` rather than imported, so
   `astro.config.mjs` opts into `unified()` from `@astrojs/markdown-remark`.
 - **`markdown.processedDirs: ['../docs', '../build/before']`**: Starlight only runs its own transforms
   (asides, heading anchor links) on files under `src/content/docs` unless told otherwise.
-- **`WP_DOCS_SITE_DIR`**: `lib/paths.mjs` derives the site folder from `import.meta.url`, which is
-  wrong once Vite bundles it into a page chunk; `astro.config.mjs` imports it first and it records the
-  real folder in this env var for the bundled copies.
+- **Site folder (`#site-root`)**: `lib/trees.mjs` holds the tree definitions and pure id/route helpers (no
+  file paths; `content.config.ts` imports only this, since `astro sync` cannot load `astro:config/server`).
+  `lib/paths.mjs` adds the absolute folders, from `#site-root` (package.json `imports`): Node, i.e.
+  `astro.config.mjs` and what it imports, gets `lib/site-root.mjs` (`import.meta.url`); Vite-bundled code
+  (pages, components, `routeData.ts`) gets `lib/site-root.server.mjs` through a `vite.resolve.alias`, which
+  reads Astro's `root` from `astro:config/server` (a bundled `import.meta.url` would point into `dist/`).
+- **Dev watcher**: `vite.server.watch.ignored` keeps the watcher (rooted at the repo, because of the glob
+  base) out of `.venv`, `raw/`, `docs/assets`, `build/before/assets`, `notes/`, `data/` and `site/dist`.
 
 ## Plugins (`plugins/`)
 

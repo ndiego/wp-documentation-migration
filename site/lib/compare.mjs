@@ -19,8 +19,8 @@ export function metricRows() {
 		{ label: 'Mean depth', before: fmt(b.mean_depth, 2), after: fmt(a.mean_depth, 2), def: 'depth' },
 		{
 			label: 'Articles per section (median)',
-			before: `${fmt(b.articles_per_folder.median)} (max ${fmt(b.articles_per_folder.max)})`,
-			after: `${fmt(a.articles_per_folder.median)} (max ${fmt(a.articles_per_folder.max)})`,
+			before: `${fmt(b.articles_per_folder.median, 1)} (max ${fmt(b.articles_per_folder.max)})`,
+			after: `${fmt(a.articles_per_folder.median, 1)} (max ${fmt(a.articles_per_folder.max)})`,
 			def: 'articles_per_folder',
 		},
 		{ label: 'Sections with a hand-written overview page', before: fmt(b.folders_with_index_page), after: fmt(a.folders_with_index_page), def: 'folders_with_index_page', note: b.folders_with_index_page_note },

@@ -3,6 +3,9 @@
 	"private": true,
 	"type": "module",
 	"version": "0.0.0",
+	"imports": {
+		"#site-root": "./lib/site-root.mjs"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",

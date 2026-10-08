@@ -29,7 +29,8 @@ Usage:   .venv/bin/python -I scripts/convert.py [--only SLUG ...] [--callout-sty
 Layouts: without --structure the tree follows the HelpHub categories (unchanged behaviour). With
 --structure the same articles are laid out by the YAML file (sections -> folders, ordered articles,
 optional `index` article as a folder's README.md) and data/restructure-map.json +
-data/structure-metrics.json (scripts/structure_metrics.py) are written. See README "Structure mode".
+data/structure-metrics.json (scripts/structure_metrics.py) are written (with --out: DIR/_restructure-map.json +
+DIR/_structure-metrics.json instead, so the committed data/ files are left alone). See README "Structure mode".
 """
 import argparse
 import collections
@@ -1293,26 +1294,37 @@ def convert_article(site, art, placement=None, remove_nav_links=False):
     return ctx
 
 
+NAV_SKIP_RE = re.compile(r'<a id="[^"]*"></a>')
+NAV_LINK_RE = re.compile(r"\[[^\]]+\]\([^)\s]+\)")
+
+
+def _body_blocks(body):
+    """Body split into blocks, separators kept at odd indices so "".join() gives the body back byte-identical."""
+    return re.split(r"(\n\s*\n)", body.strip())
+
+
+def nav_paragraph_index(blocks):
+    """Index into _body_blocks() of the first paragraph when it is nothing but one link (e.g. "Go back to the
+    list of Blocks"), else None. Empty blocks, explicit anchors and comments before it are skipped."""
+    for i in range(0, len(blocks), 2):
+        b = blocks[i].strip()
+        if not b or NAV_SKIP_RE.fullmatch(b) or b.startswith("<!--"):
+            continue
+        return i if NAV_LINK_RE.fullmatch(b) else None
+    return None
+
+
 def first_paragraph_is_nav_link(body):
     """True when the first body paragraph is nothing but one link (e.g. "Go back to the list of Blocks")."""
-    for block in re.split(r"\n\s*\n", body.strip()):
-        b = block.strip()
-        if not b or re.fullmatch(r'<a id="[^"]*"></a>', b) or b.startswith("<!--"):
-            continue
-        return bool(re.fullmatch(r"\[[^\]]+\]\([^)\s]+\)", b))
-    return False
+    return nav_paragraph_index(_body_blocks(body)) is not None
 
 
 def strip_first_nav_paragraph(body):
     """Drop the paragraph that first_paragraph_is_nav_link() matched (anchors/comments before it are kept)."""
-    blocks = re.split(r"(\n\s*\n)", body.strip())  # keep separators so the rest is byte-identical
-    for i in range(0, len(blocks), 2):
-        b = blocks[i].strip()
-        if not b or re.fullmatch(r'<a id="[^"]*"></a>', b) or b.startswith("<!--"):
-            continue
-        assert re.fullmatch(r"\[[^\]]+\]\([^)\s]+\)", b)
+    blocks = _body_blocks(body)
+    i = nav_paragraph_index(blocks)
+    if i is not None:
         del blocks[i:i + 2]
-        break
     return "".join(blocks).strip() + "\n"
 
 
@@ -1782,7 +1794,8 @@ def main():
     ap.add_argument("--video-src", choices=["remote", "local"], default=VIDEO_SRC,
                     help="self-hosted <video src>: original wordpress.org URL (default) or local docs/assets path")
     ap.add_argument("--structure", help="structure file (e.g. data/structure.yaml): lay the tree out by it instead of by category; "
-                                        "also writes data/restructure-map.json and data/structure-metrics.json")
+                                        "also writes data/restructure-map.json and data/structure-metrics.json "
+                                        "(with --out: _restructure-map.json / _structure-metrics.json in DIR)")
     ap.add_argument("--check-structure", action="store_true", help="validate --structure and exit without writing")
     args = ap.parse_args()
     CALLOUT_STYLE = args.callout_style
@@ -1807,10 +1820,10 @@ def main():
         sys.exit("--check-structure needs --structure")
     if not args.only:
         prepare_output_root()
-    report = {"callout_style": CALLOUT_STYLE, "articles": {}, "pages": {}}
+    report = {"callout_style": CALLOUT_STYLE}
     if args.structure:
-        report = {"callout_style": CALLOUT_STYLE, "layout": "structure", "structure_file": args.structure,
-                  "articles": {}, "pages": {}}
+        report.update({"layout": "structure", "structure_file": args.structure})
+    report.update({"articles": {}, "pages": {}})
     arts = [a for a in site.articles if not args.only or a["slug"] in args.only]
     ctxs = {}
     for a in arts:
@@ -1818,7 +1831,7 @@ def main():
         if args.structure:
             f = lay.folder_of[a["slug"]]
             placement = {"position": lay.position[a["slug"]], "index_of": f if f.index_slug == a["slug"] else None}
-        ctx = convert_article(site, a, placement, remove_nav_links=bool(args.structure) and lay.remove_nav_links)
+        ctx = convert_article(site, a, placement, remove_nav_links=lay.remove_nav_links)
         ctxs[a["slug"]] = ctx
         report["articles"][a["slug"]] = {"path": os.path.relpath(ctx.out, ROOT), "warnings": ctx.warnings,
                                          "notes": ctx.info, "counts": dict(ctx.counts)}
@@ -1842,19 +1855,27 @@ def main():
         if DATA.exists() and not args.out:
             (DATA / "convert-report.json").write_text(json.dumps(report, indent=1))
         if args.structure:
+            # the committed data/ files the site builds from are only written by docs/ builds (like
+            # convert-report.json); an --out experiment gets its own copies next to its tree
+            if args.out:
+                map_file, metrics_file = DOCS / "_restructure-map.json", DOCS / "_structure-metrics.json"
+            else:
+                map_file, metrics_file = DATA / "restructure-map.json", DATA / "structure-metrics.json"
             structure_metrics = load_sibling("structure_metrics")
             nav_removed = {s: c.nav_link_removed for s, c in ctxs.items()}
             move_map = build_move_map(site, before, lay, nav_removed)
-            (DATA / "restructure-map.json").write_text(json.dumps(move_map, indent=1, ensure_ascii=False) + "\n")
+            map_file.write_text(json.dumps(move_map, indent=1, ensure_ascii=False) + "\n")
             # link graph: both body variants were written for the structure layout's paths
             out_paths = {s: posix_rel(p, DOCS / "x") for s, p in lay.path_for_slug.items()}
             metrics = structure_metrics.compute(
                 before=layout_summary(site, before), after=layout_summary(site, lay),
                 bodies_before={s: c.body_full for s, c in ctxs.items()},
                 bodies_after={s: c.body_final for s, c in ctxs.items()},
-                link_paths=out_paths, structure_file=args.structure)
-            (DATA / "structure-metrics.json").write_text(json.dumps(metrics, indent=1, ensure_ascii=False) + "\n")
-            print(f"move map: data/restructure-map.json ({len(move_map)} articles); metrics: data/structure-metrics.json")
+                link_paths=out_paths, structure_file=args.structure,
+                is_nav_paragraph=first_paragraph_is_nav_link)
+            metrics_file.write_text(json.dumps(metrics, indent=1, ensure_ascii=False) + "\n")
+            print(f"move map: {os.path.relpath(map_file, ROOT)} ({len(move_map)} articles); "
+                  f"metrics: {os.path.relpath(metrics_file, ROOT)}")
             structure_metrics.print_summary(metrics)
 
     # summary

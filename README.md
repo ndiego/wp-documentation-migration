@@ -73,8 +73,10 @@ data/       machine-readable reports: redirects, convert report, link check, dow
 
 ## Regenerating
 
-Order matters: `python3 -I scripts/download_assets.py`, then `.venv/bin/python -I scripts/convert.py`, then
-download again (the downloader records external asset types that the converter uses for file extensions).
+Order matters: `.venv/bin/python -I scripts/convert.py` (a docs/ build writes docs/assets/images-manifest.json),
+then `python3 -I scripts/download_assets.py`, then convert again if data/external-asset-types.json changed and
+download once more (the downloader records external asset types that the converter uses for file extensions).
+`scripts/build_all.sh` does exactly this.
 `convert.py` rebuilds everything under docs/ except docs/assets/.
 
 ## Structure mode and before/after
@@ -108,7 +110,9 @@ a category page point at the deepest section that holds all of that category's a
 
 `--out DIR` (anywhere outside docs/) writes a complete second tree and never touches docs/: DIR gets a relative
 symlink `assets -> docs/assets`, so the Markdown keeps the same `../../assets/...` paths as docs/, and
-`docs/assets/images-manifest.json` is only written by docs/ builds. `build/` is gitignored.
+`docs/assets/images-manifest.json` is only written by docs/ builds. With `--structure --out DIR` the move map
+and metrics go to `DIR/_restructure-map.json` and `DIR/_structure-metrics.json`; only docs/ builds write the
+committed `data/` files. `build/` is gitignored.
 
 ## Status
 

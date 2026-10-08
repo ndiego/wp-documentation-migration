@@ -11,6 +11,8 @@ no dependency on the converter internals:
   bodies_after     {slug: Markdown body as written in the structure layout (nav links removed if configured)}
   link_paths       {slug: path (relative to the output root) the bodies were written for}; used to resolve
                    relative .md links back to slugs. Both body variants come from the same run, so they share it.
+  is_nav_paragraph predicate body -> bool, "first paragraph is only a link" (convert.first_paragraph_is_nav_link,
+                   passed in so the converter's nav-link stripping and this metric use one definition)
 
 Definitions (also written into the JSON under "definitions"):
   depth                 number of folders above an article (docs/a/b/x.md -> 2; a section index README -> its folder depth)
@@ -43,15 +45,6 @@ LINK_RE = re.compile(r"\]\(([^)\s]+)\)|href=\"([^\"]+)\"")
 # ---------------------------------------------------------------------------
 # Content helpers
 # ---------------------------------------------------------------------------
-def first_paragraph_is_nav_link(body):
-    for block in re.split(r"\n\s*\n", body.strip()):
-        b = block.strip()
-        if not b or re.fullmatch(r'<a id="[^"]*"></a>', b) or b.startswith("<!--"):
-            continue
-        return bool(re.fullmatch(r"\[[^\]]+\]\([^)\s]+\)", b))
-    return False
-
-
 def link_targets(bodies, link_paths):
     """{slug: set(target slugs)} from relative .md links (README.md of an index section -> its article)."""
     by_path = {p: s for s, p in link_paths.items()}
@@ -103,7 +96,7 @@ def is_alphabetical(titles):
     return keys == sorted(keys)
 
 
-def tree_metrics(tree, bodies, inbound):
+def tree_metrics(tree, bodies, inbound, is_nav_paragraph):
     arts = tree["articles"]
     folders = tree["folders"]
     title = {s: a["title"] for s, a in arts.items()}
@@ -113,13 +106,13 @@ def tree_metrics(tree, bodies, inbound):
     non_alpha = [f["key"] for f in ordered if not is_alphabetical([title[s] for s in f["articles"]])]
     share = len(non_alpha) / len(ordered) if ordered else 0.0
     # boilerplate sentences, frequency over this tree's bodies
-    sent_by_art = {s: set(sentences(b)) for s, b in bodies.items()}
-    freq = collections.Counter(x for ss in sent_by_art.values() for x in ss)
+    sent_by_art = {s: sentences(b) for s, b in bodies.items()}
+    freq = collections.Counter(x for ss in sent_by_art.values() for x in set(ss))
     boiler = {}
     for top in tree["top"]:
         members = [s for s, a in arts.items() if a["top"] == top["key"]]
-        total = sum(len(sentences(bodies[s])) for s in members if s in bodies)
-        hits = sum(1 for s in members if s in bodies for x in sentences(bodies[s]) if freq[x] >= MIN_ARTICLES)
+        total = sum(len(sent_by_art.get(s, ())) for s in members)
+        hits = sum(1 for s in members for x in sent_by_art.get(s, ()) if freq[x] >= MIN_ARTICLES)
         boiler[top["key"]] = {"title": top["title"], "articles": len(members), "sentences": total,
                               "boilerplate_sentences": hits, "share": round(hits / total, 4) if total else 0.0}
     return {
@@ -133,13 +126,13 @@ def tree_metrics(tree, bodies, inbound):
         "ordering": {"label": "curated" if share >= 0.5 else "alphabetical", "non_alphabetical_share": round(share, 4),
                      "folders_considered": len(ordered), "non_alphabetical_folders": non_alpha},
         "orphan_articles": sum(1 for s in arts if not inbound.get(s)),
-        "manual_breadcrumb_paragraphs": sum(1 for s in arts if s in bodies and first_paragraph_is_nav_link(bodies[s])),
+        "manual_breadcrumb_paragraphs": sum(1 for s in arts if s in bodies and is_nav_paragraph(bodies[s])),
         "sections_using_article_as_index": sum(1 for f in folders if f["index_slug"]),
         "boilerplate_sentence_share": boiler,
     }
 
 
-def compute(before, after, bodies_before, bodies_after, link_paths, structure_file=None):
+def compute(before, after, bodies_before, bodies_after, link_paths, is_nav_paragraph, structure_file=None):
     def inbound(bodies):
         inc = collections.defaultdict(set)
         for src, targets in link_targets(bodies, link_paths).items():
@@ -147,8 +140,8 @@ def compute(before, after, bodies_before, bodies_after, link_paths, structure_fi
                 inc[t].add(src)
         return inc
 
-    b = tree_metrics(before, bodies_before, inbound(bodies_before))
-    a = tree_metrics(after, bodies_after, inbound(bodies_after))
+    b = tree_metrics(before, bodies_before, inbound(bodies_before), is_nav_paragraph)
+    a = tree_metrics(after, bodies_after, inbound(bodies_after), is_nav_paragraph)
     b["folders_with_index_page_note"] = ("0 by definition: the category README.md files are generated from the category "
                                          "name/description and the live landing pages are theme-generated")
     ba, aa = before["articles"], after["articles"]

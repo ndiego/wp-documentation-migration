@@ -83,23 +83,24 @@ function buildCounterparts(map) {
 	return out;
 }
 
-let titles;
-/** id -> { tree, id, title, kind } of the equivalent page in the other tree.
- *  kind: 'article' (same article), 'section' (closest section), 'home' (tree root fallback). */
+let pages;
+/** id -> { tree, id, title, slug, kind } of the equivalent page in the other tree.
+ *  kind: 'article' (same article), 'home' (this is a tree root, or nothing closer exists: the other
+ *  tree's root), 'section' (a section page -> closest section), 'page' (other pages -> same path). */
 export function counterpartOf(id) {
 	const tree = treeForId(id);
 	if (!tree) return undefined;
 	const other = tree.key === 'current' ? TREE.proposed : TREE.current;
 	const { counterpart, map } = structureData();
-	titles ??= new Map(TREES.flatMap((t) => loadTree(t).entries.map((e) => [e.id, e.title])));
+	pages ??= new Map(TREES.flatMap((t) => loadTree(t).entries.map((e) => [e.id, e])));
 	const target = counterpart.get(id) ?? other.prefix;
-	const isArticle = map.some((a) => a.current_id === id || a.proposed_id === id);
-	const samePath = target.slice(other.prefix.length) === id.slice(tree.prefix.length);
+	const article = map.find((a) => a.current_id === id || a.proposed_id === id);
+	const kind = article ? 'article' : id === tree.prefix || target === other.prefix ? 'home' : pages.get(id)?.isIndex ? 'section' : 'page';
 	return {
 		tree: other,
 		id: target,
-		title: titles.get(target) ?? other.label,
-		slug: map.find((a) => a.current_id === id || a.proposed_id === id)?.slug,
-		kind: isArticle ? 'article' : samePath ? 'page' : target === other.prefix ? 'home' : 'section',
+		title: pages.get(target)?.title ?? other.label,
+		slug: article?.slug,
+		kind,
 	};
 }
