@@ -1,0 +1,86 @@
+---
+// Override of Starlight's Banner: on every page of either tree, a persistent bar saying
+// which structure you are looking at, with a one-click switch to the same page in the
+// other tree (lib/structure-data.mjs counterpartOf) and a link to the compare page.
+import Default from '@astrojs/starlight/components/Banner.astro';
+// @ts-ignore plain JS helper
+import { treeForId, routeFromId } from '../../lib/paths.mjs';
+// @ts-ignore plain JS helper
+import { counterpartOf } from '../../lib/structure-data.mjs';
+
+const tree = treeForId(Astro.url.pathname);
+const other = tree ? counterpartOf(Astro.locals.starlightRoute.id) : undefined;
+const where = other?.tree.label.toLowerCase();
+const switchText = {
+	article: `Open this article in the ${where}`,
+	page: `Open this page in the ${where}`,
+	section: `Closest section in the ${where}: ${other?.title}`,
+	home: `Go to the ${where}`,
+}[other?.kind as string];
+const compareHref = other?.slug ? `/compare/?q=${encodeURIComponent(other.slug)}#find-your-article` : '/compare/';
+---
+
+<Default />
+{
+	tree && other && (
+		<div class:list={['tree-bar', `tree-bar--${tree.key}`]} data-pagefind-ignore>
+			<span class="tree-badge">{tree.label}</span>
+			<span class="tree-desc">{tree.description}</span>
+			<span class="tree-actions">
+				<a class="tree-switch" href={routeFromId(other.id)} data-tree-switch>
+					{switchText} <span aria-hidden="true">→</span>
+				</a>
+				<a href={compareHref}>{other.slug ? 'Compare locations' : 'Compare structures'}</a>
+			</span>
+		</div>
+	)
+}
+
+<style>
+	.tree-bar {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.25rem 0.75rem;
+		padding: 0.5rem var(--sl-nav-pad-x);
+		font-size: var(--sl-text-sm);
+		line-height: 1.4;
+		border-bottom: 1px solid var(--tree-border);
+		background: var(--tree-bg);
+		color: var(--sl-color-white);
+	}
+	.tree-bar--current {
+		--tree-bg: var(--sl-color-orange-low);
+		--tree-border: var(--sl-color-orange);
+		--tree-strong: var(--sl-color-orange-high);
+	}
+	.tree-bar--proposed {
+		--tree-bg: var(--sl-color-accent-low);
+		--tree-border: var(--sl-color-accent);
+		--tree-strong: var(--sl-color-accent-high);
+	}
+	.tree-badge {
+		font-weight: 600;
+		padding: 0.05rem 0.5rem;
+		border-radius: 999px;
+		border: 1px solid var(--tree-border);
+		color: var(--tree-strong);
+		white-space: nowrap;
+	}
+	.tree-desc {
+		color: var(--sl-color-gray-2);
+	}
+	.tree-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem 1rem;
+		margin-inline-start: auto;
+	}
+	.tree-actions a {
+		color: var(--tree-strong);
+		font-weight: 600;
+	}
+	.tree-actions a:not(.tree-switch) {
+		font-weight: 400;
+	}
+</style>

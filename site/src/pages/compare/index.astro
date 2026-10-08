@@ -1,0 +1,413 @@
+---
+// Compare page: headline metrics, both trees side by side, "find your article", and what
+// changed. Everything is derived at build time from data/restructure-map.json,
+// data/structure-metrics.json and the two manifests (lib/compare.mjs); no hand-copied numbers.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+// @ts-ignore plain JS helper
+import { metricRows, treeHtml, searchRows, changes, TREE, routeFromId } from '../../../lib/compare.mjs';
+// @ts-ignore plain JS helper
+import { structureData } from '../../../lib/structure-data.mjs';
+
+const { metrics } = structureData();
+const defs: Record<string, string> = metrics.definitions;
+const rows = metricRows();
+// Footnote numbers in order of first use.
+const defKeys: string[] = [...new Set(rows.map((r: any) => r.def).filter(Boolean))] as string[];
+const fn = (k: string) => defKeys.indexOf(k) + 1;
+const c = changes();
+const json = JSON.stringify(searchRows()).replace(/</g, '\\u003c');
+const chain = (s: string[]) => s.join(' › ');
+
+const headings = [
+	{ depth: 2, slug: 'headline-numbers', text: 'Headline numbers' },
+	{ depth: 2, slug: 'both-trees', text: 'Both trees side by side' },
+	{ depth: 2, slug: 'find-your-article', text: 'Find your article' },
+	{ depth: 2, slug: 'what-changed', text: 'What changed' },
+	{ depth: 3, slug: 'top-level-moves', text: 'Top-level moves' },
+	{ depth: 3, slug: 'misfiled-fixed', text: 'Misfiled articles' },
+	{ depth: 3, slug: 'became-overview-pages', text: 'Articles that became section overviews' },
+	{ depth: 3, slug: 'formerly-uncategorized', text: 'Formerly uncategorized' },
+	{ depth: 3, slug: 'breadcrumbs-removed', text: '"Go back to…" lines removed' },
+	{ depth: 2, slug: 'decisions', text: 'Structure decisions' },
+];
+---
+
+<StarlightPage
+	frontmatter={{
+		title: 'Compare the current and proposed structure',
+		description: 'Headline numbers, both documentation trees side by side, and where every article moved.',
+		tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
+	}}
+	headings={headings}
+	hasSidebar={false}
+>
+	<p>
+		Same {metrics.after.articles} articles, two layouts. <a href="/current/">Current</a> is the category layout on wordpress.org today;{" "}
+		<a href="/proposed/">Proposed</a> is the hierarchical tree in this repository. Every number on this page is computed from
+		<code>data/structure-metrics.json</code> and <code>data/restructure-map.json</code> at build time.
+	</p>
+
+	<h2 id="headline-numbers">Headline numbers</h2>
+	<div class="cmp-table-wrap">
+		<table class="cmp-metrics">
+			<thead>
+				<tr><th scope="col">Metric</th><th scope="col">Current</th><th scope="col">Proposed</th></tr>
+			</thead>
+			<tbody>
+				{
+					rows.map((r: any) => (
+						<tr>
+							<th scope="row">
+								{r.label}
+								{r.def && (
+									<sup>
+										<a href={`#def-${r.def}`} title={defs[r.def]} aria-label={`Definition ${fn(r.def)}`}>
+											{fn(r.def)}
+										</a>
+									</sup>
+								)}
+							</th>
+							<td>{r.before}</td>
+							<td>{r.after}</td>
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+	</div>
+	<ol class="cmp-defs">
+		{
+			defKeys.map((k) => (
+				<li id={`def-${k}`}>
+					<strong>{k.replace(/_/g, ' ')}</strong>: {defs[k]}
+					{k === 'folders_with_index_page' && metrics.before.folders_with_index_page_note && <> (current: {metrics.before.folders_with_index_page_note})</>}
+				</li>
+			))
+		}
+	</ol>
+
+	<h2 id="both-trees">Both trees side by side</h2>
+	<p>Numbers are articles in the section, including sub-sections. Every entry links into that tree.</p>
+	<p class="cmp-tree-tools not-content">
+		<button type="button" data-tree-toggle="open">Expand all</button>
+		<button type="button" data-tree-toggle="close">Collapse all</button>
+	</p>
+	<div class="cmp-trees not-content">
+		<section class="cmp-tree-col cmp-tree-col--current" aria-labelledby="tree-current">
+			<h3 id="tree-current"><a href="/current/">{TREE.current.label}</a></h3>
+			<Fragment set:html={treeHtml(TREE.current)} />
+		</section>
+		<section class="cmp-tree-col cmp-tree-col--proposed" aria-labelledby="tree-proposed">
+			<h3 id="tree-proposed"><a href="/proposed/">{TREE.proposed.label}</a></h3>
+			<Fragment set:html={treeHtml(TREE.proposed)} />
+		</section>
+	</div>
+
+	<h2 id="find-your-article">Find your article</h2>
+	<div class="not-content cmp-search">
+		<label for="cmp-q">Search {metrics.after.articles} articles by title or slug</label>
+		<input id="cmp-q" type="search" autocomplete="off" placeholder="e.g. buttons, gravatar, https" />
+		<p class="cmp-search-status" id="cmp-status" aria-live="polite"></p>
+		<ol class="cmp-results" id="cmp-results"></ol>
+	</div>
+	<script type="application/json" id="cmp-data" set:html={json} />
+
+	<h2 id="what-changed">What changed</h2>
+
+	<h3 id="top-level-moves">Top-level moves</h3>
+	<p>Articles by top-level section, current → proposed.</p>
+	<ul>
+		{c.topMoves.map(([k, n]: [string, number]) => <li>{k}: {n}</li>)}
+	</ul>
+
+	<h3 id="misfiled-fixed">Misfiled articles ({c.misfiled.length})</h3>
+	<p>
+		Articles that end up under a different top-level section than their old category's successor (definition {fn('misfiled_fixed')} above),
+		for example maintenance and security guides that were in "Technical guides" and block editor guides that were in "Support guides".
+	</p>
+	<div class="cmp-table-wrap">
+		<table>
+			<thead><tr><th scope="col">Article</th><th scope="col">Current</th><th scope="col">Proposed</th></tr></thead>
+			<tbody>
+				{
+					c.misfiled.map((a: any) => (
+						<tr>
+							<td>{a.title}</td>
+							<td><a href={routeFromId(a.current_id)}>{chain(a.before_section)}</a></td>
+							<td><a href={routeFromId(a.proposed_id)}>{chain(a.after_section)}</a></td>
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+	</div>
+
+	<h3 id="became-overview-pages">Articles that became section overviews ({c.indexes.length})</h3>
+	<p>These articles are now the overview page of their own section instead of a page inside one.</p>
+	<ul>
+		{
+			c.indexes.map((a: any) => (
+				<li>
+					<a href={routeFromId(a.proposed_id)}>{a.title}</a>: overview of {chain(a.after_section)} (was in {chain(a.before_section)})
+				</li>
+			))
+		}
+	</ul>
+
+	<h3 id="formerly-uncategorized">Formerly uncategorized ({c.uncategorized.length})</h3>
+	<ul>
+		{
+			c.uncategorized.map((a: any) => (
+				<li>
+					<a href={routeFromId(a.proposed_id)}>{a.title}</a> → {chain(a.after_section)}
+				</li>
+			))
+		}
+	</ul>
+
+	<h3 id="breadcrumbs-removed">"Go back to…" lines removed ({c.navRemoved.length})</h3>
+	<p>
+		{c.navRemoved.length} articles started with a hand-written link back to their list (for example "Go back to the list of Blocks"). The
+		sidebar and section overview pages do that job now, so the line is dropped. By current section:
+	</p>
+	<ul>
+		{c.navBySection.map(([k, n]: [string, number]) => <li>{k}: {n}</li>)}
+	</ul>
+
+	<h2 id="decisions">Structure decisions</h2>
+	<p>
+		The full reasoning behind the proposed tree, decision by decision, is on the <a href="/compare/decisions/">structure decisions page</a>
+		(rendered from <code>data/structure-review.md</code>).
+	</p>
+</StarlightPage>
+
+<script>
+	type Row = { t: string; s: string; b: string[]; a: string[]; cu: string; pu: string };
+	const rows: Row[] = JSON.parse(document.getElementById('cmp-data')!.textContent || '[]');
+	const input = document.getElementById('cmp-q') as HTMLInputElement;
+	const list = document.getElementById('cmp-results')!;
+	const status = document.getElementById('cmp-status')!;
+	const LIMIT = 50;
+	const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
+	const el = (tag: string, cls?: string, text?: string) => {
+		const e = document.createElement(tag);
+		if (cls) e.className = cls;
+		if (text) e.textContent = text;
+		return e;
+	};
+	const link = (href: string, text: string) => {
+		const a = document.createElement('a');
+		a.href = href;
+		a.textContent = text;
+		return a;
+	};
+	function render() {
+		const q = norm(input.value.trim());
+		list.replaceChildren();
+		if (!q) {
+			status.textContent = 'Type part of a title or slug.';
+			return;
+		}
+		const words = q.split(/\s+/);
+		const hits = rows.filter((r) => {
+			const hay = norm(`${r.t} ${r.s}`);
+			return words.every((w) => hay.includes(w));
+		});
+		status.textContent = hits.length > LIMIT ? `${hits.length} matches, showing the first ${LIMIT}.` : `${hits.length} match${hits.length === 1 ? '' : 'es'}.`;
+		for (const r of hits.slice(0, LIMIT)) {
+			const li = el('li');
+			const head = el('div', 'cmp-r-head');
+			head.append(el('strong', '', r.t), ' ', el('code', '', r.s));
+			const path = el('div', 'cmp-r-path');
+			path.append(el('span', 'cmp-r-before', r.b.join(' › ')), el('span', 'cmp-r-arrow', ' → '), el('span', 'cmp-r-after', r.a.join(' › ')));
+			const links = el('div', 'cmp-r-links');
+			links.append(link(r.cu, 'Open in Current'), link(r.pu, 'Open in Proposed'));
+			li.append(head, path, links);
+			list.append(li);
+		}
+	}
+	input.addEventListener('input', () => {
+		render();
+		const url = new URL(location.href);
+		if (input.value.trim()) url.searchParams.set('q', input.value.trim());
+		else url.searchParams.delete('q');
+		history.replaceState(null, '', url);
+	});
+	const initial = new URLSearchParams(location.search).get('q');
+	if (initial) input.value = initial;
+	render();
+
+	document.querySelectorAll<HTMLButtonElement>('[data-tree-toggle]').forEach((b) =>
+		b.addEventListener('click', () => {
+			const open = b.dataset.treeToggle === 'open';
+			document.querySelectorAll<HTMLDetailsElement>('.cmp-tree details').forEach((d) => (d.open = open));
+		}),
+	);
+</script>
+
+<style>
+	.cmp-table-wrap {
+		overflow-x: auto;
+	}
+	.cmp-metrics th[scope='row'] {
+		font-weight: 400;
+	}
+	.cmp-metrics td {
+		font-variant-numeric: tabular-nums;
+	}
+	.cmp-defs {
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-2);
+	}
+	.cmp-tree-tools {
+		display: flex;
+		gap: 0.5rem;
+		margin-top: 1rem;
+	}
+	.cmp-tree-tools button,
+	.cmp-search input {
+		font: inherit;
+		color: var(--sl-color-white);
+		background: var(--sl-color-gray-6);
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		padding: 0.25rem 0.75rem;
+	}
+	.cmp-tree-tools button {
+		cursor: pointer;
+		font-size: var(--sl-text-sm);
+	}
+	.cmp-tree-tools button:hover {
+		border-color: var(--sl-color-accent);
+	}
+	.cmp-trees {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+	@media (min-width: 50rem) {
+		.cmp-trees {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	.cmp-tree-col {
+		border: 1px solid var(--sl-color-gray-5);
+		border-top: 4px solid var(--col-accent);
+		border-radius: 0.5rem;
+		padding: 0.75rem 1rem;
+		font-size: var(--sl-text-sm);
+		min-width: 0;
+	}
+	.cmp-tree-col--current {
+		--col-accent: var(--sl-color-orange);
+	}
+	.cmp-tree-col--proposed {
+		--col-accent: var(--sl-color-accent);
+	}
+	.cmp-tree-col h3 {
+		font-size: var(--sl-text-lg);
+		margin: 0 0 0.5rem;
+	}
+	.cmp-tree-col :global(a) {
+		color: var(--sl-color-white);
+		text-decoration: none;
+	}
+	.cmp-tree-col :global(a:hover) {
+		color: var(--sl-color-text-accent);
+		text-decoration: underline;
+	}
+	.cmp-tree-col :global(ul) {
+		list-style: none;
+		padding-inline-start: 1rem;
+		margin: 0;
+	}
+	.cmp-tree-col :global(ul.cmp-tree) {
+		padding-inline-start: 0;
+	}
+	.cmp-tree-col :global(li) {
+		margin: 0.15rem 0;
+	}
+	.cmp-tree-col :global(li:not(:has(> details))) {
+		color: var(--sl-color-gray-3);
+		padding-inline-start: 1.1rem;
+	}
+	.cmp-tree-col :global(li:not(:has(> details)) a) {
+		color: var(--sl-color-gray-2);
+	}
+	.cmp-tree-col :global(summary) {
+		cursor: pointer;
+		font-weight: 600;
+	}
+	.cmp-tree-col :global(.cmp-count) {
+		display: inline-block;
+		min-width: 1.6em;
+		padding: 0 0.4em;
+		margin-inline-start: 0.25rem;
+		border-radius: 999px;
+		font-size: var(--sl-text-xs);
+		font-weight: 600;
+		text-align: center;
+		color: var(--sl-color-gray-2);
+		background: var(--sl-color-gray-6);
+		border: 1px solid var(--sl-color-gray-5);
+		font-variant-numeric: tabular-nums;
+	}
+	.cmp-search {
+		margin-top: 1rem;
+	}
+	.cmp-search label {
+		display: block;
+		font-weight: 600;
+		margin-bottom: 0.25rem;
+	}
+	.cmp-search input {
+		width: 100%;
+		max-width: 32rem;
+		padding: 0.5rem 0.75rem;
+	}
+	.cmp-search input:focus {
+		outline: 2px solid var(--sl-color-accent);
+		outline-offset: 1px;
+	}
+	.cmp-search-status {
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+		margin: 0.5rem 0;
+	}
+	.cmp-results {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.cmp-results :global(li) {
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		padding: 0.6rem 0.8rem;
+		margin-bottom: 0.5rem;
+	}
+	.cmp-results :global(code) {
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+		overflow-wrap: anywhere;
+	}
+	.cmp-results :global(.cmp-r-path) {
+		font-size: var(--sl-text-sm);
+		margin: 0.25rem 0;
+	}
+	.cmp-results :global(.cmp-r-before) {
+		color: var(--sl-color-orange-high);
+	}
+	.cmp-results :global(.cmp-r-after) {
+		color: var(--sl-color-text-accent);
+	}
+	.cmp-results :global(.cmp-r-arrow) {
+		color: var(--sl-color-gray-3);
+	}
+	.cmp-results :global(.cmp-r-links) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem 1rem;
+		font-size: var(--sl-text-sm);
+	}
+</style>

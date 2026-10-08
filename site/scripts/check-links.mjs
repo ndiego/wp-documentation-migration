@@ -4,6 +4,10 @@
 // #fragment must match an id (or a[name]) in the target page.
 // Usage: node scripts/check-links.mjs [--all] [--json out.json]
 //   --all  also check links in Starlight's chrome (sidebar, header, pagination)
+// The site has two trees (/current/ and /proposed/); stats are also reported per tree, and
+// a content link from one tree into the other counts as a problem ('cross-tree'), since
+// relative .md links must resolve within the same tree. The "same page in the other tree"
+// switch in the tree banner ([data-tree-switch]) is always checked.
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'node-html-parser';
@@ -44,35 +48,56 @@ const resolveFile = (urlPath) => {
 	return null;
 };
 
-const stats = { pages: pages.length, links: 0, internal: 0, ok: 0, missingFile: 0, missingAnchor: 0, external: 0 };
+const TREES = ['current', 'proposed'];
+const treeOf = (urlPath) => TREES.find((t) => urlPath.startsWith(`/${t}/`)) ?? 'other';
+const blank = () => ({ pages: 0, links: 0, internal: 0, ok: 0, missingFile: 0, missingAnchor: 0, crossTree: 0, external: 0 });
+const stats = { ...blank(), pages: pages.length, switchLinks: 0, switchBroken: 0 };
+const perTree = Object.fromEntries([...TREES, 'other'].map((t) => [t, blank()]));
 const problems = [];
 for (const file of pages) {
 	const pageUrl = '/' + path.relative(DIST, file).replace(/index\.html$/, '').replace(/\\/g, '/');
+	const tree = treeOf(pageUrl);
+	const ts = perTree[tree];
+	ts.pages++;
 	const root = parse(fs.readFileSync(file, 'utf8'));
+	for (const el of root.querySelectorAll('[data-tree-switch]')) {
+		stats.switchLinks++;
+		const href = el.getAttribute('href');
+		if (!resolveFile(new URL(href, 'http://x' + pageUrl).pathname)) {
+			stats.switchBroken++;
+			problems.push({ page: pageUrl, kind: 'switch', url: href, problem: 'switch-missing' });
+		}
+	}
 	const scope = ALL ? root : root.querySelector('.sl-markdown-content');
 	if (!scope) continue;
 	const refs = [];
-	for (const el of scope.querySelectorAll('a[href]')) refs.push(['href', el.getAttribute('href')]);
+	// The tree switch deliberately points into the other tree; it is checked above.
+	for (const el of scope.querySelectorAll('a[href]:not([data-tree-switch])')) refs.push(['href', el.getAttribute('href')]);
 	for (const el of scope.querySelectorAll('img[src], video[src], source[src], audio[src]')) refs.push(['src', el.getAttribute('src')]);
 	for (const el of scope.querySelectorAll('video[poster]')) refs.push(['poster', el.getAttribute('poster')]);
 	for (const [kind, raw] of refs) {
 		stats.links++;
+		ts.links++;
 		if (/^(https?:)?\/\//i.test(raw) || /^(mailto|tel|javascript|data):/i.test(raw)) {
 			stats.external++;
+			ts.external++;
 			continue;
 		}
 		stats.internal++;
+		ts.internal++;
 		let u;
 		try {
 			u = new URL(raw, 'http://x' + pageUrl);
 		} catch {
 			stats.missingFile++;
+			ts.missingFile++;
 			problems.push({ page: pageUrl, kind, url: raw, problem: 'bad-url' });
 			continue;
 		}
 		const target = resolveFile(u.pathname);
 		if (!target) {
 			stats.missingFile++;
+			ts.missingFile++;
 			problems.push({ page: pageUrl, kind, url: raw, problem: 'missing-file' });
 			continue;
 		}
@@ -86,17 +111,28 @@ for (const file of pages) {
 		// '#top' always scrolls to the top of the document per the HTML spec.
 		if (rawFrag && rawFrag.toLowerCase() !== 'top' && target.endsWith('.html') && !ids(target).has(rawFrag) && !ids(target).has(decoded)) {
 			stats.missingAnchor++;
+			ts.missingAnchor++;
 			problems.push({ page: pageUrl, kind, url: raw, problem: 'missing-anchor' });
 			continue;
 		}
+		const targetTree = treeOf(u.pathname);
+		if (tree !== 'other' && targetTree !== 'other' && targetTree !== tree) {
+			stats.crossTree++;
+			ts.crossTree++;
+			problems.push({ page: pageUrl, kind, url: raw, problem: 'cross-tree' });
+			continue;
+		}
 		stats.ok++;
+		ts.ok++;
 	}
 }
 console.log(JSON.stringify(stats, null, 2));
+console.log('per tree:');
+console.table(perTree);
 const byKind = {};
 for (const p of problems) byKind[p.problem] = (byKind[p.problem] ?? 0) + 1;
 console.log('problems by type:', byKind);
 for (const p of problems.slice(0, 40)) console.log(`  ${p.problem}\t${p.page}\t${p.url}`);
 if (problems.length > 40) console.log(`  ... ${problems.length - 40} more`);
-if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify({ stats, problems }, null, 2));
+if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify({ stats, perTree, problems }, null, 2));
 process.exitCode = problems.length ? 1 : 0;

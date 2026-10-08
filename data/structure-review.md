@@ -1,7 +1,7 @@
 # Proposed documentation tree: review
 
 Rendered from `data/structure.yaml` (the source of truth; regenerate this file rather than editing it by hand).
-321 articles, 53 sections (16 of them use an article as their index page), at most 4 folder levels under `docs/`.
+321 articles, 53 sections (17 of them use an article as their index page), at most 4 folder levels under `docs/`.
 Check: 321/321 articles placed, 0 missing, 0 duplicates, 0 unknown slugs.
 
 The old "Technical guides" top-level section is dissolved into Using WordPress ("Installation & hosting",
@@ -34,8 +34,7 @@ Counts include all descendants. Sections with an `index` take their title and in
     - FAQ I make changes and nothing happens (`faq-i-make-changes-and-nothing-happens`)
     - FAQ My site was hacked (`faq-my-site-was-hacked`)
 - **Using WordPress** (`using-wordpress/`, 93 articles)
-  - **Administration screens** (`using-wordpress/administration-screens/`, 40 articles)
-    - Administration Screens (`administration-screens`)
+  - **Administration Screens** (`using-wordpress/administration-screens/`, 40 articles) — index: `administration-screens`
     - Toolbar (`toolbar`)
     - **Dashboard** (`using-wordpress/administration-screens/dashboard/`, 2 articles)
       - Dashboard screen (`dashboard-screen`)
@@ -44,7 +43,7 @@ Counts include all descendants. Sections with an `index` take their title and in
       - Posts screen (`posts-screen`)
       - Posts Categories screen (`posts-categories-screen`)
       - Posts Tags screen (`posts-tags-screen`)
-    - **Media** (`using-wordpress/administration-screens/media/`, 2 articles)
+    - **Media** (`using-wordpress/administration-screens/media-screens/`, 2 articles)
       - Media Library screen (`media-library-screen`)
       - Media Add New screen (`media-add-new-screen`)
     - **Pages** (`using-wordpress/administration-screens/pages/`, 2 articles)
@@ -198,7 +197,7 @@ Counts include all descendants. Sections with an `index` take their title and in
         - Pullquote block (`pullquote-block`)
         - Quote block (`quote-block`)
         - Table block (`table-block`)
-      - **Media blocks** (`editing-and-design/block-editor/blocks/media/`, 9 articles)
+      - **Media blocks** (`editing-and-design/block-editor/blocks/media-blocks/`, 9 articles)
         - Audio block (`audio-block`)
         - Cover block (`cover-block`)
         - File block (`file-block`)
