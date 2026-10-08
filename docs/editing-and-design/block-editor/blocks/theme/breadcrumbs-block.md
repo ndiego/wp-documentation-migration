@@ -1,0 +1,183 @@
+---
+title: Breadcrumbs block
+slug: breadcrumbs-block
+position: 4
+original_url: https://wordpress.org/documentation/article/breadcrumbs-block/
+wp_id: 16367660
+legacy_categories:
+- customization
+- theme-blocks
+date: '2026-05-20T12:00:00'
+modified: '2026-06-16T00:17:03'
+migration:
+  status: clean
+  notes:
+  - link to old slug 'blocks' rewritten to 'blocks-list' (via 301)
+  videos:
+  - type: self-hosted
+    url: https://wordpress.org/documentation/files/2026/05/Kapture-2026-05-12-at-07.58.14.mp4
+    local_path: docs/assets/videos/2026/05/Kapture-2026-05-12-at-07.58.14.mp4
+  counts:
+    callouts: 9
+    callouts_info: 9
+    images: 8
+    internal_links_rewritten: 10
+    self_hosted_videos: 1
+  nav_link_removed: true
+---
+
+# Breadcrumbs block
+
+The Breadcrumbs block shows visitors where they are on your website by displaying a trail of links from the homepage to the current page. This makes it easy for people to understand the site structure and move back to higher‑level pages without using the browser’s back button.
+
+You can add the Breadcrumbs block to an individual post or page, or place it in a template using the Site Editor so it automatically appears across your site.
+
+<video controls preload="metadata" src="https://wordpress.org/documentation/files/2026/05/Kapture-2026-05-12-at-07.58.14.mp4" poster="../../../../assets/images/2026/05/Screenshot-2026-05-12-at-8.01.27-AM.png"></video>
+
+## How breadcrumbs work on pages and posts
+
+### Breadcrumbs on Pages
+
+For pages that are part of a hierarchy, the breadcrumb trail follows the page structure. For example:
+
+`Home / Services / Web Design / Portfolio`
+
+If a page has a parent page, that parent will appear in the breadcrumb trail.
+
+### Breadcrumbs on Posts
+
+Posts don’t have parent pages, so breadcrumbs use categories or tags instead. For example:
+
+`Home / Technology / Your Post Title`
+
+If a post belongs to more than one category or tag, only one term is displayed in the breadcrumbs for each level in the parent‑child structure. When multiple categories are at the same level in the parent‑child structure, the one that appears first in the list is shown.
+
+![Post with Breadcrumbs block that has multiple categories and a tag selected](../../../../assets/images/2026/05/Screenshot-2026-05-12-at-8.23.51-AM.jpg)
+
+### Other types of template-driven pages
+
+The Breadcrumbs block also works on other common pages, including:
+
+1.  Category, tag, author, and date archives
+2.  Search results pages
+3.  404 (page not found) pages
+4.  Custom Post Types, where the post type archive is included in the trail
+
+## Add a Breadcrumbs block
+
+To add a Breadcrumbs block, open the Block Inserter tool by clicking the Block Inserter + icon in the top toolbar. Look for the Breadcrumbs block by using the search bar to find the right block to add. Then, click the icon to insert the Breadcrumbs block into the editor.
+
+Alternatively, click the Block Inserter (+) icon in the editor, then choose the Breadcrumbs block after searching for it in the pop-up window.
+
+You can also use a (/) slash command by typing `/breadcrumbs` in the editor.
+
+![Adding Breadcrumbs block using slash command in editor](../../../../assets/images/2026/05/Screenshot-2026-05-11-at-10.24.55-AM.png)
+
+> [!NOTE]
+> [Read detailed instructions on adding blocks.](../../working-with-blocks/adding-a-new-block.md)
+
+### Add a Breadcrumbs block to a template or template part
+
+The Breadcrumbs block can be added to an individual post or page or by using the Site Editor to edit a template or template part used throughout the site.
+
+> [!NOTE]
+> [Learn more about the Site Editor.](../../../site-editor/README.md)
+
+## Block toolbar
+
+Each block has its own block-specific controls that allow you to manipulate the block right in the editor. If you hover over the buttons, tooltips will tell you what is behind the buttons.
+
+![Breadcrumbs block toolbar](../../../../assets/images/2026/05/breadcrumbs-block-toolbar.png)
+
+### Transform to
+
+![Breadcrumbs transform to options: Columns, details, group](../../../../assets/images/2026/05/breadcrumbs-transform-to.png)
+
+Click on the Transform button to convert the Breadcrumbs block into a Columns, Details, or Group block.
+
+### Block moving tools
+
+![Breadcrumbs block toolbar with block moving tools highlighted](../../../../assets/images/2026/05/breadcrumbs-block-toolbar-move.png)
+
+The block-moving tools allow you to move the block in the editor. Use the six dots icon to drag and drop the block and place it anywhere on the page. Alternatively, click on the up and down arrows to move the block up or down.
+
+> [!NOTE]
+> [Get more information about moving a block within the editor.](../../working-with-blocks/moving-blocks.md)
+
+### Align
+
+![Breadcrumbs block toolbar align options active](../../../../assets/images/2026/05/breadcrumbs-align.png)
+
+Use the change alignment tool to align the breadcrumbs block. Choose one of the following options:
+
+-   **None –** leaves the block the current size.
+-   **Wide width –** increase the width of the block beyond the content size.
+-   **Full width –** extend the block to cover the full width of the screen.
+
+The Wide width and Full width alignment settings must be enabled by your WordPress theme.
+
+### More options
+
+The More options menu (three dots) provides additional features to customize the block, like the ability to duplicate, copy, rename, hide, and more.
+
+> [!NOTE]
+> [Read about these and other settings.](../../working-with-blocks/more-options.md)
+
+## Block settings
+
+![Block settings button highlighted next to save button](../../../../assets/images/2026/05/block-settings-7-0.png)
+
+Every block has specific options in the editor sidebar in addition to the options found in the block toolbar. If you do not see the sidebar, click on the **Settings button** next to the Save/Publish button.
+
+### Breadcrumbs settings
+
+![Breadcrumbs block settings options to show home breadcrumb, show current breadcrumb and change the separator character](../../../../assets/images/2026/05/Screenshot-2026-05-11-at-9.59.46-AM.png)
+
+The toggle for **Show home breadcrumb** will allow you to turn the link to the home page on or off for the breadcrumb.
+
+The toggle for **Show current breadcrumb** will add or remove the unlinked title of the current page from the breadcrumb.
+
+You can change the **Separator** character that appears between breadcrumbs from the default slash ( `/` ). Common character choices include a pipe ( `|` ) or a dash ( `-` ).
+
+### Advanced
+
+The Breadcrumbs block provides the following Advanced settings options: HTML Anchor, Additional CSS Class(es), Additional CSS, Show on homepage, Prefer taxonomy terms, and Styles.
+
+The **Show on homepage** checkbox can be used if your Breadcrumbs block appears in a template or template part that’s shown on the homepage, enable this option to display the breadcrumb trail. Otherwise, this setting has no effect.
+
+The **Prefer taxonomy terms** checkbox can be used in the specific case of a hierarchical post type with taxonomies, the breadcrumbs can either reflect its post hierarchy (default) or the hierarchy of its assigned taxonomy terms. This can be helpful because the exact type of breadcrumbs shown will vary automatically depending on the page in which this block is displayed.
+
+> [!NOTE]
+> [Learn more about advanced settings](../../working-with-blocks/block-settings/advanced-settings-overview.md)
+
+### Color
+
+The Breadcrumbs block provides Color settings options to change the text and background colors.
+
+> [!NOTE]
+> [See this guide for more information about changing colors](../../working-with-blocks/block-settings/colors-settings-overview.md)
+
+### Typography
+
+The Breadcrumbs block provides typography settings to change the font family, size, appearance, line height, letter case, letter spacing, and decoration.
+
+> [!NOTE]
+> [Get more details about changing typography settings](../../working-with-blocks/block-settings/typography-settings-overview.md)
+
+### Dimensions
+
+The Breadcrumbs block provides dimension settings options to change padding and margin size.
+
+> [!NOTE]
+> [Learn more about dimension controls](../../working-with-blocks/block-settings/dimension-controls-overview.md)
+
+### Border
+
+The Breadcrumbs block provides border settings options to add border color, width, and radius.
+
+> [!NOTE]
+> [Learn more about border settings](../../working-with-blocks/block-settings/border-settings-overview.md)
+
+## Changelog
+
+-   Created 2026-05-20 (props @awetz583 @kjoyner @lanamiro1)
