@@ -1261,6 +1261,8 @@ def convert_article(site, art, placement=None, remove_nav_links=False):
             fm["section"] = True  # this article is the folder's README.md (structure `index:`)
         else:
             fm["position"] = placement["position"]
+    if placement is not None and placement.get("classic"):
+        fm["classic"] = True  # classic-era content (structure `classic: true`, inherited)
     fm.update({
         "original_url": art["link"],
         "wp_id": art["id"],
@@ -1403,6 +1405,7 @@ class Folder:
         self.cat = cat                    # category mode: the category dict
         self.children = []                # ordered sub-folders
         self.articles = []                # ordered article slugs (excluding index_slug)
+        self.classic = False               # structure mode: `classic: true` on this section or an ancestor
 
     @property
     def depth(self):
@@ -1480,7 +1483,7 @@ def category_layout(site):
     return lay
 
 
-SECTION_KEYS = {"slug", "title", "intro", "children", "articles", "index"}
+SECTION_KEYS = {"slug", "title", "intro", "children", "articles", "index", "classic"}
 TOP_KEYS = {"version", "remove_nav_links", "sections"}
 
 
@@ -1542,6 +1545,13 @@ def structure_layout(site, path):
         f = Folder(parts, " ".join(str(title or slug).split()), parent, CONTENT.joinpath(*parts, "README.md"),
                    intro=intro if isinstance(intro, str) else ("" if intro is None else str(intro)),
                    index_slug=index if index in raw_slugs else None, source="structure")
+        classic = node.get("classic")
+        inherited = bool(parent and parent.classic)
+        if classic is not None and not isinstance(classic, bool):
+            errors.append(f"{label}: classic must be a boolean (true/false), got {classic!r}")
+        elif classic is False and inherited:
+            errors.append(f"{label}: classic: false below a classic section (classic is inherited and cannot be switched off)")
+        f.classic = inherited or classic is True
         arts = node.get("articles") or []
         if not isinstance(arts, list) or not all(isinstance(a, str) for a in arts):
             errors.append(f"{label}: articles must be a list of slugs")
@@ -1669,7 +1679,10 @@ def write_section_readmes(lay):
         if f.index_slug:
             continue
         intro = (f.intro or "").strip()
-        write_md(f.readme, {"title": f.title, "section": True}, f.title, (intro + "\n") if intro else "")
+        fm = {"title": f.title, "section": True}
+        if f.classic:
+            fm["classic"] = True
+        write_md(f.readme, fm, f.title, (intro + "\n") if intro else "")
         written += 1
     write_root_readme()
     return written
@@ -1686,6 +1699,8 @@ def build_manifest(site, lay):
         manifest[f.key] = {"title": f.title, "slug": f.slug,
                            "markdown_source": posix_rel(f.readme, DOCS / "manifest.json"),
                            "parent": f.parent.key if f.parent else None, "order": order}
+        if f.classic:
+            manifest[f.key]["classic"] = True
         n = 0
         for child in f.children:
             n += 1
@@ -1696,6 +1711,8 @@ def build_manifest(site, lay):
             manifest[f"{f.key}/{s}"] = {"title": plain(a["title"]["rendered"]), "slug": s,
                                         "markdown_source": posix_rel(lay.path_for_slug[s], DOCS / "manifest.json"),
                                         "parent": f.key, "order": n}
+            if f.classic:
+                manifest[f"{f.key}/{s}"]["classic"] = True
 
     n = 0
     for top in lay.top:
@@ -1727,19 +1744,22 @@ def build_move_map(site, before, after, nav_removed):
             "after_depth": fa.depth,
             "position_after": after.position[s],
             "after_is_section_index": fa.index_slug == s,
+            "is_classic": fa.classic,
             "nav_link_removed": bool(nav_removed.get(s)),
         })
     return rows
 
 
-def layout_summary(site, lay):
-    """Plain-dict view of a Layout for scripts/structure_metrics.py (paths relative to the output root)."""
+def layout_summary(site, lay, legacy_slugs=frozenset()):
+    """Plain-dict view of a Layout for scripts/structure_metrics.py (paths relative to the output root).
+    `legacy_slugs` is the structure file's classic article set; it is passed for both trees so the classic
+    metrics compare the same articles (a category layout has no classic folders)."""
     folders = [{"key": f.key, "title": f.title, "parent": f.parent.key if f.parent else None, "depth": f.depth,
                 "top": f.parts[0], "articles": list(f.articles), "index_slug": f.index_slug,
-                "hand_written": f.source == "structure"}
+                "hand_written": f.source == "structure", "classic": f.classic}
                for f in lay.folders()]
     arts = {s: {"title": plain(site.art_by_slug[s]["title"]["rendered"]), "folder": f.key, "top": f.parts[0],
-                "depth": f.depth, "path": posix_rel(lay.path_for_slug[s], DOCS / "x")}
+                "depth": f.depth, "path": posix_rel(lay.path_for_slug[s], DOCS / "x"), "classic": s in legacy_slugs}
             for s, f in lay.folder_of.items()}
     return {"kind": lay.kind, "top": [{"key": f.key, "title": f.title} for f in lay.top],
             "folders": folders, "articles": arts}
@@ -1810,8 +1830,8 @@ def main():
         lay, swarn = structure_layout(site, args.structure)
         for w in swarn:
             print(f"structure warning: {w}")
-        print(f"structure: {args.structure} OK: {len(lay.folders())} sections, {len(lay.folder_of)} articles placed, "
-              f"remove_nav_links={lay.remove_nav_links}")
+        print(f"structure: {args.structure} OK: {len(lay.folders())} sections, {len(lay.folder_of)} articles placed "
+              f"({sum(1 for f in lay.folder_of.values() if f.classic)} classic), remove_nav_links={lay.remove_nav_links}")
         if args.check_structure:
             return
         site.path_for_slug = dict(lay.path_for_slug)
@@ -1830,7 +1850,8 @@ def main():
         placement = None
         if args.structure:
             f = lay.folder_of[a["slug"]]
-            placement = {"position": lay.position[a["slug"]], "index_of": f if f.index_slug == a["slug"] else None}
+            placement = {"position": lay.position[a["slug"]], "index_of": f if f.index_slug == a["slug"] else None,
+                         "classic": f.classic}
         ctx = convert_article(site, a, placement, remove_nav_links=lay.remove_nav_links)
         ctxs[a["slug"]] = ctx
         report["articles"][a["slug"]] = {"path": os.path.relpath(ctx.out, ROOT), "warnings": ctx.warnings,
@@ -1867,8 +1888,10 @@ def main():
             map_file.write_text(json.dumps(move_map, indent=1, ensure_ascii=False) + "\n")
             # link graph: both body variants were written for the structure layout's paths
             out_paths = {s: posix_rel(p, DOCS / "x") for s, p in lay.path_for_slug.items()}
+            # the classic set comes from the structure file and is applied to both trees
+            legacy_slugs = frozenset(s for s, f in lay.folder_of.items() if f.classic)
             metrics = structure_metrics.compute(
-                before=layout_summary(site, before), after=layout_summary(site, lay),
+                before=layout_summary(site, before, legacy_slugs), after=layout_summary(site, lay, legacy_slugs),
                 bodies_before={s: c.body_full for s, c in ctxs.items()},
                 bodies_after={s: c.body_final for s, c in ctxs.items()},
                 link_paths=out_paths, structure_file=args.structure,

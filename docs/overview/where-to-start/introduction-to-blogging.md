@@ -1,7 +1,7 @@
 ---
 title: Introduction to Blogging
 slug: introduction-to-blogging
-position: 7
+position: 6
 original_url: https://wordpress.org/documentation/article/introduction-to-blogging/
 wp_id: 10851385
 legacy_categories:

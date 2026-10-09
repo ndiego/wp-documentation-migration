@@ -137,7 +137,7 @@ You can choose link options to apply to all images in your gallery.
 
 ![Gallery link options.](../../../../assets/images/2019/03/Screenshot-2026-03-06-at-3.05.21-PM-1024x408.jpg)
 
--   **Link images to attachment pages** – Selecting this option will link the image to its WordPress media [attachment](../../../../using-wordpress/media/inserting-images-into-posts-and-pages-classic.md#step-4-attachment-details) page.
+-   **Link images to attachment pages** – Selecting this option will link the image to its WordPress media [attachment](../../../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md#step-4-attachment-details) page.
     -   This is an informational page about your image, which includes the image, the caption, the image description, and a comment field.
 -   **Link images to media files** – Selecting this option will link the image to the image file in the original size in a new browser window.
 -   **Enlarge on click** – Selecting this option lets visitors open gallery images in a larger view, also known as a lightbox, without leaving the page. Visitors will be able to move forward and backward through each image in the lightbox.

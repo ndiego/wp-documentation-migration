@@ -1,7 +1,7 @@
 ---
 title: Protect posts with password
 slug: protect-posts-with-password
-position: 6
+position: 4
 original_url: https://wordpress.org/documentation/article/protect-posts-with-password/
 wp_id: 11249807
 legacy_categories:
@@ -27,7 +27,7 @@ migration:
 
 ## Post Visibility Settings
 
-Once you publish a WordPress post (or Page), it is visible to the public (by default). In WordPress terms, this means a post with a *Published* status has a default visibility of *Public*, based on the settings in the [Publish box](write-posts-classic-editor.md#post-field-descriptions) of a [Edit Post Screen](../administration-screens/README.md#posts-make-some-content).
+Once you publish a WordPress post (or Page), it is visible to the public (by default). In WordPress terms, this means a post with a *Published* status has a default visibility of *Public*, based on the settings in the [Publish box](../../classic-wordpress/classic-editor/write-posts-classic-editor.md#post-field-descriptions) of a [Edit Post Screen](../administration-screens/README.md#posts-make-some-content).
 
 WordPress also offers two less public options for your post’s [Content Visibility](https://codex.wordpress.org/Content_Visibility). Clicking the “Edit” link next to **Visibility: Public** reveals three radio buttons:
 

@@ -1,7 +1,7 @@
 ---
 title: Revisions
 slug: revisions
-position: 10
+position: 6
 original_url: https://wordpress.org/documentation/article/revisions/
 wp_id: 11241863
 legacy_categories:

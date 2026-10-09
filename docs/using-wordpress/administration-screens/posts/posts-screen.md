@@ -103,7 +103,7 @@ Actions describe the process to be performed on particular Posts. There are two 
 
 The available Actions are described below:
 
--   **Edit** – This Action can be either an “Immediate Action” or a “Bulk Action”. The Immediate Action, initiated by click on the Post Title or clicking on the Edit option just below the Post Title, causes the [Edit Posts screen](../../writing-and-publishing/write-posts-classic-editor.md#post-field-descriptions) to display. Edit is also available as a Bulk Action for the selected Posts, so see the [Bulk Edit section](#bulk-edit) for details on the Bulk Editing process.
+-   **Edit** – This Action can be either an “Immediate Action” or a “Bulk Action”. The Immediate Action, initiated by click on the Post Title or clicking on the Edit option just below the Post Title, causes the [Edit Posts screen](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md#post-field-descriptions) to display. Edit is also available as a Bulk Action for the selected Posts, so see the [Bulk Edit section](#bulk-edit) for details on the Bulk Editing process.
 
 ##### Bulk Edit
 
@@ -119,7 +119,7 @@ Quick Edit is an Immediate Action performed on one Post by clicking the Quick Ed
 
 ##### Editing Individual Posts
 
-This mode is essentially the same as the [Posts Add New Screen](../../writing-and-publishing/write-posts-classic-editor.md) so see the [Posts_Add_New_Screen](../../writing-and-publishing/write-posts-classic-editor.md) for the specific details of writing a Post. The only difference is that the button to save your work is called “**Update**” instead of “**Publish**“.
+This mode is essentially the same as the [Posts Add New Screen](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md) so see the [Posts_Add_New_Screen](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md) for the specific details of writing a Post. The only difference is that the button to save your work is called “**Update**” instead of “**Publish**“.
 
 #### Apply
 

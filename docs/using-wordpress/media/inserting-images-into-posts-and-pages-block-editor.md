@@ -23,7 +23,7 @@ migration:
 
 # Inserting images into posts and pages (Block Editor)
 
-*Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](inserting-images-into-posts-and-pages-classic.md).*
+*Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md).*
 
 When creating or editing a WordPress page or blog post, you can easily add images to a post or page using the Image Block.
 
@@ -41,7 +41,7 @@ When creating or editing a WordPress page or blog post, you can easily add image
 -   [Media library screen](../administration-screens/media-screens/media-library-screen.md)
 -   [Media Add New Screen](../administration-screens/media-screens/media-add-new-screen.md)
 -   [Edit Media](edit-media.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 
 ## Changelog
 

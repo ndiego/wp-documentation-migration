@@ -21,7 +21,7 @@ migration:
 
 ## Media →︎ Library
 
-Media consists of the images, video, recordings, and files that you upload and use in your blog. Media is typically uploaded and inserted into the content when [writing a Post](../../writing-and-publishing/write-posts-classic-editor.md) or [writing a Page](../pages/pages-add-new-screen.md). Note that the Uploading Setting in the [Settings Media Screen](../settings/settings-media-screen.md) describes the location and structure of the upload directory (where your media files are stored). If you do need to upload Media, even if that Media is not related to a Post or Page, then you need to use the [Media Add New Screen](media-add-new-screen.md).
+Media consists of the images, video, recordings, and files that you upload and use in your blog. Media is typically uploaded and inserted into the content when [writing a Post](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md) or [writing a Page](../pages/pages-add-new-screen.md). Note that the Uploading Setting in the [Settings Media Screen](../settings/settings-media-screen.md) describes the location and structure of the upload directory (where your media files are stored). If you do need to upload Media, even if that Media is not related to a Post or Page, then you need to use the [Media Add New Screen](media-add-new-screen.md).
 
 Visit the [Media add new screen](media-add-new-screen.md) to install new media by clicking the Add New link at the top of this screen or Select **[Media](../README.md#media-add-pictures-and-movies-to-your-posts) > [Add New](media-add-new-screen.md)** from the left side menu.
 
@@ -212,7 +212,7 @@ After one or more Media are *selected*, and after a *Bulk* Action is specified, 
 -   [Edit Media](../../media/edit-media.md)
 -   [Settings Media Screen](../settings/settings-media-screen.md)
 -   [Inserting Images into Posts and Pages (Block Editor)](../../media/inserting-images-into-posts-and-pages-block-editor.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](../../media/inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 -   [Use Images](../../media/use-images.md)
 -   [Use image and file attachments](../../media/use-image-and-file-attachments.md)
 -   [Image Size and Quality](../../media/image-size-and-quality.md)

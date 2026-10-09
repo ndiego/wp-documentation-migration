@@ -30,6 +30,7 @@ export const collections = {
 				wp_id: z.number().optional(),
 				wp_category_id: z.number().optional(),
 				categories: z.array(z.string()).optional(),
+				classic: z.boolean().optional(),
 				date: z.string().optional(),
 				modified: z.string().optional(),
 				migration: z.record(z.string(), z.unknown()).optional(),

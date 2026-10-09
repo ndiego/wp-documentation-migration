@@ -35,7 +35,7 @@ migration:
 
 Use the Excerpt block to display the excerpt of a post. This block is primarily nested inside a [query loop](query-loop-block.md) block and helps to customize the appearance of the query loop.
 
-If the post does not have an [excerpt](../../../../using-wordpress/writing-and-publishing/what-is-an-excerpt-classic-editor.md), the Excerpt block displays the first 55 words in the post as the excerpt, followed by the characters ‘[…]’.
+If the post does not have an [excerpt](../../../../classic-wordpress/classic-editor/what-is-an-excerpt-classic-editor.md), the Excerpt block displays the first 55 words in the post as the excerpt, followed by the characters ‘[…]’.
 
 The block has an optional **Read More** link which will direct the website visitor to the URL of the full post. You can customize this link text to anything you like. The **Read More** link can be styled independently.
 

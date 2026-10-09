@@ -1,7 +1,7 @@
 ---
 title: Block themes
 slug: block-themes
-position: 2
+position: 3
 original_url: https://wordpress.org/documentation/article/block-themes/
 wp_id: 15113575
 legacy_categories:
@@ -41,7 +41,7 @@ Instead of widgets, a block theme relies on blocks. This means that you can plac
 
 **How does this impact the Customizer?**
 
-The [Customizer](../../using-wordpress/administration-screens/appearance/customizer.md) is not available in block themes unless you are using a plugin or theme that requires it to be activated. This is because you can make the same changes you might make with the Customizer with blocks. For example, there are now blocks for the site title, tagline, and site logo. You can also select colors for your website in the [Styles](../site-editor/styles-overview.md) setting by going to the **Administration Screen** > **Appearance** > **Editor (beta).**
+The [Customizer](../../classic-wordpress/widgets-menus-and-customizer/customizer.md) is not available in block themes unless you are using a plugin or theme that requires it to be activated. This is because you can make the same changes you might make with the Customizer with blocks. For example, there are now blocks for the site title, tagline, and site logo. You can also select colors for your website in the [Styles](../site-editor/styles-overview.md) setting by going to the **Administration Screen** > **Appearance** > **Editor (beta).**
 
 ## How to find block themes
 

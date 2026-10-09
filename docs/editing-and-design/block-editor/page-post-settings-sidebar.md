@@ -95,7 +95,7 @@ Clicking on the current setting for **Status** will open a pop-over where you ca
 
 ![Visibility in the Summary section, making a post password protected](../../assets/images/2020/11/image5.png)
 
--   **Sticky**: This Check Box controls if you want to make the post a [sticky post](../../using-wordpress/writing-and-publishing/sticky-posts-classic-editor.md). A Sticky Post is a post placed at the top of the front page of Posts.
+-   **Sticky**: This Check Box controls if you want to make the post a [sticky post](../../classic-wordpress/classic-editor/sticky-posts-classic-editor.md). A Sticky Post is a post placed at the top of the front page of Posts.
 
 ![Stick to the top of the blog](../../assets/images/2020/11/image10.png)
 

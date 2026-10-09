@@ -1,7 +1,7 @@
 ---
 title: Create a Favicon
 slug: create-a-favicon
-position: 3
+position: 4
 original_url: https://wordpress.org/documentation/article/create-a-favicon/
 wp_id: 10846004
 legacy_categories:

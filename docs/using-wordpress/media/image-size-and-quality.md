@@ -1,7 +1,7 @@
 ---
 title: Image size and quality
 slug: image-size-and-quality
-position: 7
+position: 5
 original_url: https://wordpress.org/documentation/article/image-size-and-quality/
 wp_id: 10840109
 legacy_categories:
@@ -74,7 +74,7 @@ When you have fine-tuned your small sized image or new thumbnail, export the ima
 -   [Edit Media](edit-media.md)
 -   [Media library screen](../administration-screens/media-screens/media-library-screen.md)
 -   [Inserting Images into Posts and Pages (Block Editor)](inserting-images-into-posts-and-pages-block-editor.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 
 ## Resources
 

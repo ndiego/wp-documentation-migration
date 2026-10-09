@@ -9,5 +9,5 @@ New to WordPress? Read these pages in order. They take you from getting a site r
 your first steps in the editor, to the terms and concepts you will meet everywhere else in the
 documentation.
 
-The first-steps guide comes in two versions: one for the block editor (the default since
-WordPress 5.0) and one for the Classic Editor plugin.
+The first-steps guide covers the block editor, the default since WordPress 5.0. If your site uses
+the Classic Editor plugin, its version of the guide is in **Classic WordPress**.

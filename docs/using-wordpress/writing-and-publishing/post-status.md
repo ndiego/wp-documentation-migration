@@ -1,7 +1,7 @@
 ---
 title: Post Status
 slug: post-status
-position: 3
+position: 2
 original_url: https://wordpress.org/documentation/article/post-status/
 wp_id: 10840192
 legacy_categories:
@@ -37,7 +37,7 @@ Most users are already familiar with at least two workflow states:
 
 Internally, WordPress sets the post status to `publish` when you click the “Publish” button, and WordPress sets the post status to `draft` when you click the “Save Draft” button. Similarly, if your website has users granted [the](../users-roles-and-profiles/roles-and-capabilities.md#edit_posts) [`edit_posts`](../users-roles-and-profiles/roles-and-capabilities.md#edit_posts) [capability](../users-roles-and-profiles/roles-and-capabilities.md#edit_posts) but not [the](../users-roles-and-profiles/roles-and-capabilities.md#publish_posts) [`publish_posts`](../users-roles-and-profiles/roles-and-capabilities.md#publish_posts) [capability](../users-roles-and-profiles/roles-and-capabilities.md#publish_posts), then when those users start writing a new post, WordPress will display a “Submit for Review” button instead of a “Publish” button. Likewise, WordPress then assigns the post that user created [the](#pending) [`pending`](#pending) [status](#pending) when they press that button.
 
-The status of a post can also be set in the [Administration Screen](../administration-screens/README.md) and [Add New Posts](write-posts-classic-editor.md) Screen by any user with the capability needed to assign the post to the given status. Internally, all of these posts are stored in the same place (the [`wp_posts`](https://codex.wordpress.org/Database_Description#Table:_wp_posts) table), and are differentiated by a column called `post_status`.
+The status of a post can also be set in the [Administration Screen](../administration-screens/README.md) and [Add New Posts](../../classic-wordpress/classic-editor/write-posts-classic-editor.md) Screen by any user with the capability needed to assign the post to the given status. Internally, all of these posts are stored in the same place (the [`wp_posts`](https://codex.wordpress.org/Database_Description#Table:_wp_posts) table), and are differentiated by a column called `post_status`.
 
 ## Default Statuses
 

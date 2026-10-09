@@ -73,4 +73,4 @@ Uploading via the Browser uploader:
 -   [Use Images](../../media/use-images.md)
 -   [Use image and file attachments](../../media/use-image-and-file-attachments.md)
 -   [Inserting Images into Posts and Pages (Block Editor)](../../media/inserting-images-into-posts-and-pages-block-editor.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](../../media/inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)

@@ -6,6 +6,7 @@ section: true
 # Media
 
 Working with images, galleries, audio, video and other files: inserting them into posts and pages,
-editing them, choosing the right size and quality, and using the audio and video shortcodes.
+editing them, and choosing the right size and quality.
 
-Block editor and Classic Editor versions of the same task are listed side by side.
+These pages describe the block editor. The Classic Editor versions, and the audio and video
+shortcodes, are in **Classic WordPress**.

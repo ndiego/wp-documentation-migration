@@ -46,7 +46,7 @@ The title of your page. You can use any words or phrases. Avoid using the same t
 
 **Page editing area**
 
-The blank box where you enter your writing, links, links to images, and any information you want to display on your site. You can use either the Visual or the Text view to compose your posts. For more on the Text view, see the [Visual](<https://codex.wordpress.org/Writing%20Posts#Visual_Versus%20Text_Editor>) [Versus](../../writing-and-publishing/write-posts-classic-editor.md#visual-versus-text-editor) [Text View](<https://codex.wordpress.org/Writing%20Posts#Visual_Versus%20Text_Editor>) article.
+The blank box where you enter your writing, links, links to images, and any information you want to display on your site. You can use either the Visual or the Text view to compose your posts. For more on the Text view, see the [Visual](<https://codex.wordpress.org/Writing%20Posts#Visual_Versus%20Text_Editor>) [Versus](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md#visual-versus-text-editor) [Text View](<https://codex.wordpress.org/Writing%20Posts#Visual_Versus%20Text_Editor>) article.
 
 **Preview button**
 

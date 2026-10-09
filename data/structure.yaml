@@ -3,6 +3,19 @@
 # Source of the design: notes/helphub-structure-analysis.md §5 (target tree) and §6.
 # Validated by /private/tmp/structure-work/check.py (0 missing, 0 duplicates, 0 unknown slugs).
 #
+# Schema (checked by scripts/convert.py --check-structure; README "Structure mode and before/after")
+#   version: 1          remove_nav_links: bool          sections: [section, ...]
+#   section keys:
+#     slug      required; folder name (sanitize_title-clean, unique among siblings)
+#     title     required unless `index` is set; with `intro` (Markdown) it becomes the generated README.md
+#     index     article slug converted into the folder's README.md (its title/intro then win)
+#     articles  ordered article slugs (order = menu order)
+#     children  ordered sub-sections
+#     classic    optional boolean (default false). `classic: true` marks classic-era content (Classic Editor,
+#               classic themes). It is inherited by every descendant section and the articles in them, and
+#               cannot be switched off below a classic section. Effects: article and generated README
+#               frontmatter `classic: true`, manifest.json `"classic": true`, restructure-map `is_classic`.
+#
 # Technical guides: the old top-level "Technical guides" section (13 articles) is dissolved. Its articles
 # are folded into Using WordPress as "Installation & hosting" and "Maintenance & security", except
 # troubleshoot-login-issues (-> Users, roles & profiles) and search-engine-optimization
@@ -10,6 +23,36 @@
 #
 # Decisions
 # ---------
+# Block-first
+#  - Principle: the main tree describes what a fresh WordPress install gives you today: the block editor, a
+#    block theme and the Site Editor. Pages that only apply to the Classic Editor plugin, to classic themes
+#    (widgets, Customizer, Menus screen) or to classic-era media shortcodes move to "Classic WordPress"
+#    (classic-wordpress, classic: true), the last top-level section. classic-block and shortcode-block stay in
+#    the Blocks reference because they are blocks.
+#  - Classic WordPress > Classic Editor (11): first-steps-with-wordpress-classic (from Where to start),
+#    write-posts-classic-editor, content-visibility-classic-editor, sticky-posts-classic-editor,
+#    what-is-an-excerpt-classic-editor (from Writing & publishing), write-code-in-your-posts-classic-editor
+#    (from Formatting & special characters), inserting-images-into-posts-and-pages-classic,
+#    the-wordpress-gallery-classic-editor, audio-shortcode, video-shortcode (from Media) and
+#    keyboard-shortcuts-classic-editor (from Block editor). Ordered as a workflow: first steps, write posts,
+#    images, gallery, shortcodes, excerpt/visibility/sticky, code, keyboard shortcuts.
+#  - Classic WordPress > Widgets, Menus and the Customizer (5): customizer, manage-wordpress-widgets,
+#    block-based-widgets-editor, appearance-widgets-screen-classic-editor, appearance-menus-screen (all from
+#    Administration screens > Appearance). Customizer first, then the widgets overview and the two Widgets
+#    screens (block-based, then classic), then Menus. Block themes have none of these screens.
+#  - Classic WordPress > Classic default themes (11 sections, 20 articles): Twenty Twenty-One back to Twenty Ten,
+#    newest first, each with its existing index/changelog shape (Twenty Fourteen and Twenty Thirteen stay
+#    changelog-only sections). Editing & design > Themes > Default themes keeps the four block themes
+#    (Twenty Twenty-Five to Twenty Twenty-Two); its intro links to the classic section.
+#  - appearance-theme-file-editor-screen stays in the main tree but moves from Administration screens >
+#    Appearance to Administration screens > Tools (after the personal-data screens, before Network Setup):
+#    with a block theme wp-admin shows the theme file editor under Tools > Theme File Editor.
+#  - Administration screens > Appearance would be left holding only appearance-themes-screen, so the group is
+#    removed (same rule as Comments) and appearance-themes-screen moves to Editing & design > Themes, after
+#    work-with-themes. Appearance > Editor is the Site Editor section.
+#  - Where to start, Writing & publishing, Formatting and Media no longer pair block/classic variants; their
+#    intros point to Classic WordPress instead. Writing & publishing keeps 6 top-level articles (there is no
+#    block editor "write posts" article; Block editor covers writing).
 # Structure
 #  - "Support guides" -> using-wordpress, "Customization" -> editing-and-design (titles per §5 sketch).
 #  - "FAQs" is renamed "Frequently asked questions" (slug faq).
@@ -28,20 +71,23 @@
 #  - Block reference lists are alphabetical by title (not slug), with "(Deprecated)"/"(Removed)" pages last.
 #    Note verse-block sorts as "Poetry block".
 #  - Site editor uses the `site-editor` article as its index, which removes the section/article slug clash.
-#  - Default themes: 13 themes have both an article and a changelog. Twenty Fourteen and Twenty Thirteen have
+#  - Default themes: 13 themes have both an article and a changelog (4 block themes in Default themes, 9 classic in
+#    Classic WordPress > Classic default themes). Twenty Fourteen and Twenty Thirteen have
 #    only a changelog (no theme article exists), so they get generated sections with a short intro holding
 #    just the changelog, keeping the newest-first sequence unbroken. There is no Twenty Eighteen theme.
 # Placements worth a second look
 #  - wordpress-block-editor: Dashboard -> Block editor (first article, acts as the editor overview).
-#  - video-shortcode: Dashboard -> Using WordPress > Media, next to audio-shortcode.
+#  - video-shortcode: Dashboard -> Classic WordPress > Classic Editor, next to audio-shortcode.
 #  - what-is-post-type: Dashboard -> Writing & publishing > Organizing your site.
 #  - site-editor, additional-guide-to-using-the-site-editor: Appearance -> Site editor.
 #  - template-editor: Block editor -> Site editor (it edits templates, a site-level concept).
 #  - introduction-to-plugins, manage-plugins: Appearance -> Administration screens > Plugins, ahead of the
 #    two Plugins screens.
 #  - block-based-widgets-editor, manage-wordpress-widgets: kept with appearance-widgets-screen-classic-editor in
-#    Administration screens > Appearance (wp-admin Appearance > Widgets), not with the Widget blocks reference.
-#  - customizer: stays in Administration screens > Appearance (Appearance > Customize).
+#    Classic WordPress > Widgets, Menus and the Customizer (wp-admin Appearance > Widgets only exists with a
+#    classic theme), not with the Widget blocks reference.
+#  - customizer: Classic WordPress > Widgets, Menus and the Customizer (Appearance > Customize is a classic-theme
+#    screen).
 #  - layout-settings-overview, position-settings-overview: Appearance -> Block settings.
 #  - styles-overview, the-font-library: Appearance -> Site editor.
 #  - use-gravatars: Appearance -> Users, roles & profiles.
@@ -49,8 +95,8 @@
 #  - create-a-favicon: Appearance -> Themes (top level, next to work-with-themes). Debatable: it now lives in
 #    Settings > General, so settings-general-screen's neighbourhood is an alternative.
 #  - Uncategorized: responsive-styles -> Block settings; site-editor-identity -> Site editor.
-#  - keyboard-shortcuts-block-editor + keyboard-shortcuts-classic-editor: Dashboard -> Block editor top level,
-#    kept as an adjacent pair (the Classic variant therefore sits inside Block editor).
+#  - keyboard-shortcuts-block-editor: Dashboard -> Block editor top level. Its Classic Editor counterpart is in
+#    Classic WordPress > Classic Editor (block-first rule; the pair is no longer adjacent).
 #  - distraction-free-mode: Dashboard -> Block editor.
 #  - administration-screens, toolbar: top of Administration screens (overview pages for the whole group).
 #  - search-engine-optimization: Technical guides > Installation -> Organizing your site.
@@ -77,12 +123,11 @@ sections:
           your first steps in the editor, to the terms and concepts you will meet everywhere else in the
           documentation.
 
-          The first-steps guide comes in two versions: one for the block editor (the default since
-          WordPress 5.0) and one for the Classic Editor plugin.
+          The first-steps guide covers the block editor, the default since WordPress 5.0. If your site uses
+          the Classic Editor plugin, its version of the guide is in **Classic WordPress**.
         articles:
           - get-started-with-wordpress
           - first-steps-with-wordpress-block-editor
-          - first-steps-with-wordpress-classic
           - where-to-find-wordpress-help
           - wordpress-glossary
           - wordpress-semantics
@@ -160,22 +205,6 @@ sections:
             articles:
               - pages-screen
               - pages-add-new-screen
-          - slug: appearance
-            title: Appearance
-            intro: |
-              The Appearance menu: choosing themes, customising a classic theme with the Customizer,
-              managing widgets and menus, and editing theme files.
-
-              The Site Editor (Appearance > Editor) is documented in its own section under
-              **Editing & design**.
-            articles:
-              - appearance-themes-screen
-              - customizer
-              - manage-wordpress-widgets
-              - block-based-widgets-editor
-              - appearance-widgets-screen-classic-editor
-              - appearance-menus-screen
-              - appearance-theme-file-editor-screen
           - slug: plugins
             title: Plugins
             intro: |
@@ -201,7 +230,10 @@ sections:
             title: Tools
             intro: |
               The Tools menu: importing and exporting content, checking your site's health, handling
-              personal data requests, and setting up a multisite network.
+              personal data requests, editing theme files, and setting up a multisite network.
+
+              With a block theme the Theme File Editor is listed here (Tools > Theme File Editor); classic
+              themes show it under Appearance.
             articles:
               - tools-screen
               - tools-import-screen
@@ -209,6 +241,7 @@ sections:
               - site-health-screen
               - tools-export-personal-data-screen
               - tools-erase-personal-data-screen
+              - appearance-theme-file-editor-screen
               - tools-network-screen
           - slug: settings
             title: Settings
@@ -232,19 +265,14 @@ sections:
           How to create and publish content in WordPress: writing posts and pages, controlling who can see
           them and when, using excerpts and revisions, and organising your site so visitors can find things.
 
-          Where a task works differently in the Classic Editor, the Classic Editor version follows directly
-          after the block editor one. For the editor itself, see **Block editor** under
-          **Editing & design**.
+          These pages describe the block editor. For the editor itself, see **Block editor** under
+          **Editing & design**; Classic Editor versions of these tasks are in **Classic WordPress**.
         articles:
-          - write-posts-classic-editor
           - create-pages
           - post-status
           - content-visibility-block-editor
-          - content-visibility-classic-editor
           - protect-posts-with-password
-          - sticky-posts-classic-editor
           - what-is-an-excerpt-block-editor
-          - what-is-an-excerpt-classic-editor
           - revisions
         children:
           - slug: organizing-your-site
@@ -266,33 +294,28 @@ sections:
             title: Formatting & special characters
             intro: |
               Details of how WordPress handles the text you type: character entities, emoji and smilies,
-              showing code in a post, and the filters WordPress applies to post content before it is
-              displayed.
+              and the filters WordPress applies to post content before it is displayed.
             articles:
               - use-character-entities
               - what-are-emoji
               - what-are-smilies
-              - write-code-in-your-posts-classic-editor
               - how-wordpress-processes-post-content
 
       - slug: media
         title: Media
         intro: |
           Working with images, galleries, audio, video and other files: inserting them into posts and pages,
-          editing them, choosing the right size and quality, and using the audio and video shortcodes.
+          editing them, and choosing the right size and quality.
 
-          Block editor and Classic Editor versions of the same task are listed side by side.
+          These pages describe the block editor. The Classic Editor versions, and the audio and video
+          shortcodes, are in **Classic WordPress**.
         articles:
           - use-images
           - inserting-images-into-posts-and-pages-block-editor
-          - inserting-images-into-posts-and-pages-classic
           - the-wordpress-gallery-block-editor
-          - the-wordpress-gallery-classic-editor
           - edit-media
           - image-size-and-quality
           - use-image-and-file-attachments
-          - audio-shortcode
-          - video-shortcode
 
       - slug: comments
         title: Comments
@@ -372,7 +395,6 @@ sections:
           - how-to-use-the-preview-function
           - distraction-free-mode
           - keyboard-shortcuts-block-editor
-          - keyboard-shortcuts-classic-editor
           - notes
         children:
           - slug: working-with-blocks
@@ -622,13 +644,16 @@ sections:
       - slug: themes
         title: Themes
         intro: |
-          Themes control how your site looks. Learn how to find, install and switch themes, what makes a
-          block theme different from a classic theme, and how to add a site icon.
+          Themes control how your site looks. Learn how to find, install and switch themes (including the
+          Appearance > Themes screen), what makes a block theme different from a classic theme, and how to
+          add a site icon.
 
-          **Default themes** documents each of the themes made by the WordPress project, from Twenty
-          Twenty-Five back to Twenty Ten, with a changelog for each.
+          **Default themes** documents the block themes made by the WordPress project, from Twenty
+          Twenty-Five back to Twenty Twenty-Two, with a changelog for each. The classic default themes are in
+          **Classic WordPress**.
         articles:
           - work-with-themes
+          - appearance-themes-screen
           - block-themes
           - create-a-favicon
         children:
@@ -636,11 +661,12 @@ sections:
             title: Default themes
             intro: |
               Every year or so, WordPress ships a new default theme named after the year it was designed for.
-              Each page describes the theme's features and how to customise it, and links to the theme's
-              changelog.
+              This section covers the default block themes, starting with Twenty Twenty-Two, the first one.
+              Each page describes the theme's features and how to customise it in the Site Editor, and links
+              to the theme's changelog. Themes are listed newest first.
 
-              Themes are listed newest first. Older default themes still receive security and compatibility
-              updates, so they remain available to install from the theme directory.
+              The classic default themes, from Twenty Twenty-One back to Twenty Ten, are documented in
+              [Classic default themes](../../../classic-wordpress/classic-default-themes/README.md).
             articles: []
             children:
               - slug: twenty-twenty-five
@@ -655,48 +681,110 @@ sections:
               - slug: twenty-twenty-two
                 index: twenty-twenty-two
                 articles: [twenty-twenty-two-changelog]
-              - slug: twenty-twenty-one
-                index: twenty-twenty-one
-                articles: [twenty-twenty-one-changelog]
-              - slug: twenty-twenty
-                index: twenty-twenty
-                articles: [twenty-twenty-changelog]
-              - slug: twenty-nineteen
-                index: twenty-nineteen
-                articles: [twenty-nineteen-changelog]
-              - slug: twenty-seventeen
-                index: twenty-seventeen
-                articles: [twenty-seventeen-changelog]
-              - slug: twenty-sixteen
-                index: twenty-sixteen
-                articles: [twenty-sixteen-changelog]
-              - slug: twenty-fifteen
-                index: twenty-fifteen
-                articles: [twenty-fifteen-changelog]
-              - slug: twenty-fourteen
-                title: Twenty Fourteen
-                intro: |
-                  Twenty Fourteen was the default theme for WordPress 3.8, released in 2013. It is a magazine-style
-                  theme with a featured content area and a dark, bold layout.
 
-                  There is no separate guide for this theme yet; the changelog lists the changes in each
-                  release.
-                articles: [twenty-fourteen-changelog]
-              - slug: twenty-thirteen
-                title: Twenty Thirteen
-                intro: |
-                  Twenty Thirteen was the default theme for WordPress 3.6, released in 2013. It is a colorful,
-                  single-column blog theme with support for post formats.
+  # ------------------------------------------------------------------------------------------------
+  # Classic WordPress (classic: true, inherited): classic themes and the Classic Editor plugin. Keep last.
+  - slug: classic-wordpress
+    title: Classic WordPress
+    classic: true
+    intro: |
+      These pages cover features you only see on a site that uses a classic theme or the Classic Editor
+      plugin: the Classic Editor itself and the audio and video shortcodes, the widgets, menus and Customizer
+      screens of classic themes, and the classic default themes.
 
-                  There is no separate guide for this theme yet; the changelog lists the changes in each
-                  release.
-                articles: [twenty-thirteen-changelog]
-              - slug: twenty-twelve
-                index: twenty-twelve
-                articles: [twenty-twelve-changelog]
-              - slug: twenty-eleven
-                index: twenty-eleven
-                articles: [twenty-eleven-changelog]
-              - slug: twenty-ten
-                index: twenty-ten
-                articles: [twenty-ten-changelog]
+      A fresh WordPress install ships with a block theme and the block editor, so you may never see these
+      screens. For the block-first equivalents (the block editor, the Site Editor and block themes), see
+      [Editing & design](../editing-and-design/README.md).
+    articles: []
+    children:
+      - slug: classic-editor
+        title: Classic Editor
+        intro: |
+          The Classic Editor plugin brings back the editor WordPress used before version 5.0. These pages
+          follow a typical workflow: first steps, writing a post, adding images and galleries, embedding
+          audio and video with shortcodes, excerpts, visibility and sticky posts, showing code, and
+          keyboard shortcuts.
+
+          For the default editor, see [Block editor](../../editing-and-design/block-editor/README.md).
+        articles:
+          - first-steps-with-wordpress-classic
+          - write-posts-classic-editor
+          - inserting-images-into-posts-and-pages-classic
+          - the-wordpress-gallery-classic-editor
+          - audio-shortcode
+          - video-shortcode
+          - what-is-an-excerpt-classic-editor
+          - content-visibility-classic-editor
+          - sticky-posts-classic-editor
+          - write-code-in-your-posts-classic-editor
+          - keyboard-shortcuts-classic-editor
+      - slug: widgets-menus-and-customizer
+        title: Widgets, Menus and the Customizer
+        intro: |
+          Classic themes are customised in the Customizer (Appearance > Customize) and on the Widgets and
+          Menus screens. Block themes replace all three with the Site Editor (Appearance > Editor), where
+          widget areas become template parts and menus become Navigation blocks; see
+          [Site Editor](../../editing-and-design/site-editor/README.md).
+        articles:
+          - customizer
+          - manage-wordpress-widgets
+          - block-based-widgets-editor
+          - appearance-widgets-screen-classic-editor
+          - appearance-menus-screen
+      - slug: classic-default-themes
+        title: Classic default themes
+        intro: |
+          The default themes WordPress shipped before Twenty Twenty-Two, newest first. They are classic
+          themes: you customise them with the Customizer, widgets and menus rather than in the Site Editor.
+          They still receive security and compatibility updates, so they remain available to install from
+          the theme directory.
+
+          For the default block themes, see
+          [Default themes](../../editing-and-design/themes/default-themes/README.md).
+        articles: []
+        children:
+          - slug: twenty-twenty-one
+            index: twenty-twenty-one
+            articles: [twenty-twenty-one-changelog]
+          - slug: twenty-twenty
+            index: twenty-twenty
+            articles: [twenty-twenty-changelog]
+          - slug: twenty-nineteen
+            index: twenty-nineteen
+            articles: [twenty-nineteen-changelog]
+          - slug: twenty-seventeen
+            index: twenty-seventeen
+            articles: [twenty-seventeen-changelog]
+          - slug: twenty-sixteen
+            index: twenty-sixteen
+            articles: [twenty-sixteen-changelog]
+          - slug: twenty-fifteen
+            index: twenty-fifteen
+            articles: [twenty-fifteen-changelog]
+          - slug: twenty-fourteen
+            title: Twenty Fourteen
+            intro: |
+              Twenty Fourteen was the default theme for WordPress 3.8, released in 2013. It is a magazine-style
+              theme with a featured content area and a dark, bold layout.
+
+              There is no separate guide for this theme yet; the changelog lists the changes in each
+              release.
+            articles: [twenty-fourteen-changelog]
+          - slug: twenty-thirteen
+            title: Twenty Thirteen
+            intro: |
+              Twenty Thirteen was the default theme for WordPress 3.6, released in 2013. It is a colorful,
+              single-column blog theme with support for post formats.
+
+              There is no separate guide for this theme yet; the changelog lists the changes in each
+              release.
+            articles: [twenty-thirteen-changelog]
+          - slug: twenty-twelve
+            index: twenty-twelve
+            articles: [twenty-twelve-changelog]
+          - slug: twenty-eleven
+            index: twenty-eleven
+            articles: [twenty-eleven-changelog]
+          - slug: twenty-ten
+            index: twenty-ten
+            articles: [twenty-ten-changelog]
