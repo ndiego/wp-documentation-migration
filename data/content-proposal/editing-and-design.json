@@ -261,7 +261,7 @@
     "section": "Block editor > Blocks list",
     "action": "REWRITE",
     "target": null,
-    "why": "Must reflect the family model and redirects; drop \"new Block Editor\" framing."
+    "why": "Groups pages by family, lists variations under their parent, holds the redirects; drop \"new Block Editor\" framing."
   },
   {
     "slug": "classic-block",
@@ -467,9 +467,9 @@
     "slug": "grid-block",
     "title": "Grid block",
     "section": "Block editor > Blocks list > Design blocks",
-    "action": "MERGE",
-    "target": "Group block",
-    "why": "Grid is a Group variation; its layout settings differ, little else does."
+    "action": "KEEP",
+    "target": null,
+    "why": "Grid is its own inserter item (Group variation); own page per the inserter rule, shared settings link to Group."
   },
   {
     "slug": "group-block",
@@ -477,7 +477,7 @@
     "section": "Block editor > Blocks list > Design blocks",
     "action": "REWRITE",
     "target": null,
-    "why": "Row, Stack and Grid are Group variations; one page explains the shared container and the layout choice."
+    "why": "Shared container settings live here once; Row, Stack and Grid pages link back instead of repeating them."
   },
   {
     "slug": "more-block",
@@ -499,9 +499,9 @@
     "slug": "row-block",
     "title": "Row block",
     "section": "Block editor > Blocks list > Design blocks",
-    "action": "MERGE",
-    "target": "Group block",
-    "why": "Row is a Group variation; its layout settings differ, little else does."
+    "action": "KEEP",
+    "target": null,
+    "why": "Row is its own inserter item (Group variation); own page per the inserter rule, shared settings link to Group."
   },
   {
     "slug": "separator-block",
@@ -523,9 +523,9 @@
     "slug": "stack-block",
     "title": "Stack block",
     "section": "Block editor > Blocks list > Design blocks",
-    "action": "MERGE",
-    "target": "Group block",
-    "why": "Stack is a Group variation; its layout settings differ, little else does."
+    "action": "KEEP",
+    "target": null,
+    "why": "Stack is its own inserter item (Group variation); own page per the inserter rule, shared settings link to Group."
   },
   {
     "slug": "tabs-block",
@@ -643,25 +643,25 @@
     "slug": "archive-title-block",
     "title": "Archive Title block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Archive title blocks",
-    "why": "Query Title variation; 58% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Archive Title is its own inserter item (Query Title variation); own page per the inserter rule."
   },
   {
     "slug": "post-author-name-block",
     "title": "Author Name block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Post-context block; 43% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Author Name is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "avatar-block",
     "title": "Avatar block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Author/comment context block; settings fit one section."
+    "action": "KEEP",
+    "target": null,
+    "why": "Avatar is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "breadcrumbs-block",
@@ -675,9 +675,9 @@
     "slug": "categories-block",
     "title": "Categories block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Post Terms variation; 43% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Categories is its own inserter item (Post Terms variation); own page per the inserter rule."
   },
   {
     "slug": "comment-author-name-block",
@@ -685,7 +685,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comment-content-block",
@@ -693,7 +693,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comment-date-block",
@@ -701,7 +701,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comment-edit-link-block",
@@ -709,7 +709,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comment-reply-link-block",
@@ -717,7 +717,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comment-template-block",
@@ -725,7 +725,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comments-block",
@@ -733,23 +733,23 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "REWRITE",
     "target": null,
-    "why": "Container for 11 dependent blocks that cannot be used alone; becomes the one comments reference."
+    "why": "Container for 8 blocks restricted to it (parent/ancestor); becomes the one reference for them."
   },
   {
     "slug": "comments-count-block",
     "title": "Comments Count block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Comments Count is its own inserter item (no parent restriction); own page per the inserter rule."
   },
   {
     "slug": "comment-link-block",
     "title": "Comments Link block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Comments Link is its own inserter item (no parent restriction); own page per the inserter rule."
   },
   {
     "slug": "comment-pagination-block",
@@ -757,7 +757,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "comments-title-block",
@@ -765,15 +765,15 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "why": "Only insertable inside the Comments block (parent/ancestor); page is mostly copied boilerplate."
   },
   {
     "slug": "post-content-block",
     "title": "Content block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post blocks",
-    "why": "Template-only block; 41% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Content is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "custom-link-block",
@@ -781,23 +781,23 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Navigation block",
-    "why": "Only usable inside the Navigation block."
+    "why": "Only insertable inside the Navigation block (parent restriction)."
   },
   {
     "slug": "date-block",
     "title": "Date Block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Date, Post Date and Modified Date now overlap; one section explains all three."
+    "action": "KEEP",
+    "target": null,
+    "why": "Date is its own inserter item (base of Post Date and Modified Date); explain how the three differ."
   },
   {
     "slug": "post-excerpt-block",
     "title": "Excerpt block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post blocks",
-    "why": "Template-only block; 46% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Excerpt is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "home-link-block",
@@ -805,7 +805,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Navigation block",
-    "why": "Only usable inside the Navigation block."
+    "why": "Only insertable inside the Navigation block (parent restriction)."
   },
   {
     "slug": "login-out-block",
@@ -819,9 +819,9 @@
     "slug": "post-modified-date-block",
     "title": "Modified Date block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Modified Date is a Date variation; 43% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Modified Date is its own inserter item (Date variation); own page per the inserter rule."
   },
   {
     "slug": "navigation-block",
@@ -829,15 +829,15 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "REWRITE",
     "target": null,
-    "why": "Hub for menus (11 inbound); its child blocks only exist inside it."
+    "why": "Hub for menus (11 inbound); its child blocks only exist inside it (parent restriction)."
   },
   {
     "slug": "next-post-block",
     "title": "Next Post block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post Navigation Link block",
-    "why": "Variation of Post Navigation Link; content near-identical."
+    "action": "KEEP",
+    "target": null,
+    "why": "Next Post is its own inserter item (Post Navigation Link variation); own page per the inserter rule."
   },
   {
     "slug": "pagination-block",
@@ -851,33 +851,33 @@
     "slug": "post-author-biography-block",
     "title": "Post Author Biography block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Post-context block; small unique content."
+    "action": "KEEP",
+    "target": null,
+    "why": "Author Biography is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "post-comments-form-block",
     "title": "Post Comments Form block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Comments block",
-    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Comments Form is its own inserter item (no parent restriction); own page per the inserter rule."
   },
   {
     "slug": "post-date-block",
     "title": "Post Date block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Overlaps Date block; 42% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Post Date is its own inserter item (Date variation); own page per the inserter rule."
   },
   {
     "slug": "post-featured-image-block",
     "title": "Post Featured Image block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post blocks",
-    "why": "Template/Query Loop block; unique settings fit one section."
+    "action": "KEEP",
+    "target": null,
+    "why": "Featured Image is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "post-navigation-link-block",
@@ -885,15 +885,15 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "REWRITE",
     "target": null,
-    "why": "Next and Previous Post are its variations; 57% boilerplate today."
+    "why": "57% boilerplate today; becomes the shared reference its two inserter variations link to."
   },
   {
     "slug": "post-tags-block",
     "title": "Post Tags block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post meta blocks",
-    "why": "Post Terms variation; 38% boilerplate."
+    "action": "KEEP",
+    "target": null,
+    "why": "Tags is its own inserter item (Post Terms variation); own page per the inserter rule."
   },
   {
     "slug": "post-template-block",
@@ -908,8 +908,8 @@
     "title": "Post Title block",
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "DELETE",
-    "target": "Post blocks",
-    "why": "15-word rename stub (now Title block)."
+    "target": "Title block",
+    "why": "15-word rename stub; Post Title is the Title block, which has its own page."
   },
   {
     "slug": "posts-list-block",
@@ -923,9 +923,9 @@
     "slug": "previous-post-block",
     "title": "Previous Post block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post Navigation Link block",
-    "why": "Variation of Post Navigation Link; content near-identical."
+    "action": "KEEP",
+    "target": null,
+    "why": "Previous Post is its own inserter item (Post Navigation Link variation); own page per the inserter rule."
   },
   {
     "slug": "query-loop-block",
@@ -933,7 +933,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "REWRITE",
     "target": null,
-    "why": "Key page (23 inbound); Post Template cannot exist outside it."
+    "why": "Key page (23 inbound); Post Template and Query Total only exist inside it."
   },
   {
     "slug": "query-title-block",
@@ -941,55 +941,55 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "REWRITE",
     "target": null,
-    "why": "Archive Title and Search Results Title are Query Title variations; all label archive views."
+    "why": "Becomes the shared reference its two inserter variations link to; drop duplicated variation text."
   },
   {
     "slug": "query-total-block",
     "title": "Query Total block",
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
-    "target": "Archive title blocks",
-    "why": "Small archive helper; still written as \"6.8 is set to introduce\"."
+    "target": "Query Loop block",
+    "why": "Ancestor-restricted to Query Loop; still written as \"6.8 is set to introduce\"."
   },
   {
     "slug": "read-more-block",
     "title": "Read More block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post blocks",
-    "why": "Only meaningful inside Query Loop."
+    "action": "KEEP",
+    "target": null,
+    "why": "Read More is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "search-results-title-block",
     "title": "Search Results Title block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Archive title blocks",
-    "why": "Query Title variation; only the label differs."
+    "action": "KEEP",
+    "target": null,
+    "why": "Search Results Title is its own inserter item (Query Title variation); own page per the inserter rule."
   },
   {
     "slug": "site-logo-block",
     "title": "Site Logo block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Site identity blocks",
-    "why": "Substantive but belongs with title and tagline; links to Identity task."
+    "action": "KEEP",
+    "target": null,
+    "why": "Site Logo is its own inserter item; own page, links to the Identity task."
   },
   {
     "slug": "site-tagline-block",
     "title": "Site Tagline block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Site identity blocks",
-    "why": "63% boilerplate; same settings as Site Title."
+    "action": "KEEP",
+    "target": null,
+    "why": "Site Tagline is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "site-title-block",
     "title": "Site Title block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Site identity blocks",
-    "why": "59% boilerplate; same settings as Site Tagline."
+    "action": "KEEP",
+    "target": null,
+    "why": "Site Title is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "submenu-block",
@@ -997,7 +997,7 @@
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "MERGE",
     "target": "Navigation block",
-    "why": "Only usable inside the Navigation block."
+    "why": "Only insertable inside the Navigation block (parent restriction)."
   },
   {
     "slug": "template-part-block",
@@ -1011,9 +1011,9 @@
     "slug": "term-description-block",
     "title": "Term Description block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Archive title blocks",
-    "why": "Archive-only block; 62% boilerplate, little unique content."
+    "action": "KEEP",
+    "target": null,
+    "why": "Term Description is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "terms-query-block",
@@ -1027,25 +1027,25 @@
     "slug": "time-to-read-block",
     "title": "Time to Read block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post blocks",
-    "why": "Small post-context block."
+    "action": "KEEP",
+    "target": null,
+    "why": "Time to Read is its own inserter item; own page per the inserter rule."
   },
   {
     "slug": "title-block",
     "title": "Title block",
     "section": "Block editor > Blocks list > Theme blocks",
-    "action": "MERGE",
-    "target": "Post blocks",
-    "why": "157 words; cannot stand alone."
+    "action": "REWRITE",
+    "target": null,
+    "why": "Own inserter item but only 157 words; thinness is fixed by writing the page, not merging it."
   },
   {
     "slug": "post-author-block",
     "title": "(Deprecated) Post Author block",
     "section": "Block editor > Blocks list > Theme blocks",
     "action": "DELETE",
-    "target": "Post meta blocks",
-    "why": "32-word deprecation stub (deprecated in 7.0)."
+    "target": "Author Name block",
+    "why": "32-word stub; Author block deprecated in 7.0 and hidden from the inserter."
   },
   {
     "slug": "embeds",
@@ -1053,63 +1053,63 @@
     "section": "Block editor > Blocks list > Embeds",
     "action": "REWRITE",
     "target": null,
-    "why": "One page replaces 36: the provider pages repeat the same paste-URL workflow."
+    "why": "Section index explains the shared paste-URL workflow once; provider pages link here instead of repeating it."
   },
   {
     "slug": "embed-block",
     "title": "Embed block",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Generic block and the section index describe the same workflow."
+    "action": "KEEP",
+    "target": null,
+    "why": "Generic Embed is its own inserter item; own page per the inserter rule, workflow links to Embeds."
   },
   {
     "slug": "amazon-kindle-embed",
     "title": "Amazon Kindle Embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Amazon Kindle specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Amazon Kindle is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "animoto-embed",
     "title": "Animoto Embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Animoto specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Animoto is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "bluesky-embed",
     "title": "Bluesky embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Bluesky specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Bluesky is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "cloudup-embed",
     "title": "Cloudup Embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Cloudup specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Cloudup is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "crowdsignal-embed",
     "title": "Crowdsignal embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Crowdsignal specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Crowdsignal is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "dailymotion-embed",
     "title": "Dailymotion embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Dailymotion specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Dailymotion is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "facebook-embed",
@@ -1123,17 +1123,17 @@
     "slug": "flickr-embed",
     "title": "Flickr embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Flickr specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Flickr is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "imgur-embed",
     "title": "Imgur embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Imgur specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Imgur is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "instagram-embed",
@@ -1147,185 +1147,185 @@
     "slug": "issuu-embed",
     "title": "Issuu embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Issuu specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Issuu is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "kickstarter-embed",
     "title": "Kickstarter embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Kickstarter specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Kickstarter is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "mixcloud-embed",
     "title": "MixCloud embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Mixcloud specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Mixcloud is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "pinterest-embed",
     "title": "Pinterest embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Pinterest specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Pinterest is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "pocket-casts-embed",
     "title": "Pocket Casts embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Pocket Casts specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Pocket Casts is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "reddit-embed",
     "title": "Reddit embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Reddit specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Reddit is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "reverbnation-embed",
     "title": "ReverbNation embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; ReverbNation specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "ReverbNation is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "screencast-block",
     "title": "Screencast embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
+    "action": "DELETE",
     "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Screencast specifics become a table row or note."
+    "why": "Variation removed in Gutenberg 21.1 (PR 70480, June 2025), so gone from the inserter since WordPress 6.9."
   },
   {
     "slug": "scribd-embed",
     "title": "Scribd embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Scribd specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Scribd is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "smugmug-embed",
     "title": "SmugMug embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; SmugMug specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "SmugMug is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "soundcloud-embed",
     "title": "SoundCloud embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; SoundCloud specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "SoundCloud is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "speaker-deck-embed",
     "title": "Speaker Deck embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Speaker Deck specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Speaker Deck is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "spotify-embed",
     "title": "Spotify embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Spotify specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Spotify is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "ted-embed",
     "title": "TED embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; TED specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "TED is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "tiktok-embed",
     "title": "TikTok embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; TikTok specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "TikTok is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "tumblr-embed",
     "title": "Tumblr embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Tumblr specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Tumblr is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "twitter-embed",
     "title": "Twitter embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same workflow as every embed; row should say X (twitter.com/x.com URLs)."
+    "action": "KEEP",
+    "target": null,
+    "why": "Own inserter item (Embed variation); keep, but retitle X (twitter.com/x.com URLs)."
   },
   {
     "slug": "videopress-embed",
     "title": "VideoPress embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; VideoPress specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "VideoPress is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "vimeo-embed",
     "title": "Vimeo embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Vimeo specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Vimeo is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "wolfram-embed",
     "title": "Wolfram embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; Wolfram specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "Wolfram is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "wordpress-embed",
     "title": "WordPress embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; WordPress specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "WordPress is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "wordpress-tv-embed-block",
     "title": "WordPress.tv embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; WordPress.tv specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "WordPress.tv is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "youtube-embed",
     "title": "YouTube embed",
     "section": "Block editor > Blocks list > Embeds",
-    "action": "MERGE",
-    "target": "Embeds",
-    "why": "Same paste-URL workflow as every embed; YouTube specifics become a table row or note."
+    "action": "KEEP",
+    "target": null,
+    "why": "YouTube is its own inserter item (Embed variation); own page per the inserter rule, shared workflow links to Embeds."
   },
   {
     "slug": "slideshare-embed",
@@ -1518,27 +1518,6 @@
     "action": "KEEP",
     "target": null,
     "why": "Changelogs are a separate decision; left as is."
-  },
-  {
-    "slug": "post-blocks",
-    "title": "Post blocks",
-    "section": "Block editor > Blocks list > Theme blocks",
-    "action": "NEW",
-    "why": "Template blocks showing post content share context and settings; one page replaces six."
-  },
-  {
-    "slug": "post-meta-blocks",
-    "title": "Post meta blocks",
-    "section": "Block editor > Blocks list > Theme blocks",
-    "action": "NEW",
-    "why": "Small post-context blocks, 25–47% boilerplate; one page replaces eight."
-  },
-  {
-    "slug": "site-identity-blocks",
-    "title": "Site identity blocks",
-    "section": "Block editor > Blocks list > Theme blocks",
-    "action": "NEW",
-    "why": "Three blocks with near-identical settings; 59–63% boilerplate today."
   },
   {
     "slug": "edit-your-header-and-footer",

@@ -1,6 +1,6 @@
 {
  "_comment": "Pages now / proposed per review area, as stated in each area's Summary section. pages_after in the consolidated summary is the sum of `proposed`.",
  "overview-and-using-wordpress": {"now": 97, "proposed": 70},
- "editing-and-design": {"now": 190, "proposed": 114},
+ "editing-and-design": {"now": 190, "proposed": 170},
  "classic-and-policies": {"now": 36, "proposed": 30}
 }
