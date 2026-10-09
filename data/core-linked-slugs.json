@@ -1,0 +1,247 @@
+{
+ "source": "WordPress/wordpress-develop trunk, found via GitHub code search for wordpress.org/documentation/article, fetched 2026-10-09",
+ "slugs": {
+  "<non-article>/wordpress-version": [
+   "src/wp-admin/_index.php",
+   "src/wp-admin/update-core.php"
+  ],
+  "appearance-menus-screen": [
+   "src/wp-admin/nav-menus.php"
+  ],
+  "appearance-theme-file-editor-screen": [
+   "src/wp-admin/theme-editor.php"
+  ],
+  "appearance-themes-screen": [
+   "src/wp-admin/theme-install.php",
+   "src/wp-admin/themes.php"
+  ],
+  "appearance-widgets-screen-classic-editor": [
+   "src/wp-admin/widgets-form.php"
+  ],
+  "assign-custom-fields": [
+   "src/wp-admin/includes/meta-boxes.php"
+  ],
+  "block-themes": [
+   "src/wp-admin/includes/dashboard.php",
+   "src/wp-admin/theme-install.php"
+  ],
+  "comments-screen": [
+   "src/wp-admin/comment.php",
+   "src/wp-admin/edit-comments.php"
+  ],
+  "customize-date-and-time-format": [
+   "src/wp-admin/options-general.php"
+  ],
+  "customize-permalinks": [
+   "src/wp-admin/options-permalink.php"
+  ],
+  "customizer": [
+   "src/wp-admin/customize.php",
+   "src/wp-content/themes/twentyeleven/inc/theme-options.php"
+  ],
+  "dashboard-screen": [
+   "src/wp-admin/_index.php"
+  ],
+  "dashboard-updates-screen": [
+   "src/wp-admin/update-core.php"
+  ],
+  "edit-media": [
+   "src/wp-admin/edit-form-advanced.php"
+  ],
+  "embeds": [
+   "src/wp-admin/edit-form-advanced.php"
+  ],
+  "faq-troubleshooting": [
+   "src/wp-includes/class-wp-fatal-error-handler.php"
+  ],
+  "introduction-to-blogging": [
+   "src/wp-admin/includes/meta-boxes.php"
+  ],
+  "keyboard-shortcuts-classic-editor": [
+   "src/wp-admin/edit-comments.php",
+   "src/wp-admin/user-edit.php"
+  ],
+  "manage-plugins": [
+   "src/wp-admin/plugins.php"
+  ],
+  "manage-wordpress-widgets": [
+   "src/wp-includes/customize/class-wp-customize-nav-menu-locations-control.php",
+   "src/wp-includes/widgets.php"
+  ],
+  "media-add-new-screen": [
+   "src/wp-admin/media-new.php"
+  ],
+  "media-library-screen": [
+   "src/wp-admin/upload.php"
+  ],
+  "pages-add-new-screen": [
+   "src/wp-admin/edit-form-advanced.php"
+  ],
+  "pages-screen": [
+   "src/wp-admin/edit-form-advanced.php",
+   "src/wp-admin/edit.php"
+  ],
+  "plugins-add-new-screen": [
+   "src/wp-admin/plugin-install.php"
+  ],
+  "plugins-themes-auto-updates": [
+   "src/wp-admin/network/themes.php",
+   "src/wp-admin/plugins.php",
+   "src/wp-admin/themes.php",
+   "src/wp-admin/update-core.php"
+  ],
+  "posts-categories-screen": [
+   "src/wp-admin/edit-tags.php"
+  ],
+  "posts-screen": [
+   "src/wp-admin/edit.php"
+  ],
+  "posts-tags-screen": [
+   "src/wp-admin/edit-tags.php"
+  ],
+  "reset-your-password": [
+   "src/wp-includes/user.php"
+  ],
+  "revisions": [
+   "src/wp-admin/revision.php"
+  ],
+  "roles-and-capabilities": [
+   "src/wp-admin/users.php"
+  ],
+  "settings-discussion-screen": [
+   "src/wp-admin/options-discussion.php"
+  ],
+  "settings-general-screen": [
+   "src/wp-admin/options-general.php",
+   "src/wp-login.php"
+  ],
+  "settings-media-screen": [
+   "src/wp-admin/options-media.php"
+  ],
+  "settings-permalinks-screen": [
+   "src/wp-admin/options-permalink.php"
+  ],
+  "settings-privacy-screen": [
+   "src/wp-admin/options-privacy.php"
+  ],
+  "settings-reading-screen": [
+   "src/wp-admin/options-reading.php"
+  ],
+  "settings-writing-screen": [
+   "src/wp-admin/options-writing.php"
+  ],
+  "site-editor": [
+   "src/wp-includes/script-loader.php"
+  ],
+  "site-health-screen": [
+   "src/wp-admin/site-health.php"
+  ],
+  "tools-erase-personal-data-screen": [
+   "src/wp-admin/erase-personal-data.php"
+  ],
+  "tools-export-personal-data-screen": [
+   "src/wp-admin/export-personal-data.php"
+  ],
+  "tools-export-screen": [
+   "src/wp-admin/export.php"
+  ],
+  "tools-import-screen": [
+   "src/wp-admin/import.php"
+  ],
+  "tools-network-screen": [
+   "src/wp-admin/network.php"
+  ],
+  "tools-screen": [
+   "src/wp-admin/tools.php"
+  ],
+  "twenty-eleven-changelog": [
+   "src/wp-content/themes/twentyeleven/readme.txt"
+  ],
+  "twenty-fifteen": [
+   "src/wp-content/themes/twentyfifteen/readme.txt"
+  ],
+  "twenty-fifteen-changelog": [
+   "src/wp-content/themes/twentyfifteen/readme.txt"
+  ],
+  "twenty-fourteen-changelog": [
+   "src/wp-content/themes/twentyfourteen/readme.txt"
+  ],
+  "twenty-nineteen": [
+   "src/wp-content/themes/twentynineteen/readme.txt"
+  ],
+  "twenty-nineteen-changelog": [
+   "src/wp-content/themes/twentynineteen/readme.txt"
+  ],
+  "twenty-seventeen": [
+   "src/wp-content/themes/twentyseventeen/readme.txt"
+  ],
+  "twenty-seventeen-changelog": [
+   "src/wp-content/themes/twentyseventeen/readme.txt"
+  ],
+  "twenty-sixteen": [
+   "src/wp-content/themes/twentysixteen/readme.txt"
+  ],
+  "twenty-sixteen-changelog": [
+   "src/wp-content/themes/twentysixteen/readme.txt"
+  ],
+  "twenty-ten-changelog": [
+   "src/wp-content/themes/twentyten/readme.txt"
+  ],
+  "twenty-thirteen-changelog": [
+   "src/wp-content/themes/twentythirteen/readme.txt"
+  ],
+  "twenty-twelve-changelog": [
+   "src/wp-content/themes/twentytwelve/readme.txt"
+  ],
+  "twenty-twenty-changelog": [
+   "src/wp-content/themes/twentytwenty/readme.txt"
+  ],
+  "twenty-twenty-five-changelog": [
+   "src/wp-content/themes/twentytwentyfive/readme.txt"
+  ],
+  "twenty-twenty-four-changelog": [
+   "src/wp-content/themes/twentytwentyfour/readme.txt"
+  ],
+  "twenty-twenty-one": [
+   "src/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-customize-notice-control.php",
+   "src/wp-content/themes/twentytwentyone/classes/class-twenty-twenty-one-dark-mode.php",
+   "src/wp-content/themes/twentytwentyone/inc/starter-content.php"
+  ],
+  "twenty-twenty-one-changelog": [
+   "src/wp-content/themes/twentytwentyone/readme.txt"
+  ],
+  "twenty-twenty-three-changelog": [
+   "src/wp-content/themes/twentytwentythree/readme.txt"
+  ],
+  "twenty-twenty-two-changelog": [
+   "src/wp-content/themes/twentytwentytwo/readme.txt"
+  ],
+  "understand-comment-spam": [
+   "src/wp-admin/edit-comments.php"
+  ],
+  "updating-wordpress": [
+   "src/wp-admin/update-core.php"
+  ],
+  "users-add-new-screen": [
+   "src/wp-admin/user-new.php"
+  ],
+  "users-screen": [
+   "src/wp-admin/users.php"
+  ],
+  "users-your-profile-screen": [
+   "src/wp-admin/user-edit.php"
+  ],
+  "what-is-an-excerpt-classic-editor": [
+   "src/wp-admin/includes/meta-boxes.php"
+  ],
+  "wordpress-glossary": [
+   "src/wp-admin/includes/options.php"
+  ],
+  "work-with-themes": [
+   "src/wp-admin/themes.php"
+  ],
+  "write-posts-classic-editor": [
+   "src/wp-admin/edit-form-advanced.php"
+  ]
+ }
+}

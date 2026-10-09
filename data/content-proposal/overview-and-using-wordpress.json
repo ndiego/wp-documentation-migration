@@ -1,0 +1,806 @@
+[
+  {
+    "slug": "get-started-with-wordpress",
+    "title": "Get started with WordPress",
+    "section": "WordPress overview > Where to start",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Pre-install checklist is Codex-era (FTP, text editor); rebuild as the ordered block-first learning path."
+  },
+  {
+    "slug": "first-steps-with-wordpress-block-editor",
+    "title": "First steps with WordPress (Block Editor)",
+    "section": "WordPress overview > Where to start",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Tour still points at widgets and older screens; rebuild around a block theme; drop '(Block Editor)' from the title."
+  },
+  {
+    "slug": "wordpress-semantics",
+    "title": "WordPress Semantics",
+    "section": "WordPress overview > Where to start",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Codex-era essay (The Loop, template tags, Header tool); rewrite as 'Key WordPress concepts' for the block era."
+  },
+  {
+    "slug": "introduction-to-blogging",
+    "title": "Introduction to Blogging",
+    "section": "WordPress overview > Where to start",
+    "action": "MERGE",
+    "target": "Key WordPress concepts",
+    "why": "Blog-versus-CMS framing is one section of a concepts page; untouched since 2023."
+  },
+  {
+    "slug": "wordpress-glossary",
+    "title": "WordPress Glossary",
+    "section": "WordPress overview > Where to start",
+    "action": "REWRITE",
+    "target": null,
+    "why": "12,500 words dominated by developer terms (Ajax, Array, Apache); prune to terms users meet."
+  },
+  {
+    "slug": "where-to-find-wordpress-help",
+    "title": "Where to find WordPress help",
+    "section": "WordPress overview > Where to start",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Untouched since 2023; web-search advice is dated; keep forums, Learn and docs pointers."
+  },
+  {
+    "slug": "learn-about-wordpress-and-version-history",
+    "title": "Learn about WordPress origins and version history",
+    "section": "WordPress overview > About WordPress",
+    "action": "KEEP",
+    "target": null,
+    "why": "Maintained every release; narrative history is distinct from the version tables."
+  },
+  {
+    "slug": "difference-between-wordpress-org-and-wordpress-com",
+    "title": "What's the difference between WordPress.org and WordPress.com?",
+    "section": "WordPress overview > About WordPress",
+    "action": "KEEP",
+    "target": null,
+    "why": "Recurring first-day confusion; content still accurate."
+  },
+  {
+    "slug": "wordpress-versions",
+    "title": "WordPress Versions",
+    "section": "WordPress overview > About WordPress",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference table maintained every release; absorbs the support policy."
+  },
+  {
+    "slug": "wordpress-versions-0-7-to-4-9",
+    "title": "WordPress Versions 0.7 to 4.9",
+    "section": "WordPress overview > About WordPress",
+    "action": "KEEP",
+    "target": null,
+    "why": "Archive table split from WordPress Versions for length; pure reference."
+  },
+  {
+    "slug": "supported-versions",
+    "title": "Supported Versions",
+    "section": "WordPress overview > About WordPress",
+    "action": "MERGE",
+    "target": "WordPress Versions",
+    "why": "192-word policy statement; reads naturally as a 'Support policy' section of Versions."
+  },
+  {
+    "slug": "become-a-wordpress-contributor",
+    "title": "Become a WordPress contributor",
+    "section": "WordPress overview > About WordPress",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) and the only user-facing route into contributing."
+  },
+  {
+    "slug": "faq-work-with-wordpress",
+    "title": "FAQ Work with WordPress",
+    "section": "WordPress overview > Frequently asked questions",
+    "action": "DELETE",
+    "target": "Get started with WordPress",
+    "why": "Link list to other pages with Codex links and dead 'Ideas' site; answers belong in task pages."
+  },
+  {
+    "slug": "faq-installation",
+    "title": "FAQ Installation",
+    "section": "WordPress overview > Frequently asked questions",
+    "action": "MOVE",
+    "target": "developer.wordpress.org (Advanced Administration > Before you install)",
+    "why": "wp-config, databases, 403 errors, cPanel: sysadmin material next to the install guide already there."
+  },
+  {
+    "slug": "faq-troubleshooting",
+    "title": "FAQ Troubleshooting",
+    "section": "WordPress overview > Frequently asked questions",
+    "action": "MOVE",
+    "target": "developer.wordpress.org (Advanced Administration > Common errors)",
+    "why": "phpMyAdmin, wp_options edits, MySQL repair; user-level parts go to 'Troubleshoot common problems'."
+  },
+  {
+    "slug": "faq-i-make-changes-and-nothing-happens",
+    "title": "FAQ I make changes and nothing happens",
+    "section": "WordPress overview > Frequently asked questions",
+    "action": "MERGE",
+    "target": "Troubleshoot common problems",
+    "why": "Caching is the first item of a user troubleshooting page, not a page of its own."
+  },
+  {
+    "slug": "faq-my-site-was-hacked",
+    "title": "FAQ My site was hacked",
+    "section": "WordPress overview > Frequently asked questions",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) crisis task page that users reach from search."
+  },
+  {
+    "slug": "troubleshoot-common-problems",
+    "title": "Troubleshoot common problems",
+    "section": "WordPress overview > Frequently asked questions",
+    "action": "NEW",
+    "why": "No user-level first aid: cache, recovery mode, plugin/theme conflicts, Site Health, where to ask."
+  },
+  {
+    "slug": "administration-screens",
+    "title": "Administration Screens",
+    "section": "Using WordPress > Administration Screens",
+    "action": "REWRITE",
+    "target": null,
+    "why": "3,260-word tour still covering Widgets, Menus, Customizer and Codex links; make it a short hub of today's menu."
+  },
+  {
+    "slug": "toolbar",
+    "title": "Toolbar",
+    "section": "Using WordPress > Administration Screens",
+    "action": "MERGE",
+    "target": "Administration Screens",
+    "why": "148 words and a 2019 screenshot; one section of the admin overview."
+  },
+  {
+    "slug": "dashboard-screen",
+    "title": "Dashboard screen",
+    "section": "Using WordPress > Administration Screens > Dashboard",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for the landing screen; widget list still accurate; screenshots need refresh."
+  },
+  {
+    "slug": "dashboard-updates-screen",
+    "title": "Dashboard Updates screen",
+    "section": "Using WordPress > Administration Screens > Dashboard",
+    "action": "KEEP",
+    "target": null,
+    "why": "Screen reference; the how-to lives in the update task page."
+  },
+  {
+    "slug": "posts-screen",
+    "title": "Posts screen",
+    "section": "Using WordPress > Administration Screens > Posts",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for the posts list table."
+  },
+  {
+    "slug": "posts-categories-screen",
+    "title": "Posts Categories screen",
+    "section": "Using WordPress > Administration Screens > Posts",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; current (2026)."
+  },
+  {
+    "slug": "posts-tags-screen",
+    "title": "Posts Tags screen",
+    "section": "Using WordPress > Administration Screens > Posts",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; current (2026)."
+  },
+  {
+    "slug": "media-library-screen",
+    "title": "Media Library screen",
+    "section": "Using WordPress > Administration Screens > Media",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for grid and list views; well linked."
+  },
+  {
+    "slug": "media-add-new-screen",
+    "title": "Media Add New screen",
+    "section": "Using WordPress > Administration Screens > Media",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for the upload screen; well linked."
+  },
+  {
+    "slug": "pages-screen",
+    "title": "Pages screen",
+    "section": "Using WordPress > Administration Screens > Pages",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for the pages list table."
+  },
+  {
+    "slug": "pages-add-new-screen",
+    "title": "Pages Add New screen",
+    "section": "Using WordPress > Administration Screens > Pages",
+    "action": "DELETE",
+    "target": "WordPress Block Editor",
+    "why": "Describes the classic edit screen (meta boxes, Visual/Text tabs); Classic Editor section covers it."
+  },
+  {
+    "slug": "introduction-to-plugins",
+    "title": "Introduction to Plugins",
+    "section": "Using WordPress > Administration Screens > Plugins",
+    "action": "MERGE",
+    "target": "Manage Plugins",
+    "why": "278 words from 2023 repeating Manage Plugins' 'What are plugins?'."
+  },
+  {
+    "slug": "manage-plugins",
+    "title": "Manage Plugins",
+    "section": "Using WordPress > Administration Screens > Plugins",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Main plugin task page; drop 'Developing Plugins', stop repeating the two screen pages."
+  },
+  {
+    "slug": "plugins-screen",
+    "title": "Plugins screen",
+    "section": "Using WordPress > Administration Screens > Plugins",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; current (2026)."
+  },
+  {
+    "slug": "plugins-add-new-screen",
+    "title": "Plugins Add New screen",
+    "section": "Using WordPress > Administration Screens > Plugins",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for searching, uploading and favourites."
+  },
+  {
+    "slug": "users-screen",
+    "title": "Users screen",
+    "section": "Using WordPress > Administration Screens > Users",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for the users list table."
+  },
+  {
+    "slug": "users-add-new-screen",
+    "title": "Users Add New screen",
+    "section": "Using WordPress > Administration Screens > Users",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for adding a user."
+  },
+  {
+    "slug": "users-your-profile-screen",
+    "title": "Users Your Profile screen",
+    "section": "Using WordPress > Administration Screens > Users",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; well linked."
+  },
+  {
+    "slug": "tools-screen",
+    "title": "Tools screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "MERGE",
+    "target": "Tools Import screen",
+    "why": "26 words; its only tool points to the Import screen."
+  },
+  {
+    "slug": "tools-import-screen",
+    "title": "Tools Import screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "REWRITE",
+    "target": null,
+    "why": "2019 importer list (Blogroll, LiveJournal) is dated; absorbs the Tools screen."
+  },
+  {
+    "slug": "tools-export-screen",
+    "title": "Tools Export screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; still accurate."
+  },
+  {
+    "slug": "site-health-screen",
+    "title": "Site Health screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) reference; absorbs the root Site Health page."
+  },
+  {
+    "slug": "tools-export-personal-data-screen",
+    "title": "Tools Export Personal Data screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for a privacy tool; drop '4.9.6 included' framing on next edit."
+  },
+  {
+    "slug": "tools-erase-personal-data-screen",
+    "title": "Tools Erase Personal Data screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; touched 2025."
+  },
+  {
+    "slug": "appearance-theme-file-editor-screen",
+    "title": "Appearance Theme File Editor Screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "MOVE",
+    "target": "developer.wordpress.org (Advanced Administration, beside the Plugin File Editor)",
+    "why": "Editing theme PHP/CSS is developer work; the plugin editor page already moved there."
+  },
+  {
+    "slug": "tools-network-screen",
+    "title": "Tools Network screen",
+    "section": "Using WordPress > Administration Screens > Tools",
+    "action": "MOVE",
+    "target": "developer.wordpress.org (Advanced Administration > Multisite)",
+    "why": "Needs wp-config edits; 'Create a network' already lives in Advanced Administration."
+  },
+  {
+    "slug": "settings-general-screen",
+    "title": "Settings General screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; current (2026)."
+  },
+  {
+    "slug": "settings-writing-screen",
+    "title": "Settings Writing screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; options still match core."
+  },
+  {
+    "slug": "settings-reading-screen",
+    "title": "Settings Reading screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; front-page task lives in its own page."
+  },
+  {
+    "slug": "settings-discussion-screen",
+    "title": "Settings Discussion screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; current (2026)."
+  },
+  {
+    "slug": "settings-media-screen",
+    "title": "Settings Media screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference; heavily linked from media pages."
+  },
+  {
+    "slug": "settings-permalinks-screen",
+    "title": "Settings Permalinks screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Absorbs Customize permalinks so permalink structures are explained once."
+  },
+  {
+    "slug": "settings-privacy-screen",
+    "title": "Settings Privacy screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "REWRITE",
+    "target": null,
+    "why": "2019; drop the 'To Theme Developers' section and the overlap with WordPress Privacy."
+  },
+  {
+    "slug": "settings-connectors-screen",
+    "title": "Settings Connectors screen",
+    "section": "Using WordPress > Administration Screens > Settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "New 2026 screen; current."
+  },
+  {
+    "slug": "write-and-publish-a-post",
+    "title": "Write and publish a post",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "NEW",
+    "why": "No block-era page walks draft, preview, schedule, publish; the core first-post task."
+  },
+  {
+    "slug": "create-pages",
+    "title": "Create pages",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Untouched since 2023; mixes concepts, list screen and PHP templates; make it a block-theme task."
+  },
+  {
+    "slug": "post-status",
+    "title": "Post Status",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "MERGE",
+    "target": "Write and publish a post",
+    "why": "User-facing statuses become a section; custom statuses and code references are developer material."
+  },
+  {
+    "slug": "content-visibility-block-editor",
+    "title": "Set blog content visibility (Block Editor)",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "REWRITE",
+    "target": null,
+    "why": "2018 screenshots of the removed 'Document' tab; absorbs password protection; retitle 'Control who can see a post'."
+  },
+  {
+    "slug": "protect-posts-with-password",
+    "title": "Protect posts with password",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "MERGE",
+    "target": "Control who can see a post",
+    "why": "Duplicates the visibility page; form-text and cookie customizations are code (drop or send to developer docs)."
+  },
+  {
+    "slug": "what-is-an-excerpt-block-editor",
+    "title": "What is an excerpt? (Block Editor)",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "MERGE",
+    "target": "Page/Post Settings sidebar",
+    "why": "132 words; excerpt is one panel of the settings sidebar; feed advice conflates concepts."
+  },
+  {
+    "slug": "revisions",
+    "title": "Revisions",
+    "section": "Using WordPress > Writing & publishing",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026-09); move constant/storage sections to developer docs on next edit."
+  },
+  {
+    "slug": "what-is-post-type",
+    "title": "What is Post Type?",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "MERGE",
+    "target": "Key WordPress concepts",
+    "why": "User half is posts versus pages; template files and queries are developer material."
+  },
+  {
+    "slug": "taxonomies",
+    "title": "Taxonomies",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "REWRITE",
+    "target": null,
+    "why": "2023, developer-leaning; becomes 'Categories and tags', the user task for organizing posts."
+  },
+  {
+    "slug": "assign-custom-fields",
+    "title": "Assign custom fields",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) and block-editor aware."
+  },
+  {
+    "slug": "customize-permalinks",
+    "title": "Customize permalinks",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "MERGE",
+    "target": "Settings Permalinks screen",
+    "why": "Repeats the permalink structures listed on the screen page; one concept, once."
+  },
+  {
+    "slug": "create-a-static-front-page",
+    "title": "Create a static front page",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current task page with videos."
+  },
+  {
+    "slug": "create-a-search-page",
+    "title": "Create a search page",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "DELETE",
+    "target": "Search block",
+    "why": "125 words; block themes ship a search template and the Search block page covers the rest."
+  },
+  {
+    "slug": "customize-date-and-time-format",
+    "title": "Customize date and time format",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Leads with the_date()/the_time(); refocus on format strings in Settings and the Date block."
+  },
+  {
+    "slug": "search-engine-optimization",
+    "title": "Search Engine Optimization",
+    "section": "Using WordPress > Writing & publishing > Organizing your site",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Codex-era submission advice; refocus on built-in features (permalinks, sitemaps, search visibility)."
+  },
+  {
+    "slug": "what-are-emoji",
+    "title": "What are Emoji?",
+    "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Becomes 'Emoji, smilies and special characters', the one page for this topic."
+  },
+  {
+    "slug": "what-are-smilies",
+    "title": "What are smilies?",
+    "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+    "action": "MERGE",
+    "target": "Emoji, smilies and special characters",
+    "why": "Untouched since 2023; the settings toggle is gone; one short section is enough."
+  },
+  {
+    "slug": "use-character-entities",
+    "title": "Use character entities",
+    "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+    "action": "MERGE",
+    "target": "Emoji, smilies and special characters",
+    "why": "Untouched since 2023; HTML entity tables; the editor inserts characters directly."
+  },
+  {
+    "slug": "how-wordpress-processes-post-content",
+    "title": "How WordPress processes Post Content",
+    "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+    "action": "MOVE",
+    "target": "developer.wordpress.org",
+    "why": "wpautop and texturize filters; developer material written for the Visual editor."
+  },
+  {
+    "slug": "use-images",
+    "title": "Use Images",
+    "section": "Using WordPress > Media",
+    "action": "REWRITE",
+    "target": null,
+    "why": "230-word link hub describing the classic 'Add Media' button; becomes 'Add and manage media'."
+  },
+  {
+    "slug": "use-image-and-file-attachments",
+    "title": "Use image and file attachments",
+    "section": "Using WordPress > Media",
+    "action": "MERGE",
+    "target": "Add and manage media",
+    "why": "Attachments and link options are sections of the media task; theme usage is developer material."
+  },
+  {
+    "slug": "inserting-images-into-posts-and-pages-block-editor",
+    "title": "Inserting images into posts and pages (Block Editor)",
+    "section": "Using WordPress > Media",
+    "action": "DELETE",
+    "target": "Image block",
+    "why": "Stub that already defers to the Image block page."
+  },
+  {
+    "slug": "the-wordpress-gallery-block-editor",
+    "title": "The WordPress Gallery (Block Editor)",
+    "section": "Using WordPress > Media",
+    "action": "DELETE",
+    "target": "Gallery block",
+    "why": "2019 media-modal workflow no longer matches the Gallery block, which has its own page."
+  },
+  {
+    "slug": "edit-media",
+    "title": "Edit Media",
+    "section": "Using WordPress > Media",
+    "action": "KEEP",
+    "target": null,
+    "why": "Reference for the edit media page; touched 2024."
+  },
+  {
+    "slug": "image-size-and-quality",
+    "title": "Image size and quality",
+    "section": "Using WordPress > Media",
+    "action": "REWRITE",
+    "target": null,
+    "why": "2023; ignores generated sizes, responsive images and modern formats."
+  },
+  {
+    "slug": "comments-in-wordpress",
+    "title": "Comments in WordPress",
+    "section": "Using WordPress > Comments",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Overlaps Comments screen and Discussion settings; make it the 'turn on and manage comments' task."
+  },
+  {
+    "slug": "comment-moderation",
+    "title": "Comment moderation",
+    "section": "Using WordPress > Comments",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) task page."
+  },
+  {
+    "slug": "understand-comment-spam",
+    "title": "Understanding comment spam",
+    "section": "Using WordPress > Comments",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) concept page."
+  },
+  {
+    "slug": "trackbacks-and-pingbacks",
+    "title": "Trackbacks and Pingbacks",
+    "section": "Using WordPress > Comments",
+    "action": "KEEP",
+    "target": null,
+    "why": "Accurate concept reference; touched 2025."
+  },
+  {
+    "slug": "comments-screen",
+    "title": "Comments screen",
+    "section": "Using WordPress > Comments",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Untouched since January 2023, 2019 screenshots; refresh as reference."
+  },
+  {
+    "slug": "roles-and-capabilities",
+    "title": "Roles and Capabilities",
+    "section": "Using WordPress > Users, roles & profiles",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026); users look up what each role can do."
+  },
+  {
+    "slug": "use-gravatars",
+    "title": "Use Gravatars",
+    "section": "Using WordPress > Users, roles & profiles",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026)."
+  },
+  {
+    "slug": "reset-your-password",
+    "title": "Reset your password",
+    "section": "Using WordPress > Users, roles & profiles",
+    "action": "SPLIT",
+    "target": "Reset your password; Reset a password without email access (developer.wordpress.org)",
+    "why": "Lost-password flow is a user task; MySQL, phpMyAdmin, FTP and WP-CLI methods are sysadmin."
+  },
+  {
+    "slug": "troubleshoot-login-issues",
+    "title": "Troubleshoot login issues",
+    "section": "Using WordPress > Users, roles & profiles",
+    "action": "MERGE",
+    "target": "Reset your password",
+    "why": "200 words from 2023; cookie and firewall tips fit the login help page."
+  },
+  {
+    "slug": "hosting-wordpress",
+    "title": "Hosting WordPress",
+    "section": "Using WordPress > Installation & hosting",
+    "action": "REWRITE",
+    "target": null,
+    "why": "264 words from 2023; becomes 'Choose a host and install WordPress', linking the developer install guide."
+  },
+  {
+    "slug": "use-automated-installation",
+    "title": "Use automated installation",
+    "section": "Using WordPress > Installation & hosting",
+    "action": "MERGE",
+    "target": "Choose a host and install WordPress",
+    "why": "2018 screenshots of Fantastico/APS; one-click installers deserve a paragraph, not a page."
+  },
+  {
+    "slug": "administer-your-blog",
+    "title": "Administer your Blog",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "MERGE",
+    "target": "Maintain your site",
+    "why": "Codex-era routine with Codex links; third page covering the same maintenance checklist."
+  },
+  {
+    "slug": "wordpress-housekeeping",
+    "title": "WordPress Housekeeping",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "MERGE",
+    "target": "Maintain your site",
+    "why": "Same checklist as the maintenance page (update, prune plugins/themes, clean database)."
+  },
+  {
+    "slug": "wordpress-site-maintenance",
+    "title": "WordPress site maintenance",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Target of three overlapping pages; drop raw SQL and dead link-checker lists; retitle 'Maintain your site'."
+  },
+  {
+    "slug": "updating-wordpress",
+    "title": "Updating WordPress",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Manual FTP update duplicates the developer guide; absorb auto-updates; retitle 'Update WordPress, plugins and themes'."
+  },
+  {
+    "slug": "plugins-themes-auto-updates",
+    "title": "Plugin and themes auto-updates",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "MERGE",
+    "target": "Update WordPress, plugins and themes",
+    "why": "Untouched since January 2023; auto-updates are one section of the update task."
+  },
+  {
+    "slug": "recovery-mode",
+    "title": "Recovery Mode",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2025) recovery task page."
+  },
+  {
+    "slug": "password-best-practices",
+    "title": "Password Best Practices",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026) and stands alone."
+  },
+  {
+    "slug": "why-should-i-use-https",
+    "title": "Why should I use HTTPS",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "MERGE",
+    "target": "Keep your site secure",
+    "why": "334 words from 2023; one section of a security overview."
+  },
+  {
+    "slug": "wordpress-privacy",
+    "title": "WordPress Privacy",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Repeats the three privacy screen pages; make it the overview that links to them."
+  },
+  {
+    "slug": "back-up-your-site",
+    "title": "Back up your site",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "NEW",
+    "why": "Every update page says 'back up first' but the only backup guide is the developer manual-backup page."
+  },
+  {
+    "slug": "keep-your-site-secure",
+    "title": "Keep your site secure",
+    "section": "Using WordPress > Maintenance & security",
+    "action": "NEW",
+    "why": "No user security overview since hardening moved to developer docs; absorbs HTTPS."
+  },
+  {
+    "slug": "site-health",
+    "title": "Site Health: keep your website healthy",
+    "section": "Root pages",
+    "action": "MERGE",
+    "target": "Site Health screen",
+    "why": "2019 promo page duplicating the Site Health screen; redirect keeps the URL working."
+  },
+  {
+    "slug": "update-php",
+    "title": "Get a faster, more secure website: update your PHP today",
+    "section": "Root pages",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Linked from wp-admin PHP notices; PHP 7.4/5.6 figures and Codex link are stale. Keep the URL."
+  }
+]

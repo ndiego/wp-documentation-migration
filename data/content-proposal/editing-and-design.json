@@ -1,0 +1,1550 @@
+[
+  {
+    "slug": "wordpress-block-editor",
+    "title": "WordPress Block Editor",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current (2026-09) overview of the editor workspace; the natural entry point for the section."
+  },
+  {
+    "slug": "page-post-settings-sidebar",
+    "title": "Page/Post Settings sidebar",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Substantive reference, well linked; verify against current sidebar, last touched 2024-10."
+  },
+  {
+    "slug": "preferences-overview",
+    "title": "Preferences overview",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Unique reference; six inbound links; current."
+  },
+  {
+    "slug": "how-to-use-the-preview-function",
+    "title": "How to use the View feature",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct task; current. Consider slug alias matching the \"View\" title."
+  },
+  {
+    "slug": "distraction-free-mode",
+    "title": "Distraction Free mode",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current, distinct feature; drop the \"new\" framing."
+  },
+  {
+    "slug": "keyboard-shortcuts-block-editor",
+    "title": "Use keyboard shortcuts (Block Editor)",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Pure reference, current; classic counterpart already lives in Classic WordPress."
+  },
+  {
+    "slug": "notes",
+    "title": "Notes",
+    "section": "Block editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "New 7.0 collaboration feature, current; needs inbound links from editor overview."
+  },
+  {
+    "slug": "work-with-blocks",
+    "title": "Work with blocks",
+    "section": "Block editor > Working with blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Becomes the single home for the toolbar and settings blurbs repeated on 100+ block pages; trim duplicated how-tos."
+  },
+  {
+    "slug": "adding-a-new-block",
+    "title": "Adding a new block",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared concept with 122 inbound links; block pages link here instead of repeating it."
+  },
+  {
+    "slug": "moving-blocks",
+    "title": "Moving blocks",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared concept (80 inbound); replaces the Moving-blocks blurb copied into 54 pages."
+  },
+  {
+    "slug": "list-view",
+    "title": "List view",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current, distinct tool."
+  },
+  {
+    "slug": "more-options",
+    "title": "More options",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared concept (121 inbound); replaces the More options paragraph copied into block pages."
+  },
+  {
+    "slug": "link-editing",
+    "title": "Link control",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared concept used by many text blocks; current."
+  },
+  {
+    "slug": "more-text-editing-overview",
+    "title": "More rich text editing options",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared concept (17 inbound); text block pages link here."
+  },
+  {
+    "slug": "page-jumps",
+    "title": "Page Jumps",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Real user task; current."
+  },
+  {
+    "slug": "block-directory",
+    "title": "Block Directory",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Core feature, user-facing; drop the \"new way\" framing."
+  },
+  {
+    "slug": "block-error-unexpected-or-invalid-content",
+    "title": "Block Error: Unexpected or Invalid Content",
+    "section": "Block editor > Working with blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Unique troubleshooting page; needs inbound links from Work with blocks."
+  },
+  {
+    "slug": "layout-settings-overview",
+    "title": "Layout Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Maps 1:1 to an inspector panel; shared target for block pages."
+  },
+  {
+    "slug": "position-settings-overview",
+    "title": "Position Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "One page per inspector panel; stale (2024-06) and unlinked, verify sticky options."
+  },
+  {
+    "slug": "colors-settings-overview",
+    "title": "Colors Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared panel reference (65 inbound); current."
+  },
+  {
+    "slug": "background-settings-overview",
+    "title": "Background Settings Overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Maps to an inspector panel; current."
+  },
+  {
+    "slug": "typography-settings-overview",
+    "title": "Typography Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared panel reference (75 inbound); current."
+  },
+  {
+    "slug": "dimension-controls-overview",
+    "title": "Dimension Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared panel reference (73 inbound); last touched 2024-06, verify controls."
+  },
+  {
+    "slug": "border-settings-overview",
+    "title": "Border & Shadow Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared panel reference (50 inbound); current enough (2025-04)."
+  },
+  {
+    "slug": "filters-settings-overview",
+    "title": "Filters Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Short but maps to a real panel; last touched 2024-06, verify."
+  },
+  {
+    "slug": "advanced-settings-overview",
+    "title": "Advanced Settings overview",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "Shared panel reference (117 inbound); replaces the Advanced list copied into 46 pages."
+  },
+  {
+    "slug": "responsive-styles",
+    "title": "Responsive styles",
+    "section": "Block editor > Working with blocks > Block settings",
+    "action": "KEEP",
+    "target": null,
+    "why": "New feature, current; add inbound links from panel pages."
+  },
+  {
+    "slug": "block-pattern",
+    "title": "Block Patterns",
+    "section": "Block editor > Patterns",
+    "action": "KEEP",
+    "target": null,
+    "why": "Core concept page with 16 inbound links; current."
+  },
+  {
+    "slug": "reusable-blocks",
+    "title": "Synced Patterns (Reusable blocks)",
+    "section": "Block editor > Patterns",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Feature renamed in 6.3; title and framing still lead with the old name."
+  },
+  {
+    "slug": "comparing-patterns-template-parts-and-reusable-blocks",
+    "title": "Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks)",
+    "section": "Block editor > Patterns",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Useful decision aid, but title and text still centre on Reusable blocks."
+  },
+  {
+    "slug": "block-pattern-directory",
+    "title": "Block Pattern Directory",
+    "section": "Block editor > Patterns",
+    "action": "KEEP",
+    "target": null,
+    "why": "User-facing, current."
+  },
+  {
+    "slug": "submit-your-block-pattern-to-the-directory",
+    "title": "Submit your Block Pattern to the Directory",
+    "section": "Block editor > Patterns",
+    "action": "MOVE",
+    "target": "wordpress.org/patterns (Pattern Directory help pages)",
+    "why": "Contributor workflow for a wordpress.org service, not site editing; untouched since 2023-01."
+  },
+  {
+    "slug": "blocks-list",
+    "title": "Blocks list",
+    "section": "Block editor > Blocks list",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Must reflect the family model and redirects; drop \"new Block Editor\" framing."
+  },
+  {
+    "slug": "classic-block",
+    "title": "Classic block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Still needed for legacy content; short and template-heavy, trim to what is unique."
+  },
+  {
+    "slug": "code-block",
+    "title": "Code block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "details-block",
+    "title": "Details block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "footnotes-block",
+    "title": "Footnotes block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block; drop \"WordPress 6.3 introduces\" framing."
+  },
+  {
+    "slug": "heading-block",
+    "title": "Heading block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "list-block",
+    "title": "List block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "math-block",
+    "title": "Math block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "paragraph-block",
+    "title": "Paragraph block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "verse-block",
+    "title": "Poetry block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "preformatted-block",
+    "title": "Preformatted block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "pullquote-block",
+    "title": "Pullquote block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "quote-block",
+    "title": "Quote block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "table-block",
+    "title": "Table block",
+    "section": "Block editor > Blocks list > Text blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "audio-block",
+    "title": "Audio block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "cover-block",
+    "title": "Cover block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "file-block",
+    "title": "File block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "gallery-block",
+    "title": "Gallery block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "icon-block",
+    "title": "Icon block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "image-block",
+    "title": "Image block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "media-text-block",
+    "title": "Media & Text block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "playlist-block",
+    "title": "Playlist block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "video-block",
+    "title": "Video block",
+    "section": "Block editor > Blocks list > Media blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "accordion-block",
+    "title": "Accordion block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "buttons-block",
+    "title": "Buttons block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "columns-block",
+    "title": "Columns block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "grid-block",
+    "title": "Grid block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "MERGE",
+    "target": "Group block",
+    "why": "Grid is a Group variation; its layout settings differ, little else does."
+  },
+  {
+    "slug": "group-block",
+    "title": "Group block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Row, Stack and Grid are Group variations; one page explains the shared container and the layout choice."
+  },
+  {
+    "slug": "more-block",
+    "title": "More block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "page-break-block",
+    "title": "Page Break block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block; last touched 2024-06, verify."
+  },
+  {
+    "slug": "row-block",
+    "title": "Row block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "MERGE",
+    "target": "Group block",
+    "why": "Row is a Group variation; its layout settings differ, little else does."
+  },
+  {
+    "slug": "separator-block",
+    "title": "Separator block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "spacer-block",
+    "title": "Spacer block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "stack-block",
+    "title": "Stack block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "MERGE",
+    "target": "Group block",
+    "why": "Stack is a Group variation; its layout settings differ, little else does."
+  },
+  {
+    "slug": "tabs-block",
+    "title": "Tabs block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "button-block",
+    "title": "(Deprecated)Button block",
+    "section": "Block editor > Blocks list > Design blocks",
+    "action": "DELETE",
+    "target": "Buttons block",
+    "why": "21-word deprecation stub."
+  },
+  {
+    "slug": "archives-block",
+    "title": "Archives block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "calendar-block",
+    "title": "Calendar block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "categories-list-block",
+    "title": "Categories List block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "custom-html",
+    "title": "Custom HTML",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "latest-comments-block",
+    "title": "Latest Comments block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "latest-posts-block",
+    "title": "Latest Posts block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "page-list-block",
+    "title": "Page List block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "rss-block",
+    "title": "RSS block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "search-block",
+    "title": "Search block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "shortcode-block",
+    "title": "Shortcode block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "social-icons",
+    "title": "Social Icons block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "tag-cloud-block",
+    "title": "Tag Cloud block",
+    "section": "Block editor > Blocks list > Widget blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text."
+  },
+  {
+    "slug": "archive-title-block",
+    "title": "Archive Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Archive title blocks",
+    "why": "Query Title variation; 58% boilerplate."
+  },
+  {
+    "slug": "post-author-name-block",
+    "title": "Author Name block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Post-context block; 43% boilerplate."
+  },
+  {
+    "slug": "avatar-block",
+    "title": "Avatar block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Author/comment context block; settings fit one section."
+  },
+  {
+    "slug": "breadcrumbs-block",
+    "title": "Breadcrumbs block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "New, substantive block; works on its own."
+  },
+  {
+    "slug": "categories-block",
+    "title": "Categories block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Post Terms variation; 43% boilerplate."
+  },
+  {
+    "slug": "comment-author-name-block",
+    "title": "Comment  Author Name block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-content-block",
+    "title": "Comment Content block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-date-block",
+    "title": "Comment Date block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-edit-link-block",
+    "title": "Comment Edit Link block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-reply-link-block",
+    "title": "Comment Reply Link block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-template-block",
+    "title": "Comment Template block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comments-block",
+    "title": "Comments block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Container for 11 dependent blocks that cannot be used alone; becomes the one comments reference."
+  },
+  {
+    "slug": "comments-count-block",
+    "title": "Comments Count block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-link-block",
+    "title": "Comments Link block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comment-pagination-block",
+    "title": "Comments Pagination block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "comments-title-block",
+    "title": "Comments Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "post-content-block",
+    "title": "Content block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post blocks",
+    "why": "Template-only block; 41% boilerplate."
+  },
+  {
+    "slug": "custom-link-block",
+    "title": "Custom Link block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Navigation block",
+    "why": "Only usable inside the Navigation block."
+  },
+  {
+    "slug": "date-block",
+    "title": "Date Block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Date, Post Date and Modified Date now overlap; one section explains all three."
+  },
+  {
+    "slug": "post-excerpt-block",
+    "title": "Excerpt block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post blocks",
+    "why": "Template-only block; 46% boilerplate."
+  },
+  {
+    "slug": "home-link-block",
+    "title": "Home Link block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Navigation block",
+    "why": "Only usable inside the Navigation block."
+  },
+  {
+    "slug": "login-out-block",
+    "title": "Login-out block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Standalone block; unlinked and last touched 2024-06, verify."
+  },
+  {
+    "slug": "post-modified-date-block",
+    "title": "Modified Date block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Modified Date is a Date variation; 43% boilerplate."
+  },
+  {
+    "slug": "navigation-block",
+    "title": "Navigation block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Hub for menus (11 inbound); its child blocks only exist inside it."
+  },
+  {
+    "slug": "next-post-block",
+    "title": "Next Post block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post Navigation Link block",
+    "why": "Variation of Post Navigation Link; content near-identical."
+  },
+  {
+    "slug": "pagination-block",
+    "title": "Pagination block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct, substantive block with its own inner blocks."
+  },
+  {
+    "slug": "post-author-biography-block",
+    "title": "Post Author Biography block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Post-context block; small unique content."
+  },
+  {
+    "slug": "post-comments-form-block",
+    "title": "Post Comments Form block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Comments block",
+    "why": "Only usable inside the Comments block; page is mostly copied boilerplate."
+  },
+  {
+    "slug": "post-date-block",
+    "title": "Post Date block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Overlaps Date block; 42% boilerplate."
+  },
+  {
+    "slug": "post-featured-image-block",
+    "title": "Post Featured Image block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post blocks",
+    "why": "Template/Query Loop block; unique settings fit one section."
+  },
+  {
+    "slug": "post-navigation-link-block",
+    "title": "Post Navigation Link block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Next and Previous Post are its variations; 57% boilerplate today."
+  },
+  {
+    "slug": "post-tags-block",
+    "title": "Post Tags block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post meta blocks",
+    "why": "Post Terms variation; 38% boilerplate."
+  },
+  {
+    "slug": "post-template-block",
+    "title": "Post Template block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Query Loop block",
+    "why": "Inner block of Query Loop only; explained better in context."
+  },
+  {
+    "slug": "post-title-block",
+    "title": "Post Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "DELETE",
+    "target": "Post blocks",
+    "why": "15-word rename stub (now Title block)."
+  },
+  {
+    "slug": "posts-list-block",
+    "title": "Posts List block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "DELETE",
+    "target": "Query Loop block",
+    "why": "Variation removed in 6.7; page only points to Query Loop."
+  },
+  {
+    "slug": "previous-post-block",
+    "title": "Previous Post block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post Navigation Link block",
+    "why": "Variation of Post Navigation Link; content near-identical."
+  },
+  {
+    "slug": "query-loop-block",
+    "title": "Query Loop block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Key page (23 inbound); Post Template cannot exist outside it."
+  },
+  {
+    "slug": "query-title-block",
+    "title": "Query Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Archive Title and Search Results Title are Query Title variations; all label archive views."
+  },
+  {
+    "slug": "query-total-block",
+    "title": "Query Total block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Archive title blocks",
+    "why": "Small archive helper; still written as \"6.8 is set to introduce\"."
+  },
+  {
+    "slug": "read-more-block",
+    "title": "Read More block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post blocks",
+    "why": "Only meaningful inside Query Loop."
+  },
+  {
+    "slug": "search-results-title-block",
+    "title": "Search Results Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Archive title blocks",
+    "why": "Query Title variation; only the label differs."
+  },
+  {
+    "slug": "site-logo-block",
+    "title": "Site Logo block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Site identity blocks",
+    "why": "Substantive but belongs with title and tagline; links to Identity task."
+  },
+  {
+    "slug": "site-tagline-block",
+    "title": "Site Tagline block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Site identity blocks",
+    "why": "63% boilerplate; same settings as Site Title."
+  },
+  {
+    "slug": "site-title-block",
+    "title": "Site Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Site identity blocks",
+    "why": "59% boilerplate; same settings as Site Tagline."
+  },
+  {
+    "slug": "submenu-block",
+    "title": "Submenu block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Navigation block",
+    "why": "Only usable inside the Navigation block."
+  },
+  {
+    "slug": "template-part-block",
+    "title": "Template Part block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "Substantive, low boilerplate, eight inbound links; key to header/footer editing."
+  },
+  {
+    "slug": "term-description-block",
+    "title": "Term Description block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Archive title blocks",
+    "why": "Archive-only block; 62% boilerplate, little unique content."
+  },
+  {
+    "slug": "terms-query-block",
+    "title": "Terms Query block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "KEEP",
+    "target": null,
+    "why": "New, substantive container block; needs inbound links."
+  },
+  {
+    "slug": "time-to-read-block",
+    "title": "Time to Read block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post blocks",
+    "why": "Small post-context block."
+  },
+  {
+    "slug": "title-block",
+    "title": "Title block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "MERGE",
+    "target": "Post blocks",
+    "why": "157 words; cannot stand alone."
+  },
+  {
+    "slug": "post-author-block",
+    "title": "(Deprecated) Post Author block",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "DELETE",
+    "target": "Post meta blocks",
+    "why": "32-word deprecation stub (deprecated in 7.0)."
+  },
+  {
+    "slug": "embeds",
+    "title": "Embeds",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "REWRITE",
+    "target": null,
+    "why": "One page replaces 36: the provider pages repeat the same paste-URL workflow."
+  },
+  {
+    "slug": "embed-block",
+    "title": "Embed block",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Generic block and the section index describe the same workflow."
+  },
+  {
+    "slug": "amazon-kindle-embed",
+    "title": "Amazon Kindle Embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Amazon Kindle specifics become a table row or note."
+  },
+  {
+    "slug": "animoto-embed",
+    "title": "Animoto Embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Animoto specifics become a table row or note."
+  },
+  {
+    "slug": "bluesky-embed",
+    "title": "Bluesky embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Bluesky specifics become a table row or note."
+  },
+  {
+    "slug": "cloudup-embed",
+    "title": "Cloudup Embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Cloudup specifics become a table row or note."
+  },
+  {
+    "slug": "crowdsignal-embed",
+    "title": "Crowdsignal embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Crowdsignal specifics become a table row or note."
+  },
+  {
+    "slug": "dailymotion-embed",
+    "title": "Dailymotion embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Dailymotion specifics become a table row or note."
+  },
+  {
+    "slug": "facebook-embed",
+    "title": "Facebook embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "DELETE",
+    "target": "Embeds",
+    "why": "oEmbed endpoint closed in 2020; embedding no longer works. One note on Embeds suffices."
+  },
+  {
+    "slug": "flickr-embed",
+    "title": "Flickr embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Flickr specifics become a table row or note."
+  },
+  {
+    "slug": "imgur-embed",
+    "title": "Imgur embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Imgur specifics become a table row or note."
+  },
+  {
+    "slug": "instagram-embed",
+    "title": "Instagram embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "DELETE",
+    "target": "Embeds",
+    "why": "oEmbed endpoint closed in 2020; embedding no longer works. One note on Embeds suffices."
+  },
+  {
+    "slug": "issuu-embed",
+    "title": "Issuu embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Issuu specifics become a table row or note."
+  },
+  {
+    "slug": "kickstarter-embed",
+    "title": "Kickstarter embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Kickstarter specifics become a table row or note."
+  },
+  {
+    "slug": "mixcloud-embed",
+    "title": "MixCloud embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Mixcloud specifics become a table row or note."
+  },
+  {
+    "slug": "pinterest-embed",
+    "title": "Pinterest embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Pinterest specifics become a table row or note."
+  },
+  {
+    "slug": "pocket-casts-embed",
+    "title": "Pocket Casts embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Pocket Casts specifics become a table row or note."
+  },
+  {
+    "slug": "reddit-embed",
+    "title": "Reddit embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Reddit specifics become a table row or note."
+  },
+  {
+    "slug": "reverbnation-embed",
+    "title": "ReverbNation embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; ReverbNation specifics become a table row or note."
+  },
+  {
+    "slug": "screencast-block",
+    "title": "Screencast embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Screencast specifics become a table row or note."
+  },
+  {
+    "slug": "scribd-embed",
+    "title": "Scribd embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Scribd specifics become a table row or note."
+  },
+  {
+    "slug": "smugmug-embed",
+    "title": "SmugMug embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; SmugMug specifics become a table row or note."
+  },
+  {
+    "slug": "soundcloud-embed",
+    "title": "SoundCloud embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; SoundCloud specifics become a table row or note."
+  },
+  {
+    "slug": "speaker-deck-embed",
+    "title": "Speaker Deck embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Speaker Deck specifics become a table row or note."
+  },
+  {
+    "slug": "spotify-embed",
+    "title": "Spotify embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Spotify specifics become a table row or note."
+  },
+  {
+    "slug": "ted-embed",
+    "title": "TED embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; TED specifics become a table row or note."
+  },
+  {
+    "slug": "tiktok-embed",
+    "title": "TikTok embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; TikTok specifics become a table row or note."
+  },
+  {
+    "slug": "tumblr-embed",
+    "title": "Tumblr embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Tumblr specifics become a table row or note."
+  },
+  {
+    "slug": "twitter-embed",
+    "title": "Twitter embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same workflow as every embed; row should say X (twitter.com/x.com URLs)."
+  },
+  {
+    "slug": "videopress-embed",
+    "title": "VideoPress embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; VideoPress specifics become a table row or note."
+  },
+  {
+    "slug": "vimeo-embed",
+    "title": "Vimeo embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Vimeo specifics become a table row or note."
+  },
+  {
+    "slug": "wolfram-embed",
+    "title": "Wolfram embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; Wolfram specifics become a table row or note."
+  },
+  {
+    "slug": "wordpress-embed",
+    "title": "WordPress embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; WordPress specifics become a table row or note."
+  },
+  {
+    "slug": "wordpress-tv-embed-block",
+    "title": "WordPress.tv embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; WordPress.tv specifics become a table row or note."
+  },
+  {
+    "slug": "youtube-embed",
+    "title": "YouTube embed",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "MERGE",
+    "target": "Embeds",
+    "why": "Same paste-URL workflow as every embed; YouTube specifics become a table row or note."
+  },
+  {
+    "slug": "slideshare-embed",
+    "title": "Slideshare embed (Removed)",
+    "section": "Block editor > Blocks list > Embeds",
+    "action": "DELETE",
+    "target": "Embeds",
+    "why": "Block removed in WordPress 6.6."
+  },
+  {
+    "slug": "site-editor",
+    "title": "Site Editor",
+    "section": "Site Editor",
+    "action": "REWRITE",
+    "target": null,
+    "why": "30 inbound links; 2,300 words mixing tour and how-tos now covered by task pages."
+  },
+  {
+    "slug": "site-editor-navigation",
+    "title": "Site Editor navigation",
+    "section": "Site Editor",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Still framed as \"6.3 introduces\"; becomes the menu task page, Navigation block stays reference."
+  },
+  {
+    "slug": "site-editor-identity",
+    "title": "Site Editor Identity",
+    "section": "Site Editor",
+    "action": "REWRITE",
+    "target": null,
+    "why": "272 words; natural home for site icon instructions."
+  },
+  {
+    "slug": "site-editor-pages",
+    "title": "Site Editor Pages",
+    "section": "Site Editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Substantive and current (2025-08)."
+  },
+  {
+    "slug": "template-editor",
+    "title": "Template Editor",
+    "section": "Site Editor",
+    "action": "REWRITE",
+    "target": null,
+    "why": "\"Template Editor\" is no longer a distinct UI; templates live in Site Editor > Templates."
+  },
+  {
+    "slug": "site-editor-patterns",
+    "title": "Site Editor Patterns",
+    "section": "Site Editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current; covers managing patterns and template parts."
+  },
+  {
+    "slug": "styles-overview",
+    "title": "Styles overview",
+    "section": "Site Editor",
+    "action": "SPLIT",
+    "target": "Styles overview; Change colors and fonts with Styles; Add custom CSS",
+    "why": "4,140 words, 42 images: reference, colour/font task and CSS task in one page."
+  },
+  {
+    "slug": "the-font-library",
+    "title": "The Font Library",
+    "section": "Site Editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Distinct, current; linked from the fonts task."
+  },
+  {
+    "slug": "zoom-out-view",
+    "title": "Zoom out view",
+    "section": "Site Editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current, distinct."
+  },
+  {
+    "slug": "site-editor-command-palette",
+    "title": "Command Palette",
+    "section": "Site Editor",
+    "action": "KEEP",
+    "target": null,
+    "why": "Current; also used in the post editor."
+  },
+  {
+    "slug": "additional-guide-to-using-the-site-editor",
+    "title": "Additional guide to using the Site Editor",
+    "section": "Site Editor",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Grab-bag from 2024-02; homepage part is a real gap, rest duplicates Identity and Styles."
+  },
+  {
+    "slug": "work-with-themes",
+    "title": "Work with themes",
+    "section": "Themes",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Says Twenty Twenty-Two is default; template-hierarchy and creating-themes parts belong on developer.wordpress.org (link)."
+  },
+  {
+    "slug": "appearance-themes-screen",
+    "title": "Appearance Themes Screen",
+    "section": "Themes",
+    "action": "REWRITE",
+    "target": null,
+    "why": "Untouched since 2023-01; still names Twenty Nineteen as the default theme."
+  },
+  {
+    "slug": "block-themes",
+    "title": "Block themes",
+    "section": "Themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Core concept, 13 inbound links, current."
+  },
+  {
+    "slug": "create-a-favicon",
+    "title": "Create a Favicon",
+    "section": "Themes",
+    "action": "MERGE",
+    "target": "Set your site title, logo and icon",
+    "why": "Site icon is set in Identity or Settings > General; pre-6.5 half is obsolete."
+  },
+  {
+    "slug": "twenty-twenty-five",
+    "title": "Twenty Twenty-Five",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Guide to templates, style variations and patterns of the active default; verify against latest version."
+  },
+  {
+    "slug": "twenty-twenty-five-changelog",
+    "title": "Twenty Twenty-Five changelog",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Changelogs are a separate decision; left as is."
+  },
+  {
+    "slug": "twenty-twenty-four",
+    "title": "Twenty Twenty-Four",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Substantive user guide for a widely used block theme; last touched 2024-08."
+  },
+  {
+    "slug": "twenty-twenty-four-changelog",
+    "title": "Twenty Twenty-Four changelog",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Changelogs are a separate decision; left as is."
+  },
+  {
+    "slug": "twenty-twenty-three",
+    "title": "Twenty Twenty-Three",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Mostly style variations; last touched 2024-08, could shrink to a stub."
+  },
+  {
+    "slug": "twenty-twenty-three-changelog",
+    "title": "Twenty Twenty-Three Changelog",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Changelogs are a separate decision; left as is."
+  },
+  {
+    "slug": "twenty-twenty-two",
+    "title": "Twenty Twenty-Two",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "First default block theme; last touched 2024-08, could shrink to a stub."
+  },
+  {
+    "slug": "twenty-twenty-two-changelog",
+    "title": "Twenty Twenty-Two changelog",
+    "section": "Themes > Default themes",
+    "action": "KEEP",
+    "target": null,
+    "why": "Changelogs are a separate decision; left as is."
+  },
+  {
+    "slug": "post-blocks",
+    "title": "Post blocks",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "NEW",
+    "why": "Template blocks showing post content share context and settings; one page replaces six."
+  },
+  {
+    "slug": "post-meta-blocks",
+    "title": "Post meta blocks",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "NEW",
+    "why": "Small post-context blocks, 25–47% boilerplate; one page replaces eight."
+  },
+  {
+    "slug": "site-identity-blocks",
+    "title": "Site identity blocks",
+    "section": "Block editor > Blocks list > Theme blocks",
+    "action": "NEW",
+    "why": "Three blocks with near-identical settings; 59–63% boilerplate today."
+  },
+  {
+    "slug": "edit-your-header-and-footer",
+    "title": "Edit your site's header and footer",
+    "section": "Site Editor",
+    "action": "NEW",
+    "why": "Most common Site Editor task has no page; template-part content is scattered across three references."
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "out": "out/run1",
+  "diag": {
+    "isFullscreenClass": true,
+    "modals": [],
+    "notices": [
+      "The block editor requires JavaScript. Please enable JavaScript in your browser settings, or install the Classic Editor p"
+    ],
+    "adminBar": true,
+    "prefsWelcome": false,
+    "prefsCoreWelcome": false,
+    "fullscreen": true,
+    "bodyClass": "wp-admin wp-core-ui js is-fullscreen-mode post-new-php auto-fold admin-bar post-type-post branch-7-1 version-7-1-3 admin-color-modern locale-en-us svg block-editor-page wp-embed-responsive wp-theme-twentytwentyfive customize-support",
+    "canvasFont": "Manrope, sans-serif",
+    "stylesheet": "twentytwentyfive"
+  },
+  "notes": [
+    "auth: logged in via Playground auto-login cookie (no form post needed)",
+    "cookies: wordpress_c3fc09f337d5c980a87b2240c2e6f193, wordpress_c3fc09f337d5c980a87b2240c2e6f193, playground_auto_login_already_happened, wordpress_logged_in_c3fc09f337d5c980a87b2240c2e6f193, wp-settings-time-1"
+  ],
+  "timings": [
+    {
+      "label": "launch chromium",
+      "ms": 56
+    },
+    {
+      "label": "open post-new.php (auth)",
+      "ms": 1100
+    },
+    {
+      "label": "editor ready",
+      "ms": 129
+    },
+    {
+      "label": "insert image block",
+      "ms": 103
+    },
+    {
+      "label": "shot 01-editor-image-placeholder",
+      "ms": 75
+    },
+    {
+      "label": "shot 02-block-toolbar",
+      "ms": 71
+    },
+    {
+      "label": "open settings sidebar",
+      "ms": 1
+    },
+    {
+      "label": "shot 03-block-settings-sidebar",
+      "ms": 79
+    },
+    {
+      "label": "open inserter + type",
+      "ms": 143
+    },
+    {
+      "label": "shot 04-inserter-search-image",
+      "ms": 65
+    },
+    {
+      "label": "shot 04b-inserter-panel",
+      "ms": 71
+    },
+    {
+      "label": "shot 05-editor-with-image",
+      "ms": 72
+    },
+    {
+      "label": "shot 06-annotated-replace",
+      "ms": 37
+    },
+    {
+      "label": "shot 07-mask-and-caret-hidden",
+      "ms": 72
+    },
+    {
+      "label": "shot 07b-caret-visible-for-contrast",
+      "ms": 96
+    },
+    {
+      "label": "TOTAL",
+      "ms": 4983
+    }
+  ]
+}

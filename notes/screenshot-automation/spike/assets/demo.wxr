@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+<title>Demo Site</title><link>http://example.com</link><description>Demo</description>
+<wp:wxr_version>1.2</wp:wxr_version>
+<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@localhost.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name></wp:author>
+<item>
+<title><![CDATA[Imported via WXR: A Weekend in the Mountains]]></title>
+<dc:creator><![CDATA[admin]]></dc:creator>
+<content:encoded><![CDATA[<!-- wp:paragraph --><p>This post was imported with the importWxr blueprint step. We spent two days hiking above the tree line, where the air is thin and the views go on forever.</p><!-- /wp:paragraph -->]]></content:encoded>
+<wp:post_id>500</wp:post_id><wp:post_date><![CDATA[2025-06-01 10:00:00]]></wp:post_date><wp:post_date_gmt><![CDATA[2025-06-01 10:00:00]]></wp:post_date_gmt>
+<wp:post_name><![CDATA[weekend-in-the-mountains]]></wp:post_name><wp:status><![CDATA[publish]]></wp:status><wp:post_type><![CDATA[post]]></wp:post_type>
+</item>
+</channel>
+</rss>
