@@ -50,11 +50,14 @@ The three reviews were written independently; the consolidation step applies the
 
 ## What changes most
 
-- **Block reference: 135 pages become 58.** One Embeds page with a provider table replaces 36
-  near-identical provider pages. Theme blocks that are 15-word stubs today are documented on family pages
-  (Post blocks, Post meta blocks, Site identity blocks) or on their container's page (comment blocks on
-  Comments, Submenu and links on Navigation, Post Template on Query Loop). Content blocks keep one page
-  each, trimmed of the repeated toolbar and settings paragraphs.
+- **Block reference: 135 pages become 114.** The rule: a block gets its own page if it appears as its own
+  item in the block inserter, however core registers it. So Row, Stack and Grid, Archive Title, Next Post,
+  Modified Date and each embed provider (YouTube, Vimeo, Spotify …) keep a page, and parent pages (Group,
+  Query Title, Post Navigation Link, Embeds) become the shared reference they link to. Only inner blocks the
+  inserter offers inside a container are folded into it (comment blocks on Comments, Submenu and links on
+  Navigation, Post Template and Query Total on Query Loop). Removed or dead blocks (SlideShare, Screencast,
+  Facebook, Instagram, deprecated stubs) redirect. Every kept block page is trimmed of the repeated toolbar
+  and settings paragraphs.
 - **Site Editor gains task pages.** Edit your header and footer, change colors and fonts with Styles,
   create and edit templates, create and manage menus, set your site title, logo and icon, set up your
   homepage. Most come from rewriting existing pages under new titles rather than from scratch.

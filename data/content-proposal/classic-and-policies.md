@@ -212,7 +212,7 @@ Classic-only suffixed titles with no twin: `write-posts-classic-editor`, `sticky
   for editor pages, "Classic Widgets" for the widgets plugin. Keep it even inside the section, because search
   results and wp-admin help links show the title without its section.
 - Cross-reference with one standard line, not ad-hoc notes. Block page, first line after the H1:
-  `> [!NOTE]` "Using the Classic Editor plugin? See [Using the Classic Editor › Excerpt](…#excerpt)." Classic page:
+  `> [!NOTE]` "Using the Classic Editor plugin? See `Using the Classic Editor › Excerpt` (link to `write-posts-classic-editor#excerpt`)." Classic page:
   the mirror line back to the block page. Today each pair words this differently, and some pairs lack it.
 - Alternative: a frontmatter field `classic_counterpart: <slug>#anchor` rendered as the note. Cleaner, but it needs the
   importer subclass and a theme change; the hand-written line works today and can be generated from the field later.

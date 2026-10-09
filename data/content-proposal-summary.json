@@ -1,13 +1,13 @@
 {
  "pages_now": 323,
- "pages_after": 214,
+ "pages_after": 270,
  "counts": {
-  "REWRITE": 52,
-  "MERGE": 102,
-  "KEEP": 150,
-  "DELETE": 12,
+  "REWRITE": 53,
+  "MERGE": 42,
+  "KEEP": 208,
+  "DELETE": 13,
   "MOVE": 3,
-  "NEW": 9,
+  "NEW": 6,
   "SPLIT": 4
  },
  "core_linked_articles": 75,
@@ -39,7 +39,6 @@
  ],
  "merge_targets_not_existing_pages": [
   "add and manage media",
-  "archive title blocks",
   "choose a host and install wordpress",
   "control who can see a post",
   "emoji, smilies and special characters",
@@ -84,7 +83,7 @@
   ]
  ],
  "pages_after_definition": "sum of the per-area 'pages proposed' figures from each review's end-state list (data/content-proposal/area-summaries.json)",
- "pages_after_from_rows": 232,
+ "pages_after_from_rows": 287,
  "areas": {
   "overview-and-using-wordpress": {
    "now": 97,
@@ -92,7 +91,7 @@
   },
   "editing-and-design": {
    "now": 190,
-   "proposed": 114
+   "proposed": 170
   },
   "classic-and-policies": {
    "now": 36,
