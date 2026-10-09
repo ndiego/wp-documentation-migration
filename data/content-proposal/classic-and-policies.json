@@ -1,0 +1,306 @@
+[
+  {
+    "slug": "write-posts-classic-editor",
+    "title": "Write posts (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "REWRITE",
+    "target": "Retitle \"Using the Classic Editor\"; becomes the section index; absorbs excerpt, visibility, sticky. Slug kept (linked from wp-admin edit-form-advanced.php)",
+    "why": "Core help tab links here; already covers the Publish box, the natural home for small classic pages."
+  },
+  {
+    "slug": "first-steps-with-wordpress-classic",
+    "title": "First steps with WordPress (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "DELETE",
+    "target": "redirect → first-steps-with-wordpress-block-editor",
+    "why": "Near-verbatim copy of the block version with 2018 screenshots and Twenty Nineteen; only the editor differs."
+  },
+  {
+    "slug": "what-is-an-excerpt-classic-editor",
+    "title": "What is an excerpt? (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "MERGE",
+    "target": "write-posts-classic-editor (#excerpt)",
+    "why": "101 words; the Excerpt box is one field of the classic edit screen."
+  },
+  {
+    "slug": "content-visibility-classic-editor",
+    "title": "Set blog content visibility (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "MERGE",
+    "target": "write-posts-classic-editor (#visibility)",
+    "why": "Only the Publish-box steps are classic; the rest duplicates the block twin. Drops stale \"not in core\" claim."
+  },
+  {
+    "slug": "sticky-posts-classic-editor",
+    "title": "Sticky Posts (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "MERGE",
+    "target": "write-posts-classic-editor (#sticky-posts)",
+    "why": "162 words; first half is outdated block-editor steps (\"Document tab\"); the classic half is one checkbox."
+  },
+  {
+    "slug": "inserting-images-into-posts-and-pages-classic",
+    "title": "Inserting images into posts and pages (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "REWRITE",
+    "target": "Retitle \"Add media in the Classic Editor\"; absorbs the gallery page. Slug kept",
+    "why": "Most-linked classic page (8 in-links); the Add Media modal covers images and galleries in one flow."
+  },
+  {
+    "slug": "the-wordpress-gallery-classic-editor",
+    "title": "The WordPress Gallery (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "MERGE",
+    "target": "inserting-images-into-posts-and-pages-classic (#gallery); [gallery] shortcode section → media-shortcodes",
+    "why": "Same Add Media modal as images; 0 in-links."
+  },
+  {
+    "slug": "audio-shortcode",
+    "title": "Audio Shortcode",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "MERGE",
+    "target": "media-shortcodes",
+    "why": "Identical structure to video-shortcode; Related section links legacy Codex pages."
+  },
+  {
+    "slug": "video-shortcode",
+    "title": "Video shortcode",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "MERGE",
+    "target": "media-shortcodes",
+    "why": "Identical structure to audio-shortcode; one reference page serves both."
+  },
+  {
+    "slug": "write-code-in-your-posts-classic-editor",
+    "title": "Write code in your posts (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "REWRITE",
+    "target": "Trim to Visual/Text-tab behaviour; entity list → link use-character-entities",
+    "why": "Duplicates use-character-entities; mentions obsolete `<tt>` and \"older versions\" behaviour."
+  },
+  {
+    "slug": "keyboard-shortcuts-classic-editor",
+    "title": "Use keyboard shortcuts (Classic Editor)",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "SPLIT",
+    "target": "keyboard-shortcuts-classic-editor (editor shortcuts); comments-screen (comment moderation shortcuts)",
+    "why": "Comment shortcuts work with any editor and are switched on in the profile, not the Classic Editor."
+  },
+  {
+    "slug": "media-shortcodes",
+    "title": "Audio, video and gallery shortcodes",
+    "section": "Classic WordPress > Classic Editor",
+    "action": "NEW",
+    "target": "[merged from: audio-shortcode, video-shortcode, gallery shortcode section]",
+    "why": "One shortcode reference instead of two clones plus Codex links."
+  },
+  {
+    "slug": "customizer",
+    "title": "Customizer",
+    "section": "Classic WordPress > Widgets, Menus and the Customizer",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Linked from wp-admin customize.php; accurate for classic themes."
+  },
+  {
+    "slug": "block-based-widgets-editor",
+    "title": "Block-based Widgets Editor",
+    "section": "Classic WordPress > Widgets, Menus and the Customizer",
+    "action": "REWRITE",
+    "target": "Retitle \"Widgets\"; becomes the widgets page; absorbs widget/widget-area concepts from manage-wordpress-widgets",
+    "why": "Default widgets screen for classic themes since 5.8; should lead, not the classic screen."
+  },
+  {
+    "slug": "manage-wordpress-widgets",
+    "title": "Manage WordPress widgets",
+    "section": "Classic WordPress > Widgets, Menus and the Customizer",
+    "action": "SPLIT",
+    "target": "block-based-widgets-editor (what widgets and widget areas are); appearance-widgets-screen-classic-editor (classic steps, Text/RSS widgets). Redirect → block-based-widgets-editor",
+    "why": "Mixes concepts with classic-only steps already repeated on the classic Widgets screen page."
+  },
+  {
+    "slug": "appearance-widgets-screen-classic-editor",
+    "title": "Appearance Widgets Screen (Classic Editor)",
+    "section": "Classic WordPress > Widgets, Menus and the Customizer",
+    "action": "REWRITE",
+    "target": "Retitle \"Classic Widgets screen\" (Classic Widgets plugin). Slug kept (linked from wp-admin widgets-form.php)",
+    "why": "Title is wrong: this screen needs the Classic Widgets plugin, not the Classic Editor."
+  },
+  {
+    "slug": "appearance-menus-screen",
+    "title": "Appearance Menus Screen",
+    "section": "Classic WordPress > Widgets, Menus and the Customizer",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Linked from wp-admin nav-menus.php; recently updated with a block-theme note."
+  },
+  {
+    "slug": "classic-default-themes",
+    "title": "Classic default themes",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "NEW",
+    "target": "[new] section index: table of theme, release year, WordPress version, theme directory, guide, changelog",
+    "why": "Replaces the generated intro and the two changelog-only stubs (Fourteen, Thirteen) with one scannable table."
+  },
+  {
+    "slug": "twenty-twenty-one",
+    "title": "Twenty Twenty-One",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-twenty-one-changelog",
+    "title": "Twenty Twenty-One changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-twenty",
+    "title": "Twenty Twenty",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-twenty-changelog",
+    "title": "Twenty Twenty changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-nineteen",
+    "title": "Twenty Nineteen",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-nineteen-changelog",
+    "title": "Twenty Nineteen changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-seventeen",
+    "title": "Twenty Seventeen",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-seventeen-changelog",
+    "title": "Twenty Seventeen changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-sixteen",
+    "title": "Twenty Sixteen",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "REWRITE",
+    "target": "Bring to the 2024 theme-page template (Quick Specs, Patterns, Support & resources)",
+    "why": "Pre-2024 shape and 2018 screenshots; links the classic excerpt page; no Patterns section."
+  },
+  {
+    "slug": "twenty-sixteen-changelog",
+    "title": "Twenty Sixteen changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-fifteen",
+    "title": "Twenty Fifteen",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "REWRITE",
+    "target": "Bring to the 2024 theme-page template (Quick Specs, Patterns, Support & resources)",
+    "why": "Pre-2024 shape and 2018 screenshots; links the classic excerpt page; no Patterns section."
+  },
+  {
+    "slug": "twenty-fifteen-changelog",
+    "title": "Twenty Fifteen changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-fourteen-changelog",
+    "title": "Twenty Fourteen changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-thirteen-changelog",
+    "title": "Twenty Thirteen changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-twelve",
+    "title": "Twenty Twelve",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-twelve-changelog",
+    "title": "Twenty Twelve changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-eleven",
+    "title": "Twenty Eleven",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-eleven-changelog",
+    "title": "Twenty Eleven changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  },
+  {
+    "slug": "twenty-ten",
+    "title": "Twenty Ten",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep."
+  },
+  {
+    "slug": "twenty-ten-changelog",
+    "title": "Twenty Ten changelog",
+    "section": "Classic WordPress > Classic default themes",
+    "action": "KEEP",
+    "target": "—",
+    "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release."
+  }
+]

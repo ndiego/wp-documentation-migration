@@ -1,0 +1,23 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": { "php": "8.3", "wp": "7.1.3" },
+  "landingPage": "/wp-admin/post-new.php",
+  "steps": [
+    { "step": "login", "username": "admin", "password": "password" },
+    { "step": "setSiteOptions", "options": {
+        "blogname": "Demo Site",
+        "blogdescription": "Just another documentation demo",
+        "timezone_string": "UTC",
+        "date_format": "F j, Y",
+        "permalink_structure": "/%postname%/"
+    } },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; switch_theme( WP_DEFAULT_THEME ); update_option('spike_default_theme', WP_DEFAULT_THEME);" },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; global $wpdb; update_user_meta( 1, $wpdb->get_blog_prefix() . 'persisted_preferences', array( 'core/edit-post' => array( 'welcomeGuide' => false, 'fullscreenMode' => true ), 'core' => array( 'welcomeGuide' => false, 'enableChoosePatternModal' => false ), 'core/edit-site' => array( 'welcomeGuide' => false, 'welcomeGuideStyles' => false, 'welcomeGuidePage' => false, 'welcomeGuideTemplate' => false ), '_modified' => '2025-01-01T00:00:00.000Z' ) );" },
+    { "step": "mkdir", "path": "/tmp/seed" },
+    { "step": "writeFile", "path": "/tmp/seed/mountain-lake.jpg", "data": { "resource": "bundled", "path": "assets/mountain-lake.jpg" } },
+    { "step": "writeFile", "path": "/tmp/seed/autumn-forest.jpg", "data": { "resource": "bundled", "path": "assets/autumn-forest.jpg" } },
+    { "step": "writeFile", "path": "/tmp/seed/city-at-dusk.jpg", "data": { "resource": "bundled", "path": "assets/city-at-dusk.jpg" } },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; require_once ABSPATH.'wp-admin/includes/image.php'; require_once ABSPATH.'wp-admin/includes/file.php'; require_once ABSPATH.'wp-admin/includes/media.php'; wp_set_current_user(1); $ids=array(); foreach ( array('mountain-lake'=>'Mountain lake at sunrise','autumn-forest'=>'Autumn forest path','city-at-dusk'=>'City skyline at dusk') as $f=>$t ) { $tmp='/tmp/seed/'.$f.'-copy.jpg'; copy('/tmp/seed/'.$f.'.jpg',$tmp); $id=media_handle_sideload(array('name'=>$f.'.jpg','tmp_name'=>$tmp),0,$t); if(is_wp_error($id)){ echo 'ERR '.$id->get_error_message(); continue; } update_post_meta($id,'_wp_attachment_image_alt',$t); $ids[]=$id; } $img=wp_get_attachment_image_url($ids[0],'large'); $post=wp_insert_post(array('post_title'=>'Planning Your First Hiking Trip','post_status'=>'publish','post_date'=>'2025-05-12 09:00:00','post_content'=>\"<!-- wp:paragraph -->\\n<p>Getting outdoors does not require expensive gear or a week off work. A well-planned day hike can be the perfect introduction to the trails near you.</p>\\n<!-- /wp:paragraph -->\\n\\n<!-- wp:image {\\\"id\\\":{$ids[0]},\\\"sizeSlug\\\":\\\"large\\\"} -->\\n<figure class=\\\"wp-block-image size-large\\\"><img src=\\\"{$img}\\\" alt=\\\"Mountain lake at sunrise\\\" class=\\\"wp-image-{$ids[0]}\\\"/></figure>\\n<!-- /wp:image -->\\n\\n<!-- wp:heading -->\\n<h2 class=\\\"wp-block-heading\\\">Choose the right trail</h2>\\n<!-- /wp:heading -->\\n\\n<!-- wp:paragraph -->\\n<p>Start with a loop under eight kilometres and modest elevation gain. Check recent trip reports for trail conditions, and always tell someone where you are going.</p>\\n<!-- /wp:paragraph -->\")); $page=wp_insert_post(array('post_title'=>'About Us','post_type'=>'page','post_status'=>'publish','post_content'=>\"<!-- wp:paragraph -->\\n<p>Demo Site is a small team of writers and photographers who love sharing practical advice about the outdoors. We publish guides, gear reviews, and stories from the trail.</p>\\n<!-- /wp:paragraph -->\\n\\n<!-- wp:paragraph -->\\n<p>Have a question or a story to share? Reach out any time.</p>\\n<!-- /wp:paragraph -->\")); echo 'media='.implode(',',$ids).' post='.$post.' page='.$page;" },
+    { "step": "importWxr", "file": { "resource": "bundled", "path": "assets/demo.wxr" } }
+  ]
+}

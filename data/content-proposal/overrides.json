@@ -1,0 +1,8 @@
+{
+ "_comment": "Applied by scripts/build_content_proposal.py on top of the three section reviews. Reasons are shown in the consolidated proposal.",
+ "appearance-theme-file-editor-screen": {"action": "KEEP", "target": null, "why": "Owner decision: the Theme File Editor is core functionality and relevant to block themes (under Tools). Also linked from wp-admin theme-editor.php."},
+ "tools-network-screen": {"action": "REWRITE", "target": "Short user-level page; detailed multisite setup links to developer.wordpress.org", "why": "Linked from wp-admin network.php, so the slug must keep serving a page."},
+ "faq-troubleshooting": {"action": "REWRITE", "target": "Troubleshoot common problems", "why": "Linked from core's fatal error handler (the 'critical error' notice). Becomes the user-level troubleshooting page instead of moving off-site."},
+ "troubleshoot-common-problems": {"drop": true, "why": "Superseded: faq-troubleshooting is rewritten into this page so the core-linked slug survives."},
+ "pages-add-new-screen": {"action": "MERGE", "target": "Create pages", "why": "Linked from wp-admin edit-form-advanced.php; a redirect keeps the help tab working while the classic edit-screen content goes away."}
+}

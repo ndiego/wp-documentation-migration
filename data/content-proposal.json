@@ -1,0 +1,3319 @@
+[
+ {
+  "slug": "get-started-with-wordpress",
+  "title": "Get started with WordPress",
+  "section": "WordPress overview > Where to start",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Pre-install checklist is Codex-era (FTP, text editor); rebuild as the ordered block-first learning path.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "first-steps-with-wordpress-block-editor",
+  "title": "First steps with WordPress (Block Editor)",
+  "section": "WordPress overview > Where to start",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Tour still points at widgets and older screens; rebuild around a block theme; drop '(Block Editor)' from the title.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-semantics",
+  "title": "WordPress Semantics",
+  "section": "WordPress overview > Where to start",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Codex-era essay (The Loop, template tags, Header tool); rewrite as 'Key WordPress concepts' for the block era.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "introduction-to-blogging",
+  "title": "Introduction to Blogging",
+  "section": "WordPress overview > Where to start",
+  "action": "MERGE",
+  "target": "Key WordPress concepts",
+  "why": "Blog-versus-CMS framing is one section of a concepts page; untouched since 2023.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "wordpress-glossary",
+  "title": "WordPress Glossary",
+  "section": "WordPress overview > Where to start",
+  "action": "REWRITE",
+  "target": null,
+  "why": "12,500 words dominated by developer terms (Ajax, Array, Apache); prune to terms users meet.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "where-to-find-wordpress-help",
+  "title": "Where to find WordPress help",
+  "section": "WordPress overview > Where to start",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Untouched since 2023; web-search advice is dated; keep forums, Learn and docs pointers.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "learn-about-wordpress-and-version-history",
+  "title": "Learn about WordPress origins and version history",
+  "section": "WordPress overview > About WordPress",
+  "action": "KEEP",
+  "target": null,
+  "why": "Maintained every release; narrative history is distinct from the version tables.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "difference-between-wordpress-org-and-wordpress-com",
+  "title": "What's the difference between WordPress.org and WordPress.com?",
+  "section": "WordPress overview > About WordPress",
+  "action": "KEEP",
+  "target": null,
+  "why": "Recurring first-day confusion; content still accurate.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-versions",
+  "title": "WordPress Versions",
+  "section": "WordPress overview > About WordPress",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference table maintained every release; absorbs the support policy.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-versions-0-7-to-4-9",
+  "title": "WordPress Versions 0.7 to 4.9",
+  "section": "WordPress overview > About WordPress",
+  "action": "KEEP",
+  "target": null,
+  "why": "Archive table split from WordPress Versions for length; pure reference.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "supported-versions",
+  "title": "Supported Versions",
+  "section": "WordPress overview > About WordPress",
+  "action": "MERGE",
+  "target": "WordPress Versions",
+  "why": "192-word policy statement; reads naturally as a 'Support policy' section of Versions.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "become-a-wordpress-contributor",
+  "title": "Become a WordPress contributor",
+  "section": "WordPress overview > About WordPress",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) and the only user-facing route into contributing.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "faq-work-with-wordpress",
+  "title": "FAQ Work with WordPress",
+  "section": "WordPress overview > Frequently asked questions",
+  "action": "DELETE",
+  "target": "Get started with WordPress",
+  "why": "Link list to other pages with Codex links and dead 'Ideas' site; answers belong in task pages.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "faq-installation",
+  "title": "FAQ Installation",
+  "section": "WordPress overview > Frequently asked questions",
+  "action": "MOVE",
+  "target": "developer.wordpress.org (Advanced Administration > Before you install)",
+  "why": "wp-config, databases, 403 errors, cPanel: sysadmin material next to the install guide already there.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "faq-troubleshooting",
+  "title": "FAQ Troubleshooting",
+  "section": "WordPress overview > Frequently asked questions",
+  "action": "REWRITE",
+  "target": "Troubleshoot common problems",
+  "why": "Linked from core's fatal error handler (the 'critical error' notice). Becomes the user-level troubleshooting page instead of moving off-site.",
+  "area": "overview-and-using-wordpress",
+  "original_action": "MOVE",
+  "core_linked": true
+ },
+ {
+  "slug": "faq-i-make-changes-and-nothing-happens",
+  "title": "FAQ I make changes and nothing happens",
+  "section": "WordPress overview > Frequently asked questions",
+  "action": "MERGE",
+  "target": "Troubleshoot common problems",
+  "why": "Caching is the first item of a user troubleshooting page, not a page of its own.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "faq-my-site-was-hacked",
+  "title": "FAQ My site was hacked",
+  "section": "WordPress overview > Frequently asked questions",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) crisis task page that users reach from search.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "administration-screens",
+  "title": "Administration Screens",
+  "section": "Using WordPress > Administration Screens",
+  "action": "REWRITE",
+  "target": null,
+  "why": "3,260-word tour still covering Widgets, Menus, Customizer and Codex links; make it a short hub of today's menu.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "toolbar",
+  "title": "Toolbar",
+  "section": "Using WordPress > Administration Screens",
+  "action": "MERGE",
+  "target": "Administration Screens",
+  "why": "148 words and a 2019 screenshot; one section of the admin overview.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "dashboard-screen",
+  "title": "Dashboard screen",
+  "section": "Using WordPress > Administration Screens > Dashboard",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for the landing screen; widget list still accurate; screenshots need refresh.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "dashboard-updates-screen",
+  "title": "Dashboard Updates screen",
+  "section": "Using WordPress > Administration Screens > Dashboard",
+  "action": "KEEP",
+  "target": null,
+  "why": "Screen reference; the how-to lives in the update task page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "posts-screen",
+  "title": "Posts screen",
+  "section": "Using WordPress > Administration Screens > Posts",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for the posts list table.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "posts-categories-screen",
+  "title": "Posts Categories screen",
+  "section": "Using WordPress > Administration Screens > Posts",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; current (2026).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "posts-tags-screen",
+  "title": "Posts Tags screen",
+  "section": "Using WordPress > Administration Screens > Posts",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; current (2026).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "media-library-screen",
+  "title": "Media Library screen",
+  "section": "Using WordPress > Administration Screens > Media",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for grid and list views; well linked.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "media-add-new-screen",
+  "title": "Media Add New screen",
+  "section": "Using WordPress > Administration Screens > Media",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for the upload screen; well linked.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "pages-screen",
+  "title": "Pages screen",
+  "section": "Using WordPress > Administration Screens > Pages",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for the pages list table.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "pages-add-new-screen",
+  "title": "Pages Add New screen",
+  "section": "Using WordPress > Administration Screens > Pages",
+  "action": "MERGE",
+  "target": "Create pages",
+  "why": "Linked from wp-admin edit-form-advanced.php; a redirect keeps the help tab working while the classic edit-screen content goes away.",
+  "area": "overview-and-using-wordpress",
+  "original_action": "DELETE",
+  "core_linked": true
+ },
+ {
+  "slug": "introduction-to-plugins",
+  "title": "Introduction to Plugins",
+  "section": "Using WordPress > Administration Screens > Plugins",
+  "action": "MERGE",
+  "target": "Manage Plugins",
+  "why": "278 words from 2023 repeating Manage Plugins' 'What are plugins?'.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "manage-plugins",
+  "title": "Manage Plugins",
+  "section": "Using WordPress > Administration Screens > Plugins",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Main plugin task page; drop 'Developing Plugins', stop repeating the two screen pages.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "plugins-screen",
+  "title": "Plugins screen",
+  "section": "Using WordPress > Administration Screens > Plugins",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; current (2026).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "plugins-add-new-screen",
+  "title": "Plugins Add New screen",
+  "section": "Using WordPress > Administration Screens > Plugins",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for searching, uploading and favourites.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "users-screen",
+  "title": "Users screen",
+  "section": "Using WordPress > Administration Screens > Users",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for the users list table.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "users-add-new-screen",
+  "title": "Users Add New screen",
+  "section": "Using WordPress > Administration Screens > Users",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for adding a user.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "users-your-profile-screen",
+  "title": "Users Your Profile screen",
+  "section": "Using WordPress > Administration Screens > Users",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; well linked.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "tools-screen",
+  "title": "Tools screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "MERGE",
+  "target": "Tools Import screen",
+  "why": "26 words; its only tool points to the Import screen.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "tools-import-screen",
+  "title": "Tools Import screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "REWRITE",
+  "target": null,
+  "why": "2019 importer list (Blogroll, LiveJournal) is dated; absorbs the Tools screen.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "tools-export-screen",
+  "title": "Tools Export screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; still accurate.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "site-health-screen",
+  "title": "Site Health screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) reference; absorbs the root Site Health page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "tools-export-personal-data-screen",
+  "title": "Tools Export Personal Data screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for a privacy tool; drop '4.9.6 included' framing on next edit.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "tools-erase-personal-data-screen",
+  "title": "Tools Erase Personal Data screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; touched 2025.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "appearance-theme-file-editor-screen",
+  "title": "Appearance Theme File Editor Screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "KEEP",
+  "target": null,
+  "why": "Owner decision: the Theme File Editor is core functionality and relevant to block themes (under Tools). Also linked from wp-admin theme-editor.php.",
+  "area": "overview-and-using-wordpress",
+  "original_action": "MOVE",
+  "core_linked": true
+ },
+ {
+  "slug": "tools-network-screen",
+  "title": "Tools Network screen",
+  "section": "Using WordPress > Administration Screens > Tools",
+  "action": "REWRITE",
+  "target": "Short user-level page; detailed multisite setup links to developer.wordpress.org",
+  "why": "Linked from wp-admin network.php, so the slug must keep serving a page.",
+  "area": "overview-and-using-wordpress",
+  "original_action": "MOVE",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-general-screen",
+  "title": "Settings General screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; current (2026).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-writing-screen",
+  "title": "Settings Writing screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; options still match core.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-reading-screen",
+  "title": "Settings Reading screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; front-page task lives in its own page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-discussion-screen",
+  "title": "Settings Discussion screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; current (2026).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-media-screen",
+  "title": "Settings Media screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference; heavily linked from media pages.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-permalinks-screen",
+  "title": "Settings Permalinks screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Absorbs Customize permalinks so permalink structures are explained once.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-privacy-screen",
+  "title": "Settings Privacy screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "REWRITE",
+  "target": null,
+  "why": "2019; drop the 'To Theme Developers' section and the overlap with WordPress Privacy.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "settings-connectors-screen",
+  "title": "Settings Connectors screen",
+  "section": "Using WordPress > Administration Screens > Settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "New 2026 screen; current.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "write-and-publish-a-post",
+  "title": "Write and publish a post",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "NEW",
+  "why": "No block-era page walks draft, preview, schedule, publish; the core first-post task.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "create-pages",
+  "title": "Create pages",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Untouched since 2023; mixes concepts, list screen and PHP templates; make it a block-theme task.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "post-status",
+  "title": "Post Status",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "MERGE",
+  "target": "Write and publish a post",
+  "why": "User-facing statuses become a section; custom statuses and code references are developer material.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "content-visibility-block-editor",
+  "title": "Set blog content visibility (Block Editor)",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "REWRITE",
+  "target": null,
+  "why": "2018 screenshots of the removed 'Document' tab; absorbs password protection; retitle 'Control who can see a post'.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "protect-posts-with-password",
+  "title": "Protect posts with password",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "MERGE",
+  "target": "Control who can see a post",
+  "why": "Duplicates the visibility page; form-text and cookie customizations are code (drop or send to developer docs).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "what-is-an-excerpt-block-editor",
+  "title": "What is an excerpt? (Block Editor)",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "MERGE",
+  "target": "Page/Post Settings sidebar",
+  "why": "132 words; excerpt is one panel of the settings sidebar; feed advice conflates concepts.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "revisions",
+  "title": "Revisions",
+  "section": "Using WordPress > Writing & publishing",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026-09); move constant/storage sections to developer docs on next edit.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "what-is-post-type",
+  "title": "What is Post Type?",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "MERGE",
+  "target": "Key WordPress concepts",
+  "why": "User half is posts versus pages; template files and queries are developer material.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "taxonomies",
+  "title": "Taxonomies",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "REWRITE",
+  "target": null,
+  "why": "2023, developer-leaning; becomes 'Categories and tags', the user task for organizing posts.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "assign-custom-fields",
+  "title": "Assign custom fields",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) and block-editor aware.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "customize-permalinks",
+  "title": "Customize permalinks",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "MERGE",
+  "target": "Settings Permalinks screen",
+  "why": "Repeats the permalink structures listed on the screen page; one concept, once.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "create-a-static-front-page",
+  "title": "Create a static front page",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current task page with videos.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "create-a-search-page",
+  "title": "Create a search page",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "DELETE",
+  "target": "Search block",
+  "why": "125 words; block themes ship a search template and the Search block page covers the rest.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "customize-date-and-time-format",
+  "title": "Customize date and time format",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Leads with the_date()/the_time(); refocus on format strings in Settings and the Date block.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "search-engine-optimization",
+  "title": "Search Engine Optimization",
+  "section": "Using WordPress > Writing & publishing > Organizing your site",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Codex-era submission advice; refocus on built-in features (permalinks, sitemaps, search visibility).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "what-are-emoji",
+  "title": "What are Emoji?",
+  "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Becomes 'Emoji, smilies and special characters', the one page for this topic.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "what-are-smilies",
+  "title": "What are smilies?",
+  "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+  "action": "MERGE",
+  "target": "Emoji, smilies and special characters",
+  "why": "Untouched since 2023; the settings toggle is gone; one short section is enough.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "use-character-entities",
+  "title": "Use character entities",
+  "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+  "action": "MERGE",
+  "target": "Emoji, smilies and special characters",
+  "why": "Untouched since 2023; HTML entity tables; the editor inserts characters directly.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "how-wordpress-processes-post-content",
+  "title": "How WordPress processes Post Content",
+  "section": "Using WordPress > Writing & publishing > Formatting & special characters",
+  "action": "MOVE",
+  "target": "developer.wordpress.org",
+  "why": "wpautop and texturize filters; developer material written for the Visual editor.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "use-images",
+  "title": "Use Images",
+  "section": "Using WordPress > Media",
+  "action": "REWRITE",
+  "target": null,
+  "why": "230-word link hub describing the classic 'Add Media' button; becomes 'Add and manage media'.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "use-image-and-file-attachments",
+  "title": "Use image and file attachments",
+  "section": "Using WordPress > Media",
+  "action": "MERGE",
+  "target": "Add and manage media",
+  "why": "Attachments and link options are sections of the media task; theme usage is developer material.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "inserting-images-into-posts-and-pages-block-editor",
+  "title": "Inserting images into posts and pages (Block Editor)",
+  "section": "Using WordPress > Media",
+  "action": "DELETE",
+  "target": "Image block",
+  "why": "Stub that already defers to the Image block page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "the-wordpress-gallery-block-editor",
+  "title": "The WordPress Gallery (Block Editor)",
+  "section": "Using WordPress > Media",
+  "action": "DELETE",
+  "target": "Gallery block",
+  "why": "2019 media-modal workflow no longer matches the Gallery block, which has its own page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "edit-media",
+  "title": "Edit Media",
+  "section": "Using WordPress > Media",
+  "action": "KEEP",
+  "target": null,
+  "why": "Reference for the edit media page; touched 2024.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "image-size-and-quality",
+  "title": "Image size and quality",
+  "section": "Using WordPress > Media",
+  "action": "REWRITE",
+  "target": null,
+  "why": "2023; ignores generated sizes, responsive images and modern formats.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "comments-in-wordpress",
+  "title": "Comments in WordPress",
+  "section": "Using WordPress > Comments",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Overlaps Comments screen and Discussion settings; make it the 'turn on and manage comments' task.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-moderation",
+  "title": "Comment moderation",
+  "section": "Using WordPress > Comments",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) task page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "understand-comment-spam",
+  "title": "Understanding comment spam",
+  "section": "Using WordPress > Comments",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) concept page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "trackbacks-and-pingbacks",
+  "title": "Trackbacks and Pingbacks",
+  "section": "Using WordPress > Comments",
+  "action": "KEEP",
+  "target": null,
+  "why": "Accurate concept reference; touched 2025.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "comments-screen",
+  "title": "Comments screen",
+  "section": "Using WordPress > Comments",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Untouched since January 2023, 2019 screenshots; refresh as reference.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "roles-and-capabilities",
+  "title": "Roles and Capabilities",
+  "section": "Using WordPress > Users, roles & profiles",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026); users look up what each role can do.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "use-gravatars",
+  "title": "Use Gravatars",
+  "section": "Using WordPress > Users, roles & profiles",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "reset-your-password",
+  "title": "Reset your password",
+  "section": "Using WordPress > Users, roles & profiles",
+  "action": "SPLIT",
+  "target": "Reset your password; Reset a password without email access (developer.wordpress.org)",
+  "why": "Lost-password flow is a user task; MySQL, phpMyAdmin, FTP and WP-CLI methods are sysadmin.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "troubleshoot-login-issues",
+  "title": "Troubleshoot login issues",
+  "section": "Using WordPress > Users, roles & profiles",
+  "action": "MERGE",
+  "target": "Reset your password",
+  "why": "200 words from 2023; cookie and firewall tips fit the login help page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "hosting-wordpress",
+  "title": "Hosting WordPress",
+  "section": "Using WordPress > Installation & hosting",
+  "action": "REWRITE",
+  "target": null,
+  "why": "264 words from 2023; becomes 'Choose a host and install WordPress', linking the developer install guide.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "use-automated-installation",
+  "title": "Use automated installation",
+  "section": "Using WordPress > Installation & hosting",
+  "action": "MERGE",
+  "target": "Choose a host and install WordPress",
+  "why": "2018 screenshots of Fantastico/APS; one-click installers deserve a paragraph, not a page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "administer-your-blog",
+  "title": "Administer your Blog",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "MERGE",
+  "target": "Maintain your site",
+  "why": "Codex-era routine with Codex links; third page covering the same maintenance checklist.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-housekeeping",
+  "title": "WordPress Housekeeping",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "MERGE",
+  "target": "Maintain your site",
+  "why": "Same checklist as the maintenance page (update, prune plugins/themes, clean database).",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-site-maintenance",
+  "title": "WordPress site maintenance",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Target of three overlapping pages; drop raw SQL and dead link-checker lists; retitle 'Maintain your site'.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "updating-wordpress",
+  "title": "Updating WordPress",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Manual FTP update duplicates the developer guide; absorb auto-updates; retitle 'Update WordPress, plugins and themes'.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "plugins-themes-auto-updates",
+  "title": "Plugin and themes auto-updates",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "MERGE",
+  "target": "Update WordPress, plugins and themes",
+  "why": "Untouched since January 2023; auto-updates are one section of the update task.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": true
+ },
+ {
+  "slug": "recovery-mode",
+  "title": "Recovery Mode",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2025) recovery task page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "password-best-practices",
+  "title": "Password Best Practices",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026) and stands alone.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "why-should-i-use-https",
+  "title": "Why should I use HTTPS",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "MERGE",
+  "target": "Keep your site secure",
+  "why": "334 words from 2023; one section of a security overview.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-privacy",
+  "title": "WordPress Privacy",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Repeats the three privacy screen pages; make it the overview that links to them.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "back-up-your-site",
+  "title": "Back up your site",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "NEW",
+  "why": "Every update page says 'back up first' but the only backup guide is the developer manual-backup page.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "keep-your-site-secure",
+  "title": "Keep your site secure",
+  "section": "Using WordPress > Maintenance & security",
+  "action": "NEW",
+  "why": "No user security overview since hardening moved to developer docs; absorbs HTTPS.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "site-health",
+  "title": "Site Health: keep your website healthy",
+  "section": "Root pages",
+  "action": "MERGE",
+  "target": "Site Health screen",
+  "why": "2019 promo page duplicating the Site Health screen; redirect keeps the URL working.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "update-php",
+  "title": "Get a faster, more secure website: update your PHP today",
+  "section": "Root pages",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Linked from wp-admin PHP notices; PHP 7.4/5.6 figures and Codex link are stale. Keep the URL.",
+  "area": "overview-and-using-wordpress",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-block-editor",
+  "title": "WordPress Block Editor",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current (2026-09) overview of the editor workspace; the natural entry point for the section.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "page-post-settings-sidebar",
+  "title": "Page/Post Settings sidebar",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Substantive reference, well linked; verify against current sidebar, last touched 2024-10.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "preferences-overview",
+  "title": "Preferences overview",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Unique reference; six inbound links; current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "how-to-use-the-preview-function",
+  "title": "How to use the View feature",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct task; current. Consider slug alias matching the \"View\" title.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "distraction-free-mode",
+  "title": "Distraction Free mode",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current, distinct feature; drop the \"new\" framing.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "keyboard-shortcuts-block-editor",
+  "title": "Use keyboard shortcuts (Block Editor)",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Pure reference, current; classic counterpart already lives in Classic WordPress.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "notes",
+  "title": "Notes",
+  "section": "Block editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "New 7.0 collaboration feature, current; needs inbound links from editor overview.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "work-with-blocks",
+  "title": "Work with blocks",
+  "section": "Block editor > Working with blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Becomes the single home for the toolbar and settings blurbs repeated on 100+ block pages; trim duplicated how-tos.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "adding-a-new-block",
+  "title": "Adding a new block",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared concept with 122 inbound links; block pages link here instead of repeating it.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "moving-blocks",
+  "title": "Moving blocks",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared concept (80 inbound); replaces the Moving-blocks blurb copied into 54 pages.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "list-view",
+  "title": "List view",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current, distinct tool.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "more-options",
+  "title": "More options",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared concept (121 inbound); replaces the More options paragraph copied into block pages.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "link-editing",
+  "title": "Link control",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared concept used by many text blocks; current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "more-text-editing-overview",
+  "title": "More rich text editing options",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared concept (17 inbound); text block pages link here.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "page-jumps",
+  "title": "Page Jumps",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Real user task; current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "block-directory",
+  "title": "Block Directory",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Core feature, user-facing; drop the \"new way\" framing.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "block-error-unexpected-or-invalid-content",
+  "title": "Block Error: Unexpected or Invalid Content",
+  "section": "Block editor > Working with blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Unique troubleshooting page; needs inbound links from Work with blocks.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "layout-settings-overview",
+  "title": "Layout Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Maps 1:1 to an inspector panel; shared target for block pages.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "position-settings-overview",
+  "title": "Position Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "One page per inspector panel; stale (2024-06) and unlinked, verify sticky options.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "colors-settings-overview",
+  "title": "Colors Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared panel reference (65 inbound); current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "background-settings-overview",
+  "title": "Background Settings Overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Maps to an inspector panel; current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "typography-settings-overview",
+  "title": "Typography Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared panel reference (75 inbound); current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "dimension-controls-overview",
+  "title": "Dimension Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared panel reference (73 inbound); last touched 2024-06, verify controls.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "border-settings-overview",
+  "title": "Border & Shadow Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared panel reference (50 inbound); current enough (2025-04).",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "filters-settings-overview",
+  "title": "Filters Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Short but maps to a real panel; last touched 2024-06, verify.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "advanced-settings-overview",
+  "title": "Advanced Settings overview",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "Shared panel reference (117 inbound); replaces the Advanced list copied into 46 pages.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "responsive-styles",
+  "title": "Responsive styles",
+  "section": "Block editor > Working with blocks > Block settings",
+  "action": "KEEP",
+  "target": null,
+  "why": "New feature, current; add inbound links from panel pages.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "block-pattern",
+  "title": "Block Patterns",
+  "section": "Block editor > Patterns",
+  "action": "KEEP",
+  "target": null,
+  "why": "Core concept page with 16 inbound links; current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "reusable-blocks",
+  "title": "Synced Patterns (Reusable blocks)",
+  "section": "Block editor > Patterns",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Feature renamed in 6.3; title and framing still lead with the old name.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comparing-patterns-template-parts-and-reusable-blocks",
+  "title": "Comparing Patterns, Template Parts, and Synced Patterns (Reusable Blocks)",
+  "section": "Block editor > Patterns",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Useful decision aid, but title and text still centre on Reusable blocks.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "block-pattern-directory",
+  "title": "Block Pattern Directory",
+  "section": "Block editor > Patterns",
+  "action": "KEEP",
+  "target": null,
+  "why": "User-facing, current.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "submit-your-block-pattern-to-the-directory",
+  "title": "Submit your Block Pattern to the Directory",
+  "section": "Block editor > Patterns",
+  "action": "MOVE",
+  "target": "wordpress.org/patterns (Pattern Directory help pages)",
+  "why": "Contributor workflow for a wordpress.org service, not site editing; untouched since 2023-01.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "blocks-list",
+  "title": "Blocks list",
+  "section": "Block editor > Blocks list",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Must reflect the family model and redirects; drop \"new Block Editor\" framing.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "classic-block",
+  "title": "Classic block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Still needed for legacy content; short and template-heavy, trim to what is unique.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "code-block",
+  "title": "Code block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "details-block",
+  "title": "Details block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "footnotes-block",
+  "title": "Footnotes block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block; drop \"WordPress 6.3 introduces\" framing.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "heading-block",
+  "title": "Heading block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "list-block",
+  "title": "List block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "math-block",
+  "title": "Math block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "paragraph-block",
+  "title": "Paragraph block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "verse-block",
+  "title": "Poetry block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "preformatted-block",
+  "title": "Preformatted block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "pullquote-block",
+  "title": "Pullquote block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "quote-block",
+  "title": "Quote block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "table-block",
+  "title": "Table block",
+  "section": "Block editor > Blocks list > Text blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "audio-block",
+  "title": "Audio block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "cover-block",
+  "title": "Cover block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "file-block",
+  "title": "File block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "gallery-block",
+  "title": "Gallery block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "icon-block",
+  "title": "Icon block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "image-block",
+  "title": "Image block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "media-text-block",
+  "title": "Media & Text block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "playlist-block",
+  "title": "Playlist block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "video-block",
+  "title": "Video block",
+  "section": "Block editor > Blocks list > Media blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "accordion-block",
+  "title": "Accordion block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "buttons-block",
+  "title": "Buttons block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "columns-block",
+  "title": "Columns block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "grid-block",
+  "title": "Grid block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "MERGE",
+  "target": "Group block",
+  "why": "Grid is a Group variation; its layout settings differ, little else does.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "group-block",
+  "title": "Group block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Row, Stack and Grid are Group variations; one page explains the shared container and the layout choice.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "more-block",
+  "title": "More block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "page-break-block",
+  "title": "Page Break block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block; last touched 2024-06, verify.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "row-block",
+  "title": "Row block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "MERGE",
+  "target": "Group block",
+  "why": "Row is a Group variation; its layout settings differ, little else does.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "separator-block",
+  "title": "Separator block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "spacer-block",
+  "title": "Spacer block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "stack-block",
+  "title": "Stack block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "MERGE",
+  "target": "Group block",
+  "why": "Stack is a Group variation; its layout settings differ, little else does.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "tabs-block",
+  "title": "Tabs block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct content block users insert directly; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "button-block",
+  "title": "(Deprecated)Button block",
+  "section": "Block editor > Blocks list > Design blocks",
+  "action": "DELETE",
+  "target": "Buttons block",
+  "why": "21-word deprecation stub.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "archives-block",
+  "title": "Archives block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "calendar-block",
+  "title": "Calendar block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "categories-list-block",
+  "title": "Categories List block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "custom-html",
+  "title": "Custom HTML",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "latest-comments-block",
+  "title": "Latest Comments block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "latest-posts-block",
+  "title": "Latest Posts block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "page-list-block",
+  "title": "Page List block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "rss-block",
+  "title": "RSS block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "search-block",
+  "title": "Search block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "shortcode-block",
+  "title": "Shortcode block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "social-icons",
+  "title": "Social Icons block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "tag-cloud-block",
+  "title": "Tag Cloud block",
+  "section": "Block editor > Blocks list > Widget blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct block usable in any post or template; keep one page, strip copied toolbar/settings text.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "archive-title-block",
+  "title": "Archive Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Archive title blocks",
+  "why": "Query Title variation; 58% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-author-name-block",
+  "title": "Author Name block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Post-context block; 43% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "avatar-block",
+  "title": "Avatar block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Author/comment context block; settings fit one section.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "breadcrumbs-block",
+  "title": "Breadcrumbs block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "New, substantive block; works on its own.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "categories-block",
+  "title": "Categories block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Post Terms variation; 43% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-author-name-block",
+  "title": "Comment  Author Name block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-content-block",
+  "title": "Comment Content block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-date-block",
+  "title": "Comment Date block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-edit-link-block",
+  "title": "Comment Edit Link block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-reply-link-block",
+  "title": "Comment Reply Link block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-template-block",
+  "title": "Comment Template block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comments-block",
+  "title": "Comments block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Container for 11 dependent blocks that cannot be used alone; becomes the one comments reference.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comments-count-block",
+  "title": "Comments Count block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-link-block",
+  "title": "Comments Link block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comment-pagination-block",
+  "title": "Comments Pagination block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "comments-title-block",
+  "title": "Comments Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-content-block",
+  "title": "Content block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post blocks",
+  "why": "Template-only block; 41% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "custom-link-block",
+  "title": "Custom Link block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Navigation block",
+  "why": "Only usable inside the Navigation block.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "date-block",
+  "title": "Date Block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Date, Post Date and Modified Date now overlap; one section explains all three.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-excerpt-block",
+  "title": "Excerpt block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post blocks",
+  "why": "Template-only block; 46% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "home-link-block",
+  "title": "Home Link block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Navigation block",
+  "why": "Only usable inside the Navigation block.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "login-out-block",
+  "title": "Login-out block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Standalone block; unlinked and last touched 2024-06, verify.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-modified-date-block",
+  "title": "Modified Date block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Modified Date is a Date variation; 43% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "navigation-block",
+  "title": "Navigation block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Hub for menus (11 inbound); its child blocks only exist inside it.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "next-post-block",
+  "title": "Next Post block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post Navigation Link block",
+  "why": "Variation of Post Navigation Link; content near-identical.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "pagination-block",
+  "title": "Pagination block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct, substantive block with its own inner blocks.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-author-biography-block",
+  "title": "Post Author Biography block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Post-context block; small unique content.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-comments-form-block",
+  "title": "Post Comments Form block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Comments block",
+  "why": "Only usable inside the Comments block; page is mostly copied boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-date-block",
+  "title": "Post Date block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Overlaps Date block; 42% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-featured-image-block",
+  "title": "Post Featured Image block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post blocks",
+  "why": "Template/Query Loop block; unique settings fit one section.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-navigation-link-block",
+  "title": "Post Navigation Link block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Next and Previous Post are its variations; 57% boilerplate today.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-tags-block",
+  "title": "Post Tags block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post meta blocks",
+  "why": "Post Terms variation; 38% boilerplate.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-template-block",
+  "title": "Post Template block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Query Loop block",
+  "why": "Inner block of Query Loop only; explained better in context.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-title-block",
+  "title": "Post Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "DELETE",
+  "target": "Post blocks",
+  "why": "15-word rename stub (now Title block).",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "posts-list-block",
+  "title": "Posts List block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "DELETE",
+  "target": "Query Loop block",
+  "why": "Variation removed in 6.7; page only points to Query Loop.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "previous-post-block",
+  "title": "Previous Post block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post Navigation Link block",
+  "why": "Variation of Post Navigation Link; content near-identical.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "query-loop-block",
+  "title": "Query Loop block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Key page (23 inbound); Post Template cannot exist outside it.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "query-title-block",
+  "title": "Query Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Archive Title and Search Results Title are Query Title variations; all label archive views.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "query-total-block",
+  "title": "Query Total block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Archive title blocks",
+  "why": "Small archive helper; still written as \"6.8 is set to introduce\".",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "read-more-block",
+  "title": "Read More block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post blocks",
+  "why": "Only meaningful inside Query Loop.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "search-results-title-block",
+  "title": "Search Results Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Archive title blocks",
+  "why": "Query Title variation; only the label differs.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-logo-block",
+  "title": "Site Logo block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Site identity blocks",
+  "why": "Substantive but belongs with title and tagline; links to Identity task.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-tagline-block",
+  "title": "Site Tagline block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Site identity blocks",
+  "why": "63% boilerplate; same settings as Site Title.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-title-block",
+  "title": "Site Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Site identity blocks",
+  "why": "59% boilerplate; same settings as Site Tagline.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "submenu-block",
+  "title": "Submenu block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Navigation block",
+  "why": "Only usable inside the Navigation block.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "template-part-block",
+  "title": "Template Part block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "Substantive, low boilerplate, eight inbound links; key to header/footer editing.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "term-description-block",
+  "title": "Term Description block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Archive title blocks",
+  "why": "Archive-only block; 62% boilerplate, little unique content.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "terms-query-block",
+  "title": "Terms Query block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "KEEP",
+  "target": null,
+  "why": "New, substantive container block; needs inbound links.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "time-to-read-block",
+  "title": "Time to Read block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post blocks",
+  "why": "Small post-context block.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "title-block",
+  "title": "Title block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "MERGE",
+  "target": "Post blocks",
+  "why": "157 words; cannot stand alone.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-author-block",
+  "title": "(Deprecated) Post Author block",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "DELETE",
+  "target": "Post meta blocks",
+  "why": "32-word deprecation stub (deprecated in 7.0).",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "embeds",
+  "title": "Embeds",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "REWRITE",
+  "target": null,
+  "why": "One page replaces 36: the provider pages repeat the same paste-URL workflow.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "embed-block",
+  "title": "Embed block",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Generic block and the section index describe the same workflow.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "amazon-kindle-embed",
+  "title": "Amazon Kindle Embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Amazon Kindle specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "animoto-embed",
+  "title": "Animoto Embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Animoto specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "bluesky-embed",
+  "title": "Bluesky embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Bluesky specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "cloudup-embed",
+  "title": "Cloudup Embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Cloudup specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "crowdsignal-embed",
+  "title": "Crowdsignal embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Crowdsignal specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "dailymotion-embed",
+  "title": "Dailymotion embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Dailymotion specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "facebook-embed",
+  "title": "Facebook embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "DELETE",
+  "target": "Embeds",
+  "why": "oEmbed endpoint closed in 2020; embedding no longer works. One note on Embeds suffices.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "flickr-embed",
+  "title": "Flickr embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Flickr specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "imgur-embed",
+  "title": "Imgur embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Imgur specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "instagram-embed",
+  "title": "Instagram embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "DELETE",
+  "target": "Embeds",
+  "why": "oEmbed endpoint closed in 2020; embedding no longer works. One note on Embeds suffices.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "issuu-embed",
+  "title": "Issuu embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Issuu specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "kickstarter-embed",
+  "title": "Kickstarter embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Kickstarter specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "mixcloud-embed",
+  "title": "MixCloud embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Mixcloud specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "pinterest-embed",
+  "title": "Pinterest embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Pinterest specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "pocket-casts-embed",
+  "title": "Pocket Casts embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Pocket Casts specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "reddit-embed",
+  "title": "Reddit embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Reddit specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "reverbnation-embed",
+  "title": "ReverbNation embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; ReverbNation specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "screencast-block",
+  "title": "Screencast embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Screencast specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "scribd-embed",
+  "title": "Scribd embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Scribd specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "smugmug-embed",
+  "title": "SmugMug embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; SmugMug specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "soundcloud-embed",
+  "title": "SoundCloud embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; SoundCloud specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "speaker-deck-embed",
+  "title": "Speaker Deck embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Speaker Deck specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "spotify-embed",
+  "title": "Spotify embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Spotify specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "ted-embed",
+  "title": "TED embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; TED specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "tiktok-embed",
+  "title": "TikTok embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; TikTok specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "tumblr-embed",
+  "title": "Tumblr embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Tumblr specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "twitter-embed",
+  "title": "Twitter embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same workflow as every embed; row should say X (twitter.com/x.com URLs).",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "videopress-embed",
+  "title": "VideoPress embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; VideoPress specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "vimeo-embed",
+  "title": "Vimeo embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Vimeo specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "wolfram-embed",
+  "title": "Wolfram embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; Wolfram specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-embed",
+  "title": "WordPress embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; WordPress specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "wordpress-tv-embed-block",
+  "title": "WordPress.tv embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; WordPress.tv specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "youtube-embed",
+  "title": "YouTube embed",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "MERGE",
+  "target": "Embeds",
+  "why": "Same paste-URL workflow as every embed; YouTube specifics become a table row or note.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "slideshare-embed",
+  "title": "Slideshare embed (Removed)",
+  "section": "Block editor > Blocks list > Embeds",
+  "action": "DELETE",
+  "target": "Embeds",
+  "why": "Block removed in WordPress 6.6.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-editor",
+  "title": "Site Editor",
+  "section": "Site Editor",
+  "action": "REWRITE",
+  "target": null,
+  "why": "30 inbound links; 2,300 words mixing tour and how-tos now covered by task pages.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "site-editor-navigation",
+  "title": "Site Editor navigation",
+  "section": "Site Editor",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Still framed as \"6.3 introduces\"; becomes the menu task page, Navigation block stays reference.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-editor-identity",
+  "title": "Site Editor Identity",
+  "section": "Site Editor",
+  "action": "REWRITE",
+  "target": null,
+  "why": "272 words; natural home for site icon instructions.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-editor-pages",
+  "title": "Site Editor Pages",
+  "section": "Site Editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Substantive and current (2025-08).",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "template-editor",
+  "title": "Template Editor",
+  "section": "Site Editor",
+  "action": "REWRITE",
+  "target": null,
+  "why": "\"Template Editor\" is no longer a distinct UI; templates live in Site Editor > Templates.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-editor-patterns",
+  "title": "Site Editor Patterns",
+  "section": "Site Editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current; covers managing patterns and template parts.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "styles-overview",
+  "title": "Styles overview",
+  "section": "Site Editor",
+  "action": "SPLIT",
+  "target": "Styles overview; Change colors and fonts with Styles; Add custom CSS",
+  "why": "4,140 words, 42 images: reference, colour/font task and CSS task in one page.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "the-font-library",
+  "title": "The Font Library",
+  "section": "Site Editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Distinct, current; linked from the fonts task.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "zoom-out-view",
+  "title": "Zoom out view",
+  "section": "Site Editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current, distinct.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-editor-command-palette",
+  "title": "Command Palette",
+  "section": "Site Editor",
+  "action": "KEEP",
+  "target": null,
+  "why": "Current; also used in the post editor.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "additional-guide-to-using-the-site-editor",
+  "title": "Additional guide to using the Site Editor",
+  "section": "Site Editor",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Grab-bag from 2024-02; homepage part is a real gap, rest duplicates Identity and Styles.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "work-with-themes",
+  "title": "Work with themes",
+  "section": "Themes",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Says Twenty Twenty-Two is default; template-hierarchy and creating-themes parts belong on developer.wordpress.org (link).",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "appearance-themes-screen",
+  "title": "Appearance Themes Screen",
+  "section": "Themes",
+  "action": "REWRITE",
+  "target": null,
+  "why": "Untouched since 2023-01; still names Twenty Nineteen as the default theme.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "block-themes",
+  "title": "Block themes",
+  "section": "Themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Core concept, 13 inbound links, current.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "create-a-favicon",
+  "title": "Create a Favicon",
+  "section": "Themes",
+  "action": "MERGE",
+  "target": "Set your site title, logo and icon",
+  "why": "Site icon is set in Identity or Settings > General; pre-6.5 half is obsolete.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-five",
+  "title": "Twenty Twenty-Five",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Guide to templates, style variations and patterns of the active default; verify against latest version.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-five-changelog",
+  "title": "Twenty Twenty-Five changelog",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Changelogs are a separate decision; left as is.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-twenty-four",
+  "title": "Twenty Twenty-Four",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Substantive user guide for a widely used block theme; last touched 2024-08.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-four-changelog",
+  "title": "Twenty Twenty-Four changelog",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Changelogs are a separate decision; left as is.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-twenty-three",
+  "title": "Twenty Twenty-Three",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Mostly style variations; last touched 2024-08, could shrink to a stub.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-three-changelog",
+  "title": "Twenty Twenty-Three Changelog",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Changelogs are a separate decision; left as is.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-twenty-two",
+  "title": "Twenty Twenty-Two",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "First default block theme; last touched 2024-08, could shrink to a stub.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-two-changelog",
+  "title": "Twenty Twenty-Two changelog",
+  "section": "Themes > Default themes",
+  "action": "KEEP",
+  "target": null,
+  "why": "Changelogs are a separate decision; left as is.",
+  "area": "editing-and-design",
+  "core_linked": true
+ },
+ {
+  "slug": "post-blocks",
+  "title": "Post blocks",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "NEW",
+  "why": "Template blocks showing post content share context and settings; one page replaces six.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "post-meta-blocks",
+  "title": "Post meta blocks",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "NEW",
+  "why": "Small post-context blocks, 25–47% boilerplate; one page replaces eight.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "site-identity-blocks",
+  "title": "Site identity blocks",
+  "section": "Block editor > Blocks list > Theme blocks",
+  "action": "NEW",
+  "why": "Three blocks with near-identical settings; 59–63% boilerplate today.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "edit-your-header-and-footer",
+  "title": "Edit your site's header and footer",
+  "section": "Site Editor",
+  "action": "NEW",
+  "why": "Most common Site Editor task has no page; template-part content is scattered across three references.",
+  "area": "editing-and-design",
+  "core_linked": false
+ },
+ {
+  "slug": "write-posts-classic-editor",
+  "title": "Write posts (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "REWRITE",
+  "target": "Retitle \"Using the Classic Editor\"; becomes the section index; absorbs excerpt, visibility, sticky. Slug kept (linked from wp-admin edit-form-advanced.php)",
+  "why": "Core help tab links here; already covers the Publish box, the natural home for small classic pages.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "first-steps-with-wordpress-classic",
+  "title": "First steps with WordPress (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "DELETE",
+  "target": "redirect → first-steps-with-wordpress-block-editor",
+  "why": "Near-verbatim copy of the block version with 2018 screenshots and Twenty Nineteen; only the editor differs.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "what-is-an-excerpt-classic-editor",
+  "title": "What is an excerpt? (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "MERGE",
+  "target": "write-posts-classic-editor (#excerpt)",
+  "why": "101 words; the Excerpt box is one field of the classic edit screen.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "content-visibility-classic-editor",
+  "title": "Set blog content visibility (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "MERGE",
+  "target": "write-posts-classic-editor (#visibility)",
+  "why": "Only the Publish-box steps are classic; the rest duplicates the block twin. Drops stale \"not in core\" claim.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "sticky-posts-classic-editor",
+  "title": "Sticky Posts (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "MERGE",
+  "target": "write-posts-classic-editor (#sticky-posts)",
+  "why": "162 words; first half is outdated block-editor steps (\"Document tab\"); the classic half is one checkbox.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "inserting-images-into-posts-and-pages-classic",
+  "title": "Inserting images into posts and pages (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "REWRITE",
+  "target": "Retitle \"Add media in the Classic Editor\"; absorbs the gallery page. Slug kept",
+  "why": "Most-linked classic page (8 in-links); the Add Media modal covers images and galleries in one flow.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "the-wordpress-gallery-classic-editor",
+  "title": "The WordPress Gallery (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "MERGE",
+  "target": "inserting-images-into-posts-and-pages-classic (#gallery); [gallery] shortcode section → media-shortcodes",
+  "why": "Same Add Media modal as images; 0 in-links.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "audio-shortcode",
+  "title": "Audio Shortcode",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "MERGE",
+  "target": "media-shortcodes",
+  "why": "Identical structure to video-shortcode; Related section links legacy Codex pages.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "video-shortcode",
+  "title": "Video shortcode",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "MERGE",
+  "target": "media-shortcodes",
+  "why": "Identical structure to audio-shortcode; one reference page serves both.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "write-code-in-your-posts-classic-editor",
+  "title": "Write code in your posts (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "REWRITE",
+  "target": "Trim to Visual/Text-tab behaviour; entity list → link use-character-entities",
+  "why": "Duplicates use-character-entities; mentions obsolete `<tt>` and \"older versions\" behaviour.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "keyboard-shortcuts-classic-editor",
+  "title": "Use keyboard shortcuts (Classic Editor)",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "SPLIT",
+  "target": "keyboard-shortcuts-classic-editor (editor shortcuts); comments-screen (comment moderation shortcuts)",
+  "why": "Comment shortcuts work with any editor and are switched on in the profile, not the Classic Editor.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "media-shortcodes",
+  "title": "Audio, video and gallery shortcodes",
+  "section": "Classic WordPress > Classic Editor",
+  "action": "NEW",
+  "target": "[merged from: audio-shortcode, video-shortcode, gallery shortcode section]",
+  "why": "One shortcode reference instead of two clones plus Codex links.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "customizer",
+  "title": "Customizer",
+  "section": "Classic WordPress > Widgets, Menus and the Customizer",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Linked from wp-admin customize.php; accurate for classic themes.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "block-based-widgets-editor",
+  "title": "Block-based Widgets Editor",
+  "section": "Classic WordPress > Widgets, Menus and the Customizer",
+  "action": "REWRITE",
+  "target": "Retitle \"Widgets\"; becomes the widgets page; absorbs widget/widget-area concepts from manage-wordpress-widgets",
+  "why": "Default widgets screen for classic themes since 5.8; should lead, not the classic screen.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "manage-wordpress-widgets",
+  "title": "Manage WordPress widgets",
+  "section": "Classic WordPress > Widgets, Menus and the Customizer",
+  "action": "SPLIT",
+  "target": "block-based-widgets-editor (what widgets and widget areas are); appearance-widgets-screen-classic-editor (classic steps, Text/RSS widgets). Redirect → block-based-widgets-editor",
+  "why": "Mixes concepts with classic-only steps already repeated on the classic Widgets screen page.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "appearance-widgets-screen-classic-editor",
+  "title": "Appearance Widgets Screen (Classic Editor)",
+  "section": "Classic WordPress > Widgets, Menus and the Customizer",
+  "action": "REWRITE",
+  "target": "Retitle \"Classic Widgets screen\" (Classic Widgets plugin). Slug kept (linked from wp-admin widgets-form.php)",
+  "why": "Title is wrong: this screen needs the Classic Widgets plugin, not the Classic Editor.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "appearance-menus-screen",
+  "title": "Appearance Menus Screen",
+  "section": "Classic WordPress > Widgets, Menus and the Customizer",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Linked from wp-admin nav-menus.php; recently updated with a block-theme note.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "classic-default-themes",
+  "title": "Classic default themes",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "NEW",
+  "target": "[new] section index: table of theme, release year, WordPress version, theme directory, guide, changelog",
+  "why": "Replaces the generated intro and the two changelog-only stubs (Fourteen, Thirteen) with one scannable table.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-one",
+  "title": "Twenty Twenty-One",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-twenty-one-changelog",
+  "title": "Twenty Twenty-One changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-twenty",
+  "title": "Twenty Twenty",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twenty-changelog",
+  "title": "Twenty Twenty changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-nineteen",
+  "title": "Twenty Nineteen",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-nineteen-changelog",
+  "title": "Twenty Nineteen changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-seventeen",
+  "title": "Twenty Seventeen",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-seventeen-changelog",
+  "title": "Twenty Seventeen changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-sixteen",
+  "title": "Twenty Sixteen",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "REWRITE",
+  "target": "Bring to the 2024 theme-page template (Quick Specs, Patterns, Support & resources)",
+  "why": "Pre-2024 shape and 2018 screenshots; links the classic excerpt page; no Patterns section.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-sixteen-changelog",
+  "title": "Twenty Sixteen changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-fifteen",
+  "title": "Twenty Fifteen",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "REWRITE",
+  "target": "Bring to the 2024 theme-page template (Quick Specs, Patterns, Support & resources)",
+  "why": "Pre-2024 shape and 2018 screenshots; links the classic excerpt page; no Patterns section.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-fifteen-changelog",
+  "title": "Twenty Fifteen changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-fourteen-changelog",
+  "title": "Twenty Fourteen changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-thirteen-changelog",
+  "title": "Twenty Thirteen changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-twelve",
+  "title": "Twenty Twelve",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-twelve-changelog",
+  "title": "Twenty Twelve changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-eleven",
+  "title": "Twenty Eleven",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-eleven-changelog",
+  "title": "Twenty Eleven changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ },
+ {
+  "slug": "twenty-ten",
+  "title": "Twenty Ten",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Unique how-to for a still-updated bundled theme; reviewed in 2024; cheap to keep.",
+  "area": "classic-and-policies",
+  "core_linked": false
+ },
+ {
+  "slug": "twenty-ten-changelog",
+  "title": "Twenty Ten changelog",
+  "section": "Classic WordPress > Classic default themes",
+  "action": "KEEP",
+  "target": "—",
+  "why": "Bundled theme readme.txt links each version to #Version_X.Y here; updated every core release.",
+  "area": "classic-and-policies",
+  "core_linked": true
+ }
+]

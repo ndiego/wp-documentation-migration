@@ -1,0 +1,79 @@
+---
+// data/content-proposal.md (the macro content proposal: keep / rewrite / merge / split / delete /
+// move / new, per article) rendered at build time with the docs' remark/rehype plugins, with a
+// summary computed from data/content-proposal.json. Slugs in inline code link into the proposed tree.
+import fs from 'node:fs';
+import path from 'node:path';
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import { visit } from 'unist-util-visit';
+// @ts-ignore plain JS helper
+import remarkStripFirstH1 from '../../../plugins/remark-strip-first-h1.mjs';
+// @ts-ignore plain JS helper
+import remarkGithubAlerts from '../../../plugins/remark-github-alerts.mjs';
+// @ts-ignore plain JS helper
+import rehypeWpHeadingIds from '../../../plugins/rehype-wp-heading-ids.mjs';
+// @ts-ignore plain JS helper
+import { structureData } from '../../../lib/structure-data.mjs';
+// @ts-ignore plain JS helper
+import { DATA_DIR, routeFromId } from '../../../lib/paths.mjs';
+
+const md = fs.readFileSync(path.join(DATA_DIR, 'content-proposal.md'), 'utf8');
+const title = /^#\s+(.+)$/m.exec(md)?.[1]?.trim() ?? 'Content proposal';
+
+const ORDER = ['KEEP', 'REWRITE', 'MERGE', 'SPLIT', 'DELETE', 'MOVE', 'NEW'];
+const summary: any = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'content-proposal-summary.json'), 'utf8'));
+const counts: Record<string, number> = Object.fromEntries(ORDER.map((a) => [a, summary.counts[a] ?? 0]));
+const existing: number = summary.pages_now;
+const after: number = summary.pages_after;
+const coreLinked: number = summary.core_linked_articles;
+
+const { map } = structureData();
+const bySlug = new Map(map.map((a: any) => [a.slug, routeFromId(a.proposed_id)]));
+const remarkLinkCode = () => (tree: any) => {
+	visit(tree, 'inlineCode', (node: any, index: number | undefined, parent: any) => {
+		if (index === undefined || !parent || parent.type === 'link') return;
+		const href = bySlug.get(node.value.trim());
+		if (href) parent.children[index] = { type: 'link', url: href, children: [node] };
+	});
+};
+const processor = await createMarkdownProcessor({
+	remarkPlugins: [remarkStripFirstH1, remarkGithubAlerts, remarkLinkCode],
+	rehypePlugins: [rehypeWpHeadingIds],
+});
+const { code, metadata } = await processor.render(md);
+---
+
+<StarlightPage
+	frontmatter={{ title, description: 'Which documentation pages to keep, rewrite, merge, split, delete, move or add, on top of the restructure.' }}
+	headings={metadata.headings}
+	hasSidebar={false}
+>
+	<p>
+		A secondary proposal on top of the <a href="/compare/">restructure</a>: what the documentation should consist of, page by page,
+		before any rewriting starts. Rendered from <code>data/content-proposal.md</code>; counts come from <code>data/content-proposal.json</code>.
+		Slugs link into the <a href="/proposed/">proposed tree</a>.
+	</p>
+	<div class="tiles">
+		<div class="tile"><span class="n">{existing}</span><span class="l">pages today</span></div>
+		<div class="tile"><span class="n">{after}</span><span class="l">pages proposed</span></div>
+		<div class="tile"><span class="n">{coreLinked}</span><span class="l">slugs linked from WordPress core</span></div>
+		{ORDER.map((a) => (
+			<div class="tile small"><span class="n">{counts[a]}</span><span class="l">{a.toLowerCase()}</span></div>
+		))}
+	</div>
+	<p class="fine">
+		"Pages proposed" is the sum of each area's proposed end-state list (70 + 114 + 30). Merged, deleted and moved pages disappear behind redirects. Slugs linked from WordPress core (help tabs, theme readmes, the About screen) keep resolving in every case.
+	</p>
+	<Fragment set:html={code} />
+</StarlightPage>
+
+<style>
+	.tiles { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0 0.5rem; }
+	.tile { flex: 0 1 9.5rem; border: 1px solid var(--sl-color-gray-5); border-radius: 0.5rem; padding: 0.75rem 1rem; display: flex; flex-direction: column; }
+	.tile.small { flex: 0 1 5.5rem; padding: 0.5rem 0.75rem; }
+	.tile .n { font-size: 1.6rem; font-weight: 600; line-height: 1.1; color: var(--sl-color-accent-high); }
+	.tile.small .n { font-size: 1.15rem; }
+	.tile .l { font-size: var(--sl-text-xs); color: var(--sl-color-gray-3); margin-top: 0.15rem; }
+	.fine { font-size: var(--sl-text-sm); color: var(--sl-color-gray-3); }
+</style>

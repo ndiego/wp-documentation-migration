@@ -1,0 +1,102 @@
+{
+ "pages_now": 323,
+ "pages_after": 214,
+ "counts": {
+  "REWRITE": 52,
+  "MERGE": 102,
+  "KEEP": 150,
+  "DELETE": 12,
+  "MOVE": 3,
+  "NEW": 9,
+  "SPLIT": 4
+ },
+ "core_linked_articles": 75,
+ "core_linked_with_redirect": [
+  [
+   "introduction-to-blogging",
+   "MERGE"
+  ],
+  [
+   "pages-add-new-screen",
+   "MERGE"
+  ],
+  [
+   "tools-screen",
+   "MERGE"
+  ],
+  [
+   "customize-permalinks",
+   "MERGE"
+  ],
+  [
+   "plugins-themes-auto-updates",
+   "MERGE"
+  ],
+  [
+   "what-is-an-excerpt-classic-editor",
+   "MERGE"
+  ]
+ ],
+ "merge_targets_not_existing_pages": [
+  "add and manage media",
+  "archive title blocks",
+  "choose a host and install wordpress",
+  "control who can see a post",
+  "emoji, smilies and special characters",
+  "key wordpress concepts",
+  "maintain your site",
+  "media-shortcodes",
+  "reset your password",
+  "set your site title, logo and icon",
+  "troubleshoot common problems",
+  "update wordpress, plugins and themes"
+ ],
+ "overrides_applied": [
+  [
+   "faq-troubleshooting",
+   "MOVE",
+   "REWRITE",
+   "Linked from core's fatal error handler (the 'critical error' notice). Becomes the user-level troubleshooting page instead of moving off-site."
+  ],
+  [
+   "troubleshoot-common-problems",
+   "NEW",
+   "DROPPED",
+   "Superseded: faq-troubleshooting is rewritten into this page so the core-linked slug survives."
+  ],
+  [
+   "pages-add-new-screen",
+   "DELETE",
+   "MERGE",
+   "Linked from wp-admin edit-form-advanced.php; a redirect keeps the help tab working while the classic edit-screen content goes away."
+  ],
+  [
+   "appearance-theme-file-editor-screen",
+   "MOVE",
+   "KEEP",
+   "Owner decision: the Theme File Editor is core functionality and relevant to block themes (under Tools). Also linked from wp-admin theme-editor.php."
+  ],
+  [
+   "tools-network-screen",
+   "MOVE",
+   "REWRITE",
+   "Linked from wp-admin network.php, so the slug must keep serving a page."
+  ]
+ ],
+ "pages_after_definition": "sum of the per-area 'pages proposed' figures from each review's end-state list (data/content-proposal/area-summaries.json)",
+ "pages_after_from_rows": 232,
+ "areas": {
+  "overview-and-using-wordpress": {
+   "now": 97,
+   "proposed": 70
+  },
+  "editing-and-design": {
+   "now": 190,
+   "proposed": 114
+  },
+  "classic-and-policies": {
+   "now": 36,
+   "proposed": 30
+  }
+ }
+}

@@ -1,0 +1,7 @@
+node_modules/
+out/run2/
+out/run3/
+out/video/
+*.log
+*.pid
+boot-start.txt
