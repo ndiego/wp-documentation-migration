@@ -1,7 +1,7 @@
 ---
 title: Set blog content visibility (Block Editor)
 slug: content-visibility-block-editor
-position: 4
+position: 3
 original_url: https://wordpress.org/documentation/article/content-visibility-block-editor/
 wp_id: 11031919
 legacy_categories:
@@ -23,7 +23,7 @@ migration:
 
 # Set blog content visibility (Block Editor)
 
-Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](content-visibility-classic-editor.md).
+Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](../../classic-wordpress/classic-editor/content-visibility-classic-editor.md).
 
 Content visibility is about controlling who can see your blog content. WordPress allows you to control the visibility of your posts and [Pages](create-pages.md) on an individual basis. By default, all posts and Pages are visible.
 

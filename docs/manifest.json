@@ -27,40 +27,33 @@
 		"parent": "overview/where-to-start",
 		"order": 2
 	},
-	"overview/where-to-start/first-steps-with-wordpress-classic": {
-		"title": "First steps with WordPress (Classic Editor)",
-		"slug": "first-steps-with-wordpress-classic",
-		"markdown_source": "overview/where-to-start/first-steps-with-wordpress-classic.md",
-		"parent": "overview/where-to-start",
-		"order": 3
-	},
 	"overview/where-to-start/where-to-find-wordpress-help": {
 		"title": "Where to find WordPress help",
 		"slug": "where-to-find-wordpress-help",
 		"markdown_source": "overview/where-to-start/where-to-find-wordpress-help.md",
 		"parent": "overview/where-to-start",
-		"order": 4
+		"order": 3
 	},
 	"overview/where-to-start/wordpress-glossary": {
 		"title": "WordPress Glossary",
 		"slug": "wordpress-glossary",
 		"markdown_source": "overview/where-to-start/wordpress-glossary.md",
 		"parent": "overview/where-to-start",
-		"order": 5
+		"order": 4
 	},
 	"overview/where-to-start/wordpress-semantics": {
 		"title": "WordPress Semantics",
 		"slug": "wordpress-semantics",
 		"markdown_source": "overview/where-to-start/wordpress-semantics.md",
 		"parent": "overview/where-to-start",
-		"order": 6
+		"order": 5
 	},
 	"overview/where-to-start/introduction-to-blogging": {
 		"title": "Introduction to Blogging",
 		"slug": "introduction-to-blogging",
 		"markdown_source": "overview/where-to-start/introduction-to-blogging.md",
 		"parent": "overview/where-to-start",
-		"order": 7
+		"order": 6
 	},
 	"overview/about-wordpress": {
 		"title": "About WordPress",
@@ -258,68 +251,12 @@
 		"parent": "using-wordpress/administration-screens/pages",
 		"order": 2
 	},
-	"using-wordpress/administration-screens/appearance": {
-		"title": "Appearance",
-		"slug": "appearance",
-		"markdown_source": "using-wordpress/administration-screens/appearance/README.md",
-		"parent": "using-wordpress/administration-screens",
-		"order": 5
-	},
-	"using-wordpress/administration-screens/appearance/appearance-themes-screen": {
-		"title": "Appearance Themes Screen",
-		"slug": "appearance-themes-screen",
-		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-themes-screen.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 1
-	},
-	"using-wordpress/administration-screens/appearance/customizer": {
-		"title": "Customizer",
-		"slug": "customizer",
-		"markdown_source": "using-wordpress/administration-screens/appearance/customizer.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 2
-	},
-	"using-wordpress/administration-screens/appearance/manage-wordpress-widgets": {
-		"title": "Manage WordPress widgets",
-		"slug": "manage-wordpress-widgets",
-		"markdown_source": "using-wordpress/administration-screens/appearance/manage-wordpress-widgets.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 3
-	},
-	"using-wordpress/administration-screens/appearance/block-based-widgets-editor": {
-		"title": "Block-based Widgets Editor",
-		"slug": "block-based-widgets-editor",
-		"markdown_source": "using-wordpress/administration-screens/appearance/block-based-widgets-editor.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 4
-	},
-	"using-wordpress/administration-screens/appearance/appearance-widgets-screen-classic-editor": {
-		"title": "Appearance Widgets Screen (Classic Editor)",
-		"slug": "appearance-widgets-screen-classic-editor",
-		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-widgets-screen-classic-editor.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 5
-	},
-	"using-wordpress/administration-screens/appearance/appearance-menus-screen": {
-		"title": "Appearance Menus Screen",
-		"slug": "appearance-menus-screen",
-		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-menus-screen.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 6
-	},
-	"using-wordpress/administration-screens/appearance/appearance-theme-file-editor-screen": {
-		"title": "Appearance Theme File Editor Screen",
-		"slug": "appearance-theme-file-editor-screen",
-		"markdown_source": "using-wordpress/administration-screens/appearance/appearance-theme-file-editor-screen.md",
-		"parent": "using-wordpress/administration-screens/appearance",
-		"order": 7
-	},
 	"using-wordpress/administration-screens/plugins": {
 		"title": "Plugins",
 		"slug": "plugins",
 		"markdown_source": "using-wordpress/administration-screens/plugins/README.md",
 		"parent": "using-wordpress/administration-screens",
-		"order": 6
+		"order": 5
 	},
 	"using-wordpress/administration-screens/plugins/introduction-to-plugins": {
 		"title": "Introduction to Plugins",
@@ -354,7 +291,7 @@
 		"slug": "users",
 		"markdown_source": "using-wordpress/administration-screens/users/README.md",
 		"parent": "using-wordpress/administration-screens",
-		"order": 7
+		"order": 6
 	},
 	"using-wordpress/administration-screens/users/users-screen": {
 		"title": "Users screen",
@@ -382,7 +319,7 @@
 		"slug": "tools",
 		"markdown_source": "using-wordpress/administration-screens/tools/README.md",
 		"parent": "using-wordpress/administration-screens",
-		"order": 8
+		"order": 7
 	},
 	"using-wordpress/administration-screens/tools/tools-screen": {
 		"title": "Tools screen",
@@ -426,19 +363,26 @@
 		"parent": "using-wordpress/administration-screens/tools",
 		"order": 6
 	},
+	"using-wordpress/administration-screens/tools/appearance-theme-file-editor-screen": {
+		"title": "Appearance Theme File Editor Screen",
+		"slug": "appearance-theme-file-editor-screen",
+		"markdown_source": "using-wordpress/administration-screens/tools/appearance-theme-file-editor-screen.md",
+		"parent": "using-wordpress/administration-screens/tools",
+		"order": 7
+	},
 	"using-wordpress/administration-screens/tools/tools-network-screen": {
 		"title": "Tools Network screen",
 		"slug": "tools-network-screen",
 		"markdown_source": "using-wordpress/administration-screens/tools/tools-network-screen.md",
 		"parent": "using-wordpress/administration-screens/tools",
-		"order": 7
+		"order": 8
 	},
 	"using-wordpress/administration-screens/settings": {
 		"title": "Settings",
 		"slug": "settings",
 		"markdown_source": "using-wordpress/administration-screens/settings/README.md",
 		"parent": "using-wordpress/administration-screens",
-		"order": 9
+		"order": 8
 	},
 	"using-wordpress/administration-screens/settings/settings-general-screen": {
 		"title": "Settings General screen",
@@ -501,7 +445,7 @@
 		"slug": "toolbar",
 		"markdown_source": "using-wordpress/administration-screens/toolbar.md",
 		"parent": "using-wordpress/administration-screens",
-		"order": 10
+		"order": 9
 	},
 	"using-wordpress/writing-and-publishing": {
 		"title": "Writing & publishing",
@@ -601,89 +545,54 @@
 		"parent": "using-wordpress/writing-and-publishing/formatting",
 		"order": 3
 	},
-	"using-wordpress/writing-and-publishing/formatting/write-code-in-your-posts-classic-editor": {
-		"title": "Write code in your posts (Classic Editor)",
-		"slug": "write-code-in-your-posts-classic-editor",
-		"markdown_source": "using-wordpress/writing-and-publishing/formatting/write-code-in-your-posts-classic-editor.md",
-		"parent": "using-wordpress/writing-and-publishing/formatting",
-		"order": 4
-	},
 	"using-wordpress/writing-and-publishing/formatting/how-wordpress-processes-post-content": {
 		"title": "How WordPress processes Post Content",
 		"slug": "how-wordpress-processes-post-content",
 		"markdown_source": "using-wordpress/writing-and-publishing/formatting/how-wordpress-processes-post-content.md",
 		"parent": "using-wordpress/writing-and-publishing/formatting",
-		"order": 5
-	},
-	"using-wordpress/writing-and-publishing/write-posts-classic-editor": {
-		"title": "Write posts (Classic Editor)",
-		"slug": "write-posts-classic-editor",
-		"markdown_source": "using-wordpress/writing-and-publishing/write-posts-classic-editor.md",
-		"parent": "using-wordpress/writing-and-publishing",
-		"order": 3
+		"order": 4
 	},
 	"using-wordpress/writing-and-publishing/create-pages": {
 		"title": "Create pages",
 		"slug": "create-pages",
 		"markdown_source": "using-wordpress/writing-and-publishing/create-pages.md",
 		"parent": "using-wordpress/writing-and-publishing",
-		"order": 4
+		"order": 3
 	},
 	"using-wordpress/writing-and-publishing/post-status": {
 		"title": "Post Status",
 		"slug": "post-status",
 		"markdown_source": "using-wordpress/writing-and-publishing/post-status.md",
 		"parent": "using-wordpress/writing-and-publishing",
-		"order": 5
+		"order": 4
 	},
 	"using-wordpress/writing-and-publishing/content-visibility-block-editor": {
 		"title": "Set blog content visibility (Block Editor)",
 		"slug": "content-visibility-block-editor",
 		"markdown_source": "using-wordpress/writing-and-publishing/content-visibility-block-editor.md",
 		"parent": "using-wordpress/writing-and-publishing",
-		"order": 6
-	},
-	"using-wordpress/writing-and-publishing/content-visibility-classic-editor": {
-		"title": "Set blog content visibility (Classic Editor)",
-		"slug": "content-visibility-classic-editor",
-		"markdown_source": "using-wordpress/writing-and-publishing/content-visibility-classic-editor.md",
-		"parent": "using-wordpress/writing-and-publishing",
-		"order": 7
+		"order": 5
 	},
 	"using-wordpress/writing-and-publishing/protect-posts-with-password": {
 		"title": "Protect posts with password",
 		"slug": "protect-posts-with-password",
 		"markdown_source": "using-wordpress/writing-and-publishing/protect-posts-with-password.md",
 		"parent": "using-wordpress/writing-and-publishing",
-		"order": 8
-	},
-	"using-wordpress/writing-and-publishing/sticky-posts-classic-editor": {
-		"title": "Sticky Posts (Classic Editor)",
-		"slug": "sticky-posts-classic-editor",
-		"markdown_source": "using-wordpress/writing-and-publishing/sticky-posts-classic-editor.md",
-		"parent": "using-wordpress/writing-and-publishing",
-		"order": 9
+		"order": 6
 	},
 	"using-wordpress/writing-and-publishing/what-is-an-excerpt-block-editor": {
 		"title": "What is an excerpt? (Block Editor)",
 		"slug": "what-is-an-excerpt-block-editor",
 		"markdown_source": "using-wordpress/writing-and-publishing/what-is-an-excerpt-block-editor.md",
 		"parent": "using-wordpress/writing-and-publishing",
-		"order": 10
-	},
-	"using-wordpress/writing-and-publishing/what-is-an-excerpt-classic-editor": {
-		"title": "What is an excerpt? (Classic Editor)",
-		"slug": "what-is-an-excerpt-classic-editor",
-		"markdown_source": "using-wordpress/writing-and-publishing/what-is-an-excerpt-classic-editor.md",
-		"parent": "using-wordpress/writing-and-publishing",
-		"order": 11
+		"order": 7
 	},
 	"using-wordpress/writing-and-publishing/revisions": {
 		"title": "Revisions",
 		"slug": "revisions",
 		"markdown_source": "using-wordpress/writing-and-publishing/revisions.md",
 		"parent": "using-wordpress/writing-and-publishing",
-		"order": 12
+		"order": 8
 	},
 	"using-wordpress/media": {
 		"title": "Media",
@@ -706,61 +615,33 @@
 		"parent": "using-wordpress/media",
 		"order": 2
 	},
-	"using-wordpress/media/inserting-images-into-posts-and-pages-classic": {
-		"title": "Inserting images into posts and pages (Classic Editor)",
-		"slug": "inserting-images-into-posts-and-pages-classic",
-		"markdown_source": "using-wordpress/media/inserting-images-into-posts-and-pages-classic.md",
-		"parent": "using-wordpress/media",
-		"order": 3
-	},
 	"using-wordpress/media/the-wordpress-gallery-block-editor": {
 		"title": "The WordPress Gallery (Block Editor)",
 		"slug": "the-wordpress-gallery-block-editor",
 		"markdown_source": "using-wordpress/media/the-wordpress-gallery-block-editor.md",
 		"parent": "using-wordpress/media",
-		"order": 4
-	},
-	"using-wordpress/media/the-wordpress-gallery-classic-editor": {
-		"title": "The WordPress Gallery (Classic Editor)",
-		"slug": "the-wordpress-gallery-classic-editor",
-		"markdown_source": "using-wordpress/media/the-wordpress-gallery-classic-editor.md",
-		"parent": "using-wordpress/media",
-		"order": 5
+		"order": 3
 	},
 	"using-wordpress/media/edit-media": {
 		"title": "Edit Media",
 		"slug": "edit-media",
 		"markdown_source": "using-wordpress/media/edit-media.md",
 		"parent": "using-wordpress/media",
-		"order": 6
+		"order": 4
 	},
 	"using-wordpress/media/image-size-and-quality": {
 		"title": "Image size and quality",
 		"slug": "image-size-and-quality",
 		"markdown_source": "using-wordpress/media/image-size-and-quality.md",
 		"parent": "using-wordpress/media",
-		"order": 7
+		"order": 5
 	},
 	"using-wordpress/media/use-image-and-file-attachments": {
 		"title": "Use image and file attachments",
 		"slug": "use-image-and-file-attachments",
 		"markdown_source": "using-wordpress/media/use-image-and-file-attachments.md",
 		"parent": "using-wordpress/media",
-		"order": 8
-	},
-	"using-wordpress/media/audio-shortcode": {
-		"title": "Audio Shortcode",
-		"slug": "audio-shortcode",
-		"markdown_source": "using-wordpress/media/audio-shortcode.md",
-		"parent": "using-wordpress/media",
-		"order": 9
-	},
-	"using-wordpress/media/video-shortcode": {
-		"title": "Video shortcode",
-		"slug": "video-shortcode",
-		"markdown_source": "using-wordpress/media/video-shortcode.md",
-		"parent": "using-wordpress/media",
-		"order": 10
+		"order": 6
 	},
 	"using-wordpress/comments": {
 		"title": "Comments",
@@ -2162,19 +2043,12 @@
 		"parent": "editing-and-design/block-editor",
 		"order": 9
 	},
-	"editing-and-design/block-editor/keyboard-shortcuts-classic-editor": {
-		"title": "Use keyboard shortcuts (Classic Editor)",
-		"slug": "keyboard-shortcuts-classic-editor",
-		"markdown_source": "editing-and-design/block-editor/keyboard-shortcuts-classic-editor.md",
-		"parent": "editing-and-design/block-editor",
-		"order": 10
-	},
 	"editing-and-design/block-editor/notes": {
 		"title": "Notes",
 		"slug": "notes",
 		"markdown_source": "editing-and-design/block-editor/notes.md",
 		"parent": "editing-and-design/block-editor",
-		"order": 11
+		"order": 10
 	},
 	"editing-and-design/site-editor": {
 		"title": "Site Editor",
@@ -2323,160 +2197,6 @@
 		"parent": "editing-and-design/themes/default-themes/twenty-twenty-two",
 		"order": 1
 	},
-	"editing-and-design/themes/default-themes/twenty-twenty-one": {
-		"title": "Twenty Twenty-One",
-		"slug": "twenty-twenty-one",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-one/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 5
-	},
-	"editing-and-design/themes/default-themes/twenty-twenty-one/twenty-twenty-one-changelog": {
-		"title": "Twenty Twenty-One changelog",
-		"slug": "twenty-twenty-one-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty-one/twenty-twenty-one-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-twenty-one",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-twenty": {
-		"title": "Twenty Twenty",
-		"slug": "twenty-twenty",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 6
-	},
-	"editing-and-design/themes/default-themes/twenty-twenty/twenty-twenty-changelog": {
-		"title": "Twenty Twenty changelog",
-		"slug": "twenty-twenty-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-twenty/twenty-twenty-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-twenty",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-nineteen": {
-		"title": "Twenty Nineteen",
-		"slug": "twenty-nineteen",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-nineteen/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 7
-	},
-	"editing-and-design/themes/default-themes/twenty-nineteen/twenty-nineteen-changelog": {
-		"title": "Twenty Nineteen changelog",
-		"slug": "twenty-nineteen-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-nineteen/twenty-nineteen-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-nineteen",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-seventeen": {
-		"title": "Twenty Seventeen",
-		"slug": "twenty-seventeen",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-seventeen/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 8
-	},
-	"editing-and-design/themes/default-themes/twenty-seventeen/twenty-seventeen-changelog": {
-		"title": "Twenty Seventeen changelog",
-		"slug": "twenty-seventeen-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-seventeen/twenty-seventeen-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-seventeen",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-sixteen": {
-		"title": "Twenty Sixteen",
-		"slug": "twenty-sixteen",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-sixteen/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 9
-	},
-	"editing-and-design/themes/default-themes/twenty-sixteen/twenty-sixteen-changelog": {
-		"title": "Twenty Sixteen changelog",
-		"slug": "twenty-sixteen-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-sixteen/twenty-sixteen-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-sixteen",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-fifteen": {
-		"title": "Twenty Fifteen",
-		"slug": "twenty-fifteen",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-fifteen/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 10
-	},
-	"editing-and-design/themes/default-themes/twenty-fifteen/twenty-fifteen-changelog": {
-		"title": "Twenty Fifteen changelog",
-		"slug": "twenty-fifteen-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-fifteen/twenty-fifteen-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-fifteen",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-fourteen": {
-		"title": "Twenty Fourteen",
-		"slug": "twenty-fourteen",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-fourteen/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 11
-	},
-	"editing-and-design/themes/default-themes/twenty-fourteen/twenty-fourteen-changelog": {
-		"title": "Twenty Fourteen changelog",
-		"slug": "twenty-fourteen-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-fourteen/twenty-fourteen-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-fourteen",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-thirteen": {
-		"title": "Twenty Thirteen",
-		"slug": "twenty-thirteen",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-thirteen/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 12
-	},
-	"editing-and-design/themes/default-themes/twenty-thirteen/twenty-thirteen-changelog": {
-		"title": "Twenty Thirteen changelog",
-		"slug": "twenty-thirteen-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-thirteen/twenty-thirteen-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-thirteen",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-twelve": {
-		"title": "Twenty Twelve",
-		"slug": "twenty-twelve",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-twelve/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 13
-	},
-	"editing-and-design/themes/default-themes/twenty-twelve/twenty-twelve-changelog": {
-		"title": "Twenty Twelve changelog",
-		"slug": "twenty-twelve-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-twelve/twenty-twelve-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-twelve",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-eleven": {
-		"title": "Twenty Eleven",
-		"slug": "twenty-eleven",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-eleven/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 14
-	},
-	"editing-and-design/themes/default-themes/twenty-eleven/twenty-eleven-changelog": {
-		"title": "Twenty Eleven changelog",
-		"slug": "twenty-eleven-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-eleven/twenty-eleven-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-eleven",
-		"order": 1
-	},
-	"editing-and-design/themes/default-themes/twenty-ten": {
-		"title": "Twenty Ten",
-		"slug": "twenty-ten",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-ten/README.md",
-		"parent": "editing-and-design/themes/default-themes",
-		"order": 15
-	},
-	"editing-and-design/themes/default-themes/twenty-ten/twenty-ten-changelog": {
-		"title": "Twenty Ten changelog",
-		"slug": "twenty-ten-changelog",
-		"markdown_source": "editing-and-design/themes/default-themes/twenty-ten/twenty-ten-changelog.md",
-		"parent": "editing-and-design/themes/default-themes/twenty-ten",
-		"order": 1
-	},
 	"editing-and-design/themes/work-with-themes": {
 		"title": "Work with themes",
 		"slug": "work-with-themes",
@@ -2484,32 +2204,375 @@
 		"parent": "editing-and-design/themes",
 		"order": 2
 	},
+	"editing-and-design/themes/appearance-themes-screen": {
+		"title": "Appearance Themes Screen",
+		"slug": "appearance-themes-screen",
+		"markdown_source": "editing-and-design/themes/appearance-themes-screen.md",
+		"parent": "editing-and-design/themes",
+		"order": 3
+	},
 	"editing-and-design/themes/block-themes": {
 		"title": "Block themes",
 		"slug": "block-themes",
 		"markdown_source": "editing-and-design/themes/block-themes.md",
 		"parent": "editing-and-design/themes",
-		"order": 3
+		"order": 4
 	},
 	"editing-and-design/themes/create-a-favicon": {
 		"title": "Create a Favicon",
 		"slug": "create-a-favicon",
 		"markdown_source": "editing-and-design/themes/create-a-favicon.md",
 		"parent": "editing-and-design/themes",
-		"order": 4
+		"order": 5
+	},
+	"classic-wordpress": {
+		"title": "Classic WordPress",
+		"slug": "classic-wordpress",
+		"markdown_source": "classic-wordpress/README.md",
+		"parent": null,
+		"order": 4,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor": {
+		"title": "Classic Editor",
+		"slug": "classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/README.md",
+		"parent": "classic-wordpress",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/first-steps-with-wordpress-classic": {
+		"title": "First steps with WordPress (Classic Editor)",
+		"slug": "first-steps-with-wordpress-classic",
+		"markdown_source": "classic-wordpress/classic-editor/first-steps-with-wordpress-classic.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/write-posts-classic-editor": {
+		"title": "Write posts (Classic Editor)",
+		"slug": "write-posts-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/write-posts-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 2,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic": {
+		"title": "Inserting images into posts and pages (Classic Editor)",
+		"slug": "inserting-images-into-posts-and-pages-classic",
+		"markdown_source": "classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 3,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/the-wordpress-gallery-classic-editor": {
+		"title": "The WordPress Gallery (Classic Editor)",
+		"slug": "the-wordpress-gallery-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/the-wordpress-gallery-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 4,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/audio-shortcode": {
+		"title": "Audio Shortcode",
+		"slug": "audio-shortcode",
+		"markdown_source": "classic-wordpress/classic-editor/audio-shortcode.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 5,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/video-shortcode": {
+		"title": "Video shortcode",
+		"slug": "video-shortcode",
+		"markdown_source": "classic-wordpress/classic-editor/video-shortcode.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 6,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/what-is-an-excerpt-classic-editor": {
+		"title": "What is an excerpt? (Classic Editor)",
+		"slug": "what-is-an-excerpt-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/what-is-an-excerpt-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 7,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/content-visibility-classic-editor": {
+		"title": "Set blog content visibility (Classic Editor)",
+		"slug": "content-visibility-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/content-visibility-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 8,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/sticky-posts-classic-editor": {
+		"title": "Sticky Posts (Classic Editor)",
+		"slug": "sticky-posts-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/sticky-posts-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 9,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/write-code-in-your-posts-classic-editor": {
+		"title": "Write code in your posts (Classic Editor)",
+		"slug": "write-code-in-your-posts-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/write-code-in-your-posts-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 10,
+		"classic": true
+	},
+	"classic-wordpress/classic-editor/keyboard-shortcuts-classic-editor": {
+		"title": "Use keyboard shortcuts (Classic Editor)",
+		"slug": "keyboard-shortcuts-classic-editor",
+		"markdown_source": "classic-wordpress/classic-editor/keyboard-shortcuts-classic-editor.md",
+		"parent": "classic-wordpress/classic-editor",
+		"order": 11,
+		"classic": true
+	},
+	"classic-wordpress/widgets-menus-and-customizer": {
+		"title": "Widgets, Menus and the Customizer",
+		"slug": "widgets-menus-and-customizer",
+		"markdown_source": "classic-wordpress/widgets-menus-and-customizer/README.md",
+		"parent": "classic-wordpress",
+		"order": 2,
+		"classic": true
+	},
+	"classic-wordpress/widgets-menus-and-customizer/customizer": {
+		"title": "Customizer",
+		"slug": "customizer",
+		"markdown_source": "classic-wordpress/widgets-menus-and-customizer/customizer.md",
+		"parent": "classic-wordpress/widgets-menus-and-customizer",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/widgets-menus-and-customizer/manage-wordpress-widgets": {
+		"title": "Manage WordPress widgets",
+		"slug": "manage-wordpress-widgets",
+		"markdown_source": "classic-wordpress/widgets-menus-and-customizer/manage-wordpress-widgets.md",
+		"parent": "classic-wordpress/widgets-menus-and-customizer",
+		"order": 2,
+		"classic": true
+	},
+	"classic-wordpress/widgets-menus-and-customizer/block-based-widgets-editor": {
+		"title": "Block-based Widgets Editor",
+		"slug": "block-based-widgets-editor",
+		"markdown_source": "classic-wordpress/widgets-menus-and-customizer/block-based-widgets-editor.md",
+		"parent": "classic-wordpress/widgets-menus-and-customizer",
+		"order": 3,
+		"classic": true
+	},
+	"classic-wordpress/widgets-menus-and-customizer/appearance-widgets-screen-classic-editor": {
+		"title": "Appearance Widgets Screen (Classic Editor)",
+		"slug": "appearance-widgets-screen-classic-editor",
+		"markdown_source": "classic-wordpress/widgets-menus-and-customizer/appearance-widgets-screen-classic-editor.md",
+		"parent": "classic-wordpress/widgets-menus-and-customizer",
+		"order": 4,
+		"classic": true
+	},
+	"classic-wordpress/widgets-menus-and-customizer/appearance-menus-screen": {
+		"title": "Appearance Menus Screen",
+		"slug": "appearance-menus-screen",
+		"markdown_source": "classic-wordpress/widgets-menus-and-customizer/appearance-menus-screen.md",
+		"parent": "classic-wordpress/widgets-menus-and-customizer",
+		"order": 5,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes": {
+		"title": "Classic default themes",
+		"slug": "classic-default-themes",
+		"markdown_source": "classic-wordpress/classic-default-themes/README.md",
+		"parent": "classic-wordpress",
+		"order": 3,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-twenty-one": {
+		"title": "Twenty Twenty-One",
+		"slug": "twenty-twenty-one",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-twenty-one/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-twenty-one/twenty-twenty-one-changelog": {
+		"title": "Twenty Twenty-One changelog",
+		"slug": "twenty-twenty-one-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-twenty-one/twenty-twenty-one-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-twenty-one",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-twenty": {
+		"title": "Twenty Twenty",
+		"slug": "twenty-twenty",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-twenty/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 2,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-twenty/twenty-twenty-changelog": {
+		"title": "Twenty Twenty changelog",
+		"slug": "twenty-twenty-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-twenty/twenty-twenty-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-twenty",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-nineteen": {
+		"title": "Twenty Nineteen",
+		"slug": "twenty-nineteen",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-nineteen/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 3,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-nineteen/twenty-nineteen-changelog": {
+		"title": "Twenty Nineteen changelog",
+		"slug": "twenty-nineteen-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-nineteen/twenty-nineteen-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-nineteen",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-seventeen": {
+		"title": "Twenty Seventeen",
+		"slug": "twenty-seventeen",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-seventeen/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 4,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-seventeen/twenty-seventeen-changelog": {
+		"title": "Twenty Seventeen changelog",
+		"slug": "twenty-seventeen-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-seventeen/twenty-seventeen-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-seventeen",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-sixteen": {
+		"title": "Twenty Sixteen",
+		"slug": "twenty-sixteen",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-sixteen/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 5,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-sixteen/twenty-sixteen-changelog": {
+		"title": "Twenty Sixteen changelog",
+		"slug": "twenty-sixteen-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-sixteen/twenty-sixteen-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-sixteen",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-fifteen": {
+		"title": "Twenty Fifteen",
+		"slug": "twenty-fifteen",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-fifteen/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 6,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-fifteen/twenty-fifteen-changelog": {
+		"title": "Twenty Fifteen changelog",
+		"slug": "twenty-fifteen-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-fifteen/twenty-fifteen-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-fifteen",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-fourteen": {
+		"title": "Twenty Fourteen",
+		"slug": "twenty-fourteen",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-fourteen/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 7,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-fourteen/twenty-fourteen-changelog": {
+		"title": "Twenty Fourteen changelog",
+		"slug": "twenty-fourteen-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-fourteen/twenty-fourteen-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-fourteen",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-thirteen": {
+		"title": "Twenty Thirteen",
+		"slug": "twenty-thirteen",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-thirteen/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 8,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-thirteen/twenty-thirteen-changelog": {
+		"title": "Twenty Thirteen changelog",
+		"slug": "twenty-thirteen-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-thirteen/twenty-thirteen-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-thirteen",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-twelve": {
+		"title": "Twenty Twelve",
+		"slug": "twenty-twelve",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-twelve/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 9,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-twelve/twenty-twelve-changelog": {
+		"title": "Twenty Twelve changelog",
+		"slug": "twenty-twelve-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-twelve/twenty-twelve-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-twelve",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-eleven": {
+		"title": "Twenty Eleven",
+		"slug": "twenty-eleven",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-eleven/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 10,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-eleven/twenty-eleven-changelog": {
+		"title": "Twenty Eleven changelog",
+		"slug": "twenty-eleven-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-eleven/twenty-eleven-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-eleven",
+		"order": 1,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-ten": {
+		"title": "Twenty Ten",
+		"slug": "twenty-ten",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-ten/README.md",
+		"parent": "classic-wordpress/classic-default-themes",
+		"order": 11,
+		"classic": true
+	},
+	"classic-wordpress/classic-default-themes/twenty-ten/twenty-ten-changelog": {
+		"title": "Twenty Ten changelog",
+		"slug": "twenty-ten-changelog",
+		"markdown_source": "classic-wordpress/classic-default-themes/twenty-ten/twenty-ten-changelog.md",
+		"parent": "classic-wordpress/classic-default-themes/twenty-ten",
+		"order": 1,
+		"classic": true
 	},
 	"site-health": {
 		"title": "Site Health: keep your website healthy",
 		"slug": "site-health",
 		"markdown_source": "site-health.md",
 		"parent": null,
-		"order": 4
+		"order": 5
 	},
 	"update-php": {
 		"title": "Get a faster, more secure website: update your PHP today",
 		"slug": "update-php",
 		"markdown_source": "update-php.md",
 		"parent": null,
-		"order": 5
+		"order": 6
 	}
 }

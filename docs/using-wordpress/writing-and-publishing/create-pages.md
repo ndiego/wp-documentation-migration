@@ -1,7 +1,7 @@
 ---
 title: Create pages
 slug: create-pages
-position: 2
+position: 1
 original_url: https://wordpress.org/documentation/article/create-pages/
 wp_id: 10776416
 legacy_categories:

@@ -2,6 +2,8 @@
 // Override of Starlight's Banner: on every page of either tree, a persistent bar saying
 // which structure you are looking at, with a one-click switch to the same page in the
 // other tree (lib/structure-data.mjs counterpartOf) and a link to the compare page.
+// Pages of the proposed tree with `classic: true` frontmatter (data/structure.yaml Classic WordPress
+// section, inherited) get one extra, subtle line saying they only apply to classic setups.
 import Default from '@astrojs/starlight/components/Banner.astro';
 // @ts-ignore plain JS helper
 import { treeForId, routeFromId } from '../../lib/paths.mjs';
@@ -17,6 +19,7 @@ const switchText = {
 	section: `Closest section in the ${where}: ${other?.title}`,
 	home: `Go to the ${where}`,
 }[other?.kind as string];
+const classic = tree?.key === 'proposed' && Astro.locals.starlightRoute.entry?.data?.classic === true;
 const compareHref = other?.slug ? `/compare/?q=${encodeURIComponent(other.slug)}#find-your-article` : '/compare/';
 ---
 
@@ -32,6 +35,11 @@ const compareHref = other?.slug ? `/compare/?q=${encodeURIComponent(other.slug)}
 				</a>
 				<a href={compareHref}>{other.slug ? 'Compare locations' : 'Compare structures'}</a>
 			</span>
+			{classic && (
+				<span class="tree-classic">
+					<a href="/proposed/classic-wordpress/">Classic WordPress</a>: applies to classic themes or the Classic Editor plugin
+				</span>
+			)}
 		</div>
 	)
 }
@@ -82,5 +90,14 @@ const compareHref = other?.slug ? `/compare/?q=${encodeURIComponent(other.slug)}
 	}
 	.tree-actions a:not(.tree-switch) {
 		font-weight: 400;
+	}
+	.tree-classic {
+		flex-basis: 100%;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-2);
+	}
+	.tree-classic a {
+		color: inherit;
+		font-weight: 600;
 	}
 </style>

@@ -1,7 +1,7 @@
 ---
 title: What is an excerpt? (Block Editor)
 slug: what-is-an-excerpt-block-editor
-position: 8
+position: 5
 original_url: https://wordpress.org/documentation/article/what-is-an-excerpt-block-editor/
 wp_id: 11028956
 legacy_categories:
@@ -22,7 +22,7 @@ migration:
 
 # What is an excerpt? (Block Editor)
 
-Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](what-is-an-excerpt-classic-editor.md).
+Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](../../classic-wordpress/classic-editor/what-is-an-excerpt-classic-editor.md).
 
 ## What is an Excerpt
 

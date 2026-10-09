@@ -1,7 +1,7 @@
 ---
 title: How WordPress processes Post Content
 slug: how-wordpress-processes-post-content
-position: 5
+position: 4
 original_url: https://wordpress.org/documentation/article/how-wordpress-processes-post-content/
 wp_id: 11245009
 legacy_categories:

@@ -1,7 +1,7 @@
 ---
 title: WordPress Glossary
 slug: wordpress-glossary
-position: 5
+position: 4
 original_url: https://wordpress.org/documentation/article/wordpress-glossary/
 wp_id: 10829891
 legacy_categories:

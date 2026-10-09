@@ -6,7 +6,10 @@ Inputs are plain dicts (convert.layout_summary()) plus the converted Markdown bo
 no dependency on the converter internals:
 
   before / after   {"kind", "top": [{key, title}], "folders": [{key, title, parent, depth, top, articles,
-                    index_slug, hand_written}], "articles": {slug: {title, folder, top, depth, path}}}
+                    index_slug, hand_written, classic}], "articles": {slug: {title, folder, top, depth, path, classic}}}
+                   Article `classic` comes from the structure file's classic set for BOTH trees (convert.py passes the
+                   same set to both layout_summary() calls); folder `classic` is the structure flag (always false in
+                   the category layout).
   bodies_before    {slug: Markdown body as the category layout has it (nav-link paragraphs kept)}
   bodies_after     {slug: Markdown body as written in the structure layout (nav links removed if configured)}
   link_paths       {slug: path (relative to the output root) the bodies were written for}; used to resolve
@@ -27,7 +30,13 @@ Definitions (also written into the JSON under "definitions"):
   articles_moved        articles whose folder path changed
   misfiled_fixed        articles whose after top-level section differs from the before top-level category that
                         supplies most of that after section's articles (its "successor"). A plain "top-level
-                        slug changed" count would be meaningless when the top level is renamed.
+                        slug changed" count would be meaningless when the top level is renamed. Articles placed in a
+                        classic section are not counted: they moved for the block-first rule, not because they were
+                        misfiled (see the legacy_* metrics).
+  classic_articles       articles in the structure file's classic set (`classic: true` sections); same set in both trees
+  classic_articles_outside_classic_section  classic articles whose folder is not a classic section
+  sections_mixing_classic_and_current  folders whose direct articles (index article included) include at least one
+                        classic and at least one non-classic article
   boilerplate_sentence_share  per top-level section: share of sentences with >= 6 words that appear verbatim
                         in >= 3 different articles (counted over all articles of the same tree)
 """
@@ -128,7 +137,25 @@ def tree_metrics(tree, bodies, inbound, is_nav_paragraph):
         "orphan_articles": sum(1 for s in arts if not inbound.get(s)),
         "manual_breadcrumb_paragraphs": sum(1 for s in arts if s in bodies and is_nav_paragraph(bodies[s])),
         "sections_using_article_as_index": sum(1 for f in folders if f["index_slug"]),
+        **classic_metrics(arts, folders),
         "boilerplate_sentence_share": boiler,
+    }
+
+
+def classic_metrics(arts, folders):
+    classic = {s for s, a in arts.items() if a.get("classic")}
+    folder_classic = {f["key"]: bool(f.get("classic")) for f in folders}
+    mixing = []
+    for f in folders:
+        members = list(f["articles"]) + ([f["index_slug"]] if f["index_slug"] else [])
+        flags = {s in classic for s in members}
+        if flags == {True, False}:
+            mixing.append(f["key"])
+    return {
+        "classic_articles": len(classic),
+        "classic_articles_outside_classic_section": sum(1 for s in classic if not folder_classic.get(arts[s]["folder"])),
+        "sections_mixing_classic_and_current": len(mixing),
+        "sections_mixing_classic_and_current_folders": mixing,
     }
 
 
@@ -155,7 +182,9 @@ def compute(before, after, bodies_before, bodies_after, link_paths, is_nav_parag
     for top in after["top"]:
         c = collections.Counter(ba[s]["top"] for s, x in aa.items() if x["top"] == top["key"] and s in ba)
         successor[top["key"]] = c.most_common(1)[0][0] if c else None
-    a["misfiled_fixed"] = sum(1 for s, x in aa.items() if s in ba and ba[s]["top"] != successor.get(x["top"]))
+    after_classic = {f["key"] for f in after["folders"] if f.get("classic")}
+    a["misfiled_fixed"] = sum(1 for s, x in aa.items() if s in ba and x["folder"] not in after_classic
+                              and ba[s]["top"] != successor.get(x["top"]))
     a["top_level_successor"] = successor
     return {
         "structure_file": structure_file,
@@ -176,7 +205,14 @@ DEFINITIONS = {
     "articles_moved": "articles whose folder path changed (renaming a top-level folder moves everything below it)",
     "articles_moved_by_folder_title": "articles whose containing folder's title (case-insensitive) changed",
     "misfiled_fixed": "articles whose after top-level section is not the successor of their before top-level category "
-                      "(successor = the before top-level category supplying most of that after section's articles)",
+                      "(successor = the before top-level category supplying most of that after section's articles); "
+                      "articles placed in a classic section are excluded (they moved for the block-first rule)",
+    "classic_articles": "articles in a `classic: true` section of the structure file (Classic Editor, classic themes, "
+                       "classic-era shortcodes); the same set is counted in both trees",
+    "classic_articles_outside_classic_section": "classic articles not inside a classic section; the category tree has no "
+                                              "classic section, so there it equals classic_articles",
+    "sections_mixing_classic_and_current": "sections whose own articles (index article included) mix at least one classic "
+                                          "and at least one current (block-first) article",
     "boilerplate_sentence_share": f"per top-level section: share of sentences with >= {MIN_WORDS} words appearing verbatim "
                                   f"in >= {MIN_ARTICLES} articles of the same tree",
 }
@@ -184,15 +220,16 @@ DEFINITIONS = {
 
 def print_summary(m):
     keys = ["articles", "folders", "max_depth", "mean_depth", "folders_with_index_page", "orphan_articles",
-            "manual_breadcrumb_paragraphs", "sections_using_article_as_index"]
-    print(f"{'metric':32s} {'before':>10s} {'after':>10s}")
+            "manual_breadcrumb_paragraphs", "sections_using_article_as_index", "classic_articles",
+            "classic_articles_outside_classic_section", "sections_mixing_classic_and_current"]
+    print(f"{'metric':40s} {'before':>10s} {'after':>10s}")
     for k in keys:
-        print(f"{k:32s} {m['before'][k]!s:>10s} {m['after'][k]!s:>10s}")
+        print(f"{k:40s} {m['before'][k]!s:>10s} {m['after'][k]!s:>10s}")
     for k in ("ordering",):
-        print(f"{k:32s} {m['before'][k]['label']:>10s} {m['after'][k]['label']:>10s}")
+        print(f"{k:40s} {m['before'][k]['label']:>10s} {m['after'][k]['label']:>10s}")
     apf = lambda d: f"{d['min']}/{d['median']}/{d['max']}"
-    print(f"{'articles_per_folder min/med/max':32s} {apf(m['before']['articles_per_folder']):>10s} "
+    print(f"{'articles_per_folder min/med/max':40s} {apf(m['before']['articles_per_folder']):>10s} "
           f"{apf(m['after']['articles_per_folder']):>10s}")
-    print(f"{'articles_moved':32s} {'':>10s} {m['after']['articles_moved']!s:>10s}")
-    print(f"{'articles_moved_by_folder_title':32s} {'':>10s} {m['after']['articles_moved_by_folder_title']!s:>10s}")
-    print(f"{'misfiled_fixed':32s} {'':>10s} {m['after']['misfiled_fixed']!s:>10s}")
+    print(f"{'articles_moved':40s} {'':>10s} {m['after']['articles_moved']!s:>10s}")
+    print(f"{'articles_moved_by_folder_title':40s} {'':>10s} {m['after']['articles_moved_by_folder_title']!s:>10s}")
+    print(f"{'misfiled_fixed':40s} {'':>10s} {m['after']['misfiled_fixed']!s:>10s}")

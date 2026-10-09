@@ -1,7 +1,7 @@
 ---
 title: Notes
 slug: notes
-position: 8
+position: 7
 original_url: https://wordpress.org/documentation/article/notes/
 wp_id: 16366378
 legacy_categories:

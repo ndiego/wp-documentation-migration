@@ -43,7 +43,7 @@ The images you add here will be automatically added to the Media Library.
 Further reading:
 
 -   [Inserting Images into Posts and Pages (Block Editor)](inserting-images-into-posts-and-pages-block-editor.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 
 ## Miscellaneous
 

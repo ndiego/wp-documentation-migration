@@ -26,7 +26,7 @@ migration:
 
 # Settings Reading screen
 
-The options in the **Reading Settings** **Screen** are few in number, but still important. You can decide if you want your latest [posts](../../writing-and-publishing/write-posts-classic-editor.md) or a “static” [P](https://codex.wordpress.org/Pages)[a](../../writing-and-publishing/create-pages.md)[ge](https://codex.wordpress.org/Pages) displayed as your website’s front (home) page. You can also adjust how many posts are displayed on that home page. In addition, you can adjust [syndication feed](../../../overview/where-to-start/wordpress-glossary.md#feed) features to determine how the information from your site is sent to a reader’s web browser or other applications.
+The options in the **Reading Settings** **Screen** are few in number, but still important. You can decide if you want your latest [posts](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md) or a “static” [P](https://codex.wordpress.org/Pages)[a](../../writing-and-publishing/create-pages.md)[ge](https://codex.wordpress.org/Pages) displayed as your website’s front (home) page. You can also adjust how many posts are displayed on that home page. In addition, you can adjust [syndication feed](../../../overview/where-to-start/wordpress-glossary.md#feed) features to determine how the information from your site is sent to a reader’s web browser or other applications.
 
 ## Reading Settings
 

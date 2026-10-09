@@ -49,7 +49,7 @@ migration:
 
 The WordPress block editor also called the **block editor**, **WordPress editor** or **Gutenberg** **editor** is the new way of publishing content in WordPress.
 
-Following the launch of WordPress 5.0 in December 2018, the WordPress block editor was set as the default editor and replaced the [classic editor](../../using-wordpress/writing-and-publishing/write-posts-classic-editor.md). To use the [classic editor](../../using-wordpress/writing-and-publishing/write-posts-classic-editor.md), you will need to install the [classic editor](https://wordpress.org/plugins/classic-editor/) plugin.
+Following the launch of WordPress 5.0 in December 2018, the WordPress block editor was set as the default editor and replaced the [classic editor](../../classic-wordpress/classic-editor/write-posts-classic-editor.md). To use the [classic editor](../../classic-wordpress/classic-editor/write-posts-classic-editor.md), you will need to install the [classic editor](https://wordpress.org/plugins/classic-editor/) plugin.
 
 The WordPress block editor offers an array of [blocks](blocks/README.md) that can be used to create media-rich pages and posts.
 

@@ -39,7 +39,7 @@ migration:
 # First steps with WordPress (Block Editor)
 
 > [!NOTE]
-> This page refers to WordPress using the Block Editor. If you are on an older version of WordPress or using the Classic Editor plugin, refer to [this page](first-steps-with-wordpress-classic.md).
+> This page refers to WordPress using the Block Editor. If you are on an older version of WordPress or using the Classic Editor plugin, refer to [this page](../../classic-wordpress/classic-editor/first-steps-with-wordpress-classic.md).
 
 ## I have done the 5-minute installation. Now what?
 
@@ -67,9 +67,9 @@ Take time to look at the site before you get into changing it and figuring out [
 
 ![Front side of the WordPress Website](../../assets/images/2022/03/myfirstwpsite-–-Just-another-WordPress-site.png)
 
-The layout you are looking at is defined by a [WordPress Theme](../../editing-and-design/themes/work-with-themes.md). It is the [appearance](../../using-wordpress/administration-screens/README.md#appearance-change-the-look-of-your-blog) of your website, styling the look of the site, and the framing of the content. The WordPress Twenty Twenty-Two theme features a “header” at the top with the title and tagline for your site. Below is your [Menu](../../using-wordpress/administration-screens/appearance/appearance-menus-screen.md), if you have one. The main middle section of the page is the content area.
+The layout you are looking at is defined by a [WordPress Theme](../../editing-and-design/themes/work-with-themes.md). It is the [appearance](../../using-wordpress/administration-screens/README.md#appearance-change-the-look-of-your-blog) of your website, styling the look of the site, and the framing of the content. The WordPress Twenty Twenty-Two theme features a “header” at the top with the title and tagline for your site. Below is your [Menu](../../classic-wordpress/widgets-menus-and-customizer/appearance-menus-screen.md), if you have one. The main middle section of the page is the content area.
 
-Scroll down the page and you will see a search box, recent posts, and recent comments. These are called [Widgets](../../using-wordpress/administration-screens/appearance/manage-wordpress-widgets.md).
+Scroll down the page and you will see a search box, recent posts, and recent comments. These are called [Widgets](../../classic-wordpress/widgets-menus-and-customizer/manage-wordpress-widgets.md).
 
 Notice the bar at the end of the page. This is called the “footer.” It says “Proudly powered by WordPress.”
 

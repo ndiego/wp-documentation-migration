@@ -98,7 +98,7 @@ While WordPress comes ready for search engines, the following are more resources
 
 [Meta Tags](https://codex.wordpress.org/Meta_Tags_in_WordPress) contain information that describes your site’s purpose, description, and keywords used within your site. The meta tags are stored within the `head` of your `header.php` template file. By default, they are not included in WordPress, but you can manually include them and the article on [Meta Tags in WordPress](https://codex.wordpress.org/Meta_Tags_in_WordPress) takes you through the process of adding meta tags to your WordPress site.
 
-The WordPress [Custom Fields](assign-custom-fields.md) option can also be used to include keywords and descriptions for [posts](../write-posts-classic-editor.md) and [Pages](../create-pages.md). There are also several WordPress Plugins that can also help you to add meta tags and keyword descriptions to your site found within the [Official WordPress Plugin Directory](https://wordpress.org/plugins/).
+The WordPress [Custom Fields](assign-custom-fields.md) option can also be used to include keywords and descriptions for [posts](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md) and [Pages](../create-pages.md). There are also several WordPress Plugins that can also help you to add meta tags and keyword descriptions to your site found within the [Official WordPress Plugin Directory](https://wordpress.org/plugins/).
 
 ### Robots.txt Optimization
 

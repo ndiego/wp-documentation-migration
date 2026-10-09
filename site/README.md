@@ -24,7 +24,7 @@ Pinned: `astro@7.3.6`, `@astrojs/starlight@0.42.5`, `@astrojs/markdown-remark@7.
 cd site
 npm install
 npm run dev          # http://localhost:4321  (Astro 7 daemonises it: `npx astro dev stop|status|logs`)
-npm run build        # -> dist/, 712 pages (348 current + 360 proposed + landing/compare/decisions/404), ~4-10 s
+npm run build        # -> dist/, 715 pages (348 current + 363 proposed + landing/compare/decisions/404), ~4-10 s
 npm run preview      # serve dist/ (videos/images included via the dist/assets symlink)
 npm run check-links  # internal link + #anchor check over dist/ (run after build), per tree
 npm run build:publish  # build with a real copy of the images in dist/assets (for Spacefast)
@@ -52,7 +52,8 @@ config/build time).
 - **Which tree am I in.** `src/components/SiteTitle.astro` adds a Current/Proposed pill next to the
   site title; `src/components/Banner.astro` shows a coloured bar (orange = current, blue = proposed)
   on every tree page with a one-click switch to the same page in the other tree and a link to the
-  compare page (pre-filled with the article's slug). The switch target comes from
+  compare page (pre-filled with the article's slug). Proposed pages with `classic: true` frontmatter get an
+  extra subtle line: "Classic WordPress: applies to classic themes or the Classic Editor plugin". The switch target comes from
   `lib/structure-data.mjs` `counterpartOf()`: articles via `data/restructure-map.json` (slug ->
   before/after path); section pages go to the deepest section of the other tree holding more than
   half of their articles (top-level sections only to a top-level section); root pages to the same path.
@@ -76,7 +77,10 @@ build time (`lib/compare.mjs`); they are read with `fs` rather than imported, so
 - "Find your article": the 321 map rows are embedded as JSON in the page; plain JS filters by
   title/slug and shows old section chain -> new section chain with links into both trees. `?q=`
   pre-fills the search (the banner's "Compare locations" uses it).
-- What changed: top-level moves, misfiled articles fixed, articles that became section overviews,
+- Classic-era (`is_classic`) articles get a purple "classic" badge in both trees; proposed classic sections are
+  badged, and current sections show how many classic-era articles they mix in.
+- What changed: top-level moves, block-first (classic articles by their Classic WordPress sub-section, old -> new
+  chain), misfiled articles fixed (classic articles excluded), articles that became section overviews,
   the formerly Uncategorized articles, removed "Go back to…" lines (count by old section).
 - `/compare/decisions/`: `data/structure-review.md` rendered with `createMarkdownProcessor` and the
   same H1-strip, alerts and WordPress heading-id plugins; article slugs and folder paths in inline

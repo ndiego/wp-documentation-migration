@@ -1,7 +1,7 @@
 ---
 title: Where to find WordPress help
 slug: where-to-find-wordpress-help
-position: 4
+position: 3
 original_url: https://wordpress.org/documentation/article/where-to-find-wordpress-help/
 wp_id: 13771020
 legacy_categories:

@@ -240,7 +240,7 @@ You can choose link options to apply to an image. Options include the following:
 
 -   **Search field** – Paste a URL or search for a page, post, or other content on your site to link the image.
 -   **Link images to image file** – Link image to the image file in a new browser window.
--   **Link images to attachment page** – Link the image to its WordPress media [attachment](../../../../using-wordpress/media/inserting-images-into-posts-and-pages-classic.md#step-4-attachment-details) page.
+-   **Link images to attachment page** – Link the image to its WordPress media [attachment](../../../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md#step-4-attachment-details) page.
 -   **Enlarge on click** – Lets visitors open the image in a larger view, known as a lightbox, without leaving the page to see more detail.
 
 <a id="image-editing"></a>

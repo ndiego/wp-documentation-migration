@@ -1,8 +1,14 @@
 # Proposed documentation tree: review
 
 Rendered from `data/structure.yaml` (the source of truth; regenerate this file rather than editing it by hand).
-321 articles, 53 sections (17 of them use an article as their index page), at most 4 folder levels under `docs/`.
+321 articles, 56 sections (17 of them use an article as their index page), at most 4 folder levels under `docs/`.
 Check: 321/321 articles placed, 0 missing, 0 duplicates, 0 unknown slugs.
+
+**Block-first.** The main tree describes what a fresh WordPress install gives you today: the block editor, a block
+theme and the Site Editor. Everything that only applies to the Classic Editor plugin, to classic themes (widgets,
+Customizer, Menus screen) or to classic-era media shortcodes is in **Classic WordPress**, the last top-level
+section, marked `classic: true` (36 articles in 15 sections; the flag is inherited by every
+section below it and appears as `classic: true` in the generated frontmatter and manifest).
 
 The old "Technical guides" top-level section is dissolved into Using WordPress ("Installation & hosting",
 "Maintenance & security"), with two of its articles moved to more specific homes (see decisions).
@@ -10,12 +16,12 @@ The old "Technical guides" top-level section is dissolved into Using WordPress (
 ## Tree
 
 Counts include all descendants. Sections with an `index` take their title and intro from that article.
+`classic: true` is shown on the section that sets it; everything below it inherits it.
 
-- **WordPress overview** (`overview/`, 18 articles)
-  - **Where to start** (`overview/where-to-start/`, 7 articles)
+- **WordPress overview** (`overview/`, 17 articles)
+  - **Where to start** (`overview/where-to-start/`, 6 articles)
     - Get started with WordPress (`get-started-with-wordpress`)
     - First steps with WordPress (Block Editor) (`first-steps-with-wordpress-block-editor`)
-    - First steps with WordPress (Classic Editor) (`first-steps-with-wordpress-classic`)
     - Where to find WordPress help (`where-to-find-wordpress-help`)
     - WordPress Glossary (`wordpress-glossary`)
     - WordPress Semantics (`wordpress-semantics`)
@@ -33,8 +39,8 @@ Counts include all descendants. Sections with an `index` take their title and in
     - FAQ Troubleshooting (`faq-troubleshooting`)
     - FAQ I make changes and nothing happens (`faq-i-make-changes-and-nothing-happens`)
     - FAQ My site was hacked (`faq-my-site-was-hacked`)
-- **Using WordPress** (`using-wordpress/`, 93 articles)
-  - **Administration Screens** (`using-wordpress/administration-screens/`, 40 articles) — index: `administration-screens`
+- **Using WordPress** (`using-wordpress/`, 78 articles)
+  - **Administration Screens** (`using-wordpress/administration-screens/`, 34 articles) — index: `administration-screens`
     - Toolbar (`toolbar`)
     - **Dashboard** (`using-wordpress/administration-screens/dashboard/`, 2 articles)
       - Dashboard screen (`dashboard-screen`)
@@ -49,14 +55,6 @@ Counts include all descendants. Sections with an `index` take their title and in
     - **Pages** (`using-wordpress/administration-screens/pages/`, 2 articles)
       - Pages screen (`pages-screen`)
       - Pages Add New screen (`pages-add-new-screen`)
-    - **Appearance** (`using-wordpress/administration-screens/appearance/`, 7 articles)
-      - Appearance Themes Screen (`appearance-themes-screen`)
-      - Customizer (`customizer`)
-      - Manage WordPress widgets (`manage-wordpress-widgets`)
-      - Block-based Widgets Editor (`block-based-widgets-editor`)
-      - Appearance Widgets Screen (Classic Editor) (`appearance-widgets-screen-classic-editor`)
-      - Appearance Menus Screen (`appearance-menus-screen`)
-      - Appearance Theme File Editor Screen (`appearance-theme-file-editor-screen`)
     - **Plugins** (`using-wordpress/administration-screens/plugins/`, 4 articles)
       - Introduction to Plugins (`introduction-to-plugins`)
       - Manage Plugins (`manage-plugins`)
@@ -66,13 +64,14 @@ Counts include all descendants. Sections with an `index` take their title and in
       - Users screen (`users-screen`)
       - Users Add New screen (`users-add-new-screen`)
       - Users Your Profile screen (`users-your-profile-screen`)
-    - **Tools** (`using-wordpress/administration-screens/tools/`, 7 articles)
+    - **Tools** (`using-wordpress/administration-screens/tools/`, 8 articles)
       - Tools screen (`tools-screen`)
       - Tools Import screen (`tools-import-screen`)
       - Tools Export screen (`tools-export-screen`)
       - Site Health screen (`site-health-screen`)
       - Tools Export Personal Data screen (`tools-export-personal-data-screen`)
       - Tools Erase Personal Data screen (`tools-erase-personal-data-screen`)
+      - Appearance Theme File Editor Screen (`appearance-theme-file-editor-screen`)
       - Tools Network screen (`tools-network-screen`)
     - **Settings** (`using-wordpress/administration-screens/settings/`, 8 articles)
       - Settings General screen (`settings-general-screen`)
@@ -83,16 +82,12 @@ Counts include all descendants. Sections with an `index` take their title and in
       - Settings Permalinks screen (`settings-permalinks-screen`)
       - Settings Privacy screen (`settings-privacy-screen`)
       - Settings Connectors screen (`settings-connectors-screen`)
-  - **Writing & publishing** (`using-wordpress/writing-and-publishing/`, 23 articles)
-    - Write posts (Classic Editor) (`write-posts-classic-editor`)
+  - **Writing & publishing** (`using-wordpress/writing-and-publishing/`, 18 articles)
     - Create pages (`create-pages`)
     - Post Status (`post-status`)
     - Set blog content visibility (Block Editor) (`content-visibility-block-editor`)
-    - Set blog content visibility (Classic Editor) (`content-visibility-classic-editor`)
     - Protect posts with password (`protect-posts-with-password`)
-    - Sticky Posts (Classic Editor) (`sticky-posts-classic-editor`)
     - What is an excerpt? (Block Editor) (`what-is-an-excerpt-block-editor`)
-    - What is an excerpt? (Classic Editor) (`what-is-an-excerpt-classic-editor`)
     - Revisions (`revisions`)
     - **Organizing your site** (`using-wordpress/writing-and-publishing/organizing-your-site/`, 8 articles)
       - What is Post Type? (`what-is-post-type`)
@@ -103,23 +98,18 @@ Counts include all descendants. Sections with an `index` take their title and in
       - Create a search page (`create-a-search-page`)
       - Customize date and time format (`customize-date-and-time-format`)
       - Search Engine Optimization (`search-engine-optimization`)
-    - **Formatting & special characters** (`using-wordpress/writing-and-publishing/formatting/`, 5 articles)
+    - **Formatting & special characters** (`using-wordpress/writing-and-publishing/formatting/`, 4 articles)
       - Use character entities (`use-character-entities`)
       - What are Emoji? (`what-are-emoji`)
       - What are smilies? (`what-are-smilies`)
-      - Write code in your posts (Classic Editor) (`write-code-in-your-posts-classic-editor`)
       - How WordPress processes Post Content (`how-wordpress-processes-post-content`)
-  - **Media** (`using-wordpress/media/`, 10 articles)
+  - **Media** (`using-wordpress/media/`, 6 articles)
     - Use Images (`use-images`)
     - Inserting images into posts and pages (Block Editor) (`inserting-images-into-posts-and-pages-block-editor`)
-    - Inserting images into posts and pages (Classic Editor) (`inserting-images-into-posts-and-pages-classic`)
     - The WordPress Gallery (Block Editor) (`the-wordpress-gallery-block-editor`)
-    - The WordPress Gallery (Classic Editor) (`the-wordpress-gallery-classic-editor`)
     - Edit Media (`edit-media`)
     - Image size and quality (`image-size-and-quality`)
     - Use image and file attachments (`use-image-and-file-attachments`)
-    - Audio Shortcode (`audio-shortcode`)
-    - Video shortcode (`video-shortcode`)
   - **Comments** (`using-wordpress/comments/`, 5 articles)
     - Comments in WordPress (`comments-in-wordpress`)
     - Comment moderation (`comment-moderation`)
@@ -144,15 +134,14 @@ Counts include all descendants. Sections with an `index` take their title and in
     - Password Best Practices (`password-best-practices`)
     - Why should I use HTTPS (`why-should-i-use-https`)
     - WordPress Privacy (`wordpress-privacy`)
-- **Editing & design** (`editing-and-design/`, 210 articles)
-  - **Block editor** (`editing-and-design/block-editor/`, 168 articles)
+- **Editing & design** (`editing-and-design/`, 190 articles)
+  - **Block editor** (`editing-and-design/block-editor/`, 167 articles)
     - WordPress Block Editor (`wordpress-block-editor`)
     - Page/Post Settings sidebar (`page-post-settings-sidebar`)
     - Preferences overview (`preferences-overview`)
     - How to use the View feature (`how-to-use-the-preview-function`)
     - Distraction Free mode (`distraction-free-mode`)
     - Use keyboard shortcuts (Block Editor) (`keyboard-shortcuts-block-editor`)
-    - Use keyboard shortcuts (Classic Editor) (`keyboard-shortcuts-classic-editor`)
     - Notes (`notes`)
     - **Working with blocks** (`editing-and-design/block-editor/working-with-blocks/`, 20 articles)
       - Work with blocks (`work-with-blocks`)
@@ -333,11 +322,12 @@ Counts include all descendants. Sections with an `index` take their title and in
     - Zoom out view (`zoom-out-view`)
     - Command Palette (`site-editor-command-palette`)
     - Additional guide to using the Site Editor (`additional-guide-to-using-the-site-editor`)
-  - **Themes** (`editing-and-design/themes/`, 31 articles)
+  - **Themes** (`editing-and-design/themes/`, 12 articles)
     - Work with themes (`work-with-themes`)
+    - Appearance Themes Screen (`appearance-themes-screen`)
     - Block themes (`block-themes`)
     - Create a Favicon (`create-a-favicon`)
-    - **Default themes** (`editing-and-design/themes/default-themes/`, 28 articles)
+    - **Default themes** (`editing-and-design/themes/default-themes/`, 8 articles)
       - **Twenty Twenty-Five** (`editing-and-design/themes/default-themes/twenty-twenty-five/`, 2 articles) — index: `twenty-twenty-five`
         - Twenty Twenty-Five changelog (`twenty-twenty-five-changelog`)
       - **Twenty Twenty-Four** (`editing-and-design/themes/default-themes/twenty-twenty-four/`, 2 articles) — index: `twenty-twenty-four`
@@ -346,30 +336,60 @@ Counts include all descendants. Sections with an `index` take their title and in
         - Twenty Twenty-Three Changelog (`twenty-twenty-three-changelog`)
       - **Twenty Twenty-Two** (`editing-and-design/themes/default-themes/twenty-twenty-two/`, 2 articles) — index: `twenty-twenty-two`
         - Twenty Twenty-Two changelog (`twenty-twenty-two-changelog`)
-      - **Twenty Twenty-One** (`editing-and-design/themes/default-themes/twenty-twenty-one/`, 2 articles) — index: `twenty-twenty-one`
-        - Twenty Twenty-One changelog (`twenty-twenty-one-changelog`)
-      - **Twenty Twenty** (`editing-and-design/themes/default-themes/twenty-twenty/`, 2 articles) — index: `twenty-twenty`
-        - Twenty Twenty changelog (`twenty-twenty-changelog`)
-      - **Twenty Nineteen** (`editing-and-design/themes/default-themes/twenty-nineteen/`, 2 articles) — index: `twenty-nineteen`
-        - Twenty Nineteen changelog (`twenty-nineteen-changelog`)
-      - **Twenty Seventeen** (`editing-and-design/themes/default-themes/twenty-seventeen/`, 2 articles) — index: `twenty-seventeen`
-        - Twenty Seventeen changelog (`twenty-seventeen-changelog`)
-      - **Twenty Sixteen** (`editing-and-design/themes/default-themes/twenty-sixteen/`, 2 articles) — index: `twenty-sixteen`
-        - Twenty Sixteen changelog (`twenty-sixteen-changelog`)
-      - **Twenty Fifteen** (`editing-and-design/themes/default-themes/twenty-fifteen/`, 2 articles) — index: `twenty-fifteen`
-        - Twenty Fifteen changelog (`twenty-fifteen-changelog`)
-      - **Twenty Fourteen** (`editing-and-design/themes/default-themes/twenty-fourteen/`, 1 article)
-        - Twenty Fourteen changelog (`twenty-fourteen-changelog`)
-      - **Twenty Thirteen** (`editing-and-design/themes/default-themes/twenty-thirteen/`, 1 article)
-        - Twenty Thirteen changelog (`twenty-thirteen-changelog`)
-      - **Twenty Twelve** (`editing-and-design/themes/default-themes/twenty-twelve/`, 2 articles) — index: `twenty-twelve`
-        - Twenty Twelve changelog (`twenty-twelve-changelog`)
-      - **Twenty Eleven** (`editing-and-design/themes/default-themes/twenty-eleven/`, 2 articles) — index: `twenty-eleven`
-        - Twenty Eleven changelog (`twenty-eleven-changelog`)
-      - **Twenty Ten** (`editing-and-design/themes/default-themes/twenty-ten/`, 2 articles) — index: `twenty-ten`
-        - Twenty Ten changelog (`twenty-ten-changelog`)
+- **Classic WordPress** (`classic-wordpress/`, 36 articles) — `classic: true`
+  - **Classic Editor** (`classic-wordpress/classic-editor/`, 11 articles)
+    - First steps with WordPress (Classic Editor) (`first-steps-with-wordpress-classic`)
+    - Write posts (Classic Editor) (`write-posts-classic-editor`)
+    - Inserting images into posts and pages (Classic Editor) (`inserting-images-into-posts-and-pages-classic`)
+    - The WordPress Gallery (Classic Editor) (`the-wordpress-gallery-classic-editor`)
+    - Audio Shortcode (`audio-shortcode`)
+    - Video shortcode (`video-shortcode`)
+    - What is an excerpt? (Classic Editor) (`what-is-an-excerpt-classic-editor`)
+    - Set blog content visibility (Classic Editor) (`content-visibility-classic-editor`)
+    - Sticky Posts (Classic Editor) (`sticky-posts-classic-editor`)
+    - Write code in your posts (Classic Editor) (`write-code-in-your-posts-classic-editor`)
+    - Use keyboard shortcuts (Classic Editor) (`keyboard-shortcuts-classic-editor`)
+  - **Widgets, Menus and the Customizer** (`classic-wordpress/widgets-menus-and-customizer/`, 5 articles)
+    - Customizer (`customizer`)
+    - Manage WordPress widgets (`manage-wordpress-widgets`)
+    - Block-based Widgets Editor (`block-based-widgets-editor`)
+    - Appearance Widgets Screen (Classic Editor) (`appearance-widgets-screen-classic-editor`)
+    - Appearance Menus Screen (`appearance-menus-screen`)
+  - **Classic default themes** (`classic-wordpress/classic-default-themes/`, 20 articles)
+    - **Twenty Twenty-One** (`classic-wordpress/classic-default-themes/twenty-twenty-one/`, 2 articles) — index: `twenty-twenty-one`
+      - Twenty Twenty-One changelog (`twenty-twenty-one-changelog`)
+    - **Twenty Twenty** (`classic-wordpress/classic-default-themes/twenty-twenty/`, 2 articles) — index: `twenty-twenty`
+      - Twenty Twenty changelog (`twenty-twenty-changelog`)
+    - **Twenty Nineteen** (`classic-wordpress/classic-default-themes/twenty-nineteen/`, 2 articles) — index: `twenty-nineteen`
+      - Twenty Nineteen changelog (`twenty-nineteen-changelog`)
+    - **Twenty Seventeen** (`classic-wordpress/classic-default-themes/twenty-seventeen/`, 2 articles) — index: `twenty-seventeen`
+      - Twenty Seventeen changelog (`twenty-seventeen-changelog`)
+    - **Twenty Sixteen** (`classic-wordpress/classic-default-themes/twenty-sixteen/`, 2 articles) — index: `twenty-sixteen`
+      - Twenty Sixteen changelog (`twenty-sixteen-changelog`)
+    - **Twenty Fifteen** (`classic-wordpress/classic-default-themes/twenty-fifteen/`, 2 articles) — index: `twenty-fifteen`
+      - Twenty Fifteen changelog (`twenty-fifteen-changelog`)
+    - **Twenty Fourteen** (`classic-wordpress/classic-default-themes/twenty-fourteen/`, 1 article)
+      - Twenty Fourteen changelog (`twenty-fourteen-changelog`)
+    - **Twenty Thirteen** (`classic-wordpress/classic-default-themes/twenty-thirteen/`, 1 article)
+      - Twenty Thirteen changelog (`twenty-thirteen-changelog`)
+    - **Twenty Twelve** (`classic-wordpress/classic-default-themes/twenty-twelve/`, 2 articles) — index: `twenty-twelve`
+      - Twenty Twelve changelog (`twenty-twelve-changelog`)
+    - **Twenty Eleven** (`classic-wordpress/classic-default-themes/twenty-eleven/`, 2 articles) — index: `twenty-eleven`
+      - Twenty Eleven changelog (`twenty-eleven-changelog`)
+    - **Twenty Ten** (`classic-wordpress/classic-default-themes/twenty-ten/`, 2 articles) — index: `twenty-ten`
+      - Twenty Ten changelog (`twenty-ten-changelog`)
 
 ## Decisions
+
+### Block-first
+
+- Principle: the main tree describes what a fresh WordPress install gives you today: the block editor, a block theme and the Site Editor. Pages that only apply to the Classic Editor plugin, to classic themes (widgets, Customizer, Menus screen) or to classic-era media shortcodes move to "Classic WordPress" (classic-wordpress, classic: true), the last top-level section. classic-block and shortcode-block stay in the Blocks reference because they are blocks.
+- Classic WordPress > Classic Editor (11): first-steps-with-wordpress-classic (from Where to start), write-posts-classic-editor, content-visibility-classic-editor, sticky-posts-classic-editor, what-is-an-excerpt-classic-editor (from Writing & publishing), write-code-in-your-posts-classic-editor (from Formatting & special characters), inserting-images-into-posts-and-pages-classic, the-wordpress-gallery-classic-editor, audio-shortcode, video-shortcode (from Media) and keyboard-shortcuts-classic-editor (from Block editor). Ordered as a workflow: first steps, write posts, images, gallery, shortcodes, excerpt/visibility/sticky, code, keyboard shortcuts.
+- Classic WordPress > Widgets, Menus and the Customizer (5): customizer, manage-wordpress-widgets, block-based-widgets-editor, appearance-widgets-screen-classic-editor, appearance-menus-screen (all from Administration screens > Appearance). Customizer first, then the widgets overview and the two Widgets screens (block-based, then classic), then Menus. Block themes have none of these screens.
+- Classic WordPress > Classic default themes (11 sections, 20 articles): Twenty Twenty-One back to Twenty Ten, newest first, each with its existing index/changelog shape (Twenty Fourteen and Twenty Thirteen stay changelog-only sections). Editing & design > Themes > Default themes keeps the four block themes (Twenty Twenty-Five to Twenty Twenty-Two); its intro links to the classic section.
+- appearance-theme-file-editor-screen stays in the main tree but moves from Administration screens > Appearance to Administration screens > Tools (after the personal-data screens, before Network Setup): with a block theme wp-admin shows the theme file editor under Tools > Theme File Editor.
+- Administration screens > Appearance would be left holding only appearance-themes-screen, so the group is removed (same rule as Comments) and appearance-themes-screen moves to Editing & design > Themes, after work-with-themes. Appearance > Editor is the Site Editor section.
+- Where to start, Writing & publishing, Formatting and Media no longer pair block/classic variants; their intros point to Classic WordPress instead. Writing & publishing keeps 6 top-level articles (there is no block editor "write posts" article; Block editor covers writing).
 
 ### Structure
 
@@ -383,25 +403,25 @@ Counts include all descendants. Sections with an `index` take their title and in
 - The Embeds blocks section uses the `embeds` article as its index; `embed-block` (the generic block) is listed first, then the provider embeds alphabetically.
 - Block reference lists are alphabetical by title (not slug), with "(Deprecated)"/"(Removed)" pages last. Note verse-block sorts as "Poetry block".
 - Site editor uses the `site-editor` article as its index, which removes the section/article slug clash.
-- Default themes: 13 themes have both an article and a changelog. Twenty Fourteen and Twenty Thirteen have only a changelog (no theme article exists), so they get generated sections with a short intro holding just the changelog, keeping the newest-first sequence unbroken. There is no Twenty Eighteen theme.
+- Default themes: 13 themes have both an article and a changelog (4 block themes in Default themes, 9 classic in Classic WordPress > Classic default themes). Twenty Fourteen and Twenty Thirteen have only a changelog (no theme article exists), so they get generated sections with a short intro holding just the changelog, keeping the newest-first sequence unbroken. There is no Twenty Eighteen theme.
 
 ### Placements worth a second look
 
 - wordpress-block-editor: Dashboard -> Block editor (first article, acts as the editor overview).
-- video-shortcode: Dashboard -> Using WordPress > Media, next to audio-shortcode.
+- video-shortcode: Dashboard -> Classic WordPress > Classic Editor, next to audio-shortcode.
 - what-is-post-type: Dashboard -> Writing & publishing > Organizing your site.
 - site-editor, additional-guide-to-using-the-site-editor: Appearance -> Site editor.
 - template-editor: Block editor -> Site editor (it edits templates, a site-level concept).
 - introduction-to-plugins, manage-plugins: Appearance -> Administration screens > Plugins, ahead of the two Plugins screens.
-- block-based-widgets-editor, manage-wordpress-widgets: kept with appearance-widgets-screen-classic-editor in Administration screens > Appearance (wp-admin Appearance > Widgets), not with the Widget blocks reference.
-- customizer: stays in Administration screens > Appearance (Appearance > Customize).
+- block-based-widgets-editor, manage-wordpress-widgets: kept with appearance-widgets-screen-classic-editor in Classic WordPress > Widgets, Menus and the Customizer (wp-admin Appearance > Widgets only exists with a classic theme), not with the Widget blocks reference.
+- customizer: Classic WordPress > Widgets, Menus and the Customizer (Appearance > Customize is a classic-theme screen).
 - layout-settings-overview, position-settings-overview: Appearance -> Block settings.
 - styles-overview, the-font-library: Appearance -> Site editor.
 - use-gravatars: Appearance -> Users, roles & profiles.
 - assign-custom-fields: Appearance -> Writing & publishing > Organizing your site.
 - create-a-favicon: Appearance -> Themes (top level, next to work-with-themes). Debatable: it now lives in Settings > General, so settings-general-screen's neighbourhood is an alternative.
 - Uncategorized: responsive-styles -> Block settings; site-editor-identity -> Site editor.
-- keyboard-shortcuts-block-editor + keyboard-shortcuts-classic-editor: Dashboard -> Block editor top level, kept as an adjacent pair (the Classic variant therefore sits inside Block editor).
+- keyboard-shortcuts-block-editor: Dashboard -> Block editor top level. Its Classic Editor counterpart is in Classic WordPress > Classic Editor (block-first rule; the pair is no longer adjacent).
 - distraction-free-mode: Dashboard -> Block editor.
 - administration-screens, toolbar: top of Administration screens (overview pages for the whole group).
 - search-engine-optimization: Technical guides > Installation -> Organizing your site.

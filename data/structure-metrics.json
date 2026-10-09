@@ -10,7 +10,10 @@
   "folders_with_index_page": "folders with a hand-written README (structure title+intro, or an index article); generated category READMEs = 0",
   "articles_moved": "articles whose folder path changed (renaming a top-level folder moves everything below it)",
   "articles_moved_by_folder_title": "articles whose containing folder's title (case-insensitive) changed",
-  "misfiled_fixed": "articles whose after top-level section is not the successor of their before top-level category (successor = the before top-level category supplying most of that after section's articles)",
+  "misfiled_fixed": "articles whose after top-level section is not the successor of their before top-level category (successor = the before top-level category supplying most of that after section's articles); articles placed in a classic section are excluded (they moved for the block-first rule)",
+  "classic_articles": "articles in a `classic: true` section of the structure file (Classic Editor, classic themes, classic-era shortcodes); the same set is counted in both trees",
+  "classic_articles_outside_classic_section": "classic articles not inside a classic section; the category tree has no classic section, so there it equals classic_articles",
+  "sections_mixing_classic_and_current": "sections whose own articles (index article included) mix at least one classic and at least one current (block-first) article",
   "boilerplate_sentence_share": "per top-level section: share of sentences with >= 6 words appearing verbatim in >= 3 articles of the same tree"
  },
  "before": {
@@ -35,6 +38,16 @@
   "orphan_articles": 53,
   "manual_breadcrumb_paragraphs": 128,
   "sections_using_article_as_index": 0,
+  "classic_articles": 36,
+  "classic_articles_outside_classic_section": 36,
+  "sections_mixing_classic_and_current": 5,
+  "sections_mixing_classic_and_current_folders": [
+   "wordpress-overview/where-to-start",
+   "support-guides/dashboard",
+   "support-guides/media",
+   "support-guides/publishing",
+   "customization/default-themes"
+  ],
   "boilerplate_sentence_share": {
    "wordpress-overview": {
     "title": "WordPress overview",
@@ -76,19 +89,19 @@
  },
  "after": {
   "articles": 321,
-  "folders": 53,
+  "folders": 56,
   "max_depth": 4,
-  "mean_depth": 3.28,
-  "folders_with_index_page": 53,
+  "mean_depth": 3.196,
+  "folders_with_index_page": 56,
   "articles_per_folder": {
    "min": 0,
-   "median": 3,
+   "median": 3.0,
    "max": 51
   },
   "ordering": {
    "label": "curated",
-   "non_alphabetical_share": 0.8438,
-   "folders_considered": 32,
+   "non_alphabetical_share": 0.8485,
+   "folders_considered": 33,
    "non_alphabetical_folders": [
     "overview/where-to-start",
     "overview/about-wordpress",
@@ -96,7 +109,6 @@
     "using-wordpress/administration-screens/posts",
     "using-wordpress/administration-screens/media-screens",
     "using-wordpress/administration-screens/pages",
-    "using-wordpress/administration-screens/appearance",
     "using-wordpress/administration-screens/plugins",
     "using-wordpress/administration-screens/users",
     "using-wordpress/administration-screens/tools",
@@ -116,42 +128,56 @@
     "editing-and-design/block-editor/blocks/theme",
     "editing-and-design/block-editor/blocks/embeds",
     "editing-and-design/site-editor",
-    "editing-and-design/themes"
+    "editing-and-design/themes",
+    "classic-wordpress/classic-editor",
+    "classic-wordpress/widgets-menus-and-customizer"
    ]
   },
   "orphan_articles": 53,
   "manual_breadcrumb_paragraphs": 0,
   "sections_using_article_as_index": 17,
+  "classic_articles": 36,
+  "classic_articles_outside_classic_section": 0,
+  "sections_mixing_classic_and_current": 0,
+  "sections_mixing_classic_and_current_folders": [],
   "boilerplate_sentence_share": {
    "overview": {
     "title": "WordPress overview",
-    "articles": 18,
-    "sentences": 3346,
+    "articles": 17,
+    "sentences": 3203,
     "boilerplate_sentences": 12,
-    "share": 0.0036
+    "share": 0.0037
    },
    "using-wordpress": {
     "title": "Using WordPress",
-    "articles": 93,
-    "sentences": 4932,
-    "boilerplate_sentences": 137,
-    "share": 0.0278
+    "articles": 78,
+    "sentences": 4058,
+    "boilerplate_sentences": 130,
+    "share": 0.032
    },
    "editing-and-design": {
     "title": "Editing & design",
-    "articles": 210,
-    "sentences": 11666,
-    "boilerplate_sentences": 2710,
-    "share": 0.2323
+    "articles": 190,
+    "sentences": 9699,
+    "boilerplate_sentences": 1994,
+    "share": 0.2056
+   },
+   "classic-wordpress": {
+    "title": "Classic WordPress",
+    "articles": 36,
+    "sentences": 2984,
+    "boilerplate_sentences": 723,
+    "share": 0.2423
    }
   },
   "articles_moved": 321,
-  "articles_moved_by_folder_title": 190,
+  "articles_moved_by_folder_title": 194,
   "misfiled_fixed": 23,
   "top_level_successor": {
    "overview": "wordpress-overview",
    "using-wordpress": "support-guides",
-   "editing-and-design": "customization"
+   "editing-and-design": "customization",
+   "classic-wordpress": "customization"
   }
  }
 }

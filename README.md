@@ -90,8 +90,11 @@ The converter can lay the same raw data out two ways:
   (1-based among the folder's articles) and `legacy_categories` (replaces `categories`); generated READMEs have
   only `title` and `section: true`, index articles keep their normal frontmatter plus `section: true`.
   With `remove_nav_links: true` the first-paragraph "Go back to the list of Blocks" links are dropped
-  (`migration.nav_link_removed: true`). Every raw article must be placed exactly once; unknown, duplicate and
-  missing slugs abort before anything is written.
+  (`migration.nav_link_removed: true`). A section with `classic: true` (boolean, inherited by every descendant
+  section, cannot be switched off below it) marks classic-era content, i.e. the "Classic WordPress" section of the
+  block-first tree: its articles and generated READMEs get `classic: true` frontmatter, its manifest entries
+  `"classic": true`, its map rows `is_classic: true`. Every raw article must be placed exactly once; unknown,
+  duplicate and missing slugs abort before anything is written.
 
 ```sh
 scripts/build_all.sh                       # everything: assets (if missing), build/before, docs/, link checks
@@ -102,8 +105,10 @@ scripts/build_all.sh                       # everything: assets (if missing), bu
 ```
 
 Outputs of structure mode, besides docs/: `data/restructure-map.json` (per article: before/after path,
-section chain, depth, position, nav_link_removed) and `data/structure-metrics.json` (before/after: folders,
-depth, ordering, orphans, breadcrumb paragraphs, moves, boilerplate share; definitions inside the file;
+section chain, depth, position, nav_link_removed, is_classic) and `data/structure-metrics.json` (before/after:
+folders, depth, ordering, orphans, breadcrumb paragraphs, moves, boilerplate share, classic articles, classic articles
+outside a classic section, sections mixing classic and current articles, with the structure file's classic set applied
+to both trees; definitions inside the file;
 computed by `scripts/structure_metrics.py`). The manifest lists, within each folder, the sub-sections first and
 then the articles, with `order` counting both. Links are resolved by slug, so they follow moved files; links to
 a category page point at the deepest section that holds all of that category's articles.

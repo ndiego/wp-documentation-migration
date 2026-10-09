@@ -1,7 +1,7 @@
 ---
 title: The WordPress Gallery (Block Editor)
 slug: the-wordpress-gallery-block-editor
-position: 4
+position: 3
 original_url: https://wordpress.org/documentation/article/the-wordpress-gallery-block-editor/
 wp_id: 11032107
 legacy_categories:
@@ -26,7 +26,7 @@ migration:
 
 # The WordPress Gallery (Block Editor)
 
-Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](the-wordpress-gallery-classic-editor.md).
+Note: This page uses Block Editor. If you are a Classic Editor User, refer [this page](../../classic-wordpress/classic-editor/the-wordpress-gallery-classic-editor.md).
 
 ## Overview
 
@@ -42,7 +42,7 @@ This article introduces how to add an image gallery using the media library.
 
 Here’s how to add an image gallery step-by-step, using the media uploader:
 
-*Note: Before adding a gallery, you should be comfortable using the* Add media *feature and the media uploader to [add images to your media library and place them into posts](inserting-images-into-posts-and-pages-classic.md).*
+*Note: Before adding a gallery, you should be comfortable using the* Add media *feature and the media uploader to [add images to your media library and place them into posts](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md).*
 
 ### Step 1 – Place your cursor
 

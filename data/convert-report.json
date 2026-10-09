@@ -420,7 +420,7 @@
    }
   },
   "twenty-eleven": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-eleven/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-eleven/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -430,7 +430,7 @@
    }
   },
   "twenty-ten": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-ten/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-ten/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -440,7 +440,7 @@
    }
   },
   "twenty-twelve": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-twelve/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-twelve/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -451,7 +451,7 @@
    }
   },
   "twenty-fifteen-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-fifteen/twenty-fifteen-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-fifteen/twenty-fifteen-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -460,7 +460,7 @@
    }
   },
   "twenty-nineteen-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-nineteen/twenty-nineteen-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-nineteen/twenty-nineteen-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -469,7 +469,7 @@
    }
   },
   "twenty-seventeen-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-seventeen/twenty-seventeen-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-seventeen/twenty-seventeen-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -478,7 +478,7 @@
    }
   },
   "twenty-sixteen-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-sixteen/twenty-sixteen-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-sixteen/twenty-sixteen-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -487,7 +487,7 @@
    }
   },
   "twenty-fourteen-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-fourteen/twenty-fourteen-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-fourteen/twenty-fourteen-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -496,7 +496,7 @@
    }
   },
   "twenty-thirteen-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-thirteen/twenty-thirteen-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-thirteen/twenty-thirteen-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -505,7 +505,7 @@
    }
   },
   "twenty-twelve-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-twelve/twenty-twelve-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-twelve/twenty-twelve-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -514,7 +514,7 @@
    }
   },
   "twenty-eleven-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-eleven/twenty-eleven-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-eleven/twenty-eleven-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -523,7 +523,7 @@
    }
   },
   "twenty-ten-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-ten/twenty-ten-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-ten/twenty-ten-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -1869,7 +1869,7 @@
    }
   },
   "block-based-widgets-editor": {
-   "path": "docs/using-wordpress/administration-screens/appearance/block-based-widgets-editor.md",
+   "path": "docs/classic-wordpress/widgets-menus-and-customizer/block-based-widgets-editor.md",
    "warnings": [
     "contained VideoPress embed (now a bare oEmbed URL; verify it auto-embeds after import); guid 63dxpgzD not found in media library"
    ],
@@ -1934,7 +1934,7 @@
    }
   },
   "customizer": {
-   "path": "docs/using-wordpress/administration-screens/appearance/customizer.md",
+   "path": "docs/classic-wordpress/widgets-menus-and-customizer/customizer.md",
    "warnings": [],
    "notes": [
     "link to old slug 'blocks' rewritten to 'blocks-list' (via 301)"
@@ -1950,7 +1950,7 @@
    }
   },
   "appearance-menus-screen": {
-   "path": "docs/using-wordpress/administration-screens/appearance/appearance-menus-screen.md",
+   "path": "docs/classic-wordpress/widgets-menus-and-customizer/appearance-menus-screen.md",
    "warnings": [],
    "notes": [
     "link to old slug 'appearance-widgets-screen' rewritten to 'appearance-widgets-screen-classic-editor' (via 301)"
@@ -1987,7 +1987,7 @@
    }
   },
   "twenty-fifteen": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-fifteen/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-fifteen/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -2098,7 +2098,7 @@
    }
   },
   "twenty-twenty-one-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-twenty-one/twenty-twenty-one-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-twenty-one/twenty-twenty-one-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -2116,7 +2116,7 @@
    }
   },
   "twenty-twenty-one": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-twenty-one/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-twenty-one/README.md",
    "warnings": [],
    "notes": [
     "contained <details> (emitted as raw HTML details/summary)"
@@ -2772,7 +2772,7 @@
    }
   },
   "twenty-twenty-changelog": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-twenty/twenty-twenty-changelog.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-twenty/twenty-twenty-changelog.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -2781,7 +2781,7 @@
    }
   },
   "twenty-twenty": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-twenty/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-twenty/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -2974,7 +2974,7 @@
    }
   },
   "appearance-themes-screen": {
-   "path": "docs/using-wordpress/administration-screens/appearance/appearance-themes-screen.md",
+   "path": "docs/editing-and-design/themes/appearance-themes-screen.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -3721,7 +3721,7 @@
    }
   },
   "appearance-theme-file-editor-screen": {
-   "path": "docs/using-wordpress/administration-screens/appearance/appearance-theme-file-editor-screen.md",
+   "path": "docs/using-wordpress/administration-screens/tools/appearance-theme-file-editor-screen.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -3730,7 +3730,7 @@
    }
   },
   "appearance-widgets-screen-classic-editor": {
-   "path": "docs/using-wordpress/administration-screens/appearance/appearance-widgets-screen-classic-editor.md",
+   "path": "docs/classic-wordpress/widgets-menus-and-customizer/appearance-widgets-screen-classic-editor.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -3821,7 +3821,7 @@
    }
   },
   "twenty-nineteen": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-nineteen/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-nineteen/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -3969,7 +3969,7 @@
    }
   },
   "content-visibility-classic-editor": {
-   "path": "docs/using-wordpress/writing-and-publishing/content-visibility-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/content-visibility-classic-editor.md",
    "warnings": [],
    "notes": [
     "link to old slug 'pages' rewritten to 'create-pages' (via 301)"
@@ -4022,7 +4022,7 @@
    }
   },
   "what-is-an-excerpt-classic-editor": {
-   "path": "docs/using-wordpress/writing-and-publishing/what-is-an-excerpt-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/what-is-an-excerpt-classic-editor.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -4030,7 +4030,7 @@
    }
   },
   "sticky-posts-classic-editor": {
-   "path": "docs/using-wordpress/writing-and-publishing/sticky-posts-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/sticky-posts-classic-editor.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -4040,7 +4040,7 @@
    }
   },
   "write-code-in-your-posts-classic-editor": {
-   "path": "docs/using-wordpress/writing-and-publishing/formatting/write-code-in-your-posts-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/write-code-in-your-posts-classic-editor.md",
    "warnings": [],
    "notes": [
     "link to old slug 'plugins' rewritten to 'introduction-to-plugins' (via 301)",
@@ -4070,7 +4070,7 @@
    }
   },
   "the-wordpress-gallery-classic-editor": {
-   "path": "docs/using-wordpress/media/the-wordpress-gallery-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/the-wordpress-gallery-classic-editor.md",
    "warnings": [],
    "notes": [
     "link to old slug 'inserting-images-into-posts-and-pages' rewritten to 'inserting-images-into-posts-and-pages-classic' (via 301)"
@@ -4102,7 +4102,7 @@
    }
   },
   "inserting-images-into-posts-and-pages-classic": {
-   "path": "docs/using-wordpress/media/inserting-images-into-posts-and-pages-classic.md",
+   "path": "docs/classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -4282,7 +4282,7 @@
    "counts": {}
   },
   "twenty-sixteen": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-sixteen/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-sixteen/README.md",
    "warnings": [],
    "notes": [],
    "counts": {
@@ -4321,7 +4321,7 @@
    }
   },
   "video-shortcode": {
-   "path": "docs/using-wordpress/media/video-shortcode.md",
+   "path": "docs/classic-wordpress/classic-editor/video-shortcode.md",
    "warnings": [],
    "notes": [
     "empty <pre> (shortcode rendered to nothing on the live site) filled with '[video]'; reconstructed, check against the original Codex page",
@@ -4335,7 +4335,7 @@
    }
   },
   "audio-shortcode": {
-   "path": "docs/using-wordpress/media/audio-shortcode.md",
+   "path": "docs/classic-wordpress/classic-editor/audio-shortcode.md",
    "warnings": [],
    "notes": [
     "link to old slug 'glossary' rewritten to 'wordpress-glossary' (via 301)"
@@ -4363,7 +4363,7 @@
    }
   },
   "keyboard-shortcuts-classic-editor": {
-   "path": "docs/editing-and-design/block-editor/keyboard-shortcuts-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/keyboard-shortcuts-classic-editor.md",
    "warnings": [],
    "notes": [
     "link to old slug 'block-editor-keyboard-shortcuts' rewritten to 'keyboard-shortcuts-block-editor' (via 301)"
@@ -4476,7 +4476,7 @@
    }
   },
   "manage-wordpress-widgets": {
-   "path": "docs/using-wordpress/administration-screens/appearance/manage-wordpress-widgets.md",
+   "path": "docs/classic-wordpress/widgets-menus-and-customizer/manage-wordpress-widgets.md",
    "warnings": [],
    "notes": [
     "link to old slug 'appearance-widgets-screen' rewritten to 'appearance-widgets-screen-classic-editor' (via 301)",
@@ -4608,7 +4608,7 @@
    }
   },
   "write-posts-classic-editor": {
-   "path": "docs/using-wordpress/writing-and-publishing/write-posts-classic-editor.md",
+   "path": "docs/classic-wordpress/classic-editor/write-posts-classic-editor.md",
    "warnings": [],
    "notes": [
     "legacy /support/files/ URL: https://wordpress.org/support/files/2018/10/add-new-post.png",
@@ -4629,7 +4629,7 @@
    }
   },
   "first-steps-with-wordpress-classic": {
-   "path": "docs/overview/where-to-start/first-steps-with-wordpress-classic.md",
+   "path": "docs/classic-wordpress/classic-editor/first-steps-with-wordpress-classic.md",
    "warnings": [],
    "notes": [
     "link to 'how-to-install-wordpress' points to moved page https://developer.wordpress.org/advanced-administration/before-install/howto-install/",
@@ -4679,7 +4679,7 @@
    }
   },
   "twenty-seventeen": {
-   "path": "docs/editing-and-design/themes/default-themes/twenty-seventeen/README.md",
+   "path": "docs/classic-wordpress/classic-default-themes/twenty-seventeen/README.md",
    "warnings": [],
    "notes": [
     "link to old slug 'pages' rewritten to 'create-pages' (via 301)",
@@ -4709,5 +4709,5 @@
    ]
   }
  },
- "section_readmes": 36
+ "section_readmes": 39
 }

@@ -123,7 +123,7 @@ If the option mentioned above is unchecked, the link moderation value is higher 
 ### How do I disable comments?
 
 First, uncheck **Allow people to post comments on new articles** on the [Settings](../../using-wordpress/administration-screens/README.md#settings-configuration-settings) > [Discussion](../../using-wordpress/administration-screens/README.md#discussion) screen. This will only disable comments on *future posts*.<br>
-Next, to completely disable comments, you will have to edit each past post and uncheck **Allow Comments** from the [Edit Post](../../using-wordpress/writing-and-publishing/write-posts-classic-editor.md) screen. Use Bulk Edit to disable multiple posts at once.
+Next, to completely disable comments, you will have to edit each past post and uncheck **Allow Comments** from the [Edit Post](../../classic-wordpress/classic-editor/write-posts-classic-editor.md) screen. Use Bulk Edit to disable multiple posts at once.
 
 1.  In the [Posts_Screen](../../using-wordpress/administration-screens/posts/posts-screen.md), check the checkbox in the Table’s title to select all Posts in a given table.
 2.  From Bulk Actions box, select Edit and click Apply.
@@ -138,9 +138,9 @@ Alternatively, you could run below MySQL query from the command line on a shell 
 UPDATE wp_posts SET comment_status = 'closed';
 ```
 
-If your goal is to permanently remove comments, then follow the next steps. This is the example of [Twenty Fifteen](../../editing-and-design/themes/default-themes/twenty-fifteen/README.md) theme customization.
+If your goal is to permanently remove comments, then follow the next steps. This is the example of [Twenty Fifteen](../../classic-wordpress/classic-default-themes/twenty-fifteen/README.md) theme customization.
 
-1.  Create a [Child Themes](<https://codex.wordpress.org/Child%20Themes>) of [Twenty Fifteen](../../editing-and-design/themes/default-themes/twenty-fifteen/README.md) theme.
+1.  Create a [Child Themes](<https://codex.wordpress.org/Child%20Themes>) of [Twenty Fifteen](../../classic-wordpress/classic-default-themes/twenty-fifteen/README.md) theme.
 2.  Copy `twentyfifteen_entry_meta()` function from parent’s `inc/template-tags.php` to child theme’s `functions.php`.
 3.  Comment out the if block that contains `comments-link`.
 
@@ -167,7 +167,7 @@ It removes the number of comments or “Leave a comment” message from bottom o
 ### How do I disable trackbacks and pingbacks?
 
 First, uncheck **Allow link notifications from other blogs (pingbacks and trackbacks) on new articles** on the [Settings](../../using-wordpress/administration-screens/README.md#settings-configuration-settings) > [Discussion](../../using-wordpress/administration-screens/README.md#discussion) screen. This will only disable trackbacks and pingbacks on *future posts*.<br>
-Next, to completely disable trackbacks and pingbacks, you will have to edit each past post and uncheck **Allow trackbacks and pingbacks on this page** from the [Edit Post](../../using-wordpress/writing-and-publishing/write-posts-classic-editor.md) screen. Use Bulk Edit to disable multiple posts at once. See also above image.
+Next, to completely disable trackbacks and pingbacks, you will have to edit each past post and uncheck **Allow trackbacks and pingbacks on this page** from the [Edit Post](../../classic-wordpress/classic-editor/write-posts-classic-editor.md) screen. Use Bulk Edit to disable multiple posts at once. See also above image.
 
 1.  In the [Posts_Screen](../../using-wordpress/administration-screens/posts/posts-screen.md), check the checkbox in the Table’s title to select all Posts in a given table.
 2.  From Bulk Actions box, select Edit and click Apply.
@@ -209,7 +209,7 @@ See:
 
 See:
 
--   [Inserting Media into Posts and Pages](../../using-wordpress/media/inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Media into Posts and Pages](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 
 ### Can I change the “Error establishing database connection” message to something more descriptive?
 
@@ -298,7 +298,7 @@ If you decide later to restore the message, you can simply remove the comment sy
 
 Hook the filters ‘`the_title`‘ and ‘`the_password_form`‘. Your filter function is passed exactly what the filter names imply. Use the `str_replace()` function to search out the offending text and replace it with your preference (or nothing).<br>
 Note the ‘`the_title`‘ filter fires for every single title, not just password protected posts, so you need to use the existence of the `post_password` property to know whether to apply the string replace function or not.<br>
-Some themes may also have additional locations where content needs to be canged. Next example works with [Twenty Fifteen](../../editing-and-design/themes/default-themes/twenty-fifteen/README.md) Theme.
+Some themes may also have additional locations where content needs to be canged. Next example works with [Twenty Fifteen](../../classic-wordpress/classic-default-themes/twenty-fifteen/README.md) Theme.
 
 ```
 add_filter('the_title', 'replace_protected', 10, 2);
@@ -343,7 +343,7 @@ See:
 
 See:
 
--   [Inserting Media into Posts and Pages](../../using-wordpress/media/inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Media into Posts and Pages](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 
 ### What is pingback?
 

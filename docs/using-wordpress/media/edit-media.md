@@ -1,7 +1,7 @@
 ---
 title: Edit Media
 slug: edit-media
-position: 6
+position: 4
 original_url: https://wordpress.org/documentation/article/edit-media/
 wp_id: 11289158
 legacy_categories:
@@ -192,7 +192,7 @@ When cropping your image, these keyboard combinations can ‘fine-tune’ the si
 -   [Use Images](use-images.md)
 -   [Use image and file attachments](use-image-and-file-attachments.md)
 -   [Inserting Images into Posts and Pages (Block Editor)](inserting-images-into-posts-and-pages-block-editor.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)
 
 ## Changelog
 

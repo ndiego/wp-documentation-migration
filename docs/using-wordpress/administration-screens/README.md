@@ -149,7 +149,7 @@ Via the [All Posts Screen](posts/posts-screen.md) you can select the Post or Pos
 
 ### Add New Post
 
-[Posts Add New Screen](../writing-and-publishing/write-posts-classic-editor.md) is where you write new Posts. While you are writing those Posts, you can also create new Categories and new Tags. In addition, any Media (pictures, video, recordings, files) can be uploaded and inserted into the Posts.
+[Posts Add New Screen](../../classic-wordpress/classic-editor/write-posts-classic-editor.md) is where you write new Posts. While you are writing those Posts, you can also create new Categories and new Tags. In addition, any Media (pictures, video, recordings, files) can be uploaded and inserted into the Posts.
 
 ### Categories
 
@@ -159,7 +159,7 @@ Each Category may be assigned to a Category Parent so that you may set up a hier
 
 When using the WordPress default theme, all the Categories to which a given post belongs are displayed under that post. When someone viewing your blog clicks on one of those Category links, an archive page with all the Posts belonging to that Category will be displayed.
 
-The [Posts Categories Screen](<https://codex.wordpress.org/Posts%20Categories%20Screen>) allows you to add, edit, and delete Categories, as well as organize your categories hierarchically. Multiple Categories can be selected for deletion. A search option allows you to find the Categories you want to edit or delete. Also remember that Categories can be added in the [Posts Add New Screen](../writing-and-publishing/write-posts-classic-editor.md).
+The [Posts Categories Screen](<https://codex.wordpress.org/Posts%20Categories%20Screen>) allows you to add, edit, and delete Categories, as well as organize your categories hierarchically. Multiple Categories can be selected for deletion. A search option allows you to find the Categories you want to edit or delete. Also remember that Categories can be added in the [Posts Add New Screen](../../classic-wordpress/classic-editor/write-posts-classic-editor.md).
 
 ### Tags
 
@@ -167,7 +167,7 @@ Tags are the keywords you might assign to each post. Not to be confused with Cat
 
 When using the WordPress default theme, Tags are displayed under each Post those Tags are assigned. Someone viewing your blog can click on one of those Tag links, and an archive page with all the Posts belonging to that Tag will be displayed.
 
-The [Posts Tags Screen](posts/posts-tags-screen.md) allows you to add, change, or delete Tags. Multiple Tags can be selected for deletion. A search option allows you to find the Tags you want to edit or delete. Also remember Tags can be added in the [Posts Add New Screen.](../writing-and-publishing/write-posts-classic-editor.md)
+The [Posts Tags Screen](posts/posts-tags-screen.md) allows you to add, change, or delete Tags. Multiple Tags can be selected for deletion. A search option allows you to find the Tags you want to edit or delete. Also remember Tags can be added in the [Posts Add New Screen.](../../classic-wordpress/classic-editor/write-posts-classic-editor.md)
 
 ## Media – Add pictures and movies to your posts
 
@@ -227,13 +227,13 @@ The [Customize Screen](<https://codex.wordpress.org/Appearance%20Customize%20Scr
 
 Widgets are gadgets or gizmos that allow you to add various pieces of information to your Theme’s sidebar content. Widgets, for example, can be used to add Categories, Archives, Blogroll, Recent Posts, and Recent Comments to your sidebar.
 
-From the [Appearance Widgets Screen](appearance/appearance-widgets-screen-classic-editor.md) you can add, delete, and configure widgets used in one or more areas of your theme.
+From the [Appearance Widgets Screen](../../classic-wordpress/widgets-menus-and-customizer/appearance-widgets-screen-classic-editor.md) you can add, delete, and configure widgets used in one or more areas of your theme.
 
 ### Menus
 
 The Menus feature allows you to create a navigation menu of pages, categories, custom links, tags, etc. that is presented to your visitors. A custom menu WordPress Widget allows display of a custom menu in the sidebar or other widgetized areas in the Theme.
 
-From the [Appearance Menus Screen](appearance/appearance-menus-screen.md) you can create and edit navigation menus for visitors use.
+From the [Appearance Menus Screen](../../classic-wordpress/widgets-menus-and-customizer/appearance-menus-screen.md) you can create and edit navigation menus for visitors use.
 
 ### Header
 

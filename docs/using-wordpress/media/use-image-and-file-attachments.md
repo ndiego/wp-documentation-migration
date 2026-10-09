@@ -1,7 +1,7 @@
 ---
 title: Use image and file attachments
 slug: use-image-and-file-attachments
-position: 8
+position: 6
 original_url: https://wordpress.org/documentation/article/use-image-and-file-attachments/
 wp_id: 11263208
 legacy_categories:
@@ -59,4 +59,4 @@ Themes may use various template tags to display post attachments or utilize the 
 -   [Media Add New Screen](../administration-screens/media-screens/media-add-new-screen.md)
 -   [Edit Media](edit-media.md)
 -   [Inserting Images into Posts and Pages (Block Editor)](inserting-images-into-posts-and-pages-block-editor.md)
--   [Inserting Images into Posts and Pages (Classic Editor)](inserting-images-into-posts-and-pages-classic.md)
+-   [Inserting Images into Posts and Pages (Classic Editor)](../../classic-wordpress/classic-editor/inserting-images-into-posts-and-pages-classic.md)

@@ -115,6 +115,6 @@ The third option is to convert to a Custom HTML block, this is the same function
 
 ![](../../../assets/images/2023/06/convert-to-classic-block.png)
 
-You can convert the invalid content into a [Classic Block](https://wordpress.org/plugins/classic-editor/). This block contains the same options from the Classic Editor. The changes you would have made will be kept similar to converting the Custom HTML block. You can go over [our Classic Editor guide](../../../using-wordpress/writing-and-publishing/write-posts-classic-editor.md) for an explanation of each of the options shown for the Classic Block.
+You can convert the invalid content into a [Classic Block](https://wordpress.org/plugins/classic-editor/). This block contains the same options from the Classic Editor. The changes you would have made will be kept similar to converting the Custom HTML block. You can go over [our Classic Editor guide](../../../classic-wordpress/classic-editor/write-posts-classic-editor.md) for an explanation of each of the options shown for the Classic Block.
 
 <video controls preload="metadata" src="https://wordpress.org/documentation/files/2023/06/convert-to-classic-block.mov"></video>

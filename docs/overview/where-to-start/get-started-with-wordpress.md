@@ -47,7 +47,7 @@ Based upon the information you’ve just read, including instructions on install
 The following documents will help you understand more about how WordPress works and how to make a plan for your WordPress site:
 
 -   [WordPress terminology](wordpress-semantics.md)
--   [First Steps With WordPress](first-steps-with-wordpress-classic.md)
+-   [First Steps With WordPress](../../classic-wordpress/classic-editor/first-steps-with-wordpress-classic.md)
 -   [WordPress Lessons](https://learn.wordpress.org/)
 
 It is important to make a plan about how you want to use WordPress on your site. Here are some questions to ask yourself.
@@ -87,7 +87,7 @@ After you’ve published a few posts, you can experiment with the full edit or q
 
 Add your “About,” “Contact,” and other information Pages by going to Administration > [Pages](../../using-wordpress/administration-screens/pages/pages-screen.md) > Add New.
 
-Want to change the look and feel of your WordPress site? Go to Administration > Appearance > [Themes](../../using-wordpress/administration-screens/appearance/appearance-themes-screen.md).
+Want to change the look and feel of your WordPress site? Go to Administration > Appearance > [Themes](../../editing-and-design/themes/appearance-themes-screen.md).
 
 You’ll find helpful information by reading [WordPress Lessons](https://learn.wordpress.org/lessons/), and these helpful documents:
 
@@ -101,7 +101,7 @@ Changing the look of your WordPress website is easy with just a few clicks.
 
 -   [Using WordPress Themes Introduction](../../editing-and-design/themes/work-with-themes.md)
 -   [The WordPress Theme Directory](https://wordpress.org/themes/) features thousands of WordPress Themes
--   [WordPress Widgets](../../using-wordpress/administration-screens/appearance/manage-wordpress-widgets.md) can quickly add more information and content to your Theme
+-   [WordPress Widgets](../../classic-wordpress/widgets-menus-and-customizer/manage-wordpress-widgets.md) can quickly add more information and content to your Theme
 
 If you want to create a new WordPress Theme from scratch, or do major renovations, or even design WordPress Themes for public release, you should visit [WordPress Theme Developer Handbook](https://developer.wordpress.org/themes/).
 

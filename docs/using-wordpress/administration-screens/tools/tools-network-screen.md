@@ -1,7 +1,7 @@
 ---
 title: Tools Network screen
 slug: tools-network-screen
-position: 7
+position: 8
 original_url: https://wordpress.org/documentation/article/tools-network-screen/
 wp_id: 11181247
 legacy_categories:

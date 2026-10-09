@@ -32,7 +32,7 @@ migration:
 
 # Roles and Capabilities
 
-WordPress uses a concept of [Roles](#roles), designed to give the [site](../../overview/where-to-start/wordpress-glossary.md#site) owner the ability to control what users can and cannot do within the site. A site owner can manage the user access to such tasks as [writing and editing posts](../writing-and-publishing/write-posts-classic-editor.md), [creating Pages](../writing-and-publishing/create-pages.md), [creating categories](https://codex.wordpress.org/Posts_Categories_SubPanel), [moderating comments](https://codex.wordpress.org/Comment_Moderation), [managing plugins](../administration-screens/plugins/manage-plugins.md), [managing themes](../../editing-and-design/themes/work-with-themes.md), and [managing other users](https://codex.wordpress.org/Users_Screen), by assigning a specific role to each of the users.
+WordPress uses a concept of [Roles](#roles), designed to give the [site](../../overview/where-to-start/wordpress-glossary.md#site) owner the ability to control what users can and cannot do within the site. A site owner can manage the user access to such tasks as [writing and editing posts](../../classic-wordpress/classic-editor/write-posts-classic-editor.md), [creating Pages](../writing-and-publishing/create-pages.md), [creating categories](https://codex.wordpress.org/Posts_Categories_SubPanel), [moderating comments](https://codex.wordpress.org/Comment_Moderation), [managing plugins](../administration-screens/plugins/manage-plugins.md), [managing themes](../../editing-and-design/themes/work-with-themes.md), and [managing other users](https://codex.wordpress.org/Users_Screen), by assigning a specific role to each of the users.
 
 WordPress has six pre-defined roles: [Super Admin](#super-admin), [Administrator](#administrator), [Editor](#editor), [Author](#author), [Contributor](#contributor) and [Subscriber](#subscriber). Each role is allowed to perform a set of tasks called [Capabilities](../../overview/where-to-start/wordpress-glossary.md#capabilities). There are many capabilities including “[publish_posts](#publish_posts)“, “[moderate_comments](#moderate_comments)“, and “[edit_users](#edit_users)“. [A default set](#capability-vs-role-table) of capabilities is pre-assigned to each role, but other capabilities can be assigned or removed using the [add_cap()](https://codex.wordpress.org/Function_Reference/add_cap) and [remove_cap()](https://codex.wordpress.org/Function_Reference/remove_cap) functions. New roles can be introduced or removed using the [add_role()](https://codex.wordpress.org/Function_Reference/add_role) and [remove_role()](https://codex.wordpress.org/Function_Reference/remove_role) functions.
 
@@ -363,8 +363,8 @@ Only grant the capabilities required for the tasks the role is intended to perfo
 -   Since 3.0
 -   Allows users to edit theme options, including access to the Site Editor in Full Site Editing (FSE) environments and allows access to [Administration Screens](../administration-screens/README.md) options:
     -   Appearance > [Widgets](https://codex.wordpress.org/Appearance_Widgets_SubPanel)
-    -   Appearance > [Menus](../administration-screens/appearance/appearance-menus-screen.md)
-    -   Appearance > [Customize](../administration-screens/appearance/customizer.md) if they are supported by the current theme
+    -   Appearance > [Menus](../../classic-wordpress/widgets-menus-and-customizer/appearance-menus-screen.md)
+    -   Appearance > [Customize](../../classic-wordpress/widgets-menus-and-customizer/customizer.md) if they are supported by the current theme
     -   Appearance > [Header](https://codex.wordpress.org/Appearance_Header_SubPanel)
 
 ### install_themes
