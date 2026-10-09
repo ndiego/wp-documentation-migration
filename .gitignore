@@ -16,3 +16,6 @@ site/.astro/
 
 # Side-by-side builds (scripts/build_all.sh)
 build/
+
+# Claude Code worktrees (other sessions)
+.claude/worktrees/
