@@ -1,0 +1,16 @@
+{
+  "name": "wp-documentation-screenshots",
+  "private": true,
+  "description": "Automated documentation screenshots: Playground + Playwright, driven by YAML shot specs.",
+  "type": "module",
+  "workspaces": [
+    "engine"
+  ],
+  "scripts": {
+    "shots": "wp-shots",
+    "postinstall": "playwright install chromium"
+  },
+  "engines": {
+    "node": ">=22.19"
+  }
+}

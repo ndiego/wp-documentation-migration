@@ -1,0 +1,130 @@
+# Documentation screenshots: lint on every PR that touches the toolkit, the generated images or the Markdown,
+# and a canonical render (inside the pinned Playwright image) on demand or on a schedule.
+#
+# The render job is the "canonical" environment: same Chromium build and fonts every time, which is what
+# makes before/after diffs meaningful. Local macOS runs are previews.
+name: Screenshots
+
+on:
+  pull_request:
+    paths:
+      - 'screenshots/**'
+      - 'docs/assets/screenshots/**'
+      - 'docs/**/*.md'
+      - '.github/workflows/screenshots.yml'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check (report only) or run (commit changed images and open a PR)'
+        required: true
+        default: check
+        type: choice
+        options: [check, run]
+      filter:
+        description: 'Optional filter, e.g. --article image-block or --section editing-and-design'
+        required: false
+        default: ''
+      wp:
+        description: 'WordPress version to pass to Playground (the blueprint still wins unless edited)'
+        required: false
+        default: ''
+  schedule:
+    # Weekly early warning against the pinned version; bump the blueprint to an RC when one is out.
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: screenshots-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint specs and references
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: screenshots/package-lock.json
+      - name: Install (no browser needed for lint)
+        working-directory: screenshots
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+        run: npm ci --ignore-scripts
+      - name: Lint
+        working-directory: screenshots
+        run: npx wp-shots lint
+
+  render:
+    name: Canonical render (${{ github.event.inputs.mode || 'check' }})
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    container:
+      # Keep in sync with `dockerImage` in screenshots/shots.config.js and @playwright/test in engine/package.json.
+      image: mcr.microsoft.com/playwright:v1.64.0-noble
+      options: --ipc=host
+    env:
+      WP_SHOTS_CANONICAL: '1'
+      MODE: ${{ github.event.inputs.mode || 'check' }}
+      FILTER: ${{ github.event.inputs.filter }}
+      WP_VERSION: ${{ github.event.inputs.wp }}
+    steps:
+      - name: Install git (the Playwright image ships without it; checkout and the PR step need it)
+        run: |
+          if ! command -v git >/dev/null; then apt-get update && apt-get install -y --no-install-recommends git; fi
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - uses: actions/checkout@v4
+      - name: Install
+        working-directory: screenshots
+        run: npm ci
+      - name: Doctor
+        working-directory: screenshots
+        run: npx wp-shots doctor
+      - name: Render
+        id: render
+        working-directory: screenshots
+        run: |
+          set +e
+          WPFLAG=""
+          if [ -n "$WP_VERSION" ]; then WPFLAG="--wp $WP_VERSION"; fi
+          # shellcheck disable=SC2086
+          npx wp-shots "$MODE" $FILTER $WPFLAG
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+      - name: Upload report, staged images and failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-report
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: |
+            screenshots/.wp-shots/report
+            screenshots/.wp-shots/check
+            screenshots/.wp-shots/failures
+            screenshots/.wp-shots/*.log
+      - name: Open a pull request with the regenerated images
+        # Only when every shot rendered: a partial regeneration would ship a manifest with stale entries.
+        if: env.MODE == 'run' && steps.render.outputs.exit == '0'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: screenshots/regenerate-${{ github.run_id }}
+          title: 'Regenerate documentation screenshots'
+          commit-message: 'Regenerate documentation screenshots'
+          body: |
+            Canonical render from workflow run ${{ github.run_id }}.
+            Review the before/after pairs; a changed image is also a prompt to re-read the article text.
+            (Opened with GITHUB_TOKEN, so the lint workflow does not run on it automatically; push an empty
+            commit or use a PAT in `token:` if you want it to.)
+          add-paths: |
+            docs/assets/screenshots/**
+      - name: Fail the job if check found changes or failures
+        if: steps.render.outputs.exit != '0'
+        run: |
+          echo "wp-shots exited with ${{ steps.render.outputs.exit }}; see the screenshots-report artifact."
+          exit 1

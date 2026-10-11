@@ -1,0 +1,96 @@
+# Screenshots for docs/editing-and-design/block-editor/blocks/media-blocks/image-block.md
+# Regenerate: npm run shots -- run --article image-block
+article: image-block
+
+defaults:
+  scene: new-post
+  viewport: desktop
+  # A lead paragraph keeps the first block's floating toolbar off the post title.
+  steps:
+    - insertBlock:
+        name: core/paragraph
+        attributes:
+          content: A well-planned day hike is the perfect introduction to the trails near you.
+    # An empty paragraph gives the next block's floating toolbar blank space to sit over.
+    - insertBlock: core/paragraph
+
+shots:
+  - id: inserter-search
+    alt: The block inserter with "image" typed in the search field, showing the Image block as the first result.
+    steps:
+      - searchInserter: image
+    capture:
+      target: inserter
+      pad: 0
+
+  - id: placeholder
+    alt: The empty Image block with Upload, Media Library and Insert from URL buttons.
+    steps:
+      - insertBlock: core/image
+    capture:
+      target: selected-block
+      include: [block-toolbar]
+      pad: 24
+
+  - id: toolbar
+    alt: The Image block toolbar above an image, with alignment, link, crop, text-over-image, caption and Replace controls.
+    steps:
+      - insertBlock:
+          name: core/image
+          attributes:
+            id: "{{media.hero}}"
+            url: "{{media.hero.url}}"
+            alt: "{{media.hero.alt}}"
+            sizeSlug: large
+    capture:
+      target: block-toolbar
+      include: [selected-block]
+      pad: 16
+
+  - id: toolbar-replace
+    alt: The Image block toolbar with the Replace button highlighted.
+    steps:
+      - insertBlock:
+          name: core/image
+          attributes:
+            id: "{{media.hero}}"
+            url: "{{media.hero.url}}"
+            alt: "{{media.hero.alt}}"
+            sizeSlug: large
+    capture:
+      target: block-toolbar
+      pad: 24
+      annotate:
+        - outline: { button: Replace, within: block-toolbar }
+
+  - id: content-panel
+    alt: The Image block Content tab in the sidebar, with the Alternative text field.
+    steps:
+      - insertBlock:
+          name: core/image
+          attributes:
+            id: "{{media.hero}}"
+            url: "{{media.hero.url}}"
+            alt: "{{media.hero.alt}}"
+            sizeSlug: large
+      - openInspector: content
+    capture:
+      target: inspector
+      fit: content
+      pad: 0
+      annotate:
+        - badge: { label: 1, control: Alternative text }
+
+  - id: editor-with-image
+    alt: The block editor with an Image block selected, showing its toolbar and the Block settings sidebar.
+    steps:
+      - insertBlock:
+          name: core/image
+          attributes:
+            id: "{{media.hero}}"
+            url: "{{media.hero.url}}"
+            alt: "{{media.hero.alt}}"
+            sizeSlug: large
+      - openInspector: settings
+    capture:
+      target: editor
