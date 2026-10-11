@@ -12,6 +12,7 @@ file paths and commit SHAs. Everything marked **[unverified]** in the reports st
 | `research/04-importer-spike.md` | The real importer run against this repo's `docs/` on a local WordPress |
 | `research/05-process-governance-deployment.md` | Docs team process, Meta deployment, translations, open questions |
 | `spike/` | Re-runnable spike: test plugin, ETag server, fixtures, sample output |
+| `documentation-inventory.md` | Every wordpress.org documentation section, how it is published today, and which tier of scope it belongs to |
 
 ## 1. The one-paragraph version
 
