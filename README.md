@@ -58,6 +58,8 @@ docs/       generated Markdown: docs/<top>/<sub>/<slug>.md + README.md per folde
 docs/assets/ images (and posters) mirrored from /documentation/files/YYYY/MM/ + images-manifest.json.
             Videos are gitignored (1.3 GB); <video src> points at the wordpress.org originals for now.
 data/       machine-readable reports: redirects, convert report, link check, download report
+screenshots/ automated screenshot toolkit (Playground + Playwright, YAML shot specs); output in docs/assets/screenshots/.
+            See screenshots/README.md and notes/screenshot-automation/proposal.md
 .venv/      Python venv (bs4, markdownify) used by scripts/convert.py: `.venv/bin/python -I scripts/convert.py`
 ```
 

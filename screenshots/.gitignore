@@ -1,0 +1,4 @@
+node_modules/
+engine/node_modules/
+.wp-shots/
+blueprint/.verify/

@@ -1,0 +1,32 @@
+# Screenshots for docs/using-wordpress/administration-screens/plugins/manage-plugins.md
+# Regenerate: npm run shots -- run --article manage-plugins
+article: manage-plugins
+
+defaults:
+  scene: admin:plugins.php
+  viewport: desktop
+
+shots:
+  - id: plugins-screen
+    alt: The Plugins screen listing installed plugins with Activate, Deactivate and Delete links under each plugin name.
+    capture:
+      target: admin-content
+      pad: 0
+
+  - id: bulk-actions
+    alt: The Bulk actions dropdown on the Plugins screen, highlighted, with Activate, Deactivate, Update and Delete options.
+    capture:
+      target: "#bulk-action-selector-top"
+      include: ["#doaction"]
+      pad: 24
+      annotate:
+        - outline: { selector: "#bulk-action-selector-top" }
+
+  - id: plugin-row-actions
+    alt: An inactive plugin's row with the Activate link highlighted.
+    capture:
+      target: "#the-list tr:first-child"
+      pad: 16
+      annotate:
+        # The link's accessible name is "Activate <plugin name>", so match a substring.
+        - outline: { link: Activate, exact: false, within: "#the-list tr:first-child" }

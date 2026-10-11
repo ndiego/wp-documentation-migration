@@ -1,0 +1,20 @@
+// Project configuration for the wp-shots engine. Paths are relative to this file.
+export default {
+	shotsDir: 'shots',
+	outDir: '../docs/assets/screenshots',
+	docsDir: '../docs',
+	docsManifest: '../docs/manifest.json',
+	blueprint: 'blueprint/blueprint.json',
+	suitesDir: 'blueprint/suites',
+	workDir: '.wp-shots',
+
+	// Pinned environment. The blueprint's `preferredVersions` is authoritative; keep both in sync.
+	wordpress: { version: '7.1.3', php: '8.3' },
+	port: 9400,
+
+	// Lossless WebP converts to PNG without loss if the decision ever changes.
+	format: 'webp',
+
+	// House style overrides (see engine/src/style.js for every token).
+	style: {},
+};
