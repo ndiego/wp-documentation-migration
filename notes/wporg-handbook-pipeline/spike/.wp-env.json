@@ -1,0 +1,15 @@
+{
+	"$comment": "UNTESTED (no Docker on the spike machine). Equivalent of the native setup: run `npx @wordpress/env start` in this folder after `bin/fetch_upstream.sh upstream`, serve the docs with `python3 -I bin/etag_server.py <served-dir> 8882` on the host, then `npx @wordpress/env run cli wp option update helphub_spike_manifest_url http://host.docker.internal:8882/manifest.json`.",
+	"core": null,
+	"phpVersion": "8.3",
+	"plugins": [
+		"https://downloads.wordpress.org/plugin/jetpack.latest-stable.zip",
+		"./upstream",
+		"./helphub-spike-importer"
+	],
+	"config": {
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": true,
+		"DISABLE_WP_CRON": true
+	}
+}

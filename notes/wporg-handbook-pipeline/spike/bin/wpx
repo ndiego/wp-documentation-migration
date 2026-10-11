@@ -1,0 +1,4 @@
+#!/bin/bash
+# wp-cli against the spike install. Usage: wpx <wp args...>
+D="$(cd "$(dirname "$0")/.." && pwd)"
+exec php -d memory_limit=1G /opt/homebrew/bin/wp --path="$D/wp" "$@"
