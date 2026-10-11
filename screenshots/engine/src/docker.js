@@ -1,4 +1,5 @@
 import { spawnSync } from 'node:child_process';
+import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 
@@ -6,7 +7,10 @@ import os from 'node:os';
  * Re-run the CLI inside the pinned Playwright Docker image so renders are canonical (same fonts, same
  * Chromium build). The mounted directory is the common ancestor of every path the config uses, so the engine
  * makes no assumption about where docs live relative to the project. node_modules live in named volumes
- * because native modules differ between the host and Linux.
+ * because native modules differ between the host and Linux. The host's Playground download cache
+ * (~/.wordpress-playground, where the CLI keeps WordPress zips) is shared with the container, so a render needs
+ * no download once the version has been fetched once, and works on networks that filter the container's
+ * traffic differently from the host's.
  *
  * @param {object} config
  * @param {string[]} args  CLI args without `--docker`
@@ -39,6 +43,9 @@ export function runInDocker( config, args ) {
 		`npx wp-shots ${ mapped.map( shellQuote ).join( ' ' ) }`,
 	].join( ' && ' );
 	const user = process.platform === 'linux' ? [ '--user', `${ os.userInfo().uid }:${ os.userInfo().gid }`, '-e', 'HOME=/tmp', '-e', 'npm_config_cache=/tmp/.npm' ] : [];
+	const containerHome = process.platform === 'linux' ? '/tmp' : '/root';
+	const playgroundCache = path.join( os.homedir(), '.wordpress-playground' );
+	fs.mkdirSync( playgroundCache, { recursive: true } );
 	const dockerArgs = [
 		'run',
 		'--rm',
@@ -50,6 +57,7 @@ export function runInDocker( config, args ) {
 		'-v', `${ mountRoot }:/work`,
 		'-v', `${ volume }:${ project }/node_modules`,
 		'-v', `${ volume }-engine:${ project }/engine/node_modules`,
+		'-v', `${ playgroundCache }:${ containerHome }/.wordpress-playground`,
 		'-w', project,
 		'--ipc=host',
 		config.dockerImage,

@@ -100,7 +100,8 @@ machine, repeat runs are byte-identical.
 
 Fonts differ between macOS and Linux, so local renders are previews. The canonical render runs inside the
 pinned Playwright Docker image, locally with `--docker` (needs Docker Desktop) or in CI. The manifest marks each
-image `canonical: true|false`.
+image `canonical: true|false`. `--docker` shares the host's `~/.wordpress-playground` download cache with the
+container, so after the first fetch of a WordPress version a render needs no network for WordPress itself.
 
 ## Output
 
