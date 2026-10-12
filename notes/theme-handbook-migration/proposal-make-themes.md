@@ -24,7 +24,8 @@ within minutes. The handbook's maintainer asked for this in
 [Meta #7520](https://meta.trac.wordpress.org/ticket/7520).
 
 **The proposal: move the Theme Handbook to that model as a one-to-one conversion.** Every page keeps its URL, title,
-chapter, and order. Readers will notice only a new "Improve it on GitHub" link on each page.
+chapter, and order. Readers will notice only a new "Improve it on GitHub" link on each page. The work is already
+built and tested, much of it with AI assistance, and the plan is to complete the move within one week of approval.
 
 ## What stays the same, verified
 
@@ -95,21 +96,38 @@ first step because its structure is settled, its maintainers want the move, and 
 pipeline without a content debate. What we learn here is meant to carry to the Plugin Handbook next, and to the
 wider documentation set after that, each as its own proposal.
 
+## Speed, and how AI is used
+
+We want this done fast, and we are open about how. The research into the importer, the conversion of all 139 pages,
+the manifest, the validation checks, and the full dry run against a local copy of developer.wordpress.org were done
+with AI assistance (Claude Code), directed and reviewed by people. That is why this proposal arrives with the
+tooling finished and the result measured rather than with a request for volunteers to start converting pages. It is
+also in the spirit of the [Meta Janitors](https://make.wordpress.org/meta/handbook/about/projects/meta-janitors/)
+mandate to "lean into AI tooling" and to tighten the link between WordPress.org and version-controlled workflows.
+
+What AI does not do: decide. The handbook's maintainers approve the conversion by reviewing the page-by-page
+comparison, the Themes and Docs teams approve this proposal, and a Meta committer deploys the importer and runs the
+first import. Those are the only steps that take calendar time, and they are the reason the timeline below is one
+week rather than one day.
+
 ## Plan and timeline
 
-1. **Discussion** here and at the Themes Team meeting on [date] and the Docs Team meeting on [date]. Comments close
-   [date, about two weeks out].
-2. **Meta ticket and repository**: a Meta Trac ticket for the importer, and `developer-themes-handbook` in the
-   WordPress GitHub organization, meeting the
-   [repository criteria](https://make.wordpress.org/project/2025/06/04/criteria-for-creating-or-migrating-repositories-under-the-wordpress-github-organization/),
-   with [maintainer names] as code owners and a Themes and Docs group with merge rights. No content pull requests until
-   the import is live.
-3. **Conversion and review** from a fresh export, compared page by page with the live site.
-4. **Cutover in one day**: a short freeze on dashboard edits, final conversion, importer deploy by [Meta committer],
-   first import, verification that every URL answers, editing switch-off, issue transfer.
-5. **Announcement** and the first content pull requests.
+**Before approval.** Discussion here and at the Themes Team meeting on [date] and the Docs Team meeting on [date].
+Comments close [date, two weeks out]. In parallel, so no time is lost afterwards: a Meta Trac ticket for the
+importer, and the `developer-themes-handbook` repository prepared in the WordPress GitHub organization to the
+[repository criteria](https://make.wordpress.org/project/2025/06/04/criteria-for-creating-or-migrating-repositories-under-the-wordpress-github-organization/),
+with [maintainer names] as code owners, validation checks in place, and no content accepted until the import is live.
 
-About four to eight weeks from agreement, most of it discussion and review.
+**The week after approval.**
+
+| Day | What happens | Who |
+|---|---|---|
+| 1 | Freeze dashboard edits. Fresh export, conversion, manifest; the page-by-page comparison report goes to the maintainers. | [proposer], with AI tooling |
+| 2–3 | Maintainers review the comparison and sign off. Importer pull request opened on wporg-developer. | [maintainer names]; [Meta committer] reviews |
+| 4 | Importer deployed; content merged; first import run and verified: every URL answers, nothing created or moved. | [Meta committer] |
+| 5 | Dashboard editing switched off; open `themes` issues moved; Feedback and role pages updated; announcement. | [Meta committer], [maintainer names] |
+
+If the Meta committer's availability slips, the week slips with it; nothing else on the list waits on a person.
 
 ## Translation
 
@@ -139,6 +157,11 @@ redirect, done with a Meta committer. Checks reject accidental ones.
 
 **Is this "all handbooks to GitHub"?** No. This handbook, at its maintainers' request, following its developer-docs
 siblings. Later steps get their own proposals.
+
+**Why so fast?** Because the slow parts are already done. The conversion is tested, the import is proven on a local
+copy, and the checks that catch the mistakes past handbook imports made are written. What remains is review, a small
+deploy, and flipping the switch. Spending weeks on that would not make it safer, and a short window keeps the
+dashboard freeze short.
 
 ## How to participate
 
