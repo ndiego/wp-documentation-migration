@@ -1,4 +1,4 @@
-# HelpHub (wordpress.org/documentation) — site structure beyond the REST `content` field
+# HelpHub (WordPress.org/documentation) — site structure beyond the REST `content` field
 
 Investigated 2026-10-07. Sources: live HTML (curl), Jetpack sitemaps, and source code from
 `WordPress/wporg-documentation-2022` (theme + bundled `support-helphub` plugin + mu-plugin),
@@ -245,7 +245,7 @@ og:image = first image, plus RSS feed links for comments.
 | `/wp-json/…` | REST API | — | — | no |
 
 **Redirects that must survive** (`mu-plugins/site-documentation.php`, prefix match, 301):
-- Removed articles: `article/wordpress-features/` → wordpress.org/about/features/, `article/requirements/` → /about/requirements/
+- Removed articles: `article/wordpress-features/` → WordPress.org/about/features/, `article/requirements/` → /about/requirements/
 - Renamed categories: `category/basic-administration/` → `category/dashboard/`, `category/troubleshooting/` → `category/faqs/`,
   `category/getting-started/` → `category/where-to-start/`, `category/customizing/` → `/customization/`, `category/basic-usage/` → `/support-guides/`
 - Phantom releases: `version-6-5-1` → `version-6-5-2`, `version-6-8-4` → `version-6-8-5`
@@ -290,7 +290,7 @@ Rosetta (localized) sites, e.g. `es.wordpress.org/support/…`, run separate Hel
 8. **Media**: 7,201 uploads under `/documentation/files/YYYY/MM/`. Keep those paths, or redirect them, since content and external sites hot-link them. Attachment-page URLs only
    need to keep 301-ing to the file.
 9. **Redirects** to carry over: the mu-plugin map (71 entries, 62 of them Advanced Administration moves), `/wordpress-version/` → Release archive, `/support-forums/` → `/`,
-   `?s=` → wordpress.org/search, `/support/{article,wordpress-version,category}/*` → `/documentation/…`, trailing-slash canonicalization, and `/category/{slug}/page/N/`
+   `?s=` → WordPress.org/search, `/support/{article,wordpress-version,category}/*` → `/documentation/…`, trailing-slash canonicalization, and `/category/{slug}/page/N/`
    for Theme blocks (51 articles).
 10. **Special pages**: `/site-health/` and `/update-php/` render as chrome-less pages (no title or breadcrumbs) and are duplicated at `/support/site-health/` and
     `/support/update-php/`, which wp-admin links to. Keep both. The 4 landing pages are generated, not content. The Release archive (`/article/wordpress-versions/`)

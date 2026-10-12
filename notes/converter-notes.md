@@ -171,7 +171,7 @@ I also checked:
 1. **URL scheme / hierarchy.** The manifest uses `top/sub/slug` keys with category READMEs as parents. This is a placeholder: HelpHub URLs are flat (`/documentation/article/<slug>/`) and use categories, not parent pages. Either a HelpHub importer subclass ignores `parent` and assigns categories (no redirects), or we switch to hierarchical URLs and add 321+ redirects. **Undecided.**
 2. **Callout style.** `gutenberg` (HTML, works with no importer change, ugly to edit) or `gfm-alert` (`> [!NOTE]`, nice on GitHub, needs a ~10-line importer filter). Also: should "Learn more" link boxes (about a third of callouts) be callouts at all?
 3. **Video.** Should VideoPress become bare oEmbed URLs (current), should we download the 50 VideoPress originals and self-host them as `<video>`, or should we add a shortcode? Also: self-hosted `.mov` files (40) may not play in all browsers.
-4. **Images.** Keep them in the repo (reviewable, needs sideloading on import), or point at the existing wordpress.org media URLs (zero work, but screenshots can't be updated via PR)? What about the ~4,400 unreferenced media items?
+4. **Images.** Keep them in the repo (reviewable, needs sideloading on import), or point at the existing WordPress.org media URLs (zero work, but screenshots can't be updated via PR)? What about the ~4,400 unreferenced media items?
 5. **Multi-category articles.** Not a real problem: every article's categories are a parent+child pair (4 have only one), so the deepest category is unambiguous.
 6. **Release pages (935).** Recommendation: treat them as a separate structured data set, not as docs pages. See content-audit §7.
 7. **Changelog sections** (184 articles): keep them in the body, or drop them in favour of git history?

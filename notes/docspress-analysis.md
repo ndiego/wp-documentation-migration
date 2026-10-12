@@ -1,4 +1,4 @@
-# DocsPress and wordpress.org/documentation: structural and technical analysis
+# DocsPress and WordPress.org/documentation: structural and technical analysis
 
 Date: 2026-10-08. Sources: https://docs.press/docs/ (all guide and reference pages),
 Automattic/docspress at commit 8584e70 (2026-08-03), the code dossier in
@@ -17,7 +17,7 @@ DocsPress is three loosely coupled pieces:
 
 The Action is the heart. Everything on the WordPress side is passive: there is no webhook receiver, no in-WordPress cron, no GitHub App. WordPress never reaches out to GitHub.
 
-## 2. How it maps onto what wordpress.org has today
+## 2. How it maps onto what WordPress.org has today
 
 | Concern | HelpHub today | wporg-markdown importer (Block Editor handbook) | DocsPress |
 |---|---|---|---|
@@ -40,22 +40,22 @@ The Action is the heart. Everything on the WordPress side is passive: there is n
 
 ## 3. The auth and trust model (your main concern)
 
-**Direction is the whole story.** The wporg importer is pull-based. wordpress.org's cron fetches a public
-manifest and public raw files from GitHub. GitHub holds no credential for wordpress.org; a compromised
+**Direction is the whole story.** The wporg importer is pull-based. WordPress.org's cron fetches a public
+manifest and public raw files from GitHub. GitHub holds no credential for WordPress.org; a compromised
 GitHub account can at worst merge bad content, which is reviewable and revertible in git. DocsPress is
 push-based. A token with write access to the live site sits in a GitHub Actions secret and is exercised
 on every push to `main` and, in reconcile mode, every five minutes by a scheduled job.
 
-What that means on wordpress.org specifically:
+What that means on WordPress.org specifically:
 
-- **WordPress.com OAuth does not apply.** wordpress.org is not a WordPress.com site. The OAuth path with
+- **WordPress.com OAuth does not apply.** WordPress.org is not a WordPress.com site. The OAuth path with
   `global` scope is irrelevant here, which removes the thing you were worried about, but it leaves only
   the self-hosted path.
 - **The self-hosted path needs an auth plugin.** The Action only sends `Authorization: Bearer <token>`.
-  Core WordPress has no Bearer handler. Application Passwords use Basic auth and won't work. wordpress.org
+  Core WordPress has no Bearer handler. Application Passwords use Basic auth and won't work. WordPress.org
   would have to add a Bearer-token authentication layer (JWT plugin or a custom mu-plugin) to the
   documentation site. That is new attack surface on a site that currently has no API write path at all.
-- **The token acts as a wordpress.org user.** Whatever user owns the token has to be able to create,
+- **The token acts as a WordPress.org user.** Whatever user owns the token has to be able to create,
   edit, publish and delete pages. That user bypasses wporg SSO and 2FA for every automated write. Rotation,
   scoping and audit are all on the systems team.
 - **Reconcile mode doubles the exposure.** The scheduled job also needs `contents: write` and
@@ -68,7 +68,7 @@ What that means on wordpress.org specifically:
   permanently deletes) the live page on the next run. A bad merge or a misconfigured `root-slug` can
   trash a tree. The importer never deletes.
 
-Verdict on this axis: DocsPress's auth model is a poor fit for wordpress.org's security posture. It could be
+Verdict on this axis: DocsPress's auth model is a poor fit for WordPress.org's security posture. It could be
 made to work, but only by adding an inbound write path the site deliberately doesn't have today, while the
 existing importer achieves the same GitHub-as-source-of-truth outcome with no inbound credential.
 
@@ -83,7 +83,7 @@ Action and the PHP. HelpHub is `helphub_article` with categories. Adopting DocsP
 2. Fork DocsPress to target a configurable post type and taxonomy. Then you own a fork of a pre-1.0
    project with one maintainer.
 
-**The sentinel is a liability on wordpress.org.** Sync identity lives inside `post_content` as an HTML
+**The sentinel is a liability on WordPress.org.** Sync identity lives inside `post_content` as an HTML
 comment containing JSON, including the whole Markdown source base64-encoded. It is saved into every
 revision, is visible in the REST API `content.rendered` unless the DocsPress theme strips it, and would
 need wporg's own theme to strip it too. Post meta would have been the normal place; this choice is why
@@ -91,14 +91,14 @@ the theme and Action are more coupled than they look.
 
 **Block output is a plus, with a catch.** DocsPress produces real block markup, which is closer to what
 HelpHub stores today than the importer's classic HTML. But callouts, code tabs and the other 15 blocks are
-`docspress/*` blocks. Either the Blocks plugin ships on wordpress.org permanently, or those get mapped to
+`docspress/*` blocks. Either the Blocks plugin ships on WordPress.org permanently, or those get mapped to
 `wporg/notice` and friends, which means modifying the converter anyway.
 
 **Images aren't handled.** URLs pass through. For HelpHub that is workable only because 2,165 of 2,309
 images already live at `wordpress.org/documentation/files/`. It gives no path for the in-repo screenshots
 this project just extracted; they'd need separate sideloading, exactly as with the importer.
 
-**Redirects are placeholder pages, not 301s.** wordpress.org has a 301 table in an mu-plugin and SEO
+**Redirects are placeholder pages, not 301s.** WordPress.org has a 301 table in an mu-plugin and SEO
 expectations to match. DocsPress's approach would regress that.
 
 **No i18n model.** HelpHub is translated on Rosetta sites per locale. DocsPress has nothing here; each
@@ -118,9 +118,9 @@ replaced by wporg's Jetpack search regardless.
   That would break every stored `docspress/*` block and the sentinel format for existing adopters.
 - Only known deployment is docs.press itself, on WordPress.com.
 - License mismatch: README badge says GPL-3.0-or-later, LICENSE file says GPL-2.0-or-later. Fine for
-  wordpress.org either way, but a sign of early-stage polish.
+  WordPress.org either way, but a sign of early-stage polish.
 
-For a wordpress.org system that the Docs team and systems team would carry for years, this is too early
+For a WordPress.org system that the Docs team and systems team would carry for years, this is too early
 and too single-threaded to adopt as a dependency.
 
 ## 6. What is worth taking from it
@@ -150,7 +150,7 @@ DocsPress gets several things right that the wporg importer lacks, and they are 
 
 Do not adopt DocsPress as the HelpHub publishing system. The decisive reasons are structural, not
 cosmetic: it is hard-wired to core pages with `post_parent` hierarchy, it requires an inbound write token
-and a Bearer auth layer that wordpress.org does not have and should not want, its redirects and i18n
+and a Bearer auth layer that WordPress.org does not have and should not want, its redirects and i18n
 story regress what exists, and the project is a two-month-dormant pre-1.0 with one maintainer and a
 pending rename.
 

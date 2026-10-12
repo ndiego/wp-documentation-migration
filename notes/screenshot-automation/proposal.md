@@ -331,7 +331,7 @@ Playground skill's constants:
 | Framing presets | `plain` (default, just the crop) and `card` (crop on a `#f6f7f7` canvas with 36 px margin, 8 px radius, soft shadow) for full-editor hero images |
 | Annotations | Outline: 3 px `#3858e9`, 4 px radius, 4 px gap. Badge: 24 px circle `#3858e9`, white numeral. Dim: 40% white overlay outside the target. Arrows: avoided; use outline or badge instead |
 | Masking | Dates, avatars and "Saved" notices are masked or frozen, never left to vary |
-| Format | PNG, optimised with oxipng (lossless) and, where needed, pngquant; budget 250 KB per image. WebP is a flag if weight becomes a problem; wordpress.org serves it |
+| Format | PNG, optimised with oxipng (lossless) and, where needed, pngquant; budget 250 KB per image. WebP is a flag if weight becomes a problem; WordPress.org serves it |
 | Naming | `docs/assets/screenshots/<article-slug>/<shot-id>.png`; clips `<shot-id>.mp4` plus `<shot-id>-poster.png` |
 
 Everything in that table is a token in one file so the team can change its mind once, and regenerate.
@@ -367,7 +367,7 @@ is what Gutenberg's own global setup does. Shots that mutate the site (switch th
 ### 4.7 Linking shots to the docs
 
 - Markdown stays plain: `![alt](../../../../assets/screenshots/image-block/toolbar-replace.png)`. The wporg-markdown
-  importer needs nothing special, and the images map to wordpress.org media on import like any other asset.
+  importer needs nothing special, and the images map to WordPress.org media on import like any other asset.
 - `shots snippet image-block` prints the Markdown lines for every shot in a spec, in order, with alt and caption.
 - `shots lint` fails CI when: a spec lacks alt text; a committed image under `docs/assets/screenshots/` is referenced
   by no article; an article references an image under that folder that no spec produces; or the alt text in the

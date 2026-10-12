@@ -9,7 +9,7 @@ fresh screenshot. Grouped by article so they can be fixed one PR at a time.
 | lh3–lh6.googleusercontent.com | 17 | Google Docs/Drive hotlinks, 403 without a browser session. Need re-screenshotting. |
 | codex.wordpress.org | 3 | Codex image store returns 403 to non-browser clients; may be fetchable manually. |
 | private-user-images.githubusercontent.com | 2 | Expired signed URLs from a GitHub PR; gone for good. |
-| wordpress.org | 1 | 404 on the live site too. |
+| WordPress.org | 1 | 404 on the live site too. |
 | source.mp4 / video-source.mp4 | 2 | Not real URLs: the `video-shortcode` article's example markup was rendered as players. Content bug. |
 
 ## comment-reply-link-block

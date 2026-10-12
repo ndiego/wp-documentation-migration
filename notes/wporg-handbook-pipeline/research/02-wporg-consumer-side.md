@@ -432,7 +432,7 @@ Markdown inside a raw `<div>` is **not** parsed unless a subclass re-parses it, 
 - It runs on plain `WP_Query` with custom orderby. **[unverified whether an Elasticsearch/Jetpack Search backend is attached on production]**
 - Handbook post types are added to the Jetpack sitemap (`jetpack_sitemap_post_types`).
 
-**HelpHub search:** `mu-plugins/site-documentation.php` in wporg-documentation-2022 redirects all searches to `https://wordpress.org/search/{q}/?in=support_docs` (wordpress.org's global search). How that index is built is **[unverified]**.
+**HelpHub search:** `mu-plugins/site-documentation.php` in wporg-documentation-2022 redirects all searches to `https://wordpress.org/search/{q}/?in=support_docs` (WordPress.org's global search). How that index is built is **[unverified]**.
 
 **i18n:**
 
@@ -446,7 +446,7 @@ Markdown inside a raw `<div>` is **not** parsed unless a subclass re-parses it, 
 
 ### 6.1 How code reaches production
 
-**wordpress.org repo** (`wporg-markdown`, `handbook`, `wporg-cli` plugins):
+**WordPress.org repo** (`wporg-markdown`, `handbook`, `wporg-cli` plugins):
 
 - The GitHub repo describes itself as "WordPress.org Meta, Git-ified … just a mirror of the WordPress Meta subversion repository. Please include a link to a pre-existing ticket on https://meta.trac.wordpress.org/ with every pull request."
 - Changes land as **SVN commits to meta.svn.wordpress.org by a Meta committer**, against a Meta Trac ticket. GitHub PRs are for review only.
@@ -468,7 +468,7 @@ Markdown inside a raw `<div>` is **not** parsed unless a subclass re-parses it, 
 
 ### 6.2 What a HelpHub importer would need
 
-**Background.** HelpHub (wordpress.org/documentation/) runs `wporg-documentation-2022`, which contains:
+**Background.** HelpHub (WordPress.org/documentation/) runs `wporg-documentation-2022`, which contains:
 
 - The theme.
 - The `support-helphub` plugin.
@@ -507,7 +507,7 @@ The article post type is `helphub_article`:
 | developer.wordpress.org: Plugin, Theme and Common APIs handbooks | Edited in WordPress (handbook plugin) | Default `devhub_handbook_post_types` list **[verified]** |
 | make.wordpress.org/cli/handbook/ | `WPOrg_Cli\Markdown_Import` in the `wporg-cli` plugin. Standalone, the ancestor of wporg-markdown. Post type `handbook`. Manifest `wp-cli/handbook@main/bin/handbook-manifest.json`. `15_minutes`. **No ETag.** Allowlists the hosts `github.com` and `raw.githubusercontent.com` and the owner `wp-cli`. Has an admin "Markdown source" field with an "Import" button. | Code, plus live edit link `github.com/wp-cli/handbook/edit/main/index.md` **[verified]** |
 | make.wordpress.org/hosting/handbook/ | GitHub-backed (`WordPress/hosting-handbook`, `bin/handbook-manifest.json`). Most likely `WPorg_Handbook_Importer` through a non-public `handbooks_config` entry with `manifest`. | Live edit link `github.com/wordpress/hosting-handbook/edit/main/index.md` **[verified]**; config location **[unverified, not in any public repo found]** |
-| wordpress.org/data-liberation/and/ ("Data Liberation Guides") | `WPorg_Handbook_Importer` through `handbooks_config` in `wporg-main-2022/inc/data-liberation-handbook.php` (`'and' => [ 'manifest' => 'https://raw.githubusercontent.com/WordPress/data-liberation/add/manifest/assets/manifest.json', 'slug' => 'data-liberation/and' ]`) | Code **[verified]**. The manifest still returns 200 (9 entries), but `/data-liberation/and/` returns **404** live, so it is probably inactive. |
+| WordPress.org/data-liberation/and/ ("Data Liberation Guides") | `WPorg_Handbook_Importer` through `handbooks_config` in `wporg-main-2022/inc/data-liberation-handbook.php` (`'and' => [ 'manifest' => 'https://raw.githubusercontent.com/WordPress/data-liberation/add/manifest/assets/manifest.json', 'slug' => 'data-liberation/and' ]`) | Code **[verified]**. The manifest still returns 200 (9 entries), but `/data-liberation/and/` returns **404** live, so it is probably inactive. |
 | make.wordpress.org/docs, core, meta, themes, accessibility, training, polyglots, test, plugins, performance, marketing handbooks | **Edited in WordPress** (default `handbook` post type, o2/P2) | No GitHub edit links on their live landing pages **[verified, landing pages only]** |
 
 ### How `handbook/inc/importer.php` (`WPorg_Handbook_Importer`) differs from DevHub's subclass

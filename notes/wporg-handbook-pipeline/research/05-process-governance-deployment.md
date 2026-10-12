@@ -1,6 +1,6 @@
 # 05 — Process, governance, deployment and history
 
-How the WordPress Docs team works on end-user documentation (HelpHub) today, how changes to wordpress.org code get shipped, and what the governance path would look like for moving HelpHub from "edited in wp-admin" to "Markdown in GitHub, imported into WordPress" (the model the Block Editor Handbook uses).
+How the WordPress Docs team works on end-user documentation (HelpHub) today, how changes to WordPress.org code get shipped, and what the governance path would look like for moving HelpHub from "edited in wp-admin" to "Markdown in GitHub, imported into WordPress" (the model the Block Editor Handbook uses).
 
 Research date: 2026-10-11. Raw material (fetched posts, mailing-list copies of Trac tickets, PR stats) is saved in the session scratchpad under `process-research/`. Quotes are verbatim. Items marked **[unverified]** could not be confirmed from a primary source.
 
@@ -11,7 +11,7 @@ Note on sources: meta.trac.wordpress.org now sits behind a JavaScript bot challe
 ## TL;DR
 
 1. **This has been tried before, and the attempt stalled.** In September 2023 the Docs team created [`WordPress/documentation-end-user`](https://github.com/WordPress/documentation-end-user) to hold all of HelpHub as Markdown in per-language folders with manifests. It came out of Javier Casares's [translation/localization proposal](https://make.wordpress.org/project/2023/09/06/documentation-translation-localization/) (2023-09-06). The repo holds only a skeleton (`en/index.md` plus 11 language manifests). Its last commit was 2024-02-16 and **no content was ever migrated**. By March 2024 the plan had shifted to "go for GlotPress", and then stalled on tooling.
-2. **The strongest objection on record comes from Meta lead Dion Hulse (@dd32).** It is on [Meta #7520](https://lists.wordpress.org/pipermail/wp-meta/2024-March/057767.html), "Move Handbooks to GitHub" (March 2024). His points: GitHub plus Markdown "isn't accessible to all"; it works great for Block Editor docs because "the docs and code changes can happen in the same Gutenberg PR" but "can be total shambles for other content"; it is "a workaround" for wordpress.org lacking a suggest-edits flow; and it complicates translation (Phase 4 multilingual "will be reliant upon having WordPress posts as the source-of-truth"). Any HelpHub proposal must answer this directly.
+2. **The strongest objection on record comes from Meta lead Dion Hulse (@dd32).** It is on [Meta #7520](https://lists.wordpress.org/pipermail/wp-meta/2024-March/057767.html), "Move Handbooks to GitHub" (March 2024). His points: GitHub plus Markdown "isn't accessible to all"; it works great for Block Editor docs because "the docs and code changes can happen in the same Gutenberg PR" but "can be total shambles for other content"; it is "a workaround" for WordPress.org lacking a suggest-edits flow; and it complicates translation (Phase 4 multilingual "will be reliant upon having WordPress posts as the source-of-truth"). Any HelpHub proposal must answer this directly.
 3. **The Docs team's own pain is throughput and review, not editing tools.** As of 2026-10-11 there are 231 open HelpHub issues and 469 open issues overall. A tiny core group (Estela Rueda, Milana Cap, Andrea Roenning, Akira Tachibana) holds wp-admin publish rights. The December 2025 [workflow proposal](https://make.wordpress.org/docs/2025/12/02/proposal-to-change-the-user-documentation-workflow/) moved toward *less* pre-publish review: write directly in WordPress, schedule for release day, review afterwards. Today drafts live in GitHub issue comments or Google Docs and are then pasted into wp-admin by someone with access.
 4. **Advanced Administration Handbook (AAH) is the direct precedent, and it worked.** It was proposed in July 2022 ([Meta #6411](https://lists.wordpress.org/pipermail/wp-meta/2022-July/050234.html)), started in a personal repo (zzap), moved to the WordPress org in November 2022, and went live on 2023-03-28 after dd32 "fix[ed] a bunch of broken things on the WordPress.org side, and fix[ed] the manifest file that was very incorrect". It was led by Javier Casares, Milana Cap and LucP across the Docs and Hosting teams. Since then: 197 merged PRs from 89 distinct authors. However, the median time-to-merge for the last 50 PRs is about 34 days, the repo has no PR template, no CI and no CONTRIBUTING file, and 11 PRs are open.
 5. **Deployment of the importer is a Meta-committer job.** Content flows from GitHub to the live site with no human in the loop: the importer cron runs every 15 minutes, and I measured roughly 4–15 minutes from merge to live (below). *Code* changes (for example, a HelpHub importer subclass) must go through PR to `wporg-documentation-2022` or `WordPress/wordpress.org`, then a sync script on a sandbox, then `deploy-dotorg.sh`, run by a Meta committer. Since April 2026 the "Meta Janitors" group has a mandate to move fast and "explore tighter integration between WordPress.org and version-controlled workflows", which is a favourable opening.
@@ -83,7 +83,7 @@ Note on sources: meta.trac.wordpress.org now sits behind a JavaScript bot challe
 | [documentation-end-user](https://github.com/WordPress/documentation-end-user) | 2023-09-01 | **Dormant since 2024-02-16**; skeleton only |
 | [WordPress-Documentation-Style-Guide](https://github.com/WordPress/WordPress-Documentation-Style-Guide) | 2020-09 | Style guide source |
 | [HelpHub](https://github.com/WordPress/HelpHub) | 2016-01 | **Archived**; the old HelpHub dev repo |
-| [wporg-documentation-2022](https://github.com/WordPress/wporg-documentation-2022) | 2022-11 | Theme and `support-helphub` plugin for wordpress.org/documentation (Meta-owned code) |
+| [wporg-documentation-2022](https://github.com/WordPress/wporg-documentation-2022) | 2022-11 | Theme and `support-helphub` plugin for WordPress.org/documentation (Meta-owned code) |
 | [Documentation-Issue-Tracker-fr_FR](https://github.com/WordPress/Documentation-Issue-Tracker-fr_FR) | 2026-09-10 | Empty; "Issue Tracker for localizing the WordPress User Documentation into the fr_FR locale" **[purpose/owner unverified]** |
 | Others imported to developer.wordpress.org | — | developer-plugins-handbook, wpcs-docs, Playground handbook, plus team handbooks on make (hosting-, test-, plugins-, contributor-day-, accessibility-team-handbook, spain-handbook) |
 
@@ -109,7 +109,7 @@ A new HelpHub content repo needs this from day one. `documentation-end-user` is 
 | 2022-07-18 | [Meta #6411](https://lists.wordpress.org/pipermail/wp-meta/2022-July/050234.html): Advanced Administration handbook proposed, initially "maintained from the dashboard so we don't need connected GitHub repository" |
 | 2022-08-13 | After the Hosting team joined, the plan switched to "generated from its own GitHub repository" ([comment](https://lists.wordpress.org/pipermail/wp-meta/2022-August/050446.html)) |
 | 2022-10-11 / 10-19 | [Renaming Support to Documentation](https://make.wordpress.org/meta/2022/10/11/renaming-wordpress-org-support-to-documentation/); [New design for HelpHub](https://make.wordpress.org/docs/2022/10/19/new-design-for-helphub-in-wordpress-org/): new site map (4 categories) and a **per-article changelog** "to keep historic information on each article" |
-| 2023-01 (end) | New wordpress.org/documentation launched by Docs and Meta ([Future plans for HelpHub](https://make.wordpress.org/docs/2023/02/07/future-plans-for-helphub/), 2023-02-07: "It has been 8 years since the HelpHub project kicked-off … Most of the initial members are not around") |
+| 2023-01 (end) | New WordPress.org/documentation launched by Docs and Meta ([Future plans for HelpHub](https://make.wordpress.org/docs/2023/02/07/future-plans-for-helphub/), 2023-02-07: "It has been 8 years since the HelpHub project kicked-off … Most of the initial members are not around") |
 | 2023-03-28 / 04-10 | AAH goes live; developer-jargon articles moved out of HelpHub ([Introducing the AAH](https://make.wordpress.org/docs/2023/04/10/introducing-the-advanced-administration-handbook/)) |
 | 2023-05-03 | [Notification form between documentation and Rosetta sites](https://make.wordpress.org/polyglots/2023/05/03/explorations-for-a-notification-form-between-documentation-and-rosetta-sites/) (Estela) |
 | 2023-09-06 | [Proposal: Documentation translation / localization](https://make.wordpress.org/project/2023/09/06/documentation-translation-localization/) (Javier Casares): all docs in GitHub as Markdown, per-language folders, manifests |
@@ -184,13 +184,13 @@ The strongest *new* argument is that HelpHub is now block-centric, and block doc
 
 ---
 
-## 3. Meta/Systems: how code reaches wordpress.org
+## 3. Meta/Systems: how code reaches WordPress.org
 
 ### 3.1 Repos and the SVN backbone
 
-- The canonical code for wordpress.org lives in **SVN** (`meta.svn.wordpress.org`, plus private `dotorg.svn`). [WordPress/wordpress.org](https://github.com/WordPress/wordpress.org) is a read-only mirror. Its README says: "Staged Git PR changes will not be merged directly on GitHub; a Meta committer will review and commit the patch to the Meta repository, which will automatically sync and resolve the PR on GitHub." The repo now has AGENTS.md and CLAUDE.md; PRs are linked to Meta Trac tickets by a webhook; and a Props Bot workflow was added in January 2026 (r14639).
+- The canonical code for WordPress.org lives in **SVN** (`meta.svn.wordpress.org`, plus private `dotorg.svn`). [WordPress/wordpress.org](https://github.com/WordPress/wordpress.org) is a read-only mirror. Its README says: "Staged Git PR changes will not be merged directly on GitHub; a Meta committer will review and commit the patch to the Meta repository, which will automatically sync and resolve the PR on GitHub." The repo now has AGENTS.md and CLAUDE.md; PRs are linked to Meta Trac tickets by a webhook; and a Props Bot workflow was added in January 2026 (r14639).
 - Several sites are developed on GitHub and **synced into SVN by scripts** (`bin/sync/*.sh` on a sandbox): wporg-developer, wporg-mu-plugins, wporg-make, Learn, pattern-directory, wporg-two-factor, and wporg-documentation-2022 (`bin/sync/wporg-documentation.sh`, per PR #113).
-- **wordpress.org/documentation code:** [wporg-documentation-2022](https://github.com/WordPress/wporg-documentation-2022) holds the theme plus `source/wp-content/plugins/support-helphub`. Pushes to trunk trigger `build.yml`, which pushes to the `build` branch; a committer then runs the sync and deploy.
+- **WordPress.org/documentation code:** [wporg-documentation-2022](https://github.com/WordPress/wporg-documentation-2022) holds the theme plus `source/wp-content/plugins/support-helphub`. Pushes to trunk trigger `build.yml`, which pushes to the `build` branch; a committer then runs the sync and deploy.
   - 34 PRs ever, 24 merged, 11 distinct authors.
   - Merged by adamwoodnz (9), ryelle (8), dd32 (3), obenland (2), KokkieH, desrosj.
   - Median time-to-merge is 0.8 days, but activity is sporadic (1 merge in 2025, 6 in 2026).
@@ -213,9 +213,9 @@ From [Becoming a Meta committer](https://make.wordpress.org/meta/handbook/about/
 
 [Meta Janitors](https://make.wordpress.org/meta/handbook/about/projects/meta-janitors/) (2026-04-23) "grants a trusted group of contributors WordPress.org sandbox access in order to make changes and improvements without 'approval or feedback needed from any team, group, stakeholder, commenter, or approval from anyone but me (Matt).'" "Participants are encouraged to lean into AI tooling, explore tighter integration between WordPress.org and version-controlled workflows (SVN, Git, Trac, GitHub)". Members: @4thhubbard, @annezazu, @barry, @dd32, @eugeneb222, @grierson, @nacin, @noel_tock, @markjaquith, @nickhamze, @westonruter, @yaniiliev. Updates are posted in #meta-janitors.
 
-### 3.3 Cron on wordpress.org
+### 3.3 Cron on WordPress.org
 
-- wordpress.org runs **Cavalcade** (Human Made's database-backed cron runner) rather than page-load WP-Cron. Evidence from meta code:
+- WordPress.org runs **Cavalcade** (Human Made's database-backed cron runner) rather than page-load WP-Cron. Evidence from meta code:
   - `plugin-directory/jobs/class-manager.php`: "This must be run after plugins_loaded, as that's when Cavalcade hooks in"; `wp_cache_delete( 'jobs', 'cavalcade-jobs' )`.
   - `official-wordpress-events.php`: "Cavalcade isn't fully loaded before [init]".
   - A test fixture stubbing `HM\Cavalcade\Plugin\Job`.
@@ -320,7 +320,7 @@ Evidence-based estimate:
   - The guide says "Keep post slugs in English for now so that current redirect rules will continue to work."
   - Tracking English changes relies on third-party tools: [wp-info.org helphubchanges](https://wp-info.org/tools/helphubchanges.php) and [developerka.org helphub-updates](https://developerka.org/helphub-updates/).
   - **No sync tool exists.** Re-imports are manual Meta requests: zh_CN asked to "clear and re-import" ([2024-04-15](https://make.wordpress.org/polyglots/2024/04/15/request-to-clear-and-update-helphub-support-articles/), [Meta #7587](https://lists.wordpress.org/pipermail/wp-meta/2024-April/058306.html)). That request was still unresolved in June 2025: "I am waiting for … using-glotpress-to-translate-content, but it seems to be progressing very slowly."
-- **Measured footprint, all 199 Rosetta sites** (2026-10-12; every locale site linked from the [Polyglots teams page](https://make.wordpress.org/polyglots/teams/), probed at `/support/wp-json/wp/v2/articles` and read `X-WP-Total`). English (wordpress.org/documentation) has 321 articles.
+- **Measured footprint, all 199 Rosetta sites** (2026-10-12; every locale site linked from the [Polyglots teams page](https://make.wordpress.org/polyglots/teams/), probed at `/support/wp-json/wp/v2/articles` and read `X-WP-Total`). English (WordPress.org/documentation) has 321 articles.
 
   | Locale site | Published HelpHub articles |
   |---|---|

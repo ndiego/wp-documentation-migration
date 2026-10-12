@@ -134,7 +134,7 @@ Every test kept the same post ID unless noted.
   ```
   {"wp_doing_cron":true,"user":0,"unfiltered_html":false,"content_save_pre_post_kses":10,"title_save_pre_kses":10}
   ```
-  So kses runs **again** on `content_save_pre`, `excerpt_save_pre` and `title_save_pre`. Content came out identical for all pages (double kses is idempotent on our corpus). But **titles and excerpts differ by runner:** `Writing & publishing` → `Writing &amp; publishing` (8 titles), and `Tools > Site Health` → `Tools &gt; Site Health` (5 excerpts). This renders the same in HTML, but REST/raw consumers and title comparisons will see different values depending on how wordpress.org runs the cron.
+  So kses runs **again** on `content_save_pre`, `excerpt_save_pre` and `title_save_pre`. Content came out identical for all pages (double kses is idempotent on our corpus). But **titles and excerpts differ by runner:** `Writing & publishing` → `Writing &amp; publishing` (8 titles), and `Tools > Site Health` → `Tools &gt; Site Health` (5 excerpts). This renders the same in HTML, but REST/raw consumers and title comparisons will see different values depending on how WordPress.org runs the cron.
 - The Block Editor subclass widens kses with a `pre_post_update` hook (allows `<style>`). A HelpHub subclass can widen it the same way, for example if we wanted `<source>`.
 
 ## 6. Other observations
@@ -154,7 +154,7 @@ Every test kept the same post ID unless noted.
 ## 7. What our converter, manifest and pipeline must change
 
 1. **Links:** either emit final absolute URLs (`https://wordpress.org/documentation/<key>/#frag`), or (preferably, so GitHub previews keep working) keep relative `.md` links and ship a HelpHub subclass `after_transform` rewrite like the proof of concept. In both cases add a CI link check that every relative `.md` target is in the manifest.
-2. **Images and posters:** decide where assets live on wordpress.org (keep `/documentation/files/…` originals, a CDN, or raw GitHub). Then either emit absolute URLs or rewrite them in the subclass. Relative `../../assets/` paths never work as is.
+2. **Images and posters:** decide where assets live on WordPress.org (keep `/documentation/files/…` originals, a CDN, or raw GitHub). Then either emit absolute URLs or rewrite them in the subclass. Relative `../../assets/` paths never work as is.
 3. **Callouts:** stop relying on `> [!NOTE]`. Either the subclass converts `<blockquote>[!TYPE]` to HelpHub notice markup, or the converter emits HTML (`<div class="callout callout-info">` survives kses). Always separate consecutive callouts with non-blockquote content, or they merge.
 4. **Never emit `<!-- wp:… -->` block markup**, `<iframe>`, `<source>`, `<script>`, `<style>`, footnotes, or literal `<code>` tags inside fenced code (fix `write-code-in-your-posts-classic-editor`).
 5. **Videos:** keep the `<video src=… controls>` form (it survives), and keep VideoPress/YouTube as a bare URL on its own line (oEmbed renders the player). The current `<!-- VideoPress embed (iframe removed): … -->` comments are redundant but harmless.
@@ -172,7 +172,7 @@ Every test kept the same post ID unless noted.
 
 ## Not tested / caveats
 
-- wp-env/Docker (`.wp-env.json` provided, unverified). Multisite (wordpress.org runs multisite; kses behaviour for super admins doesn't apply to cron user 0, so I'd expect the same).
-- The real wordpress.org handbook theme and plugin (TOC heading ids, the callout CSS, the landing page for `index`), and how wordpress.org actually triggers cron (WP-CLI vs HTTP changes title/excerpt escaping, §5).
+- wp-env/Docker (`.wp-env.json` provided, unverified). Multisite (WordPress.org runs multisite; kses behaviour for super admins doesn't apply to cron user 0, so I'd expect the same).
+- The real WordPress.org handbook theme and plugin (TOC heading ids, the callout CSS, the landing page for `index`), and how WordPress.org actually triggers cron (WP-CLI vs HTTP changes title/excerpt escaping, §5).
 - Fetching from GitHub raw (repo is private). Rate limits and latency are estimated, not measured.
 - `meta` entries in the manifest; `~~strikethrough~~` in the base parser; old-URL behaviour after a move (WordPress's own 404 guessing may redirect by slug).

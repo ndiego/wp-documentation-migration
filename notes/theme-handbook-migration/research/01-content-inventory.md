@@ -498,7 +498,7 @@ There are 1,791 `<a>` elements.
 | External, non-WordPress (MDN 33, php.net, w3.org and others) | 235 | 73 |
 | codex.wordpress.org | 202 | 18 |
 | make.wordpress.org | 95 | 33 |
-| wordpress.org plugin and theme directories | 26 + 24 | 7 + 15 |
+| WordPress.org plugin and theme directories | 26 + 24 | 7 + 15 |
 | GitHub | 22 | 13 |
 | HelpHub (`wordpress.org/documentation/`, `/support/article/`) | 21 | 11 |
 | core.trac.wordpress.org | 21 | 10 |

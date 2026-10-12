@@ -1,6 +1,6 @@
 # Theme Handbook: migration plan to a GitHub Markdown source
 
-> **Naming.** On wordpress.org the handbooks are titled "Theme Handbook" (/themes/) and "Plugin Handbook" (/plugins/),
+> **Naming.** On WordPress.org the handbooks are titled "Theme Handbook" (/themes/) and "Plugin Handbook" (/plugins/),
 > per their page titles and landing posts. The Theme Handbook's own intro paragraph and the Themes team's About page
 > say "Theme Developer Handbook"; quotes below keep whatever wording the source used. These notes use the on-site
 > titles. Repo slugs follow the URL segment instead (`developer-plugins-handbook`), see §4.1.
@@ -90,7 +90,7 @@ the repo each hold changes the other lacks.
 
 ### 4.1 Content repo
 
-- **Name:** `WordPress/developer-themes-handbook`. Grounded in wordpress.org itself: the Plugin Handbook lives at
+- **Name:** `WordPress/developer-themes-handbook`. Grounded in WordPress.org itself: the Plugin Handbook lives at
   developer.wordpress.org/plugins/ and its repo is `developer-plugins-handbook`, so the slug is `developer-` + the
   site's URL segment + `-handbook`, not the handbook title. The Theme Handbook lives at /themes/, hence
   `developer-themes-handbook`. The `developer-` prefix also separates it from the Make team handbooks
@@ -170,7 +170,7 @@ shortcode-expanded HTML. Conventions the spike validated:
 | 2 | **Repo name and branch** | `developer-themes-handbook`, `trunk` (alternative `theme-developer-handbook`); Meta's call. |
 | 3 | **wp-admin editing after cutover** | Lock it (admins only) and say so in the proposal. The importer only warns, and an edit survives until the file next changes, then vanishes. This is the plugin-mirror failure mode. Optional: a nightly drift check alerting #docs. |
 | 4 | **Issue intake** | Transfer the open `themes` issues to the repo; pin a pointer in the tracker. |
-| 5 | **Assets** | **Images live in the repo as compressed WebP** (decided 2026-10-12), sideloaded into the developer.wordpress.org media library by the importer at import time the way the Playground importer does (`import-playground.php`, `media_sideload_image`, attachment tracked per source URL), so pages are served from wordpress.org, never from GitHub. At cutover the 152 current images (144 in the DevHub library, 5 on make.wordpress.org, 3 GIFs on a personal site) are brought into the repo under `assets/`, converted to WebP (the 3 animated GIFs as animated WebP), alt text carried verbatim (the 12 empty alts stay empty: no content changes). Image URLs on pages change to the new attachments; that is not an organizational change. **Video is never stored in Git**: the one `<video>` and the embeds stay hosted on wordpress.org / YouTube and are referenced by URL (HelpHub's 1.3 GB lesson). Cost: the sideload logic is not in the base importer, so the Theme importer subclass carries ~100 lines copied from Playground's, worth upstreaming to the base class afterwards. |
+| 5 | **Assets** | **Images live in the repo as compressed WebP** (decided 2026-10-12), sideloaded into the developer.wordpress.org media library by the importer at import time the way the Playground importer does (`import-playground.php`, `media_sideload_image`, attachment tracked per source URL), so pages are served from WordPress.org, never from GitHub. At cutover the 152 current images (144 in the DevHub library, 5 on make.wordpress.org, 3 GIFs on a personal site) are brought into the repo under `assets/`, converted to WebP (the 3 animated GIFs as animated WebP), alt text carried verbatim (the 12 empty alts stay empty: no content changes). Image URLs on pages change to the new attachments; that is not an organizational change. **Video is never stored in Git**: the one `<video>` and the embeds stay hosted on WordPress.org / YouTube and are referenced by URL (HelpHub's 1.3 GB lesson). Cost: the sideload logic is not in the base importer, so the Theme importer subclass carries ~100 lines copied from Playground's, worth upstreaming to the base class afterwards. |
 | 6 | **Code UI parity** | Add `wp-block-code` in the theme-handbook transform now; propose the same for the base importer later (Block Editor, AAH and SCF lack Copy/Expand today). |
 | 7 | **"Last updated" at cutover** | Accept the cutover date, or ask Meta to keep `post_modified` with a one-off filter during the first import. |
 | 8 | **Japanese team** | Tell them before cutover, publish the "conversion only" commit, offer a path map. Their 139-file tree already matches. |

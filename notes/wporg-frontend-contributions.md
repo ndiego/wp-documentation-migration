@@ -1,4 +1,4 @@
-# Contributing front-end fixes to wordpress.org docs pages
+# Contributing front-end fixes to WordPress.org docs pages
 
 Research from 2026-10-11, prompted by two small UI items on the new DevHub layout: the "In this article" mobile
 toggle lacking a pointer cursor, and a proposed "Copy page (as Markdown)" action in the article sidebar.
@@ -39,7 +39,7 @@ which are also used by the documentation site, Learn and News. A change there sh
   That is why the line is visible before the link is.
 - Below 1300px the container never floats: no back-to-top, TOC collapses to the bar.
 
-## Markdown output on wordpress.org (for the "Copy page" idea)
+## Markdown output on WordPress.org (for the "Copy page" idea)
 
 - Announced by dd32 on make/meta 2026-03-03: https://make.wordpress.org/meta/2026/03/03/markdown-now-available-on-wordpress-org/
 - Works on most .org sites via `?output_format=md` **or** `Accept: text/markdown`. Response is `text/markdown`
@@ -51,7 +51,7 @@ which are also used by the documentation site, Learn and News. A change there sh
   has `pub/`, which is synced into wporg-developer; grep found nothing). It lives in private dotorg code, so
   **local wp-env sites do not serve Markdown by default**. html-to-md is itself a WordPress plugin that does the same thing (query arg, Accept header, and the alternate link tag), so it is cloned to `~/Developer/wordpress-org/local-plugins/html-to-md` and mounted via the DevHub `.wp-env.override.json`.
 - Usage-stats follow-up: https://make.wordpress.org/systems/2026/03/30/markdown-usage-stats/
-- Related but separate: `pub/wporg-llms.php` serves `/llms.txt` on wordpress.org only.
+- Related but separate: `pub/wporg-llms.php` serves `/llms.txt` on WordPress.org only.
 
 ## "Copy page": what was built (2026-10-11/12)
 

@@ -4,7 +4,7 @@ Date: 2026-10-11. Page counts are live `X-WP-Total` values from each site's REST
 which comes from `raw/articles.json`. Detail per site is in `research/03-handbook-landscape-survey.md`; the
 importer mechanics are in `research/02-wporg-consumer-side.md`.
 
-The end goal is one way of authoring and publishing documentation across wordpress.org, regardless of which
+The end goal is one way of authoring and publishing documentation across WordPress.org, regardless of which
 model wins. This note lists every section, how it is published today, and whether it belongs in scope.
 
 ## Tier 1: already GitHub-backed. Standardize *how*, not *whether*
@@ -37,8 +37,8 @@ Six manifest-generation approaches and four importer code paths for the same job
 
 | Section | Pages | Today | Notes |
 |---|---|---|---|
-| HelpHub articles, wordpress.org/documentation | 321 | `helphub_article`, flat, `category` taxonomy, edited in wp-admin by a small publishing group | Covered in depth in `README.md` and the research reports. The 2023 move to GitHub stalled. |
-| HelpHub version pages, wordpress.org/documentation/wordpress-version/ | 935 | `helphub_version`, hand-written release notes | Semi-generated release content; needs its own treatment and is out of scope for the current converter. |
+| HelpHub articles, WordPress.org/documentation | 321 | `helphub_article`, flat, `category` taxonomy, edited in wp-admin by a small publishing group | Covered in depth in `README.md` and the research reports. The 2023 move to GitHub stalled. |
+| HelpHub version pages, WordPress.org/documentation/wordpress-version/ | 935 | `helphub_version`, hand-written release notes | Semi-generated release content; needs its own treatment and is out of scope for the current converter. |
 | Rosetta HelpHub copies, e.g. fr.wordpress.org/support/ | fr 296, ja 264, it 239, ru 48, es 22, cn 13, br 13, ko 3 | one-time WXR import, then independent editing, no sync | Any standard must say what happens to these. The Polyglots plan is GlotPress-based (PR #1856, open since 2024-08). |
 
 ## Tier 4: different content models. Name as out of scope, with the reason
@@ -52,7 +52,7 @@ Six manifest-generation approaches and four importer code paths for the same job
 | Docs Style Guide, make.wordpress.org/docs/style-guide | `WordPress/WordPress-Documentation-Style-Guide`, hand-edited manifest | Import status unverified. Docs-team owned; could join Tier 1 once verified. |
 | Contributor Handbook, make.wordpress.org/handbook | `WordPress/contributor-handbook` (draft, 2024-03) | Import status unverified. |
 
-## Outside wordpress.org proper
+## Outside WordPress.org proper
 
 Openverse docs (docs.openverse.org), bbPress and BuddyPress codices, and mobile app docs on wordpress.com.
 Leave out.

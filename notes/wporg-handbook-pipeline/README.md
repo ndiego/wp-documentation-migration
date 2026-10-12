@@ -12,7 +12,7 @@ file paths and commit SHAs. Everything marked **[unverified]** in the reports st
 | `research/04-importer-spike.md` | The real importer run against this repo's `docs/` on a local WordPress |
 | `research/05-process-governance-deployment.md` | Docs team process, Meta deployment, translations, open questions |
 | `spike/` | Re-runnable spike: test plugin, ETag server, fixtures, sample output |
-| `documentation-inventory.md` | Every wordpress.org documentation section, how it is published today, and which tier of scope it belongs to |
+| `documentation-inventory.md` | Every WordPress.org documentation section, how it is published today, and which tier of scope it belongs to |
 
 ## 1. The one-paragraph version
 
@@ -185,14 +185,14 @@ Details and citations are in `research/05-process-governance-deployment.md`.
   release day, and reviewing after publication. The team's stated pain is review throughput, not the editor.
 - **The main objection on record** is from Meta lead Dion Hulse on Meta Trac #7520 (March 2024): GitHub plus
   Markdown "isn't accessible to all"; it "works great" for Block Editor docs because docs and code change in the
-  same PR but "can be total shambles for other content"; it is "a workaround" for wordpress.org lacking a
+  same PR but "can be total shambles for other content"; it is "a workaround" for WordPress.org lacking a
   suggest-edits flow; and Gutenberg Phase 4 multilingual work "will be reliant upon having WordPress posts as
   the source-of-truth". Training and Polyglots contributors agreed. The strongest reply available to us is his
   own exception: HelpHub is now block-centric, and per-block user docs belong next to block code.
 - **Content deploys itself; code does not.** Measured on 2026-10-11, Gutenberg docs commits reached
   developer.wordpress.org in 4 to 15 minutes with no human step. Code changes (an importer subclass) need a PR
   to `wporg-documentation-2022` or a Meta SVN patch, then a Meta committer runs a sync script on a sandbox and
-  `deploy-dotorg.sh`, then activates plugins per site with WP-CLI. wordpress.org runs Cavalcade for cron
+  `deploy-dotorg.sh`, then activates plugins per site with WP-CLI. WordPress.org runs Cavalcade for cron
   **[indicated by code, not confirmed by Systems]**.
 - **A hazard in the HelpHub codebase.** `support-helphub` has two upstreams, Meta SVN and the GitHub repo, and
   running the sync can silently revert SVN-only changes (nearly happened in July 2026, PR #113). Fix that

@@ -28,7 +28,7 @@ Research date: 2026-10-11. Sources are the live sites, GitHub repos (shallow clo
 
 | Site | Source of truth | Post type / hierarchy | Source → site | How contributors propose changes | Review / merge | Images | Manifest | Versions / i18n |
 |---|---|---|---|---|---|---|---|---|
-| **wordpress.org/documentation** (HelpHub) | WordPress DB (wp-admin) | `helphub_article` (non-hierarchical; `category` taxonomy plus persona/experience taxonomies; nav menus give structure), `helphub_version`, `post`, `page` | Direct editing | GitHub issue in `WordPress/Documentation-Issue-Tracker` (templates, `/review` automation); Slack #docs; on-site feedback form → issue | Users with the HelpHub Editor role publish; HelpHub Manager can grant roles | WordPress media library (`wordpress.org/documentation/files/YYYY/MM/`) | None | Manual per-article "Changelog" section; `helphub_version` pages per WP release; translations are separate Rosetta HelpHubs edited by locale teams |
+| **WordPress.org/documentation** (HelpHub) | WordPress DB (wp-admin) | `helphub_article` (non-hierarchical; `category` taxonomy plus persona/experience taxonomies; nav menus give structure), `helphub_version`, `post`, `page` | Direct editing | GitHub issue in `WordPress/Documentation-Issue-Tracker` (templates, `/review` automation); Slack #docs; on-site feedback form → issue | Users with the HelpHub Editor role publish; HelpHub Manager can grant roles | WordPress media library (`wordpress.org/documentation/files/YYYY/MM/`) | None | Manual per-article "Changelog" section; `helphub_version` pages per WP release; translations are separate Rosetta HelpHubs edited by locale teams |
 | **developer.wordpress.org/block-editor** | `WordPress/gutenberg` `trunk` `docs/` | Handbook CPT, `post_parent` from manifest | DevHub importer (`import-block-editor.php`) pulls `docs/manifest.json` on cron | Gutenberg PR / issue | Gutenberg committers | Repo-relative files rewritten to `raw.githubusercontent.com` | Generated from `docs/toc.json` by `npm run docs:gen` (@wordpress/docs-tools); CI checks it | Tracks trunk only; no i18n |
 | **developer.wordpress.org/advanced-administration** | `WordPress/Advanced-administration-handbook` `main` | Handbook CPT, `post_parent` | DevHub importer (`import-advanced-admin.php`) pulls `bin/handbook-manifest.json` | PR; issues in the Documentation-Issue-Tracker (label `advanced administration`) | Docs/Hosting maintainers merge PRs | Mixed: HelpHub media library (31, plus 10 via `i*.wp.com`), GitHub issue attachments (27), raw repo `assets/` (5), Codex (1) | **Hand-edited JSON** (titles, slugs, parents, `order`); no GitHub Actions at all | None |
 | **developer.wordpress.org/playground** | `WordPress/wordpress-playground` `trunk` `packages/docs/site/docs` | Handbook CPT, `post_parent` | DevHub importer (`import-playground.php`, added 2026-07-15) pulls the committed `packages/docs/site/manifest.json`; also transforms MDX and callouts and **downloads images into the media library** | PR in the Playground monorepo | Playground maintainers | Imported into the WP media library by the importer (2026-08) | Was hand-made (2026-07); since PR #4332 (2026-09-30) generated in the Docusaurus `postBuild` hook and deployed to `wordpress.github.io/wordpress-playground/manifest.json`; the committed snapshot is kept until the importer URL switches | English on devhub; translations stay on the Docusaurus GitHub Pages site (`i18n/`), with "Also available in" links driven by `translation-availability.json` |
@@ -98,9 +98,9 @@ The make-site rows were verified by checking each handbook landing page for impo
 
 ## Per-site notes
 
-### 1. wordpress.org/documentation (HelpHub, end-user docs)
+### 1. WordPress.org/documentation (HelpHub, end-user docs)
 
-- **URL:** https://wordpress.org/documentation/ (formerly wordpress.org/support/, renamed with the 2023 redesign: "New look, new site, new HelpHub", https://make.wordpress.org/docs/2023/01/24/new-look-new-site-new-helphub/).
+- **URL:** https://wordpress.org/documentation/ (formerly WordPress.org/support/, renamed with the 2023 redesign: "New look, new site, new HelpHub", https://make.wordpress.org/docs/2023/01/24/new-look-new-site-new-helphub/).
 - **Code:**
   - Theme and dev env: https://github.com/WordPress/wporg-documentation-2022 (README: "formerly WordPress.org/support, also called HelpHub").
   - The `support-helphub` plugin lives in meta SVN at `wordpress.org/public_html/wp-content/plugins/support-helphub/`. The repo pulls it, `wporg-support-2024` and `pub` via Composer SVN.
@@ -345,7 +345,7 @@ Chronological. **Short answer: yes, the docs team proposed essentially this in 2
    - Announces that the Docs and Polyglots teams are "moving complete end-user documentation (HelpHub)" into `WordPress/documentation-end-user`. Existing docs move first; then translation, new English docs and updates all happen via PRs.
    - Defines personas: first-time and experienced contributors, repo maintainer, issues coordinator, reviewers, translator, translation editor.
    - Covers issue life cycles (including "updating screenshots") and one-problem user-story issues.
-   - Status: planning. It does not specify how sync to wordpress.org would work.
+   - Status: planning. It does not specify how sync to WordPress.org would work.
 6. **2023-11 → 2023-12:** Javier Casares creates `WordPress/developer-plugins-handbook` and `WordPress/plugins-handbook`, Markdown copies with manifests in the same `manifest/` layout as documentation-end-user. Neither is imported (see §9). This was presumably part of the same multi-repo plan **[inferred]**.
 7. **2025-12-02: "Proposal to change the user documentation workflow"** (Estela Rueda, https://make.wordpress.org/docs/2025/12/02/proposal-to-change-the-user-documentation-workflow/).
    - Problem: a 13-column GitHub project template, Google Docs drafts, and multi-week waits for first and second reviews.

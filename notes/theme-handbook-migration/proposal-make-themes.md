@@ -66,9 +66,9 @@ driven by a short per-handbook class in the
    imports the page, the way the
    [Playground importer](https://github.com/WordPress/wporg-developer/blob/trunk/source/wp-content/themes/wporg-developer-2023/inc/import-playground.php)
    already does, so the site never serves images from GitHub. Video is not stored in Git; videos stay hosted on
-   wordpress.org or YouTube and are embedded by URL.
+   WordPress.org or YouTube and are embedded by URL.
 
-The code on the wordpress.org side is a class of about 35 lines plus one include, the same shape as the Secure Custom
+The code on the WordPress.org side is a class of about 35 lines plus one include, the same shape as the Secure Custom
 Fields importer added in [wporg-developer #547](https://github.com/WordPress/wporg-developer/pull/547) (ticket
 [Meta #7917](https://meta.trac.wordpress.org/ticket/7917)). The repository's own checks validate the manifest before
 merge, because past import problems were manifest errors.
@@ -84,13 +84,13 @@ been merged there that never reached the site while the site kept being edited. 
 
 ## The first step of something larger
 
-This is the first move in a broader effort to make documentation on wordpress.org work the same way everywhere:
+This is the first move in a broader effort to make documentation on WordPress.org work the same way everywhere:
 one contribution model (pull requests, with an issue-based path for everyone else), one set of
 Markdown conventions that render well both on GitHub and on the site, shared tooling for conversion, manifest
-validation, and reproducible screenshots, and the same import pipeline for every handbook. wordpress.org already
+validation, and reproducible screenshots, and the same import pipeline for every handbook. WordPress.org already
 [serves every page as Markdown](https://make.wordpress.org/meta/2026/03/03/markdown-now-available-on-wordpress-org/),
 and the [Meta Janitors](https://make.wordpress.org/meta/handbook/about/projects/meta-janitors/) mandate explicitly
-calls for tighter integration between wordpress.org and version-controlled workflows. The Theme Handbook is the right
+calls for tighter integration between WordPress.org and version-controlled workflows. The Theme Handbook is the right
 first step because its structure is settled, its maintainers want the move, and a one-to-one conversion proves the
 pipeline without a content debate. What we learn here is meant to carry to the Plugin Handbook next, and to the
 wider documentation set after that, each as its own proposal.
