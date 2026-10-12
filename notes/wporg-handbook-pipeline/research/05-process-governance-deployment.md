@@ -167,7 +167,7 @@ From [End-user docs repo – workflows and settings](https://make.wordpress.org/
 - **@bsanevans** (Training): many contributors "are not developers … updating the handbook in the Editor would seem to be 'easier'".
 - **@tobifjellner** (Polyglots): "The idea of being forced to fork a repo, make that edit locally (probably directly in HTML), raise a PR, and finally commit it feels unneeded and heavy."
 - **@flexseth**: GitHub "sets up an additional step, that creates more tickets and more information spread out".
-- **@felipevelzani** (Plugins, [plugin-review-internal-scanner#51](https://github.com/WordPress/plugin-review-internal-scanner/issues/51), 2024-03): after the Plugin Developer Handbook moved to GitHub and syncing broke, he asked whether to revert to "the old way": "it would make sense for the regular docs, but I personally don't see a lot of value for these handbooks".
+- **@felipevelzani** (Plugins, [plugin-review-internal-scanner#51](https://github.com/WordPress/plugin-review-internal-scanner/issues/51), 2024-03): after the Plugin Handbook moved to GitHub and syncing broke, he asked whether to revert to "the old way": "it would make sense for the regular docs, but I personally don't see a lot of value for these handbooks".
 - **@akirk** (2023 proposal): without GlotPress, how do translators know what changed? Diffs, and segmenting by block.
 
 **Alternatives floated:**
