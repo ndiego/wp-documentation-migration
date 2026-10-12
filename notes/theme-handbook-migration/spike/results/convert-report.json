@@ -1,0 +1,1526 @@
+{
+ "5785": {
+  "path": "",
+  "file": "index.md",
+  "counts": {
+   "internal_links": 4
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5794": {
+  "path": "getting-started",
+  "file": "getting-started/index.md",
+  "counts": {
+   "internal_links": 5
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5800": {
+  "path": "getting-started/what-is-a-theme",
+  "file": "getting-started/what-is-a-theme.md",
+  "counts": {
+   "images": 4,
+   "internal_links": 7,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149311": {
+  "path": "getting-started/who-is-this-handbook-for",
+  "file": "getting-started/who-is-this-handbook-for.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 5,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149314": {
+  "path": "getting-started/reading-this-handbook",
+  "file": "getting-started/reading-this-handbook.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 7,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149317": {
+  "path": "getting-started/tools-and-setup",
+  "file": "getting-started/tools-and-setup.md",
+  "counts": {
+   "images": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149320": {
+  "path": "getting-started/quick-start-guide",
+  "file": "getting-started/quick-start-guide.md",
+  "counts": {
+   "images": 7,
+   "internal_links": 2,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149331": {
+  "path": "core-concepts",
+  "file": "core-concepts/index.md",
+  "counts": {
+   "internal_links": 6
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149333": {
+  "path": "core-concepts/theme-structure",
+  "file": "core-concepts/theme-structure.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 11,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149336": {
+  "path": "core-concepts/main-stylesheet",
+  "file": "core-concepts/main-stylesheet.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 4,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149340": {
+  "path": "core-concepts/templates",
+  "file": "core-concepts/templates.md",
+  "counts": {
+   "images": 3,
+   "internal_links": 5,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149345": {
+  "path": "core-concepts/custom-functionality",
+  "file": "core-concepts/custom-functionality.md",
+  "counts": {
+   "internal_links": 8,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149365": {
+  "path": "core-concepts/including-assets",
+  "file": "core-concepts/including-assets.md",
+  "counts": {
+   "internal_links": 6,
+   "callouts": 4,
+   "callouts_info": 4
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149367": {
+  "path": "core-concepts/global-settings-and-styles",
+  "file": "core-concepts/global-settings-and-styles.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 3
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148901": {
+  "path": "global-settings-and-styles",
+  "file": "global-settings-and-styles/index.md",
+  "counts": {
+   "internal_links": 7
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148903": {
+  "path": "global-settings-and-styles/introduction-to-theme-json",
+  "file": "global-settings-and-styles/introduction-to-theme-json.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 6
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148907": {
+  "path": "global-settings-and-styles/settings",
+  "file": "global-settings-and-styles/settings/index.md",
+  "counts": {
+   "code_links_swapped": 1,
+   "internal_links": 14
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149040": {
+  "path": "global-settings-and-styles/settings/appearance-tools",
+  "file": "global-settings-and-styles/settings/appearance-tools.md",
+  "counts": {
+   "internal_links": 6
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149096": {
+  "path": "global-settings-and-styles/settings/blocks",
+  "file": "global-settings-and-styles/settings/blocks.md",
+  "counts": {
+   "images": 2,
+   "internal_links": 3,
+   "callouts": 2,
+   "callouts_tip": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149042": {
+  "path": "global-settings-and-styles/settings/border",
+  "file": "global-settings-and-styles/settings/border.md",
+  "counts": {
+   "images": 1,
+   "callouts": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149045": {
+  "path": "global-settings-and-styles/settings/color",
+  "file": "global-settings-and-styles/settings/color.md",
+  "counts": {
+   "images": 10,
+   "callouts": 4,
+   "callouts_info": 1,
+   "callouts_alert": 2,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149058": {
+  "path": "global-settings-and-styles/settings/custom",
+  "file": "global-settings-and-styles/settings/custom.md",
+  "counts": {
+   "internal_links": 2,
+   "callouts": 2,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149060": {
+  "path": "global-settings-and-styles/settings/dimensions",
+  "file": "global-settings-and-styles/settings/dimensions.md",
+  "counts": {
+   "images": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149064": {
+  "path": "global-settings-and-styles/settings/layout",
+  "file": "global-settings-and-styles/settings/layout.md",
+  "counts": {
+   "images": 2,
+   "callouts": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149068": {
+  "path": "global-settings-and-styles/settings/lightbox",
+  "file": "global-settings-and-styles/settings/lightbox.md",
+  "counts": {
+   "images": 2,
+   "callouts": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149072": {
+  "path": "global-settings-and-styles/settings/position",
+  "file": "global-settings-and-styles/settings/position.md",
+  "counts": {
+   "images": 1,
+   "callouts": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149075": {
+  "path": "global-settings-and-styles/settings/shadow",
+  "file": "global-settings-and-styles/settings/shadow.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149078": {
+  "path": "global-settings-and-styles/settings/spacing",
+  "file": "global-settings-and-styles/settings/spacing.md",
+  "counts": {
+   "images": 6,
+   "internal_links": 4,
+   "callouts": 4,
+   "callouts_alert": 2,
+   "callouts_info": 2,
+   "tables_gfm": 5
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149087": {
+  "path": "global-settings-and-styles/settings/typography",
+  "file": "global-settings-and-styles/settings/typography.md",
+  "counts": {
+   "images": 3,
+   "internal_links": 3,
+   "callouts": 5,
+   "callouts_alert": 1,
+   "callouts_tip": 2,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149092": {
+  "path": "global-settings-and-styles/settings/use-root-padding-aware-alignments",
+  "file": "global-settings-and-styles/settings/use-root-padding-aware-alignments.md",
+  "counts": {
+   "images": 2,
+   "internal_links": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149100": {
+  "path": "global-settings-and-styles/settings/settings-reference",
+  "file": "global-settings-and-styles/settings/settings-reference.md",
+  "counts": {
+   "internal_links": 12,
+   "callouts": 3,
+   "callouts_alert": 3,
+   "tables_gfm": 12
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148909": {
+  "path": "global-settings-and-styles/styles",
+  "file": "global-settings-and-styles/styles/index.md",
+  "counts": {
+   "internal_links": 3
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149109": {
+  "path": "global-settings-and-styles/styles/applying-styles",
+  "file": "global-settings-and-styles/styles/applying-styles.md",
+  "counts": {
+   "images": 5,
+   "internal_links": 5,
+   "callouts": 4,
+   "callouts_info": 1,
+   "callouts_alert": 2,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149116": {
+  "path": "global-settings-and-styles/styles/using-presets",
+  "file": "global-settings-and-styles/styles/using-presets.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 10,
+   "callouts": 2,
+   "callouts_info": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149119": {
+  "path": "global-settings-and-styles/styles/styles-reference",
+  "file": "global-settings-and-styles/styles/styles-reference.md",
+  "counts": {
+   "internal_links": 1,
+   "tables_gfm": 9
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148911": {
+  "path": "global-settings-and-styles/custom-templates",
+  "file": "global-settings-and-styles/custom-templates.md",
+  "counts": {
+   "images": 2,
+   "internal_links": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148915": {
+  "path": "global-settings-and-styles/patterns",
+  "file": "global-settings-and-styles/patterns.md",
+  "counts": {
+   "images": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148919": {
+  "path": "global-settings-and-styles/template-parts",
+  "file": "global-settings-and-styles/template-parts.md",
+  "counts": {
+   "images": 2,
+   "internal_links": 3,
+   "callouts": 2,
+   "callouts_tip": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "148923": {
+  "path": "global-settings-and-styles/style-variations",
+  "file": "global-settings-and-styles/style-variations.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 4
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149219": {
+  "path": "templates",
+  "file": "templates/index.md",
+  "counts": {
+   "internal_links": 4
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149221": {
+  "path": "templates/introduction-to-templates",
+  "file": "templates/introduction-to-templates.md",
+  "counts": {
+   "images": 4,
+   "internal_links": 5,
+   "callouts": 2,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149227": {
+  "path": "templates/templates",
+  "file": "templates/templates.md",
+  "counts": {
+   "images": 3,
+   "internal_links": 8,
+   "callouts": 3,
+   "callouts_tip": 2,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149232": {
+  "path": "templates/template-hierarchy",
+  "file": "templates/template-hierarchy.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 2,
+   "callouts": 8,
+   "callouts_info": 6,
+   "callouts_alert": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149235": {
+  "path": "templates/template-parts",
+  "file": "templates/template-parts.md",
+  "counts": {
+   "images": 5,
+   "internal_links": 7,
+   "callouts": 2,
+   "callouts_tip": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153616": {
+  "path": "patterns",
+  "file": "patterns/index.md",
+  "counts": {
+   "internal_links": 7
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153618": {
+  "path": "patterns/introduction-to-patterns",
+  "file": "patterns/introduction-to-patterns.md",
+  "counts": {
+   "images": 6,
+   "internal_links": 2,
+   "callouts": 3,
+   "callouts_alert": 1,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153627": {
+  "path": "patterns/registering-patterns",
+  "file": "patterns/registering-patterns.md",
+  "counts": {
+   "images": 3,
+   "internal_links": 3,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153646": {
+  "path": "patterns/using-php-in-patterns",
+  "file": "patterns/using-php-in-patterns.md",
+  "counts": {
+   "images": 2,
+   "internal_links": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153652": {
+  "path": "patterns/usage-in-templates",
+  "file": "patterns/usage-in-templates.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 3,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153657": {
+  "path": "patterns/starter-patterns",
+  "file": "patterns/starter-patterns.md",
+  "counts": {
+   "images": 3,
+   "internal_links": 4,
+   "callouts": 2,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153663": {
+  "path": "patterns/block-type-patterns",
+  "file": "patterns/block-type-patterns.md",
+  "counts": {
+   "images": 7,
+   "internal_links": 6,
+   "callouts": 2,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "153674": {
+  "path": "patterns/patterns-and-block-locking",
+  "file": "patterns/patterns-and-block-locking.md",
+  "counts": {
+   "images": 5,
+   "internal_links": 1,
+   "callouts": 5,
+   "callouts_info": 5
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149260": {
+  "path": "features",
+  "file": "features/index.md",
+  "counts": {
+   "internal_links": 5
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149271": {
+  "path": "features/block-style-variations",
+  "file": "features/block-style-variations.md",
+  "counts": {
+   "images": 3,
+   "internal_links": 6,
+   "callouts": 6,
+   "callouts_info": 1,
+   "callouts_tip": 1,
+   "callouts_alert": 4
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149276": {
+  "path": "features/block-stylesheets",
+  "file": "features/block-stylesheets.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 2,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149280": {
+  "path": "features/block-variations",
+  "file": "features/block-variations.md",
+  "counts": {
+   "images": 2,
+   "internal_links": 4,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "149262": {
+  "path": "features/block-patterns",
+  "file": "features/block-patterns.md",
+  "counts": {
+   "images": 7,
+   "internal_links": 5,
+   "callouts": 2,
+   "callouts_alert": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5821": {
+  "path": "advanced-topics",
+  "file": "advanced-topics/index.md",
+  "counts": {
+   "internal_links": 11,
+   "callouts": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "152057": {
+  "path": "advanced-topics/internationalization",
+  "file": "advanced-topics/internationalization.md",
+  "counts": {
+   "internal_links": 4,
+   "callouts": 2,
+   "callouts_alert": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11387": {
+  "path": "advanced-topics/child-themes",
+  "file": "advanced-topics/child-themes.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 10,
+   "callouts": 3,
+   "callouts_info": 1,
+   "callouts_tip": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "152060": {
+  "path": "advanced-topics/build-process",
+  "file": "advanced-topics/build-process.md",
+  "counts": {
+   "internal_links": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "152063": {
+  "path": "advanced-topics/privacy",
+  "file": "advanced-topics/privacy.md",
+  "counts": {
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "152083": {
+  "path": "advanced-topics/testing",
+  "file": "advanced-topics/testing.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "152066": {
+  "path": "advanced-topics/debugging",
+  "file": "advanced-topics/debugging.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "152068": {
+  "path": "advanced-topics/security",
+  "file": "advanced-topics/security.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "152151": {
+  "path": "advanced-topics/publishing-themes",
+  "file": "advanced-topics/publishing-themes.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 6
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11403": {
+  "path": "advanced-topics/theme-testing",
+  "file": "advanced-topics/theme-testing.md",
+  "counts": {
+   "internal_links": 2,
+   "explicit_heading_ids": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11409": {
+  "path": "advanced-topics/plugin-api-hooks",
+  "file": "advanced-topics/plugin-api-hooks.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "11399": {
+  "path": "advanced-topics/ui-best-practices",
+  "file": "advanced-topics/ui-best-practices.md",
+  "counts": {
+   "block_in_p_unwrapped": 1
+  },
+  "warnings": [
+   "preformatted block contained links (URLs lost inside code fence)"
+  ],
+  "notes": []
+ },
+ "11401": {
+  "path": "advanced-topics/javascript-best-practices",
+  "file": "advanced-topics/javascript-best-practices.md",
+  "counts": {
+   "code_links_swapped": 1,
+   "internal_links": 3,
+   "callouts": 1,
+   "callouts_warning": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5823": {
+  "path": "releasing-your-theme",
+  "file": "releasing-your-theme/index.md",
+  "counts": {
+   "edge_br_removed": 2,
+   "internal_links": 5,
+   "callouts": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11421": {
+  "path": "releasing-your-theme/required-theme-files",
+  "file": "releasing-your-theme/required-theme-files.md",
+  "counts": {
+   "nested_emphasis_unwrapped": 1,
+   "edge_br_removed": 2,
+   "internal_links": 4,
+   "explicit_heading_ids": 1,
+   "callouts": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11433": {
+  "path": "releasing-your-theme/submitting-your-theme-to-wordpress-org",
+  "file": "releasing-your-theme/submitting-your-theme-to-wordpress-org.md",
+  "counts": {
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11424": {
+  "path": "releasing-your-theme/testing",
+  "file": "releasing-your-theme/testing.md",
+  "counts": {
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11429": {
+  "path": "releasing-your-theme/theme-review-guidelines",
+  "file": "releasing-your-theme/theme-review-guidelines.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "138674": {
+  "path": "releasing-your-theme/updating-your-theme",
+  "file": "releasing-your-theme/updating-your-theme.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "11431": {
+  "path": "releasing-your-theme/writing-documentation",
+  "file": "releasing-your-theme/writing-documentation.md",
+  "counts": {
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "138748": {
+  "path": "classic-themes",
+  "file": "classic-themes/index.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "5811": {
+  "path": "classic-themes/your-first-theme",
+  "file": "classic-themes/your-first-theme.md",
+  "counts": {
+   "images": 5,
+   "images_missing_alt": 1,
+   "internal_links": 5
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5817": {
+  "path": "classic-themes/basics",
+  "file": "classic-themes/basics/index.md",
+  "counts": {
+   "internal_links": 8
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11345": {
+  "path": "classic-themes/basics/categories-tags-custom-taxonomies",
+  "file": "classic-themes/basics/categories-tags-custom-taxonomies.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11307": {
+  "path": "classic-themes/basics/conditional-tags",
+  "file": "classic-themes/basics/conditional-tags.md",
+  "counts": {
+   "code_links_swapped": 1,
+   "embeds": 1,
+   "internal_links": 2,
+   "explicit_heading_ids": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11303": {
+  "path": "classic-themes/basics/including-css-javascript",
+  "file": "classic-themes/basics/including-css-javascript.md",
+  "counts": {
+   "code_links_swapped": 1,
+   "embeds": 1,
+   "internal_links": 2,
+   "callouts": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11300": {
+  "path": "classic-themes/basics/linking-theme-files-directories",
+  "file": "classic-themes/basics/linking-theme-files-directories.md",
+  "counts": {
+   "block_in_p_unwrapped": 8,
+   "internal_links": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "24939": {
+  "path": "classic-themes/basics/main-stylesheet-style-css",
+  "file": "classic-themes/basics/main-stylesheet-style-css.md",
+  "counts": {
+   "internal_links": 2,
+   "relative_url_made_absolute": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5829": {
+  "path": "classic-themes/basics/organizing-theme-files",
+  "file": "classic-themes/basics/organizing-theme-files.md",
+  "counts": {
+   "code_links_swapped": 1,
+   "internal_links": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11337": {
+  "path": "classic-themes/basics/post-types",
+  "file": "classic-themes/basics/post-types.md",
+  "counts": {
+   "internal_links": 7
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "12028": {
+  "path": "classic-themes/basics/reworking-theme-files-organization",
+  "file": "classic-themes/basics/reworking-theme-files-organization.md",
+  "counts": {
+   "images": 4,
+   "internal_links": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11980": {
+  "path": "classic-themes/basics/template-files",
+  "file": "classic-themes/basics/template-files.md",
+  "counts": {
+   "edge_br_removed": 1,
+   "code_links_swapped": 5,
+   "internal_links": 10
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11281": {
+  "path": "classic-themes/basics/template-hierarchy",
+  "file": "classic-themes/basics/template-hierarchy.md",
+  "counts": {
+   "code_links_swapped": 1,
+   "images": 1,
+   "images_missing_alt": 1,
+   "internal_links": 9,
+   "callouts": 4,
+   "callouts_tip": 2,
+   "callouts_info": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11285": {
+  "path": "classic-themes/basics/template-tags",
+  "file": "classic-themes/basics/template-tags.md",
+  "counts": {
+   "code_links_swapped": 7,
+   "internal_links": 3
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11288": {
+  "path": "classic-themes/basics/the-loop",
+  "file": "classic-themes/basics/the-loop.md",
+  "counts": {
+   "code_links_swapped": 42,
+   "internal_links": 6,
+   "callouts": 2,
+   "callouts_tip": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11295": {
+  "path": "classic-themes/basics/theme-functions",
+  "file": "classic-themes/basics/theme-functions.md",
+  "counts": {
+   "edge_br_removed": 1,
+   "code_links_swapped": 7,
+   "internal_links": 10,
+   "callouts": 5,
+   "callouts_info": 4,
+   "callouts_warning": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "142885": {
+  "path": "classic-themes/basics/tools-resources",
+  "file": "classic-themes/basics/tools-resources.md",
+  "counts": {
+   "internal_links": 2,
+   "tables_gfm": 1,
+   "tables_header_inferred_from_bold_row": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "5819": {
+  "path": "classic-themes/functionality",
+  "file": "classic-themes/functionality/index.md",
+  "counts": {
+   "internal_links": 15
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11382": {
+  "path": "classic-themes/functionality/404-pages",
+  "file": "classic-themes/functionality/404-pages.md",
+  "counts": {
+   "block_in_p_unwrapped": 5,
+   "callouts": 2,
+   "callouts_tip": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11377": {
+  "path": "classic-themes/functionality/accessibility",
+  "file": "classic-themes/functionality/accessibility.md",
+  "counts": {
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11380": {
+  "path": "classic-themes/functionality/administration-menus",
+  "file": "classic-themes/functionality/administration-menus.md",
+  "counts": {
+   "internal_links": 2,
+   "callouts": 1,
+   "callouts_warning": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "139317": {
+  "path": "classic-themes/functionality/block-theme-accessibility",
+  "file": "classic-themes/functionality/block-theme-accessibility.md",
+  "counts": {
+   "edge_br_removed": 1,
+   "background_colour_dropped": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "17363": {
+  "path": "classic-themes/functionality/core-supported",
+  "file": "classic-themes/functionality/core-supported.md",
+  "counts": {
+   "block_in_p_unwrapped": 1,
+   "callouts": 1,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25470": {
+  "path": "classic-themes/functionality/custom-backgrounds",
+  "file": "classic-themes/functionality/custom-backgrounds.md",
+  "counts": {
+   "edge_br_removed": 4,
+   "images": 3,
+   "images_missing_alt": 3,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25410": {
+  "path": "classic-themes/functionality/custom-front-page-templates",
+  "file": "classic-themes/functionality/custom-front-page-templates.md",
+  "counts": {
+   "block_in_p_unwrapped": 4,
+   "partial_code_links_split": 2,
+   "internal_links": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11314": {
+  "path": "classic-themes/functionality/custom-headers",
+  "file": "classic-themes/functionality/custom-headers.md",
+  "counts": {
+   "images": 1,
+   "images_missing_alt": 1,
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "22327": {
+  "path": "classic-themes/functionality/custom-logo",
+  "file": "classic-themes/functionality/custom-logo.md",
+  "counts": {
+   "partial_code_links_split": 3,
+   "br_moved_out_of_code": 3,
+   "edge_br_removed": 1,
+   "code_links_swapped": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11362": {
+  "path": "classic-themes/functionality/featured-images-post-thumbnails",
+  "file": "classic-themes/functionality/featured-images-post-thumbnails.md",
+  "counts": {
+   "code_links_swapped": 6,
+   "images": 1,
+   "callouts": 3,
+   "callouts_info": 2,
+   "callouts_alert": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11370": {
+  "path": "classic-themes/functionality/internationalization",
+  "file": "classic-themes/functionality/internationalization.md",
+  "counts": {
+   "edge_br_removed": 2,
+   "code_links_swapped": 2,
+   "callouts": 2,
+   "callouts_warning": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11372": {
+  "path": "classic-themes/functionality/localization",
+  "file": "classic-themes/functionality/localization.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "11360": {
+  "path": "classic-themes/functionality/media",
+  "file": "classic-themes/functionality/media/index.md",
+  "counts": {
+   "block_in_p_unwrapped": 2,
+   "code_links_swapped": 7,
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25145": {
+  "path": "classic-themes/functionality/media/audio",
+  "file": "classic-themes/functionality/media/audio.md",
+  "counts": {
+   "block_in_p_unwrapped": 4,
+   "images": 1
+  },
+  "warnings": [],
+  "notes": [
+   "literal shortcode text outside code: [audio]"
+  ]
+ },
+ "25149": {
+  "path": "classic-themes/functionality/media/galleries",
+  "file": "classic-themes/functionality/media/galleries.md",
+  "counts": {
+   "block_in_p_unwrapped": 2,
+   "edge_br_removed": 5,
+   "images": 1,
+   "images_missing_alt": 1,
+   "callouts": 2,
+   "callouts_tip": 2
+  },
+  "warnings": [],
+  "notes": [
+   "literal shortcode text outside code: [gallery]"
+  ]
+ },
+ "25136": {
+  "path": "classic-themes/functionality/media/images",
+  "file": "classic-themes/functionality/media/images.md",
+  "counts": {
+   "code_links_swapped": 4,
+   "internal_links": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": [
+   "literal shortcode text outside code: [caption]"
+  ]
+ },
+ "25147": {
+  "path": "classic-themes/functionality/media/video",
+  "file": "classic-themes/functionality/media/video.md",
+  "counts": {
+   "block_in_p_unwrapped": 1,
+   "videos": 1,
+   "callouts": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": [
+   "literal shortcode text outside code: [video]"
+  ]
+ },
+ "11322": {
+  "path": "classic-themes/functionality/navigation-menus",
+  "file": "classic-themes/functionality/navigation-menus.md",
+  "counts": {
+   "block_in_p_unwrapped": 8,
+   "callouts": 3,
+   "callouts_info": 3
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11354": {
+  "path": "classic-themes/functionality/pagination",
+  "file": "classic-themes/functionality/pagination.md",
+  "counts": {
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11368": {
+  "path": "classic-themes/functionality/post-formats",
+  "file": "classic-themes/functionality/post-formats.md",
+  "counts": {
+   "internal_links": 2,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11318": {
+  "path": "classic-themes/functionality/sidebars",
+  "file": "classic-themes/functionality/sidebars.md",
+  "counts": {
+   "callouts": 2,
+   "callouts_tip": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11320": {
+  "path": "classic-themes/functionality/widgets",
+  "file": "classic-themes/functionality/widgets.md",
+  "counts": {
+   "code_links_swapped": 7,
+   "images": 2,
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "24973": {
+  "path": "classic-themes/functionality/sticky-posts",
+  "file": "classic-themes/functionality/sticky-posts.md",
+  "counts": {
+   "images": 1,
+   "images_missing_alt": 1,
+   "callouts": 2,
+   "callouts_info": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11390": {
+  "path": "classic-themes/customize-api",
+  "file": "classic-themes/customize-api/index.md",
+  "counts": {
+   "block_in_p_unwrapped": 1,
+   "images": 1,
+   "empty_headings_removed": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25000": {
+  "path": "classic-themes/customize-api/customizer-objects",
+  "file": "classic-themes/customize-api/customizer-objects.md",
+  "counts": {
+   "code_links_swapped": 11,
+   "images": 2,
+   "callouts": 1,
+   "callouts_alert": 1,
+   "tables_gfm": 1,
+   "tables_without_header_row": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "40120": {
+  "path": "classic-themes/customize-api/other-resources",
+  "file": "classic-themes/customize-api/other-resources.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "25005": {
+  "path": "classic-themes/customize-api/tools-for-improved-user-experience",
+  "file": "classic-themes/customize-api/tools-for-improved-user-experience.md",
+  "counts": {
+   "block_in_p_unwrapped": 23,
+   "code_links_swapped": 1,
+   "images": 4,
+   "images_missing_alt": 3,
+   "tables_gfm": 1,
+   "tables_header_inferred_from_bold_row": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25007": {
+  "path": "classic-themes/customize-api/the-customizer-javascript-api",
+  "file": "classic-themes/customize-api/the-customizer-javascript-api.md",
+  "counts": {
+   "adjacent_emphasis_merged": 1,
+   "edge_br_removed": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25009": {
+  "path": "classic-themes/customize-api/javascriptunderscore-js-rendered-custom-controls",
+  "file": "classic-themes/customize-api/javascriptunderscore-js-rendered-custom-controls.md",
+  "counts": {
+   "block_in_p_unwrapped": 3,
+   "partial_code_links_split": 2,
+   "code_links_swapped": 5
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25013": {
+  "path": "classic-themes/customize-api/advanced-usage",
+  "file": "classic-themes/customize-api/advanced-usage.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "17401": {
+  "path": "classic-themes/templates",
+  "file": "classic-themes/templates/index.md",
+  "counts": {
+   "internal_links": 8,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "17405": {
+  "path": "classic-themes/templates/attachment-template-files",
+  "file": "classic-themes/templates/attachment-template-files.md",
+  "counts": {
+   "internal_links": 2,
+   "callouts": 1,
+   "callouts_tip": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "17407": {
+  "path": "classic-themes/templates/custom-post-type-template-files",
+  "file": "classic-themes/templates/custom-post-type-template-files.md",
+  "counts": {
+   "internal_links": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "17409": {
+  "path": "classic-themes/templates/partial-and-miscellaneous-template-files",
+  "file": "classic-themes/templates/partial-and-miscellaneous-template-files/index.md",
+  "counts": {
+   "internal_links": 8
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11356": {
+  "path": "classic-themes/templates/partial-and-miscellaneous-template-files/comment-template",
+  "file": "classic-themes/templates/partial-and-miscellaneous-template-files/comment-template.md",
+  "counts": {
+   "images": 1,
+   "internal_links": 1,
+   "callouts": 1,
+   "callouts_info": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "17399": {
+  "path": "classic-themes/templates/post-template-files",
+  "file": "classic-themes/templates/post-template-files.md",
+  "counts": {
+   "partial_code_links_split": 1,
+   "adjacent_emphasis_merged": 1,
+   "code_links_swapped": 3,
+   "internal_links": 9
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11341": {
+  "path": "classic-themes/templates/taxonomy-templates",
+  "file": "classic-themes/templates/taxonomy-templates.md",
+  "counts": {
+   "internal_links": 3
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "11273": {
+  "path": "classic-themes/templates/page-template-files",
+  "file": "classic-themes/templates/page-template-files.md",
+  "counts": {
+   "code_links_swapped": 6,
+   "images": 1,
+   "internal_links": 9,
+   "callouts": 9,
+   "callouts_info": 3,
+   "callouts_alert": 4,
+   "callouts_tip": 2
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25050": {
+  "path": "classic-themes/references",
+  "file": "classic-themes/references/index.md",
+  "counts": {
+   "internal_links": 4
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25053": {
+  "path": "classic-themes/references/list-of-template-tags",
+  "file": "classic-themes/references/list-of-template-tags.md",
+  "counts": {
+   "code_links_swapped": 20,
+   "internal_links": 1
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "25063": {
+  "path": "classic-themes/references/list-of-conditional-tags",
+  "file": "classic-themes/references/list-of-conditional-tags.md",
+  "counts": {
+   "code_links_swapped": 120
+  },
+  "warnings": [],
+  "notes": []
+ },
+ "10877": {
+  "path": "credits",
+  "file": "credits/index.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "25182": {
+  "path": "credits/feedback",
+  "file": "credits/feedback.md",
+  "counts": {},
+  "warnings": [],
+  "notes": []
+ },
+ "148747": {
+  "path": "theme-security/theme-security-issues",
+  "file": "theme-security/theme-security-issues.md",
+  "counts": {
+   "edge_br_removed": 2,
+   "embeds": 5,
+   "images": 1,
+   "images_missing_alt": 1,
+   "callouts": 2,
+   "callouts_warning": 2
+  },
+  "warnings": [],
+  "notes": []
+ }
+}

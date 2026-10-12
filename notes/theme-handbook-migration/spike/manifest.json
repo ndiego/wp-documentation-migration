@@ -1,0 +1,984 @@
+{
+	"index": {
+		"title": "Theme Handbook",
+		"slug": "theme-handbook",
+		"markdown_source": "index.md",
+		"parent": null,
+		"order": 0
+	},
+	"getting-started": {
+		"title": "Getting Started",
+		"slug": "getting-started",
+		"markdown_source": "getting-started/index.md",
+		"parent": null,
+		"order": 10
+	},
+	"getting-started/what-is-a-theme": {
+		"title": "What Is a Theme?",
+		"slug": "what-is-a-theme",
+		"markdown_source": "getting-started/what-is-a-theme.md",
+		"parent": "getting-started",
+		"order": 10
+	},
+	"getting-started/who-is-this-handbook-for": {
+		"title": "Who Is This Handbook For?",
+		"slug": "who-is-this-handbook-for",
+		"markdown_source": "getting-started/who-is-this-handbook-for.md",
+		"parent": "getting-started",
+		"order": 20
+	},
+	"getting-started/reading-this-handbook": {
+		"title": "Reading This Handbook",
+		"slug": "reading-this-handbook",
+		"markdown_source": "getting-started/reading-this-handbook.md",
+		"parent": "getting-started",
+		"order": 30
+	},
+	"getting-started/tools-and-setup": {
+		"title": "Tools and Setup",
+		"slug": "tools-and-setup",
+		"markdown_source": "getting-started/tools-and-setup.md",
+		"parent": "getting-started",
+		"order": 40
+	},
+	"getting-started/quick-start-guide": {
+		"title": "Quick-Start Guide",
+		"slug": "quick-start-guide",
+		"markdown_source": "getting-started/quick-start-guide.md",
+		"parent": "getting-started",
+		"order": 50
+	},
+	"core-concepts": {
+		"title": "Core Concepts",
+		"slug": "core-concepts",
+		"markdown_source": "core-concepts/index.md",
+		"parent": null,
+		"order": 20
+	},
+	"core-concepts/theme-structure": {
+		"title": "Theme Structure",
+		"slug": "theme-structure",
+		"markdown_source": "core-concepts/theme-structure.md",
+		"parent": "core-concepts",
+		"order": 10
+	},
+	"core-concepts/main-stylesheet": {
+		"title": "Main Stylesheet (style.css)",
+		"slug": "main-stylesheet",
+		"markdown_source": "core-concepts/main-stylesheet.md",
+		"parent": "core-concepts",
+		"order": 20
+	},
+	"core-concepts/templates": {
+		"title": "Templates",
+		"slug": "templates",
+		"markdown_source": "core-concepts/templates.md",
+		"parent": "core-concepts",
+		"order": 30
+	},
+	"core-concepts/custom-functionality": {
+		"title": "Custom Functionality (functions.php)",
+		"slug": "custom-functionality",
+		"markdown_source": "core-concepts/custom-functionality.md",
+		"parent": "core-concepts",
+		"order": 40
+	},
+	"core-concepts/including-assets": {
+		"title": "Including Assets",
+		"slug": "including-assets",
+		"markdown_source": "core-concepts/including-assets.md",
+		"parent": "core-concepts",
+		"order": 50
+	},
+	"core-concepts/global-settings-and-styles": {
+		"title": "Global Settings and Styles",
+		"slug": "global-settings-and-styles",
+		"markdown_source": "core-concepts/global-settings-and-styles.md",
+		"parent": "core-concepts",
+		"order": 60
+	},
+	"global-settings-and-styles": {
+		"title": "Global Settings and Styles (theme.json)",
+		"slug": "global-settings-and-styles",
+		"markdown_source": "global-settings-and-styles/index.md",
+		"parent": null,
+		"order": 30
+	},
+	"global-settings-and-styles/introduction-to-theme-json": {
+		"title": "Introduction to theme.json",
+		"slug": "introduction-to-theme-json",
+		"markdown_source": "global-settings-and-styles/introduction-to-theme-json.md",
+		"parent": "global-settings-and-styles",
+		"order": 10
+	},
+	"global-settings-and-styles/settings": {
+		"title": "Settings",
+		"slug": "settings",
+		"markdown_source": "global-settings-and-styles/settings/index.md",
+		"parent": "global-settings-and-styles",
+		"order": 20
+	},
+	"global-settings-and-styles/settings/appearance-tools": {
+		"title": "Appearance Tools",
+		"slug": "appearance-tools",
+		"markdown_source": "global-settings-and-styles/settings/appearance-tools.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/blocks": {
+		"title": "Blocks",
+		"slug": "blocks",
+		"markdown_source": "global-settings-and-styles/settings/blocks.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/border": {
+		"title": "Border",
+		"slug": "border",
+		"markdown_source": "global-settings-and-styles/settings/border.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/color": {
+		"title": "Color",
+		"slug": "color",
+		"markdown_source": "global-settings-and-styles/settings/color.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/custom": {
+		"title": "Custom",
+		"slug": "custom",
+		"markdown_source": "global-settings-and-styles/settings/custom.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/dimensions": {
+		"title": "Dimensions",
+		"slug": "dimensions",
+		"markdown_source": "global-settings-and-styles/settings/dimensions.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/layout": {
+		"title": "Layout",
+		"slug": "layout",
+		"markdown_source": "global-settings-and-styles/settings/layout.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/lightbox": {
+		"title": "Lightbox",
+		"slug": "lightbox",
+		"markdown_source": "global-settings-and-styles/settings/lightbox.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/position": {
+		"title": "Position",
+		"slug": "position",
+		"markdown_source": "global-settings-and-styles/settings/position.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/shadow": {
+		"title": "Shadow",
+		"slug": "shadow",
+		"markdown_source": "global-settings-and-styles/settings/shadow.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/spacing": {
+		"title": "Spacing",
+		"slug": "spacing",
+		"markdown_source": "global-settings-and-styles/settings/spacing.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/typography": {
+		"title": "Typography",
+		"slug": "typography",
+		"markdown_source": "global-settings-and-styles/settings/typography.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/use-root-padding-aware-alignments": {
+		"title": "Use Root Padding Aware Alignments",
+		"slug": "use-root-padding-aware-alignments",
+		"markdown_source": "global-settings-and-styles/settings/use-root-padding-aware-alignments.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 0
+	},
+	"global-settings-and-styles/settings/settings-reference": {
+		"title": "Settings Reference",
+		"slug": "settings-reference",
+		"markdown_source": "global-settings-and-styles/settings/settings-reference.md",
+		"parent": "global-settings-and-styles/settings",
+		"order": 9999
+	},
+	"global-settings-and-styles/styles": {
+		"title": "Styles",
+		"slug": "styles",
+		"markdown_source": "global-settings-and-styles/styles/index.md",
+		"parent": "global-settings-and-styles",
+		"order": 30
+	},
+	"global-settings-and-styles/styles/applying-styles": {
+		"title": "Applying Styles",
+		"slug": "applying-styles",
+		"markdown_source": "global-settings-and-styles/styles/applying-styles.md",
+		"parent": "global-settings-and-styles/styles",
+		"order": 10
+	},
+	"global-settings-and-styles/styles/using-presets": {
+		"title": "Using Presets",
+		"slug": "using-presets",
+		"markdown_source": "global-settings-and-styles/styles/using-presets.md",
+		"parent": "global-settings-and-styles/styles",
+		"order": 20
+	},
+	"global-settings-and-styles/styles/styles-reference": {
+		"title": "Styles Reference",
+		"slug": "styles-reference",
+		"markdown_source": "global-settings-and-styles/styles/styles-reference.md",
+		"parent": "global-settings-and-styles/styles",
+		"order": 30
+	},
+	"global-settings-and-styles/custom-templates": {
+		"title": "Custom Templates",
+		"slug": "custom-templates",
+		"markdown_source": "global-settings-and-styles/custom-templates.md",
+		"parent": "global-settings-and-styles",
+		"order": 40
+	},
+	"global-settings-and-styles/patterns": {
+		"title": "Patterns",
+		"slug": "patterns",
+		"markdown_source": "global-settings-and-styles/patterns.md",
+		"parent": "global-settings-and-styles",
+		"order": 50
+	},
+	"global-settings-and-styles/template-parts": {
+		"title": "Template Parts",
+		"slug": "template-parts",
+		"markdown_source": "global-settings-and-styles/template-parts.md",
+		"parent": "global-settings-and-styles",
+		"order": 60
+	},
+	"global-settings-and-styles/style-variations": {
+		"title": "Style Variations",
+		"slug": "style-variations",
+		"markdown_source": "global-settings-and-styles/style-variations.md",
+		"parent": "global-settings-and-styles",
+		"order": 70
+	},
+	"templates": {
+		"title": "Templates",
+		"slug": "templates",
+		"markdown_source": "templates/index.md",
+		"parent": null,
+		"order": 40
+	},
+	"templates/introduction-to-templates": {
+		"title": "Introduction to Templates",
+		"slug": "introduction-to-templates",
+		"markdown_source": "templates/introduction-to-templates.md",
+		"parent": "templates",
+		"order": 10
+	},
+	"templates/templates": {
+		"title": "Templates",
+		"slug": "templates",
+		"markdown_source": "templates/templates.md",
+		"parent": "templates",
+		"order": 20
+	},
+	"templates/template-hierarchy": {
+		"title": "Template Hierarchy",
+		"slug": "template-hierarchy",
+		"markdown_source": "templates/template-hierarchy.md",
+		"parent": "templates",
+		"order": 30
+	},
+	"templates/template-parts": {
+		"title": "Template Parts",
+		"slug": "template-parts",
+		"markdown_source": "templates/template-parts.md",
+		"parent": "templates",
+		"order": 40
+	},
+	"patterns": {
+		"title": "Patterns",
+		"slug": "patterns",
+		"markdown_source": "patterns/index.md",
+		"parent": null,
+		"order": 50
+	},
+	"patterns/introduction-to-patterns": {
+		"title": "Introduction to Patterns",
+		"slug": "introduction-to-patterns",
+		"markdown_source": "patterns/introduction-to-patterns.md",
+		"parent": "patterns",
+		"order": 10
+	},
+	"patterns/registering-patterns": {
+		"title": "Registering Patterns",
+		"slug": "registering-patterns",
+		"markdown_source": "patterns/registering-patterns.md",
+		"parent": "patterns",
+		"order": 20
+	},
+	"patterns/using-php-in-patterns": {
+		"title": "Using PHP in Patterns",
+		"slug": "using-php-in-patterns",
+		"markdown_source": "patterns/using-php-in-patterns.md",
+		"parent": "patterns",
+		"order": 30
+	},
+	"patterns/usage-in-templates": {
+		"title": "Usage in Templates",
+		"slug": "usage-in-templates",
+		"markdown_source": "patterns/usage-in-templates.md",
+		"parent": "patterns",
+		"order": 40
+	},
+	"patterns/starter-patterns": {
+		"title": "Starter Patterns",
+		"slug": "starter-patterns",
+		"markdown_source": "patterns/starter-patterns.md",
+		"parent": "patterns",
+		"order": 50
+	},
+	"patterns/block-type-patterns": {
+		"title": "Block Type Patterns",
+		"slug": "block-type-patterns",
+		"markdown_source": "patterns/block-type-patterns.md",
+		"parent": "patterns",
+		"order": 60
+	},
+	"patterns/patterns-and-block-locking": {
+		"title": "Patterns and Block Locking",
+		"slug": "patterns-and-block-locking",
+		"markdown_source": "patterns/patterns-and-block-locking.md",
+		"parent": "patterns",
+		"order": 70
+	},
+	"features": {
+		"title": "Features",
+		"slug": "features",
+		"markdown_source": "features/index.md",
+		"parent": null,
+		"order": 60
+	},
+	"features/block-style-variations": {
+		"title": "Block Style Variations",
+		"slug": "block-style-variations",
+		"markdown_source": "features/block-style-variations.md",
+		"parent": "features",
+		"order": 0
+	},
+	"features/block-stylesheets": {
+		"title": "Block Stylesheets",
+		"slug": "block-stylesheets",
+		"markdown_source": "features/block-stylesheets.md",
+		"parent": "features",
+		"order": 0
+	},
+	"features/block-variations": {
+		"title": "Block Variations",
+		"slug": "block-variations",
+		"markdown_source": "features/block-variations.md",
+		"parent": "features",
+		"order": 0
+	},
+	"features/block-patterns": {
+		"title": "Block Patterns (Archived)",
+		"slug": "block-patterns",
+		"markdown_source": "features/block-patterns.md",
+		"parent": "features",
+		"order": 1000
+	},
+	"advanced-topics": {
+		"title": "Advanced Topics",
+		"slug": "advanced-topics",
+		"markdown_source": "advanced-topics/index.md",
+		"parent": null,
+		"order": 70
+	},
+	"advanced-topics/internationalization": {
+		"title": "Internationalization",
+		"slug": "internationalization",
+		"markdown_source": "advanced-topics/internationalization.md",
+		"parent": "advanced-topics",
+		"order": 10
+	},
+	"advanced-topics/child-themes": {
+		"title": "Child Themes",
+		"slug": "child-themes",
+		"markdown_source": "advanced-topics/child-themes.md",
+		"parent": "advanced-topics",
+		"order": 20
+	},
+	"advanced-topics/build-process": {
+		"title": "Build Process",
+		"slug": "build-process",
+		"markdown_source": "advanced-topics/build-process.md",
+		"parent": "advanced-topics",
+		"order": 30
+	},
+	"advanced-topics/privacy": {
+		"title": "Privacy",
+		"slug": "privacy",
+		"markdown_source": "advanced-topics/privacy.md",
+		"parent": "advanced-topics",
+		"order": 40
+	},
+	"advanced-topics/testing": {
+		"title": "Testing",
+		"slug": "testing",
+		"markdown_source": "advanced-topics/testing.md",
+		"parent": "advanced-topics",
+		"order": 50
+	},
+	"advanced-topics/debugging": {
+		"title": "Debugging",
+		"slug": "debugging",
+		"markdown_source": "advanced-topics/debugging.md",
+		"parent": "advanced-topics",
+		"order": 60
+	},
+	"advanced-topics/security": {
+		"title": "Security",
+		"slug": "security",
+		"markdown_source": "advanced-topics/security.md",
+		"parent": "advanced-topics",
+		"order": 70
+	},
+	"advanced-topics/publishing-themes": {
+		"title": "Publishing Themes",
+		"slug": "publishing-themes",
+		"markdown_source": "advanced-topics/publishing-themes.md",
+		"parent": "advanced-topics",
+		"order": 80
+	},
+	"advanced-topics/theme-testing": {
+		"title": "Theme Testing",
+		"slug": "theme-testing",
+		"markdown_source": "advanced-topics/theme-testing.md",
+		"parent": "advanced-topics",
+		"order": 200
+	},
+	"advanced-topics/plugin-api-hooks": {
+		"title": "Plugin API Hooks",
+		"slug": "plugin-api-hooks",
+		"markdown_source": "advanced-topics/plugin-api-hooks.md",
+		"parent": "advanced-topics",
+		"order": 301
+	},
+	"advanced-topics/ui-best-practices": {
+		"title": "UI Best Practices",
+		"slug": "ui-best-practices",
+		"markdown_source": "advanced-topics/ui-best-practices.md",
+		"parent": "advanced-topics",
+		"order": 305
+	},
+	"advanced-topics/javascript-best-practices": {
+		"title": "JavaScript Best Practices",
+		"slug": "javascript-best-practices",
+		"markdown_source": "advanced-topics/javascript-best-practices.md",
+		"parent": "advanced-topics",
+		"order": 310
+	},
+	"releasing-your-theme": {
+		"title": "Releasing Your Theme",
+		"slug": "releasing-your-theme",
+		"markdown_source": "releasing-your-theme/index.md",
+		"parent": null,
+		"order": 100
+	},
+	"releasing-your-theme/required-theme-files": {
+		"title": "Required Theme Files",
+		"slug": "required-theme-files",
+		"markdown_source": "releasing-your-theme/required-theme-files.md",
+		"parent": "releasing-your-theme",
+		"order": 0
+	},
+	"releasing-your-theme/submitting-your-theme-to-wordpress-org": {
+		"title": "Submitting Your Theme to WordPress.org",
+		"slug": "submitting-your-theme-to-wordpress-org",
+		"markdown_source": "releasing-your-theme/submitting-your-theme-to-wordpress-org.md",
+		"parent": "releasing-your-theme",
+		"order": 0
+	},
+	"releasing-your-theme/testing": {
+		"title": "Testing",
+		"slug": "testing",
+		"markdown_source": "releasing-your-theme/testing.md",
+		"parent": "releasing-your-theme",
+		"order": 0
+	},
+	"releasing-your-theme/theme-review-guidelines": {
+		"title": "Theme Review Guidelines",
+		"slug": "theme-review-guidelines",
+		"markdown_source": "releasing-your-theme/theme-review-guidelines.md",
+		"parent": "releasing-your-theme",
+		"order": 0
+	},
+	"releasing-your-theme/updating-your-theme": {
+		"title": "Updating Your Theme",
+		"slug": "updating-your-theme",
+		"markdown_source": "releasing-your-theme/updating-your-theme.md",
+		"parent": "releasing-your-theme",
+		"order": 0
+	},
+	"releasing-your-theme/writing-documentation": {
+		"title": "Writing Documentation",
+		"slug": "writing-documentation",
+		"markdown_source": "releasing-your-theme/writing-documentation.md",
+		"parent": "releasing-your-theme",
+		"order": 0
+	},
+	"classic-themes": {
+		"title": "Classic themes",
+		"slug": "classic-themes",
+		"markdown_source": "classic-themes/index.md",
+		"parent": null,
+		"order": 1000
+	},
+	"classic-themes/your-first-theme": {
+		"title": "Your First Theme",
+		"slug": "your-first-theme",
+		"markdown_source": "classic-themes/your-first-theme.md",
+		"parent": "classic-themes",
+		"order": 0
+	},
+	"classic-themes/basics": {
+		"title": "Theme Basics",
+		"slug": "basics",
+		"markdown_source": "classic-themes/basics/index.md",
+		"parent": "classic-themes",
+		"order": 1010
+	},
+	"classic-themes/basics/categories-tags-custom-taxonomies": {
+		"title": "Categories, Tags, & Custom Taxonomies",
+		"slug": "categories-tags-custom-taxonomies",
+		"markdown_source": "classic-themes/basics/categories-tags-custom-taxonomies.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/conditional-tags": {
+		"title": "Conditional Tags",
+		"slug": "conditional-tags",
+		"markdown_source": "classic-themes/basics/conditional-tags.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/including-css-javascript": {
+		"title": "Including CSS & JavaScript (Archived)",
+		"slug": "including-css-javascript",
+		"markdown_source": "classic-themes/basics/including-css-javascript.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/linking-theme-files-directories": {
+		"title": "Linking Theme Files & Directories",
+		"slug": "linking-theme-files-directories",
+		"markdown_source": "classic-themes/basics/linking-theme-files-directories.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/main-stylesheet-style-css": {
+		"title": "Main Stylesheet (style.css)",
+		"slug": "main-stylesheet-style-css",
+		"markdown_source": "classic-themes/basics/main-stylesheet-style-css.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/organizing-theme-files": {
+		"title": "Organizing Theme Files",
+		"slug": "organizing-theme-files",
+		"markdown_source": "classic-themes/basics/organizing-theme-files.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/post-types": {
+		"title": "Post Types",
+		"slug": "post-types",
+		"markdown_source": "classic-themes/basics/post-types.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/reworking-theme-files-organization": {
+		"title": "Reworking Theme Files & Organization",
+		"slug": "reworking-theme-files-organization",
+		"markdown_source": "classic-themes/basics/reworking-theme-files-organization.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/template-files": {
+		"title": "Template Files",
+		"slug": "template-files",
+		"markdown_source": "classic-themes/basics/template-files.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/template-hierarchy": {
+		"title": "Template Hierarchy",
+		"slug": "template-hierarchy",
+		"markdown_source": "classic-themes/basics/template-hierarchy.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/template-tags": {
+		"title": "Template Tags",
+		"slug": "template-tags",
+		"markdown_source": "classic-themes/basics/template-tags.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/the-loop": {
+		"title": "The Loop",
+		"slug": "the-loop",
+		"markdown_source": "classic-themes/basics/the-loop.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/theme-functions": {
+		"title": "Theme Functions",
+		"slug": "theme-functions",
+		"markdown_source": "classic-themes/basics/theme-functions.md",
+		"parent": "classic-themes/basics",
+		"order": 0
+	},
+	"classic-themes/basics/tools-resources": {
+		"title": "Tools & Resources",
+		"slug": "tools-resources",
+		"markdown_source": "classic-themes/basics/tools-resources.md",
+		"parent": "classic-themes/basics",
+		"order": 10
+	},
+	"classic-themes/functionality": {
+		"title": "Theme Functionality",
+		"slug": "functionality",
+		"markdown_source": "classic-themes/functionality/index.md",
+		"parent": "classic-themes",
+		"order": 1020
+	},
+	"classic-themes/functionality/404-pages": {
+		"title": "404 Pages",
+		"slug": "404-pages",
+		"markdown_source": "classic-themes/functionality/404-pages.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/accessibility": {
+		"title": "Accessibility",
+		"slug": "accessibility",
+		"markdown_source": "classic-themes/functionality/accessibility.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/administration-menus": {
+		"title": "Administration Menus",
+		"slug": "administration-menus",
+		"markdown_source": "classic-themes/functionality/administration-menus.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/block-theme-accessibility": {
+		"title": "Block theme accessibility",
+		"slug": "block-theme-accessibility",
+		"markdown_source": "classic-themes/functionality/block-theme-accessibility.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/core-supported": {
+		"title": "Core-Supported Features",
+		"slug": "core-supported",
+		"markdown_source": "classic-themes/functionality/core-supported.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/custom-backgrounds": {
+		"title": "Custom Backgrounds",
+		"slug": "custom-backgrounds",
+		"markdown_source": "classic-themes/functionality/custom-backgrounds.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/custom-front-page-templates": {
+		"title": "Custom Front Page Templates",
+		"slug": "custom-front-page-templates",
+		"markdown_source": "classic-themes/functionality/custom-front-page-templates.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/custom-headers": {
+		"title": "Custom Headers",
+		"slug": "custom-headers",
+		"markdown_source": "classic-themes/functionality/custom-headers.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/custom-logo": {
+		"title": "Custom Logo",
+		"slug": "custom-logo",
+		"markdown_source": "classic-themes/functionality/custom-logo.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/featured-images-post-thumbnails": {
+		"title": "Featured Images & Post Thumbnails",
+		"slug": "featured-images-post-thumbnails",
+		"markdown_source": "classic-themes/functionality/featured-images-post-thumbnails.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/internationalization": {
+		"title": "Internationalization",
+		"slug": "internationalization",
+		"markdown_source": "classic-themes/functionality/internationalization.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/localization": {
+		"title": "Localization",
+		"slug": "localization",
+		"markdown_source": "classic-themes/functionality/localization.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/media": {
+		"title": "Media",
+		"slug": "media",
+		"markdown_source": "classic-themes/functionality/media/index.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/media/audio": {
+		"title": "Audio",
+		"slug": "audio",
+		"markdown_source": "classic-themes/functionality/media/audio.md",
+		"parent": "classic-themes/functionality/media",
+		"order": 0
+	},
+	"classic-themes/functionality/media/galleries": {
+		"title": "Galleries",
+		"slug": "galleries",
+		"markdown_source": "classic-themes/functionality/media/galleries.md",
+		"parent": "classic-themes/functionality/media",
+		"order": 0
+	},
+	"classic-themes/functionality/media/images": {
+		"title": "Images",
+		"slug": "images",
+		"markdown_source": "classic-themes/functionality/media/images.md",
+		"parent": "classic-themes/functionality/media",
+		"order": 0
+	},
+	"classic-themes/functionality/media/video": {
+		"title": "Video",
+		"slug": "video",
+		"markdown_source": "classic-themes/functionality/media/video.md",
+		"parent": "classic-themes/functionality/media",
+		"order": 0
+	},
+	"classic-themes/functionality/navigation-menus": {
+		"title": "Navigation Menus",
+		"slug": "navigation-menus",
+		"markdown_source": "classic-themes/functionality/navigation-menus.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/pagination": {
+		"title": "Pagination",
+		"slug": "pagination",
+		"markdown_source": "classic-themes/functionality/pagination.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/post-formats": {
+		"title": "Post Formats",
+		"slug": "post-formats",
+		"markdown_source": "classic-themes/functionality/post-formats.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/sidebars": {
+		"title": "Sidebars",
+		"slug": "sidebars",
+		"markdown_source": "classic-themes/functionality/sidebars.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/widgets": {
+		"title": "Widgets",
+		"slug": "widgets",
+		"markdown_source": "classic-themes/functionality/widgets.md",
+		"parent": "classic-themes/functionality",
+		"order": 0
+	},
+	"classic-themes/functionality/sticky-posts": {
+		"title": "Sticky Posts",
+		"slug": "sticky-posts",
+		"markdown_source": "classic-themes/functionality/sticky-posts.md",
+		"parent": "classic-themes/functionality",
+		"order": 3
+	},
+	"classic-themes/customize-api": {
+		"title": "Theme Options – The Customize API",
+		"slug": "customize-api",
+		"markdown_source": "classic-themes/customize-api/index.md",
+		"parent": "classic-themes",
+		"order": 1040
+	},
+	"classic-themes/customize-api/customizer-objects": {
+		"title": "Customizer Objects",
+		"slug": "customizer-objects",
+		"markdown_source": "classic-themes/customize-api/customizer-objects.md",
+		"parent": "classic-themes/customize-api",
+		"order": 0
+	},
+	"classic-themes/customize-api/other-resources": {
+		"title": "Other Resources",
+		"slug": "other-resources",
+		"markdown_source": "classic-themes/customize-api/other-resources.md",
+		"parent": "classic-themes/customize-api",
+		"order": 0
+	},
+	"classic-themes/customize-api/tools-for-improved-user-experience": {
+		"title": "Tools for Improved User Experience",
+		"slug": "tools-for-improved-user-experience",
+		"markdown_source": "classic-themes/customize-api/tools-for-improved-user-experience.md",
+		"parent": "classic-themes/customize-api",
+		"order": 1
+	},
+	"classic-themes/customize-api/the-customizer-javascript-api": {
+		"title": "The Customizer JavaScript API",
+		"slug": "the-customizer-javascript-api",
+		"markdown_source": "classic-themes/customize-api/the-customizer-javascript-api.md",
+		"parent": "classic-themes/customize-api",
+		"order": 2
+	},
+	"classic-themes/customize-api/javascriptunderscore-js-rendered-custom-controls": {
+		"title": "JavaScript/Underscore.js-Rendered Custom Controls",
+		"slug": "javascriptunderscore-js-rendered-custom-controls",
+		"markdown_source": "classic-themes/customize-api/javascriptunderscore-js-rendered-custom-controls.md",
+		"parent": "classic-themes/customize-api",
+		"order": 3
+	},
+	"classic-themes/customize-api/advanced-usage": {
+		"title": "Advanced Usage",
+		"slug": "advanced-usage",
+		"markdown_source": "classic-themes/customize-api/advanced-usage.md",
+		"parent": "classic-themes/customize-api",
+		"order": 4
+	},
+	"classic-themes/templates": {
+		"title": "Template Files",
+		"slug": "templates",
+		"markdown_source": "classic-themes/templates/index.md",
+		"parent": "classic-themes",
+		"order": 1115
+	},
+	"classic-themes/templates/attachment-template-files": {
+		"title": "Attachment Template Files",
+		"slug": "attachment-template-files",
+		"markdown_source": "classic-themes/templates/attachment-template-files.md",
+		"parent": "classic-themes/templates",
+		"order": 0
+	},
+	"classic-themes/templates/custom-post-type-template-files": {
+		"title": "Custom Post Type Template Files",
+		"slug": "custom-post-type-template-files",
+		"markdown_source": "classic-themes/templates/custom-post-type-template-files.md",
+		"parent": "classic-themes/templates",
+		"order": 0
+	},
+	"classic-themes/templates/partial-and-miscellaneous-template-files": {
+		"title": "Partial and Miscellaneous Template Files",
+		"slug": "partial-and-miscellaneous-template-files",
+		"markdown_source": "classic-themes/templates/partial-and-miscellaneous-template-files/index.md",
+		"parent": "classic-themes/templates",
+		"order": 0
+	},
+	"classic-themes/templates/partial-and-miscellaneous-template-files/comment-template": {
+		"title": "Comment Template",
+		"slug": "comment-template",
+		"markdown_source": "classic-themes/templates/partial-and-miscellaneous-template-files/comment-template.md",
+		"parent": "classic-themes/templates/partial-and-miscellaneous-template-files",
+		"order": 0
+	},
+	"classic-themes/templates/post-template-files": {
+		"title": "Post Template Files",
+		"slug": "post-template-files",
+		"markdown_source": "classic-themes/templates/post-template-files.md",
+		"parent": "classic-themes/templates",
+		"order": 0
+	},
+	"classic-themes/templates/taxonomy-templates": {
+		"title": "Taxonomy Templates",
+		"slug": "taxonomy-templates",
+		"markdown_source": "classic-themes/templates/taxonomy-templates.md",
+		"parent": "classic-themes/templates",
+		"order": 0
+	},
+	"classic-themes/templates/page-template-files": {
+		"title": "Page Templates",
+		"slug": "page-template-files",
+		"markdown_source": "classic-themes/templates/page-template-files.md",
+		"parent": "classic-themes/templates",
+		"order": 3
+	},
+	"classic-themes/references": {
+		"title": "References",
+		"slug": "references",
+		"markdown_source": "classic-themes/references/index.md",
+		"parent": "classic-themes",
+		"order": 2000
+	},
+	"classic-themes/references/list-of-template-tags": {
+		"title": "List of Template Tags",
+		"slug": "list-of-template-tags",
+		"markdown_source": "classic-themes/references/list-of-template-tags.md",
+		"parent": "classic-themes/references",
+		"order": 0
+	},
+	"classic-themes/references/list-of-conditional-tags": {
+		"title": "List of Conditional Tags",
+		"slug": "list-of-conditional-tags",
+		"markdown_source": "classic-themes/references/list-of-conditional-tags.md",
+		"parent": "classic-themes/references",
+		"order": 1
+	},
+	"credits": {
+		"title": "Credits",
+		"slug": "credits",
+		"markdown_source": "credits/index.md",
+		"parent": null,
+		"order": 2000
+	},
+	"credits/feedback": {
+		"title": "Feedback",
+		"slug": "feedback",
+		"markdown_source": "credits/feedback.md",
+		"parent": "credits",
+		"order": 0
+	},
+	"theme-security": {
+		"title": "Theme Security",
+		"slug": "theme-security",
+		"markdown_source": "theme-security/index.md",
+		"parent": null,
+		"order": 0,
+		"status": "private",
+		"stub_for_nonpublic_parent": 11394
+	},
+	"theme-security/theme-security-issues": {
+		"title": "Theme security issues",
+		"slug": "theme-security-issues",
+		"markdown_source": "theme-security/theme-security-issues.md",
+		"parent": "theme-security",
+		"order": 0
+	}
+}

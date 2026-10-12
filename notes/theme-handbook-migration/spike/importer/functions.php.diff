@@ -1,0 +1,14 @@
+diff --git a/source/wp-content/themes/wporg-developer-2023/functions.php b/source/wp-content/themes/wporg-developer-2023/functions.php
+index 90654e2..f66d254 100644
+--- a/source/wp-content/themes/wporg-developer-2023/functions.php
++++ b/source/wp-content/themes/wporg-developer-2023/functions.php
+@@ -89,6 +89,9 @@ if ( class_exists( '\\WordPressdotorg\\Markdown\\Importer' ) ) {
+ 
+ 	// Playground handbook.
+ 	require __DIR__ . '/inc/import-playground.php';
++
++	// Theme handbook.
++	require __DIR__ . '/inc/import-theme.php';
+ }
+ 
+ /**

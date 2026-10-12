@@ -1,0 +1,738 @@
+{
+ "totals": {
+  "prod_headings": 941,
+  "local_headings": 940,
+  "prod_images": 152,
+  "local_images": 152,
+  "prod_code_blocks": 661,
+  "local_code_blocks": 658,
+  "prod_tables": 29,
+  "local_tables": 29,
+  "prod_embeds": 18,
+  "local_embeds": 0,
+  "prod_videos": 1,
+  "local_videos": 1,
+  "prod_links": 1882,
+  "local_links": 1874,
+  "prod_notices": 148,
+  "local_notices": 148,
+  "pages_diff_breadcrumbs": 1,
+  "pages_diff_embeds": 3,
+  "pages_diff_links": 4,
+  "pages_diff_text_ratio": 5,
+  "pages_diff_code_blocks": 2,
+  "pages_diff_code_langs": 2,
+  "pages_diff_headings": 1,
+  "pages": 139,
+  "pages_identical": 130
+ },
+ "examples": {
+  "breadcrumbs": [
+   "/themes/theme-security/theme-security-issues/"
+  ],
+  "embeds": [
+   "/themes/theme-security/theme-security-issues/",
+   "/themes/classic-themes/basics/conditional-tags/",
+   "/themes/classic-themes/basics/including-css-javascript/"
+  ],
+  "links": [
+   "/themes/theme-security/theme-security-issues/",
+   "/themes/advanced-topics/ui-best-practices/",
+   "/themes/classic-themes/basics/conditional-tags/",
+   "/themes/classic-themes/basics/including-css-javascript/"
+  ],
+  "text_ratio": [
+   "/themes/theme-security/theme-security-issues/",
+   "/themes/classic-themes/functionality/media/audio/",
+   "/themes/classic-themes/functionality/navigation-menus/",
+   "/themes/classic-themes/basics/conditional-tags/"
+  ],
+  "code_blocks": [
+   "/themes/classic-themes/functionality/custom-logo/",
+   "/themes/classic-themes/templates/post-template-files/"
+  ],
+  "code_langs": [
+   "/themes/classic-themes/functionality/custom-logo/",
+   "/themes/classic-themes/templates/post-template-files/"
+  ],
+  "headings": [
+   "/themes/classic-themes/customize-api/"
+  ]
+ },
+ "pages": {
+  "153674": {
+   "link": "https://developer.wordpress.org/themes/patterns/patterns-and-block-locking/",
+   "diff": {}
+  },
+  "153663": {
+   "link": "https://developer.wordpress.org/themes/patterns/block-type-patterns/",
+   "diff": {}
+  },
+  "153657": {
+   "link": "https://developer.wordpress.org/themes/patterns/starter-patterns/",
+   "diff": {}
+  },
+  "153652": {
+   "link": "https://developer.wordpress.org/themes/patterns/usage-in-templates/",
+   "diff": {}
+  },
+  "153646": {
+   "link": "https://developer.wordpress.org/themes/patterns/using-php-in-patterns/",
+   "diff": {}
+  },
+  "153627": {
+   "link": "https://developer.wordpress.org/themes/patterns/registering-patterns/",
+   "diff": {}
+  },
+  "153618": {
+   "link": "https://developer.wordpress.org/themes/patterns/introduction-to-patterns/",
+   "diff": {}
+  },
+  "153616": {
+   "link": "https://developer.wordpress.org/themes/patterns/",
+   "diff": {}
+  },
+  "152083": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/testing/",
+   "diff": {}
+  },
+  "152151": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/publishing-themes/",
+   "diff": {}
+  },
+  "152068": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/security/",
+   "diff": {}
+  },
+  "152063": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/privacy/",
+   "diff": {}
+  },
+  "152060": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/build-process/",
+   "diff": {}
+  },
+  "152057": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/internationalization/",
+   "diff": {}
+  },
+  "152066": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/debugging/",
+   "diff": {}
+  },
+  "149367": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/global-settings-and-styles/",
+   "diff": {}
+  },
+  "149365": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/including-assets/",
+   "diff": {}
+  },
+  "149345": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/custom-functionality/",
+   "diff": {}
+  },
+  "149340": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/templates/",
+   "diff": {}
+  },
+  "149336": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/main-stylesheet/",
+   "diff": {}
+  },
+  "149333": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/theme-structure/",
+   "diff": {}
+  },
+  "149320": {
+   "link": "https://developer.wordpress.org/themes/getting-started/quick-start-guide/",
+   "diff": {}
+  },
+  "149317": {
+   "link": "https://developer.wordpress.org/themes/getting-started/tools-and-setup/",
+   "diff": {}
+  },
+  "149314": {
+   "link": "https://developer.wordpress.org/themes/getting-started/reading-this-handbook/",
+   "diff": {}
+  },
+  "149311": {
+   "link": "https://developer.wordpress.org/themes/getting-started/who-is-this-handbook-for/",
+   "diff": {}
+  },
+  "149280": {
+   "link": "https://developer.wordpress.org/themes/features/block-variations/",
+   "diff": {}
+  },
+  "149271": {
+   "link": "https://developer.wordpress.org/themes/features/block-style-variations/",
+   "diff": {}
+  },
+  "149276": {
+   "link": "https://developer.wordpress.org/themes/features/block-stylesheets/",
+   "diff": {}
+  },
+  "149262": {
+   "link": "https://developer.wordpress.org/themes/features/block-patterns/",
+   "diff": {}
+  },
+  "149331": {
+   "link": "https://developer.wordpress.org/themes/core-concepts/",
+   "diff": {}
+  },
+  "149260": {
+   "link": "https://developer.wordpress.org/themes/features/",
+   "diff": {}
+  },
+  "148919": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/template-parts/",
+   "diff": {}
+  },
+  "148911": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/custom-templates/",
+   "diff": {}
+  },
+  "149235": {
+   "link": "https://developer.wordpress.org/themes/templates/template-parts/",
+   "diff": {}
+  },
+  "149232": {
+   "link": "https://developer.wordpress.org/themes/templates/template-hierarchy/",
+   "diff": {}
+  },
+  "149227": {
+   "link": "https://developer.wordpress.org/themes/templates/templates/",
+   "diff": {}
+  },
+  "149221": {
+   "link": "https://developer.wordpress.org/themes/templates/introduction-to-templates/",
+   "diff": {}
+  },
+  "149219": {
+   "link": "https://developer.wordpress.org/themes/templates/",
+   "diff": {}
+  },
+  "149119": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/styles-reference/",
+   "diff": {}
+  },
+  "149116": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/using-presets/",
+   "diff": {}
+  },
+  "149109": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/applying-styles/",
+   "diff": {}
+  },
+  "149100": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/settings-reference/",
+   "diff": {}
+  },
+  "149096": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/blocks/",
+   "diff": {}
+  },
+  "149092": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/use-root-padding-aware-alignments/",
+   "diff": {}
+  },
+  "149087": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/typography/",
+   "diff": {}
+  },
+  "149078": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/spacing/",
+   "diff": {}
+  },
+  "149075": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/shadow/",
+   "diff": {}
+  },
+  "149072": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/position/",
+   "diff": {}
+  },
+  "149068": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/lightbox/",
+   "diff": {}
+  },
+  "149064": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/layout/",
+   "diff": {}
+  },
+  "149060": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/dimensions/",
+   "diff": {}
+  },
+  "149058": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/custom/",
+   "diff": {}
+  },
+  "149045": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/color/",
+   "diff": {}
+  },
+  "149042": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/border/",
+   "diff": {}
+  },
+  "149040": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/appearance-tools/",
+   "diff": {}
+  },
+  "148915": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/patterns/",
+   "diff": {}
+  },
+  "148923": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/style-variations/",
+   "diff": {}
+  },
+  "148903": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/",
+   "diff": {}
+  },
+  "148909": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/styles/",
+   "diff": {}
+  },
+  "148907": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/settings/",
+   "diff": {}
+  },
+  "148901": {
+   "link": "https://developer.wordpress.org/themes/global-settings-and-styles/",
+   "diff": {}
+  },
+  "148747": {
+   "link": "https://developer.wordpress.org/themes/theme-security/theme-security-issues/",
+   "diff": {
+    "breadcrumbs": {
+     "prod": [
+      "Home",
+      "Home",
+      "Theme Handbook",
+      "Theme Handbook",
+      "Theme Security",
+      "Theme Security",
+      "Theme security issues"
+     ],
+     "local": [
+      "Home",
+      "Home",
+      "Theme Handbook",
+      "Theme Handbook",
+      "Private: Theme Security",
+      "Private: Theme Security",
+      "Theme security issues"
+     ]
+    },
+    "embeds": [
+     12,
+     0
+    ],
+    "links": {
+     "count": [
+      11,
+      7
+     ],
+     "only_prod": [
+      "https://make.wordpress.org/themes/2015/05/19/a-guide-to-writing-secure-themes-part-1-introduction/",
+      "https://make.wordpress.org/themes/2015/05/26/a-guide-to-writing-secure-themes-part-2-validation/",
+      "https://make.wordpress.org/themes/2015/06/02/a-guide-to-writing-secure-themes-part-3-sanitization/",
+      "https://make.wordpress.org/themes/2015/06/09/a-guide-to-writing-secure-themes-part-4-securing-post-meta/"
+     ],
+     "only_local": []
+    },
+    "text_ratio": 0.925
+   }
+  },
+  "142885": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/tools-resources/",
+   "diff": {}
+  },
+  "139317": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/block-theme-accessibility/",
+   "diff": {}
+  },
+  "138748": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/",
+   "diff": {}
+  },
+  "138674": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/updating-your-theme/",
+   "diff": {}
+  },
+  "40120": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/other-resources/",
+   "diff": {}
+  },
+  "25410": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/custom-front-page-templates/",
+   "diff": {}
+  },
+  "25470": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/custom-backgrounds/",
+   "diff": {}
+  },
+  "25182": {
+   "link": "https://developer.wordpress.org/themes/credits/feedback/",
+   "diff": {}
+  },
+  "25145": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/media/audio/",
+   "diff": {
+    "text_ratio": 0.9983
+   }
+  },
+  "25147": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/media/video/",
+   "diff": {}
+  },
+  "25149": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/media/galleries/",
+   "diff": {}
+  },
+  "25136": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/media/images/",
+   "diff": {}
+  },
+  "24973": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/sticky-posts/",
+   "diff": {}
+  },
+  "25063": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/references/list-of-conditional-tags/",
+   "diff": {}
+  },
+  "25053": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/references/list-of-template-tags/",
+   "diff": {}
+  },
+  "25050": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/references/",
+   "diff": {}
+  },
+  "25013": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/advanced-usage/",
+   "diff": {}
+  },
+  "25009": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/javascriptunderscore-js-rendered-custom-controls/",
+   "diff": {}
+  },
+  "25007": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/the-customizer-javascript-api/",
+   "diff": {}
+  },
+  "25005": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/tools-for-improved-user-experience/",
+   "diff": {}
+  },
+  "25000": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/customizer-objects/",
+   "diff": {}
+  },
+  "24939": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/main-stylesheet-style-css/",
+   "diff": {}
+  },
+  "22327": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/custom-logo/",
+   "diff": {
+    "code_blocks": [
+     5,
+     4
+    ],
+    "code_langs": [
+     [
+      "",
+      "php"
+     ]
+    ]
+   }
+  },
+  "17409": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/partial-and-miscellaneous-template-files/",
+   "diff": {}
+  },
+  "17407": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/custom-post-type-template-files/",
+   "diff": {}
+  },
+  "17405": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/attachment-template-files/",
+   "diff": {}
+  },
+  "17401": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/",
+   "diff": {}
+  },
+  "17399": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/post-template-files/",
+   "diff": {
+    "code_blocks": [
+     5,
+     3
+    ],
+    "code_langs": [
+     [
+      "",
+      "php"
+     ]
+    ]
+   }
+  },
+  "17363": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/core-supported/",
+   "diff": {}
+  },
+  "11980": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/template-files/",
+   "diff": {}
+  },
+  "12028": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/reworking-theme-files-organization/",
+   "diff": {}
+  },
+  "11433": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/submitting-your-theme-to-wordpress-org/",
+   "diff": {}
+  },
+  "11431": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/writing-documentation/",
+   "diff": {}
+  },
+  "11429": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/theme-review-guidelines/",
+   "diff": {}
+  },
+  "11424": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/testing/",
+   "diff": {}
+  },
+  "11421": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/required-theme-files/",
+   "diff": {}
+  },
+  "11409": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/plugin-api-hooks/",
+   "diff": {}
+  },
+  "11403": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/theme-testing/",
+   "diff": {}
+  },
+  "11401": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/javascript-best-practices/",
+   "diff": {}
+  },
+  "11399": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/ui-best-practices/",
+   "diff": {
+    "links": {
+     "count": [
+      5,
+      3
+     ],
+     "only_prod": [
+      "https://wordpress.org/download/",
+      "https://wordpress.org/download/"
+     ],
+     "only_local": []
+    }
+   }
+  },
+  "11390": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/customize-api/",
+   "diff": {
+    "headings": {
+     "count": [
+      1,
+      0
+     ],
+     "text_or_level": [],
+     "id_only": []
+    }
+   }
+  },
+  "11387": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/child-themes/",
+   "diff": {}
+  },
+  "11382": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/404-pages/",
+   "diff": {}
+  },
+  "11380": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/administration-menus/",
+   "diff": {}
+  },
+  "11377": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/accessibility/",
+   "diff": {}
+  },
+  "11372": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/localization/",
+   "diff": {}
+  },
+  "11370": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/internationalization/",
+   "diff": {}
+  },
+  "11368": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/post-formats/",
+   "diff": {}
+  },
+  "11362": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/featured-images-post-thumbnails/",
+   "diff": {}
+  },
+  "11360": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/media/",
+   "diff": {}
+  },
+  "11356": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/partial-and-miscellaneous-template-files/comment-template/",
+   "diff": {}
+  },
+  "11354": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/pagination/",
+   "diff": {}
+  },
+  "11345": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/categories-tags-custom-taxonomies/",
+   "diff": {}
+  },
+  "11341": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/taxonomy-templates/",
+   "diff": {}
+  },
+  "11337": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/post-types/",
+   "diff": {}
+  },
+  "11322": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/navigation-menus/",
+   "diff": {
+    "text_ratio": 0.9962
+   }
+  },
+  "11320": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/widgets/",
+   "diff": {}
+  },
+  "11318": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/sidebars/",
+   "diff": {}
+  },
+  "11314": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/custom-headers/",
+   "diff": {}
+  },
+  "11307": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/conditional-tags/",
+   "diff": {
+    "embeds": [
+     3,
+     0
+    ],
+    "links": {
+     "count": [
+      70,
+      69
+     ],
+     "only_prod": [
+      "https://developer.wordpress.org/themes/references/list-of-conditional-tags/"
+     ],
+     "only_local": []
+    },
+    "text_ratio": 0.9988
+   }
+  },
+  "11303": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/including-css-javascript/",
+   "diff": {
+    "embeds": [
+     3,
+     0
+    ],
+    "links": {
+     "count": [
+      8,
+      7
+     ],
+     "only_prod": [
+      "https://developer.wordpress.org/reference/functions/wp_enqueue_script/"
+     ],
+     "only_local": []
+    },
+    "text_ratio": 0.9979
+   }
+  },
+  "11300": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/linking-theme-files-directories/",
+   "diff": {}
+  },
+  "11295": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/theme-functions/",
+   "diff": {}
+  },
+  "11288": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/the-loop/",
+   "diff": {}
+  },
+  "11285": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/template-tags/",
+   "diff": {}
+  },
+  "11281": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/template-hierarchy/",
+   "diff": {}
+  },
+  "11273": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/templates/page-template-files/",
+   "diff": {}
+  },
+  "10877": {
+   "link": "https://developer.wordpress.org/themes/credits/",
+   "diff": {}
+  },
+  "5829": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/organizing-theme-files/",
+   "diff": {}
+  },
+  "5823": {
+   "link": "https://developer.wordpress.org/themes/releasing-your-theme/",
+   "diff": {}
+  },
+  "5821": {
+   "link": "https://developer.wordpress.org/themes/advanced-topics/",
+   "diff": {}
+  },
+  "5819": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/functionality/",
+   "diff": {}
+  },
+  "5817": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/basics/",
+   "diff": {}
+  },
+  "5811": {
+   "link": "https://developer.wordpress.org/themes/classic-themes/your-first-theme/",
+   "diff": {}
+  },
+  "5800": {
+   "link": "https://developer.wordpress.org/themes/getting-started/what-is-a-theme/",
+   "diff": {}
+  },
+  "5794": {
+   "link": "https://developer.wordpress.org/themes/getting-started/",
+   "diff": {}
+  },
+  "5785": {
+   "link": "https://developer.wordpress.org/themes/",
+   "diff": {}
+  }
+ }
+}
