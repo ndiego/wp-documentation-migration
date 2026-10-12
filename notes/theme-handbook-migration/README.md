@@ -244,4 +244,5 @@ questions to put to them are in research 04 §8.
 | `research/02-pipeline-precedents.md` | Importer contract with file/line references, transforms, template behaviour, AAH and plugin-mirror history, draft `import-theme.php`, deploy and cutover steps, CI invariants, open questions |
 | `research/03-spike.md` | The local round trip: converter decision, importer fixes, page-by-page fidelity, cutover behaviours, timings, ranked fixes |
 | `research/04-governance-process.md` | Ownership evidence, 2023 to 2026 history, AAH and SCF process comparison, proposal path, repo design decisions, translation, risks, questions |
+| `proposal-make-themes.md` | Draft of the make/themes proposal post, with placeholders for dates, co-authors and the Meta committer |
 | `spike/` | Rerunnable scripts (fetch, convert, serve, compare, screenshots), the importer subclass, the manifest, sample Markdown, results and screenshots |
