@@ -320,7 +320,26 @@ Evidence-based estimate:
   - The guide says "Keep post slugs in English for now so that current redirect rules will continue to work."
   - Tracking English changes relies on third-party tools: [wp-info.org helphubchanges](https://wp-info.org/tools/helphubchanges.php) and [developerka.org helphub-updates](https://developerka.org/helphub-updates/).
   - **No sync tool exists.** Re-imports are manual Meta requests: zh_CN asked to "clear and re-import" ([2024-04-15](https://make.wordpress.org/polyglots/2024/04/15/request-to-clear-and-update-helphub-support-articles/), [Meta #7587](https://lists.wordpress.org/pipermail/wp-meta/2024-April/058306.html)). That request was still unresolved in June 2025: "I am waiting for … using-glotpress-to-translate-content, but it seems to be progressing very slowly."
-- **Measured footprint** (REST `X-WP-Total` for `/support/wp-json/wp/v2/articles`, 2026-10-11): English 321 articles. Locale sites with articles: fr 296, ja 264, it 239, ru 48, es 22, cn 13, br 13, ko 3; nl and vi have the post type with 0 articles. de, pt, bg, tr, pl and others return 404, meaning no HelpHub or a different path. mx returned 301.
+- **Measured footprint, all 199 Rosetta sites** (2026-10-12; every locale site linked from the [Polyglots teams page](https://make.wordpress.org/polyglots/teams/), probed at `/support/wp-json/wp/v2/articles` and read `X-WP-Total`). English (wordpress.org/documentation) has 321 articles.
+
+  | Locale site | Published HelpHub articles |
+  |---|---|
+  | fr.wordpress.org | 296 |
+  | ja.wordpress.org | 264 |
+  | it.wordpress.org | 239 |
+  | es-mx.wordpress.org | 59 |
+  | ru.wordpress.org | 48 |
+  | es.wordpress.org | 22 |
+  | cn.wordpress.org | 13 |
+  | br.wordpress.org | 13 |
+  | ve.wordpress.org | 11 |
+  | pt-ao.wordpress.org | 11 |
+  | sr.wordpress.org | 3 |
+  | ko.wordpress.org | 3 |
+  | bn, es-ar, nl, snd, vi | HelpHub enabled, 0 published |
+  | the other 182 | no HelpHub (404 on the endpoint) |
+
+  So 17 locales have HelpHub enabled, 12 have published something, and only 3 (fr, ja, it) are anywhere near complete. **Caveat:** the REST count sees published posts only. The documented import creates the English articles as *drafts*, so a locale that imported but is still translating (or never got past the import) shows 0 here. Locales with a tiny count (sr, ko, ve, pt-ao) are probably in that state rather than "translated 3 articles". A wp-admin view, or asking the locale's HelpHub admin, is the only way to see the full picture.
 - **WCEU 2024** ([notes](https://make.wordpress.org/updates/2024/07/16/localization-and-translation-of-helphub-meeting-notes/)):
   - "the Meta team doesn't know the scope of adding this page to Rosetta sites"; "this process will need a dedicated meta team member".
   - "The French community has about 90% of the end-user translated", and redirect tables are needed to preserve it.
@@ -333,6 +352,19 @@ Evidence-based estimate:
   - Positive: a clean, per-article Git diff and commit history for "what changed in English since my translation", which is exactly what [akirk asked for](https://make.wordpress.org/project/2023/09/06/documentation-translation-localization/). It also enables automatic notifications (GitHub Action → issue in a locale tracker) and could feed GlotPress segment extraction from Markdown just as easily as from posts.
   - Negative: dd32's single-source-of-truth concern (Phase 4 assumes WP posts). Locales that translate in wp-admin would lose the "import from English HelpHub" path unless the importer also writes to Rosetta sites or the English site remains readable via REST. It does: the English site stays a normal WP site, so existing Rosetta flows keep working.
   - **Recommendation:** keep English-only in GitHub for phase 1 and don't promise translation tooling. Publish per-article content hashes or commit links so locale teams can detect drift.
+
+### 6.1 Risk: the English overhaul does not reach the Rosetta copies
+
+Everything in this study (Markdown source, automated import, restructuring, cleanup) touches only the English site. The localized HelpHubs are independent WordPress posts on each Rosetta site, created by a one-time import and edited by hand there. Consequences to state plainly in any proposal:
+
+- **Nothing propagates.** A cleaned-up English article leaves fr, ja, it and the rest exactly as they are, including articles that were merged or deleted in English years ago. Drift continues at today's rate because there is still no change notification.
+- **Restructuring makes a later re-import harder.** Renames, merges and removals widen the structural gap between English and each copy, so a locale that later asks Meta to "clear and re-import" (as zh_CN did in 2024, still unresolved in 2025) faces a bigger reconciliation than it would today.
+- **The Rosetta import path depends on English staying a normal WordPress site.** The documented flow exports English as WXR and imports it on the locale site. That keeps working only while the imported Markdown lands in ordinary posts with the content in `post_content`. Anything that lives in the repo but not in the post (front matter, assets referenced by relative path, build-time transforms) is invisible to localizers.
+- **Expectation risk.** The Docs, Polyglots and Meta teams have disagreed since 2023 about GitHub-versus-GlotPress for translation. A proposal that appears to decide that question will be read through that history and stall the way `documentation-end-user` did.
+
+What the overhaul *can* offer localizers without solving translation: a per-article Git history (the diff "what changed in English since my translation" that @akirk asked for in 2023), a cheap notification hook (GitHub Action → issue in a locale tracker; `Documentation-Issue-Tracker-fr_FR` already exists, empty), and a clean, structured source that the GlotPress long-form plan could consume if PR #1856 ever ships.
+
+**Recommendation:** scope the proposal as English-only; keep the English site readable the way the Rosetta import expects; ship diff/notification as a localizer benefit; say explicitly that translation is unchanged and remains a joint Docs/Polyglots/Meta decision. Concentrate any outreach on fr, ja and it, the three locales with a real investment to protect.
 
 ---
 

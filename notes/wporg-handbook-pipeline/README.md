@@ -208,9 +208,11 @@ Details and citations are in `research/05-process-governance-deployment.md`.
 - **A favourable opening.** The Meta Janitors group (April 2026, includes dd32 and annezazu) is told to "explore
   tighter integration between WordPress.org and version-controlled workflows". Counterweight: the block.json
   auto-docs PR was reverted in 2026 for "insufficient community discussion", so post a make/docs proposal first.
-- **Translation is the hardest question.** About eight Rosetta sites keep their own HelpHub copies (fr 296
-  articles, ja 264, it 239, ru 48), made by a one-time WXR import and maintained independently with no sync or
-  change notification. The Polyglots plan is GlotPress-based content translation (GlotPress PR #1856, open
+- **Translation is the hardest question.** Of 199 Rosetta sites, 17 have HelpHub enabled and 12 have published
+  articles; only fr (296), ja (264) and it (239) are near complete (measured 2026-10-12, published posts only;
+  see research 05 §6). Each copy is a one-time WXR import maintained independently with no sync or change
+  notification, so **an English overhaul changes nothing on those sites and makes a later re-import harder**
+  (research 05 §6.1). The Polyglots plan is GlotPress-based content translation (GlotPress PR #1856, open
   since 2024-08). A Git history gives locale teams the per-article diff they have asked for, but a GitHub source
   of truth collides with the "WP posts are canonical" assumption. Recommendation from the report: English-only
   in GitHub for phase 1, publish per-article commit links so locale teams can detect drift, promise no
