@@ -63,6 +63,29 @@ for a *follow-up* content PR after cutover, owned by the maintainer.
   failed on manifest errors), and the Plugin Handbook mirror (never switched; 65 of 102 pages edited in
   wp-admin since, 34 repo PRs never reached the site).
 
+### 3.1 The cautionary case: `WordPress/developer-plugins-handbook`
+
+That repo is neither a mirror of the Plugin Handbook nor a completed migration. It is an abandoned migration attempt
+that people keep contributing to, and nothing they contribute reaches the site (details and sources in research 02
+§4.2):
+
+- Created 2023-11-12 by Javier Casares as a Markdown copy with a manifest, intended to become the source of truth the
+  way AAH did ("Once completed, it will be migrated to WordPress.org", Docs meeting 2023-12-05). Of his two Meta
+  tickets, the Plugins *Team* handbook one (#7358) was done by dd32 in January 2024 and syncs; the developer.wordpress.org
+  one (#7361) got one comment about the repo name and then nothing. wporg-developer has no `plugin-handbook` importer
+  and the live pages carry no GitHub links.
+- Both sides moved on. The site: 65 of 102 published pages edited in wp-admin since the repo was created; the repo's
+  manifest has 80 entries. The repo: 34 merged PRs (latest 2026-10-07) by several maintainers, none on the site. Example:
+  GIF banner support merged 2026-09-23 is absent from the live plugin-assets page, last modified 2025-01-31.
+- The failure was procedural, not technical: the repo opened to contributors before an importer existed and wp-admin
+  stayed writable, so two sources of truth evolved independently. Even the team handbook that did ship imported a stale
+  snapshot ("missed a lot of headings").
+
+Consequences for this plan: no content PRs until the importer is deployed; freeze wp-admin; convert from a fresh
+post-freeze export; run the first import the moment the manifest lands; lock editing the same day (Phase 4). The Plugin
+Handbook is a candidate for the same treatment later, but it first needs a reconciliation pass, because the site and
+the repo each hold changes the other lacks.
+
 ## 4. The design
 
 ### 4.1 Content repo

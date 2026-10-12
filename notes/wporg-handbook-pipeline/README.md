@@ -151,15 +151,11 @@ Consequences:
 - **2025-12-02**, Estela Rueda on make/docs: the current direction is to write **directly in WordPress** and
   review after publication, with GitHub used only for issue tracking. The 2026 posts do not mention
   Markdown or GitHub as a source of truth.
-- Related cautionary case: `WordPress/developer-plugins-handbook`, a 2023 Markdown mirror of the Plugin
-  handbook, still merges PRs but developer.wordpress.org/plugins never imported it, so it has diverged.
-
-What is different this time, and what a new proposal has to show: automated migration of the whole corpus
-(this repo), a generated manifest with CI invariants, a plan for images, a mapping for a flat
-taxonomy-driven post type, and a translation story for Rosetta sites.
-
-## 6. Lessons from the other handbooks
-
+- Related cautionary case: `WordPress/developer-plugins-handbook` (created 2023-11-12) is neither a mirror nor a
+  finished migration: Meta #7361 stalled after one comment, no importer was ever added, wp-admin stayed writable, and
+  both sides diverged (65 of 102 live pages edited in wp-admin since; 34 repo PRs merged, none on the site, as of
+  2026-10-12). See `notes/theme-handbook-migration/README.md` §3.1 and research 02 §4.2 for the measured state and the
+  cutover rules derived from it.
 - **Generate the manifest in CI.** WP-CLI regenerates it on push via a bot PR; Secure Custom Fields fails a
   PR with a stale manifest; Playground generates it from the Docusaurus sidebar. Advanced Administration and
   Coding Standards hand-edit theirs and have no CI at all.
