@@ -62,8 +62,10 @@ for a *follow-up* content PR after cutover, owned by the maintainer.
 
 ### 4.1 Content repo
 
-- **Name:** `WordPress/theme-developer-handbook` (first choice; `theme-handbook` acceptable; let Meta settle it in the
-  ticket). Default branch `trunk`. Must meet the 2025-06 org repo criteria: named maintainers from an established
+- **Name:** `WordPress/developer-themes-handbook` (first choice: the org convention is `<topic>-handbook`, and the
+  `developer-` prefix is how `developer-plugins-handbook` is told apart from the Plugins *Team* `plugins-handbook`;
+  Themes has the same ambiguity). `theme-developer-handbook` (the official title's word order) is the acceptable
+  alternative; let Meta settle it in the ticket. Default branch `trunk`. Must meet the 2025-06 org repo criteria: named maintainers from an established
   team in README and CODEOWNERS, problem statement, make-blog tag.
 - **Layout:** one folder per chapter, `index.md` for pages with children, `<slug>.md` for leaves, mirroring the URL
   tree exactly (this is also the Japanese team's layout). `manifest.json` at the repo root, keyed by path:
@@ -91,9 +93,14 @@ indents code fences, loses images and table separators, and dropped links. Conve
 (`post_content` and `post_title` via WP-CLI or WXR), not from the public REST API, which returns texturized,
 shortcode-expanded HTML. Conventions the spike validated:
 
-- Notices become the handbook shortcodes `[info]`, `[tip]`, `[alert]`, `[warning]`, which DevHub renders to exactly
-  the production `wporg/notice` markup (148/148 identical). Prefer this over GitHub `> [!NOTE]` alerts, which render
-  as differently styled `.callout-*` divs and do not parse Markdown inside.
+- Notices are written as **GitHub alerts** in the Markdown (`> [!NOTE]` → info, `[!TIP]` → tip, `[!WARNING]` →
+  warning, `[!CAUTION]` → alert; `[!IMPORTANT]` falls back to alert), so they render well on GitHub and follow this
+  repo's 2026-10-07 convention for HelpHub (`notes/markdown-conventions.md`). The importer's `before_transform`
+  filter (drafted and tested in research 02) rewrites them to the handbook shortcodes `[info]`, `[tip]`,
+  `[warning]`, `[alert]`, which DevHub renders to exactly the production `wporg/notice` markup (148/148 identical in
+  the spike, including inline code inside notices). Do **not** emit `.callout-*` divs: they are styled differently
+  and are what the Block Editor handbook uses today (raw HTML, unstyled on GitHub); converting Gutenberg's 41 files
+  to alerts is a separate consistency PR.
 - Fenced code with the language; the importer transform adds `wp-block-code` so the Copy and Expand buttons return.
 - `{#id}` on every explicit heading id; `<br>` and `&nbsp;` normalized; tables as GFM; one table keeps HTML.
 - Literal `[audio]`, `[video]`, `[gallery]`, `[caption]` on the four media pages stay escaped (`[[…]]`); entity
@@ -106,8 +113,8 @@ shortcode-expanded HTML. Conventions the spike validated:
 - `inc/import-theme.php`: a `DevHub_Docs_Importer` subclass calling `do_init( 'theme', 'themes', $manifest_url )`,
   plus one `require` in `functions.php`. `inc/handbooks.php` already lists `theme` and pluralizes it to `themes`;
   **the `'themes'** base is load-bearing** (any other value breaks path matching and the duplicated slugs collide).
-- Per-handbook transforms (all spike-tested): shortcode escaping inside code, `wp-block-code` on `<pre>`, relative
-  `.md` link rewriting. Drafts are in research 02 §5.1 and `spike/importer/import-theme.php`.
+- Per-handbook transforms (all spike-tested): GitHub alerts → notice shortcodes, shortcode escaping inside code,
+  `wp-block-code` on `<pre>`, relative `.md` link rewriting. Drafts are in research 02 §5.1 and `spike/importer/import-theme.php`.
 - Editing lock: a `map_meta_cap` filter removing `edit_post` on `theme-handbook` for everyone but administrators,
   verified in the spike. See §5 decision 3.
 - Optional hardening PR to `wporg-markdown` (meta SVN or `WordPress/wordpress.org`): match exact path first and fall
@@ -129,7 +136,7 @@ shortcode-expanded HTML. Conventions the spike validated:
 | # | Decision | Recommendation |
 |---|---|---|
 | 1 | **The `theme-security` parent.** The published page `theme-security/theme-security-issues` sits under an unpublished parent. Adoption keeps it as is on production; a manifest entry for the parent would create a published duplicate; a fresh import fails for the child. | Keep it as is for cutover (no manifest entry; documented CI exception). Ask the maintainer whether the section page should be published later as a deliberate content change. The spike's "private parent" importer support is the fallback if they want the page gone from fresh imports. |
-| 2 | **Repo name and branch** | `theme-developer-handbook`, `trunk`; Meta's call. |
+| 2 | **Repo name and branch** | `developer-themes-handbook`, `trunk` (alternative `theme-developer-handbook`); Meta's call. |
 | 3 | **wp-admin editing after cutover** | Lock it (admins only) and say so in the proposal. The importer only warns, and an edit survives until the file next changes, then vanishes. This is the plugin-mirror failure mode. Optional: a nightly drift check alerting #docs. |
 | 4 | **Issue intake** | Transfer the open `themes` issues to the repo; pin a pointer in the tracker. |
 | 5 | **Assets** | Keep images in the media library at their current URLs. Moving 152 images into the repo is a separate, optional change. |
