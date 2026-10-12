@@ -305,7 +305,7 @@ The Block Editor importer has **no equivalent**. After a transform change, uncha
 - Admin notices, including "This is an imported handbook! … Any local changes will be overwritten …" when `config['manifest']` is set.
 - A "Not Imported" post state on posts without manifest meta.
 
-### 3.2 How wporg-developer-2023 themes handbook pages
+### 3.2 How wporg-developer-2023 themes the handbook pages
 
 **Template selection.** `add_handbook_templates()` in `functions.php` filters the template hierarchy:
 

@@ -1,11 +1,15 @@
 # Theme Handbook: migration plan to a GitHub Markdown source
 
+> **Naming.** The handbook's title is "Theme Handbook" (page `<title>` and the landing post's `post_title`). Its own
+> intro paragraph and the Themes team's About page say "Theme Developer Handbook"; quotes below keep whatever
+> wording the source used. These notes use "Theme Handbook".
+
 **Status:** plan, 2026-10-12. Synthesised from four research reports (listed at the end) and a working local spike.
 Nothing has been proposed publicly yet.
 
 ## 1. The one-paragraph version
 
-The Theme Developer Handbook (developer.wordpress.org/themes, post type `theme-handbook`, 139 published pages) is
+The Theme Handbook (developer.wordpress.org/themes, post type `theme-handbook`, 139 published pages) is
 edited in wp-admin by a small group. Its organization is settled and must not change. The goal is to move the
 *source* to a Markdown repo in the WordPress GitHub org and have developer.wordpress.org import it through the same
 `DevHub_Docs_Importer` pipeline that already serves the Block Editor, Playground, Secure Custom Fields (SCF),
