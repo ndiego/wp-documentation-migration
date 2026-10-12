@@ -1,8 +1,25 @@
-# Markdown conventions (draft, 2026-10-07)
+# Markdown conventions for wordpress.org handbooks
 
-Target: the `wporg-markdown` Importer used for the Block Editor handbook. Source in
-`notes/reference/wporg-markdown/`. Everything below is derived from reading that code and the
-Gutenberg `docs/` tree, not from memory.
+Started 2026-10-07 for HelpHub; promoted to the toolkit 2026-10-12 as the cross-handbook version. Target: the
+`wporg-markdown` importer used for the Block Editor, Playground, Secure Custom Fields, Coding Standards and Advanced
+Administration handbooks (source in `notes/reference/wporg-markdown/`; behaviour verified against a local import of
+the Theme Handbook, `notes/theme-handbook-migration/research/`). Everything below is an importer or GitHub constraint,
+not a style preference. Voice, grammar and terminology are the Docs team's style guide on make.wordpress.org/docs.
+
+## Added from the Theme Handbook work (2026-10-12)
+
+- **Manifest keyed by page path**, parents as path keys and listed before children. Bare slugs are ambiguous
+  (the Theme Handbook reuses 7 slugs on 14 pages) and resolve only at the top level.
+- **A new page never reuses an existing slug.** The importer's slug fallback takes over the existing post and moves
+  it. `toolkit/manifest/validate_manifest.py` enforces this.
+- **Explicit heading ids are carried as `{#id}`.** Deep links depend on them; the TOC block generates the rest with
+  `sanitize_title` and `-2`, `-3` suffixes.
+- **Notices are GitHub alerts** (`[!NOTE]` info, `[!TIP]` tip, `[!WARNING]` warning, `[!CAUTION]` alert); the
+  importer subclass rewrites them to notice markup. Raw `.callout-*` divs (the Block Editor's current style) are not
+  styled on GitHub and do not parse Markdown inside.
+- **Shortcodes in prose stay escaped** (`[[audio]]`), and block-markup comments only ever appear inside code fences.
+- **Images may keep absolute `developer.wordpress.org/files/` URLs** when a handbook's media stays in the library;
+  relative in-repo images are the HelpHub choice. Either is fine; pick per handbook and record it.
 
 ## What the importer actually does
 
