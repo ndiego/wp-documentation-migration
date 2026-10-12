@@ -52,14 +52,17 @@ What that importer does, and therefore what our Markdown must satisfy:
 
 ```
 raw/        JSON dumps straight from the REST API (regenerate: python3 -I scripts/fetch_raw.py --media)
-scripts/    fetch + convert tooling
+scripts/    the HelpHub pipeline: fetch + convert + assets + builds (project-specific; the reusable converter
+            interface is toolkit/convert/)
 notes/      investigation write-ups (content audit, site structure, framework options)
 docs/       generated Markdown: docs/<top>/<sub>/<slug>.md + README.md per folder, docs/manifest.json
 docs/assets/ images (and posters) mirrored from /documentation/files/YYYY/MM/ + images-manifest.json.
             Videos are gitignored (1.3 GB); <video src> points at the wordpress.org originals for now.
 data/       machine-readable reports: redirects, convert report, link check, download report
-screenshots/ automated screenshot toolkit (Playground + Playwright, YAML shot specs); output in docs/assets/screenshots/.
-            See screenshots/README.md and notes/screenshot-automation/proposal.md
+screenshots/ this repo's screenshot PROJECT (shots.config.js, blueprint, YAML shot specs); output in docs/assets/screenshots/.
+            The engine lives in toolkit/wp-shots. See screenshots/README.md and notes/screenshot-automation/proposal.md
+toolkit/    the cross-handbook tooling boundary, a future repo: wp-shots engine, converter interface, manifest
+            validator + CI action, CONVENTIONS.md, agent skills. See toolkit/README.md for the rules.
 .venv/      Python venv (bs4, markdownify) used by scripts/convert.py: `.venv/bin/python -I scripts/convert.py`
 ```
 
@@ -126,12 +129,12 @@ committed `data/` files. `build/` is gitignored.
 - [x] Framework comparison (notes/framework-options.md)
 - [x] Live-site structure notes (notes/site-structure.md)
 - [x] REST API discovered and all raw JSON pulled (2026-10-07)
-- [x] Markdown conventions drafted (notes/markdown-conventions.md)
+- [x] Markdown conventions drafted (toolkit/CONVENTIONS.md)
 - [x] Content audit (notes/content-audit.md, notes/audit-stats.json)
 - [x] HTML → Markdown converter (scripts/convert.py) — 321 articles + 2 pages → docs/, 246 clean / 75 with warnings (notes/converter-notes.md)
 - [x] docs/manifest.json (importer format) and docs/assets/images-manifest.json (2,556 assets)
 - [x] Asset download (scripts/download_assets.py) — 2,533 fetched, ~1.8 GB; 23 unreachable, see notes/missing-assets.md
-- [ ] Decide open questions in notes/markdown-conventions.md
+- [ ] Decide open questions in toolkit/CONVENTIONS.md
 - [x] Structure mode (`--structure`), before/after builds and metrics (scripts/build_all.sh)
 - [ ] Starlight preview site in site/ — in progress
 - [ ] HelpHub importer subclass (merge-back)

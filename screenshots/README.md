@@ -70,7 +70,7 @@ shots:
   `type`, `fill`, `select`, `press`, `wait`, `setViewport`, `setPreference`, `scrollTo`, `evaluate`.
   Elements are named the way a reader would: `{ button: Replace }`, `{ control: Alternative text }`,
   `{ menuitem: Edit as HTML }`, `{ tab: Styles }`, `{ text: Settings }`, `{ selector: .css }`.
-- **Capture targets** are named regions kept in one registry (`engine/src/targets.js`): `editor`,
+- **Capture targets** are named regions kept in one registry (`toolkit/wp-shots/src/targets.js`): `editor`,
   `selected-block`, `block-toolbar`, `inspector`, `inspector-panel:<name>`, `inserter`, `list-view`, `top-bar`,
   `popover`, `modal`, `admin-content`, `admin-screen`, `front`, or any selector. `include:` widens the crop,
   `pad:` adds space, `fit: content` trims a tall panel, `frame: card` puts a full-editor shot on a card.
@@ -117,14 +117,14 @@ screenshots/
   shots.config.js      paths, pinned versions, style overrides
   shots/               YAML specs, mirrored to the docs tree
   blueprint/           Playground blueprint, mu-plugin, demo content pack (contract in blueprint/README.md)
-  engine/              the `wp-shots` package; knows nothing about this repo (see ARCHITECTURE.md)
+  toolkit/wp-shots/              the `wp-shots` package; knows nothing about this repo (see ARCHITECTURE.md)
   .wp-shots/           logs, failures, check staging, reports (gitignored)
 ```
 
 ## Regeneration at a WordPress release
 
 1. Bump `preferredVersions.wp` in `blueprint/blueprint.json` and `wordpress.version` in `shots.config.js`
-   (and `@wordpress/e2e-test-utils-playwright` in `engine/package.json` if the editor changed a lot).
+   (and `@wordpress/e2e-test-utils-playwright` in `toolkit/wp-shots/package.json` if the editor changed a lot).
 2. `npm run shots -- check --docker` (or let the CI workflow do it) and open `.wp-shots/report/index.html`.
 3. Review the before/after pairs; a changed image is also a prompt to re-read the article text.
 4. `npm run shots -- update` copies the staged images and their manifest entries into place; open a PR. Do not

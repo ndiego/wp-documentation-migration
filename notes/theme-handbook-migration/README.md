@@ -125,7 +125,7 @@ shortcode-expanded HTML. Conventions the spike validated:
 
 - Notices are written as **GitHub alerts** in the Markdown (`> [!NOTE]` → info, `[!TIP]` → tip, `[!WARNING]` →
   warning, `[!CAUTION]` → alert; `[!IMPORTANT]` falls back to alert), so they render well on GitHub and follow this
-  repo's 2026-10-07 convention for HelpHub (`notes/markdown-conventions.md`). The importer's `before_transform`
+  repo's 2026-10-07 convention for HelpHub (`toolkit/CONVENTIONS.md`). The importer's `before_transform`
   filter (drafted and tested in research 02) rewrites them to the handbook shortcodes `[info]`, `[tip]`,
   `[warning]`, `[alert]`, which DevHub renders to exactly the production `wporg/notice` markup (148/148 identical in
   the spike, including inline code inside notices). Do **not** emit `.callout-*` divs: they are styled differently

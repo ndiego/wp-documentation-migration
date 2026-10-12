@@ -3,7 +3,7 @@
 Date: 2026-10-08. Sources: https://docs.press/docs/ (all guide and reference pages),
 Automattic/docspress at commit 8584e70 (2026-08-03), the code dossier in
 `notes/reference/docspress-architecture.md`, and the HelpHub/wporg findings in
-`notes/site-structure.md` and `notes/markdown-conventions.md`. Theme/visual differences are out of scope.
+`notes/site-structure.md` and `toolkit/CONVENTIONS.md`. Theme/visual differences are out of scope.
 
 ## 1. What DocsPress actually is
 

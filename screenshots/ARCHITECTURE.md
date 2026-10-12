@@ -10,22 +10,22 @@ screenshots/                      the PROJECT: this repo's shots, blueprint, con
   shots.config.js                 project config consumed by the engine
   blueprint/                      Playground blueprint + mu-plugin + demo content pack (see blueprint/README.md)
   shots/                          YAML shot specs, mirrored to the docs tree
-  engine/                         the ENGINE: an npm workspace package named `wp-shots`
+  (engine)                        the ENGINE lives in ../toolkit/wp-shots, npm package `wp-shots`, consumed as a path dependency
 ```
 
 The engine knows nothing about this repository. It receives a config object (directories, blueprint path,
-WordPress version, style tokens) and does the rest. Moving `engine/` into its own repository and publishing it
-is a move, not a rewrite; the project would then depend on `wp-shots` from npm instead of the workspace.
+WordPress version, style tokens) and does the rest. It lives in `../toolkit/wp-shots` (see `../toolkit/README.md` for the boundary rules). Publishing it from its own
+repository is a move, not a rewrite; the project would then depend on `wp-shots` from npm instead of the path.
 
 Rules that keep that true:
 
-- Nothing under `engine/` imports from outside `engine/`, reads `../docs`, or assumes article slugs look like ours.
+- Nothing under `toolkit/wp-shots/` imports from outside it, reads `../docs`, or assumes article slugs look like ours.
 - Project-specific facts (output dir, docs dir, manifest path, blueprint path, versions, viewports, style tokens)
   come from `shots.config.js`.
 - Project-specific content keys (`{{media.harbor}}`) are resolved against the running site by slug, not against
   files in this repo.
 
-## Engine (`engine/src/`)
+## Engine (`../toolkit/wp-shots/src/`)
 
 | Module | Responsibility |
 |---|---|

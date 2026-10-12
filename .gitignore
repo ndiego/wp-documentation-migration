@@ -19,3 +19,7 @@ build/
 
 # Claude Code worktrees (other sessions)
 .claude/worktrees/
+
+# Toolkit (engine has its own node_modules; project node_modules under screenshots/)
+toolkit/wp-shots/node_modules/
+screenshots/node_modules/

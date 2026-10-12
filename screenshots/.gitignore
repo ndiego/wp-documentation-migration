@@ -1,4 +1,4 @@
 node_modules/
-engine/node_modules/
+# engine deps live in ../toolkit/wp-shots/node_modules (root .gitignore)
 .wp-shots/
 blueprint/.verify/

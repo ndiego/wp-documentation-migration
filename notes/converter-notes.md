@@ -1,7 +1,7 @@
 # Converter notes (HelpHub HTML → Markdown)
 
 Status as of 2026-10-07. The target is the **wporg-markdown Importer** (the Block Editor handbook
-pipeline, `notes/reference/wporg-markdown/`). The conventions are in `notes/markdown-conventions.md`.
+pipeline, `notes/reference/wporg-markdown/`). The conventions are in `toolkit/CONVENTIONS.md`.
 
 ## How to run
 
