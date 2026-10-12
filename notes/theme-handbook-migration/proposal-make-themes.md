@@ -60,8 +60,13 @@ driven by a short per-handbook class in the
 4. The page template switches to the GitHub-aware variant, adding the "Improve it on GitHub" and "See list of changes"
    links. Nothing else on the page changes.
 5. Notices are written as [GitHub alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts)
-   so they render on GitHub too; the importer turns them into the notice boxes you see today. Images keep their
-   current media-library URLs.
+   so they render on GitHub too; the importer turns them into the notice boxes you see today.
+6. Images live in the repository as compressed WebP files next to the pages, so a screenshot update is reviewable in
+   the same pull request as the text. The importer copies them into the developer.wordpress.org media library when it
+   imports the page, the way the
+   [Playground importer](https://github.com/WordPress/wporg-developer/blob/trunk/source/wp-content/themes/wporg-developer-2023/inc/import-playground.php)
+   already does, so the site never serves images from GitHub. Video is not stored in Git; videos stay hosted on
+   wordpress.org or YouTube and are embedded by URL.
 
 The code on the wordpress.org side is a class of about 35 lines plus one include, the same shape as the Secure Custom
 Fields importer added in [wporg-developer #547](https://github.com/WordPress/wporg-developer/pull/547) (ticket
@@ -118,6 +123,10 @@ them per-file diffs of English changes. Nothing here touches HelpHub or the loca
 
 **Does any content change?** No. Known small defects (an empty page, a few malformed code blocks) get a separate
 pull request after the move, where the diff is visible.
+
+**What happens to the existing images?** All 152 are brought into the repository at cutover as WebP, including the
+few currently hosted on make.wordpress.org and on a personal site, with their alt text unchanged. They get new
+media-library URLs when imported; the pages look the same.
 
 **What about "Last updated"?** The first import touches every page, so each shows the cutover date once. After that,
 dates and Git history reflect real changes.

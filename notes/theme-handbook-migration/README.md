@@ -38,7 +38,7 @@ These are the invariants every step below protects. The spike verified each on a
 | Same deep links | 162 explicit heading ids carried as `{#id}`; 940 of 941 headings matched (the one miss is an empty `<h2>` in production) |
 | Old-URL redirects keep working | They are core slug-guessing on `post_name`, which adoption preserves; **the redirect map is empty** |
 | Same landing page at `/themes/` | Manifest entry `index` with `slug: theme-handbook` (the existing slug, not AAH's `handbook`) |
-| Images unchanged | All 152 stay as absolute `developer.wordpress.org/files/` URLs; no sideloading |
+| Images render the same | The 152 images move into the repo as WebP and are sideloaded into the media library at import; same alt text, captions and links, new attachment URLs (decision 5) |
 | Notices, code, tables render the same | 148/148 notices, 657 code blocks and 29/29 tables matched after the converter and transform fixes in §4 |
 
 Out of scope by design: any rename, merge, reorder, rewrite, or alt-text improvement. Content defects found by the
@@ -135,7 +135,8 @@ shortcode-expanded HTML. Conventions the spike validated:
 - `{#id}` on every explicit heading id; `<br>` and `&nbsp;` normalized; tables as GFM; one table keeps HTML.
 - Literal `[audio]`, `[video]`, `[gallery]`, `[caption]` on the four media pages stay escaped (`[[…]]`); entity
   escaping does not survive kses.
-- Images keep their absolute URLs; captions and link-to-full-size wrappers stay as inline HTML.
+- Images are written as relative paths into `assets/` (compressed WebP), captions and link-to-full-size wrappers stay as
+  inline HTML; the importer sideloads them (decision 5). The spike kept absolute URLs, which also works.
 - Block-markup samples inside code fences stay escaped (tested: no page lost its paragraphs).
 
 ### 4.3 Importer wiring (wporg-developer)
@@ -169,7 +170,7 @@ shortcode-expanded HTML. Conventions the spike validated:
 | 2 | **Repo name and branch** | `developer-themes-handbook`, `trunk` (alternative `theme-developer-handbook`); Meta's call. |
 | 3 | **wp-admin editing after cutover** | Lock it (admins only) and say so in the proposal. The importer only warns, and an edit survives until the file next changes, then vanishes. This is the plugin-mirror failure mode. Optional: a nightly drift check alerting #docs. |
 | 4 | **Issue intake** | Transfer the open `themes` issues to the repo; pin a pointer in the tracker. |
-| 5 | **Assets** | Keep images in the media library at their current URLs. Moving 152 images into the repo is a separate, optional change. |
+| 5 | **Assets** | **Images live in the repo as compressed WebP** (decided 2026-10-12), sideloaded into the developer.wordpress.org media library by the importer at import time the way the Playground importer does (`import-playground.php`, `media_sideload_image`, attachment tracked per source URL), so pages are served from wordpress.org, never from GitHub. At cutover the 152 current images (144 in the DevHub library, 5 on make.wordpress.org, 3 GIFs on a personal site) are brought into the repo under `assets/`, converted to WebP (the 3 animated GIFs as animated WebP), alt text carried verbatim (the 12 empty alts stay empty: no content changes). Image URLs on pages change to the new attachments; that is not an organizational change. **Video is never stored in Git**: the one `<video>` and the embeds stay hosted on wordpress.org / YouTube and are referenced by URL (HelpHub's 1.3 GB lesson). Cost: the sideload logic is not in the base importer, so the Theme importer subclass carries ~100 lines copied from Playground's, worth upstreaming to the base class afterwards. |
 | 6 | **Code UI parity** | Add `wp-block-code` in the theme-handbook transform now; propose the same for the base importer later (Block Editor, AAH and SCF lack Copy/Expand today). |
 | 7 | **"Last updated" at cutover** | Accept the cutover date, or ask Meta to keep `post_modified` with a one-off filter during the first import. |
 | 8 | **Japanese team** | Tell them before cutover, publish the "conversion only" commit, offer a path map. Their 139-file tree already matches. |
