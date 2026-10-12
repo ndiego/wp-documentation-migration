@@ -20,7 +20,7 @@ Research date: 2026-10-11. Sources are the live sites, GitHub repos (shallow clo
 - **Deletions are not propagated.** The importer only creates and updates. The wpcs-docs README says a removed page "needs to be manually deleted from DevHub".
 - **The Docs team has already proposed moving HelpHub to GitHub and Markdown.** Javier Casares proposed it on make/project on 2023-09-06, with per-language folders, a manifest and a Markdown-to-blocks conversion. The `WordPress/documentation-end-user` repo was created on 2023-09-01 and announced on 2023-09-25.
   - The effort **stalled**. The repo has 37 files, a one-entry manifest per language and no commits since 2024-02-16.
-  - Javier also created GitHub mirrors of the Plugin Developer Handbook and the Plugins Team handbook in Nov 2023. The `developer-plugins-handbook` mirror still receives PRs (latest merge 2026-10-07), but developer.wordpress.org/plugins is **not** imported from it.
+  - Javier also created GitHub mirrors of the Plugin Handbook (developer.wordpress.org/plugins) and the Plugins Team handbook in Nov 2023. The `developer-plugins-handbook` mirror still receives PRs (latest merge 2026-10-07), but developer.wordpress.org/plugins is **not** imported from it.
   - The Docs team's current direction is to keep HelpHub *in WordPress*, as in Estela Rueda's Dec 2025 workflow proposal. The 2026 posts do not mention moving content to GitHub.
   - Details are in the last section.
 

@@ -236,7 +236,7 @@ From [Becoming a Meta committer](https://make.wordpress.org/meta/handbook/about/
 
 Evidence-based estimate:
 - **AAH** (closest precedent): the repo was ready in November 2022, the content was declared "ready" on 2023-03-27, and it was imported the next day. About 8.5 months passed from ticket to live; the actual Meta work took about 1 day once content was ready, but needed dd32 personally ("I'm not 100% on the steps").
-- **Plugin Developer Handbook** (GitHub, early 2024): merged PRs did not reach the site for weeks ("there is a known issue and Dion is working on it").
+- **Plugin Handbook** (GitHub, early 2024): merged PRs did not reach the site for weeks ("there is a known issue and Dion is working on it").
 - **Developer Reference parser** (a related automated pipeline, [post](https://make.wordpress.org/core/2026/02/25/developer-documentation-restored/) 2026-02-25): silently broken from 6.4 to 6.9.1, "over two years out of date". Lessons quoted: "The process for generating and deploying documentation updates is in dire need of its own documentation. A challenge … has been knowing where to run updates and what updates to run … A contributing factor … was a failure to notify developers when source code changes broke the documentation generation process."
 - **Realistic path:**
   1. Make/docs proposal, cross-posted to meta, polyglots and core.

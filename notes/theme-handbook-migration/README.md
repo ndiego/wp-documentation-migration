@@ -1,8 +1,9 @@
 # Theme Handbook: migration plan to a GitHub Markdown source
 
-> **Naming.** The handbook's title is "Theme Handbook" (page `<title>` and the landing post's `post_title`). Its own
-> intro paragraph and the Themes team's About page say "Theme Developer Handbook"; quotes below keep whatever
-> wording the source used. These notes use "Theme Handbook".
+> **Naming.** On wordpress.org the handbooks are titled "Theme Handbook" (/themes/) and "Plugin Handbook" (/plugins/),
+> per their page titles and landing posts. The Theme Handbook's own intro paragraph and the Themes team's About page
+> say "Theme Developer Handbook"; quotes below keep whatever wording the source used. These notes use the on-site
+> titles. Repo slugs follow the URL segment instead (`developer-plugins-handbook`), see §4.1.
 
 **Status:** plan, 2026-10-12. Synthesised from four research reports (listed at the end) and a working local spike.
 Nothing has been proposed publicly yet.
@@ -59,17 +60,19 @@ for a *follow-up* content PR after cutover, owned by the maintainer.
   Documentation-Issue-Tracker `themes` label (73 open issues). No GlotPress project; one translation (ja).
 - No theme-handbook repo exists in the WordPress org. Precedents: AAH (new handbook, 2023, dd32 fixed the manifest
   himself), SCF (ticket and importer merged the same day, 2025-02-20), Accessibility handbook (in flight, first import
-  failed on manifest errors), and the Plugin Developer Handbook mirror (never switched; 65 of 102 pages edited in
+  failed on manifest errors), and the Plugin Handbook mirror (never switched; 65 of 102 pages edited in
   wp-admin since, 34 repo PRs never reached the site).
 
 ## 4. The design
 
 ### 4.1 Content repo
 
-- **Name:** `WordPress/developer-themes-handbook` (first choice: the org convention is `<topic>-handbook`, and the
-  `developer-` prefix is how `developer-plugins-handbook` is told apart from the Plugins *Team* `plugins-handbook`;
-  Themes has the same ambiguity). `theme-developer-handbook` (the official title's word order) is the acceptable
-  alternative; let Meta settle it in the ticket. Default branch `trunk`. Must meet the 2025-06 org repo criteria: named maintainers from an established
+- **Name:** `WordPress/developer-themes-handbook`. Grounded in wordpress.org itself: the Plugin Handbook lives at
+  developer.wordpress.org/plugins/ and its repo is `developer-plugins-handbook`, so the slug is `developer-` + the
+  site's URL segment + `-handbook`, not the handbook title. The Theme Handbook lives at /themes/, hence
+  `developer-themes-handbook`. The `developer-` prefix also separates it from the Make team handbooks
+  (`plugins-handbook` is the Plugins Team's). `theme-developer-handbook` is the acceptable alternative if Meta
+  prefers that word order; settle it in the ticket. Default branch `trunk`. Must meet the 2025-06 org repo criteria: named maintainers from an established
   team in README and CODEOWNERS, problem statement, make-blog tag.
 - **Layout:** one folder per chapter, `index.md` for pages with children, `<slug>.md` for leaves, mirroring the URL
   tree exactly (this is also the Japanese team's layout). `manifest.json` at the repo root, keyed by path:

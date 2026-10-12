@@ -74,7 +74,7 @@ observed. **[unverified]** not checked.
    - Advanced Administration (AAH) went live 2023-03-28 → 2023-04-03 after dd32 fixed the manifest himself
      (AAH PR #190) and added the importer to the old theme (`f511687`, `652bd6a`). It was then ported to the 2023
      theme (`wporg-developer#237`, 2023-05-09).
-   - The Plugin Developer Handbook mirror diverged because its Meta ticket, **#7361**, stalled after one comment in
+   - The Plugin Handbook mirror diverged because its Meta ticket, **#7361**, stalled after one comment in
      January 2024. The importer was never switched, and both sides kept being edited: 65 of the 102 live pages were
      edited in wp-admin after the mirror was made, and 34 repo PRs were merged that never reached the site.
    - The Plugins *Team* handbook (#7358) was switched and does sync.
@@ -322,7 +322,7 @@ of every imported repo says removals are done by hand on the .org side (pipeline
 
 For the Theme Handbook, step 4 is empty, and step 2 can be automated (§5.6).
 
-### 4.2 Why the Plugin Developer Handbook mirror diverged, and what a cutover must do
+### 4.2 Why the Plugin Handbook mirror diverged, and what a cutover must do
 
 - **Two tickets, two outcomes.** Javier Casares opened both on 2023-12-01:
   - [Meta #7358](https://lists.wordpress.org/pipermail/wp-meta/2023-December/056322.html), "Plugins Team

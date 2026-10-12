@@ -202,7 +202,7 @@ Details and citations are in `research/05-process-governance-deployment.md`.
   running the sync can silently revert SVN-only changes (nearly happened in July 2026, PR #113). Fix that
   before adding importer code there.
 - **Turnaround.** Advanced Administration took about 8.5 months from Meta ticket to live, but the Meta work was
-  about one day once content was ready. The Plugin Developer Handbook's GitHub move stopped syncing for weeks in
+  about one day once content was ready. The Plugin Handbook's GitHub move stopped syncing for weeks in
   2024. The developer Code Reference silently stopped updating for over two years. Calendar time is dominated
   by consensus and by finding a committer, and silent failure needs monitoring.
 - **A favourable opening.** The Meta Janitors group (April 2026, includes dd32 and annezazu) is told to "explore
