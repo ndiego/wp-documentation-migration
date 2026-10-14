@@ -13,6 +13,7 @@ file paths and commit SHAs. Everything marked **[unverified]** in the reports st
 | `research/05-process-governance-deployment.md` | Docs team process, Meta deployment, translations, open questions |
 | `spike/` | Re-runnable spike: test plugin, ETag server, fixtures, sample output |
 | `publishing-models-and-deploys.md` | The three publishing models on wordpress.org (edit-in-WP, GitHub pulled in, WP exported to GitHub and deployed) and the exact Meta sandbox deploy sequence, with wporg-main-2022 PR #759 as the worked example |
+| `make-meetings.md` | How the make.wordpress.org front page lists teams and their next meeting (`make_site` posts, `meeting` CPT, exact-match on a free-text team field) and why Core AI shows none |
 | `documentation-inventory.md` | Every WordPress.org documentation section, how it is published today, and which tier of scope it belongs to |
 
 ## 1. The one-paragraph version
