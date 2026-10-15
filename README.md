@@ -61,8 +61,10 @@ docs/assets/ images (and posters) mirrored from /documentation/files/YYYY/MM/ + 
 data/       machine-readable reports: redirects, convert report, link check, download report
 screenshots/ this repo's screenshot PROJECT (shots.config.js, blueprint, YAML shot specs); output in docs/assets/screenshots/.
             The engine lives in toolkit/wp-shots. See screenshots/README.md and notes/screenshot-automation/proposal.md
-toolkit/    the cross-handbook tooling boundary, a future repo: wp-shots engine, converter interface, manifest
-            validator + CI action, CONVENTIONS.md, agent skills. See toolkit/README.md for the rules.
+toolkit/    git submodule: https://github.com/ndiego/documentation-toolkit pinned at a tag (v0.1.0). The cross-handbook
+            tooling: wp-shots engine, converter interface, manifest validator + CI action, CONVENTIONS.md, agent
+            skills. After cloning: `git submodule update --init`. Bump by checking out a newer tag inside toolkit/
+            and committing the pointer. Engine changes are made in that repo, not here.
 .venv/      Python venv (bs4, markdownify) used by scripts/convert.py: `.venv/bin/python -I scripts/convert.py`
 ```
 
