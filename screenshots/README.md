@@ -12,11 +12,20 @@ Background: `../notes/screenshot-automation/proposal.md`. Design contract: `ARCH
 Requirements: Node 22.19+ (24 recommended), about 1 GB of disk for dependencies and the browser. No Docker,
 no database, no local WordPress.
 
+The engine (`wp-shots`) comes from the `toolkit/` git submodule
+([ndiego/documentation-toolkit](https://github.com/ndiego/documentation-toolkit), pinned at a tag), consumed as
+the path dependency `file:../toolkit/wp-shots`.
+
 ```sh
+git submodule update --init   # once per clone: fetches toolkit/ at the pinned tag
+cd toolkit/wp-shots && npm ci && cd ../..
 cd screenshots
-npm install            # also downloads Chromium for Playwright
+npm install            # links the engine and downloads Chromium for Playwright
 npm run shots -- doctor
 ```
+
+To work on the engine itself, edit it in the documentation-toolkit repo, tag a release there, then check out
+the new tag inside `toolkit/` here and commit the submodule pointer.
 
 ## Everyday commands
 

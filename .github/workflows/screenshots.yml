@@ -9,7 +9,8 @@ on:
   pull_request:
     paths:
       - 'screenshots/**'
-      - 'toolkit/wp-shots/**'
+      - 'toolkit'       # the submodule pointer (a toolkit bump)
+      - '.gitmodules'
       - 'docs/assets/screenshots/**'
       - 'docs/**/*.md'
       - '.github/workflows/screenshots.yml'
@@ -48,6 +49,8 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true # toolkit/ is the documentation-toolkit submodule (the wp-shots engine)
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -88,6 +91,8 @@ jobs:
           if ! command -v git >/dev/null; then apt-get update && apt-get install -y --no-install-recommends git; fi
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - uses: actions/checkout@v4
+        with:
+          submodules: true # toolkit/ is the documentation-toolkit submodule (the wp-shots engine)
       - name: Install the engine
         working-directory: toolkit/wp-shots
         run: npm ci

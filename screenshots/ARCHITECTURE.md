@@ -10,12 +10,15 @@ screenshots/                      the PROJECT: this repo's shots, blueprint, con
   shots.config.js                 project config consumed by the engine
   blueprint/                      Playground blueprint + mu-plugin + demo content pack (see blueprint/README.md)
   shots/                          YAML shot specs, mirrored to the docs tree
-  (engine)                        the ENGINE lives in ../toolkit/wp-shots, npm package `wp-shots`, consumed as a path dependency
+  (engine)                        the ENGINE lives in ../toolkit/wp-shots (git submodule of ndiego/documentation-toolkit,
+                                  pinned at a tag), npm package `wp-shots`, consumed as the path dependency file:../toolkit/wp-shots
 ```
 
 The engine knows nothing about this repository. It receives a config object (directories, blueprint path,
-WordPress version, style tokens) and does the rest. It lives in `../toolkit/wp-shots` (see `../toolkit/README.md` for the boundary rules). Publishing it from its own
-repository is a move, not a rewrite; the project would then depend on `wp-shots` from npm instead of the path.
+WordPress version, style tokens) and does the rest. It lives in its own repository,
+[ndiego/documentation-toolkit](https://github.com/ndiego/documentation-toolkit), checked out here as the
+`../toolkit` submodule (see `../toolkit/README.md` for the boundary rules). Once `wp-shots` is published to npm,
+the project would depend on it from npm instead of the path.
 
 Rules that keep that true:
 

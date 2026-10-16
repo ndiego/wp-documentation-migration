@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "shots": "wp-shots",
-    "postinstall": "playwright install chromium"
+    "postinstall": "npm exec --prefix ../toolkit/wp-shots -- playwright install chromium"
   },
   "engines": {
     "node": ">=22.19"
