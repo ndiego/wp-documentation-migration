@@ -52,18 +52,18 @@ What that importer does, and therefore what our Markdown must satisfy:
 
 ```
 raw/        JSON dumps straight from the REST API (regenerate: python3 -I scripts/fetch_raw.py --media)
-scripts/    the HelpHub pipeline: fetch + convert + assets + builds (project-specific; the reusable converter
-            interface is toolkit/convert/)
+scripts/    the HelpHub pipeline: fetch + convert + assets + builds (project-specific)
+convert/    wp_markdown.py, the generic facade over scripts/convert.py that other handbook conversions import
 notes/      investigation write-ups (content audit, site structure, framework options)
 docs/       generated Markdown: docs/<top>/<sub>/<slug>.md + README.md per folder, docs/manifest.json
 docs/assets/ images (and posters) mirrored from /documentation/files/YYYY/MM/ + images-manifest.json.
             Videos are gitignored (1.3 GB); <video src> points at the wordpress.org originals for now.
 data/       machine-readable reports: redirects, convert report, link check, download report
 screenshots/ this repo's screenshot PROJECT (shots.config.js, blueprint, YAML shot specs); output in docs/assets/screenshots/.
-            The engine lives in toolkit/wp-shots. See screenshots/README.md and notes/screenshot-automation/proposal.md
-toolkit/    git submodule: https://github.com/ndiego/documentation-toolkit pinned at a tag (v0.1.0). The cross-handbook
-            tooling: wp-shots engine, converter interface, manifest validator + CI action, CONVENTIONS.md, agent
-            skills. After cloning: `git submodule update --init`. Bump by checking out a newer tag inside toolkit/
+            The engine is @wporg-docs/screenshots from toolkit/. See screenshots/README.md and notes/screenshot-automation/proposal.md
+toolkit/    git submodule: https://github.com/ndiego/documentation-toolkit pinned at a tag (v0.2.0). The cross-handbook
+            maintenance tooling: screenshot engine, manifest validator + CI action, style/CONVENTIONS.md, agent
+            skills (a Claude Code plugin). After cloning: `git submodule update --init`. Bump by checking out a newer tag inside toolkit/
             and committing the pointer. Engine changes are made in that repo, not here.
 .venv/      Python venv (bs4, markdownify) used by scripts/convert.py: `.venv/bin/python -I scripts/convert.py`
 ```
@@ -131,12 +131,12 @@ committed `data/` files. `build/` is gitignored.
 - [x] Framework comparison (notes/framework-options.md)
 - [x] Live-site structure notes (notes/site-structure.md)
 - [x] REST API discovered and all raw JSON pulled (2026-10-07)
-- [x] Markdown conventions drafted (toolkit/CONVENTIONS.md)
+- [x] Markdown conventions drafted (toolkit/style/CONVENTIONS.md)
 - [x] Content audit (notes/content-audit.md, notes/audit-stats.json)
 - [x] HTML → Markdown converter (scripts/convert.py) — 321 articles + 2 pages → docs/, 246 clean / 75 with warnings (notes/converter-notes.md)
 - [x] docs/manifest.json (importer format) and docs/assets/images-manifest.json (2,556 assets)
 - [x] Asset download (scripts/download_assets.py) — 2,533 fetched, ~1.8 GB; 23 unreachable, see notes/missing-assets.md
-- [ ] Decide open questions in toolkit/CONVENTIONS.md
+- [ ] Decide open questions in toolkit/style/CONVENTIONS.md
 - [x] Structure mode (`--structure`), before/after builds and metrics (scripts/build_all.sh)
 - [ ] Starlight preview site in site/ — in progress
 - [ ] HelpHub importer subclass (merge-back)

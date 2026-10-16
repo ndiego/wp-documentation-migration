@@ -50,16 +50,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true # toolkit/ is the documentation-toolkit submodule (the wp-shots engine)
+          submodules: true # toolkit/ is the documentation-toolkit submodule (the screenshot engine)
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
           cache-dependency-path: |
-            toolkit/wp-shots/package-lock.json
+            toolkit/package-lock.json
             screenshots/package-lock.json
       - name: Install the engine (no browser needed for lint)
-        working-directory: toolkit/wp-shots
+        working-directory: toolkit
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
         run: npm ci --ignore-scripts
@@ -70,18 +70,18 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Lint
         working-directory: screenshots
-        run: npx wp-shots lint
+        run: npx wp-screenshots lint
 
   render:
     name: Canonical render (${{ github.event.inputs.mode || 'check' }})
     runs-on: ubuntu-latest
     if: github.event_name != 'pull_request'
     container:
-      # Keep in sync with `dockerImage` in screenshots/shots.config.js and @playwright/test in toolkit/wp-shots/package.json.
+      # Keep in sync with `dockerImage` in screenshots/shots.config.js and @playwright/test in toolkit/packages/screenshots/package.json.
       image: mcr.microsoft.com/playwright:v1.64.0-noble
       options: --ipc=host
     env:
-      WP_SHOTS_CANONICAL: '1'
+      WP_SCREENSHOTS_CANONICAL: '1'
       MODE: ${{ github.event.inputs.mode || 'check' }}
       FILTER: ${{ github.event.inputs.filter }}
       WP_VERSION: ${{ github.event.inputs.wp }}
@@ -92,16 +92,16 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - uses: actions/checkout@v4
         with:
-          submodules: true # toolkit/ is the documentation-toolkit submodule (the wp-shots engine)
+          submodules: true # toolkit/ is the documentation-toolkit submodule (the screenshot engine)
       - name: Install the engine
-        working-directory: toolkit/wp-shots
+        working-directory: toolkit
         run: npm ci
       - name: Install the project
         working-directory: screenshots
         run: npm ci
       - name: Doctor
         working-directory: screenshots
-        run: npx wp-shots doctor
+        run: npx wp-screenshots doctor
       - name: Render
         id: render
         working-directory: screenshots
@@ -110,7 +110,7 @@ jobs:
           WPFLAG=""
           if [ -n "$WP_VERSION" ]; then WPFLAG="--wp $WP_VERSION"; fi
           # shellcheck disable=SC2086
-          npx wp-shots "$MODE" $FILTER $WPFLAG
+          npx wp-screenshots "$MODE" $FILTER $WPFLAG
           echo "exit=$?" >> "$GITHUB_OUTPUT"
       - name: Upload report, staged images and failures
         if: always()
@@ -120,10 +120,10 @@ jobs:
           include-hidden-files: true
           if-no-files-found: warn
           path: |
-            screenshots/.wp-shots/report
-            screenshots/.wp-shots/check
-            screenshots/.wp-shots/failures
-            screenshots/.wp-shots/*.log
+            screenshots/.wp-screenshots/report
+            screenshots/.wp-screenshots/check
+            screenshots/.wp-screenshots/failures
+            screenshots/.wp-screenshots/*.log
       - name: Open a pull request with the regenerated images
         # Only when every shot rendered: a partial regeneration would ship a manifest with stale entries.
         if: env.MODE == 'run' && steps.render.outputs.exit == '0'
@@ -142,5 +142,5 @@ jobs:
       - name: Fail the job if check found changes or failures
         if: steps.render.outputs.exit != '0'
         run: |
-          echo "wp-shots exited with ${{ steps.render.outputs.exit }}; see the screenshots-report artifact."
+          echo "wp-screenshots exited with ${{ steps.render.outputs.exit }}; see the screenshots-report artifact."
           exit 1

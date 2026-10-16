@@ -20,6 +20,6 @@ build/
 # Claude Code worktrees (other sessions)
 .claude/worktrees/
 
-# Toolkit (engine has its own node_modules; project node_modules under screenshots/)
-toolkit/wp-shots/node_modules/
+# Toolkit (the submodule installs its own node_modules at its root; project node_modules under screenshots/)
+toolkit/node_modules/
 screenshots/node_modules/
