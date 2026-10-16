@@ -60,8 +60,8 @@ docs/assets/ images (and posters) mirrored from /documentation/files/YYYY/MM/ + 
             Videos are gitignored (1.3 GB); <video src> points at the wordpress.org originals for now.
 data/       machine-readable reports: redirects, convert report, link check, download report
 screenshots/ this repo's screenshot PROJECT (shots.config.js, blueprint, YAML shot specs); output in docs/assets/screenshots/.
-            The engine is @wporg-docs/screenshots from toolkit/. See screenshots/README.md and notes/screenshot-automation/proposal.md
-toolkit/    git submodule: https://github.com/ndiego/documentation-toolkit pinned at a tag (v0.2.0). The cross-handbook
+            The engine is @wp-docs-toolkit/screenshots from toolkit/. See screenshots/README.md and notes/screenshot-automation/proposal.md
+toolkit/    git submodule: https://github.com/ndiego/wp-docs-toolkit pinned at a tag (v0.2.0). The cross-handbook
             maintenance tooling: screenshot engine, manifest validator + CI action, style/CONVENTIONS.md, agent
             skills (a Claude Code plugin). After cloning: `git submodule update --init`. Bump by checking out a newer tag inside toolkit/
             and committing the pointer. Engine changes are made in that repo, not here.

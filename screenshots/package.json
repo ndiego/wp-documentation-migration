@@ -11,6 +11,6 @@
     "node": ">=22.19"
   },
   "dependencies": {
-    "@wporg-docs/screenshots": "file:../toolkit/packages/screenshots"
+    "@wp-docs-toolkit/screenshots": "file:../toolkit/packages/screenshots"
   }
 }

@@ -5,7 +5,7 @@ pre-pass plus a markdownify subclass that GitHub and Jetpack's PHP Markdown Extr
 `../scripts/convert.py`, entangled with the HelpHub pipeline; this facade loads it and exposes only the generic
 calls, so extracting the core later changes nothing for callers.
 
-It lived in the documentation-toolkit repo (`toolkit/convert/`) until that repo's 0.2.0 restructure. Conversion is a
+It lived in the wp-docs-toolkit repo (`toolkit/convert/`) until that repo's 0.2.0 restructure. Conversion is a
 one-time migration step rather than documentation maintenance, so it moved back here with the pipeline it wraps.
 Another handbook that needs to convert points `WP_MARKDOWN_CORE` at this repo's `scripts/convert.py`, or runs the
 conversion from a checkout of this repo.

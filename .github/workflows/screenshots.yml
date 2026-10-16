@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true # toolkit/ is the documentation-toolkit submodule (the screenshot engine)
+          submodules: true # toolkit/ is the wp-docs-toolkit submodule (the screenshot engine)
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -92,7 +92,7 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - uses: actions/checkout@v4
         with:
-          submodules: true # toolkit/ is the documentation-toolkit submodule (the screenshot engine)
+          submodules: true # toolkit/ is the wp-docs-toolkit submodule (the screenshot engine)
       - name: Install the engine
         working-directory: toolkit
         run: npm ci

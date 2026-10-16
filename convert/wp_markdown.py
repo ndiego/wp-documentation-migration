@@ -5,7 +5,7 @@ The reusable core (BeautifulSoup pre-pass for WordPress block markup, callouts, 
 tables, heading ids, plus a markdownify subclass tuned so GitHub and Jetpack's PHP Markdown Extra render
 the same thing) lives in `scripts/convert.py` together with the HelpHub-specific pipeline that grew
 around it. Consumers must import THIS module, not scripts/convert.py, so the core can be extracted
-behind the same interface later without touching callers. The facade lived in the documentation-toolkit
+behind the same interface later without touching callers. The facade lived in the wp-docs-toolkit
 repo until its 0.2.0 restructure; conversion is a one-time migration step, so it moved back here. The Theme Handbook spike
 (notes/theme-handbook-migration/spike/scripts/convert_theme.py) is the reference for what a handbook-
 specific layer adds on top.

@@ -6,8 +6,8 @@ demo site), drives the UI with Playwright, and writes the images into `docs/asse
 release changes the UI, regenerate and review the diff instead of retaking by hand.
 
 This directory is the **project**: `shots.config.js`, the blueprint and demo content, and the YAML specs. The
-**engine** is `@wporg-docs/screenshots` from the `toolkit/` submodule
-([ndiego/documentation-toolkit](https://github.com/ndiego/documentation-toolkit), pinned at a tag). The engine's
+**engine** is `@wp-docs-toolkit/screenshots` from the `toolkit/` submodule
+([ndiego/wp-docs-toolkit](https://github.com/ndiego/wp-docs-toolkit), pinned at a tag). The engine's
 own docs cover everything that is not specific to this repo:
 
 - `../toolkit/packages/screenshots/README.md`: commands, configuration, the spec format (scenes, steps, locator
@@ -30,7 +30,7 @@ npm install                   # links the engine and downloads Chromium for Play
 npm run shots -- doctor
 ```
 
-To work on the engine itself, edit it in the documentation-toolkit repo, tag a release there, then check out the
+To work on the engine itself, edit it in the wp-docs-toolkit repo, tag a release there, then check out the
 new tag inside `toolkit/` here and commit the submodule pointer.
 
 ## Everyday commands

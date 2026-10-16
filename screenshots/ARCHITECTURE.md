@@ -11,7 +11,7 @@ screenshots/                      the PROJECT: this repo's shots, blueprint, con
   shots.config.js                 project config consumed by the engine
   blueprint/                      Playground blueprint + mu-plugin + demo content pack (see blueprint/README.md)
   shots/                          YAML shot specs, mirrored to the docs tree
-../toolkit/packages/screenshots/  the ENGINE: @wporg-docs/screenshots, from the documentation-toolkit submodule
+../toolkit/packages/screenshots/  the ENGINE: @wp-docs-toolkit/screenshots, from the wp-docs-toolkit submodule
                                   pinned at a tag, consumed as the path dependency file:../toolkit/packages/screenshots
 ```
 

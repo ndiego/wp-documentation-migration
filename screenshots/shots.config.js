@@ -1,4 +1,4 @@
-// Project configuration for the @wporg-docs/screenshots engine (wp-screenshots). Paths are relative to this file.
+// Project configuration for the @wp-docs-toolkit/screenshots engine (wp-screenshots). Paths are relative to this file.
 export default {
 	shotsDir: 'shots',
 	outDir: '../docs/assets/screenshots',

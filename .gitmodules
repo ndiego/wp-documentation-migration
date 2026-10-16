@@ -1,4 +1,4 @@
 [submodule "toolkit"]
 	path = toolkit
-	url = https://github.com/ndiego/documentation-toolkit.git
+	url = https://github.com/ndiego/wp-docs-toolkit.git
 	ignore = untracked
