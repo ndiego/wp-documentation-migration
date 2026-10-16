@@ -23,11 +23,11 @@ blueprint/
   its first request (a cookieless request gets a 302 that sets the auth cookie), so a fresh browser context arrives
   in wp-admin authenticated. `author-1` and `author-2` also have password `password`.
 - **Versions**: WordPress 7.1.3, PHP 8.3, theme `WP_DEFAULT_THEME` (Twenty Twenty-Five on 7.1). `GET /wp-json/`
-  includes `wp_shots: { wordpress, php, theme, content }` (added by the mu-plugin), so the runner can assert what
+  includes `wp_screenshots: { wordpress, php, theme, content }` (added by the mu-plugin), so the runner can assert what
   booted without authenticating.
 - **Readiness**: the server answers HTTP about 4 s into the boot, *while the blueprint is still running*. The site is
   only ready when the CLI prints `Ready! WordPress is running on ...`, or equivalently when `GET /wp-json/` has a
-  non-null `wp_shots.content` (written by the last step of the seed). Measured on an M-series Mac with the
+  non-null `wp_screenshots.content` (written by the last step of the seed). Measured on an M-series Mac with the
   WordPress zip cached: first response 4.1-4.7 s, ready 7.9-8.8 s.
 - **Document root** inside Playground is `/wordpress/` (so `wp-content` is `/wordpress/wp-content/`).
 - **Editor preferences** for user 1: no welcome guides, no "Choose a pattern" modal, fullscreen mode on.
@@ -163,7 +163,7 @@ Its header comment explains every hook. In short:
 - Serves every avatar from the `avatar-default` attachment (inline SVG fallback); no Gravatar requests.
 - Zeroes CSS animation and transition durations in wp-admin, the front end, the block editor and the editor canvas
   iframe. It does not hide the caret, the cursor or the admin bar; the engine decides those at capture time.
-- Adds `wp_shots` (versions, theme, seeded content IDs) to `GET /wp-json/`.
+- Adds `wp_screenshots` (versions, theme, seeded content IDs) to `GET /wp-json/`.
 
 `define( 'WP_SHOTS_DEMO', false )` before mu-plugins load (for example through the blueprint `constants` key)
 disables it for a suite.
@@ -172,7 +172,7 @@ disables it for a suite.
 
 - **Pin versions in `preferredVersions`.** The blueprint value overrides `--wp`/`--php`, and in CLI 3.1.57 a
   blueprint without `preferredVersions` booted 7.1.3 whatever `--wp` said. An omitted PHP version picks the newest.
-  The CLI banner prints "WordPress latest" even when the blueprint pins 7.1.3; trust `wp_shots.wordpress` instead.
+  The CLI banner prints "WordPress latest" even when the blueprint pins 7.1.3; trust `wp_screenshots.wordpress` instead.
 - **`--blueprint-may-read-adjacent-files` is required** for `{ "resource": "bundled" }` files (the mu-plugin, the
   seed and the media). Bundled paths are relative to the blueprint file.
 - **No `wp-cli` step**: it downloads `wp-cli.phar` from playground.wordpress.net at run time. Use `runPHP` with
@@ -183,7 +183,7 @@ disables it for a suite.
 - **`server` mode is ephemeral.** Each boot builds a fresh site from the blueprint; nothing persists between boots.
   The only thing written outside the project is the WordPress zip cache in `~/.wordpress-playground/`.
 - **The server answers before the blueprint has finished** (see Readiness above). Wait for `Ready!` or
-  `wp_shots.content`.
+  `wp_screenshots.content`.
 - **URLs**: `siteurl`/`home` are `http://127.0.0.1:<port>`. Seeded block markup uses root-relative URLs
   (`/wp-content/uploads/2025/01/hero.jpg`), so content survives a port change, but attachment `source_url` and
   permalinks from REST are absolute for the port the site booted on.

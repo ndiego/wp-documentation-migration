@@ -4,13 +4,13 @@
   "description": "Automated documentation screenshots: Playground + Playwright, driven by YAML shot specs.",
   "type": "module",
   "scripts": {
-    "shots": "wp-shots",
-    "postinstall": "npm exec --prefix ../toolkit/wp-shots -- playwright install chromium"
+    "shots": "wp-screenshots",
+    "postinstall": "npm exec --prefix ../toolkit -- playwright install chromium"
   },
   "engines": {
     "node": ">=22.19"
   },
   "dependencies": {
-    "wp-shots": "file:../toolkit/wp-shots"
+    "@wporg-docs/screenshots": "file:../toolkit/packages/screenshots"
   }
 }

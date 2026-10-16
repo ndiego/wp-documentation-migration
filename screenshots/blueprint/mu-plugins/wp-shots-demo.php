@@ -54,7 +54,7 @@
  *      engine does not freeze the browser clock by default (a frozen Date.now stalls Gutenberg debounces); shots that show relative times should mask them or set `style.clock`.
  *
  * 7. Environment facts for the engine
- *    - `rest_index`: adds `wp_shots: { wordpress, php, theme, content }` to GET /wp-json/ so the runner can assert
+ *    - `rest_index`: adds `wp_screenshots: { wordpress, php, theme, content }` to GET /wp-json/ so the runner can assert
  *      which WordPress and PHP actually booted without logging in.
  *
  * @package wp-shots
@@ -326,7 +326,7 @@ add_filter(
 	static function ( $response ) {
 		if ( $response instanceof WP_REST_Response ) {
 			$data             = $response->get_data();
-			$data['wp_shots'] = array(
+			$data['wp_screenshots'] = array(
 				'wordpress' => get_bloginfo( 'version' ),
 				'php'       => PHP_VERSION,
 				'theme'     => get_stylesheet(),
